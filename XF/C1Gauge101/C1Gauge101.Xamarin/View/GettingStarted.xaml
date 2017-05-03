@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge"
+             x:Class="C1Gauge101.GettingStarted"
+             Padding="20">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="lblValue" Text="Value" VerticalOptions="Center"/>
+            <Label x:Name="ValueLabel" Text="" VerticalOptions="Center"/>
+            <Stepper x:Name="ValueStepper" Value="{Binding Value,Mode=TwoWay}" Increment="25" HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+        <Label Text="LinearGauge"/>
+        <c1:C1LinearGauge Value="{Binding Value,Mode=TwoWay}" IsReadOnly="{Binding IsReadOnly}" ShowText="{Binding ShowText}"/>
+        <Label Text="BulletGraph"/>
+        <c1:C1BulletGraph Value="{Binding Value,Mode=TwoWay}" IsReadOnly="{Binding IsReadOnly}" ShowText="{Binding ShowText}" Good="80" Bad="45" Target="90"/>
+        <Label Text="RadialGauge"/>
+        <c1:C1RadialGauge Value="{Binding Value,Mode=TwoWay}" IsReadOnly="{Binding IsReadOnly}" ShowText="{Binding ShowText}" HeightRequest="200"/>
+    </StackLayout>
+</ContentPage>

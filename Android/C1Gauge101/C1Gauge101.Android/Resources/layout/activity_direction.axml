@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/direction"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <Spinner
+        android:id="@+id/directionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+        <c1.android.gauge.C1LinearGauge
+            android:id="@+id/linearGauge1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        <c1.android.gauge.C1BulletGraph
+            android:id="@+id/bulletGraph1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+</LinearLayout>

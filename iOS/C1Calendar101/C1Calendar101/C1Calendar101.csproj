@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{1C331872-CFAD-462A-A9FE-33100FDB6E36}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>C1Calendar101</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>C1Calendar101</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseRefCounting>True</MtouchUseRefCounting>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFastDev>True</MtouchFastDev>
+    <MtouchSdkVersion>10.2</MtouchSdkVersion>
+    <MtouchProfiling>True</MtouchProfiling>
+    <MtouchNoSymbolStrip>False</MtouchNoSymbolStrip>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>False</MtouchFloat32>
+    <IOSDebugOverWiFi>False</IOSDebugOverWiFi>
+    <IOSDebuggerPort>10000</IOSDebuggerPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchDebug>True</MtouchDebug>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <IOSDebugOverWiFi>False</IOSDebugOverWiFi>
+    <IOSDebuggerPort>10000</IOSDebuggerPort>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.iOS.Calendar, Version=2.3.20171.134, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Calendar.2.3.20171.134\lib\Xamarin.iOS10\C1.iOS.Calendar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.iOS.Core, Version=2.3.20171.134, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.3.20171.134\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-40@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard">
+      <SubType>Designer</SubType>
+    </InterfaceDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\CustomAppearanceController.cs" />
+    <Compile Include="Controllers\CustomAppearanceController.designer.cs">
+      <DependentUpon>CustomAppearanceController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomHeaderController.cs" />
+    <Compile Include="Controllers\CustomHeaderController.designer.cs">
+      <DependentUpon>CustomHeaderController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomSelectionController.cs" />
+    <Compile Include="Controllers\CustomSelectionController.designer.cs">
+      <DependentUpon>CustomSelectionController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomDayController.cs" />
+    <Compile Include="Controllers\CustomDayController.designer.cs">
+      <DependentUpon>CustomDayController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="License.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Controllers\PopupEditorController.cs" />
+    <Compile Include="Controllers\PopupEditorController.designer.cs">
+      <DependentUpon>PopupEditorController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PopupCalendarController.cs" />
+    <Compile Include="Controllers\PopupCalendarController.designer.cs">
+      <DependentUpon>PopupCalendarController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\calendar_datepicker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\calendar_vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\calendar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\Cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\PartlyCloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\Rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\Storm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\Sun.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

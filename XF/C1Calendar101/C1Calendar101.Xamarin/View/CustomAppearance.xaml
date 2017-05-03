@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Calendar;assembly=C1.Xamarin.Forms.Calendar"
+             x:Class="C1Calendar101.CustomAppearance">
+    <StackLayout>
+        <Grid  VerticalOptions="FillAndExpand">
+            <c1:C1Calendar x:Name="calendar" BackgroundColor="#FFEBEBEB" VerticalOptions="FillAndExpand"
+                       TextColor="Black"
+                       AdjacentDayTextColor="#FFA5A5A3"
+                       DayBorderColor="#FFF2F2F2" 
+                       DayBorderWidth="1"
+                       FontFamily="Courier New" 
+                       FontSize="16" 
+                       BorderColor="#FF343434"
+                       BorderWidth="4"
+                       DayOfWeekBackgroundColor="#FF63A646"
+                       DayOfWeekTextColor="White"
+                       DayOfWeekFormat="d"
+                       DayOfWeekFontFamily="Arial"
+                       DayOfWeekFontSize="21"
+                       HeaderBackgroundColor="#FF3D834B"
+                       HeaderTextColor="White"
+                       HeaderFontFamily="Arial Black"
+                       HeaderFontSize="21"
+                       SelectionBackgroundColor="#FFD2D2D2"
+                       SelectionTextColor="Black"
+                       TodayFontAttributes="Italic"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

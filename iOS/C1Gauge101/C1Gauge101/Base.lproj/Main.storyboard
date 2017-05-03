@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="15">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gauge101-->
+        <scene sceneID="5">
+            <objects>
+                <tableViewController id="6" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="21">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="34" detailTextLabel="35" imageView="36" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="22">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="22" id="23">
+                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Getting Started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="34">
+                                                    <rect key="frame" x="79" y="5" width="118" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" customColorSpace="sRGB" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows simple gauge controls with interaction." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="35">
+                                                    <rect key="frame" x="79" y="25.5" width="260" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_basic.png" id="36">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="61" kind="show" id="447"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="37" detailTextLabel="38" imageView="39" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="24">
+                                        <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="24" id="25">
+                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Displaying Values" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="37">
+                                                    <rect key="frame" x="79" y="5" width="134" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows value labels on the gauges." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="38">
+                                                    <rect key="frame" x="79" y="25.5" width="194.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_radial.png" id="39">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="552" kind="show" id="680"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="40" detailTextLabel="41" imageView="42" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="26">
+                                        <rect key="frame" x="0.0" y="88" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="26" id="27">
+                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Using Ranges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="40">
+                                                    <rect key="frame" x="79" y="5" width="106" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows customized ranges behind the pointer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="41">
+                                                    <rect key="frame" x="79" y="25.5" width="258" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_ranges.png" id="42">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="685" kind="show" id="1013"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="43" detailTextLabel="44" imageView="45" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="28">
+                                        <rect key="frame" x="0.0" y="132" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="28" id="29">
+                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Automatic Scaling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43">
+                                                    <rect key="frame" x="79" y="5" width="138" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows a radial gauge with different sweep angles." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="44">
+                                                    <rect key="frame" x="79" y="25.5" width="282.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_scaling.png" id="45">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1018" kind="show" id="1140"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="46" detailTextLabel="47" imageView="48" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="30">
+                                        <rect key="frame" x="0.0" y="176" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="30" id="31">
+                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Direction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="46">
+                                                    <rect key="frame" x="79" y="5" width="69" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows linear gauges at different directions." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="47">
+                                                    <rect key="frame" x="79" y="25.5" width="245.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_linear.png" id="48">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1025" kind="show" id="1262"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="51" detailTextLabel="52" imageView="53" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="32">
+                                        <rect key="frame" x="0.0" y="220" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="32" id="33">
+                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Bullet Graph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="51">
+                                                    <rect key="frame" x="79" y="5" width="95" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows a bulletgraph with good, bad and target ranges." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="52">
+                                                    <rect key="frame" x="79" y="25.5" width="310" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_bullet.png" id="53">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1032" kind="show" id="1460"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="6" id="9"/>
+                            <outlet property="delegate" destination="6" id="10"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="C1Gauge101" id="7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="58"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="14">
+            <objects>
+                <navigationController id="15" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="17">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6" kind="relationship" relationship="rootViewController" id="16"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="18" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277" y="58"/>
+        </scene>
+        <!--Getting Started-->
+        <scene sceneID="60">
+            <objects>
+                <viewController title="Getting Started" id="61" customClass="GettingStartedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="58"/>
+                        <viewControllerLayoutGuide type="bottom" id="59"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="62">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="317">
+                                <rect key="frame" x="20" y="64" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="335">
+                                        <rect key="frame" x="20" y="54" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="335" firstAttribute="leading" secondItem="317" secondAttribute="leading" constant="20" id="338">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                                    </constraint>
+                                    <constraint firstItem="335" firstAttribute="centerY" secondItem="317" secondAttribute="centerY" id="339"/>
+                                    <constraint firstItem="335" firstAttribute="top" secondItem="317" secondAttribute="top" constant="54" id="340">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="335" secondAttribute="bottom" constant="53" id="341"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="335"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="338"/>
+                                        <exclude reference="339"/>
+                                        <exclude reference="340"/>
+                                        <exclude reference="341"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="335"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="338"/>
+                                        <include reference="339"/>
+                                        <include reference="340"/>
+                                        <include reference="341"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="449" misplaced="YES">
+                                <rect key="frame" x="8" y="72" width="359" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="458">
+                                        <rect key="frame" x="8" y="12.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="464" misplaced="YES">
+                                        <rect key="frame" x="257" y="8" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="OnValueChanged:" destination="61" eventType="valueChanged" id="1491"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="464" secondAttribute="bottom" constant="8" id="466"/>
+                                    <constraint firstAttribute="trailing" secondItem="464" secondAttribute="trailing" constant="8" id="468"/>
+                                    <constraint firstItem="464" firstAttribute="top" secondItem="449" secondAttribute="top" constant="8" id="469"/>
+                                    <constraint firstItem="458" firstAttribute="centerY" secondItem="464" secondAttribute="centerY" id="470"/>
+                                    <constraint firstItem="458" firstAttribute="leading" secondItem="449" secondAttribute="leading" constant="8" id="471"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="472" misplaced="YES">
+                                <rect key="frame" x="8" y="125" width="359" height="534"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linear Gauge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="479">
+                                        <rect key="frame" x="8" y="8" width="102" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="496" customClass="C1LinearGauge" misplaced="YES">
+                                        <rect key="frame" x="8" y="36.5" width="343" height="100"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="503"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="FaceColor">
+                                                <color key="value" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="PointerColor">
+                                                <color key="value" red="0.050980392156862744" green="0.4392156862745098" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="Value">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="IsAnimated" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="IsEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="IsReadOnly" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="Thickness">
+                                                <real key="value" value="0.80000000000000004"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bullet Graph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="514">
+                                        <rect key="frame" x="8" y="144.5" width="95" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="523" customClass="C1BulletGraph" misplaced="YES">
+                                        <rect key="frame" x="8" y="173" width="343" height="100"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="527"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="Value">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="IsAnimated" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="IsEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ShowRanges" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="Good">
+                                                <real key="value" value="45"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="Bad">
+                                                <real key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="Target">
+                                                <real key="value" value="80"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radial Gauge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="530">
+                                        <rect key="frame" x="8" y="281" width="101" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="535" customClass="C1RadialGauge" misplaced="YES">
+                                        <rect key="frame" x="8" y="309.5" width="343" height="216.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="FaceColor">
+                                                <color key="value" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="PointerColor">
+                                                <color key="value" red="0.050980392156862744" green="0.4392156862745098" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="IsAnimated" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="IsEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="Value">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="StartAngle">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="SweepAngle">
+                                                <real key="value" value="180"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="AutoScale" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="496" firstAttribute="top" secondItem="479" secondAttribute="bottom" constant="8" id="499"/>
+                                    <constraint firstItem="496" firstAttribute="leading" secondItem="472" secondAttribute="leading" constant="8" id="500"/>
+                                    <constraint firstAttribute="trailing" secondItem="496" secondAttribute="trailing" constant="8" id="502"/>
+                                    <constraint firstItem="479" firstAttribute="top" secondItem="472" secondAttribute="top" constant="8" id="504"/>
+                                    <constraint firstItem="479" firstAttribute="leading" secondItem="472" secondAttribute="leading" constant="8" id="505"/>
+                                    <constraint firstItem="514" firstAttribute="top" secondItem="496" secondAttribute="bottom" constant="8" id="515"/>
+                                    <constraint firstItem="514" firstAttribute="leading" secondItem="472" secondAttribute="leading" constant="8" id="516"/>
+                                    <constraint firstItem="523" firstAttribute="top" secondItem="514" secondAttribute="bottom" constant="8" id="524"/>
+                                    <constraint firstItem="523" firstAttribute="leading" secondItem="472" secondAttribute="leading" constant="8" id="525"/>
+                                    <constraint firstAttribute="trailing" secondItem="523" secondAttribute="trailing" constant="8" id="526"/>
+                                    <constraint firstItem="530" firstAttribute="top" secondItem="523" secondAttribute="bottom" constant="8" id="531"/>
+                                    <constraint firstItem="530" firstAttribute="leading" secondItem="472" secondAttribute="leading" constant="8" id="532"/>
+                                    <constraint firstItem="535" firstAttribute="top" secondItem="530" secondAttribute="bottom" constant="8" id="536"/>
+                                    <constraint firstItem="535" firstAttribute="leading" secondItem="472" secondAttribute="leading" constant="8" id="540"/>
+                                    <constraint firstAttribute="trailing" secondItem="535" secondAttribute="trailing" constant="8" id="541"/>
+                                    <constraint firstAttribute="bottom" secondItem="535" secondAttribute="bottom" constant="8" id="543"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="317" firstAttribute="leading" secondItem="62" secondAttribute="leading" constant="20" id="332">
+                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="317" firstAttribute="top" secondItem="58" secondAttribute="bottom" id="333"/>
+                            <constraint firstAttribute="trailing" secondItem="317" secondAttribute="trailing" constant="40" id="334">
+                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="449" firstAttribute="leading" secondItem="62" secondAttribute="leading" constant="8" id="450"/>
+                            <constraint firstItem="449" firstAttribute="top" secondItem="58" secondAttribute="bottom" constant="8" id="451"/>
+                            <constraint firstAttribute="trailing" secondItem="449" secondAttribute="trailing" constant="8" id="456"/>
+                            <constraint firstItem="472" firstAttribute="leading" secondItem="449" secondAttribute="leading" id="476"/>
+                            <constraint firstItem="449" firstAttribute="trailing" secondItem="472" secondAttribute="trailing" id="477"/>
+                            <constraint firstItem="472" firstAttribute="top" secondItem="449" secondAttribute="bottom" constant="8" id="510"/>
+                            <constraint firstItem="59" firstAttribute="bottom" secondItem="472" secondAttribute="bottom" constant="8" id="511"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="317"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="332"/>
+                                <exclude reference="333"/>
+                                <exclude reference="334"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="317"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="332"/>
+                                <include reference="333"/>
+                                <include reference="334"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="BulletGraph" destination="523" id="name-outlet-523"/>
+                        <outlet property="LinearGauge" destination="496" id="name-outlet-496"/>
+                        <outlet property="RadialGauge" destination="535" id="name-outlet-535"/>
+                        <outlet property="Stepper" destination="464" id="name-outlet-464"/>
+                        <outlet property="ValueLabel" destination="458" id="name-outlet-458"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="-349"/>
+        </scene>
+        <!--Display Values-->
+        <scene sceneID="551">
+            <objects>
+                <viewController title="Display Values" id="552" customClass="DisplayValuesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="549"/>
+                        <viewControllerLayoutGuide type="bottom" id="550"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="553">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1504" misplaced="YES">
+                                <rect key="frame" x="8" y="72" width="359" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1505">
+                                        <rect key="frame" x="8" y="13" width="79.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2020" customClass="C1TextField" misplaced="YES">
+                                        <rect key="frame" x="95.5" y="8" width="255.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1505" firstAttribute="leading" secondItem="1504" secondAttribute="leading" constant="8" id="1515"/>
+                                    <constraint firstItem="2020" firstAttribute="leading" secondItem="1505" secondAttribute="trailing" constant="8" id="2021"/>
+                                    <constraint firstItem="1505" firstAttribute="centerY" secondItem="2020" secondAttribute="centerY" id="2022"/>
+                                    <constraint firstItem="2020" firstAttribute="top" secondItem="1504" secondAttribute="top" constant="8" id="2023"/>
+                                    <constraint firstAttribute="bottom" secondItem="2020" secondAttribute="bottom" constant="8" id="2024"/>
+                                    <constraint firstAttribute="trailing" secondItem="2020" secondAttribute="trailing" constant="8" id="2025"/>
+                                </constraints>
+                            </view>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1517" misplaced="YES">
+                                <rect key="frame" x="140" y="126" width="94" height="29"/>
+                                <connections>
+                                    <action selector="OnValueChanged:" destination="552" eventType="valueChanged" id="1593"/>
+                                </connections>
+                            </stepper>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1520" customClass="C1LinearGauge" misplaced="YES">
+                                <rect key="frame" x="8" y="163" width="359" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1525"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="IsAnimated" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="IsEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1521" customClass="C1RadialGauge" misplaced="YES">
+                                <rect key="frame" x="8" y="271" width="359" height="200"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1530"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="IsAnimated" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="IsEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="AutoScale" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1504" firstAttribute="leading" secondItem="553" secondAttribute="leading" constant="8" id="1508"/>
+                            <constraint firstItem="1504" firstAttribute="top" secondItem="549" secondAttribute="bottom" constant="8" id="1509"/>
+                            <constraint firstAttribute="trailing" secondItem="1504" secondAttribute="trailing" constant="8" id="1511"/>
+                            <constraint firstItem="1517" firstAttribute="top" secondItem="1504" secondAttribute="bottom" constant="8" id="1518"/>
+                            <constraint firstItem="1517" firstAttribute="centerX" secondItem="553" secondAttribute="centerX" id="1519"/>
+                            <constraint firstItem="1520" firstAttribute="top" secondItem="1517" secondAttribute="bottom" constant="8" id="1522"/>
+                            <constraint firstItem="1520" firstAttribute="leading" secondItem="553" secondAttribute="leading" constant="8" id="1523"/>
+                            <constraint firstAttribute="trailing" secondItem="1520" secondAttribute="trailing" constant="8" id="1524"/>
+                            <constraint firstItem="1521" firstAttribute="top" secondItem="1520" secondAttribute="bottom" constant="8" id="1526"/>
+                            <constraint firstItem="1521" firstAttribute="leading" secondItem="1520" secondAttribute="leading" id="1527"/>
+                            <constraint firstItem="1520" firstAttribute="trailing" secondItem="1521" secondAttribute="trailing" id="1528"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Entry" destination="2020" id="name-outlet-2020"/>
+                        <outlet property="LinearGauge" destination="1520" id="name-outlet-1520"/>
+                        <outlet property="RadialGauge" destination="1521" id="name-outlet-1521"/>
+                        <outlet property="Stepper" destination="1517" id="name-outlet-1517"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="554" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="-347"/>
+        </scene>
+        <!--Using Ranges-->
+        <scene sceneID="684">
+            <objects>
+                <viewController title="Using Ranges" id="685" customClass="UsingRangesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="682"/>
+                        <viewControllerLayoutGuide type="bottom" id="683"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="686">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1600" misplaced="YES">
+                                <rect key="frame" x="8" y="72" width="359" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using Ranges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1605" misplaced="YES">
+                                        <rect key="frame" x="8" y="13.5" width="286" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1606" misplaced="YES">
+                                        <rect key="frame" x="302" y="8" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="OnSwitchValueChanged:" destination="685" eventType="valueChanged" id="1654"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1605" firstAttribute="leading" secondItem="1600" secondAttribute="leading" constant="8" id="1609"/>
+                                    <constraint firstItem="1606" firstAttribute="top" secondItem="1600" secondAttribute="top" constant="8" id="1611"/>
+                                    <constraint firstAttribute="bottom" secondItem="1606" secondAttribute="bottom" constant="8" id="1612"/>
+                                    <constraint firstItem="1605" firstAttribute="centerY" secondItem="1606" secondAttribute="centerY" id="1613"/>
+                                    <constraint firstItem="1606" firstAttribute="leading" secondItem="1605" secondAttribute="trailing" constant="8" id="1614"/>
+                                    <constraint firstAttribute="trailing" secondItem="1606" secondAttribute="trailing" constant="8" id="1615"/>
+                                </constraints>
+                            </view>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1616" misplaced="YES">
+                                <rect key="frame" x="140.5" y="127" width="94" height="29"/>
+                                <connections>
+                                    <action selector="OnValueChanged:" destination="685" eventType="valueChanged" id="1642"/>
+                                </connections>
+                            </stepper>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1622" customClass="C1LinearGauge" misplaced="YES">
+                                <rect key="frame" x="8" y="164" width="359" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1627"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1623" customClass="C1RadialGauge" misplaced="YES">
+                                <rect key="frame" x="8" y="272" width="359" height="200"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1631"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="AutoScale" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1600" firstAttribute="top" secondItem="682" secondAttribute="bottom" constant="8" id="1601"/>
+                            <constraint firstItem="1600" firstAttribute="leading" secondItem="686" secondAttribute="leading" constant="8" id="1602"/>
+                            <constraint firstAttribute="trailing" secondItem="1600" secondAttribute="trailing" constant="8" id="1603"/>
+                            <constraint firstItem="1616" firstAttribute="top" secondItem="1600" secondAttribute="bottom" constant="8" id="1617"/>
+                            <constraint firstAttribute="centerX" secondItem="1616" secondAttribute="centerX" id="1621"/>
+                            <constraint firstItem="1622" firstAttribute="top" secondItem="1616" secondAttribute="bottom" constant="8" id="1624"/>
+                            <constraint firstItem="1622" firstAttribute="leading" secondItem="686" secondAttribute="leading" constant="8" id="1625"/>
+                            <constraint firstAttribute="trailing" secondItem="1622" secondAttribute="trailing" constant="8" id="1626"/>
+                            <constraint firstItem="1623" firstAttribute="top" secondItem="1622" secondAttribute="bottom" constant="8" id="1628"/>
+                            <constraint firstItem="1623" firstAttribute="leading" secondItem="686" secondAttribute="leading" constant="8" id="1629"/>
+                            <constraint firstAttribute="trailing" secondItem="1623" secondAttribute="trailing" constant="8" id="1630"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LinearGauge" destination="1622" id="name-outlet-1622"/>
+                        <outlet property="RadialGauge" destination="1623" id="name-outlet-1623"/>
+                        <outlet property="Stepper" destination="1616" id="name-outlet-1616"/>
+                        <outlet property="Switch" destination="1606" id="name-outlet-1606"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="687" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="-345"/>
+        </scene>
+        <!--Automatic Scaling-->
+        <scene sceneID="1017">
+            <objects>
+                <viewController title="Automatic Scaling" id="1018" customClass="AutoScaleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1015"/>
+                        <viewControllerLayoutGuide type="bottom" id="1016"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1019">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1953">
+                                <rect key="frame" x="16" y="80" width="343" height="270"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1947">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1948" misplaced="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="249" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="360" stepValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="1945" misplaced="YES">
+                                                <rect key="frame" x="249" y="0.0" width="94" height="29"/>
+                                                <connections>
+                                                    <action selector="OnStepperValueChanged:" destination="1018" eventType="valueChanged" id="1969"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1948" firstAttribute="centerY" secondItem="1945" secondAttribute="centerY" id="2004"/>
+                                            <constraint firstItem="1945" firstAttribute="top" secondItem="1948" secondAttribute="top" id="2006"/>
+                                            <constraint firstItem="1945" firstAttribute="bottom" secondItem="1948" secondAttribute="bottom" id="2007"/>
+                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1950">
+                                        <rect key="frame" x="0.0" y="45" width="343" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1949" misplaced="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="249" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="180" minimumValue="45" maximumValue="360" stepValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="1946" misplaced="YES">
+                                                <rect key="frame" x="249" y="0.0" width="94" height="29"/>
+                                                <connections>
+                                                    <action selector="OnStepperValueChanged:" destination="1018" eventType="valueChanged" id="1980"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1949" firstAttribute="centerY" secondItem="1946" secondAttribute="centerY" id="2005"/>
+                                            <constraint firstItem="1946" firstAttribute="top" secondItem="1949" secondAttribute="top" id="2008"/>
+                                            <constraint firstItem="1946" firstAttribute="bottom" secondItem="1949" secondAttribute="bottom" id="2009"/>
+                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1952" customClass="C1RadialGauge">
+                                        <rect key="frame" x="0.0" y="90" width="343" height="180"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="AutoScale" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1953" firstAttribute="leading" secondItem="1019" secondAttribute="leading" constant="16" id="1954"/>
+                            <constraint firstAttribute="trailing" secondItem="1953" secondAttribute="trailing" constant="16" id="1955"/>
+                            <constraint firstItem="1953" firstAttribute="top" secondItem="1015" secondAttribute="bottom" constant="16" id="1956"/>
+                            <constraint firstItem="1016" firstAttribute="top" secondItem="1953" secondAttribute="bottom" constant="16" id="2001"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="RadialGauge" destination="1952" id="name-outlet-1952"/>
+                        <outlet property="StartAngleLabel" destination="1948" id="name-outlet-1948"/>
+                        <outlet property="StartAngleStepper" destination="1945" id="name-outlet-1945"/>
+                        <outlet property="SweepAngleLabel" destination="1949" id="name-outlet-1949"/>
+                        <outlet property="SweepAngleStepper" destination="1946" id="name-outlet-1946"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1020" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="452"/>
+        </scene>
+        <!--Direction-->
+        <scene sceneID="1024">
+            <objects>
+                <viewController title="Direction" id="1025" customClass="DirectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1022"/>
+                        <viewControllerLayoutGuide type="bottom" id="1023"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1026">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1663" misplaced="YES">
+                                <rect key="frame" x="8" y="72" width="359" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1667">
+                                        <rect key="frame" x="8" y="22" width="69" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2028" customClass="C1TextField" misplaced="YES">
+                                        <rect key="frame" x="85" y="17" width="266" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1667" firstAttribute="leading" secondItem="1663" secondAttribute="leading" constant="8" id="1670"/>
+                                    <constraint firstAttribute="centerY" secondItem="1667" secondAttribute="centerY" id="1727"/>
+                                    <constraint firstItem="1667" firstAttribute="centerY" secondItem="2028" secondAttribute="centerY" id="2029"/>
+                                    <constraint firstItem="2028" firstAttribute="leading" secondItem="1667" secondAttribute="trailing" constant="8" id="2030"/>
+                                    <constraint firstAttribute="trailing" secondItem="2028" secondAttribute="trailing" constant="8" id="2033"/>
+                                    <constraint firstAttribute="centerY" secondItem="2028" secondAttribute="centerY" id="2034"/>
+                                    <constraint firstAttribute="height" constant="64" id="2035"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1775" customClass="C1LinearGauge">
+                                <rect key="frame" x="0.0" y="0.0" width="166" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2051" misplaced="YES">
+                                <rect key="frame" x="16" y="152" width="343" height="499"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1794" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="208"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1795" customClass="C1LinearGauge">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1796" customClass="C1BulletGraph">
+                                                <rect key="frame" x="0.0" y="108" width="343" height="100"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="Good">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="Bad">
+                                                        <real key="value" value="70"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="Target">
+                                                        <real key="value" value="90"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ShowRanges" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="208" id="2048"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1794" firstAttribute="leading" secondItem="2051" secondAttribute="leading" id="2056"/>
+                                    <constraint firstItem="1794" firstAttribute="trailing" secondItem="2051" secondAttribute="trailing" id="2057"/>
+                                    <constraint firstItem="1794" firstAttribute="top" secondItem="2051" secondAttribute="top" id="2059"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1663" firstAttribute="top" secondItem="1022" secondAttribute="bottom" constant="8" id="1664"/>
+                            <constraint firstItem="1663" firstAttribute="leading" secondItem="1026" secondAttribute="leading" constant="8" id="1665"/>
+                            <constraint firstAttribute="trailing" secondItem="1663" secondAttribute="trailing" constant="8" id="1666"/>
+                            <constraint firstItem="2051" firstAttribute="top" secondItem="1663" secondAttribute="bottom" constant="16" id="2052"/>
+                            <constraint firstItem="2051" firstAttribute="leading" secondItem="1026" secondAttribute="leading" constant="16" id="2053"/>
+                            <constraint firstAttribute="trailing" secondItem="2051" secondAttribute="trailing" constant="16" id="2054"/>
+                            <constraint firstItem="1023" firstAttribute="top" secondItem="2051" secondAttribute="bottom" constant="16" id="2055"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BulletGraph" destination="1796" id="name-outlet-1796"/>
+                        <outlet property="Entry" destination="2028" id="name-outlet-2028"/>
+                        <outlet property="LinearGauge" destination="1795" id="name-outlet-1795"/>
+                        <outlet property="StackView" destination="1794" id="name-outlet-1794"/>
+                        <outlet property="StackViewHeightContraint" destination="2048" id="name-outlet-2048"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1027" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="450"/>
+        </scene>
+        <!--Bullet Graph-->
+        <scene sceneID="1031">
+            <objects>
+                <viewController title="Bullet Graph" id="1032" customClass="BulletGraphViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1029"/>
+                        <viewControllerLayoutGuide type="bottom" id="1030"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1033">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1877" misplaced="YES">
+                                <rect key="frame" x="8" y="72" width="359" height="119"/>
+                                <subviews>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1874" misplaced="YES">
+                                        <rect key="frame" x="257" y="82" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="OnValueChanged:" destination="1032" eventType="valueChanged" id="1923"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1869">
+                                        <rect key="frame" x="8" y="12.5" width="30" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1870">
+                                        <rect key="frame" x="8" y="49.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1871">
+                                        <rect key="frame" x="8" y="86.5" width="49.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1872" misplaced="YES">
+                                        <rect key="frame" x="257" y="8" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="OnValueChanged:" destination="1032" eventType="valueChanged" id="1930"/>
+                                        </connections>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1873" misplaced="YES">
+                                        <rect key="frame" x="257" y="45" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="OnValueChanged:" destination="1032" eventType="valueChanged" id="1922"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1873" firstAttribute="top" secondItem="1872" secondAttribute="bottom" constant="8" id="1880"/>
+                                    <constraint firstItem="1874" firstAttribute="top" secondItem="1873" secondAttribute="bottom" constant="8" id="1881"/>
+                                    <constraint firstItem="1872" firstAttribute="top" secondItem="1877" secondAttribute="top" constant="8" id="1882"/>
+                                    <constraint firstAttribute="bottom" secondItem="1874" secondAttribute="bottom" constant="8" id="1883"/>
+                                    <constraint firstItem="1873" firstAttribute="centerX" secondItem="1872" secondAttribute="centerX" id="1886"/>
+                                    <constraint firstItem="1874" firstAttribute="centerX" secondItem="1872" secondAttribute="centerX" id="1887"/>
+                                    <constraint firstItem="1869" firstAttribute="leading" secondItem="1870" secondAttribute="leading" id="1888"/>
+                                    <constraint firstItem="1869" firstAttribute="leading" secondItem="1871" secondAttribute="leading" id="1889"/>
+                                    <constraint firstItem="1869" firstAttribute="leading" secondItem="1877" secondAttribute="leading" constant="8" id="1890"/>
+                                    <constraint firstItem="1869" firstAttribute="centerY" secondItem="1872" secondAttribute="centerY" id="1891"/>
+                                    <constraint firstItem="1873" firstAttribute="centerY" secondItem="1870" secondAttribute="centerY" id="1892"/>
+                                    <constraint firstItem="1874" firstAttribute="centerY" secondItem="1871" secondAttribute="centerY" id="1893"/>
+                                    <constraint firstItem="1873" firstAttribute="trailing" secondItem="1872" secondAttribute="trailing" id="1894"/>
+                                    <constraint firstItem="1874" firstAttribute="trailing" secondItem="1872" secondAttribute="trailing" id="1895"/>
+                                    <constraint firstAttribute="trailing" secondItem="1872" secondAttribute="trailing" constant="8" id="1896"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1900" customClass="C1BulletGraph" misplaced="YES">
+                                <rect key="frame" x="8" y="199" width="359" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1904"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="Good">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="Bad">
+                                        <real key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="Target">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="IsEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="IsAnimated" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ShowRanges" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="Value">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1877" firstAttribute="top" secondItem="1029" secondAttribute="bottom" constant="8" id="1897"/>
+                            <constraint firstItem="1877" firstAttribute="leading" secondItem="1033" secondAttribute="leading" constant="8" id="1898"/>
+                            <constraint firstAttribute="trailing" secondItem="1877" secondAttribute="trailing" constant="8" id="1899"/>
+                            <constraint firstItem="1900" firstAttribute="top" secondItem="1877" secondAttribute="bottom" constant="8" id="1901"/>
+                            <constraint firstItem="1900" firstAttribute="leading" secondItem="1877" secondAttribute="leading" id="1902"/>
+                            <constraint firstItem="1877" firstAttribute="trailing" secondItem="1900" secondAttribute="trailing" id="1903"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BadLabel" destination="1869" id="name-outlet-1869"/>
+                        <outlet property="BadStepper" destination="1872" id="name-outlet-1872"/>
+                        <outlet property="BulletGraph" destination="1900" id="name-outlet-1900"/>
+                        <outlet property="GoodLabel" destination="1870" id="name-outlet-1870"/>
+                        <outlet property="GoodStepper" destination="1873" id="name-outlet-1873"/>
+                        <outlet property="TargetLabel" destination="1871" id="name-outlet-1871"/>
+                        <outlet property="TargetStepper" destination="1874" id="name-outlet-1874"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1034" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="451"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Images/gauge_basic.png" width="164" height="164"/>
+        <image name="Images/gauge_bullet.png" width="164" height="164"/>
+        <image name="Images/gauge_linear.png" width="164" height="164"/>
+        <image name="Images/gauge_radial.png" width="164" height="164"/>
+        <image name="Images/gauge_ranges.png" width="164" height="164"/>
+        <image name="Images/gauge_scaling.png" width="164" height="164"/>
+        <image name="Images/Default-Portrait.png" width="768" height="1024"/>
+        <image name="Images/Default.png" width="768" height="1004"/>
+        <image name="Icon-60.png" width="60" height="60"/>
+        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="Icon-Small-40.png" width="40" height="40"/>
+        <image name="Icon-Small.png" width="29" height="29"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">C1Gauge101</string>
+
+    <string name="automatic_scaling">Automatic Scaling</string>
+    <string name="bullet_graph">BulletGraph</string>
+    <string name="custom_animation">Animation</string>
+    <string name="direction">Direction</string>
+    <string name="displaying_values">Displaying Values</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="using_ranges">Using Ranges</string>
+    <string name="start_angle">Start Angle</string>
+    <string name="sweep_angle">Sweep Angle</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="bad">Bad</string>
+    <string name="good">Good</string>
+    <string name="target">Target</string>
+    <string name="show_text">Show text</string>
+    <string name="value">Value</string>
+    <string name="bulletgraph">BulletGraph</string>
+    <string name="radialgauge">RadialGauge</string>
+    <string name="lineargauge">LinearGauge</string>
+    <string name="show_ranges">Show ranges</string>
+    <string name="getting_started_desc">Shows simple gauge controls with interaction</string>
+    <string name="displaying_values_desc">Shows value labels on the gauges</string>
+    <string name="using_ranges_desc">Shows customized ranges</string>
+    <string name="automatic_scaling_desc">Shows a radial gauge with different sweep angles</string>
+    <string name="direction_desc">Shows linear gauges at different directions</string>
+    <string name="bulletgraph_desc">Shows a bullet graph with good, bad and target ranges</string>
+    <string name="custom_animation_desc">Shows custom animation techniques</string>
+
+    <string-array name="directionSpinnerValues">
+      <item>Right</item>
+      <item>Left</item>
+      <item>Down</item>
+      <item>Up</item>
+    </string-array>
+
+    <string-array name="showTextSpinnerValues">
+      <item>All</item>
+      <item>MinMax</item>
+      <item>Value</item>
+      <item>None</item>
+    </string-array>
+</resources>

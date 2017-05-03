@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">C1CollectionView101</string>
+  <string name="SortingTitle">Sorting</string>
+  <string name="SortingDescription">Sort a list of items from the action bar.</string>
+  <string name="FilteringTitle">Filtering</string>
+  <string name="FilteringDescription">Filters a list of items by typing in an EditText.</string>
+  <string name="GroupingTitle">Grouping</string>
+  <string name="GroupingDescription">Displays a grouped list of YouTube videos.</string>
+  <string name="SimpleOnDemandTitle">Simple On Demand</string>
+  <string name="SimpleOnDemandDescription">Shows on-demand loading with a RecyclerView</string>
+  <string name="OnDemandTitle">On Demand</string>
+  <string name="OnDemandDescription">Shows on-demand loading with YouTube API</string>
+  <string name="InternetConnectionError">There was a problem when trying to get the data from internet. Please check your internet connection.</string>
+  <string name="FilterPlaceholderText">Enter one or more words to filter</string>
+  <string name="SearchPlaceholderText">Enter text to search for videos on YouTube</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gridLayout1"
+    android:columnCount="2"
+    android:rowCount="4"
+    android:padding="8dip">
+    <TextView
+        android:text="@string/EditingFormFirstName"
+        android:id="@+id/textView1" />
+    <EditText
+        android:id="@+id/FirstName"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" />
+    <TextView
+        android:text="@string/EditingFormLastName"
+        android:id="@+id/textView2" />
+    <EditText
+        android:id="@+id/LastName"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" />
+    <TextView
+        android:text="@string/EditingFormLastOrder"
+        android:id="@+id/textView3" />
+    <EditText
+        android:id="@+id/LastOrder"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" />
+    <TextView
+        android:text="@string/EditingFormOrderTotal"
+        android:id="@+id/textVie4" />
+    <EditText
+        android:id="@+id/OrderTotal"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" />
+</GridLayout>

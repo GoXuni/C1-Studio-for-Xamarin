@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexGrid101.EditConfirmation"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
+    <c1:FlexGrid x:Name="grid" Grid.Row="1" AutoGenerateColumns="False" BeginningEdit="OnBeginningEdit" CellEditEnded="OnCellEditEnded">
+        <c1:FlexGrid.Columns>
+            <c1:GridColumn Binding="Id" IsReadOnly="true" Width="100"/>
+            <c1:GridColumn Binding="FirstName"/>
+            <c1:GridColumn Binding="LastName"/>
+            <c1:GridColumn Binding="Address"/>
+            <c1:GridColumn Binding="City"/>
+            <c1:GridColumn Binding="PostalCode"/>
+            <c1:GridColumn Binding="Active"/>
+        </c1:FlexGrid.Columns>
+    </c1:FlexGrid>
+</ContentPage>

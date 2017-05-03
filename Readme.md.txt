@@ -1,0 +1,1 @@
+These samples show how to use all features of C1 Xamarin Edition. Each Xamarin.Forms sample includes a portable project that contains the single C# code base that is shared among the iOS, Android and UWP projects.  The Android and iOS projects allow you to target Xamarin.Android and Xamarin.iOS respectively.

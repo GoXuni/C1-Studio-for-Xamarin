@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexGrid101.StarSizing"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
+  <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False" AllowResizing="None">
+    <c1:FlexGrid.Columns>
+      <c1:GridColumn Binding="FirstName" Width="*"/>
+      <c1:GridColumn Binding="LastName" Width="*"/>
+      <c1:GridColumn Binding="LastOrderDate" Width="*" Format="d"/>
+      <c1:GridColumn Binding="OrderTotal" Width="*" Format="N" HorizontalAlignment="End"/>
+    </c1:FlexGrid.Columns>
+  </c1:FlexGrid>
+</ContentPage>

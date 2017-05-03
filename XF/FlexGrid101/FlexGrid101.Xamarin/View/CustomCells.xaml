@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexGrid101.CustomCells"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
+             xmlns:gauge="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge">
+    <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False" IsReadOnly="True">
+        <c1:FlexGrid.Columns>
+            <c1:GridColumn Binding="FirstName" Width="*"/>
+            <c1:GridColumn Binding="LastName" Width="*"/>
+            <c1:GridColumn Binding="OrderTotal" Header="Order Total" Width="*">
+                <c1:GridColumn.CellTemplate>
+                    <DataTemplate>
+                        <gauge:C1BulletGraph IsAnimated="False" Value="{Binding OrderTotal}" Min="0" Max="10000" Bad="1000" Good="6000" Target="7000"/>
+                    </DataTemplate>
+                </c1:GridColumn.CellTemplate>
+            </c1:GridColumn>
+        </c1:FlexGrid.Columns>
+    </c1:FlexGrid>
+</ContentPage>

@@ -1,0 +1,24 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Gauge101.Android", "C1Gauge101.Android\C1Gauge101.Android.csproj", "{BCA42738-601D-434A-A13D-A89EA96AA0DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		GRAPECITY|Any CPU = GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCA42738-601D-434A-A13D-A89EA96AA0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA42738-601D-434A-A13D-A89EA96AA0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA42738-601D-434A-A13D-A89EA96AA0DB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BCA42738-601D-434A-A13D-A89EA96AA0DB}.GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA42738-601D-434A-A13D-A89EA96AA0DB}.GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{BCA42738-601D-434A-A13D-A89EA96AA0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA42738-601D-434A-A13D-A89EA96AA0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	EndGlobal

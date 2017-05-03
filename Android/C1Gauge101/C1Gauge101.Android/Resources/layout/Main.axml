@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="linear gauge" />
+    <c1.android.gauge.C1LinearGauge
+        android:id="@+id/lineargauge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bullet graph" />
+    <c1.android.gauge.C1BulletGraph
+        android:id="@+id/bulletgraph"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="radial gauge" />
+    <c1.android.gauge.C1RadialGauge
+        android:id="@+id/radialgauge"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+</LinearLayout>

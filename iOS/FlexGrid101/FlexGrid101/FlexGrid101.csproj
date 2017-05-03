@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{E8E4024D-C99A-402C-A885-2F873116F259}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FlexGrid101</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>FlexGrid101</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ColumnLayoutFormController.cs" />
+    <Compile Include="Controllers\ColumnLayoutFormController.designer.cs">
+      <DependentUpon>ColumnLayoutFormController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CellFreezingController.cs" />
+    <Compile Include="Controllers\CellFreezingController.designer.cs">
+      <DependentUpon>CellFreezingController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ColumnLayoutController.cs" />
+    <Compile Include="Controllers\ColumnLayoutController.designer.cs">
+      <DependentUpon>ColumnLayoutController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ConditionalFormattingController.cs" />
+    <Compile Include="Controllers\ConditionalFormattingController.designer.cs">
+      <DependentUpon>ConditionalFormattingController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ColumnDefinitionsController.cs" />
+    <Compile Include="Controllers\ColumnDefinitionsController.designer.cs">
+      <DependentUpon>ColumnDefinitionsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\GettingStartedController.cs" />
+    <Compile Include="Controllers\GettingStartedController.designer.cs">
+      <DependentUpon>GettingStartedController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomAppearanceController.cs" />
+    <Compile Include="Controllers\CustomAppearanceController.designer.cs">
+      <DependentUpon>CustomAppearanceController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomCellsController.cs" />
+    <Compile Include="Controllers\CustomCellsController.designer.cs">
+      <DependentUpon>CustomCellsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomMergingController.cs" />
+    <Compile Include="Controllers\CustomMergingController.designer.cs">
+      <DependentUpon>CustomMergingController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\GridDateTimeColumn.cs" />
+    <Compile Include="Controllers\GridImageColumn.cs" />
+    <Compile Include="Controllers\YouTubeCollectionView.cs" />
+    <Compile Include="Data\Customer.cs" />
+    <Compile Include="Controllers\GroupingController.cs" />
+    <Compile Include="Controllers\GroupingController.designer.cs">
+      <DependentUpon>GroupingController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EditConfirmationController.cs" />
+    <Compile Include="Controllers\EditConfirmationController.designer.cs">
+      <DependentUpon>EditConfirmationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EditingController.cs" />
+    <Compile Include="Controllers\EditingController.designer.cs">
+      <DependentUpon>EditingController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FilterController.cs" />
+    <Compile Include="Controllers\FilterController.designer.cs">
+      <DependentUpon>FilterController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FullTextFilterController.cs" />
+    <Compile Include="Controllers\FullTextFilterController.designer.cs">
+      <DependentUpon>FullTextFilterController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FilterFormController.cs" />
+    <Compile Include="Controllers\FilterFormController.designer.cs">
+      <DependentUpon>FilterFormController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EditingFormController.cs" />
+    <Compile Include="Controllers\EditingFormController.designer.cs">
+      <DependentUpon>EditingFormController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="License.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Controllers\SelectionModesController.cs" />
+    <Compile Include="Controllers\SelectionModesController.designer.cs">
+      <DependentUpon>SelectionModesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\OnDemandController.cs" />
+    <Compile Include="Controllers\OnDemandController.designer.cs">
+      <DependentUpon>OnDemandController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\RowDetailsController.cs" />
+    <Compile Include="Controllers\RowDetailsController.designer.cs">
+      <DependentUpon>RowDetailsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\StarSizingController.cs" />
+    <Compile Include="Controllers\StarSizingController.designer.cs">
+      <DependentUpon>StarSizingController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\UnboundController.cs" />
+    <Compile Include="Controllers\UnboundController.designer.cs">
+      <DependentUpon>UnboundController.cs</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard">
+      <SubType>Designer</SubType>
+    </InterfaceDefinition>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="C1.CollectionView, Version=2.3.20171.134, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.3.20171.134\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\C1.CollectionView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.iOS.Core, Version=2.3.20171.134, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.3.20171.134\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.iOS.Gauge, Version=2.3.20171.134, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Gauge.2.3.20171.134\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.iOS.Grid, Version=2.3.20171.134, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Grid.2.3.20171.134\lib\Xamarin.iOS10\C1.iOS.Grid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entitlements.plist" />
+    <BundleResource Include="Images\flexgrid.png" />
+    <BundleResource Include="Images\filter.png" />
+    <BundleResource Include="Images\flexgrid_columns.png" />
+    <BundleResource Include="Images\flexgrid_custom.png" />
+    <BundleResource Include="Images\flexgrid_filter.png" />
+    <BundleResource Include="Images\flexgrid_freezing.png" />
+    <BundleResource Include="Images\flexgrid_grouping.png" />
+    <BundleResource Include="Images\flexgrid_headers.png" />
+    <BundleResource Include="Images\flexgrid_loading.png" />
+    <BundleResource Include="Images\flexgrid_merging.png" />
+    <BundleResource Include="Images\flexgrid_rowdetails.png" />
+    <BundleResource Include="Images\flexgrid_selection.png" />
+    <BundleResource Include="Images\input_form.png" />
+    <BundleResource Include="Images\retro_TV_filled-50_light.png" />
+    <BundleResource Include="Images\default.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-40@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-568h@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Landscape.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Landscape@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Portrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Portrait@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
