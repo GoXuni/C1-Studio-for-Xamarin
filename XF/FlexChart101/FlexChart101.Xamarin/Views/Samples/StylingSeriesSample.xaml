@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.StylingSeriesSample">
+    <Grid>
+        <c1:FlexChart x:Name="flexChart" BindingX="Name" LegendPosition="Bottom" VerticalOptions="FillAndExpand">
+            <c1:FlexChart.Series>
+                <c1:ChartSeries Binding="Sales" SeriesName="Sales" >
+                    <c1:ChartSeries.Style>
+                        <c1:ChartStyle Fill="Green" Stroke="Lime" StrokeThickness="2" />
+                    </c1:ChartSeries.Style>
+                </c1:ChartSeries>
+                <c1:ChartSeries Binding="Expenses" SeriesName="Expenses" >
+                    <c1:ChartSeries.Style>
+                        <c1:ChartStyle Fill="Red" Stroke="Maroon" StrokeThickness="2" />
+                    </c1:ChartSeries.Style>
+                </c1:ChartSeries>
+                <c1:ChartSeries Binding="Downloads" SeriesName="Downloads" ChartType="LineSymbols" >
+                    <c1:ChartSeries.Style>
+                        <c1:ChartStyle Fill="#FF6A00" Stroke="#FF6A00" StrokeThickness="10" />
+                    </c1:ChartSeries.Style>
+                    <c1:ChartSeries.SymbolStyle>
+                        <c1:ChartStyle Fill="Yellow" Stroke="Yellow" StrokeThickness="5" />
+                    </c1:ChartSeries.SymbolStyle>
+                </c1:ChartSeries>
+            </c1:FlexChart.Series>
+        </c1:FlexChart>
+    </Grid>
+</ContentPage>

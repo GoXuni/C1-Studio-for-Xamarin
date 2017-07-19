@@ -4,29 +4,29 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:text="Step 1: Select a date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:layout_marginLeft="4dip"
-        android:layout_marginTop="4dip" />
-    <TextView
-        android:text="Step 2: Select another date in a different week"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_marginLeft="4dip" />
-    <TextView
-        android:text="Observe: The weekend days are not selected"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:layout_marginLeft="4dip"
-        android:layout_marginBottom="4dip" />
-    <c1.android.calendar.C1Calendar
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/Calendar"
-        calendar:c1_maxSelectionCount="-1" />
+  <TextView
+      android:text ="@string/customSelectionGuide_step1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView1"
+      android:layout_marginLeft="4dip"
+      android:layout_marginTop="4dip" />
+  <TextView
+      android:text ="@string/customSelectionGuide_step2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView2"
+      android:layout_marginLeft="4dip" />
+  <TextView
+      android:text ="@string/customSelectionGuide_observe"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView3"
+      android:layout_marginLeft="4dip"
+      android:layout_marginBottom="4dip" />
+  <c1.android.calendar.C1Calendar
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/Calendar"
+      calendar:c1_maxSelectionCount="-1" />
 </LinearLayout>

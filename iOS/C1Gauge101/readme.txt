@@ -1,4 +1,4 @@
-C1Gauge101 Samples for IOS
+C1Gauge101 for Xamarin.iOS
 -------------------------------------
 Shows samples of the Gauge control.
 

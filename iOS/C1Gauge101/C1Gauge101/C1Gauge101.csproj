@@ -89,13 +89,11 @@
     <MtouchTlsProvider>Default</MtouchTlsProvider>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.iOS.Core, Version=2.3.20171.134, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.3.20171.134\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="C1.iOS.Core, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Gauge, Version=2.3.20171.134, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Gauge.2.3.20171.134\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="C1.iOS.Gauge, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Gauge.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
@@ -106,16 +104,40 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Contents.json">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-167.png">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%402x.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60@3x.png">
       <InProject>false</InProject>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76.png">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76%402x.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-small@3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\LaunchImages.launchimage\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
   </ItemGroup>
@@ -133,11 +155,8 @@
     <BundleResource Include="Resources\ja.lproj\Localizable.strings" />
     <BundleResource Include="Resources\en.lproj\Main.strings" />
     <BundleResource Include="Resources\en.lproj\Localizable.strings" />
-    <BundleResource Include="Resources\Images\Default-Portrait.png" />
-    <BundleResource Include="Resources\Images\Default-Portrait%402x.png" />
-    <BundleResource Include="Resources\Images\Default.png" />
-    <BundleResource Include="Resources\Images\Default%402x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <BundleResource Include="Resources\Images\gauge_exportImage.png" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +192,10 @@
     <Compile Include="Controllers\AutoScaleViewController.designer.cs">
       <DependentUpon>AutoScaleViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\ExportImageViewController.cs" />
+    <Compile Include="Controllers\ExportImageViewController.designer.cs">
+      <DependentUpon>ExportImageViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Images\gauge_basic.png" />
@@ -181,27 +204,6 @@
     <BundleResource Include="Resources\Images\gauge_radial.png" />
     <BundleResource Include="Resources\Images\gauge_ranges.png" />
     <BundleResource Include="Resources\Images\gauge_scaling.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Icon-60%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Icon-76.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Icon-76%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Icon-Small.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Icon-Small%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Icon-Small-40.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

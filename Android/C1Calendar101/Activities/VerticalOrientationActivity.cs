@@ -7,7 +7,7 @@ using C1.Android.Calendar;
 
 namespace C1Calendar101
 {
-    [Activity(Label = "VerticalOrientation", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/vertical_orientation", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class VerticalOrientationActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

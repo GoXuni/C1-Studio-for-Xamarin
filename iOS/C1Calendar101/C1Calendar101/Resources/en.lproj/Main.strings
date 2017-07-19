@@ -1,0 +1,65 @@
+
+/* Class = "UINavigationItem"; title = "Calendar101"; ObjectID = "194"; */
+"194.title" = "C1Calendar101";
+
+/* Class = "UILabel"; text = "Step1: Select a date."; ObjectID = "1691"; */
+"1691.text" = "Step1: Select a date.";
+
+/* Class = "UILabel"; text = "Step 2: Select another date in a different week."; ObjectID = "1693"; */
+"1693.text" = "Step 2: Select another date in a different week.";
+
+/* Class = "UILabel"; text = "Observe: The weekend days are not selected."; ObjectID = "1692"; */
+"1692.text" = "Observe: The weekend days are not selected.";
+
+
+/* Class = "UINavigationItem"; title = "Getting Started"; ObjectID = "534"; */
+"534.title" = "Getting Started";
+
+/* Class = "UINavigationItem"; title = "Custom Appearance"; ObjectID = "426"; */
+"426.title" = "Custom Appearance";
+
+/* Class = "UINavigationItem"; title = "Vertical Orientation"; ObjectID = "762"; */
+"762.title" = "Vertical Orientation";
+
+/* Class = "UINavigationItem"; title = "Popup Editor"; ObjectID = "1425"; */
+"1425.title" = "Popup Editor";
+
+/* Class = "UINavigationItem"; title = "Custom Day Content"; ObjectID = "763"; */
+"763.title" = "Custom Day Content";
+
+/* Class = "UIButtonItem"; title = "Pick a date"; ObjectID = "1533"; */
+"1533.normalTitle" = "Pick a date";
+
+/* Class = "UINavigationItem"; title = "Custom Selection"; ObjectID = "1426"; */
+"1426.title" = "Custom Selection";
+
+/* Class = "UINavigationItem"; title = "Custom Header"; ObjectID = "1424"; */
+"1424.title" = "Custom Header";
+
+/* Class = "UIButtonItem"; title = "Today"; ObjectID = "1487"; */
+"1487.normalTitle" = "Today";
+
+/* UITableView Titles*/
+"434.text" = "Getting Started";
+"550.text" = "Vertical Orientation";
+"553.text" = "Custom Day Content";
+"556.text" = "Custom Header";
+"301.text" = "Custom Appearance";
+"559.text" = "Popup Editor";
+"561.text" = "Custom Selection";
+
+/* UITableView Descriptions*/
+//Getting Started
+"435.text" = "Shows a basic calendar with selection and interaction.";
+//Vertical Orientation
+"551.text" = "Shows a calendar with vertical navigation/scrolling.";
+//Custom Day Content
+"554.text" = "Shows how to customize a day slot to show custom content.";
+//Custom Header
+"557.text" = "Shows a custom header inspired by a popular Android or iOS calendar app.";
+//Custom Appearance
+"302.text" = "Custom Appearance";
+//Popup Editor
+"560.text" = "Shows a calendar with a custom style.";
+//Custom Selection
+"562.text" = "Shows custom selection scenarios.";

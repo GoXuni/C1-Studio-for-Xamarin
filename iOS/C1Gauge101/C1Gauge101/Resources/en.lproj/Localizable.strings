@@ -8,3 +8,6 @@
 "StartAngle" = "Start Angle";
 "SweepAngle" = "Sweep Angle";
 "AutoScale" = "Automatic Scaling";
+"ImageSavedDescription" = "The image has been saved to your device's picture album.";
+"ImageSavedTitle" = "Image Saved";
+"PermissionDenied" = "The permission is denied by user.";

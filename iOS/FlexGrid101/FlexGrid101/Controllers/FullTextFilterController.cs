@@ -16,6 +16,7 @@ namespace FlexGrid101
             var data = Customer.GetCustomerList(100);
             Grid.ItemsSource = data;
             var fullTextFilter = new FullTextFilterBehavior();
+            fullTextFilter.HighlightColor = UIColor.Blue;
             fullTextFilter.Attach(Grid);
             fullTextFilter.FilterEntry = Filter;
         }

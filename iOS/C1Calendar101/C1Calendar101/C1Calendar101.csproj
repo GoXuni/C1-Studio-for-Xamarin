@@ -36,8 +36,6 @@
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchFloat32>False</MtouchFloat32>
-    <IOSDebugOverWiFi>False</IOSDebugOverWiFi>
-    <IOSDebuggerPort>10000</IOSDebuggerPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -87,13 +85,11 @@
     <IOSDebuggerPort>10000</IOSDebuggerPort>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.iOS.Calendar, Version=2.3.20171.134, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Calendar.2.3.20171.134\lib\Xamarin.iOS10\C1.iOS.Calendar.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="C1.iOS.Calendar, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Calendar.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Calendar.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Core, Version=2.3.20171.134, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.3.20171.134\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="C1.iOS.Core, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
@@ -104,7 +100,22 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-167.png">
+      <InProject>false</InProject>
+    </ImageAsset>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60@3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-76.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-76@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-40.png">
       <InProject>false</InProject>
     </ImageAsset>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-40@2x.png">
@@ -116,16 +127,23 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small@2x.png">
       <InProject>false</InProject>
     </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-small@3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
-    <InterfaceDefinition Include="Main.storyboard">
+    <InterfaceDefinition Include="Base.lproj\Main.storyboard">
       <SubType>Designer</SubType>
     </InterfaceDefinition>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <BundleResource Include="Resources\en.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\en.lproj\Main.strings" />
+    <BundleResource Include="Resources\ja.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\ja.lproj\Main.strings" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

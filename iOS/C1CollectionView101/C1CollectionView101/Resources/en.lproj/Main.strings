@@ -1,0 +1,31 @@
+
+/* Class = "UINavigationItem"; title = "CollectionView101"; ObjectID = "200"; */
+"200.title" = "C1CollectionView101";
+
+//UITableView titles
+"214.text" = "Sorting";
+"217.text" = "Filtering";
+"220.text" = "Grouping";
+"223.text" = "Simple On Demand";
+"226.text" = "On Demand";
+
+
+//UITableView descriptions
+"215.text" = "Sort a list of items from the action bar";
+"218.text" = "Filters a list of items by typing in an Entry";
+"221.text" = "Displays a grouped list of YouTube videos";
+"224.text" = "Shows on-demand loading with a ListView";
+"227.text" = "Shows on-demand loading with YouTube API";
+
+//UINavigationItems Titles
+"384.title" = "Sorting";
+"6799.title" = "Filtering";
+"1175.title" = "Grouping";
+"1177.title" = "Simple On Demand";
+"1602.title" = "On Demand";
+
+//UITextField
+"1793.placeholder" = "Enter text to search for videos on YouTube";
+
+//UIBarButtonItem
+"1735.title" = "Sort";

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -56,8 +57,9 @@ namespace C1Gauge101.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                global::Xamarin.Forms.Forms.Init(e);
-                global::C1.Xamarin.Forms.Gauge.Platform.UWP.C1GaugeRenderer.Init();
+                var assembliesToInclude = new List<Assembly>();
+                assembliesToInclude.Add(typeof(C1.Xamarin.Forms.Gauge.Platform.UWP.C1GaugeRenderer).GetTypeInfo().Assembly);
+                Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

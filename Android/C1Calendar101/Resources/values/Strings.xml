@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">C1Calendar101</string>
+  <string name="ApplicationName">C1Calendar101</string>
+  <string name="getting_started">Getting Started</string>
+  <string name="getting_started_desc">Shows a basic calendar with selection and interaction.</string>
+  <string name="vertical_orientation">Vertical Orientation</string>
+  <string name="vertical_orientation_desc">Shows a calendar with vertical navigation/scrolling.</string>
+  <string name="custom_day_content">Custom Day Content</string>
+  <string name="custom_day_content_desc">Shows how to customize a day slot to show custom content.</string>
+  <string name="custom_header">Custom Header</string>
+  <string name="custom_header_desc">Shows a custom header inspired by a popular Android or iOS calendar app.</string>
+  <string name="custom_header_text">Custom Header Text</string>
+  <string name="custom_header_text_desc">Shows a custom header text by HeaderLoading event and HeaderMonthFormat property.</string>
+  <string name="custom_appearance">Custom Appearance</string>
+  <string name="custom_appearance_desc">Shows a calendar with a custom style.</string>
+  <string name="popup_editor">Popup Editor</string>
+  <string name="popup_editor_desc">Shows how to use the control as a pop-up date selector.</string>
+  <string name="custom_selection">Custom Selection</string>
+  <string name="custom_selection_desc">Shows custom selection scenarios.</string>
+  <string name="today">Today</string>
+  <string name="selectDate">Pick a date</string>
+  <string name="showSelectedDate" formatted="false">The date {0:d} was selected.</string>
+  <string name="customSelectionGuide_step1" >Step 1: Select a date</string>
+  <string name="customSelectionGuide_step2" >Step 2: Select another date in a different week</string>
+  <string name="customSelectionGuide_observe" >Observe: The weekend days are not selected</string>
+  <string-array name="viewModeSpinnerValues">
+
+    <item>Month View</item>
+
+    <item>Year View</item>
+
+    <item>Decade View</item>
+
+  </string-array>
 </resources>

@@ -1,4 +1,4 @@
-C1Gauge101 Samples for Android
+C1Gauge101 for Xamarin.Android
 -------------------------------------
 Shows samples of the Gauge control.
 

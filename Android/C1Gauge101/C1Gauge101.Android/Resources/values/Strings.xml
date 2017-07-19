@@ -4,7 +4,7 @@
 
     <string name="automatic_scaling">Automatic Scaling</string>
     <string name="bullet_graph">BulletGraph</string>
-    <string name="custom_animation">Animation</string>
+    <string name="snapshot">Export Image</string>
     <string name="direction">Direction</string>
     <string name="displaying_values">Displaying Values</string>
     <string name="getting_started">Getting Started</string>
@@ -25,11 +25,16 @@
     <string name="getting_started_desc">Shows simple gauge controls with interaction</string>
     <string name="displaying_values_desc">Shows value labels on the gauges</string>
     <string name="using_ranges_desc">Shows customized ranges</string>
-    <string name="automatic_scaling_desc">Shows a radial gauge with different sweep angles</string>
     <string name="direction_desc">Shows linear gauges at different directions</string>
+    <string name="automatic_scaling_desc">Shows a radial gauge with different sweep angles</string>
     <string name="bulletgraph_desc">Shows a bullet graph with good, bad and target ranges</string>
-    <string name="custom_animation_desc">Shows custom animation techniques</string>
-
+    <string name="snapshot_desc">Shows how to export an image of a gauge.</string>
+    <string name="snapshotStored">Snapshot stored to device</string>
+    <string name="permissionDenied">The permission is denied by user.</string>
+    <string name="positive_button">OK</string>
+  
+    <string name="actionSnapshot">Take Snapshot</string>
+  
     <string-array name="directionSpinnerValues">
       <item>Right</item>
       <item>Left</item>

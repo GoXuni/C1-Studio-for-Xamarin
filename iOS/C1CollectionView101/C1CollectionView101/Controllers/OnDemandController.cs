@@ -20,7 +20,9 @@ namespace C1CollectionView101
             SearchField.EditingChanged += OnSearchEditingChanged;
             SearchField.ShouldReturn = new UITextFieldCondition(tf => { tf.ResignFirstResponder(); return true; });
             _collectionView = new YouTubeCollectionView();
-            TableView.Source = new YouTubeCollectionViewSource(TableView, _collectionView, refreshControl, "There are no videos to show");
+            var source = new YouTubeTableViewSource(TableView, _collectionView, refreshControl);
+            source.EmptyMessage = Foundation.NSBundle.MainBundle.LocalizedString("EmptyText", ""); ;
+            TableView.Source = source;
         }
 
         private async void OnSearchEditingChanged(object sender, EventArgs e)

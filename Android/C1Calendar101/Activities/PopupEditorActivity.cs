@@ -8,12 +8,14 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using C1.Android.Calendar;
+using Android.Content.Res;
 
 namespace C1Calendar101
 {
-    [Activity(Label = "PopupEditor", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/popup_editor", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class PopupEditorActivity : Activity
     {
+
         private TextView _message;
         private Button _pickDateButton;
 
@@ -34,7 +36,8 @@ namespace C1Calendar101
             {
                 var fragment = new CalendarDialogFragment();
                 var date = await fragment.ShowAsync(FragmentManager);
-                _message.Text = string.Format("The date {0:d} was selected.", date);
+                string txt = Resources.GetText(Resource.String.showSelectedDate);
+                _message.Text = string.Format(txt, date);
             }
             catch (System.OperationCanceledException)
             {
@@ -103,7 +106,7 @@ namespace C1Calendar101
             var calendar = new C1Calendar(Context);
             calendar.SelectionChanged += OnSelectionChanged;
             SetContentView(calendar);
-            SetTitle("Pick a date");
+            SetTitle(Resource.String.selectDate);
         }
 
         private void OnSelectionChanged(object sender, CalendarSelectionChangedEventArgs e)

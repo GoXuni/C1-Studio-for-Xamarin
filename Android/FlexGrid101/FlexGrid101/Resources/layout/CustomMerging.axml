@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="288dip"
         android:id="@+id/Grid"
-        flexgrid:c1_gridSelectionMode="cell"
+        flexgrid:c1_gridSelectionMode="cellRange"
         flexgrid:c1_isReadOnly="true"
         flexgrid:c1_allowMerging="all" />
     <LinearLayout

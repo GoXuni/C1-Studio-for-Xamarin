@@ -1,12 +1,12 @@
 ﻿{
   "dependencies": {
-    "C1.Xamarin.Forms.Gauge": "2.3.20171.134",
-    "C1.Xamarin.Forms.Grid": "2.3.20171.134",
-    "Microsoft.ApplicationInsights": "2.2.0",
+    "C1.Xamarin.Forms.Gauge": "2.3.20172.170",
+    "C1.Xamarin.Forms.Grid": "2.3.20172.170",
+    "Microsoft.ApplicationInsights": "2.3.0",
     "Microsoft.ApplicationInsights.PersistenceChannel": "1.2.3",
     "Microsoft.ApplicationInsights.WindowsApps": "1.1.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-    "Xamarin.Forms": "2.3.3.193"
+    "Xamarin.Forms": "2.3.4.247"
   },
   "frameworks": {
     "uap10.0": {}

@@ -81,6 +81,7 @@ namespace FlexGrid101
 			global::C1.Android.Grid.Resource.Attribute.c1_gridLinesVisibility = global::FlexGrid101.Resource.Attribute.c1_gridLinesVisibility;
 			global::C1.Android.Grid.Resource.Attribute.c1_gridSelectionMode = global::FlexGrid101.Resource.Attribute.c1_gridSelectionMode;
 			global::C1.Android.Grid.Resource.Attribute.c1_headerGridLinesColor = global::FlexGrid101.Resource.Attribute.c1_headerGridLinesColor;
+			global::C1.Android.Grid.Resource.Attribute.c1_headersGridLinesVisibility = global::FlexGrid101.Resource.Attribute.c1_headersGridLinesVisibility;
 			global::C1.Android.Grid.Resource.Attribute.c1_headersVisibility = global::FlexGrid101.Resource.Attribute.c1_headersVisibility;
 			global::C1.Android.Grid.Resource.Attribute.c1_isReadOnly = global::FlexGrid101.Resource.Attribute.c1_isReadOnly;
 			global::C1.Android.Grid.Resource.Attribute.c1_rowBackgroundColor = global::FlexGrid101.Resource.Attribute.c1_rowBackgroundColor;
@@ -127,6 +128,7 @@ namespace FlexGrid101
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_alternatingRowBackgroundColor = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_alternatingRowBackgroundColor;
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_autoGenerateColumns = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_autoGenerateColumns;
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_autoSizeMode = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_autoSizeMode;
+			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_backgroundColor = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_backgroundColor;
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_borderColor = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_borderColor;
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_columnHeaderBackgroundColor = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_columnHeaderBackgroundColor;
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_columnHeaderSelectedBackgroundColor = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_columnHeaderSelectedBackgroundColor;
@@ -143,6 +145,7 @@ namespace FlexGrid101
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_gridLinesVisibility = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_gridLinesVisibility;
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_gridSelectionMode = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_gridSelectionMode;
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_headerGridLinesColor = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_headerGridLinesColor;
+			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_headersGridLinesVisibility = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_headersGridLinesVisibility;
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_headersVisibility = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_headersVisibility;
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_isReadOnly = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_isReadOnly;
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_rowBackgroundColor = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_rowBackgroundColor;
@@ -162,62 +165,78 @@ namespace FlexGrid101
 			global::C1.Android.Grid.Resource.Styleable.FlexGrid_c1_typeface = global::FlexGrid101.Resource.Styleable.FlexGrid_c1_typeface;
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f070000
+			public const int SlectionModeTable = 2131165184;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010007
-			public const int c1_allowMerging = 2130771975;
-			
-			// aapt resource value: 0x7f010011
-			public const int c1_alternatingRowBackgroundColor = 2130771985;
-			
-			// aapt resource value: 0x7f01000d
-			public const int c1_autoGenerateColumns = 2130771981;
-			
 			// aapt resource value: 0x7f010008
-			public const int c1_autoSizeMode = 2130771976;
-			
-			// aapt resource value: 0x7f010021
-			public const int c1_backgroundColor = 2130772001;
-			
-			// aapt resource value: 0x7f010027
-			public const int c1_borderColor = 2130772007;
-			
-			// aapt resource value: 0x7f01001d
-			public const int c1_columnHeaderBackgroundColor = 2130771997;
-			
-			// aapt resource value: 0x7f01001c
-			public const int c1_columnHeaderSelectedBackgroundColor = 2130771996;
-			
-			// aapt resource value: 0x7f01001e
-			public const int c1_columnHeaderTextColor = 2130771998;
+			public const int c1_allowMerging = 2130771976;
 			
 			// aapt resource value: 0x7f010012
-			public const int c1_cursorBackgroundColor = 2130771986;
+			public const int c1_alternatingRowBackgroundColor = 2130771986;
 			
-			// aapt resource value: 0x7f010013
-			public const int c1_cursorTextColor = 2130771987;
-			
-			// aapt resource value: 0x7f01000b
-			public const int c1_defaultRowHeight = 2130771979;
-			
-			// aapt resource value: 0x7f010014
-			public const int c1_editorBackgroundColor = 2130771988;
-			
-			// aapt resource value: 0x7f010015
-			public const int c1_editorTextColor = 2130771989;
-			
-			// aapt resource value: 0x7f010025
-			public const int c1_fontFamily = 2130772005;
-			
-			// aapt resource value: 0x7f01000a
-			public const int c1_frozenColumns = 2130771978;
+			// aapt resource value: 0x7f01000e
+			public const int c1_autoGenerateColumns = 2130771982;
 			
 			// aapt resource value: 0x7f010009
-			public const int c1_frozenRows = 2130771977;
+			public const int c1_autoSizeMode = 2130771977;
 			
-			// aapt resource value: 0x7f01001a
-			public const int c1_gridLinesColor = 2130771994;
+			// aapt resource value: 0x7f010022
+			public const int c1_backgroundColor = 2130772002;
+			
+			// aapt resource value: 0x7f010028
+			public const int c1_borderColor = 2130772008;
+			
+			// aapt resource value: 0x7f01001e
+			public const int c1_columnHeaderBackgroundColor = 2130771998;
+			
+			// aapt resource value: 0x7f01001d
+			public const int c1_columnHeaderSelectedBackgroundColor = 2130771997;
+			
+			// aapt resource value: 0x7f01001f
+			public const int c1_columnHeaderTextColor = 2130771999;
+			
+			// aapt resource value: 0x7f010013
+			public const int c1_cursorBackgroundColor = 2130771987;
+			
+			// aapt resource value: 0x7f010014
+			public const int c1_cursorTextColor = 2130771988;
+			
+			// aapt resource value: 0x7f01000c
+			public const int c1_defaultRowHeight = 2130771980;
+			
+			// aapt resource value: 0x7f010015
+			public const int c1_editorBackgroundColor = 2130771989;
+			
+			// aapt resource value: 0x7f010016
+			public const int c1_editorTextColor = 2130771990;
+			
+			// aapt resource value: 0x7f010026
+			public const int c1_fontFamily = 2130772006;
+			
+			// aapt resource value: 0x7f01000b
+			public const int c1_frozenColumns = 2130771979;
+			
+			// aapt resource value: 0x7f01000a
+			public const int c1_frozenRows = 2130771978;
+			
+			// aapt resource value: 0x7f01001b
+			public const int c1_gridLinesColor = 2130771995;
 			
 			// aapt resource value: 0x7f010006
 			public const int c1_gridLinesVisibility = 2130771974;
@@ -225,62 +244,65 @@ namespace FlexGrid101
 			// aapt resource value: 0x7f010004
 			public const int c1_gridSelectionMode = 2130771972;
 			
-			// aapt resource value: 0x7f01001b
-			public const int c1_headerGridLinesColor = 2130771995;
+			// aapt resource value: 0x7f01001c
+			public const int c1_headerGridLinesColor = 2130771996;
+			
+			// aapt resource value: 0x7f010007
+			public const int c1_headersGridLinesVisibility = 2130771975;
 			
 			// aapt resource value: 0x7f010005
 			public const int c1_headersVisibility = 2130771973;
 			
-			// aapt resource value: 0x7f01000c
-			public const int c1_isReadOnly = 2130771980;
+			// aapt resource value: 0x7f01000d
+			public const int c1_isReadOnly = 2130771981;
 			
-			// aapt resource value: 0x7f010010
-			public const int c1_rowBackgroundColor = 2130771984;
-			
-			// aapt resource value: 0x7f010017
-			public const int c1_rowHeaderBackgroundColor = 2130771991;
-			
-			// aapt resource value: 0x7f010019
-			public const int c1_rowHeaderSelectedBackgroundColor = 2130771993;
+			// aapt resource value: 0x7f010011
+			public const int c1_rowBackgroundColor = 2130771985;
 			
 			// aapt resource value: 0x7f010018
-			public const int c1_rowHeaderTextColor = 2130771992;
+			public const int c1_rowHeaderBackgroundColor = 2130771992;
 			
-			// aapt resource value: 0x7f01002a
-			public const int c1_selectedIndex = 2130772010;
+			// aapt resource value: 0x7f01001a
+			public const int c1_rowHeaderSelectedBackgroundColor = 2130771994;
+			
+			// aapt resource value: 0x7f010019
+			public const int c1_rowHeaderTextColor = 2130771993;
+			
+			// aapt resource value: 0x7f01002b
+			public const int c1_selectedIndex = 2130772011;
+			
+			// aapt resource value: 0x7f010021
+			public const int c1_selectionAdornerBorderColor = 2130772001;
 			
 			// aapt resource value: 0x7f010020
-			public const int c1_selectionAdornerBorderColor = 2130772000;
-			
-			// aapt resource value: 0x7f01001f
-			public const int c1_selectionAdornerColor = 2130771999;
-			
-			// aapt resource value: 0x7f010028
-			public const int c1_selectionBackgroundColor = 2130772008;
+			public const int c1_selectionAdornerColor = 2130772000;
 			
 			// aapt resource value: 0x7f010029
-			public const int c1_selectionTextColor = 2130772009;
+			public const int c1_selectionBackgroundColor = 2130772009;
+			
+			// aapt resource value: 0x7f01002a
+			public const int c1_selectionTextColor = 2130772010;
+			
+			// aapt resource value: 0x7f010010
+			public const int c1_showMarquee = 2130771984;
 			
 			// aapt resource value: 0x7f01000f
-			public const int c1_showMarquee = 2130771983;
-			
-			// aapt resource value: 0x7f01000e
-			public const int c1_showOutlineBar = 2130771982;
-			
-			// aapt resource value: 0x7f010022
-			public const int c1_textColor = 2130772002;
+			public const int c1_showOutlineBar = 2130771983;
 			
 			// aapt resource value: 0x7f010023
-			public const int c1_textSize = 2130772003;
+			public const int c1_textColor = 2130772003;
 			
 			// aapt resource value: 0x7f010024
-			public const int c1_textStyle = 2130772004;
+			public const int c1_textSize = 2130772004;
 			
-			// aapt resource value: 0x7f010016
-			public const int c1_topLeftCellBackgroundColor = 2130771990;
+			// aapt resource value: 0x7f010025
+			public const int c1_textStyle = 2130772005;
 			
-			// aapt resource value: 0x7f010026
-			public const int c1_typeface = 2130772006;
+			// aapt resource value: 0x7f010017
+			public const int c1_topLeftCellBackgroundColor = 2130771991;
+			
+			// aapt resource value: 0x7f010027
+			public const int c1_typeface = 2130772007;
 			
 			// aapt resource value: 0x7f010000
 			public const int layoutManager = 2130771968;
@@ -623,14 +645,14 @@ namespace FlexGrid101
 			// aapt resource value: 0x7f060001
 			public const int ApplicationName = 2131099649;
 			
-			// aapt resource value: 0x7f06002b
-			public const int CellFreezingDescription = 2131099691;
+			// aapt resource value: 0x7f06002e
+			public const int CellFreezingDescription = 2131099694;
 			
-			// aapt resource value: 0x7f06002a
-			public const int CellFreezingTitle = 2131099690;
+			// aapt resource value: 0x7f06002d
+			public const int CellFreezingTitle = 2131099693;
 			
-			// aapt resource value: 0x7f060036
-			public const int CellsSelectedText = 2131099702;
+			// aapt resource value: 0x7f060037
+			public const int CellsSelectedText = 2131099703;
 			
 			// aapt resource value: 0x7f060005
 			public const int ColumnDefinitionDescription = 2131099653;
@@ -638,92 +660,95 @@ namespace FlexGrid101
 			// aapt resource value: 0x7f060004
 			public const int ColumnDefinitionTitle = 2131099652;
 			
-			// aapt resource value: 0x7f060025
-			public const int ColumnLayoutDescription = 2131099685;
+			// aapt resource value: 0x7f060028
+			public const int ColumnLayoutDescription = 2131099688;
+			
+			// aapt resource value: 0x7f06002a
+			public const int ColumnLayoutEdit = 2131099690;
+			
+			// aapt resource value: 0x7f060029
+			public const int ColumnLayoutSave = 2131099689;
 			
 			// aapt resource value: 0x7f060027
-			public const int ColumnLayoutEdit = 2131099687;
-			
-			// aapt resource value: 0x7f060026
-			public const int ColumnLayoutSave = 2131099686;
-			
-			// aapt resource value: 0x7f060024
-			public const int ColumnLayoutTitle = 2131099684;
-			
-			// aapt resource value: 0x7f060014
-			public const int ConditionalFormattingDescription = 2131099668;
-			
-			// aapt resource value: 0x7f060013
-			public const int ConditionalFormattingTitle = 2131099667;
-			
-			// aapt resource value: 0x7f060033
-			public const int CustomAppearanceDescription = 2131099699;
-			
-			// aapt resource value: 0x7f060032
-			public const int CustomAppearanceTitle = 2131099698;
+			public const int ColumnLayoutTitle = 2131099687;
 			
 			// aapt resource value: 0x7f060016
-			public const int CustomCellsDescription = 2131099670;
+			public const int ConditionalFormattingDescription = 2131099670;
 			
 			// aapt resource value: 0x7f060015
-			public const int CustomCellsTitle = 2131099669;
+			public const int ConditionalFormattingTitle = 2131099669;
 			
-			// aapt resource value: 0x7f06002d
-			public const int CustomMergingDescription = 2131099693;
+			// aapt resource value: 0x7f060007
+			public const int CustomAppearanceDescription = 2131099655;
 			
-			// aapt resource value: 0x7f06002c
-			public const int CustomMergingTitle = 2131099692;
+			// aapt resource value: 0x7f060006
+			public const int CustomAppearanceTitle = 2131099654;
 			
-			// aapt resource value: 0x7f060009
-			public const int EditConfirmationDescription = 2131099657;
+			// aapt resource value: 0x7f060018
+			public const int CustomCellsDescription = 2131099672;
 			
-			// aapt resource value: 0x7f06000a
-			public const int EditConfirmationQuestion = 2131099658;
+			// aapt resource value: 0x7f060017
+			public const int CustomCellsTitle = 2131099671;
+			
+			// aapt resource value: 0x7f060030
+			public const int CustomMergingDescription = 2131099696;
+			
+			// aapt resource value: 0x7f06002f
+			public const int CustomMergingTitle = 2131099695;
 			
 			// aapt resource value: 0x7f06000b
-			public const int EditConfirmationQuestionTitle = 2131099659;
-			
-			// aapt resource value: 0x7f060008
-			public const int EditConfirmationTitle = 2131099656;
-			
-			// aapt resource value: 0x7f06000d
-			public const int EditingDescription = 2131099661;
-			
-			// aapt resource value: 0x7f06000f
-			public const int EditingFormFirstName = 2131099663;
-			
-			// aapt resource value: 0x7f060010
-			public const int EditingFormLastName = 2131099664;
-			
-			// aapt resource value: 0x7f060011
-			public const int EditingFormLastOrder = 2131099665;
-			
-			// aapt resource value: 0x7f060012
-			public const int EditingFormOrderTotal = 2131099666;
-			
-			// aapt resource value: 0x7f06000e
-			public const int EditingSelectRowMessage = 2131099662;
+			public const int EditConfirmationDescription = 2131099659;
 			
 			// aapt resource value: 0x7f06000c
-			public const int EditingTitle = 2131099660;
+			public const int EditConfirmationQuestion = 2131099660;
 			
-			// aapt resource value: 0x7f060035
-			public const int EmptyListText = 2131099701;
+			// aapt resource value: 0x7f06000d
+			public const int EditConfirmationQuestionTitle = 2131099661;
 			
-			// aapt resource value: 0x7f060020
-			public const int FilterDescription = 2131099680;
+			// aapt resource value: 0x7f06000a
+			public const int EditConfirmationTitle = 2131099658;
 			
-			// aapt resource value: 0x7f060021
-			public const int FilterPlaceholderText = 2131099681;
+			// aapt resource value: 0x7f06000f
+			public const int EditingDescription = 2131099663;
 			
-			// aapt resource value: 0x7f06001f
-			public const int FilterTitle = 2131099679;
+			// aapt resource value: 0x7f060011
+			public const int EditingFormFirstName = 2131099665;
+			
+			// aapt resource value: 0x7f060012
+			public const int EditingFormLastName = 2131099666;
+			
+			// aapt resource value: 0x7f060013
+			public const int EditingFormLastOrder = 2131099667;
+			
+			// aapt resource value: 0x7f060014
+			public const int EditingFormOrderTotal = 2131099668;
+			
+			// aapt resource value: 0x7f060010
+			public const int EditingSelectRowMessage = 2131099664;
+			
+			// aapt resource value: 0x7f06000e
+			public const int EditingTitle = 2131099662;
+			
+			// aapt resource value: 0x7f060036
+			public const int EmptyListText = 2131099702;
 			
 			// aapt resource value: 0x7f060023
-			public const int FullTextFilterDescription = 2131099683;
+			public const int FilterDescription = 2131099683;
+			
+			// aapt resource value: 0x7f060024
+			public const int FilterPlaceholderText = 2131099684;
 			
 			// aapt resource value: 0x7f060022
-			public const int FullTextFilterTitle = 2131099682;
+			public const int FilterTitle = 2131099682;
+			
+			// aapt resource value: 0x7f06003d
+			public const int Friday = 2131099709;
+			
+			// aapt resource value: 0x7f060026
+			public const int FullTextFilterDescription = 2131099686;
+			
+			// aapt resource value: 0x7f060025
+			public const int FullTextFilterTitle = 2131099685;
 			
 			// aapt resource value: 0x7f060003
 			public const int GettingStartedDescription = 2131099651;
@@ -731,62 +756,89 @@ namespace FlexGrid101
 			// aapt resource value: 0x7f060002
 			public const int GettingStartedTitle = 2131099650;
 			
-			// aapt resource value: 0x7f060018
-			public const int GroupingDescription = 2131099672;
+			// aapt resource value: 0x7f06001b
+			public const int GroupHeaderFormat = 2131099675;
 			
-			// aapt resource value: 0x7f060017
-			public const int GroupingTitle = 2131099671;
+			// aapt resource value: 0x7f06001a
+			public const int GroupingDescription = 2131099674;
+			
+			// aapt resource value: 0x7f060019
+			public const int GroupingTitle = 2131099673;
 			
 			// aapt resource value: 0x7f060000
 			public const int Hello = 2131099648;
 			
-			// aapt resource value: 0x7f060031
-			public const int OnDemandDescription = 2131099697;
-			
-			// aapt resource value: 0x7f060030
-			public const int OnDemandTitle = 2131099696;
-			
-			// aapt resource value: 0x7f060037
-			public const int RemoveFilter = 2131099703;
-			
-			// aapt resource value: 0x7f06001d
-			public const int RowDetailsAddress = 2131099677;
-			
-			// aapt resource value: 0x7f06001c
-			public const int RowDetailsCity = 2131099676;
-			
-			// aapt resource value: 0x7f06001b
-			public const int RowDetailsCountry = 2131099675;
-			
-			// aapt resource value: 0x7f06001a
-			public const int RowDetailsDescription = 2131099674;
-			
-			// aapt resource value: 0x7f06001e
-			public const int RowDetailsPostalCode = 2131099678;
-			
-			// aapt resource value: 0x7f060019
-			public const int RowDetailsTitle = 2131099673;
+			// aapt resource value: 0x7f060039
+			public const int Monday = 2131099705;
 			
 			// aapt resource value: 0x7f060034
-			public const int SearchPlaceholderText = 2131099700;
+			public const int OnDemandDescription = 2131099700;
 			
-			// aapt resource value: 0x7f060007
-			public const int SelectionModesDescription = 2131099655;
+			// aapt resource value: 0x7f060033
+			public const int OnDemandTitle = 2131099699;
 			
-			// aapt resource value: 0x7f060006
-			public const int SelectionModesTitle = 2131099654;
+			// aapt resource value: 0x7f060038
+			public const int RemoveFilter = 2131099704;
 			
-			// aapt resource value: 0x7f060029
-			public const int StarSizingDescription = 2131099689;
+			// aapt resource value: 0x7f060020
+			public const int RowDetailsAddress = 2131099680;
 			
-			// aapt resource value: 0x7f060028
-			public const int StarSizingTitle = 2131099688;
+			// aapt resource value: 0x7f06001f
+			public const int RowDetailsCity = 2131099679;
 			
-			// aapt resource value: 0x7f06002f
-			public const int UnboundDescription = 2131099695;
+			// aapt resource value: 0x7f06001e
+			public const int RowDetailsCountry = 2131099678;
 			
-			// aapt resource value: 0x7f06002e
-			public const int UnboundTitle = 2131099694;
+			// aapt resource value: 0x7f06001d
+			public const int RowDetailsDescription = 2131099677;
+			
+			// aapt resource value: 0x7f060021
+			public const int RowDetailsPostalCode = 2131099681;
+			
+			// aapt resource value: 0x7f06001c
+			public const int RowDetailsTitle = 2131099676;
+			
+			// aapt resource value: 0x7f06003e
+			public const int Saturday = 2131099710;
+			
+			// aapt resource value: 0x7f060035
+			public const int SearchPlaceholderText = 2131099701;
+			
+			// aapt resource value: 0x7f060009
+			public const int SelectionModesDescription = 2131099657;
+			
+			// aapt resource value: 0x7f060008
+			public const int SelectionModesTitle = 2131099656;
+			
+			// aapt resource value: 0x7f06002c
+			public const int StarSizingDescription = 2131099692;
+			
+			// aapt resource value: 0x7f06002b
+			public const int StarSizingTitle = 2131099691;
+			
+			// aapt resource value: 0x7f06003f
+			public const int Sunday = 2131099711;
+			
+			// aapt resource value: 0x7f06003c
+			public const int Thursday = 2131099708;
+			
+			// aapt resource value: 0x7f06003a
+			public const int Tuesday = 2131099706;
+			
+			// aapt resource value: 0x7f060032
+			public const int UnboundDescription = 2131099698;
+			
+			// aapt resource value: 0x7f060031
+			public const int UnboundTitle = 2131099697;
+			
+			// aapt resource value: 0x7f06003b
+			public const int Wednesday = 2131099707;
+			
+			// aapt resource value: 0x7f060040
+			public const int Weekday = 2131099712;
+			
+			// aapt resource value: 0x7f060041
+			public const int Weekend = 2131099713;
 			
 			static String()
 			{
@@ -802,7 +854,7 @@ namespace FlexGrid101
 		{
 			
 			public static int[] C1Gauge = new int[] {
-					2130772001};
+					2130772002};
 			
 			// aapt resource value: 0
 			public const int C1Gauge_c1_backgroundColor = 0;
@@ -837,6 +889,7 @@ namespace FlexGrid101
 					2130771998,
 					2130771999,
 					2130772000,
+					2130772001,
 					2130772002,
 					2130772003,
 					2130772004,
@@ -844,58 +897,62 @@ namespace FlexGrid101
 					2130772006,
 					2130772007,
 					2130772008,
-					2130772009};
-			
-			// aapt resource value: 3
-			public const int FlexGrid_c1_allowMerging = 3;
-			
-			// aapt resource value: 13
-			public const int FlexGrid_c1_alternatingRowBackgroundColor = 13;
-			
-			// aapt resource value: 9
-			public const int FlexGrid_c1_autoGenerateColumns = 9;
+					2130772009,
+					2130772010};
 			
 			// aapt resource value: 4
-			public const int FlexGrid_c1_autoSizeMode = 4;
-			
-			// aapt resource value: 34
-			public const int FlexGrid_c1_borderColor = 34;
-			
-			// aapt resource value: 25
-			public const int FlexGrid_c1_columnHeaderBackgroundColor = 25;
-			
-			// aapt resource value: 24
-			public const int FlexGrid_c1_columnHeaderSelectedBackgroundColor = 24;
-			
-			// aapt resource value: 26
-			public const int FlexGrid_c1_columnHeaderTextColor = 26;
+			public const int FlexGrid_c1_allowMerging = 4;
 			
 			// aapt resource value: 14
-			public const int FlexGrid_c1_cursorBackgroundColor = 14;
+			public const int FlexGrid_c1_alternatingRowBackgroundColor = 14;
 			
-			// aapt resource value: 15
-			public const int FlexGrid_c1_cursorTextColor = 15;
-			
-			// aapt resource value: 7
-			public const int FlexGrid_c1_defaultRowHeight = 7;
-			
-			// aapt resource value: 16
-			public const int FlexGrid_c1_editorBackgroundColor = 16;
-			
-			// aapt resource value: 17
-			public const int FlexGrid_c1_editorTextColor = 17;
-			
-			// aapt resource value: 32
-			public const int FlexGrid_c1_fontFamily = 32;
-			
-			// aapt resource value: 6
-			public const int FlexGrid_c1_frozenColumns = 6;
+			// aapt resource value: 10
+			public const int FlexGrid_c1_autoGenerateColumns = 10;
 			
 			// aapt resource value: 5
-			public const int FlexGrid_c1_frozenRows = 5;
+			public const int FlexGrid_c1_autoSizeMode = 5;
 			
-			// aapt resource value: 22
-			public const int FlexGrid_c1_gridLinesColor = 22;
+			// aapt resource value: 30
+			public const int FlexGrid_c1_backgroundColor = 30;
+			
+			// aapt resource value: 36
+			public const int FlexGrid_c1_borderColor = 36;
+			
+			// aapt resource value: 26
+			public const int FlexGrid_c1_columnHeaderBackgroundColor = 26;
+			
+			// aapt resource value: 25
+			public const int FlexGrid_c1_columnHeaderSelectedBackgroundColor = 25;
+			
+			// aapt resource value: 27
+			public const int FlexGrid_c1_columnHeaderTextColor = 27;
+			
+			// aapt resource value: 15
+			public const int FlexGrid_c1_cursorBackgroundColor = 15;
+			
+			// aapt resource value: 16
+			public const int FlexGrid_c1_cursorTextColor = 16;
+			
+			// aapt resource value: 8
+			public const int FlexGrid_c1_defaultRowHeight = 8;
+			
+			// aapt resource value: 17
+			public const int FlexGrid_c1_editorBackgroundColor = 17;
+			
+			// aapt resource value: 18
+			public const int FlexGrid_c1_editorTextColor = 18;
+			
+			// aapt resource value: 34
+			public const int FlexGrid_c1_fontFamily = 34;
+			
+			// aapt resource value: 7
+			public const int FlexGrid_c1_frozenColumns = 7;
+			
+			// aapt resource value: 6
+			public const int FlexGrid_c1_frozenRows = 6;
+			
+			// aapt resource value: 23
+			public const int FlexGrid_c1_gridLinesColor = 23;
 			
 			// aapt resource value: 2
 			public const int FlexGrid_c1_gridLinesVisibility = 2;
@@ -903,59 +960,62 @@ namespace FlexGrid101
 			// aapt resource value: 0
 			public const int FlexGrid_c1_gridSelectionMode = 0;
 			
-			// aapt resource value: 23
-			public const int FlexGrid_c1_headerGridLinesColor = 23;
+			// aapt resource value: 24
+			public const int FlexGrid_c1_headerGridLinesColor = 24;
+			
+			// aapt resource value: 3
+			public const int FlexGrid_c1_headersGridLinesVisibility = 3;
 			
 			// aapt resource value: 1
 			public const int FlexGrid_c1_headersVisibility = 1;
 			
-			// aapt resource value: 8
-			public const int FlexGrid_c1_isReadOnly = 8;
+			// aapt resource value: 9
+			public const int FlexGrid_c1_isReadOnly = 9;
 			
-			// aapt resource value: 12
-			public const int FlexGrid_c1_rowBackgroundColor = 12;
-			
-			// aapt resource value: 19
-			public const int FlexGrid_c1_rowHeaderBackgroundColor = 19;
-			
-			// aapt resource value: 21
-			public const int FlexGrid_c1_rowHeaderSelectedBackgroundColor = 21;
+			// aapt resource value: 13
+			public const int FlexGrid_c1_rowBackgroundColor = 13;
 			
 			// aapt resource value: 20
-			public const int FlexGrid_c1_rowHeaderTextColor = 20;
+			public const int FlexGrid_c1_rowHeaderBackgroundColor = 20;
 			
-			// aapt resource value: 28
-			public const int FlexGrid_c1_selectionAdornerBorderColor = 28;
+			// aapt resource value: 22
+			public const int FlexGrid_c1_rowHeaderSelectedBackgroundColor = 22;
 			
-			// aapt resource value: 27
-			public const int FlexGrid_c1_selectionAdornerColor = 27;
-			
-			// aapt resource value: 35
-			public const int FlexGrid_c1_selectionBackgroundColor = 35;
-			
-			// aapt resource value: 36
-			public const int FlexGrid_c1_selectionTextColor = 36;
-			
-			// aapt resource value: 11
-			public const int FlexGrid_c1_showMarquee = 11;
-			
-			// aapt resource value: 10
-			public const int FlexGrid_c1_showOutlineBar = 10;
+			// aapt resource value: 21
+			public const int FlexGrid_c1_rowHeaderTextColor = 21;
 			
 			// aapt resource value: 29
-			public const int FlexGrid_c1_textColor = 29;
+			public const int FlexGrid_c1_selectionAdornerBorderColor = 29;
 			
-			// aapt resource value: 30
-			public const int FlexGrid_c1_textSize = 30;
+			// aapt resource value: 28
+			public const int FlexGrid_c1_selectionAdornerColor = 28;
+			
+			// aapt resource value: 37
+			public const int FlexGrid_c1_selectionBackgroundColor = 37;
+			
+			// aapt resource value: 38
+			public const int FlexGrid_c1_selectionTextColor = 38;
+			
+			// aapt resource value: 12
+			public const int FlexGrid_c1_showMarquee = 12;
+			
+			// aapt resource value: 11
+			public const int FlexGrid_c1_showOutlineBar = 11;
 			
 			// aapt resource value: 31
-			public const int FlexGrid_c1_textStyle = 31;
+			public const int FlexGrid_c1_textColor = 31;
 			
-			// aapt resource value: 18
-			public const int FlexGrid_c1_topLeftCellBackgroundColor = 18;
+			// aapt resource value: 32
+			public const int FlexGrid_c1_textSize = 32;
 			
 			// aapt resource value: 33
-			public const int FlexGrid_c1_typeface = 33;
+			public const int FlexGrid_c1_textStyle = 33;
+			
+			// aapt resource value: 19
+			public const int FlexGrid_c1_topLeftCellBackgroundColor = 19;
+			
+			// aapt resource value: 35
+			public const int FlexGrid_c1_typeface = 35;
 			
 			public static int[] RecyclerView = new int[] {
 					16842948,

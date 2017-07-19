@@ -1,11 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="15">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="15">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Gauge101-->
+        <!--C1Gauge101-->
         <scene sceneID="5">
             <objects>
                 <tableViewController id="6" sceneMemberID="viewController">
@@ -20,25 +21,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="22" id="23">
-                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <frame key="frameInset" width="562" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Getting Started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="34">
-                                                    <rect key="frame" x="79" y="5" width="118" height="20.5"/>
+                                                    <frame key="frameInset" minX="79" minY="5" width="118" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" customColorSpace="sRGB" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows simple gauge controls with interaction." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="35">
-                                                    <rect key="frame" x="79" y="25.5" width="260" height="14.5"/>
+                                                    <frame key="frameInset" minX="79" minY="25.5" width="260" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_basic.png" id="36">
-                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <frame key="frameInset" minX="20" width="44" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -51,25 +52,25 @@
                                         <rect key="frame" x="0.0" y="44" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="24" id="25">
-                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <frame key="frameInset" width="562" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Displaying Values" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="37">
-                                                    <rect key="frame" x="79" y="5" width="134" height="20.5"/>
+                                                    <frame key="frameInset" minX="79" minY="5" width="134" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows value labels on the gauges." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="38">
-                                                    <rect key="frame" x="79" y="25.5" width="194.5" height="14.5"/>
+                                                    <frame key="frameInset" minX="79" minY="25.5" width="194.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_radial.png" id="39">
-                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <frame key="frameInset" minX="20" width="44" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -82,25 +83,25 @@
                                         <rect key="frame" x="0.0" y="88" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="26" id="27">
-                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <frame key="frameInset" width="562" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Using Ranges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="40">
-                                                    <rect key="frame" x="79" y="5" width="106" height="20.5"/>
+                                                    <frame key="frameInset" minX="79" minY="5" width="106" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows customized ranges behind the pointer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="41">
-                                                    <rect key="frame" x="79" y="25.5" width="258" height="14.5"/>
+                                                    <frame key="frameInset" minX="79" minY="25.5" width="258" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_ranges.png" id="42">
-                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <frame key="frameInset" minX="20" width="44" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -113,25 +114,25 @@
                                         <rect key="frame" x="0.0" y="132" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="28" id="29">
-                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <frame key="frameInset" width="562" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Automatic Scaling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43">
-                                                    <rect key="frame" x="79" y="5" width="138" height="20.5"/>
+                                                    <frame key="frameInset" minX="79" minY="5" width="138" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows a radial gauge with different sweep angles." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="44">
-                                                    <rect key="frame" x="79" y="25.5" width="282.5" height="14.5"/>
+                                                    <frame key="frameInset" minX="79" minY="25.5" width="282.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_scaling.png" id="45">
-                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <frame key="frameInset" minX="20" width="44" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -144,25 +145,25 @@
                                         <rect key="frame" x="0.0" y="176" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="30" id="31">
-                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <frame key="frameInset" width="562" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Direction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="46">
-                                                    <rect key="frame" x="79" y="5" width="69" height="20.5"/>
+                                                    <frame key="frameInset" minX="79" minY="5" width="69" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows linear gauges at different directions." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="47">
-                                                    <rect key="frame" x="79" y="25.5" width="245.5" height="14.5"/>
+                                                    <frame key="frameInset" minX="79" minY="25.5" width="245.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_linear.png" id="48">
-                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <frame key="frameInset" minX="20" width="44" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -175,31 +176,62 @@
                                         <rect key="frame" x="0.0" y="220" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="32" id="33">
-                                            <rect key="frame" x="0.0" y="0.0" width="562" height="43.5"/>
+                                            <frame key="frameInset" width="562" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Bullet Graph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="51">
-                                                    <rect key="frame" x="79" y="5" width="95" height="20.5"/>
+                                                    <frame key="frameInset" minX="79" minY="5" width="95" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows a bulletgraph with good, bad and target ranges." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="52">
-                                                    <rect key="frame" x="79" y="25.5" width="310" height="14.5"/>
+                                                    <frame key="frameInset" minX="79" minY="25.5" width="310" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_bullet.png" id="53">
-                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <frame key="frameInset" minX="20" width="44" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="1032" kind="show" id="1460"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="wrl-UH-wDb" detailTextLabel="55Q-gA-Efk" imageView="hnI-Iz-Ayt" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="ncp-VJ-smn">
+                                        <rect key="frame" x="0.0" y="264" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ncp-VJ-smn" id="7yK-QT-idE">
+                                            <frame key="frameInset" width="562" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Export Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wrl-UH-wDb">
+                                                    <frame key="frameInset" minX="79" minY="5" width="102" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shows how to export an image of a gauge." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="55Q-gA-Efk">
+                                                    <frame key="frameInset" minX="79" minY="25.5" width="240" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/gauge_exportImage.png" id="hnI-Iz-Ayt">
+                                                    <frame key="frameInset" minX="20" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WXO-bP-BfJ" kind="show" id="p2C-wF-Q62"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -230,7 +262,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-277" y="58"/>
+            <point key="canvasLocation" x="-524" y="57"/>
         </scene>
         <!--Getting Started-->
         <scene sceneID="60">
@@ -245,10 +277,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="317">
-                                <rect key="frame" x="20" y="64" width="240" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="335">
-                                        <rect key="frame" x="20" y="54" width="42" height="21"/>
+                                        <frame key="frameInset" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -288,16 +319,14 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="449" misplaced="YES">
-                                <rect key="frame" x="8" y="72" width="359" height="45"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="449">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="458">
-                                        <rect key="frame" x="8" y="12.5" width="42" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="458">
+                                        <frame key="frameInset" minX="8" minY="-72" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="464" misplaced="YES">
-                                        <rect key="frame" x="257" y="8" width="94" height="29"/>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="464">
                                         <connections>
                                             <action selector="OnValueChanged:" destination="61" eventType="valueChanged" id="1491"/>
                                         </connections>
@@ -312,17 +341,14 @@
                                     <constraint firstItem="458" firstAttribute="leading" secondItem="449" secondAttribute="leading" constant="8" id="471"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="472" misplaced="YES">
-                                <rect key="frame" x="8" y="125" width="359" height="534"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="472">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linear Gauge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="479">
-                                        <rect key="frame" x="8" y="8" width="102" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="496" customClass="C1LinearGauge" misplaced="YES">
-                                        <rect key="frame" x="8" y="36.5" width="343" height="100"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="496" customClass="C1LinearGauge">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="503"/>
@@ -345,14 +371,13 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bullet Graph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="514">
-                                        <rect key="frame" x="8" y="144.5" width="95" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bullet Graph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="514">
+                                        <frame key="frameInset" minX="8" minY="-592" width="95" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="523" customClass="C1BulletGraph" misplaced="YES">
-                                        <rect key="frame" x="8" y="173" width="343" height="100"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="523" customClass="C1BulletGraph">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="527"/>
@@ -375,14 +400,13 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radial Gauge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="530">
-                                        <rect key="frame" x="8" y="281" width="101" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Radial Gauge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="530">
+                                        <frame key="frameInset" minX="8" minY="-592" width="101" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="535" customClass="C1RadialGauge" misplaced="YES">
-                                        <rect key="frame" x="8" y="309.5" width="343" height="216.5"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="535" customClass="C1RadialGauge">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="FaceColor">
@@ -423,7 +447,7 @@
                                     <constraint firstItem="535" firstAttribute="top" secondItem="530" secondAttribute="bottom" constant="8" id="536"/>
                                     <constraint firstItem="535" firstAttribute="leading" secondItem="472" secondAttribute="leading" constant="8" id="540"/>
                                     <constraint firstAttribute="trailing" secondItem="535" secondAttribute="trailing" constant="8" id="541"/>
-                                    <constraint firstAttribute="bottom" secondItem="535" secondAttribute="bottom" constant="8" id="543"/>
+                                    <constraint firstAttribute="bottom" secondItem="535" secondAttribute="bottom" constant="7" id="ea5-EA-74l"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -442,7 +466,7 @@
                             <constraint firstItem="472" firstAttribute="leading" secondItem="449" secondAttribute="leading" id="476"/>
                             <constraint firstItem="449" firstAttribute="trailing" secondItem="472" secondAttribute="trailing" id="477"/>
                             <constraint firstItem="472" firstAttribute="top" secondItem="449" secondAttribute="bottom" constant="8" id="510"/>
-                            <constraint firstItem="59" firstAttribute="bottom" secondItem="472" secondAttribute="bottom" constant="8" id="511"/>
+                            <constraint firstItem="59" firstAttribute="top" secondItem="472" secondAttribute="bottom" constant="8" symbolic="YES" id="eNv-NY-acd"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -489,17 +513,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1504" misplaced="YES">
-                                <rect key="frame" x="8" y="72" width="359" height="46"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1504">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1505">
-                                        <rect key="frame" x="8" y="13" width="79.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Show Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1505">
+                                        <frame key="frameInset" minX="8" minY="-72" width="79.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2020" customClass="C1TextField" misplaced="YES">
-                                        <rect key="frame" x="95.5" y="8" width="255.5" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2020" customClass="C1TextField">
+                                        <frame key="frameInset" minX="-8" minY="8" width="49" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -514,14 +537,14 @@
                                     <constraint firstAttribute="trailing" secondItem="2020" secondAttribute="trailing" constant="8" id="2025"/>
                                 </constraints>
                             </view>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1517" misplaced="YES">
-                                <rect key="frame" x="140" y="126" width="94" height="29"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1517">
+                                <frame key="frameInset" minX="253" width="94" height="29"/>
                                 <connections>
                                     <action selector="OnValueChanged:" destination="552" eventType="valueChanged" id="1593"/>
                                 </connections>
                             </stepper>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1520" customClass="C1LinearGauge" misplaced="YES">
-                                <rect key="frame" x="8" y="163" width="359" height="100"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1520" customClass="C1LinearGauge">
+                                <frame key="frameInset" minX="8" width="584" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1525"/>
@@ -531,12 +554,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="IsEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1521" customClass="C1RadialGauge" misplaced="YES">
-                                <rect key="frame" x="8" y="271" width="359" height="200"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1521" customClass="C1RadialGauge">
+                                <frame key="frameInset" minX="8" minY="271" width="359" height="200"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="1530"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="IsAnimated" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="IsEnabled" value="YES"/>
@@ -554,9 +574,10 @@
                             <constraint firstItem="1520" firstAttribute="top" secondItem="1517" secondAttribute="bottom" constant="8" id="1522"/>
                             <constraint firstItem="1520" firstAttribute="leading" secondItem="553" secondAttribute="leading" constant="8" id="1523"/>
                             <constraint firstAttribute="trailing" secondItem="1520" secondAttribute="trailing" constant="8" id="1524"/>
-                            <constraint firstItem="1521" firstAttribute="top" secondItem="1520" secondAttribute="bottom" constant="8" id="1526"/>
-                            <constraint firstItem="1521" firstAttribute="leading" secondItem="1520" secondAttribute="leading" id="1527"/>
-                            <constraint firstItem="1520" firstAttribute="trailing" secondItem="1521" secondAttribute="trailing" id="1528"/>
+                            <constraint firstItem="1521" firstAttribute="trailing" secondItem="1520" secondAttribute="trailing" id="9hv-4R-51n"/>
+                            <constraint firstItem="550" firstAttribute="top" secondItem="1521" secondAttribute="bottom" constant="8" symbolic="YES" id="A5j-RP-dMc"/>
+                            <constraint firstItem="1521" firstAttribute="leading" secondItem="1520" secondAttribute="leading" id="I7j-jx-50v"/>
+                            <constraint firstItem="1521" firstAttribute="top" secondItem="1520" secondAttribute="bottom" constant="10" id="zyE-Fa-a5T"/>
                         </constraints>
                     </view>
                     <connections>
@@ -568,7 +589,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="554" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276" y="-347"/>
+            <point key="canvasLocation" x="1602" y="-349"/>
         </scene>
         <!--Using Ranges-->
         <scene sceneID="684">
@@ -582,17 +603,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1600" misplaced="YES">
-                                <rect key="frame" x="8" y="72" width="359" height="47"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1600">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using Ranges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1605" misplaced="YES">
-                                        <rect key="frame" x="8" y="13.5" width="286" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Using Ranges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1605">
+                                        <frame key="frameInset" minX="8" minY="-72" width="106" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1606" misplaced="YES">
-                                        <rect key="frame" x="302" y="8" width="51" height="31"/>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1606">
                                         <connections>
                                             <action selector="OnSwitchValueChanged:" destination="685" eventType="valueChanged" id="1654"/>
                                         </connections>
@@ -608,25 +627,22 @@
                                     <constraint firstAttribute="trailing" secondItem="1606" secondAttribute="trailing" constant="8" id="1615"/>
                                 </constraints>
                             </view>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1616" misplaced="YES">
-                                <rect key="frame" x="140.5" y="127" width="94" height="29"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1616">
+                                <frame key="frameInset" minX="253" width="94" height="29"/>
                                 <connections>
                                     <action selector="OnValueChanged:" destination="685" eventType="valueChanged" id="1642"/>
                                 </connections>
                             </stepper>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1622" customClass="C1LinearGauge" misplaced="YES">
-                                <rect key="frame" x="8" y="164" width="359" height="100"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1622" customClass="C1LinearGauge">
+                                <frame key="frameInset" minX="8" width="584" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1627"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1623" customClass="C1RadialGauge" misplaced="YES">
-                                <rect key="frame" x="8" y="272" width="359" height="200"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1623" customClass="C1RadialGauge">
+                                <frame key="frameInset" minX="8" minY="272" width="359" height="200"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="1631"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="AutoScale" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -642,9 +658,10 @@
                             <constraint firstItem="1622" firstAttribute="top" secondItem="1616" secondAttribute="bottom" constant="8" id="1624"/>
                             <constraint firstItem="1622" firstAttribute="leading" secondItem="686" secondAttribute="leading" constant="8" id="1625"/>
                             <constraint firstAttribute="trailing" secondItem="1622" secondAttribute="trailing" constant="8" id="1626"/>
-                            <constraint firstItem="1623" firstAttribute="top" secondItem="1622" secondAttribute="bottom" constant="8" id="1628"/>
-                            <constraint firstItem="1623" firstAttribute="leading" secondItem="686" secondAttribute="leading" constant="8" id="1629"/>
-                            <constraint firstAttribute="trailing" secondItem="1623" secondAttribute="trailing" constant="8" id="1630"/>
+                            <constraint firstItem="1623" firstAttribute="trailing" secondItem="1622" secondAttribute="trailing" id="Beo-3d-F3B"/>
+                            <constraint firstItem="683" firstAttribute="top" secondItem="1623" secondAttribute="bottom" constant="8" symbolic="YES" id="FGZ-Fn-28F"/>
+                            <constraint firstItem="1623" firstAttribute="top" secondItem="1622" secondAttribute="bottom" constant="13" id="QZR-Nw-pYT"/>
+                            <constraint firstItem="1623" firstAttribute="leading" secondItem="1622" secondAttribute="leading" id="jr7-K1-8Wf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -656,7 +673,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="687" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1794" y="-345"/>
+            <point key="canvasLocation" x="2322" y="-340"/>
         </scene>
         <!--Automatic Scaling-->
         <scene sceneID="1017">
@@ -670,20 +687,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1953">
-                                <rect key="frame" x="16" y="80" width="343" height="270"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1953">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1947">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1947" fixedFrame="YES">
+                                        <frame key="frameInset" width="568" height="29"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1948" misplaced="YES">
-                                                <rect key="frame" x="0.0" y="0.0" width="249" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1948">
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="360" stepValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="1945" misplaced="YES">
-                                                <rect key="frame" x="249" y="0.0" width="94" height="29"/>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="360" stepValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="1945">
                                                 <connections>
                                                     <action selector="OnStepperValueChanged:" destination="1018" eventType="valueChanged" id="1969"/>
                                                 </connections>
@@ -696,17 +710,15 @@
                                         </constraints>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1950">
-                                        <rect key="frame" x="0.0" y="45" width="343" height="29"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1950" fixedFrame="YES">
+                                        <frame key="frameInset" width="568" minY="45" height="29"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1949" misplaced="YES">
-                                                <rect key="frame" x="0.0" y="0.0" width="249" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1949">
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="180" minimumValue="45" maximumValue="360" stepValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="1946" misplaced="YES">
-                                                <rect key="frame" x="249" y="0.0" width="94" height="29"/>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="180" minimumValue="45" maximumValue="360" stepValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="1946">
                                                 <connections>
                                                     <action selector="OnStepperValueChanged:" destination="1018" eventType="valueChanged" id="1980"/>
                                                 </connections>
@@ -719,8 +731,8 @@
                                         </constraints>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </stackView>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1952" customClass="C1RadialGauge">
-                                        <rect key="frame" x="0.0" y="90" width="343" height="180"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1952" customClass="C1RadialGauge" fixedFrame="YES">
+                                        <frame key="frameInset" width="568" minY="90" height="414"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="AutoScale" value="YES"/>
@@ -762,17 +774,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1663" misplaced="YES">
-                                <rect key="frame" x="8" y="72" width="359" height="64"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1663">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1667">
-                                        <rect key="frame" x="8" y="22" width="69" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2028" customClass="C1TextField" misplaced="YES">
-                                        <rect key="frame" x="85" y="17" width="266" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2028" customClass="C1TextField">
+                                        <frame key="frameInset" minX="527" minY="17" width="49" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -788,25 +798,21 @@
                                     <constraint firstAttribute="height" constant="64" id="2035"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1775" customClass="C1LinearGauge">
-                                <rect key="frame" x="0.0" y="0.0" width="166" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2051" misplaced="YES">
-                                <rect key="frame" x="16" y="152" width="343" height="499"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2051">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1794" misplaced="YES">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="208"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1794">
                                         <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1795" customClass="C1LinearGauge">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1795" customClass="C1LinearGauge">
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="1Ag-nA-LG0"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1796" customClass="C1BulletGraph">
-                                                <rect key="frame" x="0.0" y="108" width="343" height="100"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1796" customClass="C1BulletGraph">
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="jD5-kW-wrU"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="Good">
                                                         <real key="value" value="40"/>
@@ -819,11 +825,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ShowRanges" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="208" id="2048"/>
+                                            <constraint firstItem="1796" firstAttribute="top" secondItem="1795" secondAttribute="bottom" constant="8" id="16Z-VB-8GA"/>
+                                            <constraint firstItem="1796" firstAttribute="top" secondItem="1795" secondAttribute="bottom" constant="8" id="D0Z-gb-bFI"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="208" id="Elb-Ev-7wZ"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -856,7 +864,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1027" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273" y="450"/>
+            <point key="canvasLocation" x="1601" y="451"/>
         </scene>
         <!--Bullet Graph-->
         <scene sceneID="1031">
@@ -870,41 +878,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1877" misplaced="YES">
-                                <rect key="frame" x="8" y="72" width="359" height="119"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1877">
                                 <subviews>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1874" misplaced="YES">
-                                        <rect key="frame" x="257" y="82" width="94" height="29"/>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1874">
+                                        <frame key="frameInset" minX="-8" minY="-37" width="94" height="29"/>
                                         <connections>
                                             <action selector="OnValueChanged:" destination="1032" eventType="valueChanged" id="1923"/>
                                         </connections>
                                     </stepper>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1869">
-                                        <rect key="frame" x="8" y="12.5" width="30" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1869">
+                                        <frame key="frameInset" minX="8" minY="-72" width="30" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1870">
-                                        <rect key="frame" x="8" y="49.5" width="42" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Good" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1870">
+                                        <frame key="frameInset" minX="-8" minY="-72" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1871">
-                                        <rect key="frame" x="8" y="86.5" width="49.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Target" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1871">
+                                        <frame key="frameInset" minX="-8" minY="-72" width="49.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1872" misplaced="YES">
-                                        <rect key="frame" x="257" y="8" width="94" height="29"/>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1872">
                                         <connections>
                                             <action selector="OnValueChanged:" destination="1032" eventType="valueChanged" id="1930"/>
                                         </connections>
                                     </stepper>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1873" misplaced="YES">
-                                        <rect key="frame" x="257" y="45" width="94" height="29"/>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1873">
+                                        <frame key="frameInset" minX="-8" minY="-72" width="94" height="29"/>
                                         <connections>
                                             <action selector="OnValueChanged:" destination="1032" eventType="valueChanged" id="1922"/>
                                         </connections>
@@ -929,8 +935,7 @@
                                     <constraint firstAttribute="trailing" secondItem="1872" secondAttribute="trailing" constant="8" id="1896"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1900" customClass="C1BulletGraph" misplaced="YES">
-                                <rect key="frame" x="8" y="199" width="359" height="100"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1900" customClass="C1BulletGraph">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1904"/>
@@ -976,12 +981,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1034" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1791" y="451"/>
+            <point key="canvasLocation" x="2321" y="449"/>
+        </scene>
+        <!--Export Image-->
+        <scene sceneID="EIr-MR-jy2">
+            <objects>
+                <viewController title="Export Image" id="WXO-bP-BfJ" customClass="ExportImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yJ3-PT-UQ3"/>
+                        <viewControllerLayoutGuide type="bottom" id="s8g-3c-eNF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e4i-9J-tdA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2083" customClass="C1RadialGauge">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="AutoScale" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2083" firstAttribute="leading" secondItem="e4i-9J-tdA" secondAttribute="leadingMargin" constant="-8" id="B45-21-aI2"/>
+                            <constraint firstItem="2083" firstAttribute="centerX" secondItem="e4i-9J-tdA" secondAttribute="centerX" id="GKT-Gw-JaM"/>
+                            <constraint firstAttribute="bottom" secondItem="2083" secondAttribute="bottom" constant="20" symbolic="YES" id="JWA-FB-wwd"/>
+                            <constraint firstItem="2083" firstAttribute="top" secondItem="yJ3-PT-UQ3" secondAttribute="bottom" constant="8" symbolic="YES" id="eCg-f0-e44"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Export Image" id="6Y2-P7-7uB">
+                        <barButtonItem key="rightBarButtonItem" title="Snapshot" id="2085">
+                            <connections>
+                                <action selector="DoSnapshot:" destination="WXO-bP-BfJ" id="2086"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="RadialGauge" destination="2083" id="name-outlet-2083"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8K-Ua-sVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3052" y="447.5262"/>
         </scene>
     </scenes>
     <resources>
         <image name="Images/gauge_basic.png" width="164" height="164"/>
         <image name="Images/gauge_bullet.png" width="164" height="164"/>
+        <image name="Images/gauge_exportImage.png" width="164" height="164"/>
         <image name="Images/gauge_linear.png" width="164" height="164"/>
         <image name="Images/gauge_radial.png" width="164" height="164"/>
         <image name="Images/gauge_ranges.png" width="164" height="164"/>
@@ -990,7 +1038,7 @@
         <image name="Images/Default.png" width="768" height="1004"/>
         <image name="Icon-60.png" width="60" height="60"/>
         <image name="Icon-76.png" width="76" height="76"/>
-        <image name="Icon-Small-40.png" width="40" height="40"/>
         <image name="Icon-Small.png" width="29" height="29"/>
+        <image name="Icon-Small-40.png" width="40" height="40"/>
     </resources>
 </document>

@@ -26,7 +26,8 @@
     <EditText
         android:id="@+id/LastOrder"
         android:paddingLeft="8dip"
-        android:paddingRight="8dip" />
+        android:paddingRight="8dip"
+        android:inputType="date"/>
     <TextView
         android:text="@string/EditingFormOrderTotal"
         android:id="@+id/textVie4" />

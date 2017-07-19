@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2017 Grapecity. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" id="20" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" adjustsLetterSpacingToFitWidth="NO" minimumScaleFactor="0.5">
+                                <rect key="frame" x="20" y="523" width="560" height="51"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0.027450980392156862" blue="0.062745098039215685" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C1Input101" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="21" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="214" y="141" width="171" height="33"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="36"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0.027450980392156862" blue="0.062745098039215685" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="23" firstItem="21" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX"/>
+                            <constraint id="24" firstItem="21" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="121"/>
+                            <constraint id="30" firstItem="Ze5-6b-2t3" firstAttribute="bottom" secondItem="20" secondAttribute="bottom" constant="36"/>
+                            <constraint id="33" firstItem="20" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX"/>
+                            <constraint id="48" firstItem="Ze5-6b-2t3" firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="20"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Images/australia.png" width="48" height="48"/>
+        <image name="Images/bangladesh.png" width="48" height="48"/>
+        <image name="Images/brazil.png" width="48" height="48"/>
+        <image name="Images/calendar.png" width="164" height="164"/>
+        <image name="Images/canada.png" width="48" height="48"/>
+        <image name="Images/china.png" width="48" height="48"/>
+        <image name="Images/france.png" width="48" height="48"/>
+        <image name="Images/germany.png" width="48" height="48"/>
+        <image name="Images/india.png" width="48" height="48"/>
+        <image name="Images/input_autocomplete.png" width="164" height="164"/>
+        <image name="Images/input_combobox.png" width="164" height="164"/>
+        <image name="Images/input_dropdown.png" width="164" height="164"/>
+        <image name="Images/input_mask.png" width="164" height="164"/>
+        <image name="Images/japan.png" width="48" height="48"/>
+        <image name="Images/nepal.png" width="48" height="48"/>
+        <image name="Images/pakistan.png" width="48" height="48"/>
+        <image name="Images/srilanka.png" width="48" height="48"/>
+        <image name="input_autocomplete.png" width="164" height="164"/>
+        <image name="input_combobox.png" width="164" height="164"/>
+        <image name="input_dropdown.png" width="164" height="164"/>
+        <image name="input_mask.png" width="164" height="164"/>
+        <image name="Icon-60.png" width="60" height="60"/>
+        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="Icon-Small.png" width="29" height="29"/>
+        <image name="Icon-Small-40.png" width="40" height="40"/>
+    </resources>
+</document>

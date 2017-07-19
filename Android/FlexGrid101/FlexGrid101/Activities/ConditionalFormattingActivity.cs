@@ -29,7 +29,7 @@ namespace FlexGrid101
 
             var data = Customer.GetCustomerList(100);
             grid.ItemsSource = data;
-            grid.Columns[5].DataMap = new GridDataMap() { ItemsSource = Customer.GetCountries(), DisplayMemberPath = "Value", SelectedValuePath = "Key" };
+            grid.Columns["CountryId"].DataMap = new GridDataMap() { ItemsSource = Customer.GetCountries(), DisplayMemberPath = "Value", SelectedValuePath = "Key" };
 
             grid.CellFactory = new MyCellFactory();
         }

@@ -11,6 +11,7 @@ namespace FlexGrid101
 
             this.Title = AppResources.FullTextFilterTitle;
             filter.Placeholder = AppResources.FilterPlaceholderText;
+            filter.Keyboard = Keyboard.Plain;
 
             var data = Customer.GetCustomerList(100);
             grid.ItemsSource = data;

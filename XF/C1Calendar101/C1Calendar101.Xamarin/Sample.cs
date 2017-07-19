@@ -22,7 +22,7 @@ namespace C1Calendar101
         {
             get
             {
-                return ImageSource.FromResource("C1Calendar101.Images." + Thumbnail);
+                return ImageSource.FromResource("C1Calendar101.Images." + Thumbnail, typeof(App));
             }
         }
     }

@@ -1,0 +1,153 @@
+
+/* Class = "UINavigationItem"; title = "FlexGrid101"; ObjectID = "519"; */
+"519.title" = "FlexGrid101";
+
+/* Class = "UINavigationItem"; title = "Getting Started"; ObjectID = "771"; */
+"771.title" = "FlexGridの基本機能";
+
+/* Class = "UINavigationItem"; title = "Column Definitions"; ObjectID = "1020"; */
+"1020.title" = "列の定義";
+
+/* Class = "UINavigationItem"; title = "Selection Modes"; ObjectID = "2197"; */
+"2197.title" = "選択モード";
+
+/* Class = "UINavigationItem"; title = "Edit Confirmation"; ObjectID = "5293"; */
+"5293.title" = "編集の確認";
+
+/* Class = "UINavigationItem"; title = "Conditional Formatting"; ObjectID = "5301"; */
+"5301.title" = "条件付き書式";
+
+/* Class = "UINavigationItem"; title = "Row Details"; ObjectID = "5295"; */
+"5295.title" = "詳細行";
+
+/* Class = "UINavigationItem"; title = "Star Sizing"; ObjectID = "5299"; */
+"5299.title" = "スターサイズ機能";
+
+/* Class = "UINavigationItem"; title = "Freezing&Merging"; ObjectID = "5300"; */
+"5300.title" = "セルの固定と結合";
+
+/* Class = "UINavigationItem"; title = "Custom Cells"; ObjectID = "5296"; */
+"5296.title" = "カスタムセル";
+
+/* Class = "UINavigationItem"; title = "Grouping"; ObjectID = "2587"; */
+"2587.title" = "グループ化";
+
+/* Class = "UINavigationItem"; title = "Full Text Filter"; ObjectID = "5298"; */
+"5298.title" = "全テキストフィルタ";
+
+/* Class = "UINavigationItem"; title = "Editing Form"; ObjectID = "5294"; */
+"5294.title" = "編集画面";
+
+/* Class = "UINavigationItem"; title = "Custom Merging"; ObjectID = "6488"; */
+"6488.title" = "セルのマージ";
+
+/* Class = "UINavigationItem"; title = "Column Layout"; ObjectID = "5302"; */
+"5302.title" = "列のレイアウト";
+
+
+/* Class = "UINavigationItem"; title = "On Demand"; ObjectID = "6490"; */
+"6490.title" = "データオンデマンド";
+
+/* Class = "UINavigationItem"; title = "Filter"; ObjectID = "5297"; */
+"5297.title" = "フィルター";
+
+
+/* Class = "UINavigationItem"; title = "Edit Filter"; ObjectID = "5294"; */
+"5294.title" = "フィルターの編集";
+
+
+/* Class = "UINavigationItem"; title = "Unbound"; ObjectID = "6489"; */
+"6489.title" = "アンバウンド（データ非接続）";
+
+/* Class = "UINavigationItem"; title = "Custom Cells"; ObjectID = "5303"; */
+"5303.title" = "外観のカスタマイズ";
+
+//UITableView Titles
+//Getting Started
+"527.text" = "FlexGridの基本機能";
+//column definitions
+"784.text" = "列の定義";
+// selection modes
+"1071.text" = "選択モード";
+// edit confirmation
+"2218.text" = "編集の確認";
+//editing
+"2221.text" = "編集フォーム";
+//conditional formatting
+"2224.text" = "条件付き書式";
+//custom cells
+"2227.text" = "カスタムセル";
+//grouping
+"2230.text" = "グループ化";
+//row details
+"2233.text" = "詳細行";
+//filter
+"2236.text" = "フィルター";
+//full text filter
+"2239.text" = "全テキストフィルタ";
+//column layout
+"2242.text" = "列のレイアウト";
+//starsizing
+"2245.text" = "スターサイズ機能";
+//cell freezing
+"2248.text" = "セルの固定と結合";
+//custom merging
+"2251.text" = "セルのマージ";
+//unbound
+"2254.text" = "アンバウンド（データ非接続）";
+//on demand
+"2257.text" = "データオンデマンド";
+//custom appearance
+"2260.text" = "外観のカスタマイズ";
+
+//UITableView Descriptions
+//Getting Started
+"528.text" = "FlexGrid でデータを表示、編集、集計";
+//column definitions
+"785.text" = "列を指定して書式設定する方法";
+// selection modes
+"1072.text" = "各種セル選択モードを表示";
+// edit confirmation
+"2219.text" = "セルの内容を変更する前にダイアログを表示";
+//editing
+"2222.text" = "入力フォームでセル内容を編集";
+//conditional formatting
+"2225.text" = "CellFactory を利用した書式の設定";
+//custom cells
+"2228.text" = "数値をゲージで表示するセル";
+//grouping
+"2231.text" = "コレクションをグループ化して集計";
+//row details
+"2234.text" = "グリッドを展開／折りたたみして明細を表示";
+//filter
+"2237.text" = "列のフィルタ条件をフォームで指定";
+//full text filter
+"2240.text" = "列のデータをフィルタリングして強調表示";
+//column layout
+"2243.text" = "列マネージャを利用してレイアウトを変更";
+//starsizing
+"2246.text" = "配分で列幅を設定するレスポンシブなレイアウト";
+//cell freezing
+"2249.text" = "行、列のセルを固定表示する方法";
+//custom merging
+"2252.text" = "隣接セルをマージして表示する";
+//unbound
+"2255.text" = "データソースに接続しない行と列で表を作成";
+//on demand
+"2258.text" = "スクロールの終端で表示データをロード";
+//custom appearance
+"2261.text" =   "外観スタイルを変更してグリッドを表示"; 
+
+//UILabels for Edit FOrm
+"7271.text" = "名(First Name)";
+"7272.text" = "姓(Last Name)";
+"7273.text" = "Last Order";
+"7274.text" = "発注合計";
+
+
+//Filter Form
+"6513.placeholder" = "テキストを入力してください";
+
+//Filter buttons on Filter page
+"8135.title" = "フィルター";
+

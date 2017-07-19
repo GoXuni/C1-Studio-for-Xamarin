@@ -1,0 +1,44 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Input101", "C1Input101\C1Input101.csproj", "{A174CF68-AFCB-414C-9972-4DD4759B2F09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AppStore|Any CPU = AppStore|Any CPU
+		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|Any CPU = Debug|Any CPU
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		GRAPECITY|Any CPU = GRAPECITY|Any CPU
+		GRAPECITY|iPhone = GRAPECITY|iPhone
+		GRAPECITY|iPhoneSimulator = GRAPECITY|iPhoneSimulator
+		Release|Any CPU = Release|Any CPU
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.AppStore|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.AppStore|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.AppStore|iPhone.ActiveCfg = Release|iPhone
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.AppStore|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Debug|iPhone.Build.0 = Debug|iPhone
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.GRAPECITY|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.GRAPECITY|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.GRAPECITY|iPhone.ActiveCfg = Release|iPhone
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.GRAPECITY|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Release|iPhone.ActiveCfg = Release|iPhone
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Release|iPhone.Build.0 = Release|iPhone
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

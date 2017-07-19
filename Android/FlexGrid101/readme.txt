@@ -1,4 +1,4 @@
-FlexGrid101 Samples for Android
+FlexGrid101 for Xamarin.Android
 ------------------------------------------
 Shows samples of the Grid control.
 
@@ -23,4 +23,3 @@ Shows the following samples
 	- OnDemand
 	- CustomAppearance
 </code>
-	

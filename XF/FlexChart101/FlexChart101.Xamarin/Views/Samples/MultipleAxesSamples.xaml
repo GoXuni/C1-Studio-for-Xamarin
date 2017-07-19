@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.MultipleAxesSamples">
+    <c1:FlexChart x:Name="flexChart" BindingX="MonthName">
+        <c1:FlexChart.Series>
+            <c1:ChartSeries Binding="Precipitation" SeriesName="Precip"/>
+            <c1:ChartSeries Binding="Temp" ChartType="SplineSymbols" SeriesName="Avg. Temp">
+                <c1:ChartSeries.AxisY>
+                    <c1:ChartAxis Position="Right" Min="0" Max="80" MajorUnit="10" Title="Avg. Temperature (F)" AxisLine="False" MajorGrid="False">
+                      <c1:ChartAxis.TitleStyle>
+                            <c1:ChartStyle Stroke="#fbb258" FontSize="20"/>
+                        </c1:ChartAxis.TitleStyle>
+                    </c1:ChartAxis>
+                </c1:ChartSeries.AxisY>
+            </c1:ChartSeries>
+        </c1:FlexChart.Series>
+
+        <c1:FlexChart.AxisY>
+          <c1:ChartAxis Min="4" Max="20" MajorUnit="2" MajorGrid="True" Title="Precipitation (in)" AxisLine="False">
+              <c1:ChartAxis.TitleStyle>
+                    <c1:ChartStyle Stroke="#88bde6" FontSize="20"/>
+                </c1:ChartAxis.TitleStyle>
+            </c1:ChartAxis>
+        </c1:FlexChart.AxisY>
+    </c1:FlexChart>
+</ContentPage>

@@ -24,7 +24,7 @@ namespace C1CollectionView101
 
             // start on demand loading
             list.LoadItemsOnDemand(myCollectionView);
-            
+
         }
     }
 
@@ -38,14 +38,17 @@ namespace C1CollectionView101
         public int PageSize { get; set; }
         protected override async Task<Tuple<string, IReadOnlyList<MyDataItem>>> GetPageAsync(string pageToken, int? count = null)
         {
-            // create new page of items
-            var newItems = new List<MyDataItem>();
-            for (int i = 0; i < this.PageSize; i++)
+            return await Task.Run(() =>
             {
-                newItems.Add(new MyDataItem(this.Count + i));
-            }
+                // create new page of items
+                var newItems = new List<MyDataItem>();
+                for (int i = 0; i < this.PageSize; i++)
+                {
+                    newItems.Add(new MyDataItem(this.Count + i));
+                }
 
-            return new Tuple<string, IReadOnlyList<MyDataItem>>("token not used", newItems);
+                return new Tuple<string, IReadOnlyList<MyDataItem>>("token not used", newItems);
+            });
         }
     }
     public class MyDataItem

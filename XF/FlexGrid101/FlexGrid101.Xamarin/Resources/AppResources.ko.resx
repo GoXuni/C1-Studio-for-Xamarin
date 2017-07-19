@@ -277,4 +277,12 @@
   <data name="CellsSelectedText" xml:space="preserve">
     <value>선택된 셀</value>
   </data>
+  <data name="CustomAppearanceDescription" xml:space="preserve">
+    <value>사용자 정의 스타일이 적용된 그리드를 표시합니다.</value>
+    <comment>Shows a grid with a custom style.</comment>
+  </data>
+  <data name="CustomAppearanceTitle" xml:space="preserve">
+    <value>사용자 정의 모양</value>
+    <comment>Custom Appearance</comment>
+  </data>
 </root>

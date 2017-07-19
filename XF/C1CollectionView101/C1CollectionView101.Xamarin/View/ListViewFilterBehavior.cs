@@ -55,10 +55,10 @@ namespace C1CollectionView101
 
         #region ** object model
 
-        public static readonly BindableProperty FilterEntryProperty = BindableProperty.Create<ListViewFilterBehavior, Entry>(p => p.FilterEntry, null, propertyChanged: (s, o, n) => (s as ListViewFilterBehavior).OnFilterEntryChanged(o, n));
-        public static readonly BindableProperty ModeProperty = BindableProperty.Create<ListViewFilterBehavior, FullTextFilterMode>(p => p.Mode, FullTextFilterMode.WhenCompleted);
-        public static readonly BindableProperty MatchNumbersProperty = BindableProperty.Create<ListViewFilterBehavior, bool>(p => p.MatchNumbers, false);
-        public static readonly BindableProperty TreatSpacesAsAndOperatorProperty = BindableProperty.Create<ListViewFilterBehavior, bool>(p => p.TreatSpacesAsAndOperator, false);
+        public static readonly BindableProperty FilterEntryProperty = BindableProperty.Create(nameof(FilterEntry), typeof(Entry), typeof(ListViewFilterBehavior), null, propertyChanged: (s, o, n) => (s as ListViewFilterBehavior).OnFilterEntryChanged(o as Entry, n as Entry));
+        public static readonly BindableProperty ModeProperty = BindableProperty.Create(nameof(Mode), typeof(FullTextFilterMode), typeof(ListViewFilterBehavior), FullTextFilterMode.WhenCompleted);
+        public static readonly BindableProperty MatchNumbersProperty = BindableProperty.Create(nameof(MatchNumbers), typeof(bool), typeof(ListViewFilterBehavior), false);
+        public static readonly BindableProperty TreatSpacesAsAndOperatorProperty = BindableProperty.Create(nameof(TreatSpacesAsAndOperator), typeof(bool), typeof(ListViewFilterBehavior), false);
 
         /// <summary>
         /// Gets or sets the Entry field used to perform the query.

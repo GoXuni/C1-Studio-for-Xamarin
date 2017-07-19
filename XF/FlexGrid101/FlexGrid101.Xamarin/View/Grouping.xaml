@@ -7,9 +7,9 @@
   <Grid>
     <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False" ShowOutlineBar="True" GridLinesVisibility="Vertical" IsReadOnly="True">
       <c1:FlexGrid.Columns>
-        <c1:GridColumn Binding="Active" Width="70"/>
+        <c1:GridColumn Binding="Active" Width="Auto"/>
         <c1:GridColumn Binding="Name" Width="*"/>
-        <c1:GridColumn Binding="OrderTotal" Width="140" Format="C" Aggregate="Sum" HorizontalAlignment="End"/>
+        <c1:GridColumn Binding="OrderTotal" Width="Auto" Format="C" Aggregate="Sum" HorizontalAlignment="End"/>
       </c1:FlexGrid.Columns>
       <c1:FlexGrid.Behaviors>
         <c1:EmptyGridBehavior EmptyView="{x:Reference Name=emptyListLabel}" />

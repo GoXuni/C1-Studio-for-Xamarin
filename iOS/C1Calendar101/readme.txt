@@ -1,4 +1,4 @@
-C1Calendar101 Samples for IOS
+C1Calendar101 for Xamarin.iOS
 -----------------------------------------
 Shows samples of the Calendar control.
 
@@ -12,3 +12,5 @@ Shows the following samples
 	- PopupEditor
 	- CustomSelection
 </code>
+
+	

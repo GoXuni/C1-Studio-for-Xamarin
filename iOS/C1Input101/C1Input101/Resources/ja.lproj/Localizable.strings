@@ -1,0 +1,53 @@
+﻿
+"Highlight" = "ハイライト";
+
+"Non-editable" = "編集不可の形式";
+
+"Masked Input" = "マスク入力";
+
+"Delay" = "表示の遅延";
+
+"Phone:" = "電話番号:";
+
+"Masked Input" = "マスク入力";
+
+"ID:" = "ID(数字):";
+
+"Drop Down" = "ドロップダウン ";
+
+">" = ">";
+
+"State:" = "識別(英字):";
+
+"Combo Box" = "コンボボックス";
+
+"Input101" = "Input101";
+
+"Editable" = "編集可能な形式";
+
+"Capture properly formatted text using a mask." = "マスク書式を指定した入力ボックス";
+
+"Display an editable list of options." = "入力候補をリストで表示する";
+
+"DOB:" = "日付:";
+
+"Show suggestions automatically while the user is typing." = "入力した文字で入力候補を表示する";
+
+">" = ">";
+
+
+"Custom Drop-down" = "カスタムドロップダウン";
+
+">" = ">";
+
+"Dynamic" = "抽出して表示";
+
+"Create a customizable drop-down control." = "カレンダーを表示して日付を選択";
+
+"Auto Complete" = "オートコンプリート";
+
+"Please Enter..." = "入力してください";
+
+"00/00/0000" = "0000/00/00";
+
+"MM-dd-yyyy" = "yyyy/MM/dd";

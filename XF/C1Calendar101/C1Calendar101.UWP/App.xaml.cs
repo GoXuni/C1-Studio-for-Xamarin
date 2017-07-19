@@ -62,8 +62,8 @@ namespace C1Calendar101.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                C1.Xamarin.Forms.Calendar.Platform.UWP.C1CalendarRenderer.Init();
                 var assembliesToInclude = new List<Assembly>();
+                assembliesToInclude.Add(typeof(C1.Xamarin.Forms.Calendar.Platform.UWP.C1CalendarRenderer).GetTypeInfo().Assembly);
                 assembliesToInclude.Add(typeof(C1.UWP.Calendar.C1Calendar).GetTypeInfo().Assembly);
                 Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 

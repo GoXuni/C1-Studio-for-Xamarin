@@ -7,6 +7,9 @@ namespace FlexGrid101
 {
     public partial class SelectionModesController : UIViewController
     {
+        public string[] pickerOptionStrings = new string[] { Foundation.NSBundle.MainBundle.LocalizedString("None", ""), Foundation.NSBundle.MainBundle.LocalizedString("Cell", ""),
+            Foundation.NSBundle.MainBundle.LocalizedString("Cell Range", ""), Foundation.NSBundle.MainBundle.LocalizedString("Row", ""), Foundation.NSBundle.MainBundle.LocalizedString("Row Range", "") };
+    
         public SelectionModesController(IntPtr handle) : base(handle)
         {
         }
@@ -28,13 +31,13 @@ namespace FlexGrid101
             picker.Select((nint)(int)Grid.SelectionMode, 0, true);
             SelectionModeField.InputView = picker;
             SelectionModeField.InputAccessoryView = toolBar;
-            SelectionModeField.Text = Grid.SelectionMode.ToString();
+            SelectionModeField.Text = pickerOptionStrings[0];
 
             doneButton.Clicked += (s, e) =>
             {
                 var selectedIndex = (int)picker.SelectedRowInComponent(0);
                 var selectedMode = (GridSelectionMode)selectedIndex;
-                SelectionModeField.Text = selectedMode.ToString();
+                SelectionModeField.Text = pickerOptionStrings[selectedIndex];
                 Grid.SelectionMode = selectedMode;
                 Grid.BecomeFirstResponder();
             };
@@ -77,15 +80,15 @@ namespace FlexGrid101
                 {
                     default:
                     case 0:
-                        return GridSelectionMode.None.ToString();
+                        return Foundation.NSBundle.MainBundle.LocalizedString("None", "");
                     case 1:
-                        return GridSelectionMode.Cell.ToString();
+                        return Foundation.NSBundle.MainBundle.LocalizedString("Cell", "");
                     case 2:
-                        return GridSelectionMode.CellRange.ToString();
+                        return Foundation.NSBundle.MainBundle.LocalizedString("Cell Range", "");
                     case 3:
-                        return GridSelectionMode.Row.ToString();
+                        return Foundation.NSBundle.MainBundle.LocalizedString("Row", "");
                     case 4:
-                        return GridSelectionMode.RowRange.ToString();
+                        return Foundation.NSBundle.MainBundle.LocalizedString("Row Range", "");
                 }
             }
 

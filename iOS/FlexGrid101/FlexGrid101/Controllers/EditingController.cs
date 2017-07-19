@@ -46,7 +46,7 @@ namespace FlexGrid101
             }
             else
             {
-                var alert = new UIAlertView("", "Please select a row first or double-tap the row directly.", null, "OK");
+                var alert = new UIAlertView("", Foundation.NSBundle.MainBundle.LocalizedString("Please select a row first or double-tap the row directly.", ""), null, "OK");
                 alert.Show();
             }
         }

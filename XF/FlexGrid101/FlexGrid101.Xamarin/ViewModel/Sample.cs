@@ -16,7 +16,7 @@ namespace FlexGrid101
         {
             get
             {
-                return ImageSource.FromResource("FlexGrid101.Images." + Thumbnail);
+                return ImageSource.FromResource("FlexGrid101.Images." + Thumbnail, typeof(App));
             }
         }
     }

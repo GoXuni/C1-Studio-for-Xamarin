@@ -1,0 +1,4 @@
+﻿
+"InternetConnectionError"  = "データを取得するときに問題が発生しました。ネットワーク接続を確認してください。";
+"FilterPlaceholderText" = "フィルタリングするテキストを入力";
+"EmptyText" = "表示する動画がありません。";

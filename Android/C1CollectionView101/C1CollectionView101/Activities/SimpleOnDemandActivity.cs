@@ -7,10 +7,9 @@ using Android.Views;
 using Android.Widget;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
 using System.Threading.Tasks;
 using C1.CollectionView;
+using C1.Android.CollectionView;
 
 namespace C1CollectionView101
 {
@@ -53,7 +52,7 @@ namespace C1CollectionView101
         }
     }
 
-    internal class SimpleOnDemandAdapter : CollectionViewAdapter<MyDataItem>
+    internal class SimpleOnDemandAdapter : C1RecyclerViewAdapter<MyDataItem>
     {
 
         public SimpleOnDemandAdapter(ICollectionView<MyDataItem> collectionView)

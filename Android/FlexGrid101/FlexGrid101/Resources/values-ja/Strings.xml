@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">FlexGrid101</string>
+  <string name="GettingStartedTitle">FlexGrid の基本機能</string>
+  <string name="GettingStartedDescription">FlexGrid でデータを表示、編集、集計</string>
+  <string name="ColumnDefinitionTitle">列の定義</string>
+  <string name="ColumnDefinitionDescription">列を指定して書式設定する方法</string>
+  <string name="CustomAppearanceTitle">外観のカスタマイズ</string>
+  <string name="CustomAppearanceDescription">外観スタイルを変更してグリッドを表示</string>
+  <string name="SelectionModesTitle">選択モード</string>
+  <string name="SelectionModesDescription">各種セル選択モードを表示</string>
+  <string name="EditConfirmationTitle">編集の確認</string>
+  <string name="EditConfirmationDescription">セルの内容を変更する前にダイアログを表示</string>
+  <string name="EditConfirmationQuestion">編集内容を反映しますか？</string>
+  <string name="EditConfirmationQuestionTitle">編集確認</string>
+  <string name="EditingTitle">編集フォーム</string>
+  <string name="EditingDescription">入力フォームでセル内容を編集</string>
+  <string name="EditingSelectRowMessage">編集する行を選択してください。対象の行をダブルタップしても編集できます。</string>
+  <string name="EditingFormFirstName">名</string>
+  <string name="EditingFormLastName">姓</string>
+  <string name="EditingFormLastOrder">Last Order</string>
+  <string name="EditingFormOrderTotal">Order Total</string>
+  <string name="ConditionalFormattingTitle">条件付き書式（CellFactory 機能）</string>
+  <string name="ConditionalFormattingDescription">特定の列に条件付き書式を設定</string>
+  <string name="CustomCellsTitle">カスタムセル</string>
+  <string name="CustomCellsDescription">数値をゲージで表示するセル</string>
+  <string name="GroupingTitle">グループ化</string>
+  <string name="GroupingDescription">コレクションをグループ化して集計</string>
+  <string name="GroupHeaderFormat">{name}: {value} ({count} 項目)</string>
+  <string name="RowDetailsTitle">詳細行</string>
+  <string name="RowDetailsDescription">グリッドを展開／折りたたみして詳細を表示</string>
+  <string name="RowDetailsCountry">国 {0}</string>
+  <string name="RowDetailsCity">都市 {0}</string>
+  <string name="RowDetailsAddress">住所 {0}</string>
+  <string name="RowDetailsPostalCode">郵便コード {0}</string>
+  <string name="FilterTitle">フィルタ</string>
+  <string name="FilterDescription">列のフィルタ条件をフォームで指定</string>
+  <string name="FilterPlaceholderText">フィルタリングするテキストを入力</string>
+  <string name="FullTextFilterTitle">全テキストフィルタ</string>
+  <string name="FullTextFilterDescription">すべてのデータを対象にフィルタ抽出して強調表示</string>
+  <string name="ColumnLayoutTitle">列レイアウト管理</string>
+  <string name="ColumnLayoutDescription">列マネージャを利用してレイアウトを変更</string>
+  <string name="ColumnLayoutSave">保存</string>
+  <string name="ColumnLayoutEdit">列の編集</string>
+  <string name="StarSizingTitle">スターサイズ指定</string>
+  <string name="StarSizingDescription">配分で列幅を設定するレスポンシブなレイアウト</string>
+  <string name="CellFreezingTitle">セルの固定</string>
+  <string name="CellFreezingDescription">行と列の固定</string>
+  <string name="CustomMergingTitle">セル結合の応用</string>
+  <string name="CustomMergingDescription">隣接セルを結合（マージ）して表示する</string>
+  <string name="UnboundTitle">アンバウンド（データ非接続）</string>
+  <string name="UnboundDescription">データソースに接続しない行と列で表を作成</string>
+  <string name="OnDemandTitle">データオンデマンド</string>
+  <string name="OnDemandDescription">スクロールの終端で表示データをロード</string>
+  <string name="SearchPlaceholderText">YouTube で検索するビデオのテキストを入力</string>
+  <string name="EmptyListText">表示するデータはありません。</string>
+  <string name="CellsSelectedText">個のセルを選択</string>
+  <string name="RemoveFilter">フィルタを解除</string>
+  <string name="Monday">月曜日</string>
+  <string name="Tuesday">火曜日</string>
+  <string name="Wednesday">水曜日</string>
+  <string name="Thursday">木曜日</string>
+  <string name="Friday">金曜日</string>
+  <string name="Saturday">土曜日</string>
+  <string name="Sunday">日曜日</string>
+  <string name="Weekday">平日</string>
+  <string name="Weekend">週末</string>
+
+  <string-array name="SlectionModeTable">
+    <item>None（なし）</item>
+    <item>Cell（セル）</item>
+    <item>CellRange（セル範囲）</item>
+    <item>Row（行）</item>
+    <item>RowRange（行範囲）</item>
+  </string-array>
+
+</resources>

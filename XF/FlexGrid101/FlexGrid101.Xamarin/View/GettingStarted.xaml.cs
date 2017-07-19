@@ -8,29 +8,12 @@ namespace FlexGrid101
 {
     public partial class GettingStarted : ContentPage
     {
-        private C1CollectionView<Customer> _collView;
-
-
         public GettingStarted()
         {
             InitializeComponent();
             this.Title = AppResources.GettingStartedTitle;
-
-            grid.AutoGeneratingColumn += OnAutoGeneratingColumn;
-            var data = Customer.GetCustomerList(100);
-            _collView = new C1CollectionView<Customer>(data);
-            grid.ItemsSource = _collView;
-            //grid.SelectionChanged += OnSelectionChanged;
-            //_collView.CurrentChanged += OnCurrentChanged;
-        
-            Appearing += OnAppearing;
+            grid.ItemsSource = Customer.GetCustomerList(100);
         }
-
-        private void OnAppearing(object sender, EventArgs e)
-        {
-            //grid.AutoSizeColumns(0, grid.Columns.Count - 1);
-            //grid.AutoSizeRows(0, grid.Rows.Count - 1)
-        } 
 
         private void OnAutoGeneratingColumn(object sender, GridAutoGeneratingColumnEventArgs e)
         {
@@ -49,7 +32,7 @@ namespace FlexGrid101
                 e.Column.Header = "Country";
                 e.Column.HorizontalAlignment = LayoutAlignment.Start;
                 e.Column.DataMap = new GridDataMap() { ItemsSource = Customer.GetCountries(), DisplayMemberPath = "Value", SelectedValuePath = "Key" };
-            } 
+            }
             else if (e.Property.Name == "OrderTotal" || e.Property.Name == "OrderAverage")
             {
                 //Sets currency format the these columns
@@ -64,49 +47,6 @@ namespace FlexGrid101
             {
                 e.Column.WordWrap = true;
             }
-
-
-        }
-
-        private void OnFirstClicked(object sender, EventArgs e)
-        {
-            _collView.MoveCurrentToFirst();
-        }
-
-        private void OnPreviousClicked(object sender, EventArgs e)
-        {
-            _collView.MoveCurrentToPrevious();
-        }
-
-        private void OnNextClicked(object sender, EventArgs e)
-        {
-            _collView.MoveCurrentToNext();
-        }
-
-        private void OnLastClicked(object sender, EventArgs e)
-        {
-            _collView.MoveCurrentToLast();
-        }
-
-        void OnCurrentChanged(object sender, EventArgs e)
-        {
-            if (grid.Selection == null)
-                return;
-
-            if (grid.Selection.Row != _collView.CurrentPosition)
-            {
-                grid.Selection = new GridCellRange(_collView.CurrentPosition, -1);
-            }
-        }
-
-        void OnSelectionChanged(object sender, EventArgs e)
-        {
-            if (grid.Selection.Row != _collView.CurrentPosition)
-            {
-                _collView.MoveCurrentToPosition(grid.Selection.Row);
-            }
         }
     }
-
-
 }

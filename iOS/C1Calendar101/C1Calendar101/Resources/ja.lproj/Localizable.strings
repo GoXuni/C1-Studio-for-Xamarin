@@ -1,0 +1,51 @@
+﻿/*
+ Localizable.strings
+ Calendar101
+ 
+ Copyright (c) 2015 GrapeCity. All rights reserved.
+ */
+
+// Samples Title
+"Getting Started" = "Calendar の基本機能";
+
+"Vertical Orientation" = "垂直方向の操作";
+
+"Custom Day Content" = "日付領域の変更";
+
+"Custom Header" = "ヘッダーのカスタマイズ";
+
+"Custom Appearance" = "外観のカスタマイズ";
+
+"Popup Editor" = "選択画面";
+
+"Custom Selection" = "日付選択のカスタマイズ";
+
+// Samples Description
+"Shows a basic calendar with selection and interaction" = "カレンダーの日付選択と対話操作";
+
+"Shows a calendar with vertical navigation/scrolling" = "縦方向にめくり、スクロール";
+
+"Shows how to customize a day slot to show custom content" = "日付を表示する領域に画像など独自の表現を設定";
+
+"Shows a custom header inspired by a popular Android or iOS calendar app" = "月表示モードの選択や「今日」ボタンをヘッダーに配置";
+
+"Shows a calendar with a custom style" = "独自スタイルを設定したカレンダー";
+
+"Shows how to use the control as a pop-up date selector" = "日付選択用の画面をポップアップ表示";
+
+"Shows custom selection scenarios" = "カスタマイズした日付選択の利用例";
+
+// Strings
+"Month View" = "月表示(Month)";
+
+"Year View" = "年表示(Year)";
+
+"Decade View" = "10年間(Decade)";
+
+"Today" = "今日";
+
+"Step1: Select a date.\nStep2: Select another date in a different week.\nObserve: The weekend days are not selected." = "ステップ1: 日付を選択\nステップ2: 他の週の日付を選択\n結果: 週末を除いた日付のみが選択状態になります";
+
+"Pick a date" = "日付の選択";
+
+"The date {0:d} was selected." = " {0:d} が選択されました";

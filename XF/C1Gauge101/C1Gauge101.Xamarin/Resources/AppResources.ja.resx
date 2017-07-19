@@ -126,7 +126,7 @@
     <comment>Animation</comment>
   </data>
   <data name="AutomaticScalingDescription" xml:space="preserve">
-    <value>角度が異なる放射状ゲージを表示</value>
+    <value>大きさを変えた円形ゲージを調整して表示</value>
     <comment>Shows a radial gauge with different sweep angles.</comment>
   </data>
   <data name="AutomaticScalingTitle" xml:space="preserve">
@@ -138,7 +138,7 @@
     <comment>Bad</comment>
   </data>
   <data name="BulletGraphDescription" xml:space="preserve">
-    <value>「良い/悪い/目標」の範囲を設定</value>
+    <value>「良値/不良値/目標値」の範囲を設定</value>
     <comment>Shows a bulletgraph with good, bad and target ranges.</comment>
   </data>
   <data name="BulletGraphTitle" xml:space="preserve">
@@ -170,7 +170,7 @@
     <comment>Shows how to export an image of a gauge.</comment>
   </data>
   <data name="ExportImageTitle" xml:space="preserve">
-    <value>画像のエクスポート</value>
+    <value>画像として保存</value>
     <comment>Export Image</comment>
   </data>
   <data name="GettingStartedDescription" xml:space="preserve">

@@ -59,7 +59,7 @@ namespace C1Gauge101
                     intent = new Intent(ApplicationContext, activity.Class);
                     break;
                 case 6:
-                    activity = new CustomAnimationActivity();
+                    activity = new SnapshotActivity();
                     intent = new Intent(ApplicationContext, activity.Class);
                     break;
             }

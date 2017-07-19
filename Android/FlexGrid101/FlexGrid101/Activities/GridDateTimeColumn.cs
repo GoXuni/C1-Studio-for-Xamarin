@@ -32,9 +32,9 @@ namespace FlexGrid101
                 {
                     dialog = new DatePickerDialog(Grid.Context, new EventHandler<DatePickerDialog.DateSetEventArgs>((s, e) =>
                     {
-                        entry.Text = new DateTime(e.Year, e.Month, e.DayOfMonth, original.Hour, original.Minute, original.Second).ToString(Format);
+                        entry.Text = new DateTime(e.Year, e.Month + 1, e.DayOfMonth, original.Hour, original.Minute, original.Second).ToString(Format);
                         Grid.FinishEditing();
-                    }), original.Year, original.Month, original.Day);
+                    }), original.Year, original.Month - 1, original.Day);
                 }
                 else
                 {

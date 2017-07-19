@@ -1,4 +1,4 @@
-FlexGrid101 Samples for Xamarin Forms
+FlexGrid101 for Xamarin Forms
 ------------------------------------------
 Shows samples of the Grid control.
 

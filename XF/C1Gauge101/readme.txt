@@ -1,4 +1,4 @@
-C1Gauge101 Samples for Xamarin Forms
+C1Gauge101 for Xamarin Forms
 -------------------------------------
 Shows samples of the Gauge control.
 

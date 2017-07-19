@@ -5,6 +5,8 @@
   <string name="GettingStartedDescription">Display, edit and aggregate your data all at once with FlexGrid.</string>
   <string name="ColumnDefinitionTitle">Column Definition</string>
   <string name="ColumnDefinitionDescription">Shows how to specify and format columns.</string>
+  <string name="CustomAppearanceTitle">Custom Appearance</string>
+  <string name="CustomAppearanceDescription">Shows a grid with custom style.</string>
   <string name="SelectionModesTitle">Selection Modes</string>
   <string name="SelectionModesDescription">Shows the various cell selection modes.</string>
   <string name="EditConfirmationTitle">Edit Confirmation</string>
@@ -24,6 +26,7 @@
   <string name="CustomCellsDescription">Customizes a cell by displaying a numeric value in a gauge.</string>
   <string name="GroupingTitle">Grouping</string>
   <string name="GroupingDescription">Groups and aggregates a collection of items.</string>
+  <string name="GroupHeaderFormat">{name}: {value} ({count} items)</string>
   <string name="RowDetailsTitle">Row Details</string>
   <string name="RowDetailsDescription">Expand and collapse row details.</string>
   <string name="RowDetailsCountry">Country : {0}</string>
@@ -49,10 +52,26 @@
   <string name="UnboundDescription">Add empty rows and columns to create an unbound grid.</string>
   <string name="OnDemandTitle">On Demand</string>
   <string name="OnDemandDescription">Load items on demand as the user scrolls down the grid.</string>
-  <string name="CustomAppearanceTitle">Custom Appearance</string>
-  <string name="CustomAppearanceDescription">Shows a grid with a custom style.</string>
   <string name="SearchPlaceholderText">Enter text to search videos on YouTube</string>
   <string name="EmptyListText">There are no videos to show.</string>
   <string name="CellsSelectedText">cell(s) selected</string>
   <string name="RemoveFilter">Remove filter</string>
+  <string name="Monday">Monday</string>
+  <string name="Tuesday">Tuesday</string>
+  <string name="Wednesday">Wednesday</string>
+  <string name="Thursday">Thursday</string>
+  <string name="Friday">Friday</string>
+  <string name="Saturday">Saturday</string>
+  <string name="Sunday">Sunday</string>
+  <string name="Weekday">Weekday</string>
+  <string name="Weekend">Weekend</string>
+
+  <string-array name="SlectionModeTable">
+    <item>None</item>
+    <item>Cell</item>
+    <item>CellRange</item>
+    <item>Row</item>
+    <item>RowRange</item>
+  </string-array>
+
 </resources>

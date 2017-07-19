@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Reflection;
 using C1.Xamarin.Forms.Grid;
 using Xamarin.Forms;
@@ -21,26 +21,46 @@ namespace FlexGrid101
                 {
                     var datePicker = new DatePicker();
                     datePicker.Date = original;
-                    datePicker.PropertyChanged += (sender, e) =>
+                    if (Device.RuntimePlatform == Device.iOS)
                     {
-                        if (e.PropertyName == DatePicker.DateProperty.PropertyName && sender == datePicker)
-                        {
-                            Grid.FinishEditing();
-                        }
-                    };
+                        datePicker.Unfocused += (sender, e) =>
+                      {
+                          Grid.FinishEditing();
+                      };
+                    }
+                    else
+                    {
+                        datePicker.PropertyChanged += (sender, e) =>
+                          {
+                              if (e.PropertyName == DatePicker.DateProperty.PropertyName && sender == datePicker)
+                              {
+                                  Grid.FinishEditing();
+                              }
+                          };
+                    }
                     return datePicker;
                 }
                 else
                 {
                     var timePicker = new TimePicker();
                     timePicker.Time = original.TimeOfDay;
-                    timePicker.PropertyChanged += (sender, e) =>
+                    if (Device.RuntimePlatform == Device.iOS)
                     {
-                        if (e.PropertyName == TimePicker.TimeProperty.PropertyName && sender == timePicker)
+                        timePicker.Unfocused += (sender, e) =>
+                       {
+                           Grid.FinishEditing();
+                       };
+                    }
+                    else
+                    {
+                        timePicker.PropertyChanged += (sender, e) =>
                         {
-                            Grid.FinishEditing();
-                        }
-                    };
+                            if (e.PropertyName == TimePicker.TimeProperty.PropertyName && sender == timePicker)
+                            {
+                                Grid.FinishEditing();
+                            }
+                        };
+                    }
                     return timePicker;
                 }
             }

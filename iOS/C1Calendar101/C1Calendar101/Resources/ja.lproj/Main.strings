@@ -1,0 +1,71 @@
+
+/* Class = "UINavigationItem"; title = "Calendar101"; ObjectID = "194"; */
+"194.title" = "C1Calendar101";
+
+/* Class = "UILabel"; text = "Step1: Select a date."; ObjectID = "1691"; */
+"1691.text" = "ステップ1: 日付を選択";
+
+/* Class = "UILabel"; text = "Step 2: Select another date in a different week."; ObjectID = "1693"; */
+"1693.text" = "ステップ2: 他の週の日付を選択";
+
+/* Class = "UILabel"; text = "Observe: The weekend days are not selected."; ObjectID = "1692"; */
+"1692.text" = "結果: 週末を除いた日付のみが選択状態になります";
+
+/* Class = "UINavigationItem"; title = "Getting Started"; ObjectID = "534"; */
+"534.title" = "Calendar の基本機能";
+
+/* Class = "UINavigationItem"; title = "Custom Appearance"; ObjectID = "426"; */
+"426.title" = "外観のカスタマイズ";
+
+/* Class = "UINavigationItem"; title = "Vertical Orientation"; ObjectID = "762"; */
+"762.title" = "垂直方向の操作";
+
+/* Class = "UINavigationItem"; title = "Popup Editor"; ObjectID = "1425"; */
+"1425.title" = "選択画面";
+
+/* Class = "UINavigationItem"; title = "Custom Day Content"; ObjectID = "763"; */
+"763.title" = "日付領域の変更";
+
+/* Class = "UIButtonItem"; title = "Pick a date"; ObjectID = "1533"; */
+"1533.normalTitle" = "日付の選択";
+
+/* Class = "UINavigationItem"; title = "Custom Selection"; ObjectID = "1426"; */
+"1426.title" = "日付選択のカスタマイズ";
+
+/* Class = "UINavigationItem"; title = "Custom Header"; ObjectID = "1424"; */
+"1424.title" = "ヘッダーのカスタマイズ";
+
+/* Class = "UIButtonItem"; title = "Today"; ObjectID = "1487"; */
+"1487.normalTitle" = "今日";
+
+/* UITableView Titles*/
+//Getting Started
+"434.text" = "Calendar の基本機能";
+//Vertical Orientation
+"550.text" = "垂直方向の操作";
+//Custom Day Content
+"553.text" = "日付領域の変更";
+//Custom Header
+"556.text" = "ヘッダーのカスタマイズ";
+//Custom Appearance
+"301.text" = "外観のカスタマイズ";
+//Popup Editor
+"559.text" = "選択画面";
+//Custom Selection
+"561.text" = "日付選択のカスタマイズ";
+
+/* UITableView Descriptions*/
+//Getting Started
+"435.text" = "カレンダーの日付選択と対話操作";
+//Vertical Orientation
+"551.text" = "縦方向にめくり、スクロール";
+//Custom Day Content
+"554.text" = "日付を表示する領域に画像など独自の表現を設定";
+//Custom Header
+"557.text" = "月表示モードの選択や「今日」ボタンをヘッダーに配置";
+//Custom Appearance
+"302.text" = "独自スタイルを設定したカレンダー";
+//Popup Editor
+"560.text" = "日付選択用の画面をポップアップ表示";
+//Custom Selection
+"562.text" = "カスタマイズした日付選択の利用例";

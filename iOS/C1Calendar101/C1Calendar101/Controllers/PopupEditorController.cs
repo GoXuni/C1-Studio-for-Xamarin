@@ -10,6 +10,10 @@ namespace C1Calendar101
         public PopupEditorController(IntPtr handle) : base(handle)
         {
         }
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+        }
 
         [Action("UnwindFromPopupController:")]
         public void UnwindFromPopupController(UIStoryboardSegue segue)
@@ -17,7 +21,7 @@ namespace C1Calendar101
             var popupController = segue.SourceViewController as PopupCalendarController;
             if (popupController.SelectedDate.HasValue)
             {
-                Message.Text = string.Format("The date {0:d} was selected.", popupController.SelectedDate.Value);
+                Message.Text = string.Format(NSBundle.MainBundle.LocalizedString("The date {0:d} was selected.", ""), popupController.SelectedDate.Value);
             }
             else
             {

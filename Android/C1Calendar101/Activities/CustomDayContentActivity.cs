@@ -9,7 +9,7 @@ using C1.Android.Calendar;
 
 namespace C1Calendar101
 {
-    [Activity(Label = "CustomDayContent", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/custom_day_content", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class CustomDayContentActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

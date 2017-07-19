@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UIKit;
 using C1.CollectionView;
+using C1.iOS.CollectionView;
 
 namespace C1CollectionView101
 {
@@ -47,7 +48,7 @@ namespace C1CollectionView101
         }
     }
 
-    public class SimpleOnDemandCollectionViewSource : XuniCollectionViewSource<MyDataItem>
+    public class SimpleOnDemandCollectionViewSource : C1TableViewSource<MyDataItem>
     {
         private string CellIdentifier = "Default";
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">C1CollectionView101</string>
+  <string name="SortingTitle">ソート	</string>
+  <string name="SortingDescription">アクションバーから項目をソート</string>
+  <string name="FilteringTitle">フィルタリング</string>
+  <string name="FilteringDescription">項目を入力して項目をフィルタリング	</string>
+  <string name="GroupingTitle">グループ化</string>
+  <string name="GroupingDescription">リストをグループ化して表示</string>
+  <string name="SimpleOnDemandTitle">シンプルオンデマンド</string>
+  <string name="SimpleOnDemandDescription">表示時にデータを要求してリストビューにロード</string>
+  <string name="OnDemandTitle">YouTube オンデマンド</string>
+  <string name="OnDemandDescription">YouTube APIを使用したロードオンデマンド</string>
+  <string name="InternetConnectionError">データを取得するときに問題が発生しました。ネットワーク接続を確認してください。</string>
+  <string name="FilterPlaceholderText">フィルタリングするテキストを入力</string>
+  <string name="SearchPlaceholderText">YouTube で検索するビデオのテキストを入力</string>
+</resources>

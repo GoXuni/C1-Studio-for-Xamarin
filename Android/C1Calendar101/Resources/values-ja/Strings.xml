@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="getting_started">Calendar の基本機能</string>
+  <string name="getting_started_desc">カレンダーの日付選択と対話操作</string>
+  <string name="vertical_orientation">垂直方向の操作</string>
+  <string name="vertical_orientation_desc">縦方向にめくり、スクロール</string>
+  <string name="custom_day_content">日付領域の変更</string>
+  <string name="custom_day_content_desc">日付を表示する領域に画像など独自の表現を設定</string>
+  <string name="custom_header">ヘッダーのカスタマイズ</string>
+  <string name="custom_header_desc">月表示モードの選択や「今日」ボタンをヘッダーに配置</string>
+  <string name="custom_header_text">Custom Header Text</string>
+  <string name="custom_header_text_desc">Shows a custom header text by HeaderLoading event and HeaderMonthFormat property.</string>
+  <string name="custom_appearance">外観のカスタマイズ</string>
+  <string name="custom_appearance_desc">独自スタイルを設定したカレンダー</string>
+  <string name="popup_editor">選択画面</string>
+  <string name="popup_editor_desc">日付選択用の画面をポップアップ表示</string>
+  <string name="custom_selection">日付選択のカスタマイズ</string>
+  <string name="custom_selection_desc">カスタマイズした日付選択の利用例</string>
+  <string name="today">今日</string>
+  <string name="selectDate">日付の選択</string>
+  <string name="showSelectedDate" formatted="false"> {0:d} が選択されました</string>
+  <string name="customSelectionGuide_step1" >ステップ1: 日付を選択</string>
+  <string name="customSelectionGuide_step2" >ステップ2: 他の週の日付を選択</string>
+  <string name="customSelectionGuide_observe" >結果: 週末を除いた日付のみが選択状態になります</string>
+
+  <string-array name="viewModeSpinnerValues">
+    <item>月表示(Month View)</item>
+    <item>年表示(Year View)</item>
+    <item>10年表示(Decade View)</item>
+  </string-array>
+
+</resources>

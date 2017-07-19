@@ -1,0 +1,150 @@
+
+/* Class = "UINavigationItem"; title = "FlexGrid101"; ObjectID = "519"; */
+"519.title" = "FlexGrid101";
+
+/* Class = "UINavigationItem"; title = "Getting Started"; ObjectID = "771"; */
+"771.title" = "Getting Started";
+
+/* Class = "UINavigationItem"; title = "Column Definitions"; ObjectID = "1020"; */
+"1020.title" = "Column Definitions";
+
+/* Class = "UINavigationItem"; title = "Selection Modes"; ObjectID = "2197"; */
+"2197.title" = "Selection Modes";
+
+/* Class = "UINavigationItem"; title = "Edit Confirmation"; ObjectID = "5293"; */
+"5293.title" = "Edit Confirmation";
+
+/* Class = "UINavigationItem"; title = "Conditional Formatting"; ObjectID = "5301"; */
+"5301.title" = "Conditional Formatting";
+
+/* Class = "UINavigationItem"; title = "Row Details"; ObjectID = "5295"; */
+"5295.title" = "Row Details";
+
+/* Class = "UINavigationItem"; title = "Star Sizing"; ObjectID = "5299"; */
+"5299.title" = "Star Sizing";
+
+/* Class = "UINavigationItem"; title = "Freezing&Merging"; ObjectID = "5300"; */
+"5300.title" = "Freezing & Merging";
+
+/* Class = "UINavigationItem"; title = "Custom Cells"; ObjectID = "5296"; */
+"5296.title" = "Custom Cells";
+
+/* Class = "UINavigationItem"; title = "Grouping"; ObjectID = "2587"; */
+"2587.title" = "Grouping";
+
+/* Class = "UINavigationItem"; title = "Full Text Filter"; ObjectID = "5298"; */
+"5298.title" = "Full Text Filter";
+
+/* Class = "UINavigationItem"; title = "Editing Form"; ObjectID = "5294"; */
+"5294.title" = "Editing Form";
+
+/* Class = "UINavigationItem"; title = "Custom Merging"; ObjectID = "6488"; */
+"6488.title" = "Custom Merging";
+
+/* Class = "UINavigationItem"; title = "Column Layout"; ObjectID = "5302"; */
+"5302.title" = "Column Layout";
+
+
+/* Class = "UINavigationItem"; title = "On Demand"; ObjectID = "6490"; */
+"6490.title" = "On Demand";
+
+/* Class = "UINavigationItem"; title = "Filter"; ObjectID = "5297"; */
+"5297.title" = "Filter";
+
+/* Class = "UINavigationItem"; title = "Unbound"; ObjectID = "6489"; */
+"6489.title" = "Unbound";
+
+/* Class = "UINavigationItem"; title = "Edit Filter"; ObjectID = "1115"; */
+"1115.title" = "Edit Filter";
+
+/* Class = "UINavigationItem"; title = "Custom Cells"; ObjectID = "5303"; */
+"5303.title" = "Custom Appearance";
+
+//UITableView Titles
+//Getting Started
+"527.text" = "Getting Started";
+//column definitions
+"784.text" = "Column Definitions";
+// selection modes
+"1071.text" = "Selection Modes";
+// edit confirmation
+"2218.text" = "Edit Confirmation";
+//editing
+"2221.text" = "Editing Form";
+//conditional formatting
+"2224.text" = "Conditional Formatting";
+//custom cells
+"2227.text" = "Custom Cells";
+//grouping
+"2230.text" = "Grouping";
+//row details
+"2233.text" = "Row Details";
+//filter
+"2236.text" = "Filter";
+//full text filter
+"2239.text" = "Full Text Filter";
+//column layout
+"2242.text" = "Column Layout";
+//starsizing
+"2245.text" = "Star Sizing";
+//cell freezing
+"2248.text" = "Cell Freezing";
+//custom merging
+"2251.text" = "Custom Merging";
+//unbound
+"2254.text" = "Unbound";
+//on demand
+"2257.text" = "On Demand";
+//custom appearance
+"2260.text" = "Custom Appearance";
+
+//UITableView Titles
+//Getting Started
+"528.text" = "Display, edit and aggregate your data all at once with FlexGrid.";
+//column definitions
+"785.text" = "Shows how to specify and format columns.";
+// selection modes
+"1072.text" = "Shows the various cell selection modes.";
+// edit confirmation
+"2219.text" = "Shows how to prompt the user with a confirmation dialog before committing changes to a cell.";
+//editing
+"2222.text" = "Edit cells by input form rather than inline.";
+//conditional formatting
+"2225.text" = "Uses a CellFactory to apply conditional formatting.";
+//custom cells
+"2228.text" = "Edit cells by input form rather than inline.";
+//grouping
+"2231.text" = "Groups and aggregates a collection of videos.";
+//row details
+"2234.text" = "Expand and collapse row details.";
+//filter
+"2237.text" = "Filters the data by columns through a generated form.";
+//full text filter
+"2240.text" = "Filters and highlights the data across all columns.";
+//column layout
+"2243.text" = "Shows a custom column manager to modify column layout.";
+//starsizing
+"2246.text" = "Shows a responsive column layout that uses star sizing.";
+//cell freezing
+"2249.text" = "Shows frozen columns, rows and cell merging.";
+//custom merging
+"2252.text" = "Shows a grid with custom cell merging.";
+//unbound
+"2255.text" = "Add empty rows and columns to create an unbound grid.";
+//on demand
+"2258.text" = "Load items on demand as the user scrolls down the grid.";
+//custom appearance
+"2261.text" = "Shows a Grid with a custom style";
+
+//UILabels for Edit FOrm
+"7271.text" = "First Name";
+"7272.text" = "Last Name";
+"7273.text" = "Last Order";
+"7274.text" = "Order Total";
+
+//Filter Form
+"6513.placeholder" = "Enter text to filter";
+
+//Filter buttons on Filter page
+"8135.title" = "Filter";
+

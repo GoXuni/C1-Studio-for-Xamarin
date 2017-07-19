@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="ApplicationName">C1Input101</string>
+  <string name="basic_mask">マスク入力</string>
+  <string name="basic_mask_desc">マスク書式を指定した入力ボックス</string>
+  <string name="id_mask">ID(数字):</string>
+  <string name="date_mask">日付:</string>
+  <string name="phone_mask">電話番号:</string>
+  <string name="state_mask">識別(英字2桁):</string>
+
+  <string name="combobox">コンボボックス</string>
+  <string name="combobox_desc">入力候補をリストで表示する</string>
+  <string name="editable">編集可能の形式</string>
+  <string name="noneditable">編集不可の形式</string>
+
+  <string name="dropdown">ドロップダウン</string>
+  <string name="dropdown_desc">カレンダーを表示して日付を選択</string>
+  <string name="date_mask_string">0000/00/00</string>
+  <string name="date_mask_format">yyyy/MM/dd</string>
+
+  <string name="autocomplete">オートコンプリート</string>
+  <string name="autocomplete_desc">入力した文字で入力候補を表示する</string>
+  <string name="highlight">入力した文字をリストで強調表示</string>
+  <string name="delay">入力後に遅延させて表示</string>
+  <string name="custom">独自形式の表示リスト</string>
+  <string name="filter">リストを動的に作成、抽出して表示</string>
+</resources>

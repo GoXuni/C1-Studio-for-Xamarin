@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{C373BB99-487B-4294-A61A-A89DF68FE3CE}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FlexChart101</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>FlexChart101</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchSdkVersion>10.0</MtouchSdkVersion>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>False</MtouchFloat32>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="License.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controllers\GettingStartedController.cs" />
+    <Compile Include="Controllers\GettingStartedController.designer.cs">
+      <DependentUpon>GettingStartedController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BasicChartTypesController.cs" />
+    <Compile Include="Controllers\BasicChartTypesController.designer.cs">
+      <DependentUpon>BasicChartTypesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\MixedChartTypesController.cs" />
+    <Compile Include="Controllers\MixedChartTypesController.designer.cs">
+      <DependentUpon>MixedChartTypesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BubbleChartController.cs" />
+    <Compile Include="Controllers\BubbleChartController.designer.cs">
+      <DependentUpon>BubbleChartController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DataLabelController.cs" />
+    <Compile Include="Controllers\DataLabelController.designer.cs">
+      <DependentUpon>DataLabelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\LegendAndTitlesController.cs" />
+    <Compile Include="Controllers\LegendAndTitlesController.designer.cs">
+      <DependentUpon>LegendAndTitlesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SelectionModesController.cs" />
+    <Compile Include="Controllers\SelectionModesController.designer.cs">
+      <DependentUpon>SelectionModesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ThemingController.cs" />
+    <Compile Include="Controllers\ThemingController.designer.cs">
+      <DependentUpon>ThemingController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FlexPieGettingStartedController.cs" />
+    <Compile Include="Controllers\FlexPieGettingStartedController.designer.cs">
+      <DependentUpon>FlexPieGettingStartedController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FlexPieBasicFeaturesController.cs" />
+    <Compile Include="Controllers\FlexPieBasicFeaturesController.designer.cs">
+      <DependentUpon>FlexPieBasicFeaturesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FlexPieLegendAndTitlesController.cs" />
+    <Compile Include="Controllers\FlexPieLegendAndTitlesController.designer.cs">
+      <DependentUpon>FlexPieLegendAndTitlesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FlexPieSelectionSampleController.cs" />
+    <Compile Include="Controllers\FlexPieSelectionSampleController.designer.cs">
+      <DependentUpon>FlexPieSelectionSampleController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FlexPieDataLabelController.cs" />
+    <Compile Include="Controllers\FlexPieDataLabelController.designer.cs">
+      <DependentUpon>FlexPieDataLabelController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FlexPieThemingController.cs" />
+    <Compile Include="Controllers\FlexPieThemingController.designer.cs">
+      <DependentUpon>FlexPieThemingController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainSampleMenuTableViewController.cs" />
+    <Compile Include="MainSampleMenuTableViewController.designer.cs">
+      <DependentUpon>MainSampleMenuTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialData.cs" />
+    <Compile Include="SalesData.cs" />
+    <Compile Include="PieChartData.cs" />
+    <Compile Include="Controllers\FinancialChartController.cs" />
+    <Compile Include="Controllers\FinancialChartController.designer.cs">
+      <DependentUpon>FinancialChartController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\MultipleAxesController.cs" />
+    <Compile Include="Controllers\MultipleAxesController.designer.cs">
+      <DependentUpon>MultipleAxesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ToggleSeriesController.cs" />
+    <Compile Include="Controllers\ToggleSeriesController.designer.cs">
+      <DependentUpon>ToggleSeriesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DynamicChartsController.cs" />
+    <Compile Include="Controllers\DynamicChartsController.designer.cs">
+      <DependentUpon>DynamicChartsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HitTestController.cs" />
+    <Compile Include="Controllers\HitTestController.designer.cs">
+      <DependentUpon>HitTestController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\StylingSeriesController.cs" />
+    <Compile Include="Controllers\StylingSeriesController.designer.cs">
+      <DependentUpon>StylingSeriesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ZonesController.cs" />
+    <Compile Include="Controllers\ZonesController.designer.cs">
+      <DependentUpon>ZonesController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\en.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\en.lproj\Main.strings" />
+    <BundleResource Include="Resources\ja.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\ja.lproj\Main.strings" />
+    <Compile Include="Controllers\SnapshotController.cs" />
+    <Compile Include="Controllers\SnapshotController.designer.cs">
+      <DependentUpon>SnapshotController.cs</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Base.lproj\Main.storyboard" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="C1.CollectionView, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.3.20172.170\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\C1.CollectionView.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.iOS.Chart, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Chart.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.iOS.Core, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\C1SampleDescriptor.xml" />
+    <BundleResource Include="Resources\Images\Germany.png" />
+    <BundleResource Include="Resources\Images\Greece.png" />
+    <BundleResource Include="Resources\Images\Italy.png" />
+    <BundleResource Include="Resources\Images\Japan.png" />
+    <BundleResource Include="Resources\Images\UK.png" />
+    <BundleResource Include="Resources\Images\US.png" />
+    <BundleResource Include="Resources\Images\apple.png" />
+    <BundleResource Include="Resources\Images\chart_aggregate.png" />
+    <BundleResource Include="Resources\Images\chart_animation.png" />
+    <BundleResource Include="Resources\Images\chart_annotation.png" />
+    <BundleResource Include="Resources\Images\chart_area.png" />
+    <BundleResource Include="Resources\Images\chart_axes.png" />
+    <BundleResource Include="Resources\Images\chart_bubble.png" />
+    <BundleResource Include="Resources\Images\chart_column.png" />
+    <BundleResource Include="Resources\Images\chart_composite.png" />
+    <BundleResource Include="Resources\Images\chart_dynamic.png" />
+    <BundleResource Include="Resources\Images\chart_finance.png" />
+    <BundleResource Include="Resources\Images\chart_format.png" />
+    <BundleResource Include="Resources\Images\chart_line.png" />
+    <BundleResource Include="Resources\Images\chart_linemarker.png" />
+    <BundleResource Include="Resources\Images\chart_multiaxes.png" />
+    <BundleResource Include="Resources\Images\chart_scatter.png" />
+    <BundleResource Include="Resources\Images\chart_scrolling.png" />
+    <BundleResource Include="Resources\Images\chart_selection.png" />
+    <BundleResource Include="Resources\Images\chart_title.png" />
+    <BundleResource Include="Resources\Images\chart_tooltip.png" />
+    <BundleResource Include="Resources\Images\custom.png" />
+    <BundleResource Include="Resources\Images\export_image.png" />
+    <BundleResource Include="Resources\Images\google.png" />
+    <BundleResource Include="Resources\Images\microsoft.png" />
+    <BundleResource Include="Resources\Images\themes.png" />
+    <BundleResource Include="Resources\Images\xuni_butterfly.png" />
+    <BundleResource Include="Resources\Images\pie_doughnut.png" />
+    <BundleResource Include="Resources\Images\pie_labels.png" />
+    <BundleResource Include="Resources\Images\pie_load.png" />
+    <BundleResource Include="Resources\Images\pie_selection.png" />
+    <BundleResource Include="Resources\Images\pie_title.png" />
+    <BundleResource Include="Resources\Images\pie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-167.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-60@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-60@3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-76.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-76@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small-40.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small-40@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-small@3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

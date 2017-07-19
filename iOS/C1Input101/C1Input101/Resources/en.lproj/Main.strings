@@ -1,0 +1,51 @@
+﻿
+/* Class = "UILabel"; text = "Editable"; ObjectID = "Au4-Dr-6Cs"; */
+"IU0-w2-Fw2.text" = "Editable";
+
+/* Class = "UINavigationItem"; title = "Masked Input"; ObjectID = "FkS-qZ-6hy"; */
+"8jq-o0-flo.title" = "Masked Input";
+
+/* Class = "UILabel"; text = "Highlight"; ObjectID = "I4e-wf-kXj"; */
+"AjA-gp-5b9.text" = "Highlight";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "I58-mC-Zfv"; */
+"I58-mC-Zfv.text" = "Title";
+
+/* Class = "UILabel"; text = "Phone:"; ObjectID = "K9z-NQ-SNN"; */
+"gKT-kp-4PZ.text" = "Phone:";
+
+/* Class = "UINavigationItem"; title = "Drop Down"; ObjectID = "QU6-R9-Xyi"; */
+"mGA-ug-Px1.title" = "Drop Down";
+
+/* Class = "UILabel"; text = "Custom Drop-down"; ObjectID = "TWu-i8-5aW"; */
+"66x-VZ-emT.text" = "Custom Drop-down";
+
+/* Class = "UILabel"; text = "State:"; ObjectID = "X38-UR-NwE"; */
+"nGo-LA-x5X.text" = "State:";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "gWJ-oG-dhi"; */
+"gWJ-oG-dhi.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "DOB:"; ObjectID = "gdR-1t-PGD"; */
+"opX-e6-taf.text" = "DOB:";
+
+/* Class = "UINavigationItem"; title = "Auto Complete"; ObjectID = "hnG-Zv-V3A"; */
+"N4S-JH-stU.title" = "Auto Complete";
+
+/* Class = "UILabel"; text = "Delay"; ObjectID = "jbD-yu-KX7"; */
+"cRv-FD-Szh.text" = "Delay";
+
+/* Class = "UILabel"; text = "Dynamic"; ObjectID = "jn6-vZ-usO"; */
+"LnA-bt-njF.text" = "Dynamic";
+
+/* Class = "UINavigationItem"; title = "Combo Box"; ObjectID = "l6B-Jo-fvJ"; */
+"hi0-Ld-fX3.title" = "Combo Box";
+
+/* Class = "UILabel"; text = "Non-editable"; ObjectID = "m17-uw-9Au"; */
+"7am-F3-fq6.text" = "Non-editable";
+
+/* Class = "UINavigationItem"; title = "Input101"; ObjectID = "njc-fO-DEw"; */
+"njc-fO-DEw.title" = "Input101";
+
+/* Class = "UILabel"; text = "ID:"; ObjectID = "z2v-to-R3r"; */
+"KUG-Ti-AjZ.text" = "ID:";

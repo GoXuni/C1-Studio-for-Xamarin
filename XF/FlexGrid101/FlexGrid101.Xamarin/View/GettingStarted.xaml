@@ -3,5 +3,5 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlexGrid101.GettingStarted"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
-  <c1:FlexGrid x:Name="grid"/>
+  <c1:FlexGrid x:Name="grid" AutoGeneratingColumn="OnAutoGeneratingColumn"/>
 </ContentPage>

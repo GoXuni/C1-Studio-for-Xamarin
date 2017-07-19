@@ -50,7 +50,6 @@ namespace C1Gauge101
             setRange(40, 80, -256);
             setRange(80, 100, -16711936);
 
-            mLinearGauge.Value = mValue;
             mLinearGauge.Min = 0;
             mLinearGauge.Max = 1;
             mLinearGauge.Step = .01f;
@@ -59,9 +58,9 @@ namespace C1Gauge101
             mLinearGauge.ShowText = GaugeShowText.All;
             //mLinearGauge.GaugeWidth = .5f;
             mLinearGauge.Animate();
-            mLinearGauge.Format = "#%";
+            mLinearGauge.Format = "0%";
+            mLinearGauge.Value = mValue;
 
-            mRadialGauge.Value = mValue;
             mRadialGauge.Min = 0;
             mRadialGauge.Max = 1;
             mRadialGauge.Step = .01f;
@@ -70,7 +69,8 @@ namespace C1Gauge101
             mRadialGauge.ShowText = GaugeShowText.All;
             //mRadialGauge.GaugeWidth = .5f;
             mRadialGauge.Animate();
-            mRadialGauge.Format = "#%";
+            mRadialGauge.Format = "0%";
+            mRadialGauge.Value = mValue;
 
             Button minusButton = (Button)FindViewById(Resource.Id.buttonMinus);
             minusButton.Click += button_Click;

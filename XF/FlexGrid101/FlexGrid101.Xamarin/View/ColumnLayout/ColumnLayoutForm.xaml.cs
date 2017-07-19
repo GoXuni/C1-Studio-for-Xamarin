@@ -29,6 +29,7 @@ namespace FlexGrid101
 
         private async void OKClicked(object sender, EventArgs e)
         {
+            grid.FinishEditing();
             await Navigation.PopModalAsync(true);
             _completion.TrySetResult(true);
         }

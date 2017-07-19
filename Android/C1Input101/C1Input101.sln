@@ -1,0 +1,24 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Input101", "C1Input101\C1Input101.csproj", "{3A46D00F-D508-486C-B1ED-1942BDA7685E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		GRAPECITY|Any CPU = GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A46D00F-D508-486C-B1ED-1942BDA7685E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A46D00F-D508-486C-B1ED-1942BDA7685E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A46D00F-D508-486C-B1ED-1942BDA7685E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3A46D00F-D508-486C-B1ED-1942BDA7685E}.GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A46D00F-D508-486C-B1ED-1942BDA7685E}.GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{3A46D00F-D508-486C-B1ED-1942BDA7685E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A46D00F-D508-486C-B1ED-1942BDA7685E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

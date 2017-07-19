@@ -13,7 +13,7 @@ namespace FlexGrid101.iOS
     {
         public async Task SaveFileToDisk(string fileName, string data)
         {
-			var dir = Environment.GetFolderPath (Environment.SpecialFolder.ApplicationData);
+			var dir = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
 			var file = Path.GetFullPath(Path.Combine (dir, fileName));
 
 			if (!System.IO.File.Exists (file)) {
@@ -30,7 +30,7 @@ namespace FlexGrid101.iOS
 
         public async Task<string> ReadFileFromDisk(string fileName)
         {
-			var dir = Environment.GetFolderPath (Environment.SpecialFolder.ApplicationData);
+			var dir = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
 			var file = Path.GetFullPath(Path.Combine (dir, fileName));
 
 			if (System.IO.File.Exists (file)) {

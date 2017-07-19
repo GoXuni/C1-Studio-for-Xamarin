@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">C1Gauge101</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="automatic_scaling">自動スケーリング</string>
+  <string name="bullet_graph">ブレットグラフ</string>
+  <string name="custom_animation">アニメーション</string>
+  <string name="direction">ポインタの方向</string>
+  <string name="displaying_values">値の表示</string>
+  <string name="getting_started">Gaugeの基本機能</string>
+  <string name="using_ranges">範囲の使用</string>
+  <string name="start_angle">開始角度（度）</string>
+  <string name="sweep_angle">移動角度（度）</string>
+  <string name="plus">+</string>
+  <string name="minus">-</string>
+  <string name="bad">不良値</string>
+  <string name="good">良　値 </string>
+  <string name="target">目標値  </string>
+  <string name="show_text">表示するテキスト</string>
+  <string name="value">Value 値</string>
+  <string name="bulletgraph">ブレットグラフ(BulletGraph)</string>
+  <string name="radialgauge">円形ゲージ(RadialGauge)</string>
+  <string name="lineargauge">線型ゲージ(LinearGauge)</string>
+  <string name="show_ranges">範囲を表示</string>
+  <string name="getting_started_desc">インタラクション機能を持つゲージ</string>
+  <string name="displaying_values_desc">値ラベルをゲージに表示</string>
+  <string name="using_ranges_desc">カスタマイズされた範囲を背後に表示</string>
+  <string name="automatic_scaling_desc">大きさを変えた円形ゲージを調整して表示</string>
+  <string name="direction_desc">方向が異なる線形ゲージを表示</string>
+  <string name="bulletgraph_desc">「良値/不良値/目標値」の範囲を設定</string>
+  <string name="custom_animation_desc">ゲージを表示する場合のアニメーション効果</string>
+
+  <string name="snapshot_desc">ゲージに表示した内容を画像として保存する方法</string>
+  <string name="snapshotStored">画像をデバイスに保存しました</string>
+  <string name="snapshot">画像として保存</string>
+  <string name="permissionDenied">ユーザーによってアクセス許可が拒否されました。</string>
+  <string name="positive_button">OK</string>
+  <string name="actionSnapshot">画像を保存</string>
+
+  <string-array name="directionSpinnerValues">
+    <item>右方向(Right)</item>
+    <item>左方向(Left)</item>
+    <item>下方向(Down)</item>
+    <item>上方向(Up)</item>
+  </string-array>
+
+  <string-array name="showTextSpinnerValues">
+    <item>すべてを表示(All)</item>
+    <item>最小値、最大値を表示(MinMax)</item>
+    <item>値を表示(Value)</item>
+    <item>表示しない(None)</item>
+  </string-array>
+
+</resources>

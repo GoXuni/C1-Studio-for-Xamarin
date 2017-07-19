@@ -32,8 +32,16 @@ namespace C1Gauge101
 
         private async void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var sample = e.Item as Sample;
-            await this.Navigation.PushAsync(GetSample(sample.SampleViewType));
+            try
+            {
+                listView.IsEnabled = false;
+                var sample = e.Item as Sample;
+                await this.Navigation.PushAsync(GetSample(sample.SampleViewType));
+            }
+            finally
+            {
+                listView.IsEnabled = true;
+            }
         }
 
         private Page GetSample(int sampleViewType)

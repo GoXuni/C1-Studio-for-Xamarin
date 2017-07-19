@@ -10,6 +10,8 @@
 "47.text" = "Shows linear gauges at different directions";
 "51.text" = "Bullet Graph";
 "52.text" = "Shows a bulletgraph with good, bad and target ranges.";
+"wrl-UH-wDb.text" = "Export Image";
+"55Q-gA-Efk.text" = "Shows how to export an image of a gauge.";
 "458.text" = "Value";
 "479.text" = "Linear Gauge";
 "514.text" = "Bullet Graph";
@@ -22,3 +24,5 @@
 "1871.text" = "Target";
 "1948.text" = "Start Angle";
 "1949.text" = "Sweep Angle";
+"6Y2-P7-7uB.text" = "Export Image";
+"2085.title" = "Take";

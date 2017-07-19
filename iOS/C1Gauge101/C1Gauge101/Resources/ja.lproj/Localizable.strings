@@ -12,10 +12,13 @@
 "Left" = "左";
 "Right" = "右";
 "Up" = "上";
-"Down" = "下へ";
-"Good" = "良い";
-"Bad" = "悪い";
-"Target" = "目標";
+"Down" = "下";
+"Good" = "良　値";
+"Bad" = "不良値";
+"Target" = "目標値";
 "StartAngle" = "開始角度";
 "SweepAngle" = "スイープ角度";
 "AutoScale" = "自動スケーリング";
+"ImageSavedDescription" = "画像をデバイスに保存しました";
+"ImageSavedTitle" = "画像の保存";
+"PermissionDenied" = "ユーザーによってアクセス許可が拒否されました。";

@@ -4,6 +4,8 @@ using Android.Content.PM;
 using Android.OS;
 using System;
 using C1.Android.Grid;
+using Android.Graphics;
+using C1.Android.Core;
 
 namespace FlexGrid101
 {
@@ -17,6 +19,18 @@ namespace FlexGrid101
             SetContentView(Resource.Layout.GettingStarted);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
+            Grid.GridLinesVisibility = GridLinesVisibility.None;
+            Grid.HeadersGridLinesVisibility = GridLinesVisibility.None;
+            Grid.HeadersVisibility = GridHeadersVisibility.Column;
+            Grid.BackgroundColor = Color.White;
+            Grid.RowBackgroundColor = ColorEx.FromARGB(0xFF, 0xE2, 0xEF, 0xDB);
+            Grid.RowTextColor = Color.Black;
+            Grid.AlternatingRowBackgroundColor = Color.White;
+            Grid.ColumnHeaderBackgroundColor = ColorEx.FromARGB(0xFF, 0x70, 0xAD, 0x46);
+            Grid.ColumnHeaderTextColor = Color.White;
+            Grid.ColumnHeaderTypeface = Typeface.Create("", TypefaceStyle.Bold);
+            Grid.SelectionBackgroundColor = ColorEx.FromARGB(0xFF, 0x5A, 0x82, 0x3F);
+            Grid.SelectionTextColor = Color.White;
             Grid.ItemsSource = Customer.GetCustomerList(100);
             Grid.BeginningEdit += OnBeginningEdit;
             Grid.CellEditEnded += OnCellEditEnded;
@@ -25,20 +39,17 @@ namespace FlexGrid101
         public FlexGrid Grid { get; set; }
 
         private object _originalValue;
-        private int row;
-        private int column;
 
         private void OnBeginningEdit(object sender, GridCellEditEventArgs e)
         {
-            var grid = sender as FlexGrid;
-            _originalValue = grid[e.CellRange.Row, e.CellRange.Column];
-            row = e.CellRange.Row;
-            column = e.CellRange.Column;
+            _originalValue = Grid[e.CellRange.Row, e.CellRange.Column];
         }
 
         private void OnCellEditEnded(object sender, GridCellEditEventArgs e)
         {
-            if (!e.CancelEdits)
+            var originalValue = _originalValue;
+            var currentValue = Grid[e.CellRange.Row, e.CellRange.Column];
+            if (!e.CancelEdits && (originalValue == null && currentValue != null || !originalValue.Equals(currentValue)))
             {
                 var alert = new AlertDialog.Builder(this);
                 alert.SetTitle(Resources.GetString(Resource.String.EditConfirmationQuestionTitle));
@@ -46,8 +57,7 @@ namespace FlexGrid101
                 alert.SetPositiveButton("Yes", new EventHandler<DialogClickEventArgs>((s, e2) => { }));
                 alert.SetNegativeButton("No", new EventHandler<DialogClickEventArgs>((s, e2) =>
                 {
-                    Grid[row, column] = _originalValue;
-                    Grid.Refresh(range: e.CellRange);
+                    Grid[e.CellRange.Row, e.CellRange.Column] = originalValue;
                 }));
                 alert.Show();
             }

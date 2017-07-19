@@ -6,16 +6,12 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		GRAPECITY|Any CPU = GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4D473D97-3E67-47ED-A240-0CF60FC3AC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D473D97-3E67-47ED-A240-0CF60FC3AC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D473D97-3E67-47ED-A240-0CF60FC3AC38}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{4D473D97-3E67-47ED-A240-0CF60FC3AC38}.GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{4D473D97-3E67-47ED-A240-0CF60FC3AC38}.GRAPECITY|Any CPU.Build.0 = Release|Any CPU
-		{4D473D97-3E67-47ED-A240-0CF60FC3AC38}.GRAPECITY|Any CPU.Deploy.0 = Release|Any CPU
 		{4D473D97-3E67-47ED-A240-0CF60FC3AC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D473D97-3E67-47ED-A240-0CF60FC3AC38}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D473D97-3E67-47ED-A240-0CF60FC3AC38}.Release|Any CPU.Deploy.0 = Release|Any CPU
@@ -23,4 +19,4 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	EndGlobal
+EndGlobal

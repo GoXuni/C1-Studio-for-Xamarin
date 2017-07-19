@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="ApplicationName">C1Input101</string>
+  <string name="basic_mask">Masked Input</string>
+  <string name="basic_mask_desc">Capture properly formatted text using a mask</string>
+  <string name="id_mask">ID:</string>
+  <string name="date_mask">DOB:</string>
+  <string name="phone_mask">Phone:</string>
+  <string name="state_mask">State:</string>
+
+  <string name="combobox">ComboBox</string>
+  <string name="combobox_desc">Display an editable list of options</string>
+  <string name="editable">Editable</string>
+  <string name="noneditable">Non-editable</string>
+
+  <string name="dropdown">DropDown</string>
+  <string name="dropdown_desc">Create a customizable drop-down control</string>
+  <string name="date_mask_string">00/00/0000</string>
+  <string name="date_mask_format">MM/dd/yyyy</string>
+
+  <string name="autocomplete">AutoComplete</string>
+  <string name="autocomplete_desc">Show suggestions automatically while the user is typing</string>
+  <string name="highlight">Highlight</string>
+  <string name="delay">Delay</string>
+  <string name="custom">Custom Drop-down</string>
+  <string name="filter">Dynamic</string>
+</resources>

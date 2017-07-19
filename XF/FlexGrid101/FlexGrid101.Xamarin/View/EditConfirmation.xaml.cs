@@ -18,26 +18,23 @@ namespace FlexGrid101
         }
 
         private object _originalValue;
-        private int row;
-        private int column;
 
         private void OnBeginningEdit(object sender, GridCellEditEventArgs e)
         {
             _originalValue = grid[e.CellRange.Row, e.CellRange.Column];
-            row = e.CellRange.Row;
-            column = e.CellRange.Column;
         }
 
         private void OnCellEditEnded(object sender, GridCellEditEventArgs e)
         {
-            if (!e.CancelEdits)
+            var originalValue = _originalValue;
+            var currentValue = grid[e.CellRange.Row, e.CellRange.Column];
+            if (!e.CancelEdits && (originalValue == null && currentValue != null || !originalValue.Equals(currentValue)))
             {
                 DisplayAlert(AppResources.EditConfirmationQuestionTitle, AppResources.EditConfirmationQuestion, AppResources.Apply, AppResources.Cancel).ContinueWith(t =>
                 {
                     if (!t.Result)
                     {
-                        grid[row, column] = _originalValue;
-                        grid.Refresh(range: e.CellRange);
+                        grid[e.CellRange.Row, e.CellRange.Column] = originalValue;
                     }
                 }, TaskScheduler.FromCurrentSynchronizationContext());
             }

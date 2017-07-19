@@ -1,0 +1,5 @@
+﻿
+"InternetConnectionError"  = "There was a problem when trying to get the data from internet.Please check your internet connection";
+"FilterPlaceholderText" = "Enter text to filter";
+"EmptyText" = "There are no videos to show";
+

@@ -39,8 +39,8 @@ namespace C1Gauge101
                     context.Resources.GetString(Resource.String.direction_desc), Resource.Drawable.gauge_linear);
             SampleModel bulletGraph = new SampleModel(context.Resources.GetString(Resource.String.bulletgraph), context.Resources.GetString(
                     Resource.String.bulletgraph_desc), Resource.Drawable.gauge_bullet);
-            SampleModel customAnimation = new SampleModel(context.Resources.GetString(Resource.String.custom_animation), context.Resources.GetString(
-                    Resource.String.custom_animation_desc), Resource.Drawable.gauge_basic);
+            SampleModel snapshot = new SampleModel(context.Resources.GetString(Resource.String.snapshot), context.Resources.GetString(
+                    Resource.String.snapshot_desc), Resource.Drawable.gauge_basic);
 
             // adding objects to list
             mList.Add(gettingStarted);
@@ -49,7 +49,7 @@ namespace C1Gauge101
             mList.Add(automaticScaling);
             mList.Add(direction);
             mList.Add(bulletGraph);
-            mList.Add(customAnimation);
+            mList.Add(snapshot);
         }
 
 

@@ -16,7 +16,7 @@ namespace C1Gauge101
         {
             get
             {
-                return ImageSource.FromResource("C1Gauge101.Images." + Thumbnail);
+                return ImageSource.FromResource("C1Gauge101.Images." + Thumbnail, typeof(App));
             }
         }
     }

@@ -26,7 +26,6 @@ namespace FlexGrid101
             grid.Columns.Add(new GridDateTimeColumn { Binding = "LastOrderDate", SortMemberPath = "LastOrderTime", Format = "t", Mode = GridDateTimeColumnMode.Time, Header = "Last Order Time" });
             grid.Columns["CountryId"].DataMap = new GridDataMap() { ItemsSource = Customer.GetCountries(), DisplayMemberPath = "Value", SelectedValuePath = "Key" };
             grid.ItemsSource = Customer.GetCustomerList(100);
-            grid.ItemsSource = Customer.GetCustomerList(100);
         }
     }
 }

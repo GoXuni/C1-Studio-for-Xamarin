@@ -34,11 +34,11 @@ namespace C1CollectionView101
                 var videos = new ObservableCollection<YouTubeVideo>((await YouTubeCollectionView.LoadVideosAsync("Xamarin iOS", "relevance", null, 50)).Item2);
                 _collectionView = new C1CollectionView<YouTubeVideo>(videos);
                 await _collectionView.GroupAsync(v => v.ChannelTitle);
-                TableView.Source = new YouTubeCollectionViewSource(TableView, _collectionView);
+                TableView.Source = new YouTubeTableViewSource(TableView, _collectionView);
             }
             catch
             {
-                var alert = new UIAlertView("", "There was a problem when trying to get the data from internet.Please check your internet connection", null, "OK");
+                var alert = new UIAlertView("", Foundation.NSBundle.MainBundle.LocalizedString("InternetConnectionError", ""), null, "OK");
                 alert.Show();
             }
             finally

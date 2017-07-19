@@ -34,13 +34,13 @@ namespace FlexGrid101
 
         private void PopulateGrid()
         {
-            Grid.Columns.Add(new GridColumn { Header = "Monday", Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Tuesday", Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Wednesday", Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Thursday", Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Friday", Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Saturday", Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Sunday", Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
+            Grid.Columns.Add(new GridColumn { Header = Resources.GetString(Resource.String.Monday), Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
+            Grid.Columns.Add(new GridColumn { Header = Resources.GetString(Resource.String.Tuesday), Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
+            Grid.Columns.Add(new GridColumn { Header = Resources.GetString(Resource.String.Wednesday), Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
+            Grid.Columns.Add(new GridColumn { Header = Resources.GetString(Resource.String.Thursday), Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
+            Grid.Columns.Add(new GridColumn { Header = Resources.GetString(Resource.String.Friday), Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
+            Grid.Columns.Add(new GridColumn { Header = Resources.GetString(Resource.String.Saturday), Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
+            Grid.Columns.Add(new GridColumn { Header = Resources.GetString(Resource.String.Sunday), Width = GridLength.Star, MinWidth = TypedValue.ApplyDimension(ComplexUnitType.Dip, 120, Resources.DisplayMetrics), AllowMerging = true, HeaderHorizontalAlignment = GravityFlags.Center, HorizontalAlignment = GravityFlags.Center });
 
             Grid.Rows.Add(new GridRow());
             Grid.Rows.Add(new GridRow());
@@ -51,13 +51,13 @@ namespace FlexGrid101
             Grid.Rows.Add(new GridRow());
 
             Grid.ColumnHeaders.Rows.Insert(0, new GridRow() { AllowMerging = true });
-            Grid.ColumnHeaders[0, 0] = "Weekday";
-            Grid.ColumnHeaders[0, 1] = "Weekday";
-            Grid.ColumnHeaders[0, 2] = "Weekday";
-            Grid.ColumnHeaders[0, 3] = "Weekday";
-            Grid.ColumnHeaders[0, 4] = "Weekday";
-            Grid.ColumnHeaders[0, 5] = "Weekend";
-            Grid.ColumnHeaders[0, 6] = "Weekend";
+            Grid.ColumnHeaders[0, 0] = Resources.GetString(Resource.String.Weekday);
+            Grid.ColumnHeaders[0, 1] = Resources.GetString(Resource.String.Weekday);
+            Grid.ColumnHeaders[0, 2] = Resources.GetString(Resource.String.Weekday);
+            Grid.ColumnHeaders[0, 3] = Resources.GetString(Resource.String.Weekday);
+            Grid.ColumnHeaders[0, 4] = Resources.GetString(Resource.String.Weekday);
+            Grid.ColumnHeaders[0, 5] = Resources.GetString(Resource.String.Weekend);
+            Grid.ColumnHeaders[0, 6] = Resources.GetString(Resource.String.Weekend);
 
             Grid.RowHeaders.Columns[0].Width = GridLength.Auto;
             Grid.RowHeaders[0, 0] = "12:00";

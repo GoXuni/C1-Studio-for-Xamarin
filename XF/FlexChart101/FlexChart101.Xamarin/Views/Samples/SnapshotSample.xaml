@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.SnapshotSample" x:Name="page">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem x:Name="SavePicture" Clicked="OnSnapshotClicked" Order="Primary" Priority="0">
+      <ToolbarItem.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource"
+          WinPhone="Assets/AppBar/feature.camera.png"
+          Android="ic_action_camera" />
+      </ToolbarItem.Icon>
+    </ToolbarItem>
+  </ContentPage.ToolbarItems>
+  <StackLayout>
+    <Label BindingContext="{x:Reference page}" Text="{Binding Title}" IsVisible="true" HorizontalOptions="Center" Font="Large"/>
+    <Grid Padding="10" VerticalOptions="FillAndExpand">
+      <c1:FlexChart x:Name="flexChart" BindingX="Name" VerticalOptions="FillAndExpand">
+        <c1:FlexChart.Series>
+          <c1:ChartSeries Binding="Sales" SeriesName="Sales" />
+          <c1:ChartSeries Binding="Expenses"  SeriesName="Expenses" />
+          <c1:ChartSeries Binding="Downloads"  SeriesName="Downloads" />
+        </c1:FlexChart.Series>
+      </c1:FlexChart>
+      <StackLayout x:Name="snapshotFrame" Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout.BackgroundColor>
+          <OnPlatform x:TypeArguments="Color"
+            WinPhone="#FF444444"
+            Android="#FFFFFFFF"
+            iOS="#FFFFFFFF"/>
+        </StackLayout.BackgroundColor>
+        <Image x:Name="snapshot" />
+      </StackLayout>
+    </Grid>
+  </StackLayout>
+</ContentPage>

@@ -21,7 +21,7 @@ namespace C1CollectionView101
         {
             get
             {
-                return ImageSource.FromResource("C1CollectionView101.Images." + Thumbnail);
+                return ImageSource.FromResource("C1CollectionView101.Images." + Thumbnail, typeof(App));
             }
         }
     }

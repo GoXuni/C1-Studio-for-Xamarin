@@ -1,4 +1,4 @@
-C1CollectionView101 Samples for Xamarin Forms
+C1CollectionView101 for Xamarin Forms
 ---------------------------------------------
 Shows samples of the CollectionView control.
 
@@ -10,5 +10,6 @@ Shows the following samples
 	- SimpleOnDemand
 	- OnDemand
 </code>
+
 
 

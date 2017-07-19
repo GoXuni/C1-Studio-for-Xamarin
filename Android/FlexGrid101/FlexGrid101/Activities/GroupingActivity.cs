@@ -35,9 +35,11 @@ namespace FlexGrid101
             await _collectionView.GroupAsync(c => c.Country);
             Grid.AutoGenerateColumns = false;
             Grid.ShowOutlineBar = true;
+            Grid.IsReadOnly = true;
             Grid.Columns.Add(new GridColumn { Binding = "Active", Width = new GridLength(TypedValue.ApplyDimension(ComplexUnitType.Dip, 60, Resources.DisplayMetrics)) });
             Grid.Columns.Add(new GridColumn { Binding = "Name", Width = GridLength.Star });
             Grid.Columns.Add(new GridColumn { Binding = "OrderTotal", Width = new GridLength(TypedValue.ApplyDimension(ComplexUnitType.Dip, 110, Resources.DisplayMetrics)), Format = "C", Aggregate = GridAggregate.Sum, HorizontalAlignment = Android.Views.GravityFlags.Right, HeaderHorizontalAlignment = Android.Views.GravityFlags.Right });
+            Grid.GroupHeaderFormat = Resources.GetString(Resource.String.GroupHeaderFormat);
             Grid.ItemsSource = _collectionView;
             _collectionView.SortChanged += OnSortChanged;
             UpdateSortButton();

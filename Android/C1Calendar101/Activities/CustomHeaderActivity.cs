@@ -8,7 +8,7 @@ using C1.Android.Calendar;
 
 namespace C1Calendar101
 {
-    [Activity(Label = "CustomHeader", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/custom_header", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class CustomHeaderActivity : Activity
     {
         private TextView monthLabel;
@@ -29,7 +29,8 @@ namespace C1Calendar101
 
             todayButton.Click += OnTodayClicked;
             var items = new CalendarViewMode[] { CalendarViewMode.Month, CalendarViewMode.Year, CalendarViewMode.Decade };
-            viewModeSpinner.Adapter = new ArrayAdapter(BaseContext, global::Android.Resource.Layout.SimpleListItem1, items);
+            var adapterItems = Resources.GetStringArray(Resource.Array.viewModeSpinnerValues);
+            viewModeSpinner.Adapter = new ArrayAdapter(BaseContext, global::Android.Resource.Layout.SimpleListItem1, adapterItems);
             viewModeSpinner.ItemSelected += OnModeChanged;
             calendar.ViewModeChanged += OnViewModeChanged;
             calendar.DisplayDateChanged += OnDisplayDateChanged;
@@ -37,25 +38,26 @@ namespace C1Calendar101
             UpdateMonthLabel();
         }
 
-        private void OnModeChanged(object sender, AdapterView.ItemSelectedEventArgs e)
+        private async void OnModeChanged(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             switch (viewModeSpinner.SelectedItemPosition)
             {
                 case 0:
-                    calendar.ChangeViewModeAsync(CalendarViewMode.Month);
+                    await calendar.ChangeViewModeAsync(CalendarViewMode.Month);
                     break;
                 case 1:
-                    calendar.ChangeViewModeAsync(CalendarViewMode.Year);
+                    await calendar.ChangeViewModeAsync(CalendarViewMode.Year);
                     break;
                 case 2:
-                    calendar.ChangeViewModeAsync(CalendarViewMode.Decade);
+                    await calendar.ChangeViewModeAsync(CalendarViewMode.Decade);
                     break;
             }
         }
 
-        private void OnTodayClicked(object sender, System.EventArgs e)
+        private async void OnTodayClicked(object sender, System.EventArgs e)
         {
-            calendar.ChangeViewModeAsync(CalendarViewMode.Month, DateTime.Today);
+            await calendar.ChangeViewModeAsync(CalendarViewMode.Month, DateTime.Today);
+            calendar.SelectedDate = DateTime.Today;
         }
 
         private void OnViewModeChanged(object sender, EventArgs e)

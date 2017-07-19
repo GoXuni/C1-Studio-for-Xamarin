@@ -31,6 +31,7 @@ namespace FlexGrid101
             Grid.Columns.Add(new GridColumn { Binding = "Active", Width = new GridLength(60) });
             Grid.Columns.Add(new GridColumn { Binding = "Name", Width = GridLength.Star });
             Grid.Columns.Add(new GridColumn { Binding = "OrderTotal", Width = new GridLength(110), Format = "C", Aggregate = GridAggregate.Sum, HorizontalAlignment = UIControlContentHorizontalAlignment.Right, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Right });
+            Grid.GroupHeaderFormat = Foundation.NSBundle.MainBundle.LocalizedString("{name}: {value} ({count} items)", "");
             Grid.ItemsSource = _collectionView;
             _collectionView.SortChanged += OnSortChanged;
             UpdateSortButton();

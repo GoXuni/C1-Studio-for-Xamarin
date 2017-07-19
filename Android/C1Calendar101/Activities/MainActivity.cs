@@ -82,41 +82,42 @@ namespace C1Calendar101
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             var h = holder as CalendarSamplesViewHolder;
+            var resources = holder.ItemView.Context.Resources;
             switch (position)
             {
                 case 0:
-                    h.SetTitle("Getting Started");
-                    h.SetSubtitle("Shows a basic calendar with selection and interaction.");
+                    h.SetTitle(resources.GetString(Resource.String.getting_started));
+                    h.SetSubtitle(resources.GetString(Resource.String.getting_started_desc));
                     h.SetIcon(Resource.Drawable.calendar);
                     break;
                 case 1:
-                    h.SetTitle("Vertical Orientation");
-                    h.SetSubtitle("Shows a calendar with vertical navigation/scrolling.");
+                    h.SetTitle(resources.GetString(Resource.String.vertical_orientation));
+                    h.SetSubtitle(resources.GetString(Resource.String.vertical_orientation_desc));
                     h.SetIcon(Resource.Drawable.calendar_vertical);
                     break;
                 case 2:
-                    h.SetTitle("Custom Day Content");
-                    h.SetSubtitle("Shows how to customize a day slot to show custom content.");
+                    h.SetTitle(resources.GetString(Resource.String.custom_day_content));
+                    h.SetSubtitle(resources.GetString(Resource.String.custom_day_content_desc));
                     h.SetIcon(Resource.Drawable.calendar2);
                     break;
                 case 3:
-                    h.SetTitle("Custom Header");
-                    h.SetSubtitle("Shows a custom header inspired by a popular Android or iOS calendar app.");
+                    h.SetTitle(resources.GetString(Resource.String.custom_header));
+                    h.SetSubtitle(resources.GetString(Resource.String.custom_header_desc));
                     h.SetIcon(Resource.Drawable.calendar);
                     break;
                 case 4:
-                    h.SetTitle("Custom Appearance");
-                    h.SetSubtitle("Shows a calendar with a custom style.");
+                    h.SetTitle(resources.GetString(Resource.String.custom_appearance));
+                    h.SetSubtitle(resources.GetString(Resource.String.custom_appearance_desc));
                     h.SetIcon(Resource.Drawable.calendar);
                     break;
                 case 5:
-                    h.SetTitle("Popup Editor");
-                    h.SetSubtitle("Shows how to use the control as a pop-up date selector.");
+                    h.SetTitle(resources.GetString(Resource.String.popup_editor));
+                    h.SetSubtitle(resources.GetString(Resource.String.popup_editor_desc));
                     h.SetIcon(Resource.Drawable.calendar_datepicker);
                     break;
                 case 6:
-                    h.SetTitle("Custom Selection");
-                    h.SetSubtitle("Shows custom selection scenarios.");
+                    h.SetTitle(resources.GetString(Resource.String.custom_selection));
+                    h.SetSubtitle(resources.GetString(Resource.String.custom_selection_desc));
                     h.SetIcon(Resource.Drawable.calendar);
                     break;
             }

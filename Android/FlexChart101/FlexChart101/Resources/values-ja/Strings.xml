@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="appName">FlexChart101</string>
+  <string name="gettingStarted">FlexChart の基本機能</string>
+  <string name="basicChartTypes">基本チャートタイプ</string>
+  <string name="mixedChartTypes">複合チャート</string>
+  <string name="financialChart">ファイナンシャルチャート</string>
+  <string name="bubbleChart">バブルチャート</string>
+  <string name="customTooltips">カスタムツールチップ</string>
+  <string name="dataLabels">データラベル</string>
+  <string name="theming">チャートのテーマ</string>
+  <string name="stylingSeries">系列のスタイルをカスタマイズ</string>
+  <string name="customizingAxes">軸のカスタマイズ</string>
+  <string name="customizingAxesLabel">軸のカスタマイズ</string>
+  <string name="legendAndTitles">凡例とタイトル</string>
+  <string name="selectionModes">選択モード</string>
+  <string name="toggleSeries">系列の表示／非表示</string>
+  <string name="animationOptions">アニメーションモード</string>
+  <string name="dynamicCharts">動的チャート</string>
+  <string name="scrolling">スクロール</string>
+  <string name="customMarker">ラインマーカー</string>
+  <string name="zoomingAndScrolling">ズームとスクロール</string>
+  <string name="hitTest">ヒットテスト</string>
+  <string name="multipleAxes">複数の軸</string>
+  <string name="customPlotElements">プロット要素のカスタマイズ</string>
+  <string name="snapshot">画像として保存</string>
+  <string name="conditionalFormatting">条件付き書式</string>
+  <string name="updateAnimation">更新アニメーション</string>
+  <string name="gettingStartedDesc">ツールチップを備えたチャート</string>
+  <string name="basicChartTypesDesc">基本的なチャート種と積層オプション</string>
+  <string name="mixedChartTypesDesc">複数のチャートタイプを混在させて表示</string>
+  <string name="financialChartDesc">ローソク足チャートで株式データを表示</string>
+  <string name="bubbleChartDesc">バブルチャートでデータの関連性を表現</string>
+  <string name="customTooltipsDesc">ツールチップをカスタマイズして表示</string>
+  <string name="customMarkerDesc">チャート上で操作が可能なラインマーカー</string>
+  <string name="dataLabelsDesc">静的なデータラベルを持つチャートを表示</string>
+  <string name="themingDesc">組み込みパレットの利用</string>
+  <string name="stylingSeriesDesc">カスタマイズされた系列のスタイルを設定</string>
+  <string name="customizingAxesDesc">カスタマイズされた軸スタイルとラベル書式</string>
+  <string name="legendAndTitlesDesc">チャートのヘッダーと軸タイトル</string>
+  <string name="selectionModesDesc">データを選択する各種モードの説明</string>
+  <string name="customizingAxesLabelDesc">カスタマイズされた軸スタイルとラベル書式</string>
+  <string name="toggleSeriesDesc">系列の表示/非表示を切り替える機能</string>
+  <string name="animationOptionsDesc">データロード時のアニメーションモードを設定</string>
+  <string name="dynamicChartsDesc">時間の経過で変わる「ライブ」チャートを表示</string>
+  <string name="scrollingDesc">軸に沿ってパン（スクロール）するチャート</string>
+  <string name="zoomingAndScrollingDesc">ストレッチ、ピンチによるジェスチャ操作</string>
+  <string name="hitTestDesc">任意の点を取得する方法</string>
+  <string name="multipleAxesDesc">複数の Y 軸を持つチャートを表示</string>
+  <string name="customPlotElementsDesc">要素をカスタマイズする方法</string>
+  <string name="conditionalFormattingDesc">プロット要素に条件付きの書式を設定</string>
+  <string name="updateAnimationDesc">データ更新時のアニメーション効果</string>
+  <string name="snapshotDesc">表示したチャートを画像として保存する</string>
+  <string name="zones">ゾーン（領域）</string>
+  <string name="zonesDesc">プロットエリアに色分けした領域を表示</string>
+
+  <string name="chartType">チャートの種別</string>
+  <string name="stacking">積層グラフ</string>
+  <string name="rotated">縦横軸の交換(Rotated)</string>
+  <string name="palette">組み込みのカラーパレットから選択</string>
+  <string name="selectionMode">選択 モード</string>
+  <string name="sales">系列1(Sales)</string>
+  <string name="expenses">系列2(Expenses)</string>
+  <string name="downloads">系列3(Download)</string>
+  <string name="animationMode">アニメーション モード</string>
+  <string name="zoomMode">ズーム モード</string>
+  <string name="updates">更新:</string>
+  <string name="addPoint">データ点の追加</string>
+  <string name="removePoint">データ点の削除</string>
+  <string name="updatePosition">更新の位置</string>
+  <string name="dataLabel">データラベルの位置</string>
+  <string name="axisYFormat1">#.##</string>
+  <string name="axisYFormat2">$#,###</string>
+  <string name="axisXFormat1">yyyy/MM/dd/</string>
+  <string name="chartHeader">チャートのタイトル</string>
+  <string name="chartFooter">2017年度 グレープシティ(株)</string>
+  <string name="actionSnapshot">画像を保存</string>
+  <string name="interactive">操作方法</string>
+  <string name="horizontalPosition">水平位置</string>
+  <string name="verticalPosition">垂直位置</string>
+  <string name="seriesIndex">系列のインデックス</string>
+  <string name="lines">線種</string>
+  <string name="dragContent">内容をドラッグする</string>
+  <string name="markerAlignment">マーカーの配置</string>
+  <string name="scrollingAndPinchOperate">ドラッグしてスクロール／ピンチしてズーム</string>
+  <string name="snapshotStored">画像をデバイスに保存しました</string>
+  <string name="hitTestChartElement">チャート要素：</string>
+  <string name="hitTestChartElementNone">要素なし</string>
+  <string name="hitTestPointIndex">データ点インデックス：</string>
+  <string name="hitTestSeriesName">系列名：</string>
+  <string name="annotation">注釈</string>
+  <string name="annotationDesc">チャートにさまざまな形の注釈を表示</string>
+  <string name="permision_denied">ユーザーによってアクセス許可が拒否されました。</string>
+  <string name="positive_button">OK</string>
+
+  <string-array name="chartTypeSpinnerValues">
+    <item>面、エリア(Area)</item>
+    <item>スプライン面(SplineArea)</item>
+    <item>スプライン、シンボル付き(SplineSymbols)</item>
+    <item>スプライン(Spline)</item>
+    <item>折れ線、シンボル付き(LineSymbol)</item>
+    <item>折れ線(Line)</item>
+    <item>散布図(Scatter)</item>
+    <item>横棒(Bar)</item>
+    <item>縦棒(Column)</item>
+  </string-array>
+  <string-array name="stackingSpinnerValues">
+    <item>積層なし</item>
+    <item>積層あり</item>
+    <item>積層あり(100%)</item>
+  </string-array>
+  <string-array name="financialTypeSpinnerValues">
+    <item>ローソク足チャート</item>
+    <item>HLOCチャート</item>
+  </string-array>
+  <string-array name="paletteSpinnerValues">
+    <item>Standard(標準のカラーパレット)</item>
+    <item>Cocoa</item>
+    <item>Coral</item>
+    <item>Dark</item>
+    <item>HighContrast</item>
+    <item>Light</item>
+    <item>Midnight</item>
+    <item>Minimal</item>
+    <item>Organic</item>
+    <item>Slate</item>
+    <item>Zen</item>
+    <item>Cyborg</item>
+    <item>Superhero</item>
+    <item>Flatly</item>
+    <item>Darkly</item>
+    <item>Cerulean</item>
+  </string-array>
+  <string-array name="selectionModeSpinnerValues">
+    <item>データ点(Point)</item>
+    <item>系列(Series)</item>
+    <item>なし(None)</item>
+  </string-array>
+  <string-array name="animationModeSpinnerValues">
+    <item>データ点ごと(Point)</item>
+    <item>系列ごと(Series)</item>
+    <item>一斉に適用(All)</item>
+  </string-array>
+  <string-array name="zoomModeSpinnerValues">
+    <item>X 方向とY 方向(XY)</item>
+    <item>X 方向</item>
+    <item>Y 方向</item>
+    <item>なし(Disabled)</item>
+  </string-array>
+  <string-array name="updatePositionSpinnerValues">
+    <item>先頭に追加(Beginning)</item>
+    <item>中間に追加(Middle)</item>
+    <item>最後に追加(End)</item>
+  </string-array>
+  <string-array name="dataLabelSpinnerValues">
+    <item>右側(Right)</item>
+    <item>上部(Top)</item>
+    <item>左側(Left)</item>
+    <item>下部(Bottom)</item>
+  </string-array>
+  <string-array name="lineMarkerInteraction">
+    <item>タッチ位置にマーカーを移動(Move)</item>
+    <item>マーカーをドラッグ可能(Drag)</item>
+    <item>移動しない(None)</item>
+  </string-array>
+
+  <!--flexpie resources-->
+  <string name="getting_started">円形チャートの基本機能</string>
+  <string name="basic_features">円形チャートの調整</string>
+  <string name="legend_and_titles">円形チャートの凡例とタイトル</string>
+  <string name="selection">円形チャートの選択</string>
+  <string name="pietheming">円形チャートのテーマ</string>
+  <string name="snapshot">画像として保存</string>
+  <string name="update_animation">アニメーション</string>
+  <string name="data_labels">円形チャートのデータラベル</string>
+  <string name="custom_tooltip">カスタムツールチップ</string>
+  <string name="getting_started_desc">ツールチップを備えた円グラフを表示</string>
+  <string name="basic_features_desc">内側半径、オフセット、開始角度</string>
+  <string name="legend_and_titles_desc">ヘッダ、フッタ、凡例の配置</string>
+  <string name="selection_desc">選択アニメーション、オフセットなど</string>
+  <string name="theming_desc_desc">使用可能なパレットを表示</string>
+  <string name="snapshot_desc">円形チャートを画像として保存する方法</string>
+  <string name="snapshotStored">画像をデバイスに保存しました</string>
+  <string name="update_animation_desc">ロードおよび更新アニメーションモード</string>
+  <string name="data_labels_desc">静的なデータラベルを表示</string>
+  <string name="custom_tooltip_desc">カスタマイズされたツールチップを表示</string>
+  <string name="inner_radius">内側円の半径</string>
+  <string name="offset">オフセット</string>
+  <string name="start_angle">開始角度</string>
+  <string name="reversed">反転する</string>
+  <string name="minus">-</string>
+  <string name="plus">+</string>
+  <string name="header">ヘッダ</string>
+  <string name="footer">フッタ</string>
+  <string name="header_value">果物の生産量</string>
+  <string name="footer_value">2017 グレープシティ(株)</string>
+  <string name="legend_position">凡例を表示する位置</string>
+  <string name="item_offset">選択された項目のオフセット位置</string>
+  <string name="position">位置</string>
+  <string name="animated">アニメーション効果を適用</string>
+  <string name="animation_mode">ロード時のアニメーションモード</string>
+  <string name="actionSnapshot">画像を取得</string>
+  <string name="button2015">2015</string>
+  <string name="button2014">2014</string>
+  <string name="button2013">2013</string>
+  <string name="button2012">2012</string>
+  <string name="permissionDenied">ユーザーによってアクセス許可が拒否されました。</string>
+  <string name="positive_button">OK</string>
+
+  <string-array name="legend_spinner_values">
+    <item>表示しない(None)</item>
+    <item>左側に表示(Left)</item>
+    <item>上部に表示(Top)</item>
+    <item>右側に表示(Right)</item>
+    <item>下部に表示(Bottom)</item>
+    <item>自動で決定(Auto)</item>
+  </string-array>
+
+  <string-array name="selection_spinner_values">
+    <item>表示しない(None)</item>
+    <item>左側に表示(Left)</item>
+    <item>上部に表示(Top)</item>
+    <item>右側に表示(Right)</item>
+    <item>下部に表示(Bottom)</item>
+  </string-array>
+
+  <string-array name="theme_spinner_values">
+    <item>Standard(標準のカラーパレット)</item>
+    <item>Cocoa</item>
+    <item>Coral</item>
+    <item>Dark</item>
+    <item>HighContrast</item>
+    <item>Light</item>
+    <item>Midnight</item>
+    <item>Minimal</item>
+    <item>Organic</item>
+    <item>Slate</item>
+    <item>Zen</item>
+    <item>Cyborg</item>
+    <item>Superhero</item>
+    <item>Flatly</item>
+    <item>Darkly</item>
+    <item>Cerulean</item>
+  </string-array>
+
+  <string-array name="animation_spinner_values">
+    <item>データ点ごと(Point)</item>
+    <item>すべて同時(All)</item>
+  </string-array>
+
+  <string-array name="pieDataLabelPositionSpinnerValues">
+    <item>ラベル表示なし(None)</item>
+    <item>中央に表示(Center)</item>
+    <item>内側に表示(Inside)</item>
+    <item>外側に表示(Outside)</item>
+  </string-array>
+</resources>

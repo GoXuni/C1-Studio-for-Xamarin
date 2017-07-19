@@ -47,6 +47,7 @@ namespace C1Gauge101
             mBulletGraph.Max = 100;
             mBulletGraph.Target = 90;
             mBulletGraph.Step = 1;
+            mBulletGraph.ShowText = GaugeShowText.All;
             //mBulletGraph.GaugeWidth = .5f;
 
             mLinearGauge.Value = 40;

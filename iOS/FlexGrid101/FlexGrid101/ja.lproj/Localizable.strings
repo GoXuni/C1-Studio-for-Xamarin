@@ -1,0 +1,45 @@
+﻿/* 
+  Localizable.strings
+  FlexGrid101
+
+  Copyright © 2015 GrapeCity. All rights reserved.
+*/
+
+
+"Row Range" = "行範囲(RowRange)";
+"Row" = "1つの行(Row)";
+"Cell Range" = "セル範囲(CellRange)";
+"Cell" = "1つのセル(Cell)";
+"None" = "設定なし";
+
+"Filter" = "フィルター";
+"Remove" = "解除";
+"Enter text to Filter" = "テキストを入力してください";
+
+"Equals" = "値と同じ(Equals)";
+"Ends with" = "値で終わる(Ends with)";
+"Begins with" = "値で始まる(Begins with)";
+"Contains" = "値を含む(Contains)";
+"Confirm Edit" = "編集の確認";
+"Do you want to commit the edit?" = "編集した内容を確定しますか？";
+
+"Ok" = "OK";
+"Cancel" = "キャンセル";
+
+"ID" = "ID";
+"Total" = "合計";
+"Count" = "件数";
+"Edit Columns" = "表示列の構成を編集";
+"Done" = "完了";
+"Monday" = "月曜日";
+"Tuesday" = "火曜日";
+"Wednesday" = "水曜日";
+"Thursday" = "木曜日";
+"Friday" = "金曜日";
+"Saturday" = "土曜日";
+"Sunday" = "日曜日";
+
+"Weekend" = "週末";
+"Weekday" = "平日";
+"Please select a row first or double-tap the row directly." = "編集する行を選択してください。対象の行をダブルタップしても編集できます。";
+"{name}: {value} ({count} items)" = "{name}: {value} ({count} 項目)";

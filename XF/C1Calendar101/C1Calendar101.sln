@@ -248,6 +248,8 @@ Global
 		{FD037C89-A76E-4824-BB1C-35F193CAD6C6}.GRAPECITY|x86.Build.0 = Release|x86
 		{FD037C89-A76E-4824-BB1C-35F193CAD6C6}.GRAPECITY|x86.Deploy.0 = Release|x86
 		{FD037C89-A76E-4824-BB1C-35F193CAD6C6}.Release|Any CPU.ActiveCfg = Release|x86
+		{FD037C89-A76E-4824-BB1C-35F193CAD6C6}.Release|Any CPU.Build.0 = Release|x86
+		{FD037C89-A76E-4824-BB1C-35F193CAD6C6}.Release|Any CPU.Deploy.0 = Release|x86
 		{FD037C89-A76E-4824-BB1C-35F193CAD6C6}.Release|ARM.ActiveCfg = Release|ARM
 		{FD037C89-A76E-4824-BB1C-35F193CAD6C6}.Release|ARM.Build.0 = Release|ARM
 		{FD037C89-A76E-4824-BB1C-35F193CAD6C6}.Release|ARM.Deploy.0 = Release|ARM
@@ -265,4 +267,4 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
-	EndGlobal
+EndGlobal

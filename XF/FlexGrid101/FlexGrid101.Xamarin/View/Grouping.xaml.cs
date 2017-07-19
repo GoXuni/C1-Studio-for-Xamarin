@@ -16,7 +16,6 @@ namespace FlexGrid101
             InitializeComponent();
 
             this.Title = AppResources.GroupingTitle;
-            grid.SelectionChanging += OnSelectionChanging;
  
             var task = UpdateVideos();
         }
@@ -28,15 +27,5 @@ namespace FlexGrid101
             await _collectionView.GroupAsync(c => c.Country);          
             grid.ItemsSource = _collectionView;
         }
-
-        public void OnSelectionChanging(object sender, GridCellRangeEventArgs e)
-        {
-            if (e.CellType == GridCellType.Cell || e.CellType == GridCellType.RowHeader)
-            {
-                var row = grid.Rows[e.CellRange.Row] as GridGroupRow;
-                if (row != null)
-                     e.Cancel = true;   
-            }   
-        } 
     } 
 }

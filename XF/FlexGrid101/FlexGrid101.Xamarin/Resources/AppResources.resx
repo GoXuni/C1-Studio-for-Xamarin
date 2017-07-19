@@ -316,4 +316,7 @@
   <data name="Weekend" xml:space="preserve">
     <value>Weekend</value>
   </data>
+  <data name="ShowMarquee" xml:space="preserve">
+    <value>ShowMarquee</value>
+  </data>
 </root>

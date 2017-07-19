@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ArrayOfSample xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Sample>
+		<Title>Auto Complete</Title>
+		<Description>Show suggestions automatically while the user is typing.</Description>
+		<Image>Images/input_autocomplete.png</Image>
+		<StoryboardID>Auto Complete</StoryboardID>
+	</Sample>
+	<Sample>
+		<Title>Combo Box</Title>
+		<Description>Display an editable list of options.</Description>
+		<Image>Images/input_combobox.png</Image>
+		<StoryboardID>Combo Box</StoryboardID>
+	</Sample>
+	<Sample>
+		<Title>Drop Down</Title>
+		<Description>Create a customizable drop-down control.</Description>
+		<Image>Images/input_dropdown.png</Image>
+		<StoryboardID>Drop Down</StoryboardID>
+	</Sample>
+	<Sample>
+		<Title>Masked Input</Title>
+		<Description>Capture properly formatted text using a mask.</Description>
+		<Image>Images/input_mask.png</Image>
+		<StoryboardID>Masked Input</StoryboardID>
+	</Sample>
+</ArrayOfSample>

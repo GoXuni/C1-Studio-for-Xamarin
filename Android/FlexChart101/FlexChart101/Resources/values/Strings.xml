@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="appName">FlexChart101</string>
+  <string name="helloWorld">Hello world!</string>
+  <string name="gettingStarted">Getting Started</string>
+  <string name="basicChartTypes">Basic Chart Types</string>
+  <string name="mixedChartTypes">Mixed Chart Types</string>
+  <string name="financialChart">Financial Charts</string>
+  <string name="bubbleChart">Bubble Chart</string>
+  <string name="customTooltips">Custom Tooltips</string>
+  <string name="dataLabels">Data Labels</string>
+  <string name="pietheming">Theming</string>
+  <string name="stylingSeries">Styling Series</string>
+  <string name="customizingAxes">Customizing Axes</string>
+  <string name="customizingAxesLabel">Customizing Axes Labels</string>
+  <string name="legendAndTitles">Legend And Titles</string>
+  <string name="selectionModes">Selection Modes</string>
+  <string name="toggleSeries">Toggle Series</string>
+  <string name="animationOptions">Load Animation Mode</string>
+  <string name="dynamicCharts">Dynamic Charts</string>
+  <string name="scrolling">Scrolling</string>
+  <string name="customMarker">Line Marker</string>
+  <string name="zoomingAndScrolling">Zooming And Scrolling</string>
+  <string name="hitTest">Hit test</string>
+  <string name="multipleAxes">Multiple Axes</string>
+  <string name="customPlotElements">Custom Plot Elements</string>
+  <string name="snapshot">Export Image</string>
+  <string name="conditionalFormatting">Conditional Formatting</string>
+  <string name="updateAnimation">Update Animation</string>
+  <string name="gettingStartedDesc">Shows a simple chart with tooltips</string>
+  <string name="basicChartTypesDesc">Shows the basic chart types and stacking options</string>
+  <string name="mixedChartTypesDesc">Shows a composite chart</string>
+  <string name="financialChartDesc">Shows stock data in a candle chart</string>
+  <string name="bubbleChartDesc">Shows a bubble chart</string>
+  <string name="customTooltipsDesc">Shows a customized tooltip</string>
+  <string name="customMarkerDesc">Shows a moveable marker on top of the chart</string>
+  <string name="dataLabelsDesc">Shows a simple chart with static data labels</string>
+  <string name="themingDesc">Shows the built-in palettes</string>
+  <string name="stylingSeriesDesc">Shows custom series styling</string>
+  <string name="customizingAxesDesc">Shows customized axes style and label format</string>
+  <string name="legendAndTitlesDesc">Shows basic chart headers and axis titles</string>
+  <string name="selectionModesDesc">Shows the different selection modes</string>
+  <string name="customizingAxesLabelDesc">Shows customize axis and label format</string>
+  <string name="toggleSeriesDesc">Shows the ability to toggle a series visibility</string>
+  <string name="animationOptionsDesc">Shows animation modes when data is loading</string>
+  <string name="dynamicChartsDesc">Shows a dynamic, \"live\" chart</string>
+  <string name="scrollingDesc">Shows a chart with panning (scrolling) along the X axis</string>
+  <string name="zoomingAndScrollingDesc">Shows stretch zoom-out and pinch zoom-in gestures</string>
+  <string name="hitTestDesc">Demonstrates use of the FlexChart\'s HitTest method</string>
+  <string name="multipleAxesDesc">Shows chart with multiple Y axes</string>
+  <string name="customPlotElementsDesc">Shows how to fully customize plot elements</string>
+  <string name="conditionalFormattingDesc">Shows conditional formatting by customizing plot elements</string>
+  <string name="updateAnimationDesc">Shows animation when data is updated</string>
+  <string name="snapshotDesc">Shows how to export an image of FlexChart</string>
+  <string name="scaling">Chart Scaling</string>
+  <string name="scalingDesc">Shows how to use logarithmic axes to spread clustered data</string>
+
+  <string name="chartType">Chart Type</string>
+  <string name="stacking">Stacking</string>
+  <string name="rotated">Rotated?</string>
+  <string name="palette">Palettes</string>
+  <string name="selectionMode">Selection Mode</string>
+  <string name="sales">Sales</string>
+  <string name="expenses">Expenses</string>
+  <string name="downloads">Downloads</string>
+  <string name="animationMode">Animation Mode</string>
+  <string name="zoomMode">Zoom Mode</string>
+  <string name="updates">Updates:</string>
+  <string name="addPoint">Add Point</string>
+  <string name="removePoint">Remove Point</string>
+  <string name="updatePosition">Update Position</string>
+  <string name="dataLabel">Label position</string>
+  <string name="axisYFormat1">#.##</string>
+  <string name="axisYFormat2">$#,###</string>
+  <string name="axisXFormat1">MM/dd/yyyy</string>
+  <string name="chartHeader">Sample Chart</string>
+  <string name="chartFooter">2014 GrapeCity, Inc.</string>
+  <string name="actionSnapshot">Take Snapshot</string>
+  <string name="interactive">Interactive</string>
+  <string name="horizontalPosition">Horizontal Position</string>
+  <string name="verticalPosition">Vertical Position</string>
+  <string name="seriesIndex">Series Index</string>
+  <string name="lines">Lines</string>
+  <string name="dragContent">DragContent</string>
+  <string name="markerAlignment">Alignment</string>
+  <string name="scrollingAndPinchOperate">Drag to scroll/Pinch to zoom</string>
+  <string name="snapshotStored">Snapshot stored to device</string>
+  <string name="hitTestChartElement">Chart Element：</string>
+  <string name="hitTestChartElementNone">NONE</string>
+  <string name="hitTestPointIndex">Point Index：</string>
+  <string name="hitTestSeriesName">Series Name:</string>
+  <string name="annotation">Annotation</string>
+  <string name="annotationDesc">Shows a chart with different kinds of annotations</string>
+  <string name="zones">Zones</string>
+  <string name="zonesDesc">Shows a zones chart</string>
+  <string name="permissionDenied">The permission is denied by user.</string>
+  <string name="positive_button">OK</string>
+
+  <string-array name="chartTypeSpinnerValues">
+    <item>Area</item>
+    <item>SplineArea</item>
+    <item>SplineSymbols</item>
+    <item>Spline</item>
+    <item>LineSymbol</item>
+    <item>Line</item>
+    <item>Scatter</item>
+    <item>Bar</item>
+    <item>Column</item>
+  </string-array>
+  <string-array name="stackingSpinnerValues">
+    <item>None</item>
+    <item>Stacked</item>
+    <item>Stacked100pc</item>
+  </string-array>
+  <string-array name="financialTypeSpinnerValues">
+    <item>Candle</item>
+    <item>Hloc</item>
+  </string-array>
+  <string-array name="paletteSpinnerValues">
+    <item>Standard</item>
+    <item>Cocoa</item>
+    <item>Coral</item>
+    <item>Dark</item>
+    <item>HighContrast</item>
+    <item>Light</item>
+    <item>Midnight</item>
+    <item>Minimal</item>
+    <item>Organic</item>
+    <item>Slate</item>
+    <item>Zen</item>
+    <item>Cyborg</item>
+    <item>Superhero</item>
+    <item>Flatly</item>
+    <item>Darkly</item>
+    <item>Cerulean</item>
+  </string-array>
+  <string-array name="selectionModeSpinnerValues">
+    <item>Point</item>
+    <item>Series</item>
+    <item>None</item>
+  </string-array>
+  <string-array name="animationModeSpinnerValues">
+    <item>Point</item>
+    <item>Series</item>
+    <item>All</item>
+  </string-array>
+  <string-array name="zoomModeSpinnerValues">
+    <item>XY</item>
+    <item>X</item>
+    <item>Y</item>
+    <item>Disabled</item>
+  </string-array>
+  <string-array name="updatePositionSpinnerValues">
+    <item>Beginning</item>
+    <item>Middle</item>
+    <item>End</item>
+  </string-array>
+  <string-array name="chartDataLabelPositionSpinnerValues">
+    <item>None</item>
+    <item>Left</item>
+    <item>Top</item>
+    <item>Right</item>
+    <item>Bottom</item>
+    <item>Center</item>
+  </string-array>
+  <string-array name="lineMarkerInteraction">
+    <item>Move</item>
+    <item>Drag</item>
+    <item>None</item>
+  </string-array>
+
+  <!--flexpie resources-->
+  <string name="getting_started">Getting Started</string>
+  <string name="basic_features">Basic Features</string>
+  <string name="legend_and_titles">Legend And Titles</string>
+  <string name="selection">Selection</string>
+  <string name="theming">Theming</string>
+  <string name="snapshot">Export Image</string>
+  <string name="update_animation">Update Animation</string>
+  <string name="data_labels">Data Labels</string>
+  <string name="custom_tooltip">Custom Tooltips</string>
+  <string name="getting_started_desc">Shows a sample pie chart with tooltips</string>
+  <string name="basic_features_desc">Control inner radius, offset and start angle</string>
+  <string name="legend_and_titles_desc">Control header, footer and legend positioning</string>
+  <string name="selection_desc">Control selection offset and position</string>
+  <string name="theming_desc_desc">Shows the ability to customize styles</string>
+  <string name="snapshot_desc">Shows how to export an image of FlexPie</string>
+  <string name="update_animation_desc">Shows the animation options</string>
+  <string name="data_labels_desc">Shows a simple chart with data labels</string>
+  <string name="custom_tooltip_desc">Shows a customized tooltip</string>
+  <string name="inner_radius">Inner Radius</string>
+  <string name="offset">Offset</string>
+  <string name="start_angle">Start Angle</string>
+  <string name="reversed">Reversed?</string>
+  <string name="minus">-</string>
+  <string name="plus">+</string>
+  <string name="header">Header</string>
+  <string name="footer">Footer</string>
+  <string name="header_value">Fruit By Value</string>
+  <string name="footer_value">2014 GrapeCity, inc.</string>
+  <string name="legend_position">Legend Position</string>
+  <string name="item_offset">Selected Item Offset</string>
+  <string name="position">Position</string>
+  <string name="animated">IsAnimated?</string>
+  <string name="animation_mode">Load Animation Mode</string>
+  <string name="actionSnapshot">Take Snapshot</string>
+  <string name="snapshotStored">Snapshot stored to device</string>
+  <string name="button2015">2015</string>
+  <string name="button2014">2014</string>
+  <string name="button2013">2013</string>
+  <string name="button2012">2012</string>
+  <string name="permissionDenied">The permission is denied by user.</string>
+  <string name="positive_button">OK</string>
+
+  <string-array name="legend_spinner_values">
+    <item>None</item>
+    <item>Left</item>
+    <item>Top</item>
+    <item>Right</item>
+    <item>Bottom</item>
+    <item>Auto</item>
+  </string-array>
+
+  <string-array name="selection_spinner_values">
+    <item>None</item>
+    <item>Left</item>
+    <item>Top</item>
+    <item>Right</item>
+    <item>Bottom</item>
+  </string-array>
+
+  <string-array name="theme_spinner_values">
+    <item>Standard</item>
+    <item>Cocoa</item>
+    <item>Coral</item>
+    <item>Dark</item>
+    <item>HighContrast</item>
+    <item>Light</item>
+    <item>Midnight</item>
+    <item>Minimal</item>
+    <item>Organic</item>
+    <item>Slate</item>
+    <item>Zen</item>
+    <item>Cyborg</item>
+    <item>Superhero</item>
+    <item>Flatly</item>
+    <item>Darkly</item>
+    <item>Cerulean</item>
+  </string-array>
+
+  <string-array name="animation_spinner_values">
+    <item>All</item>
+    <item>Point</item>
+  </string-array>
+
+  <string-array name="pieDataLabelPositionSpinnerValues">
+    <item>None</item>
+    <item>Center</item>
+    <item>Inside</item>
+    <item>Outside</item>
+  </string-array>
+</resources>

@@ -52,11 +52,12 @@ namespace C1Gauge101
             var originalBackground = gauge.BackgroundColor;
             gauge.BackgroundColor = ColorEx.ThemeBackgroundColor;
             DependencyService.Get<IPicture>().SavePictureToDisk("Gauge", gauge.GetImage());
-            gauge.BackgroundColor = originalBackground;
+            
             //generic success message
             await DisplayAlert(AppResources.ImageSavedTitle,
               AppResources.ImageSavedDescription,
               AppResources.OKTitle);
+            gauge.BackgroundColor = originalBackground;
         }
 
         protected override async void OnAppearing()

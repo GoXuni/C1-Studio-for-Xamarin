@@ -6,10 +6,11 @@ using Android.Widget;
 using System.Threading.Tasks;
 using Android.Graphics;
 using System.Threading;
+using C1.Android.CollectionView;
 
 namespace C1CollectionView101
 {
-    internal class YouTubeAdapter : CollectionViewAdapter<object>
+    internal class YouTubeAdapter : C1RecyclerViewAdapter<object>
     {
         public YouTubeAdapter(ICollectionView<object> collectionView)
             : base(collectionView)

@@ -285,4 +285,12 @@
   <data name="CellsSelectedText" xml:space="preserve">
     <value>选中的单元格</value>
   </data>
+  <data name="CustomAppearanceDescription" xml:space="preserve">
+    <value>Shows a grid with a custom style.</value>
+    <comment>Shows a grid with a custom style.</comment>
+  </data>
+  <data name="CustomAppearanceTitle" xml:space="preserve">
+    <value>Custom Appearance</value>
+    <comment>Custom Appearance</comment>
+  </data>
 </root>

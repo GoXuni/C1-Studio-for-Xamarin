@@ -134,7 +134,7 @@
     <comment>Custom Day Content</comment>
   </data>
   <data name="CustomHeaderDescription" xml:space="preserve">
-    <value>AndroidやiOSでおなじみの形にカスタマイズ</value>
+    <value>月表示モードの選択や「今日」ボタンをヘッダーに配置</value>
     <comment>Shows a custom header inspired by a popular Android or iOS calendar app.</comment>
   </data>
   <data name="CustomHeaderTitle" xml:space="preserve">

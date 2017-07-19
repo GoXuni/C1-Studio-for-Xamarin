@@ -67,11 +67,11 @@ namespace C1CollectionView101
             var direction = GetCurrentSortDirection();
             if (direction == SortDirection.Ascending)
             {
-                btnSort.Icon = Device.OnPlatform<FileImageSource>(null, new FileImageSource() { File = "ic_sort_descending.png" }, new FileImageSource() { File = "Assets/AppBar/appbar.sort.alphabetical.descending.png" });
+                btnSort.Icon = Device.RuntimePlatform == Device.Android ? new FileImageSource() { File = "ic_sort_descending.png" } : Device.RuntimePlatform == Device.Windows ? new FileImageSource() { File = "Assets/AppBar/appbar.sort.alphabetical.descending.png" } : null;
             }
             else
             {
-                btnSort.Icon = Device.OnPlatform<FileImageSource>(null, new FileImageSource() { File = "ic_sort_ascending.png" }, new FileImageSource() { File = "Assets/AppBar/appbar.sort.alphabetical.ascending.png" });
+                btnSort.Icon = Device.RuntimePlatform == Device.Android ? new FileImageSource() { File = "ic_sort_ascending.png" } : Device.RuntimePlatform == Device.Windows ? new FileImageSource() { File = "Assets/AppBar/appbar.sort.alphabetical.ascending.png" } : null;
             }
         }
 

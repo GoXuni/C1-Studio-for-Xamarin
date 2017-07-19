@@ -39,6 +39,7 @@ namespace C1Calendar101
         async partial void TodayButton_TouchUpInside(UIButton sender)
         {
             await Calendar.ChangeViewModeAsync(CalendarViewMode.Month, DateTime.Today);
+            Calendar.SelectedDate = DateTime.Today;
         }
 
         private void OnViewModeChanged(object sender, EventArgs e)
@@ -91,11 +92,11 @@ namespace C1Calendar101
                 {
                     default:
                     case 0:
-                        return CalendarViewMode.Month.ToString();
+                        return NSBundle.MainBundle.LocalizedString("Month View", "");
                     case 1:
-                        return CalendarViewMode.Year.ToString();
+                        return NSBundle.MainBundle.LocalizedString("Year View", "");
                     case 2:
-                        return CalendarViewMode.Decade.ToString();
+                        return NSBundle.MainBundle.LocalizedString("Decade View", "");
                 }
             }
 

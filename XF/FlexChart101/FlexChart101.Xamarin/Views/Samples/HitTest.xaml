@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.HitTest"
+             Padding="10">
+    <StackLayout>
+        <Grid VerticalOptions="FillAndExpand">
+            <c1:FlexChart x:Name="flexChart" Tapped="flexChart_Tapped"
+                      Header="Trigonometric functions" Footer="Cartesian coordinates"
+                      BindingX="X" ChartType="LineSymbols" LegendPosition="Bottom" >
+                <c1:FlexChart.Series>
+                    <c1:ChartSeries x:Name="seriesCosX"  Binding="Y" SeriesName="cos(x)"  />
+                    <c1:ChartSeries x:Name="seriesSinX"  Binding="Y" SeriesName="sin(x)"  />
+                </c1:FlexChart.Series>
+            </c1:FlexChart>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout x:Name="stackHitTest" VerticalOptions="Fill">
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="lblChartElement" />
+                    <Label  Text="{Binding ChartElement}" />
+                </StackLayout>
+                <StackLayout x:Name="stackSeries">
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="lblSeriesName" />
+                        <Label  Text="{Binding Series.SeriesName}" />
+                    </StackLayout>
+                    <StackLayout x:Name="stackData">
+                        <StackLayout Orientation="Horizontal">
+                            <Label x:Name="lblPointIdx" />
+                            <Label  Text="{Binding PointIndex}" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
+                            <Label  Text="{Binding X, StringFormat='X:{0:F2}'}" />
+                            <Label  Text="{Binding Y, StringFormat='Y:{0:F2}'}" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+            
+    </StackLayout>
+</ContentPage>

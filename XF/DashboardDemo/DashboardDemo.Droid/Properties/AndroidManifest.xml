@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.grapecity.xf.DashboardDemo">
+	<uses-sdk android:minSdkVersion="17" />
+	<application android:icon="@drawable/icon" android:label="DashboardDemo"></application>
+</manifest>

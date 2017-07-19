@@ -6,6 +6,13 @@
 	<string>Calendar101</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.grapecity.ios.C1Calendar101</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+	  <string>en</string>
+	  <string>ja</string>
+	</array>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

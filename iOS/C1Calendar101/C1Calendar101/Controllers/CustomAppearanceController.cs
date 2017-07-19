@@ -17,7 +17,7 @@ namespace C1Calendar101
             Calendar.ViewModeAnimation.ScaleFactor = 1.1;
             Calendar.ViewModeAnimation.AnimationMode = CalendarViewModeAnimationMode.ZoomOutIn;
             Calendar.Font = UIFont.FromName("Courier New", 16);
-            Calendar.TodayFont = UIFont.FromName("Courier New", 16);
+            Calendar.TodayFont = UIFont.FromDescriptor(UIFont.FromName("Courier New", 16).FontDescriptor.CreateWithTraits(UIFontDescriptorSymbolicTraits.Bold), 16);
             Calendar.DayOfWeekFont = UIFont.FromName("Arial", 21);
             Calendar.HeaderFont = UIFont.FromName("Arial", 21);
         }

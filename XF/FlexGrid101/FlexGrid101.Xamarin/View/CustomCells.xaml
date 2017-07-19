@@ -11,7 +11,7 @@
             <c1:GridColumn Binding="OrderTotal" Header="Order Total" Width="*">
                 <c1:GridColumn.CellTemplate>
                     <DataTemplate>
-                        <gauge:C1BulletGraph IsAnimated="False" Value="{Binding OrderTotal}" Min="0" Max="10000" Bad="1000" Good="6000" Target="7000"/>
+                        <gauge:C1BulletGraph IsAnimated="False" IsReadOnly="True" Value="{Binding OrderTotal}" Min="0" Max="10000" Bad="1000" Good="6000" Target="7000"/>
                     </DataTemplate>
                 </c1:GridColumn.CellTemplate>
             </c1:GridColumn>

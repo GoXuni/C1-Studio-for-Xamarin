@@ -1,4 +1,4 @@
-C1CollectionView101 Samples for IOS
+C1CollectionView101 for Xamarin.iOS
 ---------------------------------------------
 Shows samples of the CollectionView control.
 
@@ -10,3 +10,6 @@ Shows the following samples
 	- SimpleOnDemand
 	- OnDemand
 </code>
+
+
+

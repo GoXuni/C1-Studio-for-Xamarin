@@ -12,7 +12,6 @@ namespace FlexGrid101
         public RowDetails()
         {
             InitializeComponent();
-            this.lblMode.Text = AppResources.DetailsVisibiltyMode;
             _hide = ImageSource.FromResource("FlexGrid101.Images.hide.png");
             _show = ImageSource.FromResource("FlexGrid101.Images.show.png");
 

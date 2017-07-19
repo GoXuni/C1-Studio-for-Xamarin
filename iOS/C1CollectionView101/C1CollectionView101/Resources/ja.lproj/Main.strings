@@ -1,0 +1,31 @@
+
+/* Class = "UINavigationItem"; title = "CollectionView101"; ObjectID = "200"; */
+"200.title" = "C1CollectionView101";
+
+//UITableView titles
+"214.text" = "ソート";
+"217.text" = "フィルタリング";
+"220.text" = "グループ化";
+"223.text" = "シンプルオンデマンド";
+"226.text" = "YouTube オンデマンド";
+
+
+//UITableView descriptions
+"215.text" = "アクションバーから項目をソート";
+"218.text" = "項目を入力して項目をフィルタリング";
+"221.text" = "リストをグループ化して表示";
+"224.text" = "シンプルオンデマンド";
+"227.text" = "YouTube APIを使用したロードオンデマンド";
+
+//UINavigationItems Titles
+"384.title" = "ソート";
+"6799.title" = "フィルタリング";
+"1175.title" = "グループ化";
+"1177.title" = "シンプルオンデマンド";
+"1602.title" = "YouTube オンデマンド";
+
+//UITextField
+"1793.placeholder" = "YouTube で検索するビデオのテキストを入力";
+
+//UIBarButtonItem
+"1735.title" = "ソート";

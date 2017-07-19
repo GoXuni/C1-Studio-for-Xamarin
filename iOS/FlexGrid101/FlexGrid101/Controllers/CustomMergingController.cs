@@ -19,16 +19,18 @@ namespace FlexGrid101
             Grid.SelectionChanged += Grid_SelectionChanged;
             ShowNameLabel.Text = "";
             ShowTimeLabel.Text = "";
+            ShowTimeLabel.Lines = 0;
+            ShowTimeLabel.LineBreakMode = UILineBreakMode.WordWrap;
         }
         private void PopulateGrid()
         {
-            Grid.Columns.Add(new GridColumn { Header = "Monday", Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Tuesday", Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Wednesday", Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Thursday", Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Friday", Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Saturday", Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
-            Grid.Columns.Add(new GridColumn { Header = "Sunday", Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
+            Grid.Columns.Add(new GridColumn { Header = Foundation.NSBundle.MainBundle.LocalizedString("Monday", ""), Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
+            Grid.Columns.Add(new GridColumn { Header = Foundation.NSBundle.MainBundle.LocalizedString("Tuesday", "") , Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
+            Grid.Columns.Add(new GridColumn { Header = Foundation.NSBundle.MainBundle.LocalizedString("Wednesday", ""), Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
+            Grid.Columns.Add(new GridColumn { Header = Foundation.NSBundle.MainBundle.LocalizedString("Thursday",""), Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
+            Grid.Columns.Add(new GridColumn { Header = Foundation.NSBundle.MainBundle.LocalizedString("Friday", ""), Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
+            Grid.Columns.Add(new GridColumn { Header = Foundation.NSBundle.MainBundle.LocalizedString("Saturday", ""), Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
+            Grid.Columns.Add(new GridColumn { Header = Foundation.NSBundle.MainBundle.LocalizedString("Sunday",""), Width = GridLength.Star, MinWidth = 120, AllowMerging = true, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Center, HorizontalAlignment = UIControlContentHorizontalAlignment.Center });
 
             Grid.Rows.Add(new GridRow());
             Grid.Rows.Add(new GridRow());
@@ -39,13 +41,13 @@ namespace FlexGrid101
             Grid.Rows.Add(new GridRow());
 
             Grid.ColumnHeaders.Rows.Insert(0, new GridRow() { AllowMerging = true });
-            Grid.ColumnHeaders[0, 0] = "Weekday";
-            Grid.ColumnHeaders[0, 1] = "Weekday";
-            Grid.ColumnHeaders[0, 2] = "Weekday";
-            Grid.ColumnHeaders[0, 3] = "Weekday";
-            Grid.ColumnHeaders[0, 4] = "Weekday";
-            Grid.ColumnHeaders[0, 5] = "Weekend";
-            Grid.ColumnHeaders[0, 6] = "Weekend";
+            Grid.ColumnHeaders[0, 0] = Foundation.NSBundle.MainBundle.LocalizedString("Weekday","");
+            Grid.ColumnHeaders[0, 1] = Foundation.NSBundle.MainBundle.LocalizedString("Weekday","");
+            Grid.ColumnHeaders[0, 2] = Foundation.NSBundle.MainBundle.LocalizedString("Weekday", "");
+            Grid.ColumnHeaders[0, 3] = Foundation.NSBundle.MainBundle.LocalizedString("Weekday", "");
+            Grid.ColumnHeaders[0, 4] = Foundation.NSBundle.MainBundle.LocalizedString("Weekday", "");
+            Grid.ColumnHeaders[0, 5] = Foundation.NSBundle.MainBundle.LocalizedString("Weekend", "");
+            Grid.ColumnHeaders[0, 6] = Foundation.NSBundle.MainBundle.LocalizedString("Weekend", "");
 
             Grid.RowHeaders.Columns[0].Width = GridLength.Auto;
             Grid.RowHeaders[0, 0] = "12:00";

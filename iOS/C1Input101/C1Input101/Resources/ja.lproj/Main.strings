@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "Editable"; ObjectID = "Au4-Dr-6Cs"; */
+"IU0-w2-Fw2.text" = "編集可能な形式";
+
+/* Class = "UINavigationItem"; title = "Masked Input"; ObjectID = "FkS-qZ-6hy"; */
+"8jq-o0-flo.title" = "マスク入力";
+
+/* Class = "UILabel"; text = "Highlight"; ObjectID = "I4e-wf-kXj"; */
+"AjA-gp-5b9.text" = "入力した文字をリストで強調表示";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "I58-mC-Zfv"; */
+"I58-mC-Zfv.text" = "タイトル";
+
+/* Class = "UILabel"; text = "Phone:"; ObjectID = "K9z-NQ-SNN"; */
+"gKT-kp-4PZ.text" = "電話番号:";
+
+/* Class = "UINavigationItem"; title = "Drop Down"; ObjectID = "QU6-R9-Xyi"; */
+"mGA-ug-Px1.title" = "ドロップダウン";
+
+/* Class = "UILabel"; text = "Custom Drop-down"; ObjectID = "TWu-i8-5aW"; */
+"66x-VZ-emT.text" = "独自形式の表示リスト";
+
+/* Class = "UILabel"; text = "State:"; ObjectID = "X38-UR-NwE"; */
+"nGo-LA-x5X.text" = "識別(英字):";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "gWJ-oG-dhi"; */
+"gWJ-oG-dhi.text" = "サブタイトル";
+
+/* Class = "UILabel"; text = "DOB:"; ObjectID = "gdR-1t-PGD"; */
+"opX-e6-taf.text" = "日付:";
+
+/* Class = "UINavigationItem"; title = "Auto Complete"; ObjectID = "hnG-Zv-V3A"; */
+"N4S-JH-stU.title" = "オートコンプリート";
+
+/* Class = "UILabel"; text = "Delay"; ObjectID = "jbD-yu-KX7"; */
+"cRv-FD-Szh.text" = "入力後に遅延させて表示";
+
+/* Class = "UILabel"; text = "Dynamic"; ObjectID = "jn6-vZ-usO"; */
+"LnA-bt-njF.text" = "リストを動的に作成して表示";
+
+/* Class = "UINavigationItem"; title = "Combo Box"; ObjectID = "l6B-Jo-fvJ"; */
+"hi0-Ld-fX3.title" = "コンボボックス";
+
+/* Class = "UILabel"; text = "Non-editable"; ObjectID = "m17-uw-9Au"; */
+"7am-F3-fq6.text" = "編集不可の形式";
+
+/* Class = "UINavigationItem"; title = "Input101"; ObjectID = "njc-fO-DEw"; */
+"njc-fO-DEw.title" = "Input101";
+
+/* Class = "UILabel"; text = "ID:"; ObjectID = "z2v-to-R3r"; */
+"KUG-Ti-AjZ.text" = "ID(数字):";

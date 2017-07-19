@@ -5,6 +5,7 @@
              x:Class="C1Gauge101.AutomaticScaling"
              Padding="20">
     <StackLayout >
+        <c1:C1RadialGauge x:Name="Gauge" AutoScale="True" Min="{Binding Min}" Max="{Binding Max}" Value="{Binding Value}" StartAngle="{Binding StartAngle}" SweepAngle="{Binding SweepAngle}" ShowText="{Binding ShowText}" VerticalOptions="FillAndExpand"/>
         <StackLayout Orientation="Horizontal">
             <Label x:Name="lblStartAngle" Text="Start Angle " VerticalOptions="Center"/>
             <Label x:Name="StartAngleLabel" VerticalOptions="Center"/>
@@ -15,6 +16,5 @@
             <Label x:Name="SweepAngleLabel" VerticalOptions="Center"/>
             <Stepper x:Name="SweepAngleStepper" Value="{Binding SweepAngle,Mode=TwoWay}" Minimum="45" Maximum="360" Increment="45" HorizontalOptions="EndAndExpand"/>
         </StackLayout>
-        <c1:C1RadialGauge x:Name="Gauge" AutoScale="True" Min="{Binding Min}" Max="{Binding Max}" Value="{Binding Value}" StartAngle="{Binding StartAngle}" SweepAngle="{Binding SweepAngle}" ShowText="{Binding ShowText}" VerticalOptions="FillAndExpand"/>
     </StackLayout>
 </ContentPage>

@@ -16,6 +16,10 @@ namespace C1Gauge101
         private C1RadialGauge mRadialGauge;
         private TextView mStartText;
         private TextView mSweepText;
+        private Button minusButton;
+        private Button plusButton;
+        private Button minusSweepButton;
+        private Button plusSweepButton;
         private Random myRandom = new Random();
         private System.Timers.Timer timer = new System.Timers.Timer(3000);
         protected override void OnCreate(Bundle bundle)
@@ -44,14 +48,15 @@ namespace C1Gauge101
             //timer.AutoReset = true;
             //timer.Start();
 
-            Button minusButton = (Button)FindViewById(Resource.Id.buttonStartMinus);
+            minusButton = (Button)FindViewById(Resource.Id.buttonStartMinus);
+            minusButton.Enabled = false;
             minusButton.Click += button_Click;
-            Button plusButton = (Button)FindViewById(Resource.Id.buttonStartPlus);
+            plusButton = (Button)FindViewById(Resource.Id.buttonStartPlus);
             plusButton.Click += button_Click;
 
-            Button minusSweepButton = (Button)FindViewById(Resource.Id.buttonSweepMinus);
+            minusSweepButton = (Button)FindViewById(Resource.Id.buttonSweepMinus);
             minusSweepButton.Click += button_Click;
-            Button plusSweepButton = (Button)FindViewById(Resource.Id.buttonSweepPlus);
+            plusSweepButton = (Button)FindViewById(Resource.Id.buttonSweepPlus);
             plusSweepButton.Click += button_Click;
         }
         private void elapsedEventHandler(object source, System.Timers.ElapsedEventArgs e)
@@ -60,6 +65,45 @@ namespace C1Gauge101
             Action action = new Action(() => { mRadialGauge.Value = mRandom; });
             RunOnUiThread(action);
         }  
+
+        private void SetStartAngleButtonStatus()
+        {
+            if (mRadialGauge.StartAngle <= 0)
+            {
+                minusButton.Enabled = false;
+                plusButton.Enabled = true;
+            }
+            else if (mRadialGauge.StartAngle > 0 && mRadialGauge.StartAngle <360)
+            {
+                minusButton.Enabled = true;
+                plusButton.Enabled = true;
+            }
+            else if (mRadialGauge.StartAngle >=360)
+            {
+                minusButton.Enabled = true;
+                plusButton.Enabled = false;
+            }
+        }
+
+        private void SetSweepAngleButtonStatus()
+        {
+            if (mRadialGauge.SweepAngle <= 45)
+            {
+                minusSweepButton.Enabled = false;
+                plusSweepButton.Enabled = true;
+            }
+            else if (mRadialGauge.SweepAngle > 45 && mRadialGauge.SweepAngle < 360)
+            {
+                minusSweepButton.Enabled = true;
+                plusSweepButton.Enabled = true;
+            }
+            else if (mRadialGauge.SweepAngle >= 360)
+            {
+                minusSweepButton.Enabled = true;
+                plusSweepButton.Enabled = false;
+            }
+        }
+
         void button_Click(object sender, System.EventArgs e)
         {
             View v = (View)sender;
@@ -68,18 +112,22 @@ namespace C1Gauge101
                 case Resource.Id.buttonStartMinus:
                     mRadialGauge.StartAngle = mRadialGauge.StartAngle - 45;
                     mStartText.Text = mRadialGauge.StartAngle.ToString();
+                    SetStartAngleButtonStatus();
                     break;
                 case Resource.Id.buttonStartPlus:
                     mRadialGauge.StartAngle = mRadialGauge.StartAngle + 45;
                     mStartText.Text = mRadialGauge.StartAngle.ToString();
+                    SetStartAngleButtonStatus();
                     break;
                 case Resource.Id.buttonSweepMinus:
                     mRadialGauge.SweepAngle = mRadialGauge.SweepAngle - 45;
                     mSweepText.Text = mRadialGauge.SweepAngle.ToString();
+                    SetSweepAngleButtonStatus();
                     break;
                 case Resource.Id.buttonSweepPlus:
                     mRadialGauge.SweepAngle = mRadialGauge.SweepAngle + 45;
                     mSweepText.Text = mRadialGauge.SweepAngle.ToString();
+                    SetSweepAngleButtonStatus();
                     break;
             }
         }

@@ -7,7 +7,7 @@ using C1.Android.Calendar;
 
 namespace C1Calendar101
 {
-    [Activity(Label = "CustomSelection", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/custom_selection", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class CustomSelectionActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

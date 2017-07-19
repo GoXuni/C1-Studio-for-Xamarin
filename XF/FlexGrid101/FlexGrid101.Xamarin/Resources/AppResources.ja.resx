@@ -329,4 +329,24 @@
     <value>水曜日</value>
     <comment>Wednesday</comment>
   </data>
+  <data name="CustomAppearanceTitle" xml:space="preserve">
+    <value>外観のカスタマイズ</value>
+    <comment>Custom Appearance</comment>
+  </data>
+  <data name="CustomAppearanceDescription" xml:space="preserve">
+    <value>外観スタイルを変更してグリッドを表示</value>
+    <comment>Shows a grid with a custom style.</comment>
+  </data>
+  <data name="Weekday" xml:space="preserve">
+    <value>平日</value>
+    <comment>Weekday</comment>
+  </data>
+  <data name="Weekend" xml:space="preserve">
+    <value>週末</value>
+    <comment>Weekend</comment>
+  </data>
+  <data name="ShowMarquee" xml:space="preserve">
+    <value>マーキーの表示</value>
+    <comment>ShowMarquee</comment>
+  </data>
 </root>
