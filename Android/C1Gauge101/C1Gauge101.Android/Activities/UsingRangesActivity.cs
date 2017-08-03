@@ -38,7 +38,7 @@ namespace C1Gauge101
 
             setRange(0, 40, Color.ParseColor("#22B14C"));
             setRange(40, 80, Color.ParseColor("#FF8080"));
-            setRange(80, 100, Color.ParseColor("#00A2E8"));
+            setRange(80, 100, Color.ParseColor("#EEE04A"));
 
             //mRadialGauge.Ranges = mRanges;
             //mLinearGauge.Ranges = mRanges;

@@ -92,7 +92,7 @@ namespace FlexGrid101
 
         async partial void UndoFilterButton_Activated(UIBarButtonItem sender)
         {
-            await Grid.CollectionView.FilterAsync(null);
+            await Grid.CollectionView.RemoveFilterAsync();
         }
     }
 }

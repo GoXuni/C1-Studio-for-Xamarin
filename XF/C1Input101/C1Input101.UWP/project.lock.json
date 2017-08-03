@@ -2,7 +2,7 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -11,10 +11,10 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Calendar/2.3.20172.170": {
+      "C1.Xamarin.Forms.Calendar/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -28,7 +28,7 @@
           "lib/uap10.0/C1.Xamarin.Forms.Calendar.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -46,11 +46,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Input/2.3.20172.170": {
+      "C1.Xamarin.Forms.Input/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -2282,7 +2282,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -2291,10 +2291,10 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Calendar/2.3.20172.170": {
+      "C1.Xamarin.Forms.Calendar/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -2308,7 +2308,7 @@
           "lib/uap10.0/C1.Xamarin.Forms.Calendar.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -2326,11 +2326,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Input/2.3.20172.170": {
+      "C1.Xamarin.Forms.Input/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -4670,7 +4670,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -4679,10 +4679,10 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Calendar/2.3.20172.170": {
+      "C1.Xamarin.Forms.Calendar/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -4696,7 +4696,7 @@
           "lib/uap10.0/C1.Xamarin.Forms.Calendar.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -4714,11 +4714,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Input/2.3.20172.170": {
+      "C1.Xamarin.Forms.Input/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -7097,7 +7097,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -7106,10 +7106,10 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Calendar/2.3.20172.170": {
+      "C1.Xamarin.Forms.Calendar/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -7123,7 +7123,7 @@
           "lib/uap10.0/C1.Xamarin.Forms.Calendar.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -7141,11 +7141,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Input/2.3.20172.170": {
+      "C1.Xamarin.Forms.Input/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -9494,7 +9494,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -9503,10 +9503,10 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Calendar/2.3.20172.170": {
+      "C1.Xamarin.Forms.Calendar/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -9520,7 +9520,7 @@
           "lib/uap10.0/C1.Xamarin.Forms.Calendar.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -9538,11 +9538,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Input/2.3.20172.170": {
+      "C1.Xamarin.Forms.Input/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -11930,7 +11930,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -11939,10 +11939,10 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Calendar/2.3.20172.170": {
+      "C1.Xamarin.Forms.Calendar/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -11956,7 +11956,7 @@
           "lib/uap10.0/C1.Xamarin.Forms.Calendar.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -11974,11 +11974,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Input/2.3.20172.170": {
+      "C1.Xamarin.Forms.Input/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -14327,7 +14327,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -14336,10 +14336,10 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Calendar/2.3.20172.170": {
+      "C1.Xamarin.Forms.Calendar/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -14353,7 +14353,7 @@
           "lib/uap10.0/C1.Xamarin.Forms.Calendar.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -14371,11 +14371,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Input/2.3.20172.170": {
+      "C1.Xamarin.Forms.Input/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -16764,23 +16764,23 @@
     }
   },
   "libraries": {
-    "C1.CollectionView/2.3.20172.170": {
-      "sha512": "/RREiiXU66chkAhn6pJfSVoXioUspBAC36PQETuaM1wtxyj1OtoUhvBiNND1MjLmB5iRl3o8XogHAwJeUMJobA==",
+    "C1.CollectionView/2.3.20172.179": {
+      "sha512": "6o+/pTI0EH7D3+d9YIMv9eaCaZmac1exUL7AWWmSuQHwwd2Q46kHmVibAyCbKwA6L9yMH/SkN2i+9WzM8KE+Cw==",
       "type": "package",
-      "path": "c1.collectionview/2.3.20172.170",
+      "path": "c1.collectionview/2.3.20172.179",
       "files": [
-        "c1.collectionview.2.3.20172.170.nupkg.sha512",
+        "c1.collectionview.2.3.20172.179.nupkg.sha512",
         "c1.collectionview.nuspec",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.xml"
       ]
     },
-    "C1.Xamarin.Forms.Calendar/2.3.20172.170": {
-      "sha512": "OQY+bkxZ/U3PpO+XCcCBpbeWvUtfgNoTbt5y4CkJAqkc6OufQCWx0dpIp52PHsmZM+60kKScPnFmr2JnivUiDQ==",
+    "C1.Xamarin.Forms.Calendar/2.3.20172.179": {
+      "sha512": "2ms36b6FEVqJB6lZhw4Zf9L0PF/3DpzykIM+FuGAgtdRQqukIh9BMMZm0zLR1lmFmOc52huI+PL4HlBseHYfmA==",
       "type": "package",
-      "path": "c1.xamarin.forms.calendar/2.3.20172.170",
+      "path": "c1.xamarin.forms.calendar/2.3.20172.179",
       "files": [
-        "c1.xamarin.forms.calendar.2.3.20172.170.nupkg.sha512",
+        "c1.xamarin.forms.calendar.2.3.20172.179.nupkg.sha512",
         "c1.xamarin.forms.calendar.nuspec",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Calendar.Platform.Android.dll",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Calendar.Platform.Android.xml",
@@ -16804,12 +16804,12 @@
         "lib/uap10.0/C1.Xamarin.Forms.Calendar.xml"
       ]
     },
-    "C1.Xamarin.Forms.Core/2.3.20172.170": {
-      "sha512": "68JpmR3mhIvDAQqd8pKBUg3OiZwvgvkKqkZYg7cE70OWOg3qxPAXVE9hxgR/PkIn3B8cBf3Omprtd8lIAxj9dg==",
+    "C1.Xamarin.Forms.Core/2.3.20172.179": {
+      "sha512": "CEXei9utHLmwu080GGqneUzfaEuG/7jiwS8pkQs7cq774zR3Tp0UYZ8dsK+5NSKUbGJ1QAxfTM3M9yoykD64Fw==",
       "type": "package",
-      "path": "c1.xamarin.forms.core/2.3.20172.170",
+      "path": "c1.xamarin.forms.core/2.3.20172.179",
       "files": [
-        "c1.xamarin.forms.core.2.3.20172.170.nupkg.sha512",
+        "c1.xamarin.forms.core.2.3.20172.179.nupkg.sha512",
         "c1.xamarin.forms.core.nuspec",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Core.Platform.Android.dll",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Core.Platform.Android.xml",
@@ -16839,12 +16839,12 @@
         "lib/uap10.0/C1.Xamarin.Forms.Core.xml"
       ]
     },
-    "C1.Xamarin.Forms.Input/2.3.20172.170": {
-      "sha512": "xoOwGAchVF+oueZHqu0tZtFBN2s3Muh71NkOYz6ttsfKt/luCEnEYo8LuobwMklv+1Bta3NGbaAcEq7h+HXV3A==",
+    "C1.Xamarin.Forms.Input/2.3.20172.179": {
+      "sha512": "Zbs9O3ml8j8D6B9cPE3Qiw4pfKQGXMGVBDI4rAUPEI+UPhkNq2gEZfNdO0UAxKeDoX+ArpCXj4GR2emfYIvRfQ==",
       "type": "package",
-      "path": "c1.xamarin.forms.input/2.3.20172.170",
+      "path": "c1.xamarin.forms.input/2.3.20172.179",
       "files": [
-        "c1.xamarin.forms.input.2.3.20172.170.nupkg.sha512",
+        "c1.xamarin.forms.input.2.3.20172.179.nupkg.sha512",
         "c1.xamarin.forms.input.nuspec",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Input.Platform.Android.dll",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Input.Platform.Android.xml",
@@ -23257,8 +23257,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "C1.Xamarin.Forms.Calendar >= 2.3.20172.170",
-      "C1.Xamarin.Forms.Input >= 2.3.20172.170",
+      "C1.Xamarin.Forms.Calendar >= 2.3.20172.179",
+      "C1.Xamarin.Forms.Input >= 2.3.20172.179",
       "Microsoft.ApplicationInsights >= 2.3.0",
       "Microsoft.ApplicationInsights.PersistenceChannel >= 1.2.3",
       "Microsoft.ApplicationInsights.WindowsApps >= 1.1.1",
@@ -23272,24 +23272,24 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\C1Input101\\C1Input101.UWP\\C1Input101.UWP.csproj",
+      "projectUniqueName": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\C1Input101\\C1Input101.UWP\\C1Input101.UWP.csproj",
       "projectName": "C1Input101.UWP",
-      "projectPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\C1Input101\\C1Input101.UWP\\C1Input101.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\C1Input101\\C1Input101.UWP\\project.json",
+      "projectPath": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\C1Input101\\C1Input101.UWP\\C1Input101.UWP.csproj",
+      "projectJsonPath": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\C1Input101\\C1Input101.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\C1Input101\\C1Input101.Xamarin\\C1Input101.Xamarin.csproj": {
-              "projectPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\C1Input101\\C1Input101.Xamarin\\C1Input101.Xamarin.csproj"
+            "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\C1Input101\\C1Input101.Xamarin\\C1Input101.Xamarin.csproj": {
+              "projectPath": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\C1Input101\\C1Input101.Xamarin\\C1Input101.Xamarin.csproj"
             }
           }
         }
       }
     },
     "dependencies": {
-      "C1.Xamarin.Forms.Calendar": "2.3.20172.170",
-      "C1.Xamarin.Forms.Input": "2.3.20172.170",
+      "C1.Xamarin.Forms.Calendar": "2.3.20172.179",
+      "C1.Xamarin.Forms.Input": "2.3.20172.179",
       "Microsoft.ApplicationInsights": "2.3.0",
       "Microsoft.ApplicationInsights.PersistenceChannel": "1.2.3",
       "Microsoft.ApplicationInsights.WindowsApps": "1.1.1",

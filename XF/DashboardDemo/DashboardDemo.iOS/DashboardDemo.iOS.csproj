@@ -9,6 +9,7 @@
     <RootNamespace>DashboardDemo.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>DashboardDemoiOS</AssemblyName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -24,7 +25,8 @@
     <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -97,35 +99,35 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.CollectionView, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.3.20172.170\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.3.20172.179\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\C1.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Chart, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Chart.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Chart.dll</HintPath>
+    <Reference Include="C1.iOS.Chart, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Chart.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Chart.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Core, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+    <Reference Include="C1.iOS.Core, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Gauge, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Gauge.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
+    <Reference Include="C1.iOS.Gauge, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Gauge.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Chart, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Chart.2.3.20172.170\lib\Xamarin.iOS10\C1.Xamarin.Forms.Chart.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Chart, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Chart.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Chart.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Chart.Platform.iOS, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Chart.2.3.20172.170\lib\Xamarin.iOS10\C1.Xamarin.Forms.Chart.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Chart.Platform.iOS, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Chart.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Chart.Platform.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.3.20172.170\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core.Platform.iOS, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.3.20172.170\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core.Platform.iOS, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.Platform.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Gauge, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.3.20172.170\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Gauge, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Gauge.Platform.iOS, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.3.20172.170\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Gauge.Platform.iOS, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.Platform.iOS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

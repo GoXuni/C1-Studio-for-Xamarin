@@ -2,7 +2,7 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -2172,7 +2172,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -4450,7 +4450,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -6767,7 +6767,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -9054,7 +9054,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -11380,7 +11380,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -13667,7 +13667,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -15994,12 +15994,12 @@
     }
   },
   "libraries": {
-    "C1.CollectionView/2.3.20172.170": {
-      "sha512": "/RREiiXU66chkAhn6pJfSVoXioUspBAC36PQETuaM1wtxyj1OtoUhvBiNND1MjLmB5iRl3o8XogHAwJeUMJobA==",
+    "C1.CollectionView/2.3.20172.179": {
+      "sha512": "6o+/pTI0EH7D3+d9YIMv9eaCaZmac1exUL7AWWmSuQHwwd2Q46kHmVibAyCbKwA6L9yMH/SkN2i+9WzM8KE+Cw==",
       "type": "package",
-      "path": "c1.collectionview/2.3.20172.170",
+      "path": "c1.collectionview/2.3.20172.179",
       "files": [
-        "c1.collectionview.2.3.20172.170.nupkg.sha512",
+        "c1.collectionview.2.3.20172.179.nupkg.sha512",
         "c1.collectionview.nuspec",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.xml"
@@ -22337,7 +22337,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "C1.CollectionView >= 2.3.20172.170",
+      "C1.CollectionView >= 2.3.20172.179",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "Xamarin.Forms >= 2.3.4.247"
     ],
@@ -22348,23 +22348,23 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\C1CollectionView101\\C1CollectionView101.UWP\\C1CollectionView101.UWP.csproj",
+      "projectUniqueName": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\C1CollectionView101\\C1CollectionView101.UWP\\C1CollectionView101.UWP.csproj",
       "projectName": "C1CollectionView101.UWP",
-      "projectPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\C1CollectionView101\\C1CollectionView101.UWP\\C1CollectionView101.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\C1CollectionView101\\C1CollectionView101.UWP\\project.json",
+      "projectPath": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\C1CollectionView101\\C1CollectionView101.UWP\\C1CollectionView101.UWP.csproj",
+      "projectJsonPath": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\C1CollectionView101\\C1CollectionView101.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\C1CollectionView101\\C1CollectionView101.Xamarin\\C1CollectionView101.Xamarin.csproj": {
-              "projectPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\C1CollectionView101\\C1CollectionView101.Xamarin\\C1CollectionView101.Xamarin.csproj"
+            "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\C1CollectionView101\\C1CollectionView101.Xamarin\\C1CollectionView101.Xamarin.csproj": {
+              "projectPath": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\C1CollectionView101\\C1CollectionView101.Xamarin\\C1CollectionView101.Xamarin.csproj"
             }
           }
         }
       }
     },
     "dependencies": {
-      "C1.CollectionView": "2.3.20172.170",
+      "C1.CollectionView": "2.3.20172.179",
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
       "Xamarin.Forms": "2.3.4.247"
     },

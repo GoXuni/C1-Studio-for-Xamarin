@@ -87,9 +87,7 @@ namespace FlexGrid101
 
         private async void OnRemoveFilterClicked(object sender, EventArgs e)
         {
-            var filtering = grid.CollectionView as ISupportFiltering;
-            if (filtering != null)
-                await filtering.FilterAsync(null);
+            await grid.CollectionView.RemoveFilterAsync();
         }
     }
 }

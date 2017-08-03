@@ -74,7 +74,7 @@ namespace FlexGrid101
                 {
                     filter.Value = "";
                 }
-                var task = Grid.CollectionView.FilterAsync(null);
+                var task = Grid.CollectionView.RemoveFilterAsync();
             }
             return base.OnOptionsItemSelected(item);
         }

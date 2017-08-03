@@ -19,7 +19,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <MtouchArch>i386</MtouchArch>
+    <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchUseRefCounting>True</MtouchUseRefCounting>
     <MtouchUseSGen>True</MtouchUseSGen>
@@ -58,7 +58,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <MtouchArch>i386</MtouchArch>
+    <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <CodesignKey>iPhone Developer</CodesignKey>
@@ -84,12 +84,15 @@
     <IOSDebugOverWiFi>False</IOSDebugOverWiFi>
     <IOSDebuggerPort>10000</IOSDebuggerPort>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(OS)' == 'Unix' ">
+    <CscToolExe>mcs.exe</CscToolExe>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.iOS.Calendar, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Calendar.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Calendar.dll</HintPath>
+    <Reference Include="C1.iOS.Calendar, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Calendar.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Calendar.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Core, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+    <Reference Include="C1.iOS.Core, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

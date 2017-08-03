@@ -43,3 +43,4 @@
 "Weekday" = "平日";
 "Please select a row first or double-tap the row directly." = "編集する行を選択してください。対象の行をダブルタップしても編集できます。";
 "{name}: {value} ({count} items)" = "{name}: {value} ({count} 項目)";
+" cell(s) selected" = " 個のセルを選択しました";

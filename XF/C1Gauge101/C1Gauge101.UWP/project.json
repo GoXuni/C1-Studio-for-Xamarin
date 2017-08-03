@@ -1,6 +1,6 @@
 ﻿{
   "dependencies": {
-    "C1.Xamarin.Forms.Gauge": "2.3.20172.170",
+    "C1.Xamarin.Forms.Gauge": "2.3.20172.179",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "Xamarin.Forms": "2.3.4.247"
   },

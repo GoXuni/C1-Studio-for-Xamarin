@@ -1,4 +1,5 @@
 using System;
+using Foundation;
 using CoreGraphics;
 using UIKit;
 using C1.iOS.Grid;
@@ -54,7 +55,7 @@ namespace FlexGrid101
                 int rowsSelected = Math.Abs(e.CellRange.Row2 - e.CellRange.Row) + 1;
                 int colsSelected = Math.Abs(e.CellRange.Column2 - e.CellRange.Column) + 1;
 
-                SelectionLabel.Text = (rowsSelected * colsSelected).ToString() + " cell(s) selected";
+                SelectionLabel.Text = (rowsSelected * colsSelected).ToString() + NSBundle.MainBundle.LocalizedString(" cell(s) selected","");
             }
         }
 

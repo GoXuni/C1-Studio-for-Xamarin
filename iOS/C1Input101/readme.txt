@@ -1,12 +1,11 @@
-C1Input101 for Xamarin.iOS
+C1Input101 Samples for Xamarin.iOS
 ------------------------------------------
 Shows samples of the Input controls.
 
 Shows the following samples
-<code>
+
 	- AutoComplete
 	- ComboBox
 	- DropDown
 	- MaskedEntry
-</code>
 

@@ -23,6 +23,7 @@
     <ConsolePause>false</ConsolePause>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchArch>i386, x86_64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -32,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -96,23 +98,23 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.iOS.Core, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+    <Reference Include="C1.iOS.Core, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Gauge, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Gauge.2.3.20172.170\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
+    <Reference Include="C1.iOS.Gauge, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Gauge.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.3.20172.170\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core.Platform.iOS, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.3.20172.170\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core.Platform.iOS, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.Platform.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Gauge, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.3.20172.170\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Gauge, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Gauge.Platform.iOS, Version=2.3.20172.170, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.3.20172.170\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Gauge.Platform.iOS, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.Platform.iOS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

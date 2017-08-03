@@ -1,9 +1,9 @@
-C1Gauge101 for Xamarin.Android
+C1Gauge101 Samples for Xamarin.Android
 -------------------------------------
 Shows samples of the Gauge control.
 
 Shows the following samples
-<code>
+
 	- GettingStarted
 	- DisplayingValues
 	- UsingRanges
@@ -11,4 +11,3 @@ Shows the following samples
 	- Direction
 	- BulletGraph
 	- ExportImage
-</code>

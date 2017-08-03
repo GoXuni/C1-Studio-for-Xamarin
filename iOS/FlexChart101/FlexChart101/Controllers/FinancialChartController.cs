@@ -31,6 +31,7 @@ namespace FlexChart101
             chart.SelectionMode = ChartSelectionModeType.Point;
             chart.LegendPosition = ChartPositionType.None;
             this.Add(chart);
+            chart.AxisX.Format = "MM/dd/yyyy";
         }
 
         public override void ViewDidLayoutSubviews()

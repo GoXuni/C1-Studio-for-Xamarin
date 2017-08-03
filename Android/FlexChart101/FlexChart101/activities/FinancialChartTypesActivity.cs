@@ -58,7 +58,7 @@ namespace FlexChart101
             mChart.ItemsSource=dataSource;
             mChart.AxisY.MajorGridStyle.Fill = Android.Graphics.Color.Argb(20, 50, 50, 50);
             mChart.AxisX.LabelAngle = 90;
-            
+			mChart.AxisX.Format = "MM/dd/yyyy";
 
             // create custom adapter for spinner and initialize with string array
             ArrayAdapter adapter1 = ArrayAdapter.CreateFromResource(this, Resource.Array.financialTypeSpinnerValues, Android.Resource.Layout.SimpleSpinnerItem);

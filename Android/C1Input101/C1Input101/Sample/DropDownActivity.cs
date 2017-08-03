@@ -28,7 +28,7 @@ namespace C1Input101
             calendar = new C1Calendar(this);
 			dropdown.Header = header;
 			dropdown.DropDown = calendar;
-			dropdown.DropDownHeight = 800;
+			dropdown.DropDownHeight = 300;
 			dropdown.IsAnimated = true;
 
             calendar.SelectionChanged += (object sender, CalendarSelectionChangedEventArgs e) =>

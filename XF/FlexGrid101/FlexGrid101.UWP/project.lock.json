@@ -2,7 +2,7 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -11,7 +11,7 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -29,10 +29,10 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Gauge/2.3.20172.170": {
+      "C1.Xamarin.Forms.Gauge/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -46,11 +46,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Gauge.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Grid/2.3.20172.170": {
+      "C1.Xamarin.Forms.Grid/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -2280,7 +2280,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -2289,7 +2289,7 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -2307,10 +2307,10 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Gauge/2.3.20172.170": {
+      "C1.Xamarin.Forms.Gauge/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -2324,11 +2324,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Gauge.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Grid/2.3.20172.170": {
+      "C1.Xamarin.Forms.Grid/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -4666,7 +4666,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -4675,7 +4675,7 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -4693,10 +4693,10 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Gauge/2.3.20172.170": {
+      "C1.Xamarin.Forms.Gauge/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -4710,11 +4710,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Gauge.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Grid/2.3.20172.170": {
+      "C1.Xamarin.Forms.Grid/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -7091,7 +7091,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -7100,7 +7100,7 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -7118,10 +7118,10 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Gauge/2.3.20172.170": {
+      "C1.Xamarin.Forms.Gauge/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -7135,11 +7135,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Gauge.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Grid/2.3.20172.170": {
+      "C1.Xamarin.Forms.Grid/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -9486,7 +9486,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -9495,7 +9495,7 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -9513,10 +9513,10 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Gauge/2.3.20172.170": {
+      "C1.Xamarin.Forms.Gauge/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -9530,11 +9530,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Gauge.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Grid/2.3.20172.170": {
+      "C1.Xamarin.Forms.Grid/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -11920,7 +11920,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -11929,7 +11929,7 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -11947,10 +11947,10 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Gauge/2.3.20172.170": {
+      "C1.Xamarin.Forms.Gauge/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -11964,11 +11964,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Gauge.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Grid/2.3.20172.170": {
+      "C1.Xamarin.Forms.Grid/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -14315,7 +14315,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "C1.CollectionView/2.3.20172.170": {
+      "C1.CollectionView/2.3.20172.179": {
         "type": "package",
         "compile": {
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
@@ -14324,7 +14324,7 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Core/2.3.20172.170": {
+      "C1.Xamarin.Forms.Core/2.3.20172.179": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.3.4.247"
@@ -14342,10 +14342,10 @@
           "lib/uap10.0/C1.Xamarin.Forms.Core.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Gauge/2.3.20172.170": {
+      "C1.Xamarin.Forms.Gauge/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -14359,11 +14359,11 @@
           "lib/uap10.0/C1.Xamarin.Forms.Gauge.dll": {}
         }
       },
-      "C1.Xamarin.Forms.Grid/2.3.20172.170": {
+      "C1.Xamarin.Forms.Grid/2.3.20172.179": {
         "type": "package",
         "dependencies": {
-          "C1.CollectionView": "[2.3.20172.170]",
-          "C1.Xamarin.Forms.Core": "[2.3.20172.170]",
+          "C1.CollectionView": "[2.3.20172.179]",
+          "C1.Xamarin.Forms.Core": "[2.3.20172.179]",
           "Xamarin.Forms": "2.3.4.247"
         },
         "compile": {
@@ -16750,23 +16750,23 @@
     }
   },
   "libraries": {
-    "C1.CollectionView/2.3.20172.170": {
-      "sha512": "/RREiiXU66chkAhn6pJfSVoXioUspBAC36PQETuaM1wtxyj1OtoUhvBiNND1MjLmB5iRl3o8XogHAwJeUMJobA==",
+    "C1.CollectionView/2.3.20172.179": {
+      "sha512": "6o+/pTI0EH7D3+d9YIMv9eaCaZmac1exUL7AWWmSuQHwwd2Q46kHmVibAyCbKwA6L9yMH/SkN2i+9WzM8KE+Cw==",
       "type": "package",
-      "path": "c1.collectionview/2.3.20172.170",
+      "path": "c1.collectionview/2.3.20172.179",
       "files": [
-        "c1.collectionview.2.3.20172.170.nupkg.sha512",
+        "c1.collectionview.2.3.20172.179.nupkg.sha512",
         "c1.collectionview.nuspec",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.dll",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/C1.CollectionView.xml"
       ]
     },
-    "C1.Xamarin.Forms.Core/2.3.20172.170": {
-      "sha512": "68JpmR3mhIvDAQqd8pKBUg3OiZwvgvkKqkZYg7cE70OWOg3qxPAXVE9hxgR/PkIn3B8cBf3Omprtd8lIAxj9dg==",
+    "C1.Xamarin.Forms.Core/2.3.20172.179": {
+      "sha512": "CEXei9utHLmwu080GGqneUzfaEuG/7jiwS8pkQs7cq774zR3Tp0UYZ8dsK+5NSKUbGJ1QAxfTM3M9yoykD64Fw==",
       "type": "package",
-      "path": "c1.xamarin.forms.core/2.3.20172.170",
+      "path": "c1.xamarin.forms.core/2.3.20172.179",
       "files": [
-        "c1.xamarin.forms.core.2.3.20172.170.nupkg.sha512",
+        "c1.xamarin.forms.core.2.3.20172.179.nupkg.sha512",
         "c1.xamarin.forms.core.nuspec",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Core.Platform.Android.dll",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Core.Platform.Android.xml",
@@ -16796,12 +16796,12 @@
         "lib/uap10.0/C1.Xamarin.Forms.Core.xml"
       ]
     },
-    "C1.Xamarin.Forms.Gauge/2.3.20172.170": {
-      "sha512": "slgyJQFVQWBzJ2NKcJZRFXJEBJdWdbIVRRQLkFXJmlx2P8SYHMMs3i/nLE5E39pgyBouXT/9D2CkCk9XUUlq3w==",
+    "C1.Xamarin.Forms.Gauge/2.3.20172.179": {
+      "sha512": "1Mmrjj7QoFy8gwg1AbycTcOsoVVnigNczKo+k//kjcJbopL0FLPcGyEATK3roJsjg29l4gmoQ+m1LswOAPkmZQ==",
       "type": "package",
-      "path": "c1.xamarin.forms.gauge/2.3.20172.170",
+      "path": "c1.xamarin.forms.gauge/2.3.20172.179",
       "files": [
-        "c1.xamarin.forms.gauge.2.3.20172.170.nupkg.sha512",
+        "c1.xamarin.forms.gauge.2.3.20172.179.nupkg.sha512",
         "c1.xamarin.forms.gauge.nuspec",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Gauge.Platform.Android.dll",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Gauge.Platform.Android.xml",
@@ -16825,12 +16825,12 @@
         "lib/uap10.0/C1.Xamarin.Forms.Gauge.xml"
       ]
     },
-    "C1.Xamarin.Forms.Grid/2.3.20172.170": {
-      "sha512": "SrnLC2f0uiFtA+wHafB4dfcl+1Qi68otr7tSW3KKbcZTmziTNmrRf854bsvzVaC+EVz3c0Q53GjJTrBZkjCytA==",
+    "C1.Xamarin.Forms.Grid/2.3.20172.179": {
+      "sha512": "shEtuOYGDzl0TCL8PksafeSCAC/B0FtDpJLONxoiablnnzUPAjJaQF4L8XkJ2GR9zUUNMctNmCaTlrVkSINqAw==",
       "type": "package",
-      "path": "c1.xamarin.forms.grid/2.3.20172.170",
+      "path": "c1.xamarin.forms.grid/2.3.20172.179",
       "files": [
-        "c1.xamarin.forms.grid.2.3.20172.170.nupkg.sha512",
+        "c1.xamarin.forms.grid.2.3.20172.179.nupkg.sha512",
         "c1.xamarin.forms.grid.nuspec",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Grid.Platform.Android.dll",
         "lib/MonoAndroid10/C1.Xamarin.Forms.Grid.Platform.Android.xml",
@@ -23238,8 +23238,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "C1.Xamarin.Forms.Gauge >= 2.3.20172.170",
-      "C1.Xamarin.Forms.Grid >= 2.3.20172.170",
+      "C1.Xamarin.Forms.Gauge >= 2.3.20172.179",
+      "C1.Xamarin.Forms.Grid >= 2.3.20172.179",
       "Microsoft.ApplicationInsights >= 2.3.0",
       "Microsoft.ApplicationInsights.PersistenceChannel >= 1.2.3",
       "Microsoft.ApplicationInsights.WindowsApps >= 1.1.1",
@@ -23253,24 +23253,24 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\FlexGrid101\\FlexGrid101.UWP\\FlexGrid101.UWP.csproj",
+      "projectUniqueName": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\FlexGrid101\\FlexGrid101.UWP\\FlexGrid101.UWP.csproj",
       "projectName": "FlexGrid101.UWP",
-      "projectPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\FlexGrid101\\FlexGrid101.UWP\\FlexGrid101.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\FlexGrid101\\FlexGrid101.UWP\\project.json",
+      "projectPath": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\FlexGrid101\\FlexGrid101.UWP\\FlexGrid101.UWP.csproj",
+      "projectJsonPath": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\FlexGrid101\\FlexGrid101.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\FlexGrid101\\FlexGrid101.Xamarin\\FlexGrid101.Xamarin.csproj": {
-              "projectPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\XF\\FlexGrid101\\FlexGrid101.Xamarin\\FlexGrid101.Xamarin.csproj"
+            "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\FlexGrid101\\FlexGrid101.Xamarin\\FlexGrid101.Xamarin.csproj": {
+              "projectPath": "C:\\C1Xamarin_2.3.20172.179\\Samples\\XF\\FlexGrid101\\FlexGrid101.Xamarin\\FlexGrid101.Xamarin.csproj"
             }
           }
         }
       }
     },
     "dependencies": {
-      "C1.Xamarin.Forms.Gauge": "2.3.20172.170",
-      "C1.Xamarin.Forms.Grid": "2.3.20172.170",
+      "C1.Xamarin.Forms.Gauge": "2.3.20172.179",
+      "C1.Xamarin.Forms.Grid": "2.3.20172.179",
       "Microsoft.ApplicationInsights": "2.3.0",
       "Microsoft.ApplicationInsights.PersistenceChannel": "1.2.3",
       "Microsoft.ApplicationInsights.WindowsApps": "1.1.1",

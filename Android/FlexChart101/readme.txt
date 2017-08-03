@@ -1,9 +1,9 @@
-FlexChart101 for Xamarin.Android
+FlexChart101 Samples for Xamarin.Android
 ------------------------------------------
 Shows samples of the Chart control.
 
 Shows the following samples
-<code>
+
 	- GettingStarted with FlexChart
 	- BasicChartTypes
 	- MixedChartTypes
@@ -26,4 +26,3 @@ Shows the following samples
 	- Selection
 	- FlexPie DataLabels
 	- FlexPie Theming
-</code>

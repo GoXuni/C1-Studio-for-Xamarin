@@ -73,7 +73,6 @@ namespace C1Input101
             {
                 createYouTubeItemView(e.Item as YouTubeVideo, e);
             };
-         
         }
 
         private void createItemView(Countries1 item, ComboBoxItemLoadingEventArgs e)
