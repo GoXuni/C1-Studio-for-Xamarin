@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sunburst101.GettingStarted"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:local="clr-namespace:Sunburst101">
+  <Grid Margin="10">
+    
+    <c1:C1Sunburst x:Name="sunburst"  Binding="Value" BindingName="Year,Quarter,Month" ToolTipContent="{}{name}&#x000A;{y}" LegendPosition="Bottom">
+      <c1:C1Sunburst.DataLabel>
+                <c1:PieDataLabel Position="Center" Content="{}{name}">
+                    <c1:PieDataLabel.Style>
+                        <c1:ChartStyle StrokeThickness="0"/>
+                    </c1:PieDataLabel.Style>
+                </c1:PieDataLabel>
+
+            </c1:C1Sunburst.DataLabel>
+    </c1:C1Sunburst>
+   
+  </Grid>
+</ContentPage>

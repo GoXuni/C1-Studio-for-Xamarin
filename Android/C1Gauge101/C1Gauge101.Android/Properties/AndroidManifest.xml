@@ -2,5 +2,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.grapecity.android.C1Gauge101" android:versionCode="1" android:versionName="1.0" android:installLocation="preferExternal">
 	<uses-sdk android:minSdkVersion="17" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	<application android:label="C1Gauge101" android:icon="@drawable/Icon"></application>
+	<application android:label="C1Gauge101" android:icon="@drawable/Icon" android:theme="@style/MyTheme"></application>
 </manifest>

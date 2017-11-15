@@ -7,11 +7,14 @@ using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
 using C1.Android.Chart;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101.Pie
 {
     [Activity(Label = "@string/basic_features", MainLauncher = false, Icon = "@drawable/pie_doughnut")]
-    public class BasicFeaturesActivity : Activity
+    public class BasicFeaturesActivity : AppCompatActivity
     {
         private FlexPie mflexPie;
         private float mInnerRadius = 0.3f;
@@ -26,6 +29,12 @@ namespace FlexChart101.Pie
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.flexpie_activity_basic_features);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.basic_features);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widgets
             mflexPie = (FlexPie)FindViewById(Resource.Id.donutPie);
@@ -125,6 +134,18 @@ namespace FlexChart101.Pie
                     mRadius.Text = mInnerRadius.ToString();
                     mflexPie.InnerRadius = mInnerRadius;
                     break;
+            }
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
             }
         }
     }

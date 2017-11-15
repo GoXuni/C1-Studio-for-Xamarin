@@ -4,11 +4,13 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Views;
 using C1.Android.Grid;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/ColumnLayoutTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class ColumnLayoutFormActivity : Activity
+    public class ColumnLayoutFormActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -18,6 +20,11 @@ namespace FlexGrid101
             var columns = ColumnLayoutActivity.DeserializeLayout(columnLayout);
 
             SetContentView(Resource.Layout.GettingStarted);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.ColumnLayoutTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             Grid.ItemsSource = columns;
@@ -39,8 +46,15 @@ namespace FlexGrid101
             {
                 FinishColumnLayout();
             }
+            else if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
             return base.OnOptionsItemSelected(item);
         }
+
+
 
         private async void FinishColumnLayout()
         {

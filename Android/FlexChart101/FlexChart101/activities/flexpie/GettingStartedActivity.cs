@@ -7,23 +7,29 @@ using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
 using C1.Android.Chart;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101.Pie
 {
     [Activity(Label = "@string/getting_started", MainLauncher = false, Icon = "@drawable/pie")]
-    public class GettingStartedActivity : Activity
+    public class GettingStartedActivity : AppCompatActivity
     {
         private FlexPie mFlexPie1;
         private FlexPie mFlexPie2;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            // setting the dark theme
-            // FlexPie automatically adjusts to the current theme
-            SetTheme(Android.Resource.Style.ThemeHolo);
 
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.flexpie_activity_getting_started);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.getting_started);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widgets
             mFlexPie1 = (FlexPie)FindViewById(Resource.Id.flexPie);
@@ -60,6 +66,18 @@ namespace FlexChart101.Pie
             mFlexPie2.ItemsSource = flexdonutFruits;
             mFlexPie2.InnerRadius = 0.6f;
 
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
         }
     }
 }

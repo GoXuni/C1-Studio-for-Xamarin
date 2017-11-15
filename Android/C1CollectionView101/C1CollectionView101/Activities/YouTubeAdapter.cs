@@ -17,6 +17,19 @@ namespace C1CollectionView101
         {
         }
 
+        protected override RecyclerView.ViewHolder OnCreateGroupViewHolder(ViewGroup parent)
+        {
+            var itemView = LayoutInflater.FromContext(parent.Context).Inflate(Resource.Layout.ListGroup, parent, false);
+            return new YoutubeGroupViewHolder(itemView);
+        }
+
+        protected override void OnBindGroupViewHolder(RecyclerView.ViewHolder holder, int position)
+        {
+            var h = holder as YoutubeGroupViewHolder;
+            var group = CollectionView[position] as ICollectionViewGroup<object, object>;
+            h.SetTitle(group.Group.ToString().ToUpper());
+        }
+
         protected override RecyclerView.ViewHolder OnCreateItemViewHolder(ViewGroup parent)
         {
             var itemView = LayoutInflater.FromContext(parent.Context).Inflate(Resource.Layout.ListItem, parent, false);
@@ -74,5 +87,21 @@ namespace C1CollectionView101
             }, TaskScheduler.FromCurrentSynchronizationContext());
         }
 
+    }
+
+    internal class YoutubeGroupViewHolder : RecyclerView.ViewHolder
+    {
+        private TextView _title;
+
+        public YoutubeGroupViewHolder(View itemView)
+            : base(itemView)
+        {
+            _title = itemView.FindViewById<TextView>(Resource.Id.Title);
+        }
+
+        internal void SetTitle(string title)
+        {
+            _title.Text = title;
+        }
     }
 }

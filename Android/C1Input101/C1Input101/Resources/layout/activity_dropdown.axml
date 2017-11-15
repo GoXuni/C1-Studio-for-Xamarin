@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+  <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/main_content"
+		     android:orientation="vertical"
+         android:padding="25px"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_below="@id/toolbar">
+      <C1.Android.Input.C1DropDown
+          android:id="@+id/dropdown"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+  </LinearLayout>
+</RelativeLayout>

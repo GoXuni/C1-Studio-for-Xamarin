@@ -11,15 +11,16 @@ using XAM = Xamarin.Forms;
 
 using Xamarin.Forms.Platform.Android;
 
-namespace C1Calendar101.Droid
+namespace C1Calendar101.Android
 {
-    [Activity(Label = "C1Calendar101", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
+    [Activity(Label = "C1Calendar101", MainLauncher = true, Theme = "@style/MyTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(bundle);
+            FormsAppCompatActivity.ToolbarResource = Android.Resource.Layout.Toolbar;
 
+            base.OnCreate(bundle);
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new C1Calendar101.App());

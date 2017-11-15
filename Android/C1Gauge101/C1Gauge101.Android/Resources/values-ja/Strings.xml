@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">C1Gauge101</string>
-  <string name="hello_world">Hello world!</string>
+  <string name="ApplicationName">C1Gauge101</string>
   <string name="automatic_scaling">自動スケーリング</string>
   <string name="bullet_graph">ブレットグラフ</string>
-  <string name="custom_animation">アニメーション</string>
   <string name="direction">ポインタの方向</string>
   <string name="displaying_values">値の表示</string>
   <string name="getting_started">Gaugeの基本機能</string>
@@ -29,7 +27,6 @@
   <string name="automatic_scaling_desc">大きさを変えた円形ゲージを調整して表示</string>
   <string name="direction_desc">方向が異なる線形ゲージを表示</string>
   <string name="bulletgraph_desc">「良値/不良値/目標値」の範囲を設定</string>
-  <string name="custom_animation_desc">ゲージを表示する場合のアニメーション効果</string>
 
   <string name="snapshot_desc">ゲージに表示した内容を画像として保存する方法</string>
   <string name="snapshotStored">画像をデバイスに保存しました</string>

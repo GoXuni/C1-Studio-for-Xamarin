@@ -1,20 +1,26 @@
 ﻿using Android.App;
-using Android.Widget;
 using Android.OS;
 using Android.Support.V7.Widget;
-using System;
+using Android.Support.V7.App;
 using Android.Views;
+using Android.Widget;
+using System;
+
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1CollectionView101
 {
-    [Activity(Label = "C1CollectionView101", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    [Activity(Label = "C1CollectionView101", MainLauncher = true, Theme = "@style/MyTheme", Icon = "@drawable/icon")]
+    public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
             SetContentView(Resource.Layout.Main);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
 
             var recyclerView = FindViewById<RecyclerView>(Resource.Id.RecyclerView);
             recyclerView.SetLayoutManager(new LinearLayoutManager(BaseContext));

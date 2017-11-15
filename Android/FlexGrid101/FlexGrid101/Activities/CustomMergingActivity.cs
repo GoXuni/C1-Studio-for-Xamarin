@@ -5,17 +5,24 @@ using Android.Util;
 using Android.Content.PM;
 using Android.Widget;
 using C1.Android.Grid;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/CustomMergingTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class CustomMergingActivity : Activity
+    public class CustomMergingActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.CustomMerging);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.CustomMergingTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             ShowNameLabel = FindViewById<TextView>(Resource.Id.ShowNameLabel);
@@ -26,6 +33,18 @@ namespace FlexGrid101
 
             PopulateGrid();
             Grid.SelectionChanged += Grid_SelectionChanged;
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
         }
 
         public FlexGrid Grid { get; set; }

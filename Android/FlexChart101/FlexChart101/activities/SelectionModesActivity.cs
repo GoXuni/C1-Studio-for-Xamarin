@@ -7,11 +7,14 @@ using Android.Widget;
 using Android.OS;
 using FlexChart101.DataModel;
 using C1.Android.Chart;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
     [Activity(Label = "@string/selectionModes", Icon = "@drawable/icon")]
-    public class SelectionModesActivity : Activity
+    public class SelectionModesActivity : AppCompatActivity
     {
         private FlexChart mChart;
         private Spinner mChartTypeSpinner;
@@ -24,6 +27,12 @@ namespace FlexChart101
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_selection_modes);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.selectionModes);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widget
             mChart = this.FindViewById<FlexChart>(Resource.Id.flexchart);
@@ -103,6 +112,18 @@ namespace FlexChart101
                 case 8:
                     mChart.ChartType = ChartType.Column;
                     break;
+            }
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
             }
         }
     }

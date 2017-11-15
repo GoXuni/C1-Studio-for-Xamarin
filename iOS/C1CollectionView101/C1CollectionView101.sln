@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1CollectionView101", "C1CollectionView101\C1CollectionView101.csproj", "{EAF2E092-F7DC-41BF-8C72-FDAA023EA140}"
 EndProject
 Global
@@ -51,5 +51,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1432C5DB-68A6-45AF-A236-3C02621A8DCC}
 	EndGlobalSection
 EndGlobal

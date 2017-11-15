@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:interaction="clr-namespace:C1.Xamarin.Forms.Chart.Interaction;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.LineMarkerSample" x:Name="page"
+            Padding="10">
+   <StackLayout>
+    <Grid>
+      <Grid.BackgroundColor>
+        <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
+      </Grid.BackgroundColor>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+       
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="5*"/>
+        <ColumnDefinition Width="5*"/>
+        <ColumnDefinition Width="5*"/>
+      </Grid.ColumnDefinitions>
+
+      <Picker x:Name="pickerLineType" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" SelectedIndexChanged="pickerLineType_SelectedIndexChanged" />
+      <Picker x:Name="pickerAligment" Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" SelectedIndexChanged="pickerAligment_SelectedIndexChanged" />
+      <Picker x:Name="pickerInteraction" Grid.Row="1" Grid.Column="2" HorizontalOptions="FillAndExpand" SelectedIndexChanged="pickerInterraction_SelectedIndexChanged" />
+      
+      
+    </Grid>
+    <Grid  VerticalOptions="FillAndExpand">
+    <c1:FlexChart x:Name="flexChart" ChartType="Line" BindingX="Date" VerticalOptions="FillAndExpand" ShowTooltip="False">
+      <c1:FlexChart.Series>
+        <c1:ChartSeries Binding="Input" SeriesName="Intput"/>
+        <c1:ChartSeries Binding="Output" SeriesName="Output"/>
+      </c1:FlexChart.Series>
+      <c1:FlexChart.AxisY>
+          <c1:ChartAxis MajorUnit="2" Position="Left" MajorGrid="True" AxisLine="False" MajorTickMarks="None" />
+      </c1:FlexChart.AxisY>
+
+      <c1:FlexChart.Layers>
+      <interaction:C1LineMarker x:Name="lineMarker"  DragContent="True" PositionChanged="OnLineMarkerPositionChanged">
+        <interaction:C1LineMarker.VerticalLineStyle>
+          <c1:ChartStyle Stroke="Gray" />
+        </interaction:C1LineMarker.VerticalLineStyle>
+        <interaction:C1LineMarker.HorizontalLineStyle>
+          <c1:ChartStyle Stroke="Gray" />
+        </interaction:C1LineMarker.HorizontalLineStyle>
+      </interaction:C1LineMarker>
+    </c1:FlexChart.Layers>
+    
+    </c1:FlexChart>
+    </Grid>
+  </StackLayout>
+</ContentPage>

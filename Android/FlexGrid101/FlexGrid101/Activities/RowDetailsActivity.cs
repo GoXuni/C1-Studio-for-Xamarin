@@ -4,17 +4,25 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Util;
 using C1.Android.Grid;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Views;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/RowDetailsTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class RowDetailsActivity : Activity
+    public class RowDetailsActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.GettingStarted);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.RowDetailsTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
 
@@ -31,7 +39,18 @@ namespace FlexGrid101
             grid.ItemsSource = data;
 
         }
-
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
         private void OnDetailCellCreating(object sender, GridDetailCellCreatingEventArgs e)
         {
             var customer = e.Row.DataItem as Customer;

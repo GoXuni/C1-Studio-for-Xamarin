@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="appName">Sunburst101</string>
+  
+  <string name="getting_started">Getting Started</string>
+  <string name="getting_started_desc">Shows a simple sunburst chart with tooltips.</string>
+  <string name="group_collection">Group Collection</string>
+  <string name="group_collection_desc">Shows Sunburst chart with Grouped CollectionView.</string>
+  <string name="basic_features">Basic Features</string>
+  <string name="basic_features_desc">Shows inner radius, offset, and start angle.</string>
+  <string name="legend_and_titles">Legend And Titles</string>
+  <string name="legend_and_titles_desc">Shows header, footer, and legend positioning.</string>
+  <string name="selection">Selection</string>
+  <string name="selection_desc">Shows selection animation, offset, and positioning.</string>
+  <string name="periodictable">Periodic Table</string>
+  <string name="periodictable_desc">Shows periodic table in sunburst.</string>
+ 
+  <string name="inner_radius">Inner Radius</string>
+  <string name="offset">Offset</string>
+  <string name="start_angle">Start Angle</string>
+  <string name="reversed">Reversed?</string>
+  <string name="minus">-</string>
+  <string name="plus">+</string>
+  <string name="header">Header</string>
+  <string name="footer">Footer</string>
+  <string name="header_value">Product By Value</string>
+  <string name="footer_value">2014 GrapeCity, inc.</string>
+  <string name="legend_position">Legend Position</string>
+  <string name="item_offset">Selected Item Offset</string>
+  <string name="position">Position</string>
+
+  <string-array name="legend_spinner_values">
+    <item>None</item>
+    <item>Left</item>
+    <item>Top</item>
+    <item>Right</item>
+    <item>Bottom</item>
+    <item>Auto</item>
+  </string-array>
+
+  <string-array name="selection_spinner_values">
+    <item>None</item>
+    <item>Left</item>
+    <item>Top</item>
+    <item>Right</item>
+    <item>Bottom</item>
+  </string-array>
+
+</resources>

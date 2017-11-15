@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="appName">Sunburst101</string>
+ 
+  <string name="getting_started">円形チャートの基本機能</string>
+  <string name="getting_started_desc">ツールチップを備えた円グラフを表示</string>
+  <string name="group_collection">Group Collection</string>
+  <string name="group_collection_desc">Shows Sunburst chart with Grouped CollectionView</string>
+  <string name="basic_features">円形チャートの調整</string>
+  <string name="basic_features_desc">内側半径、オフセット、開始角度</string>  
+  <string name="legend_and_titles">円形チャートの凡例とタイトル</string>
+  <string name="legend_and_titles_desc">ヘッダ、フッタ、凡例の配置</string>
+  <string name="selection">円形チャートの選択</string>
+  <string name="selection_desc">選択アニメーション、オフセットなど</string>
+  <string name="inner_radius">内側円の半径</string>
+  <string name="offset">オフセット</string>
+  <string name="start_angle">開始角度</string>
+  <string name="reversed">反転する</string>
+  <string name="minus">-</string>
+  <string name="plus">+</string>
+  <string name="header">ヘッダ</string>
+  <string name="footer">フッタ</string>
+  <string name="header_value">生産量</string>
+  <string name="footer_value">2017 グレープシティ(株)</string>
+  <string name="legend_position">凡例を表示する位置</string>
+  <string name="item_offset">選択された項目のオフセット位置</string>
+  <string name="position">位置</string>
+  
+  <string-array name="legend_spinner_values">
+    <item>表示しない(None)</item>
+    <item>左側に表示(Left)</item>
+    <item>上部に表示(Top)</item>
+    <item>右側に表示(Right)</item>
+    <item>下部に表示(Bottom)</item>
+    <item>自動で決定(Auto)</item>
+  </string-array>
+
+  <string-array name="selection_spinner_values">
+    <item>表示しない(None)</item>
+    <item>左側に表示(Left)</item>
+    <item>上部に表示(Top)</item>
+    <item>右側に表示(Right)</item>
+    <item>下部に表示(Bottom)</item>
+  </string-array>
+
+</resources>

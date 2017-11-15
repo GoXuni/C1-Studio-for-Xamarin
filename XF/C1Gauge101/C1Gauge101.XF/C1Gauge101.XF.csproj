@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>C1Gauge101</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;XF</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;XF</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="C1Gauge101.Xamarin.csproj.vspscc" />
+    <None Remove="Images\gauge_basic.png" />
+    <None Remove="Images\gauge_bullet.png" />
+    <None Remove="Images\gauge_linear.png" />
+    <None Remove="Images\gauge_radial.png" />
+    <None Remove="Images\gauge_ranges.png" />
+    <None Remove="Images\gauge_scaling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\gauge_basic.png" />
+    <EmbeddedResource Include="Images\gauge_bullet.png" />
+    <EmbeddedResource Include="Images\gauge_linear.png" />
+    <EmbeddedResource Include="Images\gauge_radial.png" />
+    <EmbeddedResource Include="Images\gauge_ranges.png" />
+    <EmbeddedResource Include="Images\gauge_scaling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Xamarin.Forms.Gauge" Version="2.4.20173.222" />
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge"
+             x:Class="C1Gauge101.UsingRanges" x:Name="page"
+             Padding="20">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="lblShowRanges" Text="Show ranges" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+            <Switch IsToggled="{Binding ShowRanges,Mode=TwoWay}" VerticalOptions="End"/>
+        </StackLayout>
+        <Stepper Value="{Binding Value}" Increment="25" HorizontalOptions="Center"/>
+        <c1:C1LinearGauge x:Name="linearGauge" Value="{Binding Value,Mode=TwoWay}" ShowRanges="{Binding ShowRanges}" IsReadOnly="False">
+            <c1:C1LinearGauge.Ranges>
+                <c1:GaugeRange Min="0" Max="40" Color="#22B14C"/>
+                <c1:GaugeRange Min="40" Max="80" Color="#FF8080"/>
+                <c1:GaugeRange Min="80" Max="100" Color="#EEE04A"/>
+            </c1:C1LinearGauge.Ranges>
+        </c1:C1LinearGauge>
+        <c1:C1RadialGauge x:Name="radialGauge" Value="{Binding Value,Mode=TwoWay}" ShowRanges="{Binding ShowRanges}" IsReadOnly="False" VerticalOptions="FillAndExpand">
+            <c1:C1RadialGauge.Ranges>
+                <c1:GaugeRange Min="0" Max="40" Color="#22B14C"/>
+                <c1:GaugeRange Min="40" Max="80" Color="#FF8080"/>
+                <c1:GaugeRange Min="80" Max="100" Color="#EEE04A"/>
+            </c1:C1RadialGauge.Ranges>
+        </c1:C1RadialGauge>
+    </StackLayout>
+</ContentPage>

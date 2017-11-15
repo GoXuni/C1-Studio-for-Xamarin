@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<local:BaseSample xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:local="clr-namespace:FlexChart101"
+             x:Class="FlexChart101.ToggleSeriesSample"
+             Padding="10">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:SeriesVisibilityBoolConverter x:Key="converter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <StackLayout>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Label Grid.Row="0" Grid.Column="0" Text="Sales" HorizontalOptions="Center" />
+      <Switch Grid.Row="1" Grid.Column="0" BindingContext="{x:Reference sales}" HorizontalOptions="Center" IsToggled="{Binding Visibility, Converter={StaticResource converter},Mode=TwoWay}" />
+      <Label Grid.Row="0" Grid.Column="1" Text="Expenses" HorizontalOptions="Center" />
+      <Switch Grid.Row="1" Grid.Column="1" BindingContext="{x:Reference expenses}" HorizontalOptions="Center" IsToggled="{Binding Visibility, Converter={StaticResource converter},Mode=TwoWay}" />
+      <Label Grid.Row="0" Grid.Column="2" Text="Downloads" HorizontalOptions="Center" />
+      <Switch Grid.Row="1" Grid.Column="2" BindingContext="{x:Reference downloads}" HorizontalOptions="Center" IsToggled="{Binding Visibility, Converter={StaticResource converter},Mode=TwoWay}" />
+    </Grid>
+    <Grid  VerticalOptions="FillAndExpand">
+      <c1:FlexChart x:Name="flexChart"
+                      BindingX="Date"
+                      ChartType="LineSymbols"
+            LegendPosition="Bottom"
+                      VerticalOptions="FillAndExpand">
+        <c1:FlexChart.Series>
+          <c1:ChartSeries x:Name="sales" Binding="Sales" SeriesName="Sales" />
+          <c1:ChartSeries x:Name="expenses" Binding="Expenses"  SeriesName="Expenses" />
+          <c1:ChartSeries x:Name="downloads" Binding="Downloads"  SeriesName="Downloads" />
+        </c1:FlexChart.Series>
+      </c1:FlexChart>
+    </Grid>
+  </StackLayout>
+</local:BaseSample>

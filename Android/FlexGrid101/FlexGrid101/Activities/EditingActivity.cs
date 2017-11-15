@@ -7,11 +7,13 @@ using Android.Widget;
 using Java.Util;
 using System;
 using C1.Android.Grid;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/EditingTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class EditingActivity : Activity
+    public class EditingActivity : AppCompatActivity
     {
         private GridCellRange _selectedRange;
 
@@ -20,6 +22,11 @@ namespace FlexGrid101
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.GettingStarted);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.EditingTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             Grid.AutoGeneratingColumn += (s, e) =>
@@ -58,12 +65,18 @@ namespace FlexGrid101
                 }
                 else
                 {
-                    var builder = new AlertDialog.Builder(this);
+                    var builder = new Android.App.AlertDialog.Builder(this);
                     builder.SetMessage(Resource.String.EditingSelectRowMessage);
                     builder.SetPositiveButton("OK", new System.EventHandler<Android.Content.DialogClickEventArgs>((s, e) => { }));
                     var alert = builder.Create();
                     alert.Show();
                 }
+
+            }
+            else if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
             }
             return base.OnOptionsItemSelected(item);
         }
@@ -85,7 +98,7 @@ namespace FlexGrid101
         private void OpenEditingDialog()
         {
             var customer = Grid.Rows[_selectedRange.Row].DataItem as Customer;
-            var builder = new AlertDialog.Builder(this);
+            var builder = new Android.App.AlertDialog.Builder(this);
             builder.SetTitle(Resource.String.EditingTitle);
             var view = LayoutInflater.Inflate(Resource.Layout.EditingForm, null);
             var firstNameTextView = view.FindViewById<EditText>(Resource.Id.FirstName);

@@ -6,18 +6,26 @@ using Android.Views;
 using Android.Widget;
 using System;
 using C1.Android.Calendar;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Calendar101
 {
     [Activity(Label = "@string/custom_day_content", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class CustomDayContentActivity : Activity
+    public class CustomDayContentActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            ActionBar.SetDisplayHomeAsUpEnabled(true);
-
+            
             SetContentView(Resource.Layout.CustomDayContent);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.custom_day_content);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
+
             var calendar = FindViewById<C1Calendar>(Resource.Id.Calendar);
             calendar.DaySlotLoading += OnDaySlotLoading;
         }

@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Input101", "C1Input101\C1Input101.csproj", "{3A46D00F-D508-486C-B1ED-1942BDA7685E}"
 EndProject
 Global
@@ -20,5 +20,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D82FD14-077A-4B4C-BF69-AD04859F6C51}
 	EndGlobalSection
 EndGlobal

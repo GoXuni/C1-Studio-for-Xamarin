@@ -9,11 +9,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using C1.Android.Calendar;
 using Android.Content.Res;
+using Android.Support.V7.App;
+
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Graphics;
 
 namespace C1Calendar101
 {
     [Activity(Label = "@string/popup_editor", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class PopupEditorActivity : Activity
+    public class PopupEditorActivity : AppCompatActivity
     {
 
         private TextView _message;
@@ -22,9 +26,14 @@ namespace C1Calendar101
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            ActionBar.SetDisplayHomeAsUpEnabled(true);
 
             SetContentView(Resource.Layout.PopupEditor);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.popup_editor);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
+
             _message = FindViewById<TextView>(Resource.Id.Message);
             _pickDateButton = FindViewById<Button>(Resource.Id.PickDateButton);
             _pickDateButton.Click += OnPickDateClicked;
@@ -69,6 +78,19 @@ namespace C1Calendar101
             _dialog = new CalendarDialog(Activity);
             return _dialog;
         }
+        public override void OnResume()
+        {
+            Window window = Dialog.Window;
+            Point size = new Point();
+            // Store dimensions of the screen in `size`
+            Display display = window.WindowManager.DefaultDisplay;
+            display.GetSize(size);
+            // Set the width of the dialog proportional to 80% of the screen width
+            window.SetLayout((int)(size.X * 0.8), (int)(size.Y * 0.8));
+            window.SetGravity(GravityFlags.Center);
+
+            base.OnResume();
+        }
 
         public async Task<DateTime> ShowAsync(FragmentManager fragmentManager)
         {
@@ -106,9 +128,9 @@ namespace C1Calendar101
             var calendar = new C1Calendar(Context);
             calendar.SelectionChanged += OnSelectionChanged;
             SetContentView(calendar);
+            
             SetTitle(Resource.String.selectDate);
         }
-
         private void OnSelectionChanged(object sender, CalendarSelectionChangedEventArgs e)
         {
             SelectedDate = e.SelectedDates.FirstOrDefault();

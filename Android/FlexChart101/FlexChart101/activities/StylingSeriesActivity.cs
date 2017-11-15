@@ -8,11 +8,14 @@ using Android.OS;
 using System.Collections.Generic;
 using FlexChart101.DataModel;
 using C1.Android.Chart;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
     [Activity(Label = "@string/stylingSeries", Icon = "@drawable/icon")]
-    public class StylingSeriesActivity : Activity
+    public class StylingSeriesActivity : AppCompatActivity
     {
         private FlexChart mChart;
 
@@ -20,6 +23,12 @@ namespace FlexChart101
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_styling_series);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.stylingSeries);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widget
             mChart = this.FindViewById<FlexChart>(Resource.Id.flexchart);
@@ -61,6 +70,18 @@ namespace FlexChart101
 
             // setting the source of data/items in FlexChart
             mChart.ItemsSource=(ChartPoint.GetList());
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
         }
     }
 }

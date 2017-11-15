@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGrid101", "FlexGrid101\FlexGrid101.csproj", "{E8E4024D-C99A-402C-A885-2F873116F259}"
 EndProject
 Global
@@ -36,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B2EC593-0D9E-4DE2-AE36-873BF64496C9}
 	EndGlobalSection
 EndGlobal

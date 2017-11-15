@@ -2,5 +2,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.grapecity.xf.C1CollectionView101" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="17" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<application android:label="C1CollectionView101.Android" android:icon="@drawable/Icon"></application>
+	<application android:label="C1CollectionView101.Android" android:icon="@drawable/Icon" android:theme="@style/MyTheme"></application>
 </manifest>

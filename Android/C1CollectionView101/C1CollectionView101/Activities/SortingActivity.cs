@@ -8,11 +8,13 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using C1.CollectionView;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1CollectionView101
 {
-    [Activity(Label = "@string/SortingTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class SortingActivity : Activity
+    [Activity(Label = "@string/SortingTitle", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    public class SortingActivity : AppCompatActivity
     {
         private C1CollectionView<YouTubeVideo> _collectionView;
 
@@ -21,6 +23,12 @@ namespace C1CollectionView101
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Main);
+           
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.SortingTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             RecyclerView = FindViewById<RecyclerView>(Resource.Id.RecyclerView);
 
@@ -41,7 +49,7 @@ namespace C1CollectionView101
             }
             catch
             {
-                var builder = new AlertDialog.Builder(this);
+                var builder = new Android.App.AlertDialog.Builder(this);
                 builder.SetMessage(Resources.GetString(Resource.String.InternetConnectionError));
                 var alert = builder.Create();
                 alert.Show();
@@ -66,6 +74,12 @@ namespace C1CollectionView101
             {
                 var task = ToggleSort(item);
             }
+            else if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+
             return base.OnOptionsItemSelected(item);
         }
 

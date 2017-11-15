@@ -10,7 +10,7 @@ namespace C1CollectionView101
 {
     public partial class SortingController : UITableViewController
     {
-        C1CollectionView<YouTubeVideo> _collectionView;
+        private YouTubeTableViewSource _source;
 
         public SortingController(IntPtr handle) : base(handle)
         {
@@ -32,9 +32,9 @@ namespace C1CollectionView101
             try
             {
                 indicator.StartAnimating();
-                var videos = new ObservableCollection<YouTubeVideo>((await YouTubeCollectionView.LoadVideosAsync("Xamarin iOS", "relevance", null, 50)).Item2);
-                _collectionView = new C1CollectionView<YouTubeVideo>(videos);
-                TableView.Source = new YouTubeTableViewSource(TableView, _collectionView);
+                var videos = (await YouTubeCollectionView.LoadVideosAsync("Xamarin iOS", "relevance", null, 50)).Item2;
+                _source = new YouTubeTableViewSource(TableView) { ItemsSource = videos };
+                TableView.Source = _source;
             }
             catch
             {
@@ -49,26 +49,17 @@ namespace C1CollectionView101
 
         async partial void SortButton_Activated(UIBarButtonItem sender)
         {
-            if (_collectionView != null)
+            if (_source != null)
             {
                 var direction = GetCurrentSortDirection();
-                await _collectionView.SortAsync(x => x.Title, direction == SortDirection.Ascending ? SortDirection.Descending : SortDirection.Ascending);
+                await _source.CollectionView.SortAsync("Title", direction == SortDirection.Ascending ? SortDirection.Descending : SortDirection.Ascending);
             }
         }
 
         private SortDirection GetCurrentSortDirection()
         {
-            var sort = _collectionView.SortDescriptions.FirstOrDefault(sd => sd.SortPath == "Title");
+            var sort = _source.CollectionView.GetSortDescriptions().FirstOrDefault(sd => sd.SortPath == "Title");
             return sort != null ? sort.Direction : SortDirection.Descending;
         }
-
-        //private void OnItemTapped(object sender, ItemTappedEventArgs e)
-        //{
-        //    if (e.Item is YouTubeVideo)
-        //    {
-        //        var video = e.Item as YouTubeVideo;
-        //        Device.OpenUri(new Uri(video.Link));
-        //    }
-        //}
     }
 }

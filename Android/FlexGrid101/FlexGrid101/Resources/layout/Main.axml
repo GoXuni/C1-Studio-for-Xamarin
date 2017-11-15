@@ -5,9 +5,19 @@
     android:layout_height="fill_parent"
     android:minWidth="25px"
     android:minHeight="25px">
+  <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main_content"
+    android:layout_below="@id/toolbar">
     <android.support.v7.widget.RecyclerView
         android:id="@+id/RecyclerView"
         android:scrollbars="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
+  </LinearLayout>
 </RelativeLayout>

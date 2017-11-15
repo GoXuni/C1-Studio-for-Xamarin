@@ -10,7 +10,7 @@ namespace FlexGrid101
     {
         public string[] pickerOptionStrings = new string[] { Foundation.NSBundle.MainBundle.LocalizedString("None", ""), Foundation.NSBundle.MainBundle.LocalizedString("Cell", ""),
             Foundation.NSBundle.MainBundle.LocalizedString("Cell Range", ""), Foundation.NSBundle.MainBundle.LocalizedString("Row", ""), Foundation.NSBundle.MainBundle.LocalizedString("Row Range", "") };
-    
+
         public SelectionModesController(IntPtr handle) : base(handle)
         {
         }
@@ -18,8 +18,6 @@ namespace FlexGrid101
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
-
 
             var toolBar = new UIToolbar(new CGRect(0, 0, 320, 44));
             var doneButton = new UIBarButtonItem(UIBarButtonSystemItem.Done);
@@ -32,7 +30,7 @@ namespace FlexGrid101
             picker.Select((nint)(int)Grid.SelectionMode, 0, true);
             SelectionModeField.InputView = picker;
             SelectionModeField.InputAccessoryView = toolBar;
-            SelectionModeField.Text = pickerOptionStrings[0];
+            SelectionModeField.Text = pickerOptionStrings[2];
 
             doneButton.Clicked += (s, e) =>
             {
@@ -45,6 +43,7 @@ namespace FlexGrid101
 
             var data = Customer.GetCustomerList(100);
             Grid.ItemsSource = data;
+			Grid.AllowResizing = GridAllowResizing.Both;
             Grid.SelectionChanged += OnSelectionChanged;
         }
 

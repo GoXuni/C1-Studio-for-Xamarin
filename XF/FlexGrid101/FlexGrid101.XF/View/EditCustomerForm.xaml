@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Name="page"
+             x:Class="FlexGrid101.EditCustomerForm" Padding="20, 20, 20, 0">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+      <ColumnDefinition Width="2*"/>
+    </Grid.ColumnDefinitions>
+    <!-- title -->
+    <Label BindingContext="{x:Reference page}" Text="{Binding Title}" HorizontalOptions="Center" Font="Large" Grid.ColumnSpan="2"/>
+
+    <!-- first name field -->
+    <Label Text="First Name:" VerticalOptions="Center" Grid.Row="1" />
+    <Entry x:Name="entryFirstName" Grid.Row="1" Grid.Column="1" />
+    
+    <!-- last name field -->
+    <Label Text="Last Name:" VerticalOptions="Center" Grid.Row="2" />
+    <Entry x:Name="entryLastName" Grid.Row="2" Grid.Column="1" />
+    
+    <!-- hired field-->
+    <Label Text="Last Order:" VerticalOptions="Center" Grid.Row="3" />
+    <DatePicker x:Name="datePickerLastOrder" Grid.Row="3" Grid.Column="1" />
+    
+    <!-- weight field -->
+    <Label Text="Order Total:" VerticalOptions="Center" Grid.Row="4" />
+    <Entry x:Name="entryOrderTotal" Grid.Row="4" Grid.Column="1" />
+
+    <!-- Apply/cancel buttons-->
+    <Grid Grid.Row="6" Grid.ColumnSpan="2">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Button x:Name="btnApply" HorizontalOptions="FillAndExpand"/>
+      <Button x:Name="btnCancel" HorizontalOptions="FillAndExpand" Grid.Column="1"/>
+    </Grid>
+  </Grid>
+</ContentPage>

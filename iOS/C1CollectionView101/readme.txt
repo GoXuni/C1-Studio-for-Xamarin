@@ -1,14 +1,14 @@
-C1CollectionView101 Samples for Xamarin.iOS
+C1CollectionView101 for Xamarin.iOS
 ---------------------------------------------
 Shows samples of the CollectionView control.
 
 Shows the following samples
-
+<code>
 	- Sorting
 	- Filtering
 	- Grouping
 	- SimpleOnDemand
 	- OnDemand
-
+</code>
 
 

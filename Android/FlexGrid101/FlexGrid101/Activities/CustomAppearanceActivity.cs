@@ -6,23 +6,42 @@ using Android.OS;
 using Android.Util;
 using System.Collections.Generic;
 using C1.Android.Grid;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Views;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/CustomAppearanceTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class CustomAppearanceActivity : Activity
+    public class CustomAppearanceActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.CustomAppearance);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.CustomAppearanceTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
 
             PopulateEditGrid();
         }
-
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
         public FlexGrid Grid { get; set; }
 
         private void PopulateEditGrid()

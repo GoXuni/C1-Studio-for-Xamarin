@@ -11,17 +11,17 @@ using XAM = Xamarin.Forms;
 
 using Xamarin.Forms.Platform.Android;
 
-namespace GaugeDemo.Droid
+namespace C1Gauge101.Android
 {
-    [Activity(Label = "C1Gauge101", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
+    [Activity(Label = "C1Gauge101", MainLauncher = true, Theme = "@style/MyTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
+            FormsAppCompatActivity.ToolbarResource = Android.Resource.Layout.Toolbar;
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            global::C1.Xamarin.Forms.Gauge.Platform.Android.C1GaugeRenderer.Init();
 
             LoadApplication(new C1Gauge101.App());
         }

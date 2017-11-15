@@ -91,7 +91,6 @@
   <string name="hitTestSeriesName">系列名：</string>
   <string name="annotation">注釈</string>
   <string name="annotationDesc">チャートにさまざまな形の注釈を表示</string>
-  <string name="permision_denied">ユーザーによってアクセス許可が拒否されました。</string>
   <string name="positive_button">OK</string>
 
   <string-array name="chartTypeSpinnerValues">

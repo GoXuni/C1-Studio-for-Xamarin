@@ -13,7 +13,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
-	<string></string>
+	<string>10.0</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
@@ -60,6 +60,8 @@
 	<key>CFBundleName</key>
 	<string>FlexChart101</string>
 	<key>NSPhotoLibraryUsageDescription</key>
+	<string>$(PRODUCT_NAME) photo use</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>$(PRODUCT_NAME) photo use</string>
 </dict>
 </plist>

@@ -9,8 +9,6 @@ namespace C1CollectionView101
 {
     public partial class GroupingController : UITableViewController
     {
-        private C1CollectionView<YouTubeVideo> _collectionView;
-
         public GroupingController(IntPtr handle) : base(handle)
         {
         }
@@ -31,10 +29,10 @@ namespace C1CollectionView101
             try
             {
                 indicator.StartAnimating();
-                var videos = new ObservableCollection<YouTubeVideo>((await YouTubeCollectionView.LoadVideosAsync("Xamarin iOS", "relevance", null, 50)).Item2);
-                _collectionView = new C1CollectionView<YouTubeVideo>(videos);
-                await _collectionView.GroupAsync(v => v.ChannelTitle);
-                TableView.Source = new YouTubeTableViewSource(TableView, _collectionView);
+                var videos = (await YouTubeCollectionView.LoadVideosAsync("Xamarin iOS", "relevance", null, 50)).Item2;
+                var source = new YouTubeTableViewSource(TableView) { ItemsSource = videos };
+                await source.CollectionView.GroupAsync("ChannelTitle");
+                TableView.Source = source;
             }
             catch
             {

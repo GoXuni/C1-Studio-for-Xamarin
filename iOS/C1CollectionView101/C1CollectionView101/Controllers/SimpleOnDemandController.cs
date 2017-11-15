@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using UIKit;
 using C1.CollectionView;
 using C1.iOS.CollectionView;
+using System.Threading;
+using Foundation;
 
 namespace C1CollectionView101
 {
@@ -20,7 +22,9 @@ namespace C1CollectionView101
             // instantiate our on demand collection view
             RefreshControl = new UIRefreshControl();
             var myCollectionView = new SimpleOnDemandCollectionView();
-            var myCollectionViewSource = new SimpleOnDemandCollectionViewSource(TableView, myCollectionView, RefreshControl);
+            var myCollectionViewSource = new SimpleOnDemandCollectionViewSource(TableView);
+            myCollectionViewSource.ItemsSource = myCollectionView;
+            myCollectionViewSource.RefreshControl = RefreshControl;
             TableView.Source = myCollectionViewSource;
         }
     }
@@ -29,11 +33,11 @@ namespace C1CollectionView101
     {
         public SimpleOnDemandCollectionView()
         {
-            PageSize = 10;
+            PageSize = 20;
         }
 
         public int PageSize { get; set; }
-        protected override async Task<Tuple<string, IReadOnlyList<MyDataItem>>> GetPageAsync(string pageToken, int? count = null)
+        protected override async Task<Tuple<string, IReadOnlyList<MyDataItem>>> GetPageAsync(int startingIndex, string pageToken, int? count = null, IReadOnlyList<SortDescription> sortDescriptions = null, FilterExpression filterExpresssion = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             var newItems = new List<MyDataItem>();
             await Task.Run(() =>
@@ -41,7 +45,7 @@ namespace C1CollectionView101
                 // create new page of items
                 for (int i = 0; i < this.PageSize; i++)
                 {
-                    newItems.Add(new MyDataItem(this.Count + i));
+                    newItems.Add(new MyDataItem(startingIndex + i));
                 }
             });
             return new Tuple<string, IReadOnlyList<MyDataItem>>("token not used", newItems);
@@ -52,12 +56,12 @@ namespace C1CollectionView101
     {
         private string CellIdentifier = "Default";
 
-        public SimpleOnDemandCollectionViewSource(UITableView tableView, ICollectionView<MyDataItem> collectionView, UIRefreshControl refreshControl = null)
-            : base(tableView, collectionView, refreshControl)
+        public SimpleOnDemandCollectionViewSource(UITableView tableView)
+            : base(tableView)
         {
         }
 
-        public override UITableViewCell GetItemCell(UITableView tableView, MyDataItem item)
+        public override UITableViewCell GetItemCell(UITableView tableView, NSIndexPath indexPath, MyDataItem item)
         {
             UITableViewCell cell = tableView.DequeueReusableCell(CellIdentifier);
             if (cell == null)

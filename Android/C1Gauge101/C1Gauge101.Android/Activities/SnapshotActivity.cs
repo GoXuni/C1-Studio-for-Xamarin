@@ -15,11 +15,14 @@ using Android;
 using Android.Content.PM;
 using C1.Android.Gauge;
 using C1.Android.Core;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Gauge101
 {
     [Activity(Label = "@string/snapshot", Icon = "@drawable/gauge_basic")]
-    public class SnapshotActivity : Activity
+    public class SnapshotActivity : AppCompatActivity
     {
         private C1RadialGauge mRadialGauge;
         private const int REQUEST_CODE_WRITE_EXTERNAL_STORAGE = 1;
@@ -28,7 +31,13 @@ namespace C1Gauge101
         {
             base.OnCreate(savedInstanceState);
             this.SetContentView(Resource.Layout.activity_snapshot);
-            mRadialGauge = (C1RadialGauge)FindViewById(Resource.Id.radialGauge1);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.snapshot);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
+
+            mRadialGauge = this.FindViewById<C1RadialGauge>(Resource.Id.radialGauge1);
             mRadialGauge.Enabled = false;
             mRadialGauge.Value = 25;
             mRadialGauge.Step = 1;
@@ -36,7 +45,6 @@ namespace C1Gauge101
             mRadialGauge.Min = 1;
             mRadialGauge.ShowText = GaugeShowText.All;
         }
-
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             if (item.ItemId == Resource.Id.actionSnapshot)
@@ -53,15 +61,22 @@ namespace C1Gauge101
                     }
                     else
                     {
-                        exportImageAsync();
+                        var task = exportImageAsync();
+                        return true;
                     }
 
                 }
                 else
                 {
                     // targetSdkVersion < Android M, we have to use PermissionChecker
-                    exportImageAsync();
+                    var task = exportImageAsync();
+                    return true;
                 }
+            }
+            else if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
             }
 
 
@@ -77,9 +92,10 @@ namespace C1Gauge101
             return base.OnCreateOptionsMenu(menu);
         }
 
-        public async System.Threading.Tasks.Task<bool> exportImageAsync()
+        public async System.Threading.Tasks.Task exportImageAsync()
         {
             String APP_PATH_SD_CARD = "/xuni/samples/gauge/";
+            mRadialGauge.IsAnimated = false;
             byte[] image = await mRadialGauge.GetImage();
 
             String fullPath = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + APP_PATH_SD_CARD;
@@ -91,8 +107,8 @@ namespace C1Gauge101
                     dir.Mkdirs();
                 }
 
-                string name = fullPath + System.DateTime.Now.ToString("yyyyMMddHHmmssfff") + ".jpg";
-                System.IO.File.WriteAllBytes(name, image);
+                string name = fullPath + DateTime.Now.ToString("yyyyMMddHHmmssfff") + ".jpg";
+                File.WriteAllBytes(name, image);
 
                 // add index of the image to the gallery
                 Intent mediaScanIntent = new Intent(Intent.ActionMediaScannerScanFile);
@@ -101,11 +117,10 @@ namespace C1Gauge101
                 SendBroadcast(mediaScanIntent);
 
                 Toast.MakeText(this, Resource.String.snapshotStored, ToastLength.Short).Show();
-                return true;
             }
             catch (Exception e)
             {
-                return false;
+                System.Diagnostics.Debug.WriteLine("exportImage failed: " + e.Message);
             }
         }
 
@@ -125,7 +140,7 @@ namespace C1Gauge101
             }
             else
             {
-                new AlertDialog.Builder(this).SetMessage(Resource.String.permissionDenied).SetPositiveButton(Resource.String.positive_button, (IDialogInterfaceOnClickListener)null).Show();
+                new Android.App.AlertDialog.Builder(this).SetMessage(Resource.String.permissionDenied).SetPositiveButton(Resource.String.positive_button, (IDialogInterfaceOnClickListener)null).Show();
             }
         }
     }

@@ -8,11 +8,14 @@ using Android.OS;
 using C1.Android.Gauge;
 using Android.Graphics;
 using Java.Util;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Gauge101
 {
     [Activity(Label = "@string/getting_started", MainLauncher = false, Icon = "@drawable/gauge_basic")]
-    public class GettingStartedActivity : Activity
+    public class GettingStartedActivity : AppCompatActivity
     {
         private C1LinearGauge mLinearGauge;
         private C1RadialGauge mRadialGauge;
@@ -26,6 +29,12 @@ namespace C1Gauge101
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.activity_getting_started);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.getting_started);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widgets
             mRadialGauge = (C1RadialGauge)FindViewById(Resource.Id.radialGauge1);
@@ -101,6 +110,17 @@ namespace C1Gauge101
             mRadialGauge.Value = e.Value;
             mBulletGraph.Value = e.Value;
         }
-
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
     }
 }

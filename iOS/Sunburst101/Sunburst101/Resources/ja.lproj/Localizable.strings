@@ -1,0 +1,285 @@
+﻿//
+//  Localizable.strings
+//  Sunburst101
+//
+//  Copyright (c) 2015 GrapeCity. All rights reserved.
+//
+
+// Samples Title
+
+"Getting Started" = "FlexChart の基本機能";
+
+"Basic Chart Types" = "基本チャートタイプ";
+
+"Mixed Chart Types" = "複合チャート";
+
+"Financial Chart" = "ファイナンシャルチャート";
+
+"Bubble Chart" = "バブルチャート";
+
+"Custom Tooltips" = "カスタムツールチップ";
+
+"Data Labels" = "データラベル";
+
+"Line Marker" = "ラインマーカー";
+
+"Customizing Axes" = "軸のカスタマイズ";
+
+"Multiple Axes" = "複数の軸";
+
+"Legend and Titles" = "凡例とタイトル";
+
+"Conditional Formatting" = "条件付き書式";
+
+"Custom Plot Elements" = "プロット要素のカスタマイズ";
+
+"Selection Modes" = "選択モード";
+
+"Toggle Series" = "系列の表示/非表示";
+
+"Load Animation Mode" = "アニメーションモード";
+
+"Update Animation" = "更新アニメーション";
+
+"Dynamic Charts" = "動的チャート";
+
+"Hit Test" = "ヒットテスト";
+
+"Scrolling" = "スクロール";
+
+"Zooming and Scrolling" = "ズームとスクロール";
+
+"Theming" = "テーマ";
+
+"Styling Series" = "系列のスタイルをカスタマイズ";
+
+"Export Image" = "画像として保存";
+
+"Annotations" = "チャートの注釈";
+
+"Zones" = "ゾーン（領域)";
+
+
+// Samples Description
+
+"Shows a simple chart with tooltips" = "ツールチップを備えたチャート";
+
+"Shows the basic chart types and stacking options" = "基本的なチャート種と積層オプション";
+
+"Shows a composite chart" = "複数のチャートタイプを混在させて表示";
+
+"Shows stock data in a candle chart" = "ローソク足チャートで株式データを表示";
+
+"Shows a bubble chart" = "バブルチャートでデータの関連性を表現";
+
+"Shows a customized tooltip" = "ツールチップをカスタマイズして表示";
+
+"Shows a simple chart with static data labels" = "静的なデータラベルを持つチャートを表示";
+
+"Shows a moveable marker on top of the chart" = "チャート上で操作が可能なラインマーカー";
+
+"Shows customized axis style and label format" = "カスタマイズされた軸スタイルとラベル書式";
+
+"Shows a chart with mutiple Y axes" = "複数の Y 軸を持つチャートを表示";
+
+"Shows basic chart headers and axis titles" = "FlexChart のヘッダと軸タイトル";
+
+"Shows conditional formatting by customizing plot elements" = "プロット要素に条件付きの書式を設定";
+
+"Shows how to fully customize plot elements" = "要素をカスタマイズする方法";
+
+"Shows the different selection modes" = "データを選択する各種モードの説明";
+
+"Shows the ability to toggle a series visibility" = "系列の表示/非表示を切り替える機能";
+
+"Shows animation modes when data is loaded" = "データロード時のアニメーションモードを設定";
+
+"Shows animation when data is updated" = "データ更新時のアニメーション効果";
+
+"Shows a dynamic, “live” chart." = "時間の経過で変わる「ライブ」チャートを表示";
+
+"Demonstrates use of the FlexChart's hitTest method" = "任意の点を取得する方法";
+
+"Shows a chart with panning (or scrolling) along the axes." = "軸に沿ってパン（スクロール）するチャート";
+
+"Shows stretch zoom-out and pinch zoom-in gestures" = "ストレッチ、ピンチによるジェスチャ操作";
+
+"Shows the built-in palettes." = "利用できるカラーパレットを表示";
+
+"Shows custom series styling" = "カスタマイズされた系列のスタイルを設定";
+
+"Shows how to export an image of FlexChart." = "FlexChart を画像として保存する方法";
+
+"Shows how to display annotations on FlexChart" = "チャートに各種形状の注釈を表示する方法";
+
+"Shows a scatter chart of student grades, highlighting each grade range using zones." = "色分けされた領域（ゾーン）を表示して散布図で表示されたデータ点を識別しやすくする方法";
+
+// Strings
+
+"Add Point" = "データ点の追加";
+
+"Remove Point" = "データ点の削除";
+
+"Drag to scroll/Pinch to zoom" = "ドラッグしてスクロール／ピンチしてズーム";
+
+"student number" = "学生番号";
+
+"student accumulated points" = "学生累積点数";
+
+// Add 2015.12.24
+// Basic
+"Reversed?" = "反転する";
+
+// Stacked
+"None" = "積層なし";
+"Stacked" = "積層あり";
+"Stacked100pc" = "積層あり(100%)";
+
+
+// Financial Chat;
+"Candlestick" = "ローソク足チャート";
+"HLOC" = "HDLCチャート";
+
+// LineMarker
+"Move" = "タッチ移動(Move)";
+"Drag" = "ドラッグ移動(Drag)";
+"None" = "移動なし(None)";
+"Chart element" = "チャート要素：";
+"SeriesName" = "系列名：";
+"Point Index" = "データ点インデックス：";
+"X Y Values" = "X/Y 値：";
+
+// Zoom Mode
+"Zoom Mode" = "ズームモード";
+"X" = "X 方向";
+"Y" = "Y 方向";
+"XY" = "X 方向とY 方向(XY)";
+"Disabled" = "なし";
+
+// Snapshot
+"Take a snapshot" = "画像を保存";
+"Image Saved" = "画像を保存しました";
+"Success" = "成功";
+"Failure" = "失敗";
+"Image was saved to Camera Roll successfully" = "画像をカメラロールに保存しました。";
+"The image has been saved to your device‘s picture album." = "画像をデバイスのアルバムに保存しました。"; 
+
+// ChartType
+"Column" = "縦棒(Column)";
+"Bar" = "横棒(Bar)";
+"Line" = "折れ線(Line)";
+"LineSymbols" = "折れ線シンボル(LineSymbol)";
+"Area" = "面、エリア(Area)";
+"Spline" = "曲線(Spline)";
+"SplineSymbols" = "曲線シンボル(SplineSymbols)";
+"SplineArea" = "曲線面(SplineArea)";
+"Scatter" = "散布図(Scatter)";
+
+// Selection Mode
+"None" = "なし";
+"Series" = "系列(Series)";
+"Point" = "データ点(Point)";
+
+// Animation mode
+"All" = "一斉に適用(All)";
+"Point" = "データ点ごと(Point)";
+"Series" ="系列ごと(Series)";
+
+// Data Label Position
+"Left" = "左側(Left)";
+"Top" = "上部(Top)";
+"Right" = "右側(Right)";
+"Bottom" = "下部(Bottom)";
+"Center" = "中心(Center)";
+
+// Update Animation (data position)
+"Beginning" = "先頭に追加(Beginning)";
+"Middle" = "中間に追加(Middle)";
+"End" = "最後に追加(End)";
+
+
+//
+//  Localizable.strings
+//  FlexPie101
+//
+//  Copyright (c) 2015 GrapeCity. All rights reserved.
+//
+
+/* FlexPie101 */
+"Getting Started with FlexPie" = "円形チャートの基本機能";
+
+/* FlexPie101 */
+"Basic Features" = "円形チャートのカスタマイズ";
+
+/* FlexPie101 */
+"FlexPie Legend and Titles" = "円形チャートの凡例とタイトル";
+
+/* FlexPie101 */
+"Selection" = "円形チャートのスライスの選択";
+
+/* FlexPie101 */
+"Theming" = "テーマ";
+
+
+
+/* FlexPie101 */
+"inner radius" = "内側円の半径：";
+
+/* FlexPie101 */
+"offset" = "オフセット";
+
+/* FlexPie101 */
+"Reversed?" = "反転する";
+
+/* FlexPie101 */
+"start angle" = "開始角度";
+
+/* FlexPie101 */
+"header" = "ヘッダに表示";
+
+/* FlexPie101 */
+"footer" = "フッタに表示";
+
+/* FlexPie101 */
+"legend position" = "凡例の配置";
+
+/* FlexPie101 */
+"animation" = "選択時に回転";
+
+/* FlexPie101 */
+"position" = "選択項目の表示位置";
+
+/* FlexPie101 */
+"Take a snapshot" = "画像を保存";
+
+/* FlexPie101 */
+"Selected Item offset" = "選択項目のオフセット：";
+
+/* FlexPie101 */
+"Success" = "成功";
+
+/* FlexPie101 */
+"Image was saved to Camera Roll successfully" = "画像をカメラロールに保存しました。";
+
+/* FlexPie101 */
+"Failure" = "失敗";
+
+/* FlexPie101 */
+"GrapeCity inc." = "グレープシティ株式会社";
+
+/* FlexPie101 */
+"Fruit By Value" = "果実の出荷量";
+
+"FlexPie Data Labels" = "円形チャートのデータラベル";
+
+"Shows static data labels" = "静的なデータラベルを表示";
+
+"Shows basic header, footer, and legend positioning" = "標準のヘッダー、フッターや判例の位置を表示";
+"Shows selection animation, offset, and position" = "選択時アニメーションのオフセットや位置を設定";
+"Basic Features" = "円形チャートのカスタマイズ";
+"Shows how to export an image of FlexPie" = "表示したチャートを画像に保存する方法";
+"Shows available palettes" = "利用できるカラーパレットを表示";
+"Shows a simple pie chart with tooltips" = "ツールチップ付きのシンプルな円形チャートを表示";
+"Selection" = "円形チャートのスライスの選択";
+"Shows inner radius, offset, and start angle" = "チャートの内部角度、オフセット、開始角度を表示";
+"Snapshot" = "画像として保存";

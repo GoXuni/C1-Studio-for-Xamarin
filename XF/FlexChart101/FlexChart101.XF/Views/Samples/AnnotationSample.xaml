@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:Chart="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+              xmlns:Annotation="clr-namespace:C1.Xamarin.Forms.Chart.Annotation;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.AnnotationSample">
+  <Chart:FlexChart x:Name="flexChart" BindingX="Name">
+    <Chart:FlexChart.AxisY>
+      <Chart:ChartAxis Min="0" Max="100" MajorUnit="10" AxisLine="False" MajorGrid="True" MajorTickMarks="None"/>
+    </Chart:FlexChart.AxisY>
+    <Chart:FlexChart.Series>
+      <Chart:ChartSeries SeriesName="Base dataList" Binding="Y" BindingX="X"/>
+    </Chart:FlexChart.Series>
+    
+    <Chart:FlexChart.Layers>
+      <Annotation:AnnotationLayer>
+        <Annotation:AnnotationLayer.Annotations>
+          <Annotation:Text Content="Relative" Location="0.55, 0.15" Attachment="Relative" >
+            <Annotation:Text.AnnotationStyle>
+              <Chart:ChartStyle FontSize="14" Stroke="Black" FontFamily="GenericSansSerif" />
+            </Annotation:Text.AnnotationStyle>
+          </Annotation:Text>
+
+          <Annotation:Ellipse Content="Relative" Location="0.4, 0.45" Width="120" Height="80" Attachment="Relative">
+            <Annotation:Ellipse.AnnotationStyle>
+              <Chart:ChartStyle Fill="Goldenrod"/>
+            </Annotation:Ellipse.AnnotationStyle>
+            <Annotation:Ellipse.ContentStyle>
+              <Chart:ChartStyle  Stroke="DarkGoldenrod" FontAttributes="Bold" FontSize="14" FontFamily="GenericSansSerif" />
+            </Annotation:Ellipse.ContentStyle>
+          </Annotation:Ellipse>
+
+          <Annotation:Circle Content="DataIndex" Radius="50" SeriesIndex="0" PointIndex="27" Attachment="DataIndex" >
+            <Annotation:Circle.AnnotationStyle>
+              <Chart:ChartStyle Fill="LightSeaGreen" FontSize="14" Stroke="DarkCyan" FontFamily="GenericSansSerif" FontAttributes="Bold" />
+            </Annotation:Circle.AnnotationStyle>
+        </Annotation:Circle>
+
+          <Annotation:Rectangle Content="DataCoordinate" Width="130" Height="100" Location="37, 80" Attachment="DataCoordinate">
+            <Annotation:Rectangle.AnnotationStyle>
+              <Chart:ChartStyle Fill="SlateBlue" FontSize="14" Stroke="DarkSlateBlue" FontFamily="GenericSansSerif" FontAttributes="Bold" />
+            </Annotation:Rectangle.AnnotationStyle>
+          </Annotation:Rectangle>
+
+          <Annotation:Square Content="DataIndex" Length="80" SeriesIndex="0" PointIndex="40" Attachment="DataIndex" >
+            <Annotation:Square.AnnotationStyle>
+              <Chart:ChartStyle Fill="SandyBrown" FontSize="14" Stroke="Chocolate" FontFamily="GenericSansSerif" FontAttributes="Bold" />
+            </Annotation:Square.AnnotationStyle>
+        </Annotation:Square>
+
+          <Annotation:Polygon x:Name="polygonAnno" Content="Absolute" Attachment="Absolute">
+            <Annotation:Polygon.AnnotationStyle>
+              <Chart:ChartStyle Fill="Red" StrokeThickness="3" FontSize="14" Stroke="DarkTurquoise" FontFamily="GenericSansSerif" FontAttributes="Bold" />
+            </Annotation:Polygon.AnnotationStyle>
+          </Annotation:Polygon>
+
+          <Annotation:Line Content="Absolute" Start="50, 200" End="300, 350" Attachment="Absolute" >
+            <Annotation:Line.AnnotationStyle>
+              <Chart:ChartStyle StrokeThickness="4" FontSize="14" Stroke="DarkTurquoise" FontFamily="GenericSansSerif" FontAttributes="Bold" />
+            </Annotation:Line.AnnotationStyle>
+          </Annotation:Line>
+
+          <Annotation:Image Location="12, 20" x:Name="imageAnno" Width="64" Height="64" Attachment="DataCoordinate" />
+
+        </Annotation:AnnotationLayer.Annotations>
+      </Annotation:AnnotationLayer>
+    </Chart:FlexChart.Layers>
+  
+</Chart:FlexChart>
+</ContentPage>

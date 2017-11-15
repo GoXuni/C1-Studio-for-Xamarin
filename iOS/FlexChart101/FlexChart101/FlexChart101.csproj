@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
@@ -19,7 +18,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchDebug>True</MtouchDebug>
     <MtouchSdkVersion>10.0</MtouchSdkVersion>
@@ -92,9 +91,6 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <CodesignKey>iPhone Distribution</CodesignKey>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(OS)' == 'Unix' ">
-    <CscToolExe>mcs.exe</CscToolExe>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="License.cs" />
@@ -201,6 +197,31 @@
     <Compile Include="Controllers\SnapshotController.designer.cs">
       <DependentUpon>SnapshotController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\CustomTooltipsController.cs" />
+    <Compile Include="Controllers\CustomTooltipsController.designer.cs">
+      <DependentUpon>CustomTooltipsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomPlotElementsController.cs" />
+    <Compile Include="Controllers\CustomPlotElementsController.designer.cs">
+      <DependentUpon>CustomPlotElementsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomizingAxesController.cs" />
+    <Compile Include="Controllers\CustomizingAxesController.designer.cs">
+      <DependentUpon>CustomizingAxesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ZoomingAndScrollingController.cs" />
+    <Compile Include="Controllers\ZoomingAndScrollingController.designer.cs">
+      <DependentUpon>ZoomingAndScrollingController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\LineMarkerController.cs" />
+    <Compile Include="Controllers\LineMarkerController.designer.cs">
+      <DependentUpon>LineMarkerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LineMarkerViewModel.cs" />
+    <Compile Include="Controllers\AnnotationController.cs" />
+    <Compile Include="Controllers\AnnotationController.designer.cs">
+      <DependentUpon>AnnotationController.cs</DependentUpon>
+    </Compile>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -208,14 +229,14 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.CollectionView, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.3.20172.179\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.4.20173.222\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Chart, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Chart.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Chart.dll</HintPath>
+    <Reference Include="C1.iOS.Chart, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Chart.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Chart.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Core, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+    <Reference Include="C1.iOS.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

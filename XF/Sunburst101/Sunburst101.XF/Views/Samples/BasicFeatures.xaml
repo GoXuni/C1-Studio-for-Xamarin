@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sunburst101.BasicFeatures"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:local="clr-namespace:Sunburst101">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:EnumToStringConverter x:Key="PaletteConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <StackLayout>
+    <Grid x:Name="root" VerticalOptions="FillAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="50*" />
+        <RowDefinition Height="50*" />
+      </Grid.RowDefinitions>
+
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="50*" />
+        <ColumnDefinition Width="50*" />
+      </Grid.ColumnDefinitions>
+
+      <Grid x:Name="gridOption" BindingContext="{x:Reference sunburst}" VerticalOptions="Start" HorizontalOptions="Start">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+          <Label x:Name="lblRadius" VerticalOptions="Center" />
+          <local:PreciseStepper x:Name="stepperRadius" VerticalOptions="Center" Value="{Binding InnerRadius,Mode=TwoWay}" Maximum="1.00" Minimum="0" Increment="0.1" />
+        </StackLayout>
+        <Label x:Name="lblOffset" Grid.Row="1" Text="Offset" VerticalOptions="Center" />
+        <Slider Grid.Row="1" Grid.Column="1" Value="{Binding Offset,Mode=TwoWay}" VerticalOptions="Center" />
+        <Label x:Name="lblStartAngle" Grid.Row="2" Text="Start Angle" VerticalOptions="Center" />
+        <Slider Grid.Row="2" Grid.Column="1" Value="{Binding StartAngle,Mode=TwoWay}" Maximum="360" VerticalOptions="Center" />
+        <Label x:Name="lblReversed" Grid.Row="3" Text="Reversed" VerticalOptions="Center" />
+        <Switch x:Name="toggleReversed" VerticalOptions="Center" IsToggled="{Binding Reversed,Mode=TwoWay}" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" />
+      
+      </Grid>
+
+      <c1:C1Sunburst x:Name="sunburst"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Binding="Value" BindingName="Year,Quarter,Month" ChildItemsPath="Items" ToolTipContent="{}{name}&#x000A;{y}" VerticalOptions="FillAndExpand" >
+        <c1:C1Sunburst.DataLabel>
+          <c1:PieDataLabel Position="Center" Content="{}{name}" />
+        </c1:C1Sunburst.DataLabel>
+      </c1:C1Sunburst>
+    
+    </Grid>
+  </StackLayout>
+   
+      
+    
+</ContentPage>

@@ -8,11 +8,14 @@ using Android.OS;
 using C1.Android.Gauge;
 using Android.Graphics;
 using Java.Util;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Gauge101
 {
     [Activity(Label = "@string/direction", MainLauncher = false, Icon = "@drawable/gauge_linear")]
-    public class DirectionActivity : Activity
+    public class DirectionActivity : AppCompatActivity
     {
         private C1BulletGraph mBulletGraph;
         private C1LinearGauge mLinearGauge;
@@ -25,6 +28,12 @@ namespace C1Gauge101
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.activity_direction);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.direction);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widgets
             mBulletGraph = (C1BulletGraph)FindViewById(Resource.Id.bulletGraph1);
@@ -92,7 +101,18 @@ namespace C1Gauge101
                     break;
             }
         }
-
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
     }
 }
 

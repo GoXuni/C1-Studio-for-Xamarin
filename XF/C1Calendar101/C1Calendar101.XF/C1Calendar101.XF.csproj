@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <RootNamespace>C1Calendar101</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Images\calendar.png" />
+    <None Remove="Images\calendar2.png" />
+    <None Remove="Images\calendar_basic.png" />
+    <None Remove="Images\calendar_datepicker.png" />
+    <None Remove="Images\calendar_vertical.png" />
+    <None Remove="Images\Overcast-icon.png" />
+    <None Remove="Images\partly-cloudy-day-icon.png" />
+    <None Remove="Images\rain-icon.png" />
+    <None Remove="Images\snow-icon.png" />
+    <None Remove="Images\Sunny-icon.png" />
+    <None Remove="Images\thunder-lightning-storm-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\calendar.png" />
+    <EmbeddedResource Include="Images\calendar2.png" />
+    <EmbeddedResource Include="Images\calendar_basic.png" />
+    <EmbeddedResource Include="Images\calendar_datepicker.png" />
+    <EmbeddedResource Include="Images\calendar_vertical.png" />
+    <EmbeddedResource Include="Images\Overcast-icon.png" />
+    <EmbeddedResource Include="Images\partly-cloudy-day-icon.png" />
+    <EmbeddedResource Include="Images\rain-icon.png" />
+    <EmbeddedResource Include="Images\snow-icon.png" />
+    <EmbeddedResource Include="Images\Sunny-icon.png" />
+    <EmbeddedResource Include="Images\thunder-lightning-storm-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Xamarin.Forms.Calendar" Version="2.4.20173.222" />
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>

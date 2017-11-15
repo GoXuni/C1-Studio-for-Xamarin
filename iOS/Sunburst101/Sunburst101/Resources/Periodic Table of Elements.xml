@@ -1,0 +1,3307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <Elements>
+    <PeriodicElement>
+      <id>1</id>
+      <fields>
+        <atomic-number>1</atomic-number>
+        <element>Hydrogen</element>
+        <symbol>H</symbol>
+        <atomic-weight>1.00794</atomic-weight>
+        <period>1</period>
+        <group>1</group>
+        <phase>gas</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Nonmetal</type>
+        <ionic-radius>0.012</ionic-radius>
+        <atomic-radius>0.79</atomic-radius>
+        <electronegativity>2.2</electronegativity>
+        <first-ionization-potential>13.5984</first-ionization-potential>
+        <density>8.988E-05</density>
+        <melting-point-k>14.175</melting-point-k>
+        <boiling-point-k>20.28</boiling-point-k>
+        <isotopes>3</isotopes>
+        <discoverer>Cavendish</discoverer>
+        <year-of-discovery>1766</year-of-discovery>
+        <specific-heat-capacity>14.304</specific-heat-capacity>
+        <electron-configuration>1s1</electron-configuration>
+        <display-PeriodicElement>1</display-PeriodicElement>
+        <display-column>1</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>2</id>
+      <fields>
+        <atomic-number>2</atomic-number>
+        <element>Helium</element>
+        <symbol>He</symbol>
+        <atomic-weight>4.002602</atomic-weight>
+        <period>1</period>
+        <group>18</group>
+        <phase>gas</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Noble Gas</type>
+        <ionic-radius />
+        <atomic-radius>0.49</atomic-radius>
+        <electronegativity />
+        <first-ionization-potential>24.5874</first-ionization-potential>
+        <density>0.0001785</density>
+        <melting-point-k />
+        <boiling-point-k>4.22</boiling-point-k>
+        <isotopes>5</isotopes>
+        <discoverer>Janssen</discoverer>
+        <year-of-discovery>1868</year-of-discovery>
+        <specific-heat-capacity>5.193</specific-heat-capacity>
+        <electron-configuration>1s2</electron-configuration>
+        <display-PeriodicElement>1</display-PeriodicElement>
+        <display-column>18</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>3</id>
+      <fields>
+        <atomic-number>3</atomic-number>
+        <element>Lithium</element>
+        <symbol>Li</symbol>
+        <atomic-weight>6.941</atomic-weight>
+        <period>2</period>
+        <group>1</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Alkali Metal</type>
+        <ionic-radius>0.76</ionic-radius>
+        <atomic-radius>2.1</atomic-radius>
+        <electronegativity>0.98</electronegativity>
+        <first-ionization-potential>5.3917</first-ionization-potential>
+        <density>0.534</density>
+        <melting-point-k>453.85</melting-point-k>
+        <boiling-point-k>1615</boiling-point-k>
+        <isotopes>5</isotopes>
+        <discoverer>Arfvedson</discoverer>
+        <year-of-discovery>1817</year-of-discovery>
+        <specific-heat-capacity>3.582</specific-heat-capacity>
+        <electron-configuration>[He] 2s1</electron-configuration>
+        <display-PeriodicElement>2</display-PeriodicElement>
+        <display-column>1</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>4</id>
+      <fields>
+        <atomic-number>4</atomic-number>
+        <element>Beryllium</element>
+        <symbol>Be</symbol>
+        <atomic-weight>9.012182</atomic-weight>
+        <period>2</period>
+        <group>2</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Alkaline Earth Metal</type>
+        <ionic-radius>0.35</ionic-radius>
+        <atomic-radius>1.4</atomic-radius>
+        <electronegativity>1.57</electronegativity>
+        <first-ionization-potential>9.3227</first-ionization-potential>
+        <density>1.85</density>
+        <melting-point-k>1560.15</melting-point-k>
+        <boiling-point-k>2742</boiling-point-k>
+        <isotopes>6</isotopes>
+        <discoverer>Vaulquelin</discoverer>
+        <year-of-discovery>1798</year-of-discovery>
+        <specific-heat-capacity>1.825</specific-heat-capacity>
+        <electron-configuration>[He] 2s2</electron-configuration>
+        <display-PeriodicElement>2</display-PeriodicElement>
+        <display-column>2</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>5</id>
+      <fields>
+        <atomic-number>5</atomic-number>
+        <element>Boron</element>
+        <symbol>B</symbol>
+        <atomic-weight>10.811</atomic-weight>
+        <period>2</period>
+        <group>13</group>
+        <phase>solid</phase>
+        <most-stable-crystal>rho</most-stable-crystal>
+        <type>Metalloid</type>
+        <ionic-radius>0.23</ionic-radius>
+        <atomic-radius>1.2</atomic-radius>
+        <electronegativity>2.04</electronegativity>
+        <first-ionization-potential>8.298</first-ionization-potential>
+        <density>2.34</density>
+        <melting-point-k>2573.15</melting-point-k>
+        <boiling-point-k>4200</boiling-point-k>
+        <isotopes>6</isotopes>
+        <discoverer>Gay-Lussac</discoverer>
+        <year-of-discovery>1808</year-of-discovery>
+        <specific-heat-capacity>1.026</specific-heat-capacity>
+        <electron-configuration>[He] 2s2 2p1</electron-configuration>
+        <display-PeriodicElement>2</display-PeriodicElement>
+        <display-column>13</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>6</id>
+      <fields>
+        <atomic-number>6</atomic-number>
+        <element>Carbon</element>
+        <symbol>C</symbol>
+        <atomic-weight>12.0107</atomic-weight>
+        <period>2</period>
+        <group>14</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Nonmetal</type>
+        <ionic-radius />
+        <atomic-radius>0.91</atomic-radius>
+        <electronegativity>2.55</electronegativity>
+        <first-ionization-potential>11.2603</first-ionization-potential>
+        <density>2.267</density>
+        <melting-point-k>3948.15</melting-point-k>
+        <boiling-point-k>4300</boiling-point-k>
+        <isotopes>7</isotopes>
+        <discoverer>Prehistoric</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.709</specific-heat-capacity>
+        <electron-configuration>[He] 2s2 2p2</electron-configuration>
+        <display-PeriodicElement>2</display-PeriodicElement>
+        <display-column>14</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>7</id>
+      <fields>
+        <atomic-number>7</atomic-number>
+        <element>Nitrogen</element>
+        <symbol>N</symbol>
+        <atomic-weight>14.0067</atomic-weight>
+        <period>2</period>
+        <group>15</group>
+        <phase>gas</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Nonmetal</type>
+        <ionic-radius>0.13</ionic-radius>
+        <atomic-radius>0.75</atomic-radius>
+        <electronegativity>3.04</electronegativity>
+        <first-ionization-potential>14.5341</first-ionization-potential>
+        <density>0.0012506</density>
+        <melting-point-k>63.29</melting-point-k>
+        <boiling-point-k>77.36</boiling-point-k>
+        <isotopes>8</isotopes>
+        <discoverer>Rutherford</discoverer>
+        <year-of-discovery>1772</year-of-discovery>
+        <specific-heat-capacity>1.04</specific-heat-capacity>
+        <electron-configuration>[He] 2s2 2p3</electron-configuration>
+        <display-PeriodicElement>2</display-PeriodicElement>
+        <display-column>15</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>8</id>
+      <fields>
+        <atomic-number>8</atomic-number>
+        <element>Oxygen</element>
+        <symbol>O</symbol>
+        <atomic-weight>15.9994</atomic-weight>
+        <period>2</period>
+        <group>16</group>
+        <phase>gas</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Nonmetal</type>
+        <ionic-radius>1.4</ionic-radius>
+        <atomic-radius>0.65</atomic-radius>
+        <electronegativity>3.44</electronegativity>
+        <first-ionization-potential>13.6181</first-ionization-potential>
+        <density>0.001429</density>
+        <melting-point-k>50.5</melting-point-k>
+        <boiling-point-k>90.2</boiling-point-k>
+        <isotopes>8</isotopes>
+        <discoverer>Priestley/Scheele</discoverer>
+        <year-of-discovery>1774</year-of-discovery>
+        <specific-heat-capacity>0.918</specific-heat-capacity>
+        <electron-configuration>[He] 2s2 2p4</electron-configuration>
+        <display-PeriodicElement>2</display-PeriodicElement>
+        <display-column>16</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>9</id>
+      <fields>
+        <atomic-number>9</atomic-number>
+        <element>Fluorine</element>
+        <symbol>F</symbol>
+        <atomic-weight>18.9984032</atomic-weight>
+        <period>2</period>
+        <group>17</group>
+        <phase>gas</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Halogen</type>
+        <ionic-radius>1.3</ionic-radius>
+        <atomic-radius>0.57</atomic-radius>
+        <electronegativity>3.98</electronegativity>
+        <first-ionization-potential>17.4228</first-ionization-potential>
+        <density>0.001696</density>
+        <melting-point-k>53.63</melting-point-k>
+        <boiling-point-k>85.03</boiling-point-k>
+        <isotopes>6</isotopes>
+        <discoverer>Moissan</discoverer>
+        <year-of-discovery>1886</year-of-discovery>
+        <specific-heat-capacity>0.824</specific-heat-capacity>
+        <electron-configuration>[He] 2s2 2p5</electron-configuration>
+        <display-PeriodicElement>2</display-PeriodicElement>
+        <display-column>17</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>10</id>
+      <fields>
+        <atomic-number>10</atomic-number>
+        <element>Neon</element>
+        <symbol>Ne</symbol>
+        <atomic-weight>20.1797</atomic-weight>
+        <period>2</period>
+        <group>18</group>
+        <phase>gas</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Noble Gas</type>
+        <ionic-radius />
+        <atomic-radius>0.51</atomic-radius>
+        <electronegativity />
+        <first-ionization-potential>21.5645</first-ionization-potential>
+        <density>0.0008999</density>
+        <melting-point-k>24.703</melting-point-k>
+        <boiling-point-k>27.07</boiling-point-k>
+        <isotopes>8</isotopes>
+        <discoverer>Ramsay and Travers</discoverer>
+        <year-of-discovery>1898</year-of-discovery>
+        <specific-heat-capacity>1.03</specific-heat-capacity>
+        <electron-configuration>[He] 2s2 2p6</electron-configuration>
+        <display-PeriodicElement>2</display-PeriodicElement>
+        <display-column>18</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>11</id>
+      <fields>
+        <atomic-number>11</atomic-number>
+        <element>Sodium</element>
+        <symbol>Na</symbol>
+        <atomic-weight>22.98976928</atomic-weight>
+        <period>3</period>
+        <group>1</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Alkali Metal</type>
+        <ionic-radius>1</ionic-radius>
+        <atomic-radius>2.2</atomic-radius>
+        <electronegativity>0.93</electronegativity>
+        <first-ionization-potential>5.1391</first-ionization-potential>
+        <density>0.971</density>
+        <melting-point-k>371.15</melting-point-k>
+        <boiling-point-k>1156</boiling-point-k>
+        <isotopes>7</isotopes>
+        <discoverer>Davy</discoverer>
+        <year-of-discovery>1807</year-of-discovery>
+        <specific-heat-capacity>1.228</specific-heat-capacity>
+        <electron-configuration>[Ne] 3s1</electron-configuration>
+        <display-PeriodicElement>3</display-PeriodicElement>
+        <display-column>1</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>12</id>
+      <fields>
+        <atomic-number>12</atomic-number>
+        <element>Magnesium</element>
+        <symbol>Mg</symbol>
+        <atomic-weight>24.305</atomic-weight>
+        <period>3</period>
+        <group>2</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Alkaline Earth Metal</type>
+        <ionic-radius>0.72</ionic-radius>
+        <atomic-radius>1.7</atomic-radius>
+        <electronegativity>1.31</electronegativity>
+        <first-ionization-potential>7.6462</first-ionization-potential>
+        <density>1.738</density>
+        <melting-point-k>923.15</melting-point-k>
+        <boiling-point-k>1363</boiling-point-k>
+        <isotopes>8</isotopes>
+        <discoverer>Black</discoverer>
+        <year-of-discovery>1755</year-of-discovery>
+        <specific-heat-capacity>1.023</specific-heat-capacity>
+        <electron-configuration>[Ne] 3s2</electron-configuration>
+        <display-PeriodicElement>3</display-PeriodicElement>
+        <display-column>2</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>13</id>
+      <fields>
+        <atomic-number>13</atomic-number>
+        <element>Aluminum</element>
+        <symbol>Al</symbol>
+        <atomic-weight>26.9815386</atomic-weight>
+        <period>3</period>
+        <group>13</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Metal</type>
+        <ionic-radius>0.54</ionic-radius>
+        <atomic-radius>1.8</atomic-radius>
+        <electronegativity>1.61</electronegativity>
+        <first-ionization-potential>5.9858</first-ionization-potential>
+        <density>2.698</density>
+        <melting-point-k>933.4</melting-point-k>
+        <boiling-point-k>2792</boiling-point-k>
+        <isotopes>8</isotopes>
+        <discoverer>W�hler</discoverer>
+        <year-of-discovery>1827</year-of-discovery>
+        <specific-heat-capacity>0.897</specific-heat-capacity>
+        <electron-configuration>[Ne] 3s2 3p1</electron-configuration>
+        <display-PeriodicElement>3</display-PeriodicElement>
+        <display-column>13</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>14</id>
+      <fields>
+        <atomic-number>14</atomic-number>
+        <element>Silicon</element>
+        <symbol>Si</symbol>
+        <atomic-weight>28.0855</atomic-weight>
+        <period>3</period>
+        <group>14</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Metalloid</type>
+        <ionic-radius>0.4</ionic-radius>
+        <atomic-radius>1.5</atomic-radius>
+        <electronegativity>1.9</electronegativity>
+        <first-ionization-potential>8.1517</first-ionization-potential>
+        <density>2.3296</density>
+        <melting-point-k>1683.15</melting-point-k>
+        <boiling-point-k>3538</boiling-point-k>
+        <isotopes>8</isotopes>
+        <discoverer>Berzelius</discoverer>
+        <year-of-discovery>1824</year-of-discovery>
+        <specific-heat-capacity>0.705</specific-heat-capacity>
+        <electron-configuration>[Ne] 3s2 3p2</electron-configuration>
+        <display-PeriodicElement>3</display-PeriodicElement>
+        <display-column>14</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>15</id>
+      <fields>
+        <atomic-number>15</atomic-number>
+        <element>Phosphorus</element>
+        <symbol>P</symbol>
+        <atomic-weight>30.973762</atomic-weight>
+        <period>3</period>
+        <group>15</group>
+        <phase>solid</phase>
+        <most-stable-crystal>cub</most-stable-crystal>
+        <type>Nonmetal</type>
+        <ionic-radius>0.38</ionic-radius>
+        <atomic-radius>1.2</atomic-radius>
+        <electronegativity>2.19</electronegativity>
+        <first-ionization-potential>10.4867</first-ionization-potential>
+        <density>1.82</density>
+        <melting-point-k>317.25</melting-point-k>
+        <boiling-point-k>553</boiling-point-k>
+        <isotopes>7</isotopes>
+        <discoverer>BranBrand</discoverer>
+        <year-of-discovery>1669</year-of-discovery>
+        <specific-heat-capacity>0.769</specific-heat-capacity>
+        <electron-configuration>[Ne] 3s2 3p3</electron-configuration>
+        <display-PeriodicElement>3</display-PeriodicElement>
+        <display-column>15</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>16</id>
+      <fields>
+        <atomic-number>16</atomic-number>
+        <element>Sulfur</element>
+        <symbol>S</symbol>
+        <atomic-weight>32.065</atomic-weight>
+        <period>3</period>
+        <group>16</group>
+        <phase>solid</phase>
+        <most-stable-crystal>orth</most-stable-crystal>
+        <type>Nonmetal</type>
+        <ionic-radius>0.37</ionic-radius>
+        <atomic-radius>1.1</atomic-radius>
+        <electronegativity>2.58</electronegativity>
+        <first-ionization-potential>10.36</first-ionization-potential>
+        <density>2.067</density>
+        <melting-point-k>388.51</melting-point-k>
+        <boiling-point-k>717.8</boiling-point-k>
+        <isotopes>10</isotopes>
+        <discoverer>Prehistoric</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.71</specific-heat-capacity>
+        <electron-configuration>[Ne] 3s2 3p4</electron-configuration>
+        <display-PeriodicElement>3</display-PeriodicElement>
+        <display-column>16</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>17</id>
+      <fields>
+        <atomic-number>17</atomic-number>
+        <element>Chlorine</element>
+        <symbol>Cl</symbol>
+        <atomic-weight>35.453</atomic-weight>
+        <period>3</period>
+        <group>17</group>
+        <phase>gas</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Halogen</type>
+        <ionic-radius>1.8</ionic-radius>
+        <atomic-radius>0.97</atomic-radius>
+        <electronegativity>3.16</electronegativity>
+        <first-ionization-potential>12.9676</first-ionization-potential>
+        <density>0.003214</density>
+        <melting-point-k>172.31</melting-point-k>
+        <boiling-point-k>239.11</boiling-point-k>
+        <isotopes>11</isotopes>
+        <discoverer>Scheele</discoverer>
+        <year-of-discovery>1774</year-of-discovery>
+        <specific-heat-capacity>0.479</specific-heat-capacity>
+        <electron-configuration>[Ne] 3s2 3p5</electron-configuration>
+        <display-PeriodicElement>3</display-PeriodicElement>
+        <display-column>17</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>18</id>
+      <fields>
+        <atomic-number>18</atomic-number>
+        <element>Argon</element>
+        <symbol>Ar</symbol>
+        <atomic-weight>39.948</atomic-weight>
+        <period>3</period>
+        <group>18</group>
+        <phase>gas</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Noble Gas</type>
+        <ionic-radius />
+        <atomic-radius>0.88</atomic-radius>
+        <electronegativity />
+        <first-ionization-potential>15.7596</first-ionization-potential>
+        <density>0.0017837</density>
+        <melting-point-k>83.96</melting-point-k>
+        <boiling-point-k>87.3</boiling-point-k>
+        <isotopes>8</isotopes>
+        <discoverer>Rayleigh and Ramsay</discoverer>
+        <year-of-discovery>1894</year-of-discovery>
+        <specific-heat-capacity>0.52</specific-heat-capacity>
+        <electron-configuration>[Ne] 3s2 3p6</electron-configuration>
+        <display-PeriodicElement>3</display-PeriodicElement>
+        <display-column>18</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>19</id>
+      <fields>
+        <atomic-number>19</atomic-number>
+        <element>Potassium</element>
+        <symbol>K</symbol>
+        <atomic-weight>39.0983</atomic-weight>
+        <period>4</period>
+        <group>1</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Alkali Metal</type>
+        <ionic-radius>1.4</ionic-radius>
+        <atomic-radius>2.8</atomic-radius>
+        <electronegativity>0.82</electronegativity>
+        <first-ionization-potential>4.3407</first-ionization-potential>
+        <density>0.862</density>
+        <melting-point-k>336.5</melting-point-k>
+        <boiling-point-k>1032</boiling-point-k>
+        <isotopes>10</isotopes>
+        <discoverer>Davy</discoverer>
+        <year-of-discovery>1807</year-of-discovery>
+        <specific-heat-capacity>0.757</specific-heat-capacity>
+        <electron-configuration>[Ar] 4s1</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>1</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>20</id>
+      <fields>
+        <atomic-number>20</atomic-number>
+        <element>Calcium</element>
+        <symbol>Ca</symbol>
+        <atomic-weight>40.078</atomic-weight>
+        <period>4</period>
+        <group>2</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Alkaline Earth Metal</type>
+        <ionic-radius>0.99</ionic-radius>
+        <atomic-radius>2.2</atomic-radius>
+        <electronegativity>1</electronegativity>
+        <first-ionization-potential>6.1132</first-ionization-potential>
+        <density>1.54</density>
+        <melting-point-k>1112.15</melting-point-k>
+        <boiling-point-k>1757</boiling-point-k>
+        <isotopes>14</isotopes>
+        <discoverer>Davy</discoverer>
+        <year-of-discovery>1808</year-of-discovery>
+        <specific-heat-capacity>0.647</specific-heat-capacity>
+        <electron-configuration>[Ar] 4s2</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>2</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>21</id>
+      <fields>
+        <atomic-number>21</atomic-number>
+        <element>Scandium</element>
+        <symbol>Sc</symbol>
+        <atomic-weight>44.955912</atomic-weight>
+        <period>4</period>
+        <group>3</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.75</ionic-radius>
+        <atomic-radius>2.1</atomic-radius>
+        <electronegativity>1.36</electronegativity>
+        <first-ionization-potential>6.5615</first-ionization-potential>
+        <density>2.989</density>
+        <melting-point-k>1812.15</melting-point-k>
+        <boiling-point-k>3109</boiling-point-k>
+        <isotopes>15</isotopes>
+        <discoverer>Nilson</discoverer>
+        <year-of-discovery>1878</year-of-discovery>
+        <specific-heat-capacity>0.568</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d1 4s2</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>3</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>22</id>
+      <fields>
+        <atomic-number>22</atomic-number>
+        <element>Titanium</element>
+        <symbol>Ti</symbol>
+        <atomic-weight>47.867</atomic-weight>
+        <period>4</period>
+        <group>4</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.61</ionic-radius>
+        <atomic-radius>2</atomic-radius>
+        <electronegativity>1.54</electronegativity>
+        <first-ionization-potential>6.8281</first-ionization-potential>
+        <density>4.54</density>
+        <melting-point-k>1933.15</melting-point-k>
+        <boiling-point-k>3560</boiling-point-k>
+        <isotopes>9</isotopes>
+        <discoverer>Gregor</discoverer>
+        <year-of-discovery>1791</year-of-discovery>
+        <specific-heat-capacity>0.523</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d2 4s2</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>4</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>23</id>
+      <fields>
+        <atomic-number>23</atomic-number>
+        <element>Vanadium</element>
+        <symbol>V</symbol>
+        <atomic-weight>50.9415</atomic-weight>
+        <period>4</period>
+        <group>5</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.59</ionic-radius>
+        <atomic-radius>1.9</atomic-radius>
+        <electronegativity>1.63</electronegativity>
+        <first-ionization-potential>6.7462</first-ionization-potential>
+        <density>6.11</density>
+        <melting-point-k>2175.15</melting-point-k>
+        <boiling-point-k>3680</boiling-point-k>
+        <isotopes>9</isotopes>
+        <discoverer>del Rio</discoverer>
+        <year-of-discovery>1801</year-of-discovery>
+        <specific-heat-capacity>0.489</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d3 4s2</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>5</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>24</id>
+      <fields>
+        <atomic-number>24</atomic-number>
+        <element>Chromium</element>
+        <symbol>Cr</symbol>
+        <atomic-weight>51.9961</atomic-weight>
+        <period>4</period>
+        <group>6</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.52</ionic-radius>
+        <atomic-radius>1.9</atomic-radius>
+        <electronegativity>1.66</electronegativity>
+        <first-ionization-potential>6.7665</first-ionization-potential>
+        <density>7.15</density>
+        <melting-point-k>2130.15</melting-point-k>
+        <boiling-point-k>2944</boiling-point-k>
+        <isotopes>9</isotopes>
+        <discoverer>Vauquelin</discoverer>
+        <year-of-discovery>1797</year-of-discovery>
+        <specific-heat-capacity>0.449</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d5 4s1</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>6</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>25</id>
+      <fields>
+        <atomic-number>25</atomic-number>
+        <element>Manganese</element>
+        <symbol>Mn</symbol>
+        <atomic-weight>54.938045</atomic-weight>
+        <period>4</period>
+        <group>7</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.46</ionic-radius>
+        <atomic-radius>1.8</atomic-radius>
+        <electronegativity>1.55</electronegativity>
+        <first-ionization-potential>7.434</first-ionization-potential>
+        <density>7.44</density>
+        <melting-point-k>1519.15</melting-point-k>
+        <boiling-point-k>2334</boiling-point-k>
+        <isotopes>11</isotopes>
+        <discoverer>Gahn, Scheele</discoverer>
+        <year-of-discovery>1774</year-of-discovery>
+        <specific-heat-capacity>0.479</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d5 4s2</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>7</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>26</id>
+      <fields>
+        <atomic-number>26</atomic-number>
+        <element>Iron</element>
+        <symbol>Fe</symbol>
+        <atomic-weight>55.845</atomic-weight>
+        <period>4</period>
+        <group>8</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.65</ionic-radius>
+        <atomic-radius>1.7</atomic-radius>
+        <electronegativity>1.83</electronegativity>
+        <first-ionization-potential>7.9024</first-ionization-potential>
+        <density>7.874</density>
+        <melting-point-k>1808.15</melting-point-k>
+        <boiling-point-k>3134</boiling-point-k>
+        <isotopes>10</isotopes>
+        <discoverer>Prehistoric</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.449</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d6 4s2</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>8</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>27</id>
+      <fields>
+        <atomic-number>27</atomic-number>
+        <element>Cobalt</element>
+        <symbol>Co</symbol>
+        <atomic-weight>58.933195</atomic-weight>
+        <period>4</period>
+        <group>9</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.75</ionic-radius>
+        <atomic-radius>1.7</atomic-radius>
+        <electronegativity>1.88</electronegativity>
+        <first-ionization-potential>7.881</first-ionization-potential>
+        <density>8.86</density>
+        <melting-point-k>1768.15</melting-point-k>
+        <boiling-point-k>3200</boiling-point-k>
+        <isotopes>14</isotopes>
+        <discoverer>Brandt</discoverer>
+        <year-of-discovery>1735</year-of-discovery>
+        <specific-heat-capacity>0.421</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d7 4s2</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>9</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>28</id>
+      <fields>
+        <atomic-number>28</atomic-number>
+        <element>Nickel</element>
+        <symbol>Ni</symbol>
+        <atomic-weight>58.6934</atomic-weight>
+        <period>4</period>
+        <group>10</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.69</ionic-radius>
+        <atomic-radius>1.6</atomic-radius>
+        <electronegativity>1.91</electronegativity>
+        <first-ionization-potential>7.6398</first-ionization-potential>
+        <density>8.912</density>
+        <melting-point-k>1726.15</melting-point-k>
+        <boiling-point-k>3186</boiling-point-k>
+        <isotopes>11</isotopes>
+        <discoverer>Cronstedt</discoverer>
+        <year-of-discovery>1751</year-of-discovery>
+        <specific-heat-capacity>0.444</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d8 4s2</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>10</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>29</id>
+      <fields>
+        <atomic-number>29</atomic-number>
+        <element>Copper</element>
+        <symbol>Cu</symbol>
+        <atomic-weight>63.546</atomic-weight>
+        <period>4</period>
+        <group>11</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.73</ionic-radius>
+        <atomic-radius>1.6</atomic-radius>
+        <electronegativity>1.9</electronegativity>
+        <first-ionization-potential>7.7264</first-ionization-potential>
+        <density>8.96</density>
+        <melting-point-k>1357.75</melting-point-k>
+        <boiling-point-k>2835</boiling-point-k>
+        <isotopes>11</isotopes>
+        <discoverer>Prehistoric</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.385</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d10 4s1</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>11</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>30</id>
+      <fields>
+        <atomic-number>30</atomic-number>
+        <element>Zinc</element>
+        <symbol>Zn</symbol>
+        <atomic-weight>65.38</atomic-weight>
+        <period>4</period>
+        <group>12</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.74</ionic-radius>
+        <atomic-radius>1.5</atomic-radius>
+        <electronegativity>1.65</electronegativity>
+        <first-ionization-potential>9.3942</first-ionization-potential>
+        <density>7.134</density>
+        <melting-point-k>692.88</melting-point-k>
+        <boiling-point-k>1180</boiling-point-k>
+        <isotopes>15</isotopes>
+        <discoverer>Prehistoric</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.388</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d10 4s2</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>12</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>31</id>
+      <fields>
+        <atomic-number>31</atomic-number>
+        <element>Gallium</element>
+        <symbol>Ga</symbol>
+        <atomic-weight>69.723</atomic-weight>
+        <period>4</period>
+        <group>13</group>
+        <phase>solid</phase>
+        <most-stable-crystal>orth</most-stable-crystal>
+        <type>Metal</type>
+        <ionic-radius>0.62</ionic-radius>
+        <atomic-radius>1.8</atomic-radius>
+        <electronegativity>1.81</electronegativity>
+        <first-ionization-potential>5.9993</first-ionization-potential>
+        <density>5.907</density>
+        <melting-point-k>302.91</melting-point-k>
+        <boiling-point-k>2477</boiling-point-k>
+        <isotopes>14</isotopes>
+        <discoverer>de Boisbaudran</discoverer>
+        <year-of-discovery>1875</year-of-discovery>
+        <specific-heat-capacity>0.371</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d10 4s2 4p1</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>13</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>32</id>
+      <fields>
+        <atomic-number>32</atomic-number>
+        <element>Germanium</element>
+        <symbol>Ge</symbol>
+        <atomic-weight>72.64</atomic-weight>
+        <period>4</period>
+        <group>14</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Metalloid</type>
+        <ionic-radius>0.53</ionic-radius>
+        <atomic-radius>1.5</atomic-radius>
+        <electronegativity>2.01</electronegativity>
+        <first-ionization-potential>7.8994</first-ionization-potential>
+        <density>5.323</density>
+        <melting-point-k>1211.45</melting-point-k>
+        <boiling-point-k>3106</boiling-point-k>
+        <isotopes>17</isotopes>
+        <discoverer>Winkler</discoverer>
+        <year-of-discovery>1886</year-of-discovery>
+        <specific-heat-capacity>0.32</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d10 4s2 4p2</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>14</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>33</id>
+      <fields>
+        <atomic-number>33</atomic-number>
+        <element>Arsenic</element>
+        <symbol>As</symbol>
+        <atomic-weight>74.9216</atomic-weight>
+        <period>4</period>
+        <group>15</group>
+        <phase>solid</phase>
+        <most-stable-crystal>rho</most-stable-crystal>
+        <type>Metalloid</type>
+        <ionic-radius>0.58</ionic-radius>
+        <atomic-radius>1.3</atomic-radius>
+        <electronegativity>2.18</electronegativity>
+        <first-ionization-potential>9.7886</first-ionization-potential>
+        <density>5.776</density>
+        <melting-point-k>1090.15</melting-point-k>
+        <boiling-point-k>887</boiling-point-k>
+        <isotopes>14</isotopes>
+        <discoverer>Albertus Magnus</discoverer>
+        <year-of-discovery>1250</year-of-discovery>
+        <specific-heat-capacity>0.329</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d10 4s2 4p3</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>15</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>34</id>
+      <fields>
+        <atomic-number>34</atomic-number>
+        <element>Selenium</element>
+        <symbol>Se</symbol>
+        <atomic-weight>78.96</atomic-weight>
+        <period>4</period>
+        <group>16</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Nonmetal</type>
+        <ionic-radius>0.5</ionic-radius>
+        <atomic-radius>1.2</atomic-radius>
+        <electronegativity>2.55</electronegativity>
+        <first-ionization-potential>9.7524</first-ionization-potential>
+        <density>4.809</density>
+        <melting-point-k>494.15</melting-point-k>
+        <boiling-point-k>958</boiling-point-k>
+        <isotopes>20</isotopes>
+        <discoverer>Berzelius</discoverer>
+        <year-of-discovery>1817</year-of-discovery>
+        <specific-heat-capacity>0.321</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d10 4s2 4p4</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>16</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>35</id>
+      <fields>
+        <atomic-number>35</atomic-number>
+        <element>Bromine</element>
+        <symbol>Br</symbol>
+        <atomic-weight>79.904</atomic-weight>
+        <period>4</period>
+        <group>17</group>
+        <phase>liq</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Halogen</type>
+        <ionic-radius>2</ionic-radius>
+        <atomic-radius>1.1</atomic-radius>
+        <electronegativity>2.96</electronegativity>
+        <first-ionization-potential>11.8138</first-ionization-potential>
+        <density>3.122</density>
+        <melting-point-k>266.05</melting-point-k>
+        <boiling-point-k>332</boiling-point-k>
+        <isotopes>19</isotopes>
+        <discoverer>Balard</discoverer>
+        <year-of-discovery>1826</year-of-discovery>
+        <specific-heat-capacity>0.474</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d10 4s2 4p5</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>17</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>36</id>
+      <fields>
+        <atomic-number>36</atomic-number>
+        <element>Krypton</element>
+        <symbol>Kr</symbol>
+        <atomic-weight>83.798</atomic-weight>
+        <period>4</period>
+        <group>18</group>
+        <phase>gas</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Noble Gas</type>
+        <ionic-radius />
+        <atomic-radius>1</atomic-radius>
+        <electronegativity />
+        <first-ionization-potential>13.9996</first-ionization-potential>
+        <density>0.003733</density>
+        <melting-point-k>115.93</melting-point-k>
+        <boiling-point-k>119.93</boiling-point-k>
+        <isotopes>23</isotopes>
+        <discoverer>Ramsay and Travers</discoverer>
+        <year-of-discovery>1898</year-of-discovery>
+        <specific-heat-capacity>0.248</specific-heat-capacity>
+        <electron-configuration>[Ar] 3d10 4s2 4p6</electron-configuration>
+        <display-PeriodicElement>4</display-PeriodicElement>
+        <display-column>18</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>37</id>
+      <fields>
+        <atomic-number>37</atomic-number>
+        <element>Rubidium</element>
+        <symbol>Rb</symbol>
+        <atomic-weight>85.4678</atomic-weight>
+        <period>5</period>
+        <group>1</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Alkali Metal</type>
+        <ionic-radius>1.5</ionic-radius>
+        <atomic-radius>3</atomic-radius>
+        <electronegativity>0.82</electronegativity>
+        <first-ionization-potential>4.1771</first-ionization-potential>
+        <density>1.532</density>
+        <melting-point-k>312.79</melting-point-k>
+        <boiling-point-k>961</boiling-point-k>
+        <isotopes>20</isotopes>
+        <discoverer>Bunsen and Kirchoff</discoverer>
+        <year-of-discovery>1861</year-of-discovery>
+        <specific-heat-capacity>0.363</specific-heat-capacity>
+        <electron-configuration>[Kr] 5s1</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>1</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>38</id>
+      <fields>
+        <atomic-number>38</atomic-number>
+        <element>Strontium</element>
+        <symbol>Sr</symbol>
+        <atomic-weight>87.62</atomic-weight>
+        <period>5</period>
+        <group>2</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Alkaline Earth Metal</type>
+        <ionic-radius>1.1</ionic-radius>
+        <atomic-radius>2.5</atomic-radius>
+        <electronegativity>0.95</electronegativity>
+        <first-ionization-potential>5.6949</first-ionization-potential>
+        <density>2.64</density>
+        <melting-point-k>1042.15</melting-point-k>
+        <boiling-point-k>1655</boiling-point-k>
+        <isotopes>18</isotopes>
+        <discoverer>Davy</discoverer>
+        <year-of-discovery>1808</year-of-discovery>
+        <specific-heat-capacity>0.301</specific-heat-capacity>
+        <electron-configuration>[Kr] 5s2</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>2</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>39</id>
+      <fields>
+        <atomic-number>39</atomic-number>
+        <element>Yttrium</element>
+        <symbol>Y</symbol>
+        <atomic-weight>88.90585</atomic-weight>
+        <period>5</period>
+        <group>3</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.9</ionic-radius>
+        <atomic-radius>2.3</atomic-radius>
+        <electronegativity>1.22</electronegativity>
+        <first-ionization-potential>6.2173</first-ionization-potential>
+        <density>4.469</density>
+        <melting-point-k>1799.15</melting-point-k>
+        <boiling-point-k>3609</boiling-point-k>
+        <isotopes>21</isotopes>
+        <discoverer>Gadolin</discoverer>
+        <year-of-discovery>1794</year-of-discovery>
+        <specific-heat-capacity>0.298</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d1 5s2</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>3</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>40</id>
+      <fields>
+        <atomic-number>40</atomic-number>
+        <element>Zirconium</element>
+        <symbol>Zr</symbol>
+        <atomic-weight>91.224</atomic-weight>
+        <period>5</period>
+        <group>4</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.72</ionic-radius>
+        <atomic-radius>2.2</atomic-radius>
+        <electronegativity>1.33</electronegativity>
+        <first-ionization-potential>6.6339</first-ionization-potential>
+        <density>6.506</density>
+        <melting-point-k>2125.15</melting-point-k>
+        <boiling-point-k>4682</boiling-point-k>
+        <isotopes>20</isotopes>
+        <discoverer>Klaproth</discoverer>
+        <year-of-discovery>1789</year-of-discovery>
+        <specific-heat-capacity>0.278</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d2 5s2</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>4</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>41</id>
+      <fields>
+        <atomic-number>41</atomic-number>
+        <element>Niobium</element>
+        <symbol>Nb</symbol>
+        <atomic-weight>92.90638</atomic-weight>
+        <period>5</period>
+        <group>5</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.69</ionic-radius>
+        <atomic-radius>2.1</atomic-radius>
+        <electronegativity>1.6</electronegativity>
+        <first-ionization-potential>6.7589</first-ionization-potential>
+        <density>8.57</density>
+        <melting-point-k>2741.15</melting-point-k>
+        <boiling-point-k>5017</boiling-point-k>
+        <isotopes>24</isotopes>
+        <discoverer>Hatchett</discoverer>
+        <year-of-discovery>1801</year-of-discovery>
+        <specific-heat-capacity>0.265</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d4 5s1</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>5</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>42</id>
+      <fields>
+        <atomic-number>42</atomic-number>
+        <element>Molybdenum</element>
+        <symbol>Mo</symbol>
+        <atomic-weight>95.96</atomic-weight>
+        <period>5</period>
+        <group>6</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.65</ionic-radius>
+        <atomic-radius>2</atomic-radius>
+        <electronegativity>2.16</electronegativity>
+        <first-ionization-potential>7.0924</first-ionization-potential>
+        <density>10.22</density>
+        <melting-point-k>2890.15</melting-point-k>
+        <boiling-point-k>4912</boiling-point-k>
+        <isotopes>20</isotopes>
+        <discoverer>Scheele</discoverer>
+        <year-of-discovery>1778</year-of-discovery>
+        <specific-heat-capacity>0.251</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d5 5s1</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>6</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>43</id>
+      <fields>
+        <atomic-number>43</atomic-number>
+        <element>Technetium</element>
+        <symbol>Tc</symbol>
+        <atomic-weight>98</atomic-weight>
+        <period>5</period>
+        <group>7</group>
+        <phase>artificial</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.56</ionic-radius>
+        <atomic-radius>2</atomic-radius>
+        <electronegativity>1.9</electronegativity>
+        <first-ionization-potential>7.28</first-ionization-potential>
+        <density>11.5</density>
+        <melting-point-k>2473.15</melting-point-k>
+        <boiling-point-k>5150</boiling-point-k>
+        <isotopes>23</isotopes>
+        <discoverer>Perrier and Segr�</discoverer>
+        <year-of-discovery>1937</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration>[Kr] 4d5 5s2</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>7</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>44</id>
+      <fields>
+        <atomic-number>44</atomic-number>
+        <element>Ruthenium</element>
+        <symbol>Ru</symbol>
+        <atomic-weight>101.07</atomic-weight>
+        <period>5</period>
+        <group>8</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.68</ionic-radius>
+        <atomic-radius>1.9</atomic-radius>
+        <electronegativity>2.2</electronegativity>
+        <first-ionization-potential>7.3605</first-ionization-potential>
+        <density>12.37</density>
+        <melting-point-k>2523.15</melting-point-k>
+        <boiling-point-k>4423</boiling-point-k>
+        <isotopes>16</isotopes>
+        <discoverer>Klaus</discoverer>
+        <year-of-discovery>1844</year-of-discovery>
+        <specific-heat-capacity>0.238</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d7 5s1</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>8</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>45</id>
+      <fields>
+        <atomic-number>45</atomic-number>
+        <element>Rhodium</element>
+        <symbol>Rh</symbol>
+        <atomic-weight>102.9055</atomic-weight>
+        <period>5</period>
+        <group>9</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.68</ionic-radius>
+        <atomic-radius>1.8</atomic-radius>
+        <electronegativity>2.28</electronegativity>
+        <first-ionization-potential>7.4589</first-ionization-potential>
+        <density>12.41</density>
+        <melting-point-k>2239.15</melting-point-k>
+        <boiling-point-k>3968</boiling-point-k>
+        <isotopes>20</isotopes>
+        <discoverer>Wollaston</discoverer>
+        <year-of-discovery>1803</year-of-discovery>
+        <specific-heat-capacity>0.243</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d8 5s1</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>9</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>46</id>
+      <fields>
+        <atomic-number>46</atomic-number>
+        <element>Palladium</element>
+        <symbol>Pd</symbol>
+        <atomic-weight>106.42</atomic-weight>
+        <period>5</period>
+        <group>10</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.86</ionic-radius>
+        <atomic-radius>1.8</atomic-radius>
+        <electronegativity>2.2</electronegativity>
+        <first-ionization-potential>8.3369</first-ionization-potential>
+        <density>12.02</density>
+        <melting-point-k>1825.15</melting-point-k>
+        <boiling-point-k>3236</boiling-point-k>
+        <isotopes>21</isotopes>
+        <discoverer>Wollaston</discoverer>
+        <year-of-discovery>1803</year-of-discovery>
+        <specific-heat-capacity>0.244</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d10</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>10</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>47</id>
+      <fields>
+        <atomic-number>47</atomic-number>
+        <element>Silver</element>
+        <symbol>Ag</symbol>
+        <atomic-weight>107.8682</atomic-weight>
+        <period>5</period>
+        <group>11</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>1.3</ionic-radius>
+        <atomic-radius>1.8</atomic-radius>
+        <electronegativity>1.93</electronegativity>
+        <first-ionization-potential>7.5762</first-ionization-potential>
+        <density>10.501</density>
+        <melting-point-k>1234.15</melting-point-k>
+        <boiling-point-k>2435</boiling-point-k>
+        <isotopes>27</isotopes>
+        <discoverer>Prehistoric</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.235</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d10 5s1</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>11</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>48</id>
+      <fields>
+        <atomic-number>48</atomic-number>
+        <element>Cadmium</element>
+        <symbol>Cd</symbol>
+        <atomic-weight>112.411</atomic-weight>
+        <period>5</period>
+        <group>12</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.97</ionic-radius>
+        <atomic-radius>1.7</atomic-radius>
+        <electronegativity>1.69</electronegativity>
+        <first-ionization-potential>8.9938</first-ionization-potential>
+        <density>8.69</density>
+        <melting-point-k>594.33</melting-point-k>
+        <boiling-point-k>1040</boiling-point-k>
+        <isotopes>22</isotopes>
+        <discoverer>Stromeyer</discoverer>
+        <year-of-discovery>1817</year-of-discovery>
+        <specific-heat-capacity>0.232</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d10 5s2</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>12</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>49</id>
+      <fields>
+        <atomic-number>49</atomic-number>
+        <element>Indium</element>
+        <symbol>In</symbol>
+        <atomic-weight>114.818</atomic-weight>
+        <period>5</period>
+        <group>13</group>
+        <phase>solid</phase>
+        <most-stable-crystal>tet</most-stable-crystal>
+        <type>Metal</type>
+        <ionic-radius>0.8</ionic-radius>
+        <atomic-radius>2</atomic-radius>
+        <electronegativity>1.78</electronegativity>
+        <first-ionization-potential>5.7864</first-ionization-potential>
+        <density>7.31</density>
+        <melting-point-k>429.91</melting-point-k>
+        <boiling-point-k>2345</boiling-point-k>
+        <isotopes>34</isotopes>
+        <discoverer>Reich and Richter</discoverer>
+        <year-of-discovery>1863</year-of-discovery>
+        <specific-heat-capacity>0.233</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d10 5s2 5p1</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>13</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>50</id>
+      <fields>
+        <atomic-number>50</atomic-number>
+        <element>Tin</element>
+        <symbol>Sn</symbol>
+        <atomic-weight>118.71</atomic-weight>
+        <period>5</period>
+        <group>14</group>
+        <phase>solid</phase>
+        <most-stable-crystal>tet</most-stable-crystal>
+        <type>Metal</type>
+        <ionic-radius>0.69</ionic-radius>
+        <atomic-radius>1.7</atomic-radius>
+        <electronegativity>1.96</electronegativity>
+        <first-ionization-potential>7.3439</first-ionization-potential>
+        <density>7.287</density>
+        <melting-point-k>505.21</melting-point-k>
+        <boiling-point-k>2875</boiling-point-k>
+        <isotopes>28</isotopes>
+        <discoverer>Prehistoric</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.228</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d10 5s2 5p2</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>14</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>51</id>
+      <fields>
+        <atomic-number>51</atomic-number>
+        <element>Antimony</element>
+        <symbol>Sb</symbol>
+        <atomic-weight>121.76</atomic-weight>
+        <period>5</period>
+        <group>15</group>
+        <phase>solid</phase>
+        <most-stable-crystal>rho</most-stable-crystal>
+        <type>Metalloid</type>
+        <ionic-radius>0.76</ionic-radius>
+        <atomic-radius>1.5</atomic-radius>
+        <electronegativity>2.05</electronegativity>
+        <first-ionization-potential>8.6084</first-ionization-potential>
+        <density>6.685</density>
+        <melting-point-k>904.05</melting-point-k>
+        <boiling-point-k>1860</boiling-point-k>
+        <isotopes>29</isotopes>
+        <discoverer>Early historic times</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.207</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d10 5s2 5p3</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>15</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>52</id>
+      <fields>
+        <atomic-number>52</atomic-number>
+        <element>Tellurium</element>
+        <symbol>Te</symbol>
+        <atomic-weight>127.6</atomic-weight>
+        <period>5</period>
+        <group>16</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Metalloid</type>
+        <ionic-radius>0.97</ionic-radius>
+        <atomic-radius>1.4</atomic-radius>
+        <electronegativity>2.1</electronegativity>
+        <first-ionization-potential>9.0096</first-ionization-potential>
+        <density>6.232</density>
+        <melting-point-k>722.8</melting-point-k>
+        <boiling-point-k>1261</boiling-point-k>
+        <isotopes>29</isotopes>
+        <discoverer>von Reichenstein</discoverer>
+        <year-of-discovery>1782</year-of-discovery>
+        <specific-heat-capacity>0.202</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d10 5s2 5p4</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>16</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>53</id>
+      <fields>
+        <atomic-number>53</atomic-number>
+        <element>Iodine</element>
+        <symbol>I</symbol>
+        <atomic-weight>126.90447</atomic-weight>
+        <period>5</period>
+        <group>17</group>
+        <phase>solid</phase>
+        <most-stable-crystal>orth</most-stable-crystal>
+        <type>Halogen</type>
+        <ionic-radius>2.2</ionic-radius>
+        <atomic-radius>1.3</atomic-radius>
+        <electronegativity>2.66</electronegativity>
+        <first-ionization-potential>10.4513</first-ionization-potential>
+        <density>4.93</density>
+        <melting-point-k>386.65</melting-point-k>
+        <boiling-point-k>457.4</boiling-point-k>
+        <isotopes>24</isotopes>
+        <discoverer>Courtois</discoverer>
+        <year-of-discovery>1811</year-of-discovery>
+        <specific-heat-capacity>0.214</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d10 5s2 5p5</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>17</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>54</id>
+      <fields>
+        <atomic-number>54</atomic-number>
+        <element>Xenon</element>
+        <symbol>Xe</symbol>
+        <atomic-weight>131.293</atomic-weight>
+        <period>5</period>
+        <group>18</group>
+        <phase>gas</phase>
+        <most-stable-crystal>gas</most-stable-crystal>
+        <type>Noble Gas</type>
+        <ionic-radius />
+        <atomic-radius>1.2</atomic-radius>
+        <electronegativity />
+        <first-ionization-potential>12.1298</first-ionization-potential>
+        <density>0.005887</density>
+        <melting-point-k>161.45</melting-point-k>
+        <boiling-point-k>165.03</boiling-point-k>
+        <isotopes>31</isotopes>
+        <discoverer>Ramsay and Travers</discoverer>
+        <year-of-discovery>1898</year-of-discovery>
+        <specific-heat-capacity>0.158</specific-heat-capacity>
+        <electron-configuration>[Kr] 4d10 5s2 5p6</electron-configuration>
+        <display-PeriodicElement>5</display-PeriodicElement>
+        <display-column>18</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>55</id>
+      <fields>
+        <atomic-number>55</atomic-number>
+        <element>Cesium</element>
+        <symbol>Cs</symbol>
+        <atomic-weight>132.9054519</atomic-weight>
+        <period>6</period>
+        <group>1</group>
+        <phase>solid</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Alkali Metal</type>
+        <ionic-radius>1.7</ionic-radius>
+        <atomic-radius>3.3</atomic-radius>
+        <electronegativity>0.79</electronegativity>
+        <first-ionization-potential>3.8939</first-ionization-potential>
+        <density>1.873</density>
+        <melting-point-k>301.7</melting-point-k>
+        <boiling-point-k>944</boiling-point-k>
+        <isotopes>22</isotopes>
+        <discoverer>Bunsen and Kirchoff</discoverer>
+        <year-of-discovery>1860</year-of-discovery>
+        <specific-heat-capacity>0.242</specific-heat-capacity>
+        <electron-configuration>[Xe] 6s1</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>1</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>56</id>
+      <fields>
+        <atomic-number>56</atomic-number>
+        <element>Barium</element>
+        <symbol>Ba</symbol>
+        <atomic-weight>137.327</atomic-weight>
+        <period>6</period>
+        <group>2</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Alkaline Earth Metal</type>
+        <ionic-radius>1.4</ionic-radius>
+        <atomic-radius>2.8</atomic-radius>
+        <electronegativity>0.89</electronegativity>
+        <first-ionization-potential>5.2117</first-ionization-potential>
+        <density>3.594</density>
+        <melting-point-k>1002.15</melting-point-k>
+        <boiling-point-k>2170</boiling-point-k>
+        <isotopes>25</isotopes>
+        <discoverer>Davy</discoverer>
+        <year-of-discovery>1808</year-of-discovery>
+        <specific-heat-capacity>0.204</specific-heat-capacity>
+        <electron-configuration>[Xe] 6s2</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>2</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>57</id>
+      <fields>
+        <atomic-number>57</atomic-number>
+        <element>Lanthanum</element>
+        <symbol>La</symbol>
+        <atomic-weight>138.90547</atomic-weight>
+        <period>6</period>
+        <group>3</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>1.1</ionic-radius>
+        <atomic-radius>2.7</atomic-radius>
+        <electronegativity>1.1</electronegativity>
+        <first-ionization-potential>5.5769</first-ionization-potential>
+        <density>6.145</density>
+        <melting-point-k>1193.15</melting-point-k>
+        <boiling-point-k>3737</boiling-point-k>
+        <isotopes>19</isotopes>
+        <discoverer>Mosander</discoverer>
+        <year-of-discovery>1839</year-of-discovery>
+        <specific-heat-capacity>0.195</specific-heat-capacity>
+        <electron-configuration>[Xe] 5d1 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>3</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>58</id>
+      <fields>
+        <atomic-number>58</atomic-number>
+        <element>Cerium</element>
+        <symbol>Ce</symbol>
+        <atomic-weight>140.116</atomic-weight>
+        <period>6</period>
+        <group>19</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>1</ionic-radius>
+        <atomic-radius>2.7</atomic-radius>
+        <electronegativity>1.12</electronegativity>
+        <first-ionization-potential>5.5387</first-ionization-potential>
+        <density>6.77</density>
+        <melting-point-k>1071.15</melting-point-k>
+        <boiling-point-k>3716</boiling-point-k>
+        <isotopes>19</isotopes>
+        <discoverer>Berzelius</discoverer>
+        <year-of-discovery>1803</year-of-discovery>
+        <specific-heat-capacity>0.192</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f1 5d1 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>4</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>59</id>
+      <fields>
+        <atomic-number>59</atomic-number>
+        <element>Praseodymium</element>
+        <symbol>Pr</symbol>
+        <atomic-weight>140.90765</atomic-weight>
+        <period>6</period>
+        <group>20</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>1</ionic-radius>
+        <atomic-radius>2.7</atomic-radius>
+        <electronegativity>1.13</electronegativity>
+        <first-ionization-potential>5.473</first-ionization-potential>
+        <density>6.773</density>
+        <melting-point-k>1204.15</melting-point-k>
+        <boiling-point-k>3793</boiling-point-k>
+        <isotopes>15</isotopes>
+        <discoverer>von Welsbach</discoverer>
+        <year-of-discovery>1885</year-of-discovery>
+        <specific-heat-capacity>0.193</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f3 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>5</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>60</id>
+      <fields>
+        <atomic-number>60</atomic-number>
+        <element>Neodymium</element>
+        <symbol>Nd</symbol>
+        <atomic-weight>144.242</atomic-weight>
+        <period>6</period>
+        <group>21</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>1</ionic-radius>
+        <atomic-radius>2.6</atomic-radius>
+        <electronegativity>1.14</electronegativity>
+        <first-ionization-potential>5.525</first-ionization-potential>
+        <density>7.007</density>
+        <melting-point-k>1289.15</melting-point-k>
+        <boiling-point-k>3347</boiling-point-k>
+        <isotopes>16</isotopes>
+        <discoverer>von Welsbach</discoverer>
+        <year-of-discovery>1885</year-of-discovery>
+        <specific-heat-capacity>0.19</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f4 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>6</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>61</id>
+      <fields>
+        <atomic-number>61</atomic-number>
+        <element>Promethium</element>
+        <symbol>Pm</symbol>
+        <atomic-weight>145</atomic-weight>
+        <period>6</period>
+        <group>22</group>
+        <phase>artificial</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.98</ionic-radius>
+        <atomic-radius>2.6</atomic-radius>
+        <electronegativity>1.13</electronegativity>
+        <first-ionization-potential>5.582</first-ionization-potential>
+        <density>7.26</density>
+        <melting-point-k>1204.15</melting-point-k>
+        <boiling-point-k>3273</boiling-point-k>
+        <isotopes>14</isotopes>
+        <discoverer>Marinsky et al.</discoverer>
+        <year-of-discovery>1945</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration>[Xe] 4f5 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>7</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>62</id>
+      <fields>
+        <atomic-number>62</atomic-number>
+        <element>Samarium</element>
+        <symbol>Sm</symbol>
+        <atomic-weight>150.36</atomic-weight>
+        <period>6</period>
+        <group>23</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.96</ionic-radius>
+        <atomic-radius>2.6</atomic-radius>
+        <electronegativity>1.17</electronegativity>
+        <first-ionization-potential>5.6437</first-ionization-potential>
+        <density>7.52</density>
+        <melting-point-k>1345.15</melting-point-k>
+        <boiling-point-k>2067</boiling-point-k>
+        <isotopes>17</isotopes>
+        <discoverer>Boisbaudran</discoverer>
+        <year-of-discovery>1879</year-of-discovery>
+        <specific-heat-capacity>0.197</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f6 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>8</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>63</id>
+      <fields>
+        <atomic-number>63</atomic-number>
+        <element>Europium</element>
+        <symbol>Eu</symbol>
+        <atomic-weight>151.964</atomic-weight>
+        <period>6</period>
+        <group>24</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.95</ionic-radius>
+        <atomic-radius>2.6</atomic-radius>
+        <electronegativity>1.2</electronegativity>
+        <first-ionization-potential>5.6704</first-ionization-potential>
+        <density>5.243</density>
+        <melting-point-k>1095.15</melting-point-k>
+        <boiling-point-k>1802</boiling-point-k>
+        <isotopes>21</isotopes>
+        <discoverer>Demarcay</discoverer>
+        <year-of-discovery>1901</year-of-discovery>
+        <specific-heat-capacity>0.182</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f7 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>9</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>64</id>
+      <fields>
+        <atomic-number>64</atomic-number>
+        <element>Gadolinium</element>
+        <symbol>Gd</symbol>
+        <atomic-weight>157.25</atomic-weight>
+        <period>6</period>
+        <group>25</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.94</ionic-radius>
+        <atomic-radius>2.5</atomic-radius>
+        <electronegativity>1.2</electronegativity>
+        <first-ionization-potential>6.1501</first-ionization-potential>
+        <density>7.895</density>
+        <melting-point-k>1585.15</melting-point-k>
+        <boiling-point-k>3546</boiling-point-k>
+        <isotopes>17</isotopes>
+        <discoverer>de Marignac</discoverer>
+        <year-of-discovery>1880</year-of-discovery>
+        <specific-heat-capacity>0.236</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f7 5d1 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>10</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>65</id>
+      <fields>
+        <atomic-number>65</atomic-number>
+        <element>Terbium</element>
+        <symbol>Tb</symbol>
+        <atomic-weight>158.92535</atomic-weight>
+        <period>6</period>
+        <group>26</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.92</ionic-radius>
+        <atomic-radius>2.5</atomic-radius>
+        <electronegativity>1.2</electronegativity>
+        <first-ionization-potential>5.8638</first-ionization-potential>
+        <density>8.229</density>
+        <melting-point-k>1630.15</melting-point-k>
+        <boiling-point-k>3503</boiling-point-k>
+        <isotopes>24</isotopes>
+        <discoverer>Mosander</discoverer>
+        <year-of-discovery>1843</year-of-discovery>
+        <specific-heat-capacity>0.182</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f9 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>11</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>66</id>
+      <fields>
+        <atomic-number>66</atomic-number>
+        <element>Dysprosium</element>
+        <symbol>Dy</symbol>
+        <atomic-weight>162.5</atomic-weight>
+        <period>6</period>
+        <group>27</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.91</ionic-radius>
+        <atomic-radius>2.5</atomic-radius>
+        <electronegativity>1.22</electronegativity>
+        <first-ionization-potential>5.9389</first-ionization-potential>
+        <density>8.55</density>
+        <melting-point-k>1680.15</melting-point-k>
+        <boiling-point-k>2840</boiling-point-k>
+        <isotopes>21</isotopes>
+        <discoverer>de Boisbaudran</discoverer>
+        <year-of-discovery>1886</year-of-discovery>
+        <specific-heat-capacity>0.17</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f10 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>12</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>67</id>
+      <fields>
+        <atomic-number>67</atomic-number>
+        <element>Holmium</element>
+        <symbol>Ho</symbol>
+        <atomic-weight>164.93032</atomic-weight>
+        <period>6</period>
+        <group>28</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.9</ionic-radius>
+        <atomic-radius>2.5</atomic-radius>
+        <electronegativity>1.23</electronegativity>
+        <first-ionization-potential>6.0215</first-ionization-potential>
+        <density>8.795</density>
+        <melting-point-k>1743.15</melting-point-k>
+        <boiling-point-k>2993</boiling-point-k>
+        <isotopes>29</isotopes>
+        <discoverer>Delafontaine and Soret</discoverer>
+        <year-of-discovery>1878</year-of-discovery>
+        <specific-heat-capacity>0.165</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f11 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>13</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>68</id>
+      <fields>
+        <atomic-number>68</atomic-number>
+        <element>Erbium</element>
+        <symbol>Er</symbol>
+        <atomic-weight>167.259</atomic-weight>
+        <period>6</period>
+        <group>29</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.88</ionic-radius>
+        <atomic-radius>2.5</atomic-radius>
+        <electronegativity>1.24</electronegativity>
+        <first-ionization-potential>6.1077</first-ionization-potential>
+        <density>9.066</density>
+        <melting-point-k>1795.15</melting-point-k>
+        <boiling-point-k>3503</boiling-point-k>
+        <isotopes>16</isotopes>
+        <discoverer>Mosander</discoverer>
+        <year-of-discovery>1843</year-of-discovery>
+        <specific-heat-capacity>0.168</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f12 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>14</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>69</id>
+      <fields>
+        <atomic-number>69</atomic-number>
+        <element>Thulium</element>
+        <symbol>Tm</symbol>
+        <atomic-weight>168.93421</atomic-weight>
+        <period>6</period>
+        <group>30</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.87</ionic-radius>
+        <atomic-radius>2.4</atomic-radius>
+        <electronegativity>1.25</electronegativity>
+        <first-ionization-potential>6.1843</first-ionization-potential>
+        <density>9.321</density>
+        <melting-point-k>1818.15</melting-point-k>
+        <boiling-point-k>2223</boiling-point-k>
+        <isotopes>18</isotopes>
+        <discoverer>Cleve</discoverer>
+        <year-of-discovery>1879</year-of-discovery>
+        <specific-heat-capacity>0.16</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f13 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>15</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>70</id>
+      <fields>
+        <atomic-number>70</atomic-number>
+        <element>Ytterbium</element>
+        <symbol>Yb</symbol>
+        <atomic-weight>173.054</atomic-weight>
+        <period>6</period>
+        <group>31</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.86</ionic-radius>
+        <atomic-radius>2.4</atomic-radius>
+        <electronegativity>1.1</electronegativity>
+        <first-ionization-potential>6.2542</first-ionization-potential>
+        <density>6.965</density>
+        <melting-point-k>1097.15</melting-point-k>
+        <boiling-point-k>1469</boiling-point-k>
+        <isotopes>16</isotopes>
+        <discoverer>Marignac</discoverer>
+        <year-of-discovery>1878</year-of-discovery>
+        <specific-heat-capacity>0.155</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>16</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>71</id>
+      <fields>
+        <atomic-number>71</atomic-number>
+        <element>Lutetium</element>
+        <symbol>Lu</symbol>
+        <atomic-weight>174.9668</atomic-weight>
+        <period>6</period>
+        <group>32</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Lanthanide</type>
+        <ionic-radius>0.85</ionic-radius>
+        <atomic-radius>2.3</atomic-radius>
+        <electronegativity>1.27</electronegativity>
+        <first-ionization-potential>5.4259</first-ionization-potential>
+        <density>9.84</density>
+        <melting-point-k>1936.15</melting-point-k>
+        <boiling-point-k>3675</boiling-point-k>
+        <isotopes>22</isotopes>
+        <discoverer>Urbain/ von Welsbach</discoverer>
+        <year-of-discovery>1907</year-of-discovery>
+        <specific-heat-capacity>0.154</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d1 6s2</electron-configuration>
+        <display-PeriodicElement>8</display-PeriodicElement>
+        <display-column>17</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>72</id>
+      <fields>
+        <atomic-number>72</atomic-number>
+        <element>Hafnium</element>
+        <symbol>Hf</symbol>
+        <atomic-weight>178.49</atomic-weight>
+        <period>6</period>
+        <group>4</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.71</ionic-radius>
+        <atomic-radius>2.2</atomic-radius>
+        <electronegativity>1.3</electronegativity>
+        <first-ionization-potential>6.8251</first-ionization-potential>
+        <density>13.31</density>
+        <melting-point-k>2500.15</melting-point-k>
+        <boiling-point-k>4876</boiling-point-k>
+        <isotopes>17</isotopes>
+        <discoverer>Coster and von Hevesy</discoverer>
+        <year-of-discovery>1923</year-of-discovery>
+        <specific-heat-capacity>0.144</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d2 6s2</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>4</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>73</id>
+      <fields>
+        <atomic-number>73</atomic-number>
+        <element>Tantalum</element>
+        <symbol>Ta</symbol>
+        <atomic-weight>180.94788</atomic-weight>
+        <period>6</period>
+        <group>5</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.64</ionic-radius>
+        <atomic-radius>2.1</atomic-radius>
+        <electronegativity>1.5</electronegativity>
+        <first-ionization-potential>7.5496</first-ionization-potential>
+        <density>16.654</density>
+        <melting-point-k>3269.15</melting-point-k>
+        <boiling-point-k>5731</boiling-point-k>
+        <isotopes>19</isotopes>
+        <discoverer>Ekeberg</discoverer>
+        <year-of-discovery>1801</year-of-discovery>
+        <specific-heat-capacity>0.14</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d3 6s2</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>5</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>74</id>
+      <fields>
+        <atomic-number>74</atomic-number>
+        <element>Wolfram</element>
+        <symbol>W</symbol>
+        <atomic-weight>183.84</atomic-weight>
+        <period>6</period>
+        <group>6</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.62</ionic-radius>
+        <atomic-radius>2</atomic-radius>
+        <electronegativity>2.36</electronegativity>
+        <first-ionization-potential>7.864</first-ionization-potential>
+        <density>19.25</density>
+        <melting-point-k>3680.15</melting-point-k>
+        <boiling-point-k>5828</boiling-point-k>
+        <isotopes>22</isotopes>
+        <discoverer>J. and F. d'Elhuyar</discoverer>
+        <year-of-discovery>1783</year-of-discovery>
+        <specific-heat-capacity>0.132</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d4 6s2</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>6</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>75</id>
+      <fields>
+        <atomic-number>75</atomic-number>
+        <element>Rhenium</element>
+        <symbol>Re</symbol>
+        <atomic-weight>186.207</atomic-weight>
+        <period>6</period>
+        <group>7</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.56</ionic-radius>
+        <atomic-radius>2</atomic-radius>
+        <electronegativity>1.9</electronegativity>
+        <first-ionization-potential>7.8335</first-ionization-potential>
+        <density>21.02</density>
+        <melting-point-k>3453.15</melting-point-k>
+        <boiling-point-k>5869</boiling-point-k>
+        <isotopes>21</isotopes>
+        <discoverer>Noddack, Berg, and Tacke</discoverer>
+        <year-of-discovery>1925</year-of-discovery>
+        <specific-heat-capacity>0.137</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d5 6s2</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>7</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>76</id>
+      <fields>
+        <atomic-number>76</atomic-number>
+        <element>Osmium</element>
+        <symbol>Os</symbol>
+        <atomic-weight>190.23</atomic-weight>
+        <period>6</period>
+        <group>8</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.63</ionic-radius>
+        <atomic-radius>1.9</atomic-radius>
+        <electronegativity>2.2</electronegativity>
+        <first-ionization-potential>8.4382</first-ionization-potential>
+        <density>22.61</density>
+        <melting-point-k>3300.15</melting-point-k>
+        <boiling-point-k>5285</boiling-point-k>
+        <isotopes>19</isotopes>
+        <discoverer>Tennant</discoverer>
+        <year-of-discovery>1803</year-of-discovery>
+        <specific-heat-capacity>0.13</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d6 6s2</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>8</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>77</id>
+      <fields>
+        <atomic-number>77</atomic-number>
+        <element>Iridium</element>
+        <symbol>Ir</symbol>
+        <atomic-weight>192.217</atomic-weight>
+        <period>6</period>
+        <group>9</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.63</ionic-radius>
+        <atomic-radius>1.9</atomic-radius>
+        <electronegativity>2.2</electronegativity>
+        <first-ionization-potential>8.967</first-ionization-potential>
+        <density>22.56</density>
+        <melting-point-k>2716.15</melting-point-k>
+        <boiling-point-k>4701</boiling-point-k>
+        <isotopes>25</isotopes>
+        <discoverer>Tennant</discoverer>
+        <year-of-discovery>1804</year-of-discovery>
+        <specific-heat-capacity>0.131</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d7 6s2</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>9</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>78</id>
+      <fields>
+        <atomic-number>78</atomic-number>
+        <element>Platinum</element>
+        <symbol>Pt</symbol>
+        <atomic-weight>195.084</atomic-weight>
+        <period>6</period>
+        <group>10</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.63</ionic-radius>
+        <atomic-radius>1.8</atomic-radius>
+        <electronegativity>2.28</electronegativity>
+        <first-ionization-potential>8.9587</first-ionization-potential>
+        <density>21.46</density>
+        <melting-point-k>2045.15</melting-point-k>
+        <boiling-point-k>4098</boiling-point-k>
+        <isotopes>32</isotopes>
+        <discoverer>Ulloa/Wood</discoverer>
+        <year-of-discovery>1735</year-of-discovery>
+        <specific-heat-capacity>0.133</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d9 6s1</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>10</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>79</id>
+      <fields>
+        <atomic-number>79</atomic-number>
+        <element>Gold</element>
+        <symbol>Au</symbol>
+        <atomic-weight>196.966569</atomic-weight>
+        <period>6</period>
+        <group>11</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>0.85</ionic-radius>
+        <atomic-radius>1.8</atomic-radius>
+        <electronegativity>2.54</electronegativity>
+        <first-ionization-potential>9.2255</first-ionization-potential>
+        <density>19.282</density>
+        <melting-point-k>1337.73</melting-point-k>
+        <boiling-point-k>3129</boiling-point-k>
+        <isotopes>21</isotopes>
+        <discoverer>Prehistoric</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.129</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d10 6s1</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>11</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>80</id>
+      <fields>
+        <atomic-number>80</atomic-number>
+        <element>Mercury</element>
+        <symbol>Hg</symbol>
+        <atomic-weight>200.59</atomic-weight>
+        <period>6</period>
+        <group>12</group>
+        <phase>liq</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transition Metal</type>
+        <ionic-radius>1</ionic-radius>
+        <atomic-radius>1.8</atomic-radius>
+        <electronegativity>2</electronegativity>
+        <first-ionization-potential>10.4375</first-ionization-potential>
+        <density>13.5336</density>
+        <melting-point-k>234.43</melting-point-k>
+        <boiling-point-k>630</boiling-point-k>
+        <isotopes>26</isotopes>
+        <discoverer>Prehistoric</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.14</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d10 6s2</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>12</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>81</id>
+      <fields>
+        <atomic-number>81</atomic-number>
+        <element>Thallium</element>
+        <symbol>Tl</symbol>
+        <atomic-weight>204.3833</atomic-weight>
+        <period>6</period>
+        <group>13</group>
+        <phase>solid</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Metal</type>
+        <ionic-radius>1.5</ionic-radius>
+        <atomic-radius>2.1</atomic-radius>
+        <electronegativity>2.04</electronegativity>
+        <first-ionization-potential>6.1082</first-ionization-potential>
+        <density>11.85</density>
+        <melting-point-k>577.15</melting-point-k>
+        <boiling-point-k>1746</boiling-point-k>
+        <isotopes>28</isotopes>
+        <discoverer>Crookes</discoverer>
+        <year-of-discovery>1861</year-of-discovery>
+        <specific-heat-capacity>0.129</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d10 6s2 6p1</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>13</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>82</id>
+      <fields>
+        <atomic-number>82</atomic-number>
+        <element>Lead</element>
+        <symbol>Pb</symbol>
+        <atomic-weight>207.2</atomic-weight>
+        <period>6</period>
+        <group>14</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Metal</type>
+        <ionic-radius>1.2</ionic-radius>
+        <atomic-radius>1.8</atomic-radius>
+        <electronegativity>2.33</electronegativity>
+        <first-ionization-potential>7.4167</first-ionization-potential>
+        <density>11.342</density>
+        <melting-point-k>600.75</melting-point-k>
+        <boiling-point-k>2022</boiling-point-k>
+        <isotopes>29</isotopes>
+        <discoverer>Prehistoric</discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity>0.129</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d10 6s2 6p2</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>14</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>83</id>
+      <fields>
+        <atomic-number>83</atomic-number>
+        <element>Bismuth</element>
+        <symbol>Bi</symbol>
+        <atomic-weight>208.9804</atomic-weight>
+        <period>6</period>
+        <group>15</group>
+        <phase>solid</phase>
+        <most-stable-crystal>rho</most-stable-crystal>
+        <type>Metal</type>
+        <ionic-radius>1</ionic-radius>
+        <atomic-radius>1.6</atomic-radius>
+        <electronegativity>2.02</electronegativity>
+        <first-ionization-potential>7.2856</first-ionization-potential>
+        <density>9.807</density>
+        <melting-point-k>544.67</melting-point-k>
+        <boiling-point-k>1837</boiling-point-k>
+        <isotopes>19</isotopes>
+        <discoverer>Geoffroy the Younger</discoverer>
+        <year-of-discovery>1753</year-of-discovery>
+        <specific-heat-capacity>0.122</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d10 6s2 6p3</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>15</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>84</id>
+      <fields>
+        <atomic-number>84</atomic-number>
+        <element>Polonium</element>
+        <symbol>Po</symbol>
+        <atomic-weight>210</atomic-weight>
+        <period>6</period>
+        <group>16</group>
+        <phase>solid</phase>
+        <most-stable-crystal>cub</most-stable-crystal>
+        <type>Metalloid</type>
+        <ionic-radius>2.3</ionic-radius>
+        <atomic-radius>1.5</atomic-radius>
+        <electronegativity>2</electronegativity>
+        <first-ionization-potential>8.417</first-ionization-potential>
+        <density>9.32</density>
+        <melting-point-k>527.15</melting-point-k>
+        <boiling-point-k>1235</boiling-point-k>
+        <isotopes>34</isotopes>
+        <discoverer>Curie</discoverer>
+        <year-of-discovery>1898</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration>[Xe] 4f14 5d10 6s2 6p4</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>16</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>85</id>
+      <fields>
+        <atomic-number>85</atomic-number>
+        <element>Astatine</element>
+        <symbol>At</symbol>
+        <atomic-weight>210</atomic-weight>
+        <period>6</period>
+        <group>17</group>
+        <phase>solid</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Noble Gas</type>
+        <ionic-radius />
+        <atomic-radius>1.4</atomic-radius>
+        <electronegativity>2.2</electronegativity>
+        <first-ionization-potential>9.3</first-ionization-potential>
+        <density>7</density>
+        <melting-point-k>575.15</melting-point-k>
+        <boiling-point-k>610</boiling-point-k>
+        <isotopes>21</isotopes>
+        <discoverer>Corson et al.</discoverer>
+        <year-of-discovery>1940</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration>[Xe] 4f14 5d10 6s2 6p5</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>17</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>86</id>
+      <fields>
+        <atomic-number>86</atomic-number>
+        <element>Radon</element>
+        <symbol>Rn</symbol>
+        <atomic-weight>222</atomic-weight>
+        <period>6</period>
+        <group>18</group>
+        <phase>gas</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Alkali Metal</type>
+        <ionic-radius />
+        <atomic-radius>1.3</atomic-radius>
+        <electronegativity />
+        <first-ionization-potential>10.7485</first-ionization-potential>
+        <density>0.00973</density>
+        <melting-point-k>202.15</melting-point-k>
+        <boiling-point-k>211.3</boiling-point-k>
+        <isotopes>20</isotopes>
+        <discoverer>Dorn</discoverer>
+        <year-of-discovery>1900</year-of-discovery>
+        <specific-heat-capacity>0.094</specific-heat-capacity>
+        <electron-configuration>[Xe] 4f14 5d10 6s2 6p6</electron-configuration>
+        <display-PeriodicElement>6</display-PeriodicElement>
+        <display-column>18</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>87</id>
+      <fields>
+        <atomic-number>87</atomic-number>
+        <element>Francium</element>
+        <symbol>Fr</symbol>
+        <atomic-weight>223</atomic-weight>
+        <period>7</period>
+        <group>1</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Alkaline Earth Metal</type>
+        <ionic-radius>1.8</ionic-radius>
+        <atomic-radius />
+        <electronegativity>0.7</electronegativity>
+        <first-ionization-potential>4.0727</first-ionization-potential>
+        <density>1.87</density>
+        <melting-point-k>300.15</melting-point-k>
+        <boiling-point-k>950</boiling-point-k>
+        <isotopes>21</isotopes>
+        <discoverer>Perey</discoverer>
+        <year-of-discovery>1939</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration>[Rn] 7s1</electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>1</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>88</id>
+      <fields>
+        <atomic-number>88</atomic-number>
+        <element>Radium</element>
+        <symbol>Ra</symbol>
+        <atomic-weight>226</atomic-weight>
+        <period>7</period>
+        <group>2</group>
+        <phase>solid</phase>
+        <most-stable-crystal>bcc</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>1.4</ionic-radius>
+        <atomic-radius />
+        <electronegativity>0.9</electronegativity>
+        <first-ionization-potential>5.2784</first-ionization-potential>
+        <density>5.5</density>
+        <melting-point-k>973.15</melting-point-k>
+        <boiling-point-k>2010</boiling-point-k>
+        <isotopes>15</isotopes>
+        <discoverer>Pierre and Marie Curie</discoverer>
+        <year-of-discovery>1898</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration>[Rn] 7s2</electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>2</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>89</id>
+      <fields>
+        <atomic-number>89</atomic-number>
+        <element>Actinium</element>
+        <symbol>Ac</symbol>
+        <atomic-weight>227</atomic-weight>
+        <period>7</period>
+        <group>3</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>1.1</ionic-radius>
+        <atomic-radius />
+        <electronegativity>1.1</electronegativity>
+        <first-ionization-potential>5.17</first-ionization-potential>
+        <density>10.07</density>
+        <melting-point-k>1323.15</melting-point-k>
+        <boiling-point-k>3471</boiling-point-k>
+        <isotopes>11</isotopes>
+        <discoverer>Debierne/Giesel</discoverer>
+        <year-of-discovery>1899</year-of-discovery>
+        <specific-heat-capacity>0.12</specific-heat-capacity>
+        <electron-configuration>[Rn] 6d1 7s2</electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>3</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>90</id>
+      <fields>
+        <atomic-number>90</atomic-number>
+        <element>Thorium</element>
+        <symbol>Th</symbol>
+        <atomic-weight>232.03806</atomic-weight>
+        <period>7</period>
+        <group>19</group>
+        <phase>solid</phase>
+        <most-stable-crystal>fcc</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>0.97</ionic-radius>
+        <atomic-radius />
+        <electronegativity>1.3</electronegativity>
+        <first-ionization-potential>6.3067</first-ionization-potential>
+        <density>11.72</density>
+        <melting-point-k>2028.15</melting-point-k>
+        <boiling-point-k>5061</boiling-point-k>
+        <isotopes>12</isotopes>
+        <discoverer>Berzelius</discoverer>
+        <year-of-discovery>1828</year-of-discovery>
+        <specific-heat-capacity>0.113</specific-heat-capacity>
+        <electron-configuration>[Rn] 6d2 7s2</electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>4</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>91</id>
+      <fields>
+        <atomic-number>91</atomic-number>
+        <element>Protactinium</element>
+        <symbol>Pa</symbol>
+        <atomic-weight>231.03588</atomic-weight>
+        <period>7</period>
+        <group>20</group>
+        <phase>solid</phase>
+        <most-stable-crystal>orth</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>0.78</ionic-radius>
+        <atomic-radius />
+        <electronegativity>1.5</electronegativity>
+        <first-ionization-potential>5.89</first-ionization-potential>
+        <density>15.37</density>
+        <melting-point-k>1873.15</melting-point-k>
+        <boiling-point-k>4300</boiling-point-k>
+        <isotopes>14</isotopes>
+        <discoverer>Hahn and Meitner</discoverer>
+        <year-of-discovery>1917</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration>[Rn] 5f2 6d1 7s2</electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>5</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>92</id>
+      <fields>
+        <atomic-number>92</atomic-number>
+        <element>Uranium</element>
+        <symbol>U</symbol>
+        <atomic-weight>238.02891</atomic-weight>
+        <period>7</period>
+        <group>21</group>
+        <phase>solid</phase>
+        <most-stable-crystal>orth</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>0.52</ionic-radius>
+        <atomic-radius />
+        <electronegativity>1.38</electronegativity>
+        <first-ionization-potential>6.1941</first-ionization-potential>
+        <density>18.95</density>
+        <melting-point-k>1405.15</melting-point-k>
+        <boiling-point-k>4404</boiling-point-k>
+        <isotopes>15</isotopes>
+        <discoverer>Peligot</discoverer>
+        <year-of-discovery>1841</year-of-discovery>
+        <specific-heat-capacity>0.116</specific-heat-capacity>
+        <electron-configuration>[Rn] 5f3 6d1 7s2</electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>6</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>93</id>
+      <fields>
+        <atomic-number>93</atomic-number>
+        <element>Neptunium</element>
+        <symbol>Np</symbol>
+        <atomic-weight>237</atomic-weight>
+        <period>7</period>
+        <group>22</group>
+        <phase>artificial</phase>
+        <most-stable-crystal>orth</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>0.75</ionic-radius>
+        <atomic-radius />
+        <electronegativity>1.36</electronegativity>
+        <first-ionization-potential>6.2657</first-ionization-potential>
+        <density>20.45</density>
+        <melting-point-k>913.15</melting-point-k>
+        <boiling-point-k>4273</boiling-point-k>
+        <isotopes>153</isotopes>
+        <discoverer>McMillan and Abelson</discoverer>
+        <year-of-discovery>1940</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration>[Rn] 5f4 6d1 7s2</electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>7</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>94</id>
+      <fields>
+        <atomic-number>94</atomic-number>
+        <element>Plutonium</element>
+        <symbol>Pu</symbol>
+        <atomic-weight>244</atomic-weight>
+        <period>7</period>
+        <group>23</group>
+        <phase>artificial</phase>
+        <most-stable-crystal>mno</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>0.89</ionic-radius>
+        <atomic-radius />
+        <electronegativity>1.28</electronegativity>
+        <first-ionization-potential>6.0262</first-ionization-potential>
+        <density>19.84</density>
+        <melting-point-k>913.15</melting-point-k>
+        <boiling-point-k>3501</boiling-point-k>
+        <isotopes>163</isotopes>
+        <discoverer>Seaborg et al.</discoverer>
+        <year-of-discovery>1940</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration>[Rn] 5f6 7s2</electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>8</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>95</id>
+      <fields>
+        <atomic-number>95</atomic-number>
+        <element>Americium</element>
+        <symbol>Am</symbol>
+        <atomic-weight>243</atomic-weight>
+        <period>7</period>
+        <group>24</group>
+        <phase>artificial</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>0.98</ionic-radius>
+        <atomic-radius />
+        <electronegativity>1.3</electronegativity>
+        <first-ionization-potential>5.9738</first-ionization-potential>
+        <density>13.69</density>
+        <melting-point-k>1267.15</melting-point-k>
+        <boiling-point-k>2880</boiling-point-k>
+        <isotopes>133</isotopes>
+        <discoverer>Seaborg et al.</discoverer>
+        <year-of-discovery>1944</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration>[Rn] 5f7 7s2</electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>9</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>96</id>
+      <fields>
+        <atomic-number>96</atomic-number>
+        <element>Curium</element>
+        <symbol>Cm</symbol>
+        <atomic-weight>247</atomic-weight>
+        <period>7</period>
+        <group>25</group>
+        <phase>artificial</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>0.97</ionic-radius>
+        <atomic-radius />
+        <electronegativity>1.3</electronegativity>
+        <first-ionization-potential>5.9915</first-ionization-potential>
+        <density>13.51</density>
+        <melting-point-k>1340.15</melting-point-k>
+        <boiling-point-k>3383</boiling-point-k>
+        <isotopes>133</isotopes>
+        <discoverer>Seaborg et al.</discoverer>
+        <year-of-discovery>1944</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>10</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>97</id>
+      <fields>
+        <atomic-number>97</atomic-number>
+        <element>Berkelium</element>
+        <symbol>Bk</symbol>
+        <atomic-weight>247</atomic-weight>
+        <period>7</period>
+        <group>26</group>
+        <phase>artificial</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>0.95</ionic-radius>
+        <atomic-radius />
+        <electronegativity>1.3</electronegativity>
+        <first-ionization-potential>6.1979</first-ionization-potential>
+        <density>14.79</density>
+        <melting-point-k>1259.15</melting-point-k>
+        <boiling-point-k>983</boiling-point-k>
+        <isotopes>83</isotopes>
+        <discoverer>Seaborg et al.</discoverer>
+        <year-of-discovery>1949</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>11</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>98</id>
+      <fields>
+        <atomic-number>98</atomic-number>
+        <element>Californium</element>
+        <symbol>Cf</symbol>
+        <atomic-weight>251</atomic-weight>
+        <period>7</period>
+        <group>27</group>
+        <phase>artificial</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius>0.93</ionic-radius>
+        <atomic-radius />
+        <electronegativity>1.3</electronegativity>
+        <first-ionization-potential>6.2817</first-ionization-potential>
+        <density>15.1</density>
+        <melting-point-k>1925.15</melting-point-k>
+        <boiling-point-k>1173</boiling-point-k>
+        <isotopes>123</isotopes>
+        <discoverer>Seaborg et al.</discoverer>
+        <year-of-discovery>1950</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>12</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>99</id>
+      <fields>
+        <atomic-number>99</atomic-number>
+        <element>Einsteinium</element>
+        <symbol>Es</symbol>
+        <atomic-weight>252</atomic-weight>
+        <period>7</period>
+        <group>28</group>
+        <phase>artificial</phase>
+        <most-stable-crystal>hex</most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity>1.3</electronegativity>
+        <first-ionization-potential>6.42</first-ionization-potential>
+        <density>13.5</density>
+        <melting-point-k>1133.15</melting-point-k>
+        <boiling-point-k />
+        <isotopes>123</isotopes>
+        <discoverer>Ghiorso et al.</discoverer>
+        <year-of-discovery>1952</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>13</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>100</id>
+      <fields>
+        <atomic-number>100</atomic-number>
+        <element>Fermium</element>
+        <symbol>Fm</symbol>
+        <atomic-weight>257</atomic-weight>
+        <period>7</period>
+        <group>29</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity>1.3</electronegativity>
+        <first-ionization-potential>6.5</first-ionization-potential>
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes>103</isotopes>
+        <discoverer>Ghiorso et al.</discoverer>
+        <year-of-discovery>1953</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>14</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>101</id>
+      <fields>
+        <atomic-number>101</atomic-number>
+        <element>Mendelevium</element>
+        <symbol>Md</symbol>
+        <atomic-weight>258</atomic-weight>
+        <period>7</period>
+        <group>30</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity>1.3</electronegativity>
+        <first-ionization-potential>6.58</first-ionization-potential>
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes>33</isotopes>
+        <discoverer>Ghiorso et al.</discoverer>
+        <year-of-discovery>1955</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>15</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>102</id>
+      <fields>
+        <atomic-number>102</atomic-number>
+        <element>Nobelium</element>
+        <symbol>No</symbol>
+        <atomic-weight>259</atomic-weight>
+        <period>7</period>
+        <group>31</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity>1.3</electronegativity>
+        <first-ionization-potential>6.65</first-ionization-potential>
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes>73</isotopes>
+        <discoverer>Ghiorso et al.</discoverer>
+        <year-of-discovery>1958</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>16</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>103</id>
+      <fields>
+        <atomic-number>103</atomic-number>
+        <element>Lawrencium</element>
+        <symbol>Lr</symbol>
+        <atomic-weight>262</atomic-weight>
+        <period>7</period>
+        <group>32</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Actinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes>203</isotopes>
+        <discoverer>Ghiorso et al.</discoverer>
+        <year-of-discovery>1961</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>9</display-PeriodicElement>
+        <display-column>17</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>104</id>
+      <fields>
+        <atomic-number>104</atomic-number>
+        <element>Rutherfordium</element>
+        <symbol>Rf</symbol>
+        <atomic-weight>261</atomic-weight>
+        <period>7</period>
+        <group>4</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density>18.1</density>
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer>Ghiorso et al.</discoverer>
+        <year-of-discovery>1969</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>4</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>105</id>
+      <fields>
+        <atomic-number>105</atomic-number>
+        <element>Dubnium</element>
+        <symbol>Db</symbol>
+        <atomic-weight>262</atomic-weight>
+        <period>7</period>
+        <group>5</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density>39</density>
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer>Ghiorso et al.</discoverer>
+        <year-of-discovery>1970</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>5</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>106</id>
+      <fields>
+        <atomic-number>106</atomic-number>
+        <element>Seaborgium</element>
+        <symbol>Sg</symbol>
+        <atomic-weight>266</atomic-weight>
+        <period>7</period>
+        <group>6</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density>35</density>
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer>Ghiorso et al.</discoverer>
+        <year-of-discovery>1974</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>6</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>107</id>
+      <fields>
+        <atomic-number>107</atomic-number>
+        <element>Bohrium</element>
+        <symbol>Bh</symbol>
+        <atomic-weight>264</atomic-weight>
+        <period>7</period>
+        <group>7</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density>37</density>
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer>Armbruster and M�nzenberg</discoverer>
+        <year-of-discovery>1981</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>7</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>108</id>
+      <fields>
+        <atomic-number>108</atomic-number>
+        <element>Hassium</element>
+        <symbol>Hs</symbol>
+        <atomic-weight>267</atomic-weight>
+        <period>7</period>
+        <group>8</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density>41</density>
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer>Armbruster and M�nzenberg</discoverer>
+        <year-of-discovery>1983</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>8</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>109</id>
+      <fields>
+        <atomic-number>109</atomic-number>
+        <element>Meitnerium</element>
+        <symbol>Mt</symbol>
+        <atomic-weight>268</atomic-weight>
+        <period>7</period>
+        <group>9</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density>35</density>
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer>GSI, Darmstadt, West Germany</discoverer>
+        <year-of-discovery>1982</year-of-discovery>
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>9</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>110</id>
+      <fields>
+        <atomic-number>110</atomic-number>
+        <element>Darmstadtium</element>
+        <symbol>Ds</symbol>
+        <atomic-weight>271</atomic-weight>
+        <period>7</period>
+        <group>10</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer></discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>10</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>111</id>
+      <fields>
+        <atomic-number>111</atomic-number>
+        <element>Roentgenium</element>
+        <symbol>Rg</symbol>
+        <atomic-weight>272</atomic-weight>
+        <period>7</period>
+        <group>11</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer></discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>11</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>112</id>
+      <fields>
+        <atomic-number>112</atomic-number>
+        <element>Copernicium</element>
+        <symbol>Cn</symbol>
+        <atomic-weight>285</atomic-weight>
+        <period>7</period>
+        <group>12</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer></discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>12</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>113</id>
+      <fields>
+        <atomic-number>113</atomic-number>
+        <element>Ununtrium</element>
+        <symbol>Uut</symbol>
+        <atomic-weight>284</atomic-weight>
+        <period>7</period>
+        <group>13</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type></type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer></discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>13</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>114</id>
+      <fields>
+        <atomic-number>114</atomic-number>
+        <element>Ununquadium</element>
+        <symbol>Uuq</symbol>
+        <atomic-weight>289</atomic-weight>
+        <period>7</period>
+        <group>14</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer></discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>14</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>115</id>
+      <fields>
+        <atomic-number>115</atomic-number>
+        <element>Ununpentium</element>
+        <symbol>Uup</symbol>
+        <atomic-weight>288</atomic-weight>
+        <period>7</period>
+        <group>15</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type></type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer></discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>15</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>116</id>
+      <fields>
+        <atomic-number>116</atomic-number>
+        <element>Ununhexium</element>
+        <symbol>Uuh</symbol>
+        <atomic-weight>292</atomic-weight>
+        <period>7</period>
+        <group>16</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Transactinide</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer></discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>16</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>117</id>
+      <fields>
+        <atomic-number>117</atomic-number>
+        <element>Ununseptium</element>
+        <symbol>Uus</symbol>
+        <atomic-weight>295</atomic-weight>
+        <period>7</period>
+        <group>17</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type></type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer></discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>17</display-column>
+      </fields>
+    </PeriodicElement>
+    <PeriodicElement>
+      <id>118</id>
+      <fields>
+        <atomic-number>118</atomic-number>
+        <element>Ununoctium</element>
+        <symbol>Uuo</symbol>
+        <atomic-weight>294</atomic-weight>
+        <period>7</period>
+        <group>18</group>
+        <phase>artificial</phase>
+        <most-stable-crystal></most-stable-crystal>
+        <type>Noble Gas</type>
+        <ionic-radius />
+        <atomic-radius />
+        <electronegativity />
+        <first-ionization-potential />
+        <density />
+        <melting-point-k />
+        <boiling-point-k />
+        <isotopes />
+        <discoverer></discoverer>
+        <year-of-discovery />
+        <specific-heat-capacity />
+        <electron-configuration></electron-configuration>
+        <display-PeriodicElement>7</display-PeriodicElement>
+        <display-column>18</display-column>
+      </fields>
+    </PeriodicElement>
+  </Elements>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.CustomizingAxesSample" x:Name="page">
+	 <StackLayout>
+    <Grid  VerticalOptions="FillAndExpand">
+    <c1:FlexChart x:Name="flexChart" BindingX="Name" VerticalOptions="FillAndExpand">
+      <c1:FlexChart.Series>
+        <c1:ChartSeries Binding="Sales" SeriesName="Sales" />
+        <c1:ChartSeries Binding="Expenses" SeriesName="Expenses" />
+      </c1:FlexChart.Series>
+      <c1:FlexChart.AxisX>
+        <c1:ChartAxis   AxisLine="true" 
+                        Title="Country"
+                        MajorGrid="False"
+                        MinorTickMarks="Cross"
+                        MajorTickMarks="Cross"
+                        />
+      </c1:FlexChart.AxisX>
+      <!--<c1:FlexChart.AxisY>
+        <c1:ChartAxis LineWidth="2"
+                        MajorTickWidth = "2"
+                        MajorTickOverlap= "0"
+                        MajorGridColor = "#C4C4C4"
+                        MajorGridWidth = "1"
+                        MajorGridFill = "#66C4C4C4"
+                        MinorGridVisible= "true"
+                        MinorGridWidth ="0.5"
+                        MinorGridDashes ="4,4"
+                        AxisLineVisible = "true"
+                        MinorTickWidth="1"
+                      
+                        Max="10000"
+                        MajorUnit="2000"/>
+      </c1:FlexChart.AxisY>-->
+    </c1:FlexChart>
+    </Grid>
+  </StackLayout>
+</ContentPage>

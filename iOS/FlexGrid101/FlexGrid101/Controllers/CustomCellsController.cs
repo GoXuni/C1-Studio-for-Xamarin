@@ -26,7 +26,7 @@ namespace FlexGrid101
 
     public class GridRadialGaugeColumn : GridColumn
     {
-        protected override object GetCellContentType(GridCellType cellType)
+        protected override object GetCellContentType(GridCellType cellType, GridRow row)
         {
             if (cellType == GridCellType.Cell)
             {
@@ -34,11 +34,11 @@ namespace FlexGrid101
             }
             else
             {
-                return base.GetCellContentType(cellType);
+                return base.GetCellContentType(cellType, row);
             }
         }
 
-        protected override UIView CreateCellContent(GridCellType cellType, object cellContentType)
+        protected override UIView CreateCellContent(GridCellType cellType, object cellContentType, GridRow row)
         {
             if (cellType == GridCellType.Cell)
             {
@@ -51,7 +51,7 @@ namespace FlexGrid101
             }
             else
             {
-                return base.CreateCellContent(cellType, cellContentType);
+                return base.CreateCellContent(cellType, cellContentType, row);
             }
         }
 

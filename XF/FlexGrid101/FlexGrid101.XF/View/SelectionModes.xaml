@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexGrid101.SelectionModes"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
+    <StackLayout>
+        <Picker x:Name="selectionMode" Title="SelectionMode" SelectedIndexChanged="SelectionModeChanged"/>
+        <StackLayout Orientation="Horizontal" Spacing="4">
+            <Label Text="ShowMarquee" VerticalOptions="Center" />
+            <Switch x:Name="switchMarquee" BindingContext="{x:Reference grid}" IsToggled="{Binding ShowMarquee, Mode=TwoWay}" />
+        </StackLayout>
+        <Label x:Name="lblSelection" />
+        <Grid VerticalOptions="FillAndExpand">
+            <c1:FlexGrid x:Name="grid" HeadersVisibility="All" ShowMarquee="True" AllowResizing="Both" SelectionChanging="OnSelectionChanging" SelectionChanged="OnSelectionChanged"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

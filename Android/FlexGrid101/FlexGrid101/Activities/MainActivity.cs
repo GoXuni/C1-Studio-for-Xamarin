@@ -1,21 +1,27 @@
 ﻿using Android.App;
-using Android.Widget;
 using Android.OS;
 using Android.Support.V7.Widget;
-using System;
+using Android.Support.V7.App;
 using Android.Views;
+using Android.Widget;
+using System;
 using Android.Content.PM;
+
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
-    [Activity(Label = "@string/ApplicationName", MainLauncher = true, Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class MainActivity : Activity
+    [Activity(Label = "@string/ApplicationName", MainLauncher = true, Theme = "@style/MyTheme", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             C1.Android.Core.LicenseManager.Key = License.Key;
             SetContentView(Resource.Layout.Main);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
 
             var recyclerView = FindViewById<RecyclerView>(Resource.Id.RecyclerView);
             recyclerView.SetLayoutManager(new LinearLayoutManager(BaseContext));
@@ -78,6 +84,9 @@ namespace FlexGrid101
                     case 17:
                         StartActivity(typeof(CustomAppearanceActivity));
                         break;
+                    case 18:
+                        StartActivity(typeof(NewRowActivity));
+                        break;
                 }
             };
             recyclerView.SetAdapter(adapter);
@@ -91,7 +100,7 @@ namespace FlexGrid101
         {
             get
             {
-                return 18;
+                return 19;
             }
         }
 
@@ -205,6 +214,11 @@ namespace FlexGrid101
                 case 17:
                     h.SetTitle(resources.GetString(Resource.String.CustomAppearanceTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.CustomAppearanceDescription));
+                    h.SetIcon(Resource.Drawable.flexgrid);
+                    break;
+                case 18:
+                    h.SetTitle(resources.GetString(Resource.String.NewRowTitle));
+                    h.SetSubtitle(resources.GetString(Resource.String.NewRowDescription));
                     h.SetIcon(Resource.Drawable.flexgrid);
                     break;
             }

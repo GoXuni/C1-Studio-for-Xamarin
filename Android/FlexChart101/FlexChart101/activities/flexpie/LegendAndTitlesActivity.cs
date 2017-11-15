@@ -7,12 +7,15 @@ using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
 using C1.Android.Chart;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101.Pie
 {
     [Activity(Label = "@string/legend_and_titles", MainLauncher = false, Icon = "@drawable/pie_title")]
 
-    public class LegendAndTitlesActivity : Activity
+    public class LegendAndTitlesActivity : AppCompatActivity
     {
         private FlexPie mFlexPie;
         private EditText mHeaderValue;
@@ -23,6 +26,12 @@ namespace FlexChart101.Pie
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.flexpie_activity_legend_and_titles);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.legend_and_titles);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widgets
             mFlexPie = (FlexPie)FindViewById(Resource.Id.flexPie);
@@ -95,6 +104,18 @@ namespace FlexChart101.Pie
                 case 5:
                     mFlexPie.LegendPosition = ChartPositionType.Auto;
                     break;
+            }
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
             }
         }
     }

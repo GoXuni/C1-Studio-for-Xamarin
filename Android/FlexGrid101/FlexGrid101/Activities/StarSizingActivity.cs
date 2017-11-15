@@ -5,17 +5,25 @@ using Android.Graphics;
 using Android.OS;
 using C1.Android.Core;
 using C1.Android.Grid;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Views;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/StarSizingTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class StarSizingActivity : Activity
+    public class StarSizingActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.GettingStarted);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.StarSizingTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             grid.HeadersVisibility = GridHeadersVisibility.Column;
@@ -37,6 +45,18 @@ namespace FlexGrid101
             grid.Columns.Add(new GridColumn { Binding = "OrderTotal", Width = GridLength.Star, Format = "N", HorizontalAlignment = Android.Views.GravityFlags.Right });
             var data = Customer.GetCustomerList(100);
             grid.ItemsSource = data;
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
         }
     }
 }

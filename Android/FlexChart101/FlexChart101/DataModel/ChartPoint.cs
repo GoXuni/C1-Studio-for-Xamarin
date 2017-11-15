@@ -38,6 +38,7 @@ namespace FlexChart101.DataModel
         private double precipitation;
         private int temperature;
         private char letter;
+        private int index;
 
         public string Name
         {
@@ -77,6 +78,19 @@ namespace FlexChart101.DataModel
                 sales = value;
             }
         }
+
+		public int Index
+		{
+			get
+			{
+				return index;
+			}
+
+			set
+			{
+				index = value;
+			}
+		}
 
         public int Expenses
         {
@@ -300,6 +314,13 @@ namespace FlexChart101.DataModel
             this.Precipitation = precipitation;
             this.Temperature = temperature;
         }
+
+		public ChartPoint(String month, int high, int low)
+		{
+			this.Month = month;
+            this.high = high;
+            this.low = low;
+		}
 
         // a method to create a list of random objects of type ChartPoint
         public static IList<object> GetList()

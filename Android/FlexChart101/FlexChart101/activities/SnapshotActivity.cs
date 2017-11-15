@@ -11,6 +11,10 @@ using C1.Android.Core;
 using FlexChart101.DataModel;
 using System;
 using System.Threading.Tasks;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+
 
 namespace FlexChart101
 {
@@ -48,6 +52,11 @@ namespace FlexChart101
                     return true;
                 }
             }
+            else if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
             return base.OnOptionsItemSelected(item);
         }
 
@@ -65,6 +74,11 @@ namespace FlexChart101
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_snapshot);
 
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.snapshot);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
             // initializing widget
             mChart = this.FindViewById<FlexChart>(Resource.Id.flexchart);
 
@@ -126,7 +140,7 @@ namespace FlexChart101
             }
             else
             {
-                new AlertDialog.Builder(this).SetMessage(Resource.String.permissionDenied).SetPositiveButton(Resource.String.positive_button, (IDialogInterfaceOnClickListener)null).Show();
+                new Android.App.AlertDialog.Builder(this).SetMessage(Resource.String.permissionDenied).SetPositiveButton(Resource.String.positive_button, (IDialogInterfaceOnClickListener)null).Show();
             }
         }
     }

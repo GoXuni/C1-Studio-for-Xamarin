@@ -5,17 +5,25 @@ using Android.OS;
 using Android.Widget;
 using System;
 using C1.Android.Grid;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Views;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/SelectionModesTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class SelectionModesActivity : Activity
+    public class SelectionModesActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.SelectionModes);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.SelectionModesTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             var modes = FindViewById<Spinner>(Resource.Id.Spinner);
@@ -35,7 +43,18 @@ namespace FlexGrid101
             grid.ItemsSource = Customer.GetCustomerList(100);
             grid.SelectionChanged += OnSelectionChanged;
         }
-
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
         TextView SelectionTextView { get; set; }
         private void OnSelectionChanged(object sender, GridCellRangeEventArgs e)
         {

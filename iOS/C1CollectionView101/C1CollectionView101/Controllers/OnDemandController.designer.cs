@@ -1,6 +1,6 @@
 ﻿// WARNING
 //
-// This file has been generated automatically by Xamarin Studio from the outlets and
+// This file has been generated automatically by Visual Studio from the outlets and
 // actions declared in your storyboard file.
 // Manual changes to this file will not be maintained.
 //
@@ -15,22 +15,22 @@ namespace C1CollectionView101
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField SearchField { get; set; }
+        UIKit.UICollectionView CollectionView { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView TableView { get; set; }
+        UIKit.UITextField SearchField { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (CollectionView != null) {
+                CollectionView.Dispose ();
+                CollectionView = null;
+            }
+
             if (SearchField != null) {
                 SearchField.Dispose ();
                 SearchField = null;
-            }
-
-            if (TableView != null) {
-                TableView.Dispose ();
-                TableView = null;
             }
         }
     }

@@ -4,18 +4,27 @@ using Android.OS;
 using Android.Views;
 using System;
 using C1.Android.Calendar;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+
 
 namespace C1Calendar101
 {
     [Activity(Label = "@string/custom_selection", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class CustomSelectionActivity : Activity
+    public class CustomSelectionActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            ActionBar.SetDisplayHomeAsUpEnabled(true);
 
             SetContentView(Resource.Layout.CustomSelection);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.custom_selection);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
+
             var calendar = FindViewById<C1Calendar>(Resource.Id.Calendar);
             calendar.SelectionChanging += OnSelectionChanging;
         }

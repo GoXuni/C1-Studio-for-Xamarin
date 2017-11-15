@@ -23,20 +23,20 @@ namespace FlexGrid101
             cell.Padding = ImagePadding;
         }
 
-        protected override object GetCellContentType(GridCellType cellType)
+        protected override object GetCellContentType(GridCellType cellType, GridRow row)
         {
             if (cellType == GridCellType.Cell)
                 return typeof(ImageView);
             else
-                return base.GetCellContentType(cellType);
+                return base.GetCellContentType(cellType, row);
         }
 
-        protected override View CreateCellContent(GridCellType cellType, object cellContentType)
+        protected override View CreateCellContent(GridCellType cellType, object cellContentType, GridRow row)
         {
             if (cellType == GridCellType.Cell)
                 return new ImageView(Grid.Context);
             else
-                return base.CreateCellContent(cellType, cellContentType);
+                return base.CreateCellContent(cellType, cellContentType, row);
         }
 
         protected override void BindCellContent(View cellContent, GridCellType cellType, GridRow row)

@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1CollectionView101.Xamarin", "C1CollectionView101.Xamarin\C1CollectionView101.Xamarin.csproj", "{5B114140-C913-4AAB-9A84-8B2553FC7AD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1CollectionView101.XF", "C1CollectionView101.XF\C1CollectionView101.XF.csproj", "{5B114140-C913-4AAB-9A84-8B2553FC7AD1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1CollectionView101.Android", "C1CollectionView101.Android\C1CollectionView101.Android.csproj", "{18085C60-78BB-415B-B05B-A26B4CCFAAE4}"
 EndProject

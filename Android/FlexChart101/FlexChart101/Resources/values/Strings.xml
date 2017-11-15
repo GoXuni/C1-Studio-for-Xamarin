@@ -55,6 +55,8 @@
   <string name="snapshotDesc">Shows how to export an image of FlexChart</string>
   <string name="scaling">Chart Scaling</string>
   <string name="scalingDesc">Shows how to use logarithmic axes to spread clustered data</string>
+  <string name="sunburstGettingStarted">Shows a sunburst chart</string>
+  <string name="sunburstGettingStartedDesc">Shows a simple sunburst chart</string>
 
   <string name="chartType">Chart Type</string>
   <string name="stacking">Stacking</string>
@@ -94,7 +96,7 @@
   <string name="annotationDesc">Shows a chart with different kinds of annotations</string>
   <string name="zones">Zones</string>
   <string name="zonesDesc">Shows a zones chart</string>
-  <string name="permissionDenied">The permission is denied by user.</string>
+  <string name="permision_denied">The permission is denied by user.</string>
   <string name="positive_button">OK</string>
 
   <string-array name="chartTypeSpinnerValues">
@@ -146,10 +148,10 @@
     <item>All</item>
   </string-array>
   <string-array name="zoomModeSpinnerValues">
-    <item>XY</item>
+    <item>Disabled</item>
     <item>X</item>
     <item>Y</item>
-    <item>Disabled</item>
+    <item>XY</item>
   </string-array>
   <string-array name="updatePositionSpinnerValues">
     <item>Beginning</item>
@@ -163,6 +165,20 @@
     <item>Right</item>
     <item>Bottom</item>
     <item>Center</item>
+  </string-array>
+
+  <string-array name="lineMarkerLines">
+    <item>None</item>
+    <item>Vertical</item>
+    <item>Horizontal</item>
+    <item>Both</item>
+  </string-array>
+  <string-array name="lineMarkerAlignment">
+    <item>Auto</item>
+    <item>Bottom</item>
+    <item>Left</item>
+    <item>Right</item>
+    <item>Top</item>
   </string-array>
   <string-array name="lineMarkerInteraction">
     <item>Move</item>

@@ -8,11 +8,14 @@ using Android.OS;
 using C1.Android.Gauge;
 using Android.Graphics;
 using Java.Util;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Gauge101
 {
     [Activity(Label = "@string/displaying_values", MainLauncher = false, Icon = "@drawable/gauge_radial")]
-    public class DisplayingValuesActivity : Activity
+    public class DisplayingValuesActivity : AppCompatActivity
     {
         private C1LinearGauge mLinearGauge;
         private Spinner mShowTextSpinner;
@@ -25,6 +28,12 @@ namespace C1Gauge101
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.activity_displaying_values);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.displaying_values);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widgets
             mLinearGauge = (C1LinearGauge)FindViewById(Resource.Id.linearGauge1);
@@ -132,7 +141,18 @@ namespace C1Gauge101
             mLinearGauge.Ranges.Add(range);
             mRadialGauge.Ranges.Add(range);
         }
-
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
     }
 }
 

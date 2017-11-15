@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Input;assembly=C1.Xamarin.Forms.Input"
+             xmlns:calendar="clr-namespace:C1.Xamarin.Forms.Calendar;assembly=C1.Xamarin.Forms.Calendar"
+             x:Class="C1Input101.DropDownSample"
+             Padding="20">
+    <StackLayout Orientation="Vertical">
+        <c1:C1DropDown IsEditable="True" x:Name="dropdown" DropDownMode="BelowOrAbove" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+            <c1:C1DropDown.Header>
+                <c1:C1MaskedEntry x:Name="mask" Mask="00/00/0000"/>
+            </c1:C1DropDown.Header>
+            <c1:C1DropDown.DropDown>
+                <calendar:C1Calendar x:Name="calendar" HorizontalOptions="FillAndExpand" DayOfWeekFormat="d"  BackgroundColor="Transparent" WidthRequest="290" HeightRequest="290" />
+            </c1:C1DropDown.DropDown>
+        </c1:C1DropDown>
+    </StackLayout>
+</ContentPage>

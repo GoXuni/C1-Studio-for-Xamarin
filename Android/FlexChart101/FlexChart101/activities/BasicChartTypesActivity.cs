@@ -14,6 +14,9 @@ using FlexChart101.DataModel;
 using Java.Lang;
 
 using C1.Android.Chart;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
@@ -29,6 +32,12 @@ namespace FlexChart101
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_basic_chart_types);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.basicChartTypes);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widgets
             mChart = (FlexChart)FindViewById(Resource.Id.flexchart);
@@ -147,7 +156,18 @@ namespace FlexChart101
                     break;
             }
         }
-       
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
     }
 }
 

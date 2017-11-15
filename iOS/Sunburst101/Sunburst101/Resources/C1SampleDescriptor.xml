@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ArrayOfSample xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Sample>
+        <Title>Getting Started</Title>
+        <Description>Shows a simple sunburst chart with tooltips.</Description>
+        <Image>Images/GettingStarted.png</Image>
+        <StoryboardID>FlexPie Getting Started</StoryboardID>
+    </Sample>
+  <Sample>
+    <Title>Group Collection</Title>
+    <Description>Shows Sunburst chart with grouped CollectionView.</Description>
+    <Image>Images/GroupCollection.png</Image>
+    <StoryboardID>FlexPie Group</StoryboardID>
+  </Sample>
+    <Sample>
+        <Title>Basic Features</Title>
+        <Description>Shows inner radius, offset, and start angle.</Description>
+        <Image>Images/BasicFeatures.png</Image>
+        <StoryboardID>FlexPie Basic Features</StoryboardID>
+    </Sample>
+  <Sample>
+    <Title>Legend And Titles</Title>
+    <Description>Shows header,footer and legend positioning.</Description>
+    <Image>Images/LegendAndTitles.png</Image>
+    <StoryboardID>FlexPie Legend And Titles</StoryboardID>
+  </Sample>
+    <Sample>
+        <Title>Selection</Title>
+        <Description>Shows selection animation, offset, and positioning.</Description>
+        <Image>Images/Selection.png</Image>
+        <StoryboardID>FlexPie Selection</StoryboardID>
+    </Sample>
+
+	<Sample>
+        <Title>Periodic Table</Title>
+        <Description>Shows periodic table in sunburst.</Description>
+        <Image>Images/Selection.png</Image>
+        <StoryboardID>Periodic</StoryboardID>
+    </Sample>
+</ArrayOfSample>

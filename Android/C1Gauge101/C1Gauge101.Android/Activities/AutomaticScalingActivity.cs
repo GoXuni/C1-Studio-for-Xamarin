@@ -6,12 +6,14 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using C1.Android.Gauge;
-using Android.Graphics;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Gauge101
 {
     [Activity(Label = "@string/automatic_scaling", MainLauncher = false, Icon = "@drawable/gauge_scaling")]
-    public class AutomaticScalingActivity : Activity
+    public class AutomaticScalingActivity : AppCompatActivity
     {
         private C1RadialGauge mRadialGauge;
         private TextView mStartText;
@@ -27,6 +29,13 @@ namespace C1Gauge101
             base.OnCreate(bundle);
 
             SetContentView(Resource.Layout.activity_automatic_scaling);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.automatic_scaling);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
+
             // initialize required widgets
             mStartText = (TextView)FindViewById(Resource.Id.startAngleText);
             mSweepText = (TextView)FindViewById(Resource.Id.sweepAngleText);
@@ -131,7 +140,19 @@ namespace C1Gauge101
                     break;
             }
         }
-       
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
+
     }
 }
 

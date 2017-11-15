@@ -1,4 +1,8 @@
+using C1.CollectionView;
+using C1.iOS.CollectionView;
+using CoreGraphics;
 using System;
+using System.Threading.Tasks;
 using UIKit;
 
 namespace C1CollectionView101
@@ -14,15 +18,28 @@ namespace C1CollectionView101
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            Load();
+        }
 
-            var refreshControl = new UIRefreshControl();
-            TableView.AddSubview(refreshControl);
+        private async void Load()
+        {
+            CollectionView.BackgroundColor = UIColor.White;
             SearchField.EditingChanged += OnSearchEditingChanged;
             SearchField.ShouldReturn = new UITextFieldCondition(tf => { tf.ResignFirstResponder(); return true; });
             _collectionView = new YouTubeCollectionView();
-            var source = new YouTubeTableViewSource(TableView, _collectionView, refreshControl);
-            source.EmptyMessage = Foundation.NSBundle.MainBundle.LocalizedString("EmptyText", ""); ;
-            TableView.Source = source;
+            _collectionView.PageSize = 50;
+            var itemSize = 100;
+            var grouping = new C1GroupCollectionView<YouTubeVideo>(_collectionView, false);
+            await grouping.GroupAsync("PublishedDay");
+            var source = new YouTubeCollectionViewSource(CollectionView);
+            source.ItemsSource = grouping;
+            source.EmptyMessageLabel.TextColor = UIColor.Black;
+            source.EmptyMessageLabel.Text = Foundation.NSBundle.MainBundle.LocalizedString("EmptyText", ""); ;
+            var layout = new C1CollectionViewFlowLayout();
+            layout.SectionHeadersPinToVisibleBounds = true;
+            layout.EstimatedItemSize = new CGSize(itemSize, itemSize);
+            source.CollectionViewLayout = layout;
+            CollectionView.Source = source;
         }
 
         private async void OnSearchEditingChanged(object sender, EventArgs e)

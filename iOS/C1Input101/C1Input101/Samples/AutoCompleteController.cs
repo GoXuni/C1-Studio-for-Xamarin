@@ -28,17 +28,11 @@ namespace C1Input101
             HighlightDropdown.IsAnimated = true;
             HighlightDropdown.ItemsSource = Countries.GetDemoDataList();
 
-            DelayDropdown.DropDownHeight = 200;
-            DelayDropdown.DisplayMemberPath = @"Name";
-            DelayDropdown.IsAnimated = true;
-            DelayDropdown.ItemsSource = Countries.GetDemoDataList();
-            DelayDropdown.Delay = TimeSpan.FromSeconds(1);
-
             CustomDropdown.DropDownHeight = 200;
             CustomDropdown.DisplayMemberPath = @"Name";
             CustomDropdown.IsAnimated = true;
             CustomDropdown.HighlightedColor = UIColor.Red;
-            CustomDropdown.ItemsSource = Countries.GetDemoDataList();
+            CustomDropdown.ItemsSource = Countries.GetDemoImageDataList();
             CustomDropdown.ItemLoading += (s, e) =>
             {
                 e.ItemView = GetCountryCell(CustomDropdown, e.Item as Countries, e);

@@ -7,10 +7,13 @@ using Android.Widget;
 using FlexChart101.DataModel;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    public class BaseActivity : Activity
+    public class BaseActivity : AppCompatActivity
     {
         protected IList<object> dataSource;
         protected const string DATA_SOURCE = "DATA_SOURCE";

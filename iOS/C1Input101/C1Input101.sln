@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Input101", "C1Input101\C1Input101.csproj", "{A174CF68-AFCB-414C-9972-4DD4759B2F09}"
 EndProject
 Global
@@ -37,8 +37,12 @@ Global
 		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Release|iPhone.Build.0 = Release|iPhone
 		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{A174CF68-AFCB-414C-9972-4DD4759B2F09}.Debug|Any CPU.Build.0 = Debug|iPhone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE556C7B-9A5D-4577-AA47-B585204143D0}
 	EndGlobalSection
 EndGlobal

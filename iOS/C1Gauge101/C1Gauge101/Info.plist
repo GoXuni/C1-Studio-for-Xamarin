@@ -55,6 +55,8 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>$(PRODUCT_NAME) photo use</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+	<string>$(PRODUCT_NAME) photo use</string>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Assets.xcassets/AppIcon.appiconset</string>
 </dict>

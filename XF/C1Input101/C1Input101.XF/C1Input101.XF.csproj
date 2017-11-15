@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <RootNamespace>C1Input101</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="C1Input101.XF.csproj.vspscc" />
+    <None Remove="Images\australia.png" />
+    <None Remove="Images\bangladesh.png" />
+    <None Remove="Images\brazil.png" />
+    <None Remove="Images\canada.png" />
+    <None Remove="Images\china.png" />
+    <None Remove="Images\france.png" />
+    <None Remove="Images\Germany.png" />
+    <None Remove="Images\india.png" />
+    <None Remove="Images\input_autocomplete.png" />
+    <None Remove="Images\input_combobox.png" />
+    <None Remove="Images\input_dropdown.png" />
+    <None Remove="Images\input_mask.png" />
+    <None Remove="Images\Japan.png" />
+    <None Remove="Images\nepal.png" />
+    <None Remove="Images\pakistan.png" />
+    <None Remove="Images\srilanka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\australia.png" />
+    <EmbeddedResource Include="Images\bangladesh.png" />
+    <EmbeddedResource Include="Images\brazil.png" />
+    <EmbeddedResource Include="Images\canada.png" />
+    <EmbeddedResource Include="Images\china.png" />
+    <EmbeddedResource Include="Images\france.png" />
+    <EmbeddedResource Include="Images\Germany.png" />
+    <EmbeddedResource Include="Images\india.png" />
+    <EmbeddedResource Include="Images\input_autocomplete.png" />
+    <EmbeddedResource Include="Images\input_combobox.png" />
+    <EmbeddedResource Include="Images\input_dropdown.png" />
+    <EmbeddedResource Include="Images\input_mask.png" />
+    <EmbeddedResource Include="Images\Japan.png" />
+    <EmbeddedResource Include="Images\nepal.png" />
+    <EmbeddedResource Include="Images\pakistan.png" />
+    <EmbeddedResource Include="Images\srilanka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Xamarin.Forms.Calendar" Version="2.4.20173.222" />
+    <PackageReference Include="C1.Xamarin.Forms.Input" Version="2.4.20173.222" />
+    <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>

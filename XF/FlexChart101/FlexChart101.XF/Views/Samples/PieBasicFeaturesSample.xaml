@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:local="clr-namespace:FlexChart101"
+             x:Class="FlexChart101.PieBasicFeaturesSample" Padding="20">
+    <StackLayout>
+        <Grid x:Name="root" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*" />
+                <RowDefinition Height="50*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*" />
+                <ColumnDefinition Width="50*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="gridOption" BindingContext="{x:Reference flexPie}" VerticalOptions="Start" HorizontalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+                    <Label x:Name="lblRadius" VerticalOptions="Center" />
+                    <local:PreciseStepper x:Name="stepperRadius" VerticalOptions="Center" Value="{Binding InnerRadius,Mode=TwoWay}" Maximum="1.00" Minimum="0" Increment="0.1" />
+                </StackLayout>
+                <Label x:Name="lblOffset" Grid.Row="1" Text="Offset" VerticalOptions="Center" />
+                <Slider Grid.Row="1" Grid.Column="1" Value="{Binding Offset,Mode=TwoWay}" VerticalOptions="Center" />
+                <Label x:Name="lblStartAngle" Grid.Row="2" Text="Start Angle" VerticalOptions="Center" />
+                <Slider Grid.Row="2" Grid.Column="1" Value="{Binding StartAngle,Mode=TwoWay}" Maximum="360" VerticalOptions="Center" />
+                <Label x:Name="lblReversed" Grid.Row="3" Text="Reversed" VerticalOptions="Center" />
+                <Switch x:Name="toggleReversed" VerticalOptions="Center" IsToggled="{Binding Reversed,Mode=TwoWay}" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" />
+            </Grid>
+
+            <c1:FlexPie x:Name="flexPie" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" InnerRadius="0.3" Binding="Value" BindingName="Name" LegendPosition="Bottom" VerticalOptions="FillAndExpand" />
+        </Grid>
+    </StackLayout>
+</ContentPage>

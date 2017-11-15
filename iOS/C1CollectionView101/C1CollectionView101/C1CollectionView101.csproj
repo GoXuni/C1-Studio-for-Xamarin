@@ -86,9 +86,6 @@
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(OS)' == 'Unix' ">
-    <CscToolExe>mcs.exe</CscToolExe>
-  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Controllers\FilteringController.cs" />
     <Compile Include="Controllers\FilteringController.designer.cs">
@@ -99,6 +96,7 @@
       <DependentUpon>GroupingController.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\YouTubeCollectionView.cs" />
+    <Compile Include="Controllers\YouTubeCollectionViewSource.cs" />
     <Compile Include="Controllers\YouTubeTableViewSource.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -126,18 +124,18 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <Content Include="Entitlements.plist" />
     <InterfaceDefinition Include="Base.lproj\Main.storyboard" />
-    <None Include="packages.config" />
     <BundleResource Include="Resources\en.lproj\Localizable.strings" />
     <BundleResource Include="Resources\en.lproj\Main.strings" />
     <BundleResource Include="Resources\ja.lproj\Localizable.strings" />
     <BundleResource Include="Resources\ja.lproj\Main.strings" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.CollectionView, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.3.20172.179\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.4.20173.222\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.CollectionView, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.CollectionView.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.CollectionView.dll</HintPath>
+    <Reference Include="C1.iOS.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.CollectionView.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.CollectionView.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Net.Http" />

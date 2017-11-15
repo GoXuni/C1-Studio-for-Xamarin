@@ -14,11 +14,13 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using C1.Android.Grid;
 using C1.CollectionView;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/FilterTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class FilterActivity : Activity
+    public class FilterActivity : AppCompatActivity
     {
         private int FilterFormRequest;
 
@@ -27,6 +29,11 @@ namespace FlexGrid101
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.GettingStarted);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.FilterTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             Grid.ItemsSource = Customer.GetCustomerList(100);
@@ -62,7 +69,7 @@ namespace FlexGrid101
         {
             if (item.ItemId == 0)
             {
-                FilterFormRequest = new Random().Next();
+                FilterFormRequest = new Random().Next(65536);
                 var filtersText = GetFilterText(CurrentFilters.ToArray());
                 var intent = new Intent(BaseContext, typeof(FilterFormActivity));
                 intent.PutExtra("filters", filtersText);
@@ -76,9 +83,13 @@ namespace FlexGrid101
                 }
                 var task = Grid.CollectionView.RemoveFilterAsync();
             }
+            else if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
             return base.OnOptionsItemSelected(item);
         }
-
         protected override async void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
         {
             if (requestCode == FilterFormRequest)

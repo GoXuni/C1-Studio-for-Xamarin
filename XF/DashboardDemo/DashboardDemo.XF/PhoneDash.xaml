@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DashboardDemo.PhoneDash" x:Name="page"
+             xmlns:gauge="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge"
+             xmlns:chart="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             Padding="10">
+    <StackLayout>
+        <Grid x:Name="gridLayout" VerticalOptions="FillAndExpand">
+            <chart:FlexChart x:Name="chart" Grid.Row="0" VerticalOptions="FillAndExpand" ItemsSource="{Binding Data}" BindingX="Name" ChartType="Column">
+                <chart:FlexChart.Series>
+                  <chart:ChartSeries x:Name="Sales2014" SeriesName="Sales" Binding="Sales"  >
+                    <chart:ChartSeries.Style>
+                      <chart:ChartStyle Fill="#88BDE6" Stroke="#88BDE6"></chart:ChartStyle>
+                    </chart:ChartSeries.Style>
+                  </chart:ChartSeries>
+                  
+                  <chart:ChartSeries x:Name="Downloads2014" SeriesName="Downloads" Binding="Downloads">
+                    <chart:ChartSeries.Style>
+                      <chart:ChartStyle Fill="#FBB258" Stroke="#FBB258"></chart:ChartStyle>
+                    </chart:ChartSeries.Style>
+                  </chart:ChartSeries>
+                  
+                  <chart:ChartSeries x:Name="Expenses2014" SeriesName="Expenses" Binding="Expenses">
+                    <chart:ChartSeries.Style>
+                      <chart:ChartStyle Fill="#90CD97" Stroke="#90CD97"></chart:ChartStyle>
+                    </chart:ChartSeries.Style>
+                  </chart:ChartSeries>
+                </chart:FlexChart.Series>
+                
+                <chart:FlexChart.LegendStyle>
+                  <chart:ChartStyle FontSize="12"></chart:ChartStyle>
+                </chart:FlexChart.LegendStyle>
+                
+            </chart:FlexChart>
+
+            <chart:FlexPie x:Name="pie" Header ="Sales" VerticalOptions="FillAndExpand"  ItemsSource="{Binding Data}" BindingName="Name" Binding ="Sales" InnerRadius="0.5" Grid.Row="1" LegendOrientation="Vertical">             
+              <chart:FlexPie.LegendStyle >
+                <chart:ChartStyle FontSize="12"></chart:ChartStyle>
+              </chart:FlexPie.LegendStyle>
+            </chart:FlexPie>
+            <Label x:Name="label1" Text="Target/Goal" HorizontalOptions="Center" Grid.Row="2"/>
+            <gauge:C1BulletGraph x:Name="graph3" ShowText="All" Value=".73" PointerColor="#FBB258" ValueFontColor="White" Format="P0" Min="0" Max="1" Thickness="0.75" Good="1" GoodRangeColor="#90CD97" Bad=".50" BadRangeColor="#88BDE6" Target=".70" TargetColor="White" ValueFontSize="12" MinFontSize="12" MaxFontSize="12" Grid.Row="3"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

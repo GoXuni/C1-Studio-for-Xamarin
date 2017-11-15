@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="Sunburst101.LegendAndTitles"
+             xmlns:local="clr-namespace:Sunburst101"
+            Padding="20">
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:StringToEnumConverter x:Key="StringToEnumConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+    <StackLayout>
+        <Grid x:Name="root" VerticalOptions="FillAndExpand" HorizontalOptions = "FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="col1" Width="30*" />
+                <ColumnDefinition x:Name="col2" Width="70*" />
+            </Grid.ColumnDefinitions>
+          
+          <Grid x:Name="gridOption" BindingContext="{x:Reference sunburst}" VerticalOptions="Start" HorizontalOptions="Start">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <StackLayout x:Name="header" Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+                <Label x:Name="lblHeader" Text="Header"/>
+                <Entry BindingContext="{x:Reference sunburst}" Text="{Binding Header,Mode=TwoWay}" />
+            </StackLayout>
+            <StackLayout x:Name="footer" Grid.Row="1" Grid.Column="0" Orientation="Vertical" >
+                <Label x:Name="lblFooter" Text="Footer"/>
+                <Entry BindingContext="{x:Reference sunburst}" Text="{Binding Footer,Mode=TwoWay}" />
+            </StackLayout>
+            <StackLayout x:Name="legend" Grid.Row="2" Grid.Column="0">
+                <Label x:Name="lblLegend" Text="Legend Position"/>
+                <Picker x:Name="pickerLegendPosition" />
+            </StackLayout>
+          </Grid>
+
+          <c1:C1Sunburst x:Name="sunburst" ChildItemsPath="Items" ToolTipContent="{}{name}&#x000A;{y}" Binding="Value"
+                        BindingName="Year,Quarter,Month"
+                        LegendPosition="{Binding LegendPosition, Converter={StaticResource StringToEnumConverter}}"
+                       VerticalOptions="FillAndExpand"
+                        Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+            <c1:C1Sunburst.HeaderStyle>
+              <c1:ChartStyle Fill="#666666" FontSize="20" FontAttributes="Bold" />
+            </c1:C1Sunburst.HeaderStyle>
+            <c1:C1Sunburst.FooterStyle>
+              <c1:ChartStyle Fill="#666666" FontAttributes="Italic" />
+            </c1:C1Sunburst.FooterStyle>
+          </c1:C1Sunburst>
+
+      </Grid>
+    </StackLayout>
+</ContentPage>

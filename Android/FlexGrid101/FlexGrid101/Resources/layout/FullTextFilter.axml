@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+  <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+  <LinearLayout
+      xmlns:calendar="http://schemas.android.com/apk/res-auto"
+         android:orientation="vertical"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:id="@+id/main_content"
+         android:layout_below="@id/toolbar">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,4 +27,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/Grid"
         android:layout_weight="1" />
-</LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

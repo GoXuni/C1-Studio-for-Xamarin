@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <RootNamespace>C1CollectionView101</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="C1CollectionView101.XF.csproj.vspscc" />
+    <None Remove="Images\collectionview.png" />
+    <None Remove="Images\filter.png" />
+    <None Remove="Images\flexgrid_grouping.png" />
+    <None Remove="Images\flexgrid_loading.png" />
+    <None Remove="Images\sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\collectionview.png" />
+    <EmbeddedResource Include="Images\filter.png" />
+    <EmbeddedResource Include="Images\flexgrid_grouping.png" />
+    <EmbeddedResource Include="Images\flexgrid_loading.png" />
+    <EmbeddedResource Include="Images\sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.CollectionView" Version="2.4.20173.222" />
+    <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

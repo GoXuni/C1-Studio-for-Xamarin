@@ -1,46 +1,52 @@
 ﻿using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
+
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Android.Graphics;
 
+using Android.Support.V4.Content;
 using C1.Android.Input;
-using C1.Android.Core;
-using Java.Lang;
-using Java.IO;
-using Java.Net;
 
-using System.Collections.Generic;
-using Android.Support.V7.Widget;
-using C1.Android.CollectionView;
-using C1.CollectionView;
 using System.Threading;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+
 
 namespace C1Input101
 {
     [Activity(Label = "@string/autocomplete", Icon = "@drawable/icon")]
-    public class AutoCompleteActivity : Activity
+    public class AutoCompleteActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_autocomplete);
 
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.autocomplete);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
+
             var highLightAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_highlight);
             highLightAutoComplete.ItemsSource = Countries.GetDemoDataList();
             highLightAutoComplete.DisplayMemberPath = "Name";
-
-            var delayAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_delay);
-            delayAutoComplete.ItemsSource = Countries.GetDemoDataList();
-            delayAutoComplete.DisplayMemberPath = "Name";
-            delayAutoComplete.Delay = TimeSpan.FromSeconds(1.5);
+            highLightAutoComplete.EditableHeaderBackgroundColor = Android.Graphics.Color.White;
+            highLightAutoComplete.DropDownBackgroundColor = new Android.Graphics.Color(ContextCompat.GetColor(this, Resource.Color.window_background));
+            highLightAutoComplete.DropDownBorderWidth = 1;
+            highLightAutoComplete.HeaderBorderWidth = 1;
+            highLightAutoComplete.HeaderBorderColor = Android.Graphics.Color.Black;
 
             var customAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_custom);
             customAutoComplete.ItemsSource = Countries1.GetDemoDataList();
             customAutoComplete.DisplayMemberPath = "Name";
+            customAutoComplete.EditableHeaderBackgroundColor = Android.Graphics.Color.White;
+            customAutoComplete.DropDownBackgroundColor = new Android.Graphics.Color(ContextCompat.GetColor(this, Resource.Color.window_background));
+            customAutoComplete.DropDownBorderWidth = 1;
+            customAutoComplete.HeaderBorderWidth = 1;
+            customAutoComplete.HeaderBorderColor = Android.Graphics.Color.Black;
 
             customAutoComplete.ItemLoading += (object sender, ComboBoxItemLoadingEventArgs e) =>
             {
@@ -51,8 +57,13 @@ namespace C1Input101
             var filterAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_filter);
             filterAutoComplete.DisplayMemberPath = "Title";
             filterAutoComplete.IsAnimated = true;
-            filterAutoComplete.DropDownHeight = 200;
             filterAutoComplete.Delay = TimeSpan.FromSeconds(1);
+            filterAutoComplete.EditableHeaderBackgroundColor = Android.Graphics.Color.White;
+            filterAutoComplete.DropDownBackgroundColor = new Android.Graphics.Color(ContextCompat.GetColor(this, Resource.Color.window_background));
+            filterAutoComplete.DropDownBorderWidth = 1;
+            filterAutoComplete.HeaderBorderWidth = 1;
+            filterAutoComplete.HeaderBorderColor = Android.Graphics.Color.Black;
+
             filterAutoComplete.Filtering += async (sender, e) =>
             {
                 var deferral = e.GetDeferral();
@@ -99,6 +110,18 @@ namespace C1Input101
             holder.SetVideoThumbnail(video.Thumbnail, CancellationToken.None);
 
             e.ItemView = holder.ItemView;
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
         }
     }
 

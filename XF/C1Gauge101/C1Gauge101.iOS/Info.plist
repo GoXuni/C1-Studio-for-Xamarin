@@ -43,6 +43,8 @@
 	<string>Gauges 101</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app needs photo library access to store snapshots</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>This app needs photo library access to store snapshots</string>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Media.xcassets/AppIcons.appiconset</string>
 	<key>UILaunchStoryboardName</key>

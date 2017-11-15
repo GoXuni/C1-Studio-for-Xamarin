@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <RootNamespace>Sunburst101</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\AppBar\feature.camera.png" />
+    <None Remove="Images\BasicFeatures.png" />
+    <None Remove="Images\GettingStarted.png" />
+    <None Remove="Images\GroupCollection.png" />
+    <None Remove="Images\LegendAndTitles.png" />
+    <None Remove="Images\Selection.png" />
+    <None Remove="Resources\Periodic Table of Elements.xml" />
+    <None Remove="Sunburst101.XF.csproj.vspscc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\AppBar\feature.camera.png" />
+    <EmbeddedResource Include="Images\BasicFeatures.png" />
+    <EmbeddedResource Include="Images\GettingStarted.png" />
+    <EmbeddedResource Include="Images\GroupCollection.png" />
+    <EmbeddedResource Include="Images\LegendAndTitles.png" />
+    <EmbeddedResource Include="Images\Selection.png" />
+    <EmbeddedResource Include="Resources\Periodic Table of Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Xamarin.Forms.Chart" Version="2.4.20173.222" />
+    <PackageReference Include="SkiaSharp" Version="1.59.2" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.59.2" />
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

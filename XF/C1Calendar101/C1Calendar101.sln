@@ -1,12 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Calendar101.Xamarin", "C1Calendar101.Xamarin\C1Calendar101.Xamarin.csproj", "{EC8A7D10-0E39-4D5B-8011-6C702DCB719F}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Calendar101.XF", "C1Calendar101.XF\C1Calendar101.XF.csproj", "{EC8A7D10-0E39-4D5B-8011-6C702DCB719F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Calendar101.Android", "C1Calendar101.Android\C1Calendar101.Android.csproj", "{BCDA1B1D-7C74-434A-BBAD-0C3005D9FAAD}"
-	ProjectSection(ProjectDependencies) = postProject
-		{EC8A7D10-0E39-4D5B-8011-6C702DCB719F} = {EC8A7D10-0E39-4D5B-8011-6C702DCB719F}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Calendar101.iOS", "C1Calendar101.iOS\C1Calendar101.iOS.csproj", "{A02F6473-6FFD-4E65-8A54-2CADC14E37DF}"
 EndProject
@@ -266,5 +263,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D48360F3-2D40-4C75-84E5-65D1C41887AD}
 	EndGlobalSection
 EndGlobal

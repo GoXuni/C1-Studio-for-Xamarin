@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.SelectionModesSample">
+  <StackLayout>
+    <Grid Padding="10">
+        <Grid.BackgroundColor>
+            <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
+        </Grid.BackgroundColor>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblChartType" Text="Chart Type" Grid.Row="0" Grid.Column="0" />
+        <Label x:Name="lblSelectionMode" Text="Selection Mode" Grid.Row="0" Grid.Column="1" />
+        <Picker x:Name="pickerChartType" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" SelectedIndexChanged = "pickerChartType_SelectedIndexChanged" />
+        <Picker x:Name="pickerSelectionMode" Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" SelectedIndexChanged="pickerSelectionMode_SelectedIndexChanged" />
+    </Grid>
+
+    <Grid  VerticalOptions="FillAndExpand">
+        <c1:FlexChart x:Name="flexChart" BindingX="Name" LegendPosition="Bottom" VerticalOptions="FillAndExpand">
+            <c1:FlexChart.Series>
+                <c1:ChartSeries Binding="Sales" SeriesName="Sales" />
+                <c1:ChartSeries Binding="Expenses"  SeriesName="Expenses" />
+                <c1:ChartSeries Binding="Downloads"  SeriesName="Downloads" />
+            </c1:FlexChart.Series>
+            <c1:FlexChart.SelectionStyle>
+                <c1:ChartStyle Stroke="Red" StrokeThickness="3" />
+            </c1:FlexChart.SelectionStyle>
+        </c1:FlexChart>
+    </Grid>
+  </StackLayout>
+</ContentPage>

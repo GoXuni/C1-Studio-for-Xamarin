@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.DataLabelSample">
+    <StackLayout>
+        <Grid Padding="10">
+            <Grid.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
+            </Grid.BackgroundColor>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation = "Horizontal">
+                <Label x:Name="lblPos" Text="Label Position"  VerticalOptions="Center"  />
+                <Picker x:Name="pickPostion" HorizontalOptions="FillAndExpand" SelectedIndexChanged = "pickPostion_SelectedIndexChanged" />
+            </StackLayout>
+        </Grid>
+
+        <Grid VerticalOptions="FillAndExpand">
+            <c1:FlexChart x:Name="flexChart" BindingX="Name" ChartType="Bar" VerticalOptions = "LayoutOptions.FillAndExpand" >
+                <c1:FlexChart.Series>
+                    <c1:ChartSeries Binding="Expenses" SeriesName="Total Expenses" />
+                </c1:FlexChart.Series>
+                <c1:FlexChart.AxisX>
+                  <c1:ChartAxis MajorGrid="True" Labels="True" />
+                </c1:FlexChart.AxisX>
+                <c1:FlexChart.AxisY>
+                    <c1:ChartAxis AxisLine="True" MajorGrid="False" MinorGrid="False" Labels="False" />
+                </c1:FlexChart.AxisY>
+                <c1:FlexChart.DataLabel>
+					<c1:ChartDataLabel>
+                   <c1:ChartDataLabel.ContentTemplate>
+            		<DataTemplate>
+             		  <Frame OutlineColor="Blue" Padding="5">
+               			 <StackLayout Orientation="Horizontal">
+                 		 	<Label Text="{Binding ValueX}" TextColor="Green" FontSize="25" ></Label>
+                 		 	<Label Text="{Binding Value, StringFormat='{0:F2}'}" TextColor="Red" FontSize="25" ></Label>
+                		 </StackLayout>
+             		  </Frame>
+           		    </DataTemplate>
+                 </c1:ChartDataLabel.ContentTemplate>
+                 </c1:ChartDataLabel>
+                </c1:FlexChart.DataLabel>
+            </c1:FlexChart>
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -7,12 +7,15 @@ using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
 using C1.Android.Chart;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101.Pie
 {
     [Activity(Label = "@string/theming", MainLauncher = false, Icon = "@drawable/themes")]
 
-    public class ThemingActivity : Activity
+    public class ThemingActivity : AppCompatActivity
     {
         private Spinner mThemeSpinner;
         private FlexPie mFlexPie;
@@ -21,6 +24,13 @@ namespace FlexChart101.Pie
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.flexpie_activity_theming);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.theming);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
+
 
             // initializing widgets
             mFlexPie = (FlexPie)FindViewById(Resource.Id.flexPie);
@@ -107,6 +117,18 @@ namespace FlexChart101.Pie
                 case 16:
                     mFlexPie.Palette = Palette.Cerulean;
                     break;
+            }
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
             }
         }
     }

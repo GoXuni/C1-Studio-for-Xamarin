@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Calendar101", "C1Calendar101.csproj", "{741BA174-05AB-4A9F-BF6C-A59C158A7794}"
 EndProject
 Global
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3F51FED-A339-416F-8922-680951939946}
 	EndGlobalSection
 EndGlobal

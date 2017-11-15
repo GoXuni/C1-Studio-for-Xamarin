@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:calendar="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-  <TextView
-      android:text ="@string/customSelectionGuide_step1"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/textView1"
-      android:layout_marginLeft="4dip"
-      android:layout_marginTop="4dip" />
-  <TextView
-      android:text ="@string/customSelectionGuide_step2"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/textView2"
-      android:layout_marginLeft="4dip" />
-  <TextView
-      android:text ="@string/customSelectionGuide_observe"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/textView3"
-      android:layout_marginLeft="4dip"
-      android:layout_marginBottom="4dip" />
-  <c1.android.calendar.C1Calendar
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:id="@+id/Calendar"
-      calendar:c1_maxSelectionCount="-1" />
-</LinearLayout>
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+  <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:calendar="http://schemas.android.com/apk/res-auto"
+         android:orientation="vertical"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:id="@+id/main_content"
+         android:layout_below="@id/toolbar">
+    <TextView
+        android:text="@string/customSelectionGuide_step1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="4dip" />
+    <TextView
+        android:text="@string/customSelectionGuide_step2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="4dip" />
+    <TextView
+        android:text="@string/customSelectionGuide_observe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="4dip"
+        android:layout_marginBottom="4dip" />
+    <c1.android.calendar.C1Calendar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Calendar"
+        calendar:c1_maxSelectionCount="-1" />
+  </LinearLayout>
+</RelativeLayout>

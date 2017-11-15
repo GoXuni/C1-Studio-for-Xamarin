@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Input;assembly=C1.Xamarin.Forms.Input"
+             x:Class="C1Input101.MaskedEntrySample" x:Name="page"
+             Padding="20">
+    <StackLayout BindingContext="{x:Reference page}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label Text="{Binding IDText, StringFormat=\{0\}:}"  VerticalOptions="Center"  />
+            <c1:C1MaskedEntry x:Name="c1MaskedTextBox1" Mask="000-00-0000" Grid.Column="1"  />
+            <Label Text="{Binding DOBText, StringFormat=\{0\}:}"  VerticalOptions="Center"  Grid.Row="1" />
+            <c1:C1MaskedEntry x:Name="c1MaskedTextBox2" Mask="90/90/0000"  Grid.Row="1" Grid.Column="1" />
+            <Label Text="{Binding PhoneText, StringFormat=\{0\}:}"  VerticalOptions="Center"  Grid.Row="2"  />
+            <c1:C1MaskedEntry x:Name="c1MaskedTextBox3" Mask="(999) 000-0000"  Grid.Row="2" Grid.Column="1"   />
+            <Label Text="{Binding StateText, StringFormat=\{0\}:}" VerticalOptions="Center"   Grid.Row="3" />
+            <c1:C1MaskedEntry x:Name="c1MaskedTextBox4" Mask="LL" Grid.Row="3" Grid.Column="1"   />
+        </Grid>
+    </StackLayout>
+</ContentPage>

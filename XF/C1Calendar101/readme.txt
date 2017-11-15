@@ -1,9 +1,9 @@
-C1Calendar101 Samples for Xamarin Forms
+C1Calendar101 for Xamarin Forms
 -----------------------------------------
 Shows samples of the Calendar control.
 
 Shows the following samples
-
+<code>
 	- GettingStarted
 	- VerticalOrientation
 	- CustomDayContent
@@ -11,5 +11,5 @@ Shows the following samples
 	- CustomAppearance
 	- PopupEditor
 	- CustomSelection
-
+</code>
 	

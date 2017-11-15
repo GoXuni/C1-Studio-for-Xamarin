@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.ZoomingAndScrolling" x:Name="page">
+	 <StackLayout>
+    <Grid Padding="10">
+      <Grid.BackgroundColor>
+        <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
+      </Grid.BackgroundColor>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Label x:Name="lblZoomMode" Text="Zoom Mode" Grid.Row="0" Grid.Column="0" />
+      <Picker x:Name="pickerZoomMode" Grid.Row="1" Grid.Column="0" Title="Zoom Mode" HorizontalOptions="FillAndExpand" SelectedIndexChanged = "pickerZoomMode_SelectedIndexChanged"/>
+    </Grid>
+    <Grid  VerticalOptions="FillAndExpand">
+    <c1:FlexChart x:Name="flexChart"
+                    BindingX="X"
+                    ChartType = "Scatter"
+                    VerticalOptions="FillAndExpand">
+      <!--<c1:FlexChart.AxisX>
+        <c1:ChartAxis Scale="0.5" />
+      </c1:FlexChart.AxisX>
+
+      <c1:FlexChart.AxisY>
+        <c1:ChartAxis DisplayedRange="16000"/>
+      </c1:FlexChart.AxisY>-->
+
+      <c1:FlexChart.Series>
+        <c1:ChartSeries Binding="Y" SeriesName="Normal Distribution" />
+      </c1:FlexChart.Series>
+    </c1:FlexChart>
+    </Grid>
+  </StackLayout>
+</ContentPage>

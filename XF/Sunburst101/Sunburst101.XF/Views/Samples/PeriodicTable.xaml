@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:local="clr-namespace:Sunburst101"
+             x:Class="Sunburst101.PeriodicTable">
+  
+     <c1:C1Sunburst  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+            x:Name="sunburst"
+            ToolTip="{x:Null}"
+            LegendPosition="None"
+            InnerRadius="0.3"
+            SelectionMode="Point"
+            Binding="Value"
+            BindingName="GroupName,SubGroupName,Symbol"
+            ChildItemsPath="SubGroups,Elements"
+            >
+            <c1:C1Sunburst.DataLabel>
+                <c1:PieDataLabel Position="Center"  Content="{}{name}" Border="False" />
+            </c1:C1Sunburst.DataLabel>
+            <c1:C1Sunburst.SelectionStyle>
+                <c1:ChartStyle Stroke="Red" />
+            </c1:C1Sunburst.SelectionStyle>
+        </c1:C1Sunburst>
+
+</ContentPage>

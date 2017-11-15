@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexChart101", "FlexChart101\FlexChart101.csproj", "{C373BB99-487B-4294-A61A-A89DF68FE3CE}"
 EndProject
 Global
@@ -51,5 +51,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {851AD41D-02F3-4E1C-841A-1C78366020AF}
 	EndGlobalSection
 EndGlobal

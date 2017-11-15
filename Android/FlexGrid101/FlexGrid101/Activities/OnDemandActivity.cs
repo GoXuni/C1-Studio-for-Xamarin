@@ -9,17 +9,24 @@ using System.Threading.Tasks;
 using C1.Android.Core;
 using C1.Android.Grid;
 using Android.Content.PM;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/OnDemandTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class OnDemandActivity : Activity
+    public class OnDemandActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.OnDemand);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.OnDemandTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             Search = FindViewById<EditText>(Resource.Id.Search);
@@ -44,7 +51,18 @@ namespace FlexGrid101
             Search.EditorAction += OnEditorAction;
             var task = PerformSearch();
         }
-
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
         public FlexGrid Grid { get; set; }
         public YouTubeCollectionView CollectionView { get; set; }
         public EditText Search { get; set; }

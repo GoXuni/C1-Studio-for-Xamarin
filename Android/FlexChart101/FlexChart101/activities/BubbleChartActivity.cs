@@ -10,13 +10,17 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using FlexChart101.DataModel;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+
 
 using C1.Android.Chart;
 
 namespace FlexChart101
 {
     [Activity(Label = "@string/bubbleChart", Icon = "@drawable/icon")]
-    public class BubbleChartActivity : Activity
+    public class BubbleChartActivity : AppCompatActivity
     {
         private FlexChart mChart;
 
@@ -24,6 +28,12 @@ namespace FlexChart101
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_bubble_chart);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.bubbleChart);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widgets
             mChart = (FlexChart)FindViewById(Resource.Id.flexchart);
@@ -57,6 +67,18 @@ namespace FlexChart101
             mChart.SelectionStyle = new ChartStyle();
             mChart.SelectionStyle.StrokeDashArray = new double[] { 10, 10 };
 
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
         }
     }
 }

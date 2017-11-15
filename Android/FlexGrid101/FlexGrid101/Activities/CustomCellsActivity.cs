@@ -5,17 +5,24 @@ using Android.OS;
 using Android.Views;
 using C1.Android.Grid;
 using C1.Android.Gauge;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/CustomCellsTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class CustomCellsActivity : Activity
+    public class CustomCellsActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.GettingStarted);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.CustomCellsTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
 
@@ -27,11 +34,23 @@ namespace FlexGrid101
             var data = Customer.GetCustomerList(100);
             grid.ItemsSource = data;
         }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
     }
 
     public class GridBulletGraphColumn : GridColumn
     {
-        protected override object GetCellContentType(GridCellType cellType)
+        protected override object GetCellContentType(GridCellType cellType, GridRow row)
         {
             if (cellType == GridCellType.Cell)
             {
@@ -39,11 +58,11 @@ namespace FlexGrid101
             }
             else
             {
-                return base.GetCellContentType(cellType);
+                return base.GetCellContentType(cellType, row);
             }
         }
 
-        protected override View CreateCellContent(GridCellType cellType, object cellContentType)
+        protected override View CreateCellContent(GridCellType cellType, object cellContentType, GridRow row)
         {
             if (cellType == GridCellType.Cell)
             {
@@ -57,7 +76,7 @@ namespace FlexGrid101
             }
             else
             {
-                return base.CreateCellContent(cellType, cellContentType);
+                return base.CreateCellContent(cellType, cellContentType, row);
             }
         }
 

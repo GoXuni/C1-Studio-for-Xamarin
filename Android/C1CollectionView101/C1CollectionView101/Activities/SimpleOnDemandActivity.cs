@@ -10,11 +10,14 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using C1.CollectionView;
 using C1.Android.CollectionView;
+using System.Threading;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1CollectionView101
 {
-    [Activity(Label = "@string/SimpleOnDemandTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class SimpleOnDemandActivity : Activity
+    [Activity(Label = "@string/SimpleOnDemandTitle", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    public class SimpleOnDemandActivity : AppCompatActivity
     {
         private SimpleOnDemandCollectionView _collectionView;
 
@@ -23,6 +26,12 @@ namespace C1CollectionView101
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.SimpleOnDemand);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.SimpleOnDemandTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             SwipeRefresh = FindViewById<SwipeRefreshLayout>(Resource.Id.SwipeRefresh);
             RecyclerView = FindViewById<RecyclerView>(Resource.Id.RecyclerView);
@@ -48,6 +57,18 @@ namespace C1CollectionView101
             finally
             {
                 SwipeRefresh.Refreshing = false;
+            }
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
             }
         }
     }
@@ -110,7 +131,8 @@ namespace C1CollectionView101
         }
 
         public int PageSize { get; set; }
-        protected override async Task<Tuple<string, IReadOnlyList<MyDataItem>>> GetPageAsync(string pageToken, int? count = null)
+
+        protected override async Task<Tuple<string, IReadOnlyList<MyDataItem>>> GetPageAsync(int startingIndex, string pageToken, int? count = null, IReadOnlyList<SortDescription> sortDescriptions = null, FilterExpression filterExpresssion = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             var newItems = new List<MyDataItem>();
             await Task.Run(() =>
@@ -118,7 +140,7 @@ namespace C1CollectionView101
                 // create new page of items
                 for (int i = 0; i < this.PageSize; i++)
                 {
-                    newItems.Add(new MyDataItem(this.Count + i));
+                    newItems.Add(new MyDataItem(startingIndex + i));
                 }
             });
             return new Tuple<string, IReadOnlyList<MyDataItem>>("token not used", newItems);

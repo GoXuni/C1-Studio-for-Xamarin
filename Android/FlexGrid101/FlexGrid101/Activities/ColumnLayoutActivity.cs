@@ -12,11 +12,13 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 using C1.Android.Grid;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/ColumnLayoutTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class ColumnLayoutActivity : Activity
+    public class ColumnLayoutActivity : AppCompatActivity
     {
         private string FILENAME = "ColumnLayout.json";
         private int EditFormRequest;
@@ -26,6 +28,11 @@ namespace FlexGrid101
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.GettingStarted);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.ColumnLayoutTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             InitializeColumnLayout();
@@ -64,12 +71,16 @@ namespace FlexGrid101
             {
                 EditColumnLayout();
             }
+            else if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
             return base.OnOptionsItemSelected(item);
         }
-
         private async void EditColumnLayout()
         {
-            EditFormRequest = new Random().Next();
+            EditFormRequest = new Random().Next(65536);
             var layoutText = await SerializeLayout(Grid);
             var intent = new Intent(this, typeof(ColumnLayoutFormActivity));
             intent.PutExtra("columnLayout", layoutText);

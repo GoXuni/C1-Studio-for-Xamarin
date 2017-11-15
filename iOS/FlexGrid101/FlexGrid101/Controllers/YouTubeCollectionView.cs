@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using C1.CollectionView;
 
@@ -38,19 +39,19 @@ namespace FlexGrid101
                 await RefreshAsync();
         }
 
-        protected override async Task<Tuple<string, IReadOnlyList<YouTubeVideo>>> GetPageAsync(string pageToken, int? count = null)
+        protected override async Task<Tuple<string, IReadOnlyList<YouTubeVideo>>> GetPageAsync(int startingIndex, string pageToken, int? count = null, IReadOnlyList<SortDescription> sortDescriptions = null, FilterExpression filterExpresssion = null, CancellationToken cancellationToken = default(CancellationToken))
         {
-            return await LoadVideosAsync(_q, _orderBy, pageToken, PageSize);
+            return await LoadVideosAsync(_q, _orderBy, pageToken, PageSize, cancellationToken);
         }
 
-        public static async Task<Tuple<string, IReadOnlyList<YouTubeVideo>>> LoadVideosAsync(string q, string orderBy, string pageToken, int maxResults)
+        public static async Task<Tuple<string, IReadOnlyList<YouTubeVideo>>> LoadVideosAsync(string q, string orderBy, string pageToken, int maxResults, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (q == null) q = "";
 
             var youtubeUrl = string.Format("https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q={0}&order={1}&maxResults={2}{3}&key={4}", Uri.EscapeUriString(q), orderBy, maxResults, string.IsNullOrWhiteSpace(pageToken) ? "" : "&pageToken=" + pageToken, "AIzaSyCtwKIq-Td5FBNOlvOiWEJaClRBDyq-ZsU");
 
             var client = new HttpClient();
-            var response = await client.GetAsync(youtubeUrl);
+            var response = await client.GetAsync(youtubeUrl, cancellationToken);
             if (response.IsSuccessStatusCode)
             {
                 var videos = new List<YouTubeVideo>();

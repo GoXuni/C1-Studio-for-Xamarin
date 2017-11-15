@@ -3,17 +3,25 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using C1.Android.Grid;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Views;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/ColumnDefinitionTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class ColumnDefinitionActivity : Activity
+    public class ColumnDefinitionActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.GettingStarted);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.ColumnDefinitionTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             grid.AutoGenerateColumns = false;
@@ -26,6 +34,18 @@ namespace FlexGrid101
             grid.Columns.Add(new GridDateTimeColumn { Binding = "LastOrderDate", SortMemberPath = "LastOrderTime", Format = "t", Mode = GridDateTimeColumnMode.Time, Header = "Last Order Time" });
             grid.Columns["CountryId"].DataMap = new GridDataMap() { ItemsSource = Customer.GetCountries(), DisplayMemberPath = "Value", SelectedValuePath = "Key" };
             grid.ItemsSource = Customer.GetCustomerList(100);
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
         }
     }
 }

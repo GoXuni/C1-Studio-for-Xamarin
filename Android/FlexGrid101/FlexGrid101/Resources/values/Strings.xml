@@ -53,6 +53,9 @@
   <string name="OnDemandTitle">On Demand</string>
   <string name="OnDemandDescription">Load items on demand as the user scrolls down the grid.</string>
   <string name="SearchPlaceholderText">Enter text to search videos on YouTube</string>
+  <string name="NewRowTitle">New Row</string>
+  <string name="NewRowDescription">Shows adding new rows.</string>
+  <string name="NewRowPlaceholder">Click here to add a new row</string>
   <string name="EmptyListText">There are no videos to show.</string>
   <string name="CellsSelectedText">cell(s) selected</string>
   <string name="RemoveFilter">Remove filter</string>

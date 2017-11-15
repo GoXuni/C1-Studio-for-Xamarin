@@ -5,11 +5,15 @@ using Android.OS;
 using System.Collections.Generic;
 using Android.Graphics;
 using C1.Android.Chart;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Views;
 
 namespace FlexChart101.Pie
 {
     [Activity(Label = "@string/data_labels", MainLauncher = false, Icon = "@drawable/pie_selection")]
-    public class DataLabelsActivity : Activity
+    public class DataLabelsActivity : AppCompatActivity
     {
         private FlexPie mFlexPie;
         private Spinner mDataLabelSpinner;
@@ -19,6 +23,12 @@ namespace FlexChart101.Pie
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.flexpie_activity_data_labels);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.dataLabels);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widgets
             mFlexPie = (FlexPie)FindViewById(Resource.Id.flexPie);
@@ -74,6 +84,18 @@ namespace FlexChart101.Pie
                 case 3:
                     mFlexPie.DataLabel.Position = PieLabelPosition.Outside;
                     break;
+            }
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
             }
         }
     }

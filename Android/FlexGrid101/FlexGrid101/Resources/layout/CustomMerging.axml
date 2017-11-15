@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:flexgrid="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+  <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+  <LinearLayout   
+         xmlns:flexgrid="http://schemas.android.com/apk/res-auto"
+         android:orientation="vertical"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:id="@+id/main_content"
+         android:layout_below="@id/toolbar">
     <c1.android.grid.FlexGrid
         android:layout_width="match_parent"
         android:layout_height="288dip"
@@ -16,20 +27,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout1">
-        <ImageView
-            android:src="@drawable/retro_tv_filled_50_dark"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/imageView1"
-            android:layout_marginLeft="8dip" />
-        <TextView
-            android:text="Walker"
-            android:id="@+id/ShowNameLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:textSize="24dip"
-            android:layout_marginLeft="8dip" />
+      <ImageView
+          android:src="@drawable/retro_tv_filled_50_dark"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:id="@+id/imageView1"
+          android:layout_marginLeft="8dip" />
+      <TextView
+          android:text="Walker"
+          android:id="@+id/ShowNameLabel"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:gravity="center_vertical"
+          android:textSize="24dip"
+          android:layout_marginLeft="8dip" />
     </LinearLayout>
     <TextView
         android:text="ShowTimeLabel"
@@ -37,4 +48,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/ShowTimeLabel"
         android:layout_margin="8dip" />
-</LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

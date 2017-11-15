@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <RootNamespace>FlexChart101</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Xamarin.Forms.Chart" Version="2.4.20173.222" />
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\apple.png" />
+    <EmbeddedResource Include="Images\butterfly.png" />
+    <EmbeddedResource Include="Images\chart_aggregate.png" />
+    <EmbeddedResource Include="Images\chart_animation.png" />
+    <EmbeddedResource Include="Images\chart_annotation.png" />
+    <EmbeddedResource Include="Images\chart_area.png" />
+    <EmbeddedResource Include="Images\chart_axes.png" />
+    <EmbeddedResource Include="Images\chart_bubble.png" />
+    <EmbeddedResource Include="Images\chart_column.png" />
+    <EmbeddedResource Include="Images\chart_composite.png" />
+    <EmbeddedResource Include="Images\chart_dynamic.png" />
+    <EmbeddedResource Include="Images\chart_finance.png" />
+    <EmbeddedResource Include="Images\chart_format.png" />
+    <EmbeddedResource Include="Images\chart_line.png" />
+    <EmbeddedResource Include="Images\chart_linemarker.png" />
+    <EmbeddedResource Include="Images\chart_multiaxes.png" />
+    <EmbeddedResource Include="Images\chart_scatter.png" />
+    <EmbeddedResource Include="Images\chart_scrolling.png" />
+    <EmbeddedResource Include="Images\chart_selection.png" />
+    <EmbeddedResource Include="Images\chart_title.png" />
+    <EmbeddedResource Include="Images\chart_tooltip.png" />
+    <EmbeddedResource Include="Images\custom.png" />
+    <EmbeddedResource Include="Images\export_image.png" />
+    <EmbeddedResource Include="Images\Germany.png" />
+    <EmbeddedResource Include="Images\google.png" />
+    <EmbeddedResource Include="Images\Greece.png" />
+    <EmbeddedResource Include="Images\Italy.png" />
+    <EmbeddedResource Include="Images\Japan.png" />
+    <EmbeddedResource Include="Images\microsoft.png" />
+    <EmbeddedResource Include="Images\pie.png" />
+    <EmbeddedResource Include="Images\pie_doughnut.png" />
+    <EmbeddedResource Include="Images\pie_labels.png" />
+    <EmbeddedResource Include="Images\pie_load.png" />
+    <EmbeddedResource Include="Images\pie_selection.png" />
+    <EmbeddedResource Include="Images\pie_title.png" />
+    <EmbeddedResource Include="Images\themes.png" />
+    <EmbeddedResource Include="Images\UK.png" />
+    <EmbeddedResource Include="Images\US.png" />
+    <EmbeddedResource Include="Images\xuni_butterfly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

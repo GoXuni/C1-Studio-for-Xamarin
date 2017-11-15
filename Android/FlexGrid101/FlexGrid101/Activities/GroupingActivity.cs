@@ -8,11 +8,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using C1.Android.Grid;
 using C1.CollectionView;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Views;
 
 namespace FlexGrid101
 {
     [Activity(Label = "@string/GroupingTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class GroupingActivity : Activity
+    public class GroupingActivity : AppCompatActivity
     {
         private C1CollectionView<Customer> _collectionView;
 
@@ -21,6 +24,11 @@ namespace FlexGrid101
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.GettingStarted);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.GroupingTitle);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             var task = UpdateVideos();
@@ -90,6 +98,18 @@ namespace FlexGrid101
                 var row = Grid.Rows[e.CellRange.Row] as GridGroupRow;
                 if (row != null)
                     e.Cancel = true;
+            }
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
             }
         }
     }

@@ -7,11 +7,14 @@ using C1.Android.Gauge;
 using Android.Graphics;
 using Java.Util;
 using Android.App;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Gauge101
 {
     [Activity(Label = "@string/using_ranges", MainLauncher = false, Icon = "@drawable/gauge_ranges")]
-    public class UsingRangesActivity : Activity
+    public class UsingRangesActivity : AppCompatActivity
     {
         private C1LinearGauge mLinearGauge;
         private Switch mSwitchRange;
@@ -26,6 +29,12 @@ namespace C1Gauge101
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_using_ranges);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.using_ranges);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             // initializing widgets
             mSwitchRange = (Switch)FindViewById(Resource.Id.switchRange);
@@ -111,6 +120,18 @@ namespace C1Gauge101
             range.Color = new Color(color);
             mLinearGauge.Ranges.Add(range);
             mRadialGauge.Ranges.Add(range);
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
         }
     }
 }

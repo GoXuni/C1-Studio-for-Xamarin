@@ -5,11 +5,15 @@ using Android.Views;
 using Android.Widget;
 using System;
 using C1.Android.Calendar;
+using Android.Support.V7.App;
+using Android.Support.V7.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+
 
 namespace C1Calendar101
 {
     [Activity(Label = "@string/custom_header", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class CustomHeaderActivity : Activity
+    public class CustomHeaderActivity : AppCompatActivity
     {
         private TextView monthLabel;
         private Spinner viewModeSpinner;
@@ -19,9 +23,15 @@ namespace C1Calendar101
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            ActionBar.SetDisplayHomeAsUpEnabled(true);
 
             SetContentView(Resource.Layout.CustomHeader);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.Title = GetString(Resource.String.custom_header);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
+
             viewModeSpinner = FindViewById<Spinner>(Resource.Id.ViewModeSpinner);
             todayButton = FindViewById<Button>(Resource.Id.TodayButton);
             calendar = FindViewById<C1Calendar>(Resource.Id.Calendar);

@@ -12,12 +12,12 @@ namespace C1CollectionView101
         private string CellIdentifier = "YouTube";
         private Dictionary<string, UIImage> _cache = new Dictionary<string, UIImage>();
 
-        public YouTubeTableViewSource(UITableView tableView, ICollectionView<object> collectionView, UIRefreshControl refreshControl = null)
-            : base(tableView, collectionView, refreshControl)
+        public YouTubeTableViewSource(UITableView tableView)
+            : base(tableView)
         {
         }
 
-        public override UITableViewCell GetItemCell(UITableView tableView, object item)
+        public override UITableViewCell GetItemCell(UITableView tableView, NSIndexPath indexPath, object item)
         {
             UITableViewCell cell = tableView.DequeueReusableCell(CellIdentifier);
             if (cell == null)
@@ -34,7 +34,7 @@ namespace C1CollectionView101
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
             var video = GetItem(indexPath) as YouTubeVideo;
-            if (video != null)
+            if (video?.Link != null)
             {
                 UIApplication.SharedApplication.OpenUrl(new NSUrl(video.Link));
             }
@@ -55,21 +55,30 @@ namespace C1CollectionView101
             }
         }
 
-        protected async void LoadImageInBackground(UIImageView imageView, string url)
-        {
-            UIImage image;
-            imageView.Tag = url.GetHashCode();
-            if (!_cache.TryGetValue(url, out image))
-            {
-                imageView.Image = PlaceHolder;
-                image = await Task.Run(() => new UIImage(NSData.FromUrl(new NSUrl(url))));
-                _cache[url] = image;
-            }
-            if (imageView.Tag == url.GetHashCode())
-            {
-                imageView.Image = image;
-            }
-        }
+		protected async void LoadImageInBackground(UIImageView imageView, string url)
+		{
+			if (string.IsNullOrWhiteSpace(url))
+			{
+				imageView.Image = PlaceHolder;
+				return;
+			}
+			UIImage image;
+			imageView.Tag = url.GetHashCode();
+			if (!_cache.TryGetValue(url, out image))
+			{
+				imageView.Image = PlaceHolder;
+				try
+				{
+					image = await Task.Run(() => new UIImage(NSData.FromUrl(new NSUrl(url))));
+					_cache[url] = image;
+				}
+				catch { }
+			}
+			if (imageView.Tag == url.GetHashCode() && image != null)
+			{
+				imageView.Image = image;
+			}
+		}
 
         #endregion
     }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:local="clr-namespace:Sunburst101"
+             x:Class="Sunburst101.Selection">
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:StringToEnumConverter x:Key="StringToEnumConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+    <StackLayout>
+        <Grid x:Name="root" BindingContext="{x:Reference sunburst}" Padding="5" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Orientation="Horizontal" Grid.ColumnSpan="2">
+                <Label x:Name="lblSelectedOffset" VerticalOptions="Center" />
+                <Label BindingContext="{x:Reference stepperOffset}" VerticalOptions="Center" Text="{Binding Value}" />
+                <local:PreciseStepper x:Name="stepperOffset" Value="{Binding SelectedItemOffset,Mode=TwoWay}" Maximum="0.5" Minimum="0" Increment="0.1" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+
+            <StackLayout x:Name="stackOptions" Orientation="Vertical" Grid.Row="1" Grid.ColumnSpan="2">
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="lblSelectedPos" Text="lblSelected Item Position" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                    <Picker x:Name="pickerPosition" WidthRequest="150" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+
+          <c1:C1Sunburst x:Name="sunburst" SelectedItemPosition="{Binding SelectedItemPosition, Converter={StaticResource StringToEnumConverter}}" Binding="Value" BindingName="Year,Quarter,Month" ToolTipContent="{}{name}&#x000A;{y}" SelectionMode="Point" LegendPosition="Bottom"  Grid.Row="2" Grid.ColumnSpan="2">
+            <c1:C1Sunburst.SelectionStyle>
+              <c1:ChartStyle Stroke="Red"  />
+            </c1:C1Sunburst.SelectionStyle>
+            <c1:C1Sunburst.DataLabel>
+              <c1:PieDataLabel Position="Center" Content="{}{name}" />
+            </c1:C1Sunburst.DataLabel>
+          </c1:C1Sunburst>
+          
+        </Grid>
+    </StackLayout>
+</ContentPage>

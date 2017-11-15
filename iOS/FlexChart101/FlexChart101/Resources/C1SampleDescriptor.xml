@@ -1,136 +1,172 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ArrayOfSample xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Sample>
+        <Title>Getting Started</Title>
+        <Description>Shows a simple chart with tooltips</Description>
+        <Image>Images/chart_column.png</Image>
+        <StoryboardID>Getting Started</StoryboardID>
+    </Sample>
 	<Sample>
-		<Title>Getting Started</Title>
-		<Description>Shows a simple chart with tooltips</Description>
-		<Image>Images/chart_column.png</Image>
-		<StoryboardID>Getting Started</StoryboardID>
+		<Title>Annotations</Title>
+		<Description>Shows how to display annotations on FlexChart</Description>
+		<Image>Images/chart_annotation.png</Image>
+		<StoryboardID>Annotations</StoryboardID>
 	</Sample>
+    <Sample>
+        <Title>Basic Chart Types</Title>
+        <Description>Shows the basic chart types and stacking options</Description>
+        <Image>Images/chart_area.png</Image>
+        <StoryboardID>Basic Chart Types</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Mixed Chart Types</Title>
+        <Description>Shows a composite chart</Description>
+        <Image>Images/chart_aggregate.png</Image>
+        <StoryboardID>Mixed Chart Types</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Financial Chart</Title>
+        <Description>Shows stock data in a candle chart</Description>
+        <Image>Images/chart_finance.png</Image>
+        <StoryboardID>Financial Chart</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Bubble Chart</Title>
+        <Description>Shows a bubble chart</Description>
+        <Image>Images/chart_bubble.png</Image>
+        <StoryboardID>Bubble Chart</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Data Labels</Title>
+        <Description>Shows a simple chart with static data labels</Description>
+        <Image>Images/chart_dynamic.png</Image>
+        <StoryboardID>Data Labels</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Multiple Axes</Title>
+        <Description>Shows a chart with mutiple Y axes</Description>
+        <Image>Images/chart_multiaxes.png</Image>
+        <StoryboardID>Multiple Axes</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Legend and Titles</Title>
+        <Description>Shows basic chart headers and axis titles</Description>
+        <Image>Images/chart_title.png</Image>
+        <StoryboardID>Legend and Titles</StoryboardID>
+    </Sample>
 	<Sample>
-		<Title>Basic Chart Types</Title>
-		<Description>Shows the basic chart types and stacking options</Description>
-		<Image>Images/chart_area.png</Image>
-		<StoryboardID>Basic Chart Types</StoryboardID>
+		<Title>Line Marker</Title>
+		<Description>Shows a moveable marker on top of the chart</Description>
+		<Image>Images/chart_linemarker.png</Image>
+		<StoryboardID>Line Marker</StoryboardID>
 	</Sample>
-	<Sample>
-		<Title>Mixed Chart Types</Title>
-		<Description>Shows a composite chart</Description>
-		<Image>Images/chart_aggregate.png</Image>
-		<StoryboardID>Mixed Chart Types</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Financial Chart</Title>
-		<Description>Shows stock data in a candle chart</Description>
-		<Image>Images/chart_finance.png</Image>
-		<StoryboardID>Financial Chart</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Bubble Chart</Title>
-		<Description>Shows a bubble chart</Description>
-		<Image>Images/chart_bubble.png</Image>
-		<StoryboardID>Bubble Chart</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Data Labels</Title>
-		<Description>Shows a simple chart with static data labels</Description>
-		<Image>Images/chart_dynamic.png</Image>
-		<StoryboardID>Data Labels</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Multiple Axes</Title>
-		<Description>Shows a chart with mutiple Y axes</Description>
-		<Image>Images/chart_multiaxes.png</Image>
-		<StoryboardID>Multiple Axes</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Legend and Titles</Title>
-		<Description>Shows basic chart headers and axis titles</Description>
-		<Image>Images/chart_title.png</Image>
-		<StoryboardID>Legend and Titles</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Selection Modes</Title>
-		<Description>Shows the different selection modes</Description>
-		<Image>Images/chart_selection.png</Image>
-		<StoryboardID>Selection Modes</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Toggle Series</Title>
-		<Description>Shows the ability to toggle a series visibility</Description>
-		<Image>Images/chart_column.png</Image>
-		<StoryboardID>Toggle Series</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Dynamic Charts</Title>
-		<Description>Shows a dynamic, “live” chart.</Description>
-		<Image>Images/chart_dynamic.png</Image>
-		<StoryboardID>Dynamic Charts</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Hit Test</Title>
-		<Description>Demonstrates use of the FlexChart's hitTest method</Description>
-		<Image>Images/chart_selection.png</Image>
-		<StoryboardID>Hit Test</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Theming</Title>
-		<Description>Shows the built-in palettes.</Description>
-		<Image>Images/themes.png</Image>
-		<StoryboardID>Theming</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Styling Series</Title>
-		<Description>Shows custom series styling</Description>
-		<Image>Images/custom.png</Image>
-		<StoryboardID>Styling Series</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Export Image</Title>
-		<Description>Shows how to export an image of FlexChart.</Description>
-		<Image>Images/export_image.png</Image>
-		<StoryboardID>Snapshot</StoryboardID>
-	</Sample>
-	<Sample>
-		<Title>Zones</Title>
-		<Description>Shows a scatter chart of student grades, highlighting each grade range using zones.</Description>
-		<Image>Images/chart_scatter.png</Image>
-		<StoryboardID>Zones</StoryboardID>
-	</Sample>
+    <Sample>
+        <Title>Selection Modes</Title>
+        <Description>Shows the different selection modes</Description>
+        <Image>Images/chart_selection.png</Image>
+        <StoryboardID>Selection Modes</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Toggle Series</Title>
+        <Description>Shows the ability to toggle a series visibility</Description>
+        <Image>Images/chart_column.png</Image>
+        <StoryboardID>Toggle Series</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Dynamic Charts</Title>
+        <Description>Shows a dynamic, “live” chart.</Description>
+        <Image>Images/chart_dynamic.png</Image>
+        <StoryboardID>Dynamic Charts</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Hit Test</Title>
+        <Description>Demonstrates use of the FlexChart's hitTest method</Description>
+        <Image>Images/chart_selection.png</Image>
+        <StoryboardID>Hit Test</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Theming</Title>
+        <Description>Shows the built-in palettes.</Description>
+        <Image>Images/themes.png</Image>
+        <StoryboardID>Theming</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Styling Series</Title>
+        <Description>Shows custom series styling</Description>
+        <Image>Images/custom.png</Image>
+        <StoryboardID>Styling Series</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Export Image</Title>
+        <Description>Shows how to export an image of FlexChart.</Description>
+        <Image>Images/export_image.png</Image>
+        <StoryboardID>Snapshot</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Zones</Title>
+        <Description>Shows a scatter chart of student grades, highlighting each grade range using zones.</Description>
+        <Image>Images/chart_scatter.png</Image>
+        <StoryboardID>Zones</StoryboardID>
+    </Sample>
 
-	<Sample>
-    	<Title>Getting Started with FlexPie</Title>
-    	<Description>Shows a simple pie chart with tooltips</Description>
-    	<Image>Images/pie.png</Image>
-    	<StoryboardID>FlexPie Getting Started</StoryboardID>
-  	</Sample>
-	<Sample>
-	    <Title>Basic Features</Title>
-	    <Description>Shows inner radius, offset, and start angle</Description>
-	    <Image>Images/pie_doughnut.png</Image>
-	    <StoryboardID>FlexPie Basic Features</StoryboardID>
-	</Sample>
-	<Sample>
-	    <Title>FlexPie Legend and Titles</Title>
-	    <Description>Shows basic header, footer, and legend positioning</Description>
-	    <Image>Images/pie_labels.png</Image>
-	    <StoryboardID>FlexPie Legend Titles</StoryboardID>
-  	</Sample>
-		<Sample>
-	    <Title>Selection</Title>
-	    <Description>Shows selection animation, offset, and position</Description>
-	    <Image>Images/pie.png</Image>
-	    <StoryboardID>FlexPie Selection</StoryboardID>
-  	</Sample>
-	<Sample>
+    <Sample>
+        <Title>Getting Started with FlexPie</Title>
+        <Description>Shows a simple pie chart with tooltips</Description>
+        <Image>Images/pie.png</Image>
+        <StoryboardID>FlexPie Getting Started</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Basic Features</Title>
+        <Description>Shows inner radius, offset, and start angle</Description>
+        <Image>Images/pie_doughnut.png</Image>
+        <StoryboardID>FlexPie Basic Features</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>FlexPie Legend and Titles</Title>
+        <Description>Shows basic header, footer, and legend positioning</Description>
+        <Image>Images/pie_labels.png</Image>
+        <StoryboardID>FlexPie Legend Titles</StoryboardID>
+    </Sample>
+        <Sample>
+        <Title>Selection</Title>
+        <Description>Shows selection animation, offset, and position</Description>
+        <Image>Images/pie.png</Image>
+        <StoryboardID>FlexPie Selection</StoryboardID>
+    </Sample>
+    <Sample>
     <Title>FlexPie Data Labels</Title>
     <Description>Shows static data labels</Description>
-	    <Image>Images/pie_labels.png</Image>
-	    <StoryboardID>FlexPie Data Labels</StoryboardID>
-  	</Sample>
+        <Image>Images/pie_labels.png</Image>
+        <StoryboardID>FlexPie Data Labels</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Theming</Title>
+        <Description>Shows available palettes</Description>
+        <Image>Images/themes.png</Image>
+        <StoryboardID>FlexPie Theming</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Customizing Axes</Title>
+        <Description>Shows customized axis style and label format</Description>
+        <Image>Images/chart_axes.png</Image>
+        <StoryboardID>Customizing Axes</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Custom Plot Elements</Title>
+        <Description>Shows how to fully customize plot elements</Description>
+        <Image>Images/custom.png</Image>
+        <StoryboardID>Custom Plot Elements</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Custom Tooltips</Title>
+        <Description>Shows a customized tooltip</Description>
+        <Image>Images/chart_tooltip.png</Image>
+        <StoryboardID>Custom Tooltips</StoryboardID>
+    </Sample>
 	<Sample>
-	    <Title>Theming</Title>
-	    <Description>Shows available palettes</Description>
-	    <Image>Images/themes.png</Image>
-	    <StoryboardID>FlexPie Theming</StoryboardID>
-  	</Sample>
+		<Title>Zooming and Scrolling</Title>
+		<Description>Shows stretch zoom-out and pinch zoom-in gestures</Description>
+		<Image>Images/chart_scatter.png</Image>
+		<StoryboardID>Zooming and Scrolling</StoryboardID>
+	</Sample>
 </ArrayOfSample>

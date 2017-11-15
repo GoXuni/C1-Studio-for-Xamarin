@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <RootNamespace>C1Weather</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="C1Weather.XF.csproj.vspscc" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Xamarin.Forms.Chart" Version="2.4.20173.222" />
+    <PackageReference Include="C1.Xamarin.Forms.Grid" Version="2.4.20173.222" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+  </ItemGroup>
+</Project>
