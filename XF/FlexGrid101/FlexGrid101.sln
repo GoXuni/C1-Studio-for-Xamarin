@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGrid101.Xamarin", "FlexGrid101.Xamarin\FlexGrid101.Xamarin.csproj", "{3E8B64E2-4327-452C-A674-1D964227B578}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGrid101.XF", "FlexGrid101.XF\FlexGrid101.XF.csproj", "{3E8B64E2-4327-452C-A674-1D964227B578}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGrid101.Android", "FlexGrid101.Android\FlexGrid101.Android.csproj", "{AD5C063C-BDE7-490F-8318-E88218712562}"
 EndProject
@@ -138,5 +138,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA1AFC58-97CE-4C22-BAC9-3B7325BB5613}
 	EndGlobalSection
 EndGlobal

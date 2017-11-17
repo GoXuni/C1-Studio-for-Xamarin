@@ -1,9 +1,9 @@
-FlexGrid101 Samples for Xamarin Forms
+FlexGrid101 for Xamarin Forms
 ------------------------------------------
 Shows samples of the Grid control.
 
 Shows the following samples
-
+<code>
 	- GettingStarted
 	- ColumnDefinitions
 	- SelectionModes
@@ -22,3 +22,5 @@ Shows the following samples
 	- Unbound
 	- OnDemand
 	- CustomAppearance
+	- New Row
+</code>

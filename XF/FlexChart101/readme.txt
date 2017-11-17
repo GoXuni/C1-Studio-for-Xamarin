@@ -1,17 +1,21 @@
-FlexChart101 Samples for Xamarin Forms
+FlexChart101 for Xamarin Forms
 ------------------------------------------
 Shows samples of the Chart control.
 
 Shows the following samples
-
+<code>
 	- GettingStarted with FlexChart
 	- BasicChartTypes
 	- MixedChartTypes
 	- FinancialChart
 	- BubbleChart
 	- FlexChart DataLabels
+	- Annotation
+	- Line Marker
+	- Customizing Axis Labels
 	- MultipleAxes
 	- FlexChart LegendAndTitles
+	- Custom Plot Elements
 	- SelectionModes
 	- ToggleSeries
 	- DynamicCharts
@@ -26,3 +30,4 @@ Shows the following samples
 	- Selection
 	- FlexPie DataLabels
 	- FlexPie Theming
+</code>

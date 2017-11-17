@@ -1,11 +1,11 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardDemo", "DashboardDemo\DashboardDemo.csproj", "{F7DFECA8-53F5-411D-BA61-6DADC46E5F26}"
+# Visual Studio 15
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashboardDemo.XF", "DashboardDemo.XF\DashboardDemo.XF.csproj", "{F7DFECA8-53F5-411D-BA61-6DADC46E5F26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardDemo.iOS", "DashboardDemo.iOS\DashboardDemo.iOS.csproj", "{2ED2EAC0-3C8D-4D4C-A853-F4D0637C1C12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardDemo.Droid", "DashboardDemo.Droid\DashboardDemo.Droid.csproj", "{6CF5EBC4-5C6A-4B73-A2AA-7C8183B0F113}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardDemo.Android", "DashboardDemo.Android\DashboardDemo.Android.csproj", "{6CF5EBC4-5C6A-4B73-A2AA-7C8183B0F113}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardDemo.UWP", "DashboardDemo.UWP\DashboardDemo.UWP.csproj", "{2DACF8FD-3DE0-476E-8FEE-82FF75480D9F}"
 EndProject
@@ -146,5 +146,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B764D012-75C1-481D-8C33-E4113E81B8B8}
 	EndGlobalSection
 EndGlobal

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
@@ -81,54 +82,50 @@
     <IOSDebuggerPort>10000</IOSDebuggerPort>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.CollectionView, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.3.20172.179\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.4.20173.222\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Core, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+    <Reference Include="C1.iOS.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Gauge, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Gauge.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
+    <Reference Include="C1.iOS.Gauge, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Gauge.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Grid, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Grid.2.3.20172.179\lib\Xamarin.iOS10\C1.iOS.Grid.dll</HintPath>
+    <Reference Include="C1.iOS.Grid, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Grid.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Grid.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core.Platform.iOS, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core.Platform.iOS, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.Platform.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Gauge, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Gauge, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Gauge.Platform.iOS, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Gauge.Platform.iOS, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Gauge.Platform.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Grid, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Grid.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Grid.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Grid, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Grid.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Grid.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Grid.Platform.iOS, Version=2.3.20172.179, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Grid.2.3.20172.179\lib\Xamarin.iOS10\C1.Xamarin.Forms.Grid.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Grid.Platform.iOS, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Grid.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Grid.Platform.iOS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.38779\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.38779\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform.iOS, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.38779\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.38779\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
@@ -194,8 +191,8 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Entitlements.plist" />
-    <None Include="packages.config" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FileSystem.cs" />
@@ -204,19 +201,20 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\FlexGrid101.Xamarin\FlexGrid101.Xamarin.csproj">
+    <ProjectReference Include="..\FlexGrid101.XF\FlexGrid101.XF.csproj">
       <Project>{3E8B64E2-4327-452C-A674-1D964227B578}</Project>
-      <Name>FlexGrid101.Xamarin</Name>
+      <Name>FlexGrid101.XF</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Icon-167.png" />
   </ItemGroup>
-  <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.targets'))" />
   </Target>
+  <Import Project="..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.targets')" />
 </Project>

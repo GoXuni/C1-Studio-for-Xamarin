@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Input101.Xamarin", "C1Input101.Xamarin\C1Input101.Xamarin.csproj", "{67697936-4A68-4FA7-9F6F-3A5B8ADC1E1C}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Input101.XF", "C1Input101.XF\C1Input101.XF.csproj", "{67697936-4A68-4FA7-9F6F-3A5B8ADC1E1C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Input101.iOS", "C1Input101.iOS\C1Input101.iOS.csproj", "{62E641ED-744D-4D6B-BDF3-4C4D01A1156C}"
 EndProject
@@ -135,5 +135,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2895BB7E-6640-4C64-9CD7-CAC9F89DABF2}
 	EndGlobalSection
 EndGlobal
