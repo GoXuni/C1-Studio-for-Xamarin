@@ -45,11 +45,11 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Android.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Android.CollectionView.2.4.20173.222\lib\MonoAndroid10\C1.Android.CollectionView.dll</HintPath>
+    <Reference Include="C1.Android.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Android.CollectionView.2.4.20173.234\lib\MonoAndroid10\C1.Android.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.4.20173.222\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.4.20173.234\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />

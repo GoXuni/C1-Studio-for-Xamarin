@@ -24,7 +24,7 @@ namespace C1CollectionView101
 			var samples = new SourceListItem("Samples");
             var storyboard = NSStoryboard.FromName("Main", null);
 
-			samples.AddItem("Getting Started", "collectionview.png", () => 
+			samples.AddItem(Resources.gettingstarted, "collectionview.png", () => 
             {
                 var viewController = storyboard.InstantiateControllerWithIdentifier("gettingstarted") as GettingStartedViewController;
 				var item = NSSplitViewItem.FromViewController(viewController);
@@ -32,7 +32,7 @@ namespace C1CollectionView101
 				splitViewController.RemoveSplitViewItem(splitViewController.SplitViewItems[1]);
 				splitViewController.AddSplitViewItem(item);
 			});
-			samples.AddItem("Column Definition", "collectionview.png", () =>
+			samples.AddItem(Resources.columndefinition, "collectionview.png", () =>
 			{
 				var viewController = storyboard.InstantiateControllerWithIdentifier("columndefinition") as ColumnDefinitionViewController;
 				var item = NSSplitViewItem.FromViewController(viewController);
@@ -40,7 +40,7 @@ namespace C1CollectionView101
 				splitViewController.RemoveSplitViewItem(splitViewController.SplitViewItems[1]);
 				splitViewController.AddSplitViewItem(item);
 			});
-			samples.AddItem("Filtering", "filter.png", () =>
+			samples.AddItem(Resources.filtering, "filter.png", () =>
             {
 				var viewController = storyboard.InstantiateControllerWithIdentifier("filtering") as FilterViewController;
 				var item = NSSplitViewItem.FromViewController(viewController);
@@ -48,7 +48,7 @@ namespace C1CollectionView101
 				splitViewController.RemoveSplitViewItem(splitViewController.SplitViewItems[1]);
 				splitViewController.AddSplitViewItem(item);
             });
-			samples.AddItem("Grouping", "flexgrid_grouping.png", () =>
+            samples.AddItem(Resources.grouping, "flexgrid_grouping.png", () =>
 			{
 				var viewController = storyboard.InstantiateControllerWithIdentifier("grouping") as GroupingViewController;
 				var item = NSSplitViewItem.FromViewController(viewController);
@@ -56,7 +56,7 @@ namespace C1CollectionView101
 				splitViewController.RemoveSplitViewItem(splitViewController.SplitViewItems[1]);
 				splitViewController.AddSplitViewItem(item);
 			});
-			samples.AddItem("On Demand", "flexgrid_loading.png", () =>
+			samples.AddItem(Resources.ondemand, "flexgrid_loading.png", () =>
 			{
 				var viewController = storyboard.InstantiateControllerWithIdentifier("ondemand") as OnDemandViewController;
 				var item = NSSplitViewItem.FromViewController(viewController);
@@ -64,7 +64,7 @@ namespace C1CollectionView101
 				splitViewController.RemoveSplitViewItem(splitViewController.SplitViewItems[1]);
 				splitViewController.AddSplitViewItem(item);
 			});
-			samples.AddItem("Custom Cells", "collectionview.png", () =>
+			samples.AddItem(Resources.customcells, "collectionview.png", () =>
 			{
                 var viewController = storyboard.InstantiateControllerWithIdentifier("customcells") as CustomCellsViewController;
 				var item = NSSplitViewItem.FromViewController(viewController);

@@ -8,8 +8,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Xamarin.Forms.Chart" Version="2.4.20173.222" />
-    <PackageReference Include="C1.Xamarin.Forms.Grid" Version="2.4.20173.222" />
+    <PackageReference Include="C1.Xamarin.Forms.Chart" Version="2.4.20173.234" />
+    <PackageReference Include="C1.Xamarin.Forms.Grid" Version="2.4.20173.234" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
   </ItemGroup>

@@ -1,9 +1,11 @@
-﻿using SQLite.Net.Attributes;
+﻿using SQLite;
 
 namespace SQLiteDataBase
 {
     public class Person
     {
+        public Person() { }
+
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
 

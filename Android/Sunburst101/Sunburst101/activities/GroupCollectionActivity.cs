@@ -64,5 +64,17 @@ namespace Sunburst101
         {
             this.sunburst.ItemsSource = cv;
         }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == global::Android.Resource.Id.Home)
+            {
+                Finish();
+                return true;
+            }
+            else
+            {
+                return base.OnOptionsItemSelected(item);
+            }
+        }
     }
 }

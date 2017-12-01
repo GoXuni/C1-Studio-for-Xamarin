@@ -56,35 +56,35 @@
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Android.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Android.Core.2.4.20173.222\lib\MonoAndroid10\C1.Android.Core.dll</HintPath>
+    <Reference Include="C1.Android.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Android.Core.2.4.20173.234\lib\MonoAndroid10\C1.Android.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Android.Gauge, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Android.Gauge.2.4.20173.222\lib\MonoAndroid10\C1.Android.Gauge.dll</HintPath>
+    <Reference Include="C1.Android.Gauge, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Android.Gauge.2.4.20173.234\lib\MonoAndroid10\C1.Android.Gauge.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Android.Grid, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Android.Grid.2.4.20173.222\lib\MonoAndroid10\C1.Android.Grid.dll</HintPath>
+    <Reference Include="C1.Android.Grid, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Android.Grid.2.4.20173.234\lib\MonoAndroid10\C1.Android.Grid.dll</HintPath>
     </Reference>
-    <Reference Include="C1.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.4.20173.222\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.4.20173.234\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Core.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core.Platform.Android, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Core.Platform.Android.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core.Platform.Android, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Core.Platform.Android.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Gauge, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Gauge.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Gauge, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Gauge.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Gauge.Platform.Android, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Gauge.Platform.Android.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Gauge.Platform.Android, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Gauge.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Gauge.Platform.Android.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Grid, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Grid.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Grid.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Grid, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Grid.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Grid.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Grid.Platform.Android, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Grid.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Grid.Platform.Android.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Grid.Platform.Android, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Grid.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Grid.Platform.Android.dll</HintPath>
     </Reference>
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.2.4.0.38779\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>

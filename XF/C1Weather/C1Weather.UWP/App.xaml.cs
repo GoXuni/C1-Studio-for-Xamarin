@@ -62,6 +62,8 @@ namespace C1Weather.UWP
                 var assembliesToInclude = new List<Assembly>();
                 assembliesToInclude.Add(typeof(C1.Xamarin.Forms.Grid.Platform.UWP.FlexGridRenderer).GetTypeInfo().Assembly);
                 assembliesToInclude.Add(typeof(C1.Xamarin.Forms.Chart.Platform.UWP.FlexChartRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(C1.Xamarin.Forms.Core.Platform.UWP.C1CoreRenderer).GetTypeInfo().Assembly);
+
                 assembliesToInclude.Add(typeof(C1.UWP.Chart.FlexChart).GetTypeInfo().Assembly);
                 assembliesToInclude.Add(typeof(C1.UWP.Grid.FlexGrid).GetTypeInfo().Assembly);
                 Xamarin.Forms.Forms.Init(e, assembliesToInclude);

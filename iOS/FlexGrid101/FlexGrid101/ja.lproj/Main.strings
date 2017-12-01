@@ -51,13 +51,11 @@
 /* Class = "UINavigationItem"; title = "Filter"; ObjectID = "5297"; */
 "5297.title" = "フィルター";
 
+/* Class = "UINavigationItem"; title = "Unbound"; ObjectID = "6489"; */
+"6489.title" = "アンバウンド（データ非接続）";
 
 /* Class = "UINavigationItem"; title = "Edit Filter"; ObjectID = "5294"; */
 "5294.title" = "フィルターの編集";
-
-
-/* Class = "UINavigationItem"; title = "Unbound"; ObjectID = "6489"; */
-"6489.title" = "アンバウンド（データ非接続）";
 
 /* Class = "UINavigationItem"; title = "Custom Cells"; ObjectID = "5303"; */
 "5303.title" = "外観のカスタマイズ";
@@ -99,6 +97,8 @@
 "2257.text" = "データオンデマンド";
 //custom appearance
 "2260.text" = "外観のカスタマイズ";
+// new row
+"12061.text" = "新しい行";
 
 //UITableView Descriptions
 //Getting Started
@@ -136,7 +136,9 @@
 //on demand
 "2258.text" = "スクロールの終端で表示データをロード";
 //custom appearance
-"2261.text" =   "外観スタイルを変更してグリッドを表示"; 
+"2261.text" =   "外観スタイルを変更してグリッドを表示";
+//new row
+"12062.text" = "新しい行を追加して表示";
 
 //UILabels for Edit FOrm
 "7271.text" = "名(First Name)";

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Xamarin.Forms.Core.Platform.Android</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Xamarin.Forms.Core.Platform.Android.C1CheckBoxRenderer">
+            <summary>
+            <see cref="T:C1.Xamarin.Forms.Core.C1CheckBox"/> renderer.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.Platform.Android.C1CheckBoxRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.Platform.Android.C1CheckBoxRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.Platform.Android.C1CheckBoxRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Core.Platform.Android.C1ToggleButtonRenderer">
+            <summary>
+            <see cref="T:C1.Xamarin.Forms.Core.C1ToggleButton"/> renderer.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Core.Platform.Android.C1CoreRenderer">
+            <summary>
+            This class is used to bring the renderer dll's up before XF runs.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.Platform.Android.C1CoreRenderer.Init">
+            <summary>
+            Initials the C1CoreRenderer class.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Core.Platform.Android.C1ViewRenderer`2">
+            <summary>
+            Base class for C1 renderers.
+            </summary>
+            <typeparam name="X"></typeparam>
+            <typeparam name="N"></typeparam>
+            <seealso cref="T:Xamarin.Forms.Platform.Android.ViewRenderer`2" />
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.Platform.Android.C1ViewRenderer`2.#cctor">
+            <summary>
+            License key remapping from XF to native platforms to avoid duplication of licensing logic
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Core.Platform.Android.C1ViewRenderer`2.XElement">
+            <summary>
+            Gets the Xamarin.Forms element.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Core.Platform.Android.C1ViewRenderer`2.NElement">
+            <summary>
+            Gets the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.Platform.Android.C1ViewRenderer`2.OnElementChanged(Xamarin.Forms.Platform.Android.ElementChangedEventArgs{`0})">
+            <summary>
+            Raises the <see cref="E:ElementChanged" /> event.
+            </summary>
+            <param name="e">The <see cref="T:Xamarin.Forms.Platform.Android.ElementChangedEventArgs`1"/> instance containing the event data.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.Platform.Android.C1ViewRenderer`2.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.Platform.Android.C1ViewRenderer`2.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.Platform.Android.C1ViewRenderer`2.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.Platform.Android.C1ViewRenderer`2.OnMeasure(System.Int32,System.Int32)">
+            <summary>
+            Called to determine the size requirements for this view and all of its children. 
+            </summary>
+            <param name="widthMeasureSpec">The horizontal space requirements as imposed by the parent. </param>
+            <param name="heightMeasureSpec">The vertical space requirements as imposed by the parent. </param>
+        </member>
+    </members>
+</doc>

@@ -93,20 +93,20 @@
     <CscToolExe>mcs.exe</CscToolExe>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.4.20173.222\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.4.20173.234\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Calendar, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Calendar.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Calendar.dll</HintPath>
+    <Reference Include="C1.iOS.Calendar, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Calendar.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Calendar.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.CollectionView.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.CollectionView.dll</HintPath>
+    <Reference Include="C1.iOS.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.CollectionView.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+    <Reference Include="C1.iOS.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Input, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Input.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Input.dll</HintPath>
+    <Reference Include="C1.iOS.Input, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Input.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Input.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Net.Http" />

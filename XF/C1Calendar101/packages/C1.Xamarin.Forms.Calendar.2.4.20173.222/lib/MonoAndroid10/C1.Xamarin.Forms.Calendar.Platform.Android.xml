@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Xamarin.Forms.Calendar.Platform.Android</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Xamarin.Forms.Calendar.Platform.Android.C1CalendarRenderer">
+            <summary>
+            Renderer for <see cref="T:C1.Xamarin.Forms.Calendar.C1Calendar"/>.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Calendar.Platform.Android.C1CalendarRenderer.Init">
+            <summary>
+            Loads renderers libraries to memory.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Calendar.Platform.Android.C1CalendarRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Calendar.Platform.Android.C1CalendarRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Calendar.Platform.Android.C1CalendarRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -3,8 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Threading;
-using SQLite.Net.Async;
 using System.Collections.Specialized;
+using SQLite;
 
 namespace SQLiteDataBase
 {
@@ -15,7 +15,7 @@ namespace SQLiteDataBase
     /// The collection view supports loading on demand, sorting, filtering and editing.
     /// </remarks>
     public class SQLiteCollectionView<T> : C1CursorCollectionView<T, int?>, ISupportSorting, ISupportFiltering, ISupportEditing
-        where T : class
+        where T : class, new ()
     {
         #region ** fields
 
@@ -77,7 +77,8 @@ namespace SQLiteDataBase
             else
             {
                 //gets the "count" to know the position where the element was inserted.
-                var insertedIndex = await _connection.Table<T>().CountAsync() - 1;
+                var query = _connection.Table<T>();
+                var insertedIndex = await query.CountAsync() - 1;
                 if (InternalList.Count >= insertedIndex)
                 {
                     InternalList.Insert(insertedIndex, item as T);

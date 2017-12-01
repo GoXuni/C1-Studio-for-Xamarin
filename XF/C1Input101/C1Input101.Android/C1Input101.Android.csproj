@@ -48,38 +48,38 @@
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Android.Calendar, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Android.Calendar.2.4.20173.222\lib\MonoAndroid10\C1.Android.Calendar.dll</HintPath>
+    <Reference Include="C1.Android.Calendar, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Android.Calendar.2.4.20173.234\lib\MonoAndroid10\C1.Android.Calendar.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Android.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Android.CollectionView.2.4.20173.222\lib\MonoAndroid10\C1.Android.CollectionView.dll</HintPath>
+    <Reference Include="C1.Android.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Android.CollectionView.2.4.20173.234\lib\MonoAndroid10\C1.Android.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Android.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Android.Core.2.4.20173.222\lib\MonoAndroid10\C1.Android.Core.dll</HintPath>
+    <Reference Include="C1.Android.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Android.Core.2.4.20173.234\lib\MonoAndroid10\C1.Android.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Android.Input, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Android.Input.2.4.20173.222\lib\MonoAndroid10\C1.Android.Input.dll</HintPath>
+    <Reference Include="C1.Android.Input, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Android.Input.2.4.20173.234\lib\MonoAndroid10\C1.Android.Input.dll</HintPath>
     </Reference>
-    <Reference Include="C1.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.4.20173.222\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.4.20173.234\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Calendar, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Calendar.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Calendar.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Calendar, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Calendar.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Calendar.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Calendar.Platform.Android, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Calendar.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Calendar.Platform.Android.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Calendar.Platform.Android, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Calendar.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Calendar.Platform.Android.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Core.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core.Platform.Android, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Core.Platform.Android.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core.Platform.Android, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Core.Platform.Android.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Input, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Input.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Input.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Input, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Input.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Input.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Input.Platform.Android, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Input.2.4.20173.222\lib\MonoAndroid10\C1.Xamarin.Forms.Input.Platform.Android.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Input.Platform.Android, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Input.2.4.20173.234\lib\MonoAndroid10\C1.Xamarin.Forms.Input.Platform.Android.dll</HintPath>
     </Reference>
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.2.4.0.38779\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>

@@ -103,38 +103,38 @@
     <BundleResource Include="Resources\tip%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.4.20173.222\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.4.20173.234\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Calendar, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Calendar.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Calendar.dll</HintPath>
+    <Reference Include="C1.iOS.Calendar, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Calendar.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Calendar.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.CollectionView.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.CollectionView.dll</HintPath>
+    <Reference Include="C1.iOS.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.CollectionView.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+    <Reference Include="C1.iOS.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Input, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Input.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Input.dll</HintPath>
+    <Reference Include="C1.iOS.Input, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Input.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Input.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Calendar, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Calendar.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Calendar.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Calendar, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Calendar.2.4.20173.234\lib\Xamarin.iOS10\C1.Xamarin.Forms.Calendar.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Calendar.Platform.iOS, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Calendar.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Calendar.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Calendar.Platform.iOS, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Calendar.2.4.20173.234\lib\Xamarin.iOS10\C1.Xamarin.Forms.Calendar.Platform.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.234\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Core.Platform.iOS, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Core.Platform.iOS, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Core.2.4.20173.234\lib\Xamarin.iOS10\C1.Xamarin.Forms.Core.Platform.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Input, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Input.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Input.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Input, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Input.2.4.20173.234\lib\Xamarin.iOS10\C1.Xamarin.Forms.Input.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Xamarin.Forms.Input.Platform.iOS, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Xamarin.Forms.Input.2.4.20173.222\lib\Xamarin.iOS10\C1.Xamarin.Forms.Input.Platform.iOS.dll</HintPath>
+    <Reference Include="C1.Xamarin.Forms.Input.Platform.iOS, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Xamarin.Forms.Input.2.4.20173.234\lib\Xamarin.iOS10\C1.Xamarin.Forms.Input.Platform.iOS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

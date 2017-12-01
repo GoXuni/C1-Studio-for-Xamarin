@@ -349,4 +349,13 @@
     <value>マーキーの表示</value>
     <comment>ShowMarquee</comment>
   </data>
+  <data name="NewRowDescription" xml:space="preserve">
+    <value>追加する新しい行を表示</value>
+  </data>
+  <data name="NewRowTitle" xml:space="preserve">
+    <value>新しい行</value>
+  </data>
+  <data name="NewRowPlaceholder" xml:space="preserve">
+    <value>クリックして新しい行を追加する</value>
+  </data>
 </root>

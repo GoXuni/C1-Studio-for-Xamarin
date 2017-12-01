@@ -51,14 +51,14 @@
     <DevInstrumentationEnabled>False</DevInstrumentationEnabled>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Android.Chart, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Android.Chart.2.4.20173.222\lib\MonoAndroid10\C1.Android.Chart.dll</HintPath>
+    <Reference Include="C1.Android.Chart, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Android.Chart.2.4.20173.234\lib\MonoAndroid10\C1.Android.Chart.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Android.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.Android.Core.2.4.20173.222\lib\MonoAndroid10\C1.Android.Core.dll</HintPath>
+    <Reference Include="C1.Android.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Android.Core.2.4.20173.234\lib\MonoAndroid10\C1.Android.Core.dll</HintPath>
     </Reference>
-    <Reference Include="C1.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.4.20173.222\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.4.20173.234\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />

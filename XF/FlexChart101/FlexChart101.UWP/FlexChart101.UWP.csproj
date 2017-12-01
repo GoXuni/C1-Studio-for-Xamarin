@@ -187,7 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>2.4.20173.222</Version>
+      <Version>2.4.20173.234</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.ApplicationInsights">
       <Version>2.4.0</Version>

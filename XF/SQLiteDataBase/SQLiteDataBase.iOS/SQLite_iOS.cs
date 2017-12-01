@@ -1,10 +1,8 @@
 using System;
 using Xamarin.Forms;
 using System.IO;
-using SQLite.Net.Async;
-using SQLite.Net.Platform.XamarinIOS;
-using SQLite.Net;
 using System.Diagnostics;
+using SQLite;
 
 [assembly: Dependency(typeof(SQLiteDataBase.SQLite_iOS))]
 
@@ -23,21 +21,10 @@ namespace SQLiteDataBase
             var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             var libraryPath = Path.Combine(documentsPath, "..", "Library");
             var path = Path.Combine(libraryPath, fileName);
-
-            var platform = new SQLitePlatformIOS();
             var connectionString = new SQLiteConnectionString(path, true);
-            var connection = new SQLiteAsyncConnection(() => new SQLiteConnectionWithLock(platform, connectionString) { TraceListener = new MyTraceListener() });
-
-            return connection;
+            return new SQLiteAsyncConnection(path);
         }
 
         #endregion
-    }
-    public class MyTraceListener : ITraceListener
-    {
-        public void Receive(string message)
-        {
-            Debug.WriteLine(message);
-        }
     }
 }

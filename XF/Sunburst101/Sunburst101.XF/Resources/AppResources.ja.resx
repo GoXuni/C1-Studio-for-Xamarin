@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BasicFeaturesDescription" xml:space="preserve">
-    <value>The Sunburst control has five basic properties that allow you to customize its layout and appearance.
-1. innerRadius: Specifies the control's inner radius to support donut charts.
-2. offset: Specifies the offset of the sunburst slices from the center of the control.
-3. startAngle: Starting at the nine o'clock position, specifies the angle to start drawing sunburst slices.
-4. palette: Specifies an array of default colors to be used when rendering sunburst slices.
-5. reversed: Determines whether the control should draw sunburst slices clockwise(false) or counterclockwise(true).
-The example allows you to see what hanppens when you change these properties. Also, clicking on a sunburst slice will display a tooltip for the data point.</value>
+    <value>Sunburstコントロールには5つの基本的なプロパティがあり、レイアウトと外観をカスタマイズできます。
+1. innerRadius：ドーナツチャートをサポートするコントロールの内径を指定します。
+2. offset：コントロールの中央からのスライスのオフセットを指定します。
+3. startAngle：9時の位置から開始し、スライスの描画を開始する角度を指定します。
+4. palette：スライスをレンダリングするときに使用するデフォルトの色の配列を指定します。
+5. reversed：コントロールがスライスを時計回り（false）または反時計回り（true）に描画するかどうかを指定します。
+この例では、これらのプロパティを変更したときに何が表示されるかを確認できます。 また、スライスをクリックすると、データポイントのツールチップが表示されます。</value>
     <comment>The Sunburst control has five basic properties that allow you to customize its layout and appearance.
 1. innerRadius: Specifies the control's inner radius to support donut charts.
 2. offset: Specifies the offset of the sunburst slices from the center of the control.
@@ -134,19 +134,19 @@ The example allows you to see what hanppens when you change these properties. Al
 The example allows you to see what hanppens when you change these properties. Also, clicking on a sunburst slice will display a tooltip for the data point.</comment>
   </data>
   <data name="BasicFeaturesDescriptionShort" xml:space="preserve">
-    <value>Shows inner radius, offset, and start angle.</value>
+    <value>内径、オフセット、開始角度を表示します。</value>
     <comment>Shows inner radius, offset, and start angle.</comment>
   </data>
   <data name="BasicFeaturesName" xml:space="preserve">
-    <value>Basic Features</value>
+    <value>基本機能</value>
     <comment>Basic Features</comment>
   </data>
   <data name="BasicFeaturesTitle" xml:space="preserve">
-    <value>Basic Features</value>
+    <value>基本機能</value>
     <comment>Basic Features</comment>
   </data>
   <data name="Footer" xml:space="preserve">
-    <value>Footer</value>
+    <value>フッター</value>
     <comment>Footer</comment>
   </data>
   <data name="FooterContent" xml:space="preserve">
@@ -154,113 +154,113 @@ The example allows you to see what hanppens when you change these properties. Al
     <comment>copyright © GrapeCity, inc.</comment>
   </data>
   <data name="GettingStartedDescription" xml:space="preserve">
-    <value>Steps for getting started with Sunburst control in UWP applications:
-1. Add SDK reference to C1.UWP.FlexChart assembly.
-2. Bind the data to Sunburst.</value>
+    <value>UWPアプリケーションでSunburstコントロールを開始する手順：
+1. C1.UWP.FlexChartアセンブリにSDKリファレンスを追加します。
+2. Sunburstにデータをバインドします。</value>
     <comment>Steps for getting started with Sunburst control in UWP applications:
 1. Add SDK reference to C1.UWP.FlexChart assembly.
 2. Bind the data to Sunburst.</comment>
   </data>
   <data name="GettingStartedDescriptionShort" xml:space="preserve">
-    <value>Shows a simple sunburst chart with tooltips.</value>
+    <value>ツールヒントを含む簡単なSunburstチャートを表示します。</value>
     <comment>Shows a simple sunburst chart with tooltips.</comment>
   </data>
   <data name="GettingStartedName" xml:space="preserve">
-    <value>Getting Started</value>
+    <value>入門</value>
     <comment>Getting Started</comment>
   </data>
   <data name="GettingStartedTitle" xml:space="preserve">
-    <value>Getting Started</value>
+    <value>入門</value>
     <comment>Getting Started</comment>
   </data>
   <data name="GroupDescription" xml:space="preserve">
-    <value>The sample shows how to use the Sunburst chart with grouped CollectionView.</value>
+    <value>このサンプルは、グループ化されたCollectionViewでSunburstチャートを使用する方法を示しています。</value>
     <comment>The sample shows how to use the Sunburst chart with grouped CollectionView.</comment>
   </data>
   <data name="GroupDescriptionShort" xml:space="preserve">
-    <value>Shows Sunburst chart with grouped CollectionView.</value>
+    <value>グループ化されたCollectionViewを持つSunburstチャートを表示します。</value>
     <comment>Shows Sunburst chart with grouped CollectionView.</comment>
   </data>
   <data name="GroupName" xml:space="preserve">
-    <value>Group Collection</value>
+    <value>グループコレクション</value>
     <comment>Group Collection</comment>
   </data>
   <data name="GroupTitle" xml:space="preserve">
-    <value>Group Collection</value>
+    <value>グループコレクション</value>
     <comment>Group Collection</comment>
   </data>
   <data name="Header" xml:space="preserve">
-    <value>Header</value>
+    <value>ヘッダー</value>
     <comment>Header</comment>
   </data>
   <data name="HeaderContent" xml:space="preserve">
-    <value>Sales</value>
+    <value>販売</value>
     <comment>Sales</comment>
   </data>
   <data name="InitializationException" xml:space="preserve">
-    <value>Failed to create initial page.</value>
+    <value>初期ページの作成に失敗しました。</value>
     <comment>Failed to create initial page.</comment>
   </data>
   <data name="InnerRadius" xml:space="preserve">
-    <value>Inner Radius</value>
+    <value>内径</value>
     <comment>Inner Radius</comment>
   </data>
   <data name="LegendPosition" xml:space="preserve">
-    <value>Legend Position: </value>
+    <value>凡例の位置：</value>
     <comment>Legend Position:</comment>
   </data>
   <data name="LegendTitleDescription" xml:space="preserve">
-    <value>The legend properties can be used to customize the appearance of the chart's legend. The header and footer properties can be used to add titles to the Sunburst control as well.
-This example alows you to change the Sunburst's LegendPosition, Header and Footer properties.</value>
+    <value>凡例プロパティは、チャートの凡例の外観をカスタマイズするために使用できます。 ヘッダーとフッターのプロパティを使用して、Sunburstコントロールにタイトルを追加することもできます。
+この例では、SunburstのLegendPosition、Header、およびFooterの各プロパティを変更することができます。</value>
     <comment>The legend properties can be used to customize the appearance of the chart's legend. The header and footer properties can be used to add titles to the Sunburst control as well.
 This example alows you to change the Sunburst's LegendPosition, Header and Footer properties.</comment>
   </data>
   <data name="LegendTitleDescriptionShort" xml:space="preserve">
-    <value>Shows basic header, footer, and legend positioning.</value>
+    <value>基本的なヘッダー、フッター、凡例の位置を示します。</value>
     <comment>Shows basic header, footer, and legend positioning.</comment>
   </data>
   <data name="LegendTitlesName" xml:space="preserve">
-    <value>Legend And Titles</value>
+    <value>凡例とタイトル</value>
     <comment>Legend And Titles</comment>
   </data>
   <data name="LegendTitleTitle" xml:space="preserve">
-    <value>Legend And Titles</value>
+    <value>凡例とタイトル</value>
     <comment>Legend And Titles</comment>
   </data>
   <data name="Offset" xml:space="preserve">
-    <value>Offset</value>
+    <value>オフセット</value>
     <comment>Offset</comment>
   </data>
   <data name="Palette" xml:space="preserve">
-    <value>Palette: </value>
+    <value>パレット：</value>
     <comment>Palette:</comment>
   </data>
   <data name="PeriodicTableDescriptionShort" xml:space="preserve">
-    <value>Shows periodic table in sunburst.</value>
+    <value>Sunburstチャートで周期表を表示します。</value>
     <comment>Shows periodic table in sunburst.</comment>
   </data>
   <data name="PeriodicTableTitle" xml:space="preserve">
-    <value>Periodic Table</value>
+    <value>周期表</value>
     <comment>Periodic Table</comment>
   </data>
   <data name="Reversed" xml:space="preserve">
-    <value>Reversed</value>
+    <value>逆転</value>
     <comment>Reversed</comment>
   </data>
   <data name="SelectedItemOffset" xml:space="preserve">
-    <value>Selected Item Offset</value>
+    <value>選択したアイテムのオフセット</value>
     <comment>Selected Item Offset</comment>
   </data>
   <data name="SelectedItemPosition" xml:space="preserve">
-    <value>Selected item Position:</value>
+    <value>選択したアイテムの位置：</value>
     <comment>Selected item Position:</comment>
   </data>
   <data name="SelectionDescription" xml:space="preserve">
-    <value>The Sunburst control allows you to select data points by clicking or touching a sunburst slice.Use the SelectionMode property to specify whether you want to allow selection by data point or no selection at all(default).
-Setting the SelctionMode property to Point causes the Sunburst to update the selection property when the user clicks or touch on a sunburst slice.
-The Sunburst offers two additional properties to customize the selection:
-SelectedItemOffset: Specifies the offset of the selected sunburst slice from the center of the control.
-SelectedItemPosition: Specifies the position of the selected sunburst slice. The available options are Top, Bottom, Left, Right, and None (default).</value>
+    <value>Sunburstコントロールでは、スライスをクリックまたはタッチしてデータポイントを選択することができます。SelectionModeプロパティを使用して、データポイントによる選択を許可するか、まったく選択しない（デフォルト）かを指定します。
+SelctionModeプロパティをPointに設定すると、ユーザーがスライスをクリックまたはタッチしたときにSunburstが選択プロパティを更新します。
+Sunburstには、選択をカスタマイズするための2つのプロパティがあります。
+SelectedItemOffset：選択したスライスのコントロールの中心からのオフセットを指定します。
+SelectedItemPosition：選択したスライスの位置を指定します。 使用可能なオプションは、上、下、左、右、なし（デフォルト）です。</value>
     <comment>The Sunburst control allows you to select data points by clicking or touching a sunburst slice.Use the SelectionMode property to specify whether you want to allow selection by data point or no selection at all(default).
 Setting the SelctionMode property to Point causes the Sunburst to update the selection property when the user clicks or touch on a sunburst slice.
 The Sunburst offers two additional properties to customize the selection:
@@ -268,31 +268,31 @@ SelectedItemOffset: Specifies the offset of the selected sunburst slice from the
 SelectedItemPosition: Specifies the position of the selected sunburst slice. The available options are Top, Bottom, Left, Right, and None (default).</comment>
   </data>
   <data name="SelectionDescriptionShort" xml:space="preserve">
-    <value>Shows selection animation, offset, and positioning.</value>
+    <value>選択したアニメーション、オフセット、および配置を表示します。</value>
     <comment>Shows selection animation, offset, and positioning.</comment>
   </data>
   <data name="SelectionName" xml:space="preserve">
-    <value>Selection</value>
+    <value>選択</value>
     <comment>Selection</comment>
   </data>
   <data name="SelectionTitle" xml:space="preserve">
-    <value>Selection</value>
+    <value>選択</value>
     <comment>Selection</comment>
   </data>
   <data name="SessionStateErrorMessage" xml:space="preserve">
-    <value>Frames must be either be registered before accessing frame session state, or not registered at all.</value>
+    <value>フレームは、フレームセッション状態にアクセスする前に登録されていなければならず、まったく登録されていない場合もあります。</value>
     <comment>Frames must be either be registered before accessing frame session state, or not registered at all.</comment>
   </data>
   <data name="SessionStateKeyErrorMessage" xml:space="preserve">
-    <value>Frames can only be registered to one session state key.</value>
+    <value>フレームは1つのセッション状態キーにのみ登録できます。</value>
     <comment>Frames can only be registered to one session state key.</comment>
   </data>
   <data name="StartAngle" xml:space="preserve">
-    <value>Start Angle</value>
+    <value>開始角度</value>
     <comment>Start Angle</comment>
   </data>
   <data name="SuspensionManagerErrorMessage" xml:space="preserve">
-    <value>SuspensionManager failed.</value>
+    <value>SuspensionManagerが失敗しました。</value>
     <comment>SuspensionManager failed.</comment>
   </data>
   <data name="TxtAppName" xml:space="preserve">
@@ -300,7 +300,7 @@ SelectedItemPosition: Specifies the position of the selected sunburst slice. The
     <comment>Sunburst 101</comment>
   </data>
   <data name="UniqueIdItemsArgumentException" xml:space="preserve">
-    <value>Only 'AllItems' is supported as a collection of items.</value>
+    <value>「AllItems」のみが項目の集合としてサポートされています。</value>
     <comment>Only 'AllItems' is supported as a collection of items.</comment>
   </data>
 </root>

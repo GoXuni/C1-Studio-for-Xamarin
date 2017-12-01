@@ -2,189 +2,74 @@
 /* Class = "UINavigationItem"; title = "Sunburst101"; ObjectID = "hBU-cv-p7d"; */
 "hBU-cv-p7d.title" = "Sunburst101";
 
+/* Class = "UINavigationItem"; title = "Getting Started"; ObjectID = "JAD-ZU-lG7"; */
+"JAD-ZU-lG7.title" = "Sunburstチャートの基本機能";
 
-/* Class = "UISegmentedControl"; 2L1-N3-alg.segmentTitles[0] = "Candle"; ObjectID = "9J4-h5-wI2"; */
-"9J4-h5-wI2.segmentTitles[0]" = "ローソク足チャート";
+/* Class = "UINavigationItem"; title = "Data Labels"; ObjectID = "XsC-BQ-XP5"; */
+"XsC-BQ-XP5.title" = "グループコレクション";
 
-/* Class = "UISegmentedControl"; 2L1-N3-alg.segmentTitles[1] = "HLOC"; ObjectID = "9J4-h5-wI2"; */
-"9J4-h5-wI2.segmentTitles[1]" = "HLOCチャート";
+/* Class = "UINavigationItem"; title = "Basic Features"; ObjectID = "1Bh-t1-j7L"; */
+"1Bh-t1-j7L.title" = "Sunburstチャートの調整";
+
+/* Class = "UINavigationItem"; title = "Legend and TItles"; ObjectID = "eLQ-bJ-POd"; */ "eLQ-bJ-POd.title" = "凡例とタイトル";
+
+/* Class = "UINavigationItem"; title = "Selection"; ObjectID = "eKN-3d-QHk"; */
+"eKN-3d-QHk.title" = "選択";
+
+/* Class = "UINavigationItem"; title = "Selection"; ObjectID = "381"; */
+"381.title" = "周期表";
 
 
-/* Class = "UINavigationItem"; title = "Conditional Formatting"; ObjectID = "6d2-L3-8Bo"; */
-"6d2-L3-8Bo.title" = "条件付き書式";
-
-/* Class = "UINavigationItem"; title = "Customizing Axes"; ObjectID = "6e2-R6-1x2"; */
-"6e2-R6-1x2.title" = "軸のカスタマイズ";
-
-/* Class = "UILabel"; text = "Downloads"; ObjectID = "YPL-0Y-sNQ"; */
-"YPL-0Y-sNQ.text" = "Downloads";
-
-/* Class = "UINavigationItem"; title = "Styling"; ObjectID = "hP6-hs-Qvr"; */ "hP6-hs-Qvr.title" = "系列のスタイルをカスタマイズ";  /* Class = "UINavigationItem"; title = "Mixed Chart Types"; ObjectID = "gbh-Sh-48a"; */ "gbh-Sh-48a.title" = "複合チャート";  /* Class = "UINavigationItem"; title = "Line Marker"; ObjectID = "Dxd-jf-17g"; */ "Dxd-jf-17g.title" = "ラインマーカー";
-
-/* Class = "UINavigationItem"; title = "Load Animation"; ObjectID = "GqF-03-XVc"; */ "GqF-03-XVc.title" = "アニメーションモード";  /* Class = "UINavigationItem"; title = "Annotations"; ObjectID = "Hvk-X7-KoR"; */ "Hvk-X7-KoR.title" = "チャートの注釈";  /* Class = "UILabel"; text = "X Y Values"; ObjectID = "aAL-Lw-lus"; */ "aAL-Lw-lus.text" = "X/Y 値：";  /* Class = "UINavigationItem"; title = "Toggle Series"; ObjectID = "ljq-B1-HL2"; */ "ljq-B1-HL2.title" = "系列の表示/非表示";
-
-/* Class = "UILabel"; text = "Point Index"; ObjectID = "AIa-Gf-amB"; */
-"AIa-Gf-amB.text" = "データ点インデックス：";
-
-/* Class = "UILabel"; text = "Series"; ObjectID = "U4Q-YS-3IX"; */
-"U4Q-YS-3IX.text" = "系列名：";
-
-/* Class = "UINavigationItem"; title = "Theming"; ObjectID = "RvR-WC-b0b"; */ "RvR-WC-b0b.title" = "テーマ";  /* Class = "UINavigationItem"; title = "Hit Test"; ObjectID = "ZVJ-qw-ffT"; */ "ZVJ-qw-ffT.title" = "ヒットテスト";  /* Class = "UILabel"; text = "Series"; ObjectID = "bWk-xE-ilQ"; */ "bWk-xE-ilQ.text" = "系列ごと(Series)";  /* Class = "UINavigationItem"; title = "Basic Chart Types"; ObjectID = "cZK-5H-bhk"; */ "cZK-5H-bhk.title" = "基本チャートタイプ";
-
-/* Class = "UINavigationItem"; title = "Legend and TItles"; ObjectID = "4RN-U3-d0H"; */ "4RN-U3-d0H.title" = "凡例とタイトル";  /* Class = "UIBarButtonItem"; title = "Snapshot"; ObjectID = "4yV-bl-GIN"; */ "4yV-bl-GIN.title" = "画像を保存";  /* Class = "UINavigationItem"; title = "Custom Plot Elements"; ObjectID = "dfb-7t-I7M"; */ "dfb-7t-I7M.title" = "プロット要素のカスタマイズ";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[0] = "None"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[0]" = "なし";
-
-/* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[1] = "Left"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[1]" = "左側(Left)";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[2] = "Top"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[2]" = "上部(Top)";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[3] = "Right"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[3]" = "右側(Right)";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[4] = "Bottom"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[4]" = "下部(Bottom)";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[5] = "Center"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[5]" = "中心(Center)";
-
-/* Class = "UINavigationItem"; title = "Selection Modes"; ObjectID = "IRz-Pd-r77"; */
-"IRz-Pd-r77.title" = "選択モード";
-
-/* Class = "UINavigationItem"; title = "Multiple Axes"; ObjectID = "bO4-sT-63I"; */
-"bO4-sT-63I.title" = "複数の軸";
-
-/* Class = "UISegmentedControl"; fsZ-eP-n8U.segmentTitles[0] = "None"; ObjectID = "fsZ-eP-n8U"; */
-"fsZ-eP-n8U.segmentTitles[0]" = "移動しない(None)";
-
-/* Class = "UISegmentedControl"; fsZ-eP-n8U.segmentTitles[1] = "Move"; ObjectID = "fsZ-eP-n8U"; */
-"fsZ-eP-n8U.segmentTitles[1]" = "タッチ位置にマーカーを移動(Move)";
-
-/* Class = "UISegmentedControl"; fsZ-eP-n8U.segmentTitles[2] = "Drag"; ObjectID = "fsZ-eP-n8U"; */
-"fsZ-eP-n8U.segmentTitles[2]" = "マーカーをドラッグ可能(Drag)";
-
-/* Class = "UINavigationItem"; title = "Dynamic Charts"; ObjectID = "qZz-YQ-gzI"; */
-"qZz-YQ-gzI.title" = "動的チャート";
-
-/* Class = "UINavigationItem"; title = "Export Image"; ObjectID = "klv-pL-xHd"; */
-"klv-pL-xHd.title" = "画像として保存";
-
-/* Class = "UINavigationItem"; title = "Zooming and Scrolling"; ObjectID = "iiI-7u-KBh"; */
-"iiI-7u-KBh.title" = "ズームとスクロール";
-
-/* Class = "UILabel"; text = "Chart Element"; ObjectID = "Tcl-73-INJ"; */ "Tcl-73-INJ.text" = "チャート要素：";  /* Class = "UILabel"; text = "Expenses"; ObjectID = "Nzs-YH-jqH"; */ "Nzs-YH-jqH.text" = "Expenses";  /* Class = "UINavigationItem"; title = "Custom Tooltips"; ObjectID = "nBL-gN-Y8H"; */ "nBL-gN-Y8H.title" = "カスタムツールチップ";  /* Class = "UILabel"; text = "Zoom mode"; ObjectID = "npq-yw-p64"; */ "npq-yw-p64.text" = "ズームモード";
-
-/* Class = "UINavigationItem"; title = "Getting Started"; ObjectID = "Mhx-8e-MGI"; */
-"Mhx-8e-MGI.title" = "FlexChart の基本機能";
-
-/* Class = "UISegmentedControl"; q8b-S8-fnw.segmentTitles[0] = "X"; ObjectID = "q8b-S8-fnw"; */
-"q8b-S8-fnw.segmentTitles[0]" = "X 方向";
-
-/* Class = "UISegmentedControl"; q8b-S8-fnw.segmentTitles[1] = "Y"; ObjectID = "q8b-S8-fnw"; */
-"q8b-S8-fnw.segmentTitles[1]" = "Y 方向";
-
-/* Class = "UISegmentedControl"; q8b-S8-fnw.segmentTitles[2] = "XY"; ObjectID = "q8b-S8-fnw"; */
-"q8b-S8-fnw.segmentTitles[2]" = "X 方向とY 方向(XY)";
-
-/* Class = "UISegmentedControl"; q8b-S8-fnw.segmentTitles[3] = "Disabled"; ObjectID = "q8b-S8-fnw"; */
-"q8b-S8-fnw.segmentTitles[3]" = "なし";
-
-/* Class = "UINavigationItem"; title = "Scrolling"; ObjectID = "sYU-Ga-ndZ"; */
-"sYU-Ga-ndZ.title" = "スクロール";
-
-/* Class = "UINavigationItem"; title = "Update Animation"; ObjectID = "tGq-Z5-SDb"; */
-"tGq-Z5-SDb.title" = "更新アニメーション";
-
-/* Class = "UINavigationItem"; title = "Bubble Chart"; ObjectID = "uev-GM-eLb"; */
-"uev-GM-eLb.title" = "バブルチャート";
-
-/* Class = "UILabel"; text = "Sales"; ObjectID = "0Sg-ld-3j0"; */
-"0Sg-ld-3j0.text" = "Sales";
-
-/* Class = "UINavigationItem"; title = "Data Labels"; ObjectID = "hhN-tW-Yfp"; */
-"hhN-tW-Yfp.title" = "データラベル";
-
-/* Class = "UINavigationItem"; title = "Financial Chart"; ObjectID = "5it-mO-ywM"; */
-"5it-mO-ywM.title" = "ファイナンシャルチャート";
-
-/* Class = "UINavigationItem"; title = "Zones"; ObjectID = "urP-IR-Ouj"; */
-"urP-IR-Ouj.title" = "ゾーン（領域)";
-
-/* Class = "UILabel"; text = "Reversed:"; ObjectID = "vI7-NO-f31"; */
-"vI7-NO-f31.text" = "反転する:";
-
-/* Class = "UINavigationItem"; title = "Legend and Titles"; ObjectID = "UUO-IX-BmC"; */
-"UUO-IX-BmC.title" = "凡例とタイトル";
+/* Class = "UILabel"; text = "Inner radius:"; ObjectID = "gum-eA-br3"; */
+"gum-eA-br3.text" = "内径：";
 
 /* Class = "UILabel"; text = "Offset:"; ObjectID = "5vK-1t-ode"; */
 "5vK-1t-ode.text" = "オフセット:";
 
-/* Class = "UINavigationItem"; title = "Getting Started"; ObjectID = "JAD-ZU-lG7"; */
-"JAD-ZU-lG7.title" = "円形チャートの基本機能";
+/* Class = "UILabel"; text = "Start Angle:"; ObjectID = "3n1-EG-eIA"; */
+"3n1-EG-eIA.text" = "開始角度:";
 
 /* Class = "UILabel"; text = "Selected item offset:"; ObjectID = "YeC-Hg-P4q"; */
 "YeC-Hg-P4q.text" = "選択項目のオフセット:";
 
-/* Class = "UILabel"; text = "Inner radius:"; ObjectID = "gum-eA-br3"; */
-"gum-eA-br3.text" = "内側円の半径：";
+/* Class = "UILabel"; text = "Reversed:"; ObjectID = "vI7-NO-f31"; */
+"vI7-NO-f31.text" = "反転する:";
 
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[1] = "Left"; ObjectID = "zoS-At-X9B"; */
+
+/* Class = "UISegmentedControl"; zoS-At-X9B.segmentTitles[1] = "Left"; ObjectID = "zoS-At-X9B"; */
 "zoS-At-X9B.segmentTitles[0]" = "左側(Left)";
 
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[2] = "Top"; ObjectID = "zoS-At-X9B"; */
-"zoS-At-X9B.segmentTitles[1]" = "上部(Top)";
+/* Class = "UISegmentedControl"; zoS-At-X9B.segmentTitles[2] = "Right"; ObjectID = "zoS-At-X9B"; */
+"zoS-At-X9B.segmentTitles[1]" = "右側(Right)";
 
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[3] = "Right"; ObjectID = "zoS-At-X9B"; */
-"zoS-At-X9B.segmentTitles[2]" = "右側(Right)";
+/* Class = "UISegmentedControl"; zoS-At-X9B.segmentTitles[3] = "Top"; ObjectID = "zoS-At-X9B"; */
+"zoS-At-X9B.segmentTitles[2]" = "上部(Top)";
 
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[4] = "Bottom"; ObjectID = "zoS-At-X9B"; */
+/* Class = "UISegmentedControl"; zoS-At-X9B.segmentTitles[4] = "Bottom"; ObjectID = "zoS-At-X9B"; */
 "zoS-At-X9B.segmentTitles[3]" = "下部(Bottom)";
 
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[4] = "Bottom"; ObjectID = "zoS-At-X9B"; */
+/* Class = "UISegmentedControl"; zoS-At-X9B.segmentTitles[4] = "Auto"; ObjectID = "zoS-At-X9B"; */
 "zoS-At-X9B.segmentTitles[4]" = "自動(Auto)";
 
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[0] = "None"; ObjectID = "zoS-At-X9B"; */
+/* Class = "UISegmentedControl"; zoS-At-X9B.segmentTitles[0] = "None"; ObjectID = "zoS-At-X9B"; */
 "zoS-At-X9B.segmentTitles[5]" = "なし(None)";
 
-/* Class = "UINavigationItem"; title = "Basic Features"; ObjectID = "1Bh-t1-j7L"; */
-"1Bh-t1-j7L.title" = "円形チャートのカスタマイズ";
 
-/* Class = "UILabel"; text = "Start Angle:"; ObjectID = "3n1-EG-eIA"; */
-"3n1-EG-eIA.text" = "開始角度:";
+/* Class = "UISegmentedControl"; 9fT-Oa-6CG.segmentTitles[1] = "Left"; ObjectID = "9fT-Oa-6CG"; */
+"9fT-Oa-6CG.segmentTitles[0]" = "左側(Left)";
 
-/* Class = "UINavigationItem"; title = "Theming"; ObjectID = "hQ3-Wq-ldR"; */
-"hQ3-Wq-ldR.title" = "円形チャートのテーマ";
+/* Class = "UISegmentedControl"; 9fT-Oa-6CG.segmentTitles[2] = "Top"; ObjectID = "9fT-Oa-6CG"; */
+"9fT-Oa-6CG.segmentTitles[1]" = "右側(Right)";
 
-/* Class = "UINavigationItem"; title = "Selection"; ObjectID = "hbF-P9-p4T"; */
-"hbF-P9-p4T.title" = "円形チャートのスライスの選択";
+/* Class = "UISegmentedControl"; 9fT-Oa-6CG.segmentTitles[3] = "Right"; ObjectID = "9fT-Oa-6CG"; */
+"9fT-Oa-6CG.segmentTitles[2]" = "上部(Top)";
 
-/* Class = "UIBarButtonItem"; title = "Select theme"; ObjectID = "kpr-RM-ePM"; */
-"kpr-RM-ePM.title" = "円形チャートのテーマの選択";
+/* Class = "UISegmentedControl"; 9fT-Oa-6CG.segmentTitles[4] = "Bottom"; ObjectID = "9fT-Oa-6CG"; */
+"9fT-Oa-6CG.segmentTitles[3]" = "下部(Bottom)";
 
+/* Class = "UISegmentedControl"; 9fT-Oa-6CG.segmentTitles[4] = "Auto"; ObjectID = "9fT-Oa-6CG"; */
+"9fT-Oa-6CG.segmentTitles[4]" = "自動(Auto)";
 
-/* Class = "UITextField"; placeholder = "Header"; ObjectID = "vm1-Rd-809"; */
-"vm1-Rd-809.placeholder" = "ヘッダに表示";
+/* Class = "UISegmentedControl"; 9fT-Oa-6CG.segmentTitles[0] = "None"; ObjectID = "9fT-Oa-6CG"; */
+"9fT-Oa-6CG.segmentTitles[5]" = "なし(None)";
 
-/* Class = "UITextField"; placeholder = "Footer"; ObjectID = "RbA-y5-Pbj"; */
-"RbA-y5-Pbj.placeholder" = "フッタに表示";
-
-/* Class = "UINavigationItem"; title = "Data Labels"; ObjectID = "XsC-BQ-XP5"; */
-"XsC-BQ-XP5.title" = "円形チャートのデータラベル";
-
-
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[1] = "Left"; ObjectID = "jqy-C5-EMh"; */
-"jqy-C5-EMh.segmentTitles[0]" = "左側(Left)";
-
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[2] = "Top"; ObjectID = "jqy-C5-EMh"; */
-"jqy-C5-EMh.segmentTitles[1]" = "上部(Top)";
-
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[3] = "Right"; ObjectID = "jqy-C5-EMh"; */
-"jqy-C5-EMh.segmentTitles[2]" = "右側(Right)";
-
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[4] = "Bottom"; ObjectID = "jqy-C5-EMh"; */
-"jqy-C5-EMh.segmentTitles[3]" = "下部(Bottom)";
-
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[5] = "Auto"; ObjectID = "jqy-C5-EMh"; */
-"jqy-C5-EMh.segmentTitles[4]" = "(Auto)";
-
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[0] = "None"; ObjectID = "jqy-C5-EMh"; */
-"jqy-C5-EMh.segmentTitles[5]" = "なし(None)";
-
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[1] = "None"; ObjectID = "Jua-JI-0D6"; */
-"Jua-JI-0D6.segmentTitles[0]" = "なし(None)";
-
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[2] = "Inside"; ObjectID = "Jua-JI-0D6"; */
-"Jua-JI-0D6.segmentTitles[1]" = "内側(Inside)";
-
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[3] = "Center"; ObjectID = "Jua-JI-0D6"; */
-"Jua-JI-0D6.segmentTitles[2]" = "中心(Center)";
-
-/* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[4] = "Outside"; ObjectID = "Jua-JI-0D6"; */
-"Jua-JI-0D6.segmentTitles[3]" = "外側(Outside)";

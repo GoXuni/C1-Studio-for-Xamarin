@@ -1,4 +1,4 @@
-Sunburst101 for Xamarin Forms
+Sunburst101 for Xamarin.Forms
 ------------------------------------------
 Shows samples of the Sunburst chart control.
 

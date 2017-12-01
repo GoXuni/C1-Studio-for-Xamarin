@@ -53,6 +53,9 @@
   <string name="OnDemandTitle">データオンデマンド</string>
   <string name="OnDemandDescription">スクロールの終端で表示データをロード</string>
   <string name="SearchPlaceholderText">YouTube で検索するビデオのテキストを入力</string>
+  <string name="NewRowTitle">新しい行</string>
+  <string name="NewRowDescription">新しい行を追加して表示</string>
+  <string name="NewRowPlaceholder">新しい行を追加するにはこちらをクリックしてください。</string>
   <string name="EmptyListText">表示するデータはありません。</string>
   <string name="CellsSelectedText">個のセルを選択</string>
   <string name="RemoveFilter">フィルタを解除</string>

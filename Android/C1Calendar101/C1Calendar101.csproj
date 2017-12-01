@@ -43,11 +43,11 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Android.Calendar, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\C1.Android.Calendar.2.4.20173.222\lib\MonoAndroid10\C1.Android.Calendar.dll</HintPath>
+    <Reference Include="C1.Android.Calendar, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\C1.Android.Calendar.2.4.20173.234\lib\MonoAndroid10\C1.Android.Calendar.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Android.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\C1.Android.Core.2.4.20173.222\lib\MonoAndroid10\C1.Android.Core.dll</HintPath>
+    <Reference Include="C1.Android.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\C1.Android.Core.2.4.20173.234\lib\MonoAndroid10\C1.Android.Core.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />

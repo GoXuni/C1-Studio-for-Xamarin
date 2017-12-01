@@ -1,0 +1,1036 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.iOS.Calendar</name>
+    </assembly>
+    <members>
+        <member name="T:C1.iOS.Calendar.CalendarDayOfWeekSlotLoadingEventArgs">
+            <summary>
+            Event data for <see cref="E:C1Calendar.DayOfWeekSlotLoading"/> event.
+            </summary>
+            <seealso cref="T:System.EventArgs" />
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarDayOfWeekSlotLoadingEventArgs.#ctor(System.DayOfWeek,System.Boolean,System.Func{UIKit.UIView})">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarDayOfWeekSlotLoadingEventArgs"/> class.
+            </summary>
+            <param name="dayOfWeek">The day of week for the corresponding day of week slot.</param>
+            <param name="isWeekend">Specifies whether it is a weekend day.</param>
+            <param name="getDayOfWeekSlot">Function which returns a visual element that will be displayed in the day of week slot.</param>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarDayOfWeekSlotLoadingEventArgs.DayOfWeek">
+            <summary>
+            Gets the day of week for the corresponding day of week slot.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarDayOfWeekSlotLoadingEventArgs.IsWeekend">
+            <summary>
+            Gets whether the day is in the weekend.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarDayOfWeekSlotLoadingEventArgs.DayOfWeekSlot">
+            <summary>
+            Gets or sets the visual element shown in the day of week slot.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarDaySlotLoadingEventArgs">
+            <summary>
+            Event data for <see cref="E:C1Calendar.DaySlotLoading"/> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarDaySlotLoadingEventArgs.#ctor(System.DateTime,System.Boolean,System.Func{UIKit.UIView})">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarDaySlotLoadingEventArgs"/> class.
+            </summary>
+            <param name="date">The date for the current day slot.</param>
+            <param name="isAdjacentDay">if set to <c>true</c> the day is an adjacent day in the calendar.</param>
+            <param name="getDaySlot">Function which returns a visual element that will be displayed in the day slot</param>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarDaySlotLoadingEventArgs.Date">
+            <summary>
+            Gets the date information for the current day slot.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarDaySlotLoadingEventArgs.IsAdjacentDay">
+            <summary>
+            Gets whether or not the day is an adjacent day in the calendar.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarDaySlotLoadingEventArgs.DaySlot">
+            <summary>
+            Gets or sets the visual element shown in the day slot.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarHeaderLoadingEventArgs">
+            <summary>
+            Provides event data for <see cref="E:C1.iOS.Calendar.C1Calendar.HeaderLoading"/> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarHeaderLoadingEventArgs.#ctor(System.DateTime,C1.iOS.Calendar.CalendarViewMode,System.Func{UIKit.UIView})">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarHeaderLoadingEventArgs"/> class.
+            </summary>
+            <param name="date">The displaying date.</param>
+            <param name="viewMode">The view mode of the calendar.</param>
+            <param name="getHeaderSlot">Function which returns a the header slot to be shown in the calendar.</param>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarHeaderLoadingEventArgs.Date">
+            <summary>
+            The displaying date.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarHeaderLoadingEventArgs.ViewMode">
+            <summary>
+            The view mode of the calendar.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarHeaderLoadingEventArgs.HeaderSlot">
+            <summary>
+            The header to be shown in the calendar.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarMonthSlotLoadingEventArgs">
+            <summary>
+            Event information for <see cref="E:C1Calendar.MonthSlotLoading"/> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarMonthSlotLoadingEventArgs.#ctor(System.Int32,System.Int32,System.Func{UIKit.UIView})">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarMonthSlotLoadingEventArgs"/> class.
+            </summary>
+            <param name="year">The year.</param>
+            <param name="month">The month.</param>
+            <param name="getMonthSlot">Function which returns a visual element that will be displayed in the month slot</param>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarMonthSlotLoadingEventArgs.Year">
+            <summary>
+            Gets the year.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarMonthSlotLoadingEventArgs.Month">
+            <summary>
+            Gets the month.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarMonthSlotLoadingEventArgs.MonthSlot">
+            <summary>
+            Gets or sets the visual element shown in the month slot.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarSelectionChangedEventArgs">
+            <summary>
+            Event information for <see cref="E:C1Calendar.SelectionChanged"/> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarSelectionChangedEventArgs.#ctor(System.Collections.Generic.IReadOnlyList{System.DateTime})">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarSelectionChangedEventArgs"/> class.
+            </summary>
+            <param name="selectedDates">The selected dates.</param>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarSelectionChangedEventArgs.SelectedDates">
+            <summary>
+            Gets the selected dates.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarSelectionChangingEventArgs">
+            <summary>
+            Event data for <see cref="E:C1Calendar.SelectionChanging"/> event.
+            </summary>
+            <seealso cref="T:System.EventArgs" />
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarSelectionChangingEventArgs.#ctor(System.Collections.Generic.List{System.DateTime})">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarSelectionChangingEventArgs"/> class.
+            </summary>
+            <param name="selectedDates">The list of selected dates.</param>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarSelectionChangingEventArgs.SelectedDates">
+            <summary>
+            Gets the list of selected dates.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarYearSlotLoadingEventArgs">
+            <summary>
+            Event information for <see cref="E:C1Calendar.YearSlotLoading"/> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarYearSlotLoadingEventArgs.#ctor(System.Int32,System.Boolean,System.Func{UIKit.UIView})">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarYearSlotLoadingEventArgs"/> class.
+            </summary>
+            <param name="year">The year.</param>
+            <param name="isAdjacentYear">if set to <c>true</c> the year is an adjacent year in the calendar.</param>
+            <param name="getYearSlot">Function which returns a visual element that will be displayed in the year slot</param>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarYearSlotLoadingEventArgs.Year">
+            <summary>
+            Gets the year.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarYearSlotLoadingEventArgs.IsAdjacentYear">
+            <summary>
+            Gets whether or not the year is an adjacent year in the calendar.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarYearSlotLoadingEventArgs.YearSlot">
+            <summary>
+            Gets or sets the visual element shown in the year slot.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarDaysOfWeekPanel">
+            <summary>
+            Panel that displays day of the week.
+            </summary>
+            <seealso cref="T:C1.iOS.Calendar.CalendarSlotsPanel`1" />
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarDaysOfWeekPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarDaysOfWeekPanel"/> class.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarDaysPanel">
+            <summary>
+            Panel that disaplys day slots.
+            </summary>
+            <seealso cref="T:C1.iOS.Calendar.CalendarSlotsPanel`1" />
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarDaysPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarDaysPanel"/> class.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarHeadersPanel">
+            <summary>
+            Panel that disaplys headers slots.
+            </summary>
+            <seealso cref="T:C1.iOS.Calendar.CalendarSlotsPanel`1" />
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarHeadersPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarHeadersPanel"/> class.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarMonthsPanel">
+            <summary>
+            Panel that displays months.
+            </summary>
+            <seealso cref="T:C1.iOS.Calendar.CalendarSlotsPanel`1" />
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarMonthsPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarMonthsPanel"/> class.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarSlotPresenter">
+            <summary>
+            Slot visual element
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarSlotPresenter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarSlotPresenter"/> class.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarSlotsPanel`1">
+            <summary>
+            Abstract panel used to render days, month years and days of weeks as a uniform grid which also allows rendering slots out of view.
+            </summary>
+            <typeparam name="S">The type of the slot. Inherit this class to add custom properties.</typeparam>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarSlotsPanel`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarSlotsPanel`1"/> class.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarSlotsPanel`1.Calendar">
+            <summary>
+            The calendar associated to the panel.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarSlotsPanel`1.Rows">
+            <summary>
+            Gets or sets the number of visible rows.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarSlotsPanel`1.Columns">
+            <summary>
+            Gets or sets the number of visible columns.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarSlotsPanel`1.Overflow">
+            <summary>
+            Gets the lenghts in pixels of the visible boundaries.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarSlotsPanel`1.StartOverflow">
+            <summary>
+            Gets the lenght in pixels of the elements that are out of view at the start considering <see cref="T:C1.iOS.Calendar.CalendarOrientation"/>.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarSlotsPanel`1.EndOverflow">
+            <summary>
+            Gets the lenght in pixels of the elements that are out of view at the end considering <see cref="T:C1.iOS.Calendar.CalendarOrientation"/>.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarSlotsPanel`1.GetSlots">
+            <summary>
+            When overriden, it returns the slots that will be displayed.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarSlotsPanel`1.CreateContainer">
+            <summary>
+            Creates the container.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarSlotsPanel`1.CreateContent(`0)">
+            <summary>
+            Creates the content of the slot.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarSlotsPanel`1.PrepareContainer(C1.iOS.Calendar.CalendarSlotPresenter,`0)">
+            <summary>
+            Prepares the item to be shown.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="slot">The slot.</param>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarSlotsPanel`1.Refresh(System.Boolean)">
+            <summary>
+            Recreates the slots.
+            </summary>
+            <param name="keepSlotContent">Keeps the slot content when a slot is already created.</param>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarYearsPanel">
+            <summary>
+            Panel that shows years divided by decades.
+            </summary>
+            <seealso cref="T:C1.iOS.Calendar.CalendarSlotsPanel`1" />
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarYearsPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.CalendarYearsPanel"/> class.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarYearsPanel.GetSlots">
+            <summary>
+            It returns the year slots that will be displayed.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarYearsPanel.CreateContainer">
+            <summary>
+            Creates the container.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarYearsPanel.CreateContent(C1.iOS.Calendar.C1Calendar.CalendarYearSlotInfo)">
+            <summary>
+            Creates the content.
+            </summary>
+            <param name="slot">The slot.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.iOS.Calendar.CalendarYearsPanel.PrepareContainer(C1.iOS.Calendar.CalendarSlotPresenter,C1.iOS.Calendar.C1Calendar.CalendarYearSlotInfo)">
+            <summary>
+            Prepares the item to be shown.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="slot">The slot.</param>
+        </member>
+        <member name="T:C1.iOS.Calendar.C1Calendar">
+            <summary>
+            Represents a month calendar with the ability to interactively navigate
+            through months and select a specific <see cref="T:System.DateTime"/> value or a range of dates.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.C1Calendar"/> class.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.iOS.Calendar.C1Calendar"/> class.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.BackgroundColor">
+            <summary>
+            Sets the background color of the <see cref="T:UIKit.UIView" />.
+            </summary>
+            <value>
+            <para>The default value is <see langword="null" />.</para>
+            <para tool="nullallowed">This value can be <see langword="null" />.</para>
+            </value>
+            <remarks>
+            <para>The <see cref="P:UIKit.UIView.BackgroundColor" /> is the rear-most visible element of a <see cref="T:UIKit.UIView" />, but developers should be aware that certain <see cref="T:UIKit.UIView" /> subclasses such as <see cref="T:UIKit.UITableViewCell" /> and <see cref="T:UIKit.UICollectionViewCell" /> have a <see cref="P:UIKit.UITableViewCell.BackgroundView" /> that may obscure their <see cref="P:UIKit.UIView.BackgroundColor" />.</para>
+            <para id="tool-remark">This member participates in the <see cref="T:UIKit.UIAppearance" /> styling system.  See the <see cref="P:UIKit.UIView.Appearance" /> property and the <see cref="M:UIKit.UIView.AppearanceWhenContainedIn" /> method.</para>
+            </remarks>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.TextColor">
+            <summary>
+            Gets or sets the color of the text within the calendar.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.AdjacentDayTextColor">
+            <summary>
+            Gets or sets the color of the adjacent days text.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.BorderColor">
+            <summary>
+            Gets or sets the color of the calendar's border.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.BorderWidth">
+            <summary>
+            Gets or sets the width of the calendar's border.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.DayBorderColor">
+            <summary>
+            Gets or sets the color used for the border between day slots.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.DayBorderWidth">
+            <summary>
+            Gets or sets the border thickness between day slots.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.DayPadding">
+            <summary>
+            Gets or sets the padding of the day slots.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.DayOfWeekBackgroundColor">
+            <summary>
+            Gets or sets the background color for the day of week slots.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.DayOfWeekTextColor">
+            <summary>
+            Gets or sets the color of the text displayed in the day of week slots.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarType">
+            <summary>
+            Gets or sets the type of calendar.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.DayOfWeekFormat">
+            <summary>
+            Gets or sets the format string which is used for representing day of week names.
+            </summary>
+            <remarks>
+            Possible values are:
+            <list type="bullet">
+            <listheader>
+            <term>d</term>
+            <description>S, M, T, W, T, F, S</description>
+            </listheader>
+            <item>
+            <term>dd</term>
+            <description>Su, Mo, Tu, We, Th, Fr, Sa</description>
+            </item>
+            <item>
+            <term>ddd</term>
+            <description>Sun, Mon, Tue, Wed, Thu, Fri, Sat</description>
+            </item>
+            <item>
+            <term>dddd</term>
+            <description>Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</description>
+            </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.ViewMode">
+            <summary>
+            Gets or sets a value indicating whether the calendar displays a month, year or decade view.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.DisplayDate">
+            <summary>
+            Gets or sets a value specifying the currently displayed date of the year.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.FirstDayOfWeek">
+            <summary>
+            Gets or sets a value that represents the first day of the week, the one displayed in the first column of the calendar.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.HeaderMonthFormat">
+            <summary>
+            Gets or sets the format used to display the month of the year when the <see cref="P:C1.iOS.Calendar.C1Calendar.ViewMode"/> is <see cref="F:C1.iOS.Calendar.CalendarViewMode.Month"/>.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.HeaderBackgroundColor">
+            <summary>
+            Gets or sets the background color for the header.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.HeaderTextColor">
+            <summary>
+            Gets or sets the color for the header text.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.IsAnimated">
+            <summary>
+            Gets or sets whether the control is animated during navigation.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.MinDate">
+            <summary>
+            Gets or sets the earliest date that the user can select in the calendar.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.MaxDate">
+            <summary>
+            Gets or sets the latest date that the user can select in the calendar.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.MaxSelectionCount">
+            <summary>
+            Gets or sets the maximum number of days that can be selected.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.Orientation">
+            <summary>
+            Gets or sets a value indicating which orientation the calendar navigates.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.SelectedDate">
+            <summary>
+            Gets or sets the currently selected date.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.SelectedDates">
+            <summary>
+            Gets or sets the list of selected dates.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.SelectionBackgroundColor">
+            <summary>
+            Gets or sets the color used to highlight selected dates.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.SelectionTextColor">
+            <summary>
+            Gets or sets the color for selected date text.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.ShowNavigationButtons">
+            <summary>
+            Gets or sets a value indicating whether the control displays the default navigation buttons.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.ShowHeader">
+            <summary>
+            Gets or sets a value indicating whether the control displays the header area with the current month and navigation buttons.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.TodayBackgroundColor">
+            <summary>
+            Gets or sets the color used to highlight the background of the today day slot.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.TodayTextColor">
+            <summary>
+            Gets or sets the color for the text of the today day slot.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.DisabledTextColor">
+            <summary>
+            Gets or sets the color for the text of disabled slots.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.ViewModeAnimation">
+            <summary>
+            Gets an object containing the animation settings that will be applied when changing the <see cref="P:C1.iOS.Calendar.C1Calendar.ViewMode"/>.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.NavigateAnimation">
+            <summary>
+            Gets an object containing the animation settings that will be applied when navigating backwards or forward.
+            </summary>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.ViewModeChanged">
+            <summary>
+            Occurs when the <see cref="P:C1.iOS.Calendar.C1Calendar.ViewMode"/> has changed, such as when the user taps the month header.
+            </summary>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.DisplayDateChanged">
+            <summary>
+            Occurs when the DisplayMonth property has changed.
+            </summary>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.DisplayDateChanging">
+            <summary>
+            Occurs before the DisplayMonth property changes.
+            </summary>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.DayOfWeekSlotLoading">
+            <summary>
+            Occurs when an element representing a day of week is about to be created.
+            </summary>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.DaySlotLoading">
+            <summary>
+            Occurs when an element representing a day in the calendar is about to be created.
+            </summary>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.MonthSlotLoading">
+            <summary>
+            Occurs when an element representing a month is about to be created.
+            </summary>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.YearSlotLoading">
+            <summary>
+            Occurs when an element representing a year in the calendar is about to be created.
+            </summary>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.SelectionChanging">
+            <summary>
+            Occurs before the selection changed.
+            </summary>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.SelectionChanged">
+            <summary>
+            Occurs when the SelectedDate or SelectedDates properties change.
+            </summary>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.HeaderLoading">
+            <summary>
+            Occurs when the header is being loaded.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.OnViewModeChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ViewModeChanged" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.OnDisplayDateChanging(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:DisplayDateChanging" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.OnDisplayDateChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:DisplayDateChanged" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.OnDayOfWeekSlotLoading(C1.iOS.Calendar.CalendarDayOfWeekSlotLoadingEventArgs)">
+            <summary>
+            Raises the <see cref="E:DayOfWeekSlotLoading" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.OnDaySlotLoading(C1.iOS.Calendar.CalendarDaySlotLoadingEventArgs)">
+            <summary>
+            Raises the <see cref="E:DaySlotLoading" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.OnMonthSlotLoading(C1.iOS.Calendar.CalendarMonthSlotLoadingEventArgs)">
+            <summary>
+            Raises the <see cref="E:MonthSlotLoading" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.OnYearSlotLoading(C1.iOS.Calendar.CalendarYearSlotLoadingEventArgs)">
+            <summary>
+            Raises the <see cref="E:YearSlotLoading" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.OnSelectionChanging(C1.iOS.Calendar.CalendarSelectionChangingEventArgs)">
+            <summary>
+            Raises the <see cref="E:SelectionChanging" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.OnSelectionChanged(C1.iOS.Calendar.CalendarSelectionChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:SelectionChanged" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.OnHeaderLoading(C1.iOS.Calendar.CalendarHeaderLoadingEventArgs)">
+            <summary>
+            Raises the <see cref="E:HeaderLoading" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.Refresh">
+            <summary>
+            Refreshes the control.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.Refresh(System.Boolean)">
+            <summary>
+            Refreshes the control.
+            </summary>
+            <param name="keepSlotContent">Keeps the slots content when a slot is already created.</param>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.ChangeViewModeAsync(C1.iOS.Calendar.CalendarViewMode,System.Nullable{System.DateTime},System.Boolean)">
+            <summary>
+            Changes the view mode asynchronously performing an animation.
+            </summary>
+            <param name="mode">The target mode.</param>
+            <param name="displayDate">The display date.</param>
+            <param name="animate">true if the transition is animated.</param>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.GoBackAsync(System.Boolean)">
+            <summary>
+            Navigates backwards.
+            </summary>
+            <param name="animate">true if the transition is animated.</param>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.GoForwardAsync(System.Boolean)">
+            <summary>
+            Navigates forward.
+            </summary>
+            <param name="animate">true if the transition is animated.</param>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CanGoBack">
+            <summary>
+            Gets a value indicating whether it is possible to navigate backwards.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CanGoForward">
+            <summary>
+            Gets a value indicating whether it is possible to navigate forward.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.RegistedMonthSlotLoadingEvent">
+            <summary>
+            Gets whether the MonthSlotLoading event is resisted.
+            </summary>
+            <returns><c>true</c>, if month slot loading event was resisted, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.RegistedYearSlotLoadingEvent">
+            <summary>
+            Gets whether the YearSlotLoading event is resisted.
+            </summary>
+            <returns><c>true</c>, if year slot loading event was resisted, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.ActualFirstDayOfWeek">
+            <summary>
+            Gets the actual first day of week, if <see cref="P:C1.iOS.Calendar.C1Calendar.FirstDayOfWeek"/> is not specified the value will be get from the system. 
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.ActualMinDate">
+            <summary>
+            Gets the actual <see cref="P:C1.iOS.Calendar.C1Calendar.MinDate"/>.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.ActualMaxDate">
+            <summary>
+            Gets the actual <see cref="P:C1.iOS.Calendar.C1Calendar.MaxDate"/>.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.ActualDisplayDate">
+            <summary>
+            Gets the actual <see cref="P:C1.iOS.Calendar.C1Calendar.DisplayDate"/> considering <see cref="P:C1.iOS.Calendar.C1Calendar.MinDate"/> and <see cref="P:C1.iOS.Calendar.C1Calendar.MaxDate"/>.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.C1Calendar.CalendarSlotInfo">
+            <summary>
+            Contains info about slots.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarSlotInfo.Row">
+            <summary>
+            Gets or sets the row of the slot.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarSlotInfo.Column">
+            <summary>
+            Gets or sets the column of the slot.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarSlotInfo.IsEnabled">
+            <summary>
+            Gets a value indicating whether the slot is enabled.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.C1Calendar.CalendarDayOfWeekSlotInfo">
+            <summary>
+            Contains info about day of week slots.
+            </summary>
+            <seealso cref="T:C1.iOS.Calendar.C1Calendar.CalendarSlotInfo" />
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarDayOfWeekSlotInfo.DayOfWeek">
+            <summary>
+            Gets or sets the day of week associated with the slot.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.CalendarDayOfWeekSlotInfo.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.CalendarDayOfWeekSlotInfo.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="T:C1.iOS.Calendar.C1Calendar.CalendarDaySlotInfo">
+            <summary>
+            Contains info about day slots.
+            </summary>
+            <seealso cref="T:C1.iOS.Calendar.C1Calendar.CalendarSlotInfo" />
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarDaySlotInfo.Date">
+            <summary>
+            Gets or sets the date associated with this slot.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarDaySlotInfo.IsAdjacent">
+            <summary>
+            Gets or sets a value indicating whether the day is adjacent.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.CalendarDaySlotInfo.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.CalendarDaySlotInfo.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="T:C1.iOS.Calendar.C1Calendar.CalendarMonthSlotInfo">
+            <summary>
+            Contains info about month slots.
+            </summary>
+            <seealso cref="T:C1.iOS.Calendar.C1Calendar.CalendarSlotInfo" />
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarMonthSlotInfo.Year">
+            <summary>
+            Gets or sets the year associated to this slot.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarMonthSlotInfo.Month">
+            <summary>
+            Gets or sets the month associated to this slot.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.CalendarMonthSlotInfo.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.CalendarMonthSlotInfo.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="T:C1.iOS.Calendar.C1Calendar.CalendarYearSlotInfo">
+            <summary>
+            Contains info about year slots.
+            </summary>
+            <seealso cref="T:C1.iOS.Calendar.C1Calendar.CalendarSlotInfo" />
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarYearSlotInfo.Year">
+            <summary>
+            Gets or sets the year associated with the slot.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarYearSlotInfo.IsInDecade">
+            <summary>
+            Gets or sets a value indicating whether this year is in decade that is being displayed.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.CalendarYearSlotInfo.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.CalendarYearSlotInfo.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="T:C1.iOS.Calendar.C1Calendar.CalendarHeaderSlotInfo">
+            <summary>
+            Contains info about header slots.
+            </summary>
+            <seealso cref="T:C1.iOS.Calendar.C1Calendar.CalendarHeaderSlotInfo" />
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.CalendarHeaderSlotInfo.Date">
+            <summary>
+            Gets or sets the date associated with this slot.
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.CalendarHeaderSlotInfo.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.CalendarHeaderSlotInfo.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.Site">
+            <summary>
+            IComponent Site
+            </summary>
+        </member>
+        <member name="M:C1.iOS.Calendar.C1Calendar.Dispose(System.Boolean)">
+            <summary>
+            Dispose override to handle animation related rendering issues
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="E:C1.iOS.Calendar.C1Calendar.Disposed">
+            <summary>
+            IComponent Disposed event
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.Font">
+            <summary>
+            Gets or sets the default calendar font.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.HeaderFont">
+            <summary>
+            Gets or sets the header font.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.DayOfWeekFont">
+            <summary>
+            Gets or sets the day of week font.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.C1Calendar.TodayFont">
+            <summary>
+            Gets or sets the today font.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarViewMode">
+            <summary>
+            Specifies constants that define the different views.
+            </summary>
+        </member>
+        <member name="F:C1.iOS.Calendar.CalendarViewMode.Month">
+            <summary>
+            Displays the days of the month.
+            </summary>
+        </member>
+        <member name="F:C1.iOS.Calendar.CalendarViewMode.Year">
+            <summary>
+            Displays the months of the year.
+            </summary>
+        </member>
+        <member name="F:C1.iOS.Calendar.CalendarViewMode.Decade">
+            <summary>
+            Displays the years of the decade.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarOrientation">
+            <summary>
+            Specifies constants that define the navigation orientation
+            </summary>
+        </member>
+        <member name="F:C1.iOS.Calendar.CalendarOrientation.Horizontal">
+            <summary>
+            The calendar is navigated horizontally.
+            </summary>
+        </member>
+        <member name="F:C1.iOS.Calendar.CalendarOrientation.Vertical">
+            <summary>
+            The calendar is navigated vertically.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarType">
+            <summary>
+            Specifies the kind of calendar displayed
+            </summary>
+        </member>
+        <member name="F:C1.iOS.Calendar.CalendarType.Default">
+            <summary>
+            The calendar type will be determined by the platform settings.
+            </summary>
+        </member>
+        <member name="F:C1.iOS.Calendar.CalendarType.Gregorian">
+            <summary>
+            The gregorian calendar
+            </summary>
+        </member>
+        <member name="F:C1.iOS.Calendar.CalendarType.Japanese">
+            <summary>
+            The japanese calendar
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarViewModeAnimation">
+            <summary>
+            Settings of the animation performed when the current view changes.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarViewModeAnimation.AnimationMode">
+            <summary>
+            Gets or sets the kind of animation used to change <see cref="P:C1.iOS.Calendar.C1Calendar.ViewMode"/>.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarViewModeAnimation.EasingIn">
+            <summary>
+            Gets or sets the easing funtion used to interpolate the values of the animation.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarViewModeAnimation.EasingOut">
+            <summary>
+            Gets or sets the easing funtion used to interpolate the values of the animation.
+            </summary>
+        </member>
+        <member name="P:C1.iOS.Calendar.CalendarViewModeAnimation.ScaleFactor">
+            <summary>
+            Gets or sets the scale factor used in the animation.
+            </summary>
+        </member>
+        <member name="T:C1.iOS.Calendar.CalendarViewModeAnimationMode">
+            <summary>
+            Represent the different kinds of animations when changing <see cref="P:C1.iOS.Calendar.C1Calendar.ViewMode"/>.
+            </summary>
+        </member>
+        <member name="F:C1.iOS.Calendar.CalendarViewModeAnimationMode.Zoom">
+            <summary>
+            The animation will bring the view backwards or forward depending on which view is being set.
+            </summary>
+        </member>
+        <member name="F:C1.iOS.Calendar.CalendarViewModeAnimationMode.ZoomOutIn">
+            <summary>
+            The animation will zoom out the current view and zom in the new one.
+            </summary>
+        </member>
+    </members>
+</doc>

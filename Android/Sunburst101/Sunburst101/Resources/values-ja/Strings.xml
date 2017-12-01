@@ -3,16 +3,19 @@
 
   <string name="appName">Sunburst101</string>
  
-  <string name="getting_started">円形チャートの基本機能</string>
-  <string name="getting_started_desc">ツールチップを備えた円グラフを表示</string>
-  <string name="group_collection">Group Collection</string>
-  <string name="group_collection_desc">Shows Sunburst chart with Grouped CollectionView</string>
-  <string name="basic_features">円形チャートの調整</string>
+  <string name="getting_started">Sunburstチャートの基本機能</string>
+  <string name="getting_started_desc">ツールチップを備えたSunburstチャートを表示</string>
+  <string name="group_collection">グループコレクション</string>
+  <string name="group_collection_desc">グループ化されたCollectionViewを持つSunburstチャートを表示</string>
+  <string name="basic_features">Sunburstチャートの調整</string>
   <string name="basic_features_desc">内側半径、オフセット、開始角度</string>  
-  <string name="legend_and_titles">円形チャートの凡例とタイトル</string>
+  <string name="legend_and_titles">Sunburstチャートの凡例とタイトル</string>
   <string name="legend_and_titles_desc">ヘッダ、フッタ、凡例の配置</string>
-  <string name="selection">円形チャートの選択</string>
+  <string name="selection">Sunburstチャートの選択</string>
   <string name="selection_desc">選択アニメーション、オフセットなど</string>
+  <string name="periodictable">周期表</string>
+  <string name="periodictable_desc">Sunburstチャートで周期表を表示</string>
+  
   <string name="inner_radius">内側円の半径</string>
   <string name="offset">オフセット</string>
   <string name="start_angle">開始角度</string>

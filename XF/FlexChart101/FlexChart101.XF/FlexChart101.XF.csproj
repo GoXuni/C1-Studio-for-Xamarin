@@ -12,7 +12,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Xamarin.Forms.Chart" Version="2.4.20173.222" />
+    <PackageReference Include="C1.Xamarin.Forms.Chart" Version="2.4.20173.234" />
     <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
   </ItemGroup>
   <ItemGroup>

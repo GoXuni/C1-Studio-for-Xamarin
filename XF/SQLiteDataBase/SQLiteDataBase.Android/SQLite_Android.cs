@@ -1,6 +1,4 @@
-using SQLite.Net;
-using SQLite.Net.Async;
-using SQLite.Net.Platform.XamarinAndroid;
+using SQLite;
 using System.Diagnostics;
 using System.IO;
 using Xamarin.Forms;
@@ -24,20 +22,10 @@ namespace SQLiteDataBase
             var documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             var path = Path.Combine(documentsPath, fileName);
 
-            var platform = new SQLitePlatformAndroid();
             var connectionString = new SQLiteConnectionString(path, false);
-            var connection = new SQLiteAsyncConnection(() => new SQLiteConnectionWithLock(platform, connectionString) { TraceListener = new MyTraceListener() });
-            return connection;
+            return new SQLiteAsyncConnection(path);
         }
 
         #endregion
-    }
-
-    public class MyTraceListener : ITraceListener
-    {
-        public void Receive(string message)
-        {
-            Debug.WriteLine(message);
-        }
     }
 }

@@ -229,14 +229,14 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.CollectionView, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.4.20173.222\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
+    <Reference Include="C1.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.CollectionView.2.4.20173.234\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Chart, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Chart.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Chart.dll</HintPath>
+    <Reference Include="C1.iOS.Chart, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Chart.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Chart.dll</HintPath>
     </Reference>
-    <Reference Include="C1.iOS.Core, Version=2.4.20173.222, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.4.20173.222\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
+    <Reference Include="C1.iOS.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.iOS.Core.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

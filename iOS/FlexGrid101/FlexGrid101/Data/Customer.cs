@@ -39,7 +39,6 @@ namespace FlexGrid101
         #region ** initialization
 
         public Customer()
-            : this(_rnd.Next(10000))
         {
         }
 

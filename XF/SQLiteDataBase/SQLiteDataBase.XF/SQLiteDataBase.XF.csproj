@@ -8,9 +8,8 @@
     <None Remove="SQLiteDataBase.XF.csproj.vspscc" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Xamarin.Forms.Grid" Version="2.4.20173.222" />
-    <PackageReference Include="SQLite.Net-PCL" Version="3.1.1" />
-    <PackageReference Include="SQLite.Net.Async-PCL" Version="3.1.1" />
+    <PackageReference Include="C1.Xamarin.Forms.Grid" Version="2.4.20173.234" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
     <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
   </ItemGroup>
   <ItemGroup>

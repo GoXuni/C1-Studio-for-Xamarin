@@ -178,10 +178,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>2.4.20173.222</Version>
+      <Version>2.4.20173.234</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>2.4.20173.222</Version>
+      <Version>2.4.20173.234</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.1</Version>

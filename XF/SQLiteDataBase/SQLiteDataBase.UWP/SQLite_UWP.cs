@@ -1,6 +1,4 @@
-﻿using SQLite.Net;
-using SQLite.Net.Async;
-using SQLite.Net.Platform.WinRT;
+﻿using SQLite;
 using System.Diagnostics;
 using System.IO;
 using Windows.Storage;
@@ -19,18 +17,9 @@ namespace SQLiteDataBase
         {
             var sqliteFilename = "SQLiteDataBase.db3";
             string path = Path.Combine(ApplicationData.Current.LocalFolder.Path, sqliteFilename);
-            var platform = new SQLitePlatformWinRT();
             var connectionString = new SQLiteConnectionString(path, true);
-            return new SQLiteAsyncConnection(() => new SQLiteConnectionWithLock(platform, connectionString) { TraceListener = new MyTraceListener() });
+            return new SQLiteAsyncConnection(path);
         }
         #endregion
-    }
-
-    public class MyTraceListener : ITraceListener
-    {
-        public void Receive(string message)
-        {
-            Debug.WriteLine(message);
-        }
     }
 }

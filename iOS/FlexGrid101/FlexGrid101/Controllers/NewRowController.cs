@@ -20,7 +20,7 @@ namespace FlexGrid101
             var data = Customer.GetCustomerList(100);
             Grid.ItemsSource = new CustomCollectionView<Customer>(data);
             Grid.NewRowPosition = C1.iOS.Grid.GridNewRowPosition.Top;
-            Grid.NewRowPlaceholder = "Click here to add a new row";
+            Grid.NewRowPlaceholder = Foundation.NSBundle.MainBundle.LocalizedString("Click here to add a new row", "");
         }
     }
 

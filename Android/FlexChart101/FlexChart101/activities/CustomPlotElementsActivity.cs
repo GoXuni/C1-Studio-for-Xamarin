@@ -21,8 +21,7 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-
-	[Activity(Label = "CustomPlotElementsActivity")]
+    [Activity(Label = "CustomPlotElementsActivity")]
 	public class CustomPlotElementsActivity : AppCompatActivity
     {
 		private FlexChart mChart;
@@ -91,13 +90,14 @@ namespace FlexChart101
         }
     }
 
-	class CustomPoint : Java.Lang.Object
+   
+    class CustomPoint : Java.Lang.Object
 	{
 		public string name { get; set; }
 		public int devicesSold { get; set; }
 		public Bitmap logo { get; set; }
-
-		CustomPoint(string name, int devicesSold, Bitmap logo)
+        private static List<Bitmap> bitMap = new List<Bitmap>();
+        CustomPoint(string name, int devicesSold, Bitmap logo)
 		{
 			this.name = name;
 			this.devicesSold = devicesSold;
@@ -118,7 +118,15 @@ namespace FlexChart101
 
 			for (int i = 0; i < n; i++)
 			{
-				logo = BitmapFactory.DecodeResource(context.Resources, imageResources[i]);
+                if (bitMap != null && bitMap.Count == n)
+                {
+                    logo = bitMap[i];
+                }
+                else
+                {
+                    logo = BitmapFactory.DecodeResource(context.Resources, imageResources[i]);
+                    bitMap.Add(logo);
+                }
 				list.Add(new CustomPoint(names[i], random.Next(85) + min, logo));
 			}
 			return list;

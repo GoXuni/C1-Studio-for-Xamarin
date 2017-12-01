@@ -1,4 +1,4 @@
-﻿using SQLite.Net;
+﻿using SQLite;
 using SQLiteDataBase.Resources;
 using System;
 using Xamarin.Forms;
