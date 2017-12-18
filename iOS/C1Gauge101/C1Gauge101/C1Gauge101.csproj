@@ -92,12 +92,6 @@
     <CscToolExe>mcs.exe</CscToolExe>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.iOS.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="C1.iOS.Gauge, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Gauge.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -160,7 +154,6 @@
     <BundleResource Include="Resources\en.lproj\Localizable.strings" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <BundleResource Include="Resources\Images\gauge_exportImage.png" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\LocalizationExtension.cs" />
@@ -207,6 +200,14 @@
     <BundleResource Include="Resources\Images\gauge_radial.png" />
     <BundleResource Include="Resources\Images\gauge_ranges.png" />
     <BundleResource Include="Resources\Images\gauge_scaling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.iOS.Core">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Gauge">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

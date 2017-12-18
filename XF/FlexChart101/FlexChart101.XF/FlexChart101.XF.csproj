@@ -12,8 +12,16 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Xamarin.Forms.Chart" Version="2.4.20173.234" />
-    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+    <PackageReference Include="C1.CollectionView">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Chart">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Core">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\apple.png" />

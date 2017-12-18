@@ -88,12 +88,6 @@
     <CscToolExe>mcs.exe</CscToolExe>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.iOS.Calendar, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Calendar.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Calendar.dll</HintPath>
-    </Reference>
-    <Reference Include="C1.iOS.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -147,7 +141,6 @@
     <BundleResource Include="Resources\en.lproj\Main.strings" />
     <BundleResource Include="Resources\ja.lproj\Localizable.strings" />
     <BundleResource Include="Resources\ja.lproj\Main.strings" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CustomAppearanceController.cs" />
@@ -204,6 +197,14 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Images\Sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.iOS.Calendar">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Core">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

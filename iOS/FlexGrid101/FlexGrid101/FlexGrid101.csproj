@@ -181,7 +181,6 @@
     <None Include="app.config" />
     <BundleResource Include="en.lproj\Localizable.strings" />
     <BundleResource Include="en.lproj\Main.strings" />
-    <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Controllers\NewRowController.cs" />
     <Compile Include="Controllers\NewRowController.designer.cs">
@@ -194,21 +193,8 @@
     </InterfaceDefinition>
     <BundleResource Include="ja.lproj\Localizable.strings" />
     <BundleResource Include="ja.lproj\Main.strings" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.CollectionView, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.CollectionView.2.4.20173.234\lib\netstandard1.1\C1.CollectionView.dll</HintPath>
-    </Reference>
-    <Reference Include="C1.iOS.Core, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Core.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="C1.iOS.Gauge, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Gauge.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Gauge.dll</HintPath>
-    </Reference>
-    <Reference Include="C1.iOS.Grid, Version=2.4.20173.234, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\C1.iOS.Grid.2.4.20173.234\lib\Xamarin.iOS10\C1.iOS.Grid.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Serialization" />
@@ -290,6 +276,19 @@
       <InProject>false</InProject>
     </ImageAsset>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="C1.CollectionView">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Core">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Gauge">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Grid">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

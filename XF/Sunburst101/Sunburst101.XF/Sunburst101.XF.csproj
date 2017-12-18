@@ -31,10 +31,18 @@
     <EmbeddedResource Include="Resources\Periodic Table of Elements.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Xamarin.Forms.Chart" Version="2.4.20173.234" />
+    <PackageReference Include="C1.CollectionView">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Chart">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Core">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
     <PackageReference Include="SkiaSharp" Version="1.59.2" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="1.59.2" />
-    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\AppResources.Designer.cs">

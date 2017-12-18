@@ -185,17 +185,29 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="C1.CollectionView">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Core">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Core">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>2.4.20173.234</Version>
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Grid">
+      <Version>2.5.20173.238</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.0.1</Version>
+      <Version>6.0.4</Version>
     </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.4.118</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>2.4.0.38779</Version>
+      <Version>2.5.0.121934</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

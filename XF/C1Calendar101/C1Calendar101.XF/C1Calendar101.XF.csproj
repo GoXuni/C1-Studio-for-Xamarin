@@ -12,6 +12,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="C1Calendar101.XF.csproj.vspscc" />
     <None Remove="Images\calendar.png" />
     <None Remove="Images\calendar2.png" />
     <None Remove="Images\calendar_basic.png" />
@@ -38,8 +39,13 @@
     <EmbeddedResource Include="Images\thunder-lightning-storm-icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Xamarin.Forms.Calendar" Version="2.4.20173.234" />
-    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+    <PackageReference Include="C1.Xamarin.Forms.Calendar">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Core">
+      <Version>2.5.20173.238</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\AppResources.Designer.cs">

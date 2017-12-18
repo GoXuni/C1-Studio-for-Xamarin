@@ -1,1 +1,0 @@
-C:\Users\kelley.ricker\Documents\ComponentOne Samples\Xamarin\XF\C1Calendar101\C1Calendar101.UWP\C1Calendar101.UWP.csproj;x86
