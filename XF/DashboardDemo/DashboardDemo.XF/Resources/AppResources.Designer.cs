@@ -62,11 +62,281 @@ namespace DashboardDemo.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sales Dashboard.
+        ///   Looks up a localized string similar to Analysis.
         /// </summary>
-        public static string SalesDashboardTitle {
+        public static string AnalysisTitle {
             get {
-                return ResourceManager.GetString("SalesDashboardTitle", resourceCulture);
+                return ResourceManager.GetString("AnalysisTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All Tasks.
+        /// </summary>
+        public static string ButtonAllTasksText {
+            get {
+                return ResourceManager.GetString("ButtonAllTasksText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string ButtonCancelText {
+            get {
+                return ResourceManager.GetString("ButtonCancelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Completed.
+        /// </summary>
+        public static string ButtonCompletedText {
+            get {
+                return ResourceManager.GetString("ButtonCompletedText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deferred.
+        /// </summary>
+        public static string ButtonDefferedText {
+            get {
+                return ResourceManager.GetString("ButtonDefferedText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Group.
+        /// </summary>
+        public static string ButtonEditColumnLayoutText {
+            get {
+                return ResourceManager.GetString("ButtonEditColumnLayoutText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In Progress.
+        /// </summary>
+        public static string ButtonInProgressText {
+            get {
+                return ResourceManager.GetString("ButtonInProgressText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Urgent.
+        /// </summary>
+        public static string ButtonUrgentText {
+            get {
+                return ResourceManager.GetString("ButtonUrgentText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current Opportunities.
+        /// </summary>
+        public static string CurrentOpportunitiesTitle {
+            get {
+                return ResourceManager.GetString("CurrentOpportunitiesTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dashboard.
+        /// </summary>
+        public static string DashboardTitle {
+            get {
+                return ResourceManager.GetString("DashboardTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 Years.
+        /// </summary>
+        public static string Filter2YearsText {
+            get {
+                return ResourceManager.GetString("Filter2YearsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3 Months.
+        /// </summary>
+        public static string Filter3MonthsText {
+            get {
+                return ResourceManager.GetString("Filter3MonthsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 Months.
+        /// </summary>
+        public static string Filter6MonthsText {
+            get {
+                return ResourceManager.GetString("Filter6MonthsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string FilterCancelText {
+            get {
+                return ResourceManager.GetString("FilterCancelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 Month.
+        /// </summary>
+        public static string FilterMonthText {
+            get {
+                return ResourceManager.GetString("FilterMonthText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filter Options.
+        /// </summary>
+        public static string FilterOptionsText {
+            get {
+                return ResourceManager.GetString("FilterOptionsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 Year.
+        /// </summary>
+        public static string FilterYearText {
+            get {
+                return ResourceManager.GetString("FilterYearText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current Opportunities/Lead Status.
+        /// </summary>
+        public static string LabelCOLSText {
+            get {
+                return ResourceManager.GetString("LabelCOLSText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category Sales Vs Goal to Date.
+        /// </summary>
+        public static string LabelCSGDText {
+            get {
+                return ResourceManager.GetString("LabelCSGDText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current Year Profit Vs Prior Year Profit.
+        /// </summary>
+        public static string LabelCYPPYPText {
+            get {
+                return ResourceManager.GetString("LabelCYPPYPText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Product Wise Quarterly/Yearly Sales.
+        /// </summary>
+        public static string LabelPWYSText {
+            get {
+                return ResourceManager.GetString("LabelPWYSText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regions Sales Vs Goal to Date.
+        /// </summary>
+        public static string LabelRSGDText {
+            get {
+                return ResourceManager.GetString("LabelRSGDText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sales.
+        /// </summary>
+        public static string LabelSalesText {
+            get {
+                return ResourceManager.GetString("LabelSalesText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sales Vs Profit.
+        /// </summary>
+        public static string LabelSPText {
+            get {
+                return ResourceManager.GetString("LabelSPText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sales-Top Customers.
+        /// </summary>
+        public static string LabelSTCText {
+            get {
+                return ResourceManager.GetString("LabelSTCText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sales-Top Products.
+        /// </summary>
+        public static string LabelSTPText {
+            get {
+                return ResourceManager.GetString("LabelSTPText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a column to group.
+        /// </summary>
+        public static string PickerTitle {
+            get {
+                return ResourceManager.GetString("PickerTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Product Sales.
+        /// </summary>
+        public static string ProductSalesTitle {
+            get {
+                return ResourceManager.GetString("ProductSalesTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Products.
+        /// </summary>
+        public static string ProductsTitle {
+            get {
+                return ResourceManager.GetString("ProductsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tasks.
+        /// </summary>
+        public static string TasksTitle {
+            get {
+                return ResourceManager.GetString("TasksTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filter.
+        /// </summary>
+        public static string ToolbarFilterText {
+            get {
+                return ResourceManager.GetString("ToolbarFilterText", resourceCulture);
             }
         }
     }

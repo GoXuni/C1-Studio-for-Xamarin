@@ -46,10 +46,10 @@ namespace FlexChart101
 						  Resource.String.selectionModesDesc), Resource.Drawable.chart_selection, typeof(SelectionModesActivity));
 			SampleModel toggleSeries = new SampleModel(context.Resources.GetString(Resource.String.toggleSeries), context.Resources.GetString(
 						  Resource.String.toggleSeriesDesc), Resource.Drawable.chart_column, typeof(ToggleSeriesActivity));
-			//SampleModel animationOptions = new SampleModel(context.Resources.GetString(Resource.String.animationOptions), context.Resources.GetString(
-			//              Resource.String.animationOptionsDesc), Resource.Drawable.chart_animation, typeof(AnimationOptionsActivity));
-			//SampleModel updateAnimation = new SampleModel(context.Resources.GetString(Resource.String.updateAnimation), context.Resources.GetString(
-			//              Resource.String.updateAnimationDesc), Resource.Drawable.chart_tooltip, typeof(UpdateAnimationActivity));
+			SampleModel loadAnimation = new SampleModel(context.Resources.GetString(Resource.String.animationOptions), context.Resources.GetString(
+			              Resource.String.animationOptionsDesc), Resource.Drawable.chart_animation, typeof(LoadAnimationActivity));
+			SampleModel updateAnimation = new SampleModel(context.Resources.GetString(Resource.String.updateAnimation), context.Resources.GetString(
+			              Resource.String.updateAnimationDesc), Resource.Drawable.chart_animation, typeof(UpdateAnimationActivity));
 			//SampleModel conditionalFormatting = new SampleModel(context.Resources.GetString(Resource.String.conditionalFormatting), context.Resources.GetString(
 			//              Resource.String.conditionalFormattingDesc), Resource.Drawable.chart_format, typeof(ConditionalFormattingActivity));
 			SampleModel dynamicCharts = new SampleModel(context.Resources.GetString(Resource.String.dynamicCharts), context.Resources.GetString(
@@ -90,10 +90,12 @@ namespace FlexChart101
 					Resource.Drawable.themes, typeof(Pie.ThemingActivity));
 			SampleModel flexpieDataLabels = new SampleModel(context.Resources.GetString(Resource.String.data_labels), context.Resources.GetString(
 					Resource.String.data_labels_desc), Resource.Drawable.pie_selection, typeof(Pie.DataLabelsActivity));
+            SampleModel flexpieAnimation = new SampleModel(context.Resources.GetString(Resource.String.animationOptions),
+                    context.Resources.GetString(Resource.String.animationOptionsDesc), Resource.Drawable.pie_selection, typeof(Pie.AnimationActivity));
 
 
-			// adding objects to list
-			list.Add(gettingStarted);
+            // adding objects to list
+            list.Add(gettingStarted);
 			list.Add(basicChartTypes);
 			list.Add(mixedChartTypes);
 			list.Add(financialChart);
@@ -109,9 +111,7 @@ namespace FlexChart101
 			list.Add(customPlotElements);
 			list.Add(selectionModes);
 			list.Add(toggleSeries);
-			//list.Add(animationOptions);
-			//list.Add(updateAnimation);
-			list.Add(dynamicCharts);
+            list.Add(dynamicCharts);
 			list.Add(hitTest);
 			//list.Add(scrolling);
 			list.Add(zoomingAndScrolling);
@@ -120,15 +120,20 @@ namespace FlexChart101
 			////list.Add(logActivity);
 			list.Add(snapshotActivity);
 			list.Add(zones);
+            list.Add(loadAnimation);
+            list.Add(updateAnimation);
 
-			// FlexPie samples
-			list.Add(flexpieGettingStarted);
+            // FlexPie samples
+            list.Add(flexpieGettingStarted);
 			list.Add(flexpieBasicFeatures);
 			list.Add(flexpieLegendAndTitles);
 			list.Add(flexpieSelection);
 			list.Add(flexpieTheming);
 			list.Add(flexpieDataLabels);
-		}
+            list.Add(flexpieAnimation);
+            
+
+        }
 
 
 		public override int Count

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_content"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/itemOffset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inner_radius" />
+            <TextView
+                android:id="@+id/offset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+            <Button
+                android:id="@+id/buttonMinus"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/minus" />
+            <Button
+                android:id="@+id/buttonPlus"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/plus" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/animation_mode" />
+            <Spinner
+                android:id="@+id/selectionSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+        </LinearLayout>
+        <C1.Android.Chart.FlexPie
+            android:id="@+id/flexPie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+           <Button
+                android:id="@+id/button2015"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="2015" />
+            <Button
+                      android:id="@+id/button2014"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:clickable="true"
+                      android:text="2014" />
+            <Button
+                      android:id="@+id/button2013"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:clickable="true"
+                      android:text="2013" />
+            <Button
+                      android:id="@+id/button2012"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:clickable="true"
+                      android:text="2012" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

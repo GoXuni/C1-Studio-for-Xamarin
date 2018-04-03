@@ -27,23 +27,22 @@ namespace FlexChart101
             this.flexChart1.AxisY.AxisLine = false;
             this.flexChart1.AxisY.Title = "Devices Sold (billions)";
             this.flexChart1.LegendPosition = ChartPositionType.None;
-            
 		}
 
-		void OnPlotElementLoading(object sender, RenderSymbolEventArgs e)
-		{
-			Company company;
+        void OnSymbolRendering(object sender, RenderSymbolEventArgs e)
+        {
+            Company company;
             if (e.Item == null)
-			{
+            {
                 company = ((List<Company>)flexChart1.ItemsSource).ElementAt(e.Index);
-			}
-			else
-			{
-				company = e.Item as Company;
-			}
+            }
+            else
+            {
+                company = e.Item as Company;
+            }
 
-			e.PlotElement = new PlotElementWithIcon(company);
-		}
+            e.PlotElement = new PlotElementWithIcon(company);
+        }
 	}
 
 	public class PlotElementWithIcon : ChartPlotElement

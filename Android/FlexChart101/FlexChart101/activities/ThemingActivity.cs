@@ -67,36 +67,39 @@ namespace FlexChart101
                     mChart.Palette = Palette.Light;
                     break;
                 case 6:
-                    mChart.Palette = Palette.Midnight;
+                    mChart.Palette = Palette.Material;
                     break;
                 case 7:
-                    mChart.Palette = Palette.Minimal;
+                    mChart.Palette = Palette.Midnight;
                     break;
                 case 8:
-                    mChart.Palette = Palette.Modern;
+                    mChart.Palette = Palette.Minimal;
                     break;
                 case 9:
-                    mChart.Palette = Palette.Organic;
+                    mChart.Palette = Palette.Modern;
                     break;
                 case 10:
-                    mChart.Palette = Palette.Slate;
+                    mChart.Palette = Palette.Organic;
                     break;
                 case 11:
-                    mChart.Palette = Palette.Zen;
+                    mChart.Palette = Palette.Slate;
                     break;
                 case 12:
-                    mChart.Palette = Palette.Cyborg;
+                    mChart.Palette = Palette.Zen;
                     break;
                 case 13:
-                    mChart.Palette = Palette.Superhero;
+                    mChart.Palette = Palette.Cyborg;
                     break;
                 case 14:
-                    mChart.Palette = Palette.Flatly;
+                    mChart.Palette = Palette.Superhero;
                     break;
                 case 15:
-                    mChart.Palette = Palette.Darkly;
+                    mChart.Palette = Palette.Flatly;
                     break;
                 case 16:
+                    mChart.Palette = Palette.Darkly;
+                    break;
+                case 17:
                     mChart.Palette = Palette.Cerulean;
                     break;
             }

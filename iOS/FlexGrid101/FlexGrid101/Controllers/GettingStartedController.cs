@@ -1,3 +1,4 @@
+using C1.iOS.Grid;
 using System;
 using UIKit;
 
@@ -12,6 +13,10 @@ namespace FlexGrid101
         {
             base.ViewDidLoad();
             Grid.ItemsSource = Customer.GetCustomerList(100);
+            Grid.AllowDragging = GridAllowDragging.Both;
+            Grid.AllowResizing = GridAllowResizing.Both;
+            //Use together with AllowResizing and AllowDragging to avoid gesture conflicts in the edge of the screen.
+            NavigationController.InteractivePopGestureRecognizer.Enabled = false;
         }
     }
 }

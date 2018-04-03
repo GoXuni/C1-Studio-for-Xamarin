@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+  
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+          
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/chartType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="@string/chartType" />
+
+        <TextView
+            android:id="@+id/updatePosition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="@string/updatePosition" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/chartTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/updatePositionSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/updates"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/updates" />
+
+        <Button
+            android:id="@+id/buttonAddPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/updates"
+            android:text="@string/addPoint" />
+
+        <Button
+            android:id="@+id/buttonRemovePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/buttonAddPoint"
+            android:text="@string/removePoint" />
+    </LinearLayout>
+  
+        <C1.Android.Chart.FlexChart
+            android:id="@+id/flexchart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12" />
+    </LinearLayout>
+</RelativeLayout>

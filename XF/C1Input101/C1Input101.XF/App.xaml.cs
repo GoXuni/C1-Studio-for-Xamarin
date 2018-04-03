@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace C1Input101
 {
@@ -11,7 +12,7 @@ namespace C1Input101
         public App()
         {
             InitializeComponent();
-            MainPage = new Xamarin.Forms.NavigationPage(new InputSamples());
+            MainPage = new Xamarin.Forms.NavigationPage(new InputSamples()) { BarBackgroundColor = Color.FromHex("#9E9E9E"), BarTextColor = Color.White };
         }
 
         protected override void OnStart()

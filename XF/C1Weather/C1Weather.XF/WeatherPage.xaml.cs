@@ -74,7 +74,7 @@ namespace C1Weather
             catch(Exception e)
             {
                 
-                await DisplayAlert(AppResources.AlertTitle, AppResources.AlertMessage + " " + e.ToString(), AppResources.Cancel);
+                await DisplayAlert(AppResources.AlertTitle, AppResources.AlertMessage + "\n" + e.Message, AppResources.Cancel);
             }
         }
         //Allows selected rows to modify data displayed in chart 

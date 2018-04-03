@@ -42,12 +42,11 @@ namespace FlexChart101
 			chart.AxisY.Title = "Devices Sold (billions)";
 			chart.AxisY.Style = new ChartStyle() { FontAttributes = CoreText.CTFontSymbolicTraits.Italic, FontSize = 16 };
 
-
 			chart.Series[0].SymbolRendered += (object sender, RenderSymbolEventArgs e) =>
 			{
-				var img = cList[e.Index].Name.ToLower();
-				UIImage image = new UIImage("Images/" + img);
-				image.Draw(new CGRect(e.Point.X - e.Size.Width / 2 + 10, e.Point.Y + (e.Size.Height - e.Size.Width) / 2 + 10, e.Size.Width - 20, e.Size.Width - 20));
+                var img = cList[e.Index].Name.ToLower();
+                UIImage image = new UIImage("Images/" + img);
+                e.Engine.DrawImage(image, e.Point.X - e.Size.Width / 2 + 10, e.Point.Y + (e.Size.Height - e.Size.Width) / 2 + 10, e.Size.Width - 20, e.Size.Width - 20);
 			};
 		}
 

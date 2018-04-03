@@ -31,7 +31,6 @@ namespace FlexChart101
 			chart.Series.Add(new ChartSeries() { SeriesName = "Downloads", Binding = "Downloads,Downloads" });
 			chart.ItemsSource = SalesData.GetSalesDataList();
 			this.Add(chart);
-
 			chart.AxisX.LabelLoading += (object sender, RenderLabelLoadingEventArgs e) =>
 			{
 				string path = "Images/" + e.LabelString;
@@ -48,6 +47,7 @@ namespace FlexChart101
 				{
 					image.Draw(new CGRect(e.Rect.Left, e.Rect.Top, e.Rect.Width, e.Rect.Height));
 				}
+                e.LabelString = null;
 			};
 
 			chart.AxisY.LabelLoading += (object sender, RenderLabelLoadingEventArgs e) =>

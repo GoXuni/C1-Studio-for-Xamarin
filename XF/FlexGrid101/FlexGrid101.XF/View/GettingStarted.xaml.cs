@@ -14,6 +14,8 @@ namespace FlexGrid101
             this.Title = AppResources.GettingStartedTitle;
             grid.ItemsSource = Customer.GetCustomerList(100);
             grid.MinColumnWidth = 85;
+            grid.AllowDragging = GridAllowDragging.Both;
+            grid.AllowResizing = GridAllowResizing.Both;
         }
 
         private void OnAutoGeneratingColumn(object sender, GridAutoGeneratingColumnEventArgs e)

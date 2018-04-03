@@ -3,7 +3,7 @@ FlexGrid101 for Xamarin.Android
 Shows samples of the Grid control.
 
 Shows the following samples
-<code>
+
 	- GettingStarted
 	- ColumnDefinitions
 	- SelectionModes
@@ -23,4 +23,3 @@ Shows the following samples
 	- OnDemand
 	- CustomAppearance
 	- New Row
-</code>

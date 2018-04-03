@@ -24,7 +24,8 @@ namespace FlexGrid101
         public override void PrepareCell(GridCellType cellType, GridCellRange range, GridCellView cell)
         {
             base.PrepareCell(cellType, range, cell);
-            if (cellType == GridCellType.Cell && range.Column == 3)
+            var orderCountColumn = Grid.Columns["OrderCount"];
+            if (cellType == GridCellType.Cell && range.Column == orderCountColumn.Index)
             {
                 var cellValue = Grid[range.Row, range.Column] as int?;
                 if (cellValue.HasValue)
@@ -43,7 +44,9 @@ namespace FlexGrid101
         public override void BindCellContent(GridCellType cellType, GridCellRange range, View cellContent)
         {
             base.BindCellContent(cellType, range, cellContent);
-            if (cellType == GridCellType.Cell && range.Column == 2)
+            var orderTotalColumn = Grid.Columns["OrderTotal"];
+            var orderCountColumn = Grid.Columns["OrderCount"];
+            if (cellType == GridCellType.Cell && range.Column == orderTotalColumn.Index)
             {
                 var label = cellContent as Label;
                 if (label != null)
@@ -55,7 +58,7 @@ namespace FlexGrid101
                     }
                 }
             }
-            if (cellType == GridCellType.Cell && range.Column == 3)
+            if (cellType == GridCellType.Cell && range.Column == orderCountColumn.Index)
             {
                 var label = cellContent as Label;
                 if (label != null)

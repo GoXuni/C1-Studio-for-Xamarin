@@ -34,8 +34,40 @@ namespace FlexChart101
                 double sales = random.NextDouble() * 10000;
                 double expenses = random.NextDouble() * 5000;
                 double downloads = Math.Round(random.NextDouble() * 20000);
-
+               
                 entityList.Add(new SalesExpensesDownloadsEntity(countries[i], sales, expenses, downloads, DateTime.Today.AddDays(i)));
+            }
+            return entityList;
+        }
+
+        public static IEnumerable<ExtraEntity> CreateExtraEntityList()
+        {
+            List<ExtraEntity> entityList = new List<ExtraEntity>();
+
+            //TODO: add culture
+            string[] countries = new string[] { "US", "Germany", "UK", "Japan", "Italy", "Greece" };
+
+            Random random = new Random();
+
+            for (int i = 0; i < countries.Length; i++)
+            {
+                double sales = random.NextDouble() * 10000;
+                double expenses = random.NextDouble() * 5000;
+                double downloads = Math.Round(random.NextDouble() * 20000);
+
+                ExtraEntity entity = new ExtraEntity(countries[i], sales, expenses, downloads, DateTime.Today.AddDays(i));
+                entity.ExtraSeries3 = Math.Round(random.NextDouble() * 20000);
+                entity.ExtraSeries4 = Math.Round(random.NextDouble() * 20000);
+                entity.ExtraSeries5 = Math.Round(random.NextDouble() * 20000);
+
+                entity.BubbleSize0 = Math.Round(random.NextDouble() * 10);
+                entity.BubbleSize1 = Math.Round(random.NextDouble() * 10);
+                entity.BubbleSize2 = Math.Round(random.NextDouble() * 10);
+                entity.BubbleSize3 = Math.Round(random.NextDouble() * 10);
+                entity.BubbleSize4 = Math.Round(random.NextDouble() * 10);
+                entity.BubbleSize5 = Math.Round(random.NextDouble() * 10);
+
+                entityList.Add(entity);
             }
             return entityList;
         }
@@ -59,7 +91,7 @@ namespace FlexChart101
             }
             return entityList;
         }
-
+        
         public static IEnumerable<ZonesData> GetZonesData(int nStudents,int nMaxPoints)
         {
             Random random = new Random();
@@ -110,7 +142,8 @@ namespace FlexChart101
                 FinancialData data = new FinancialData();
                 data.Date = DateTime.Today.AddDays(i);
 
-                if (i > 0)
+                
+                if (i > 0 && !double.IsNaN(listdata[i - 1].Close) )
                     data.Open = listdata[i - 1].Close;
                 else
                     data.Open = 1000;
@@ -134,6 +167,22 @@ namespace FlexChart101
            yield return ChartType.Spline;
            yield return ChartType.SplineSymbols;
            yield return ChartType.SplineArea;
+        }
+
+        public static IEnumerable<ChartType> GetAllChartTypes()
+        {
+            yield return ChartType.Column;
+            yield return ChartType.Bar;
+            yield return ChartType.Scatter;
+            yield return ChartType.Line;
+            yield return ChartType.LineSymbols;
+            yield return ChartType.Area;
+            yield return ChartType.Spline;
+            yield return ChartType.SplineSymbols;
+            yield return ChartType.SplineArea;
+            yield return ChartType.Bubble;
+            yield return ChartType.Candlestick;
+            yield return ChartType.HighLowOpenClose;
         }
     }
 

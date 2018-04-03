@@ -82,5 +82,11 @@ namespace FlexGrid101
             await Task.Delay(1000); //simulates a network operation
             await base.ReplaceAsync(index, item);
         }
+
+        public override async Task MoveAsync(int fromIndex, int toIndex)
+        {
+            await Task.Delay(1000); //simulates a network operation
+            await base.MoveAsync(fromIndex, toIndex);
+        }
     }
 }

@@ -85,36 +85,39 @@ namespace FlexChart101.Pie
                     mFlexPie.Palette = Palette.Light;
                     break;
                 case 6:
-                    mFlexPie.Palette = Palette.Midnight;
+                    mFlexPie.Palette = Palette.Material;
                     break;
                 case 7:
-                    mFlexPie.Palette = Palette.Minimal;
+                    mFlexPie.Palette = Palette.Midnight;
                     break;
                 case 8:
-                    mFlexPie.Palette = Palette.Modern;
+                    mFlexPie.Palette = Palette.Minimal;
                     break;
                 case 9:
-                    mFlexPie.Palette = Palette.Organic;
+                    mFlexPie.Palette = Palette.Modern;
                     break;
                 case 10:
-                    mFlexPie.Palette = Palette.Slate;
+                    mFlexPie.Palette = Palette.Organic;
                     break;
                 case 11:
-                    mFlexPie.Palette = Palette.Zen;
+                    mFlexPie.Palette = Palette.Slate;
                     break;
                 case 12:
-                    mFlexPie.Palette = Palette.Cyborg;
+                    mFlexPie.Palette = Palette.Zen;
                     break;
                 case 13:
-                    mFlexPie.Palette = Palette.Superhero;
+                    mFlexPie.Palette = Palette.Cyborg;
                     break;
                 case 14:
-                    mFlexPie.Palette = Palette.Flatly;
+                    mFlexPie.Palette = Palette.Superhero;
                     break;
                 case 15:
-                    mFlexPie.Palette = Palette.Darkly;
+                    mFlexPie.Palette = Palette.Flatly;
                     break;
                 case 16:
+                    mFlexPie.Palette = Palette.Darkly;
+                    break;
+                case 17:
                     mFlexPie.Palette = Palette.Cerulean;
                     break;
             }

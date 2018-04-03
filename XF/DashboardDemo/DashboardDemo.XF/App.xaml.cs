@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
-using Xuni.DashboardDemo.App;
+using DashboardModel;
+using DashboardDemo.Views;
 
 namespace DashboardDemo
 {
@@ -15,26 +16,13 @@ namespace DashboardDemo
             InitializeComponent();
 
             C1.Xamarin.Forms.Core.LicenseManager.Key = License.Key;
-            
-            MainPage = GetMainPage();
 
+            MainPage = new MainPage();
         }
-        public static Page GetMainPage()
-        {
 
-            if (Device.Idiom == TargetIdiom.Phone)
-            {
-                return new NavigationPage(new PhoneDash());
-            }
-            else
-            {
-                return new NavigationPage(new TabletDash());
-            }
-        }
         protected override void OnStart()
         {
             // Handle when your app starts
-            
         }
 
         protected override void OnSleep()

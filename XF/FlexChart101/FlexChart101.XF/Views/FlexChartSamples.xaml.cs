@@ -40,13 +40,16 @@ namespace FlexChart101
                 new Sample() { Name = AppResources.LineMarkerTitle, Description = AppResources.LineMarkerDescription, SampleViewType = 20, Thumbnail="chart_linemarker.png"},
                 new Sample() { Name = AppResources.ZoomingScrollingTitle, Description = AppResources.ZoomingScrollingDescription, SampleViewType = 21, Thumbnail="chart_scatter.png"},
                 //new Sample() { Name = AppResources.ScrollingTitle, Description = AppResources.ScrollingDescription, SampleViewType = 22, Thumbnail="chart_scrolling.png"},
-                
+                new Sample() { Name = AppResources.LoadAnimationTitle, Description = AppResources.LoadAnimationDescription, SampleViewType = 28 , Thumbnail="chart_animation.png"},
+                new Sample() { Name = AppResources.UpdateAnimationTitle, Description = AppResources.UpdateAnimationDescription, SampleViewType = 29 , Thumbnail="chart_animation.png"},
+
                 new Sample() { Name = AppResources.PieGettingStartedTitle, Description = AppResources.PieGettingStartedDescription, SampleViewType = 22, Thumbnail="pie.png"},
                 new Sample() { Name = AppResources.PieBasicFeaturesTitle, Description = AppResources.PieBasicFeaturesDescription, SampleViewType = 23, Thumbnail="pie_doughnut.png"},
                 new Sample() { Name = AppResources.PieLegendSampleTitle, Description = AppResources.PieLegendSampleDescription, SampleViewType = 24, Thumbnail="pie_title.png"},
                 new Sample() { Name = AppResources.PieSelectionTitle, Description = AppResources.PieSelectionDescription, SampleViewType = 25, Thumbnail="pie_selection.png"},
                 new Sample() { Name = AppResources.PieDataLabelsTitle, Description = AppResources.PieDataLabelsDescription, SampleViewType = 26, Thumbnail="pie_labels.png"},
                 new Sample() { Name = AppResources.PieThemingTitle, Description = AppResources.PieThemingDescription, SampleViewType = 27, Thumbnail="themes.png"},
+                new Sample() { Name = AppResources.LoadAnimationTitle, Description = AppResources.LoadAnimationDescription, SampleViewType = 30, Thumbnail="pie_load.png"},
 
             };
         }
@@ -92,12 +95,16 @@ namespace FlexChart101
                 case 20: return new LineMarkerSample();
                 case 21: return new ZoomingAndScrolling();
                 //case 22: return new ScrollingSample();
+                case 28: return new LoadAnimationSample();
+                case 29: return new UpdateAnimationSample();
+
                 case 22: return new PieGettingStartedSample();
                 case 23: return new PieBasicFeaturesSample();
                 case 24: return new PieLegendAndTitlesSample();
                 case 25: return new PieSelectionSample();
                 case 26: return new PieDataLabel();
                 case 27: return new PieThemingSample();
+                case 30: return new PieAnimationSample();
             }
             return null;
         }

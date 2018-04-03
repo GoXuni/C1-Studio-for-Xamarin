@@ -17,7 +17,9 @@
   <string name="legendAndTitles">Legend And Titles</string>
   <string name="selectionModes">Selection Modes</string>
   <string name="toggleSeries">Toggle Series</string>
+  <string name="loadAnimation">Load Animation Mode</string>
   <string name="animationOptions">Load Animation Mode</string>
+  <string name="updateanimation">Update Animation</string>
   <string name="dynamicCharts">Dynamic Charts</string>
   <string name="scrolling">Scrolling</string>
   <string name="customMarker">Line Marker</string>
@@ -43,7 +45,9 @@
   <string name="selectionModesDesc">Shows the different selection modes</string>
   <string name="customizingAxesLabelDesc">Shows customize axis and label format</string>
   <string name="toggleSeriesDesc">Shows the ability to toggle a series visibility</string>
-  <string name="animationOptionsDesc">Shows animation modes when data is loading</string>
+  <string name="loadAnimationDesc">Shows animation modes when data is loaded</string>
+  <string name="animationOptionsDesc">Shows animation modes when data is loaded</string>
+  <string name="updateAnimationDesc">Shows animation when data is updated</string>
   <string name="dynamicChartsDesc">Shows a dynamic, \"live\" chart</string>
   <string name="scrollingDesc">Shows a chart with panning (scrolling) along the X axis</string>
   <string name="zoomingAndScrollingDesc">Shows stretch zoom-out and pinch zoom-in gestures</string>
@@ -126,6 +130,7 @@
     <item>Dark</item>
     <item>HighContrast</item>
     <item>Light</item>
+    <item>Material</item>
     <item>Midnight</item>
     <item>Minimal</item>
     <item>Organic</item>
@@ -143,6 +148,7 @@
     <item>None</item>
   </string-array>
   <string-array name="animationModeSpinnerValues">
+    <item>None</item>
     <item>Point</item>
     <item>Series</item>
     <item>All</item>
@@ -253,6 +259,7 @@
     <item>Dark</item>
     <item>HighContrast</item>
     <item>Light</item>
+    <item>Material</item>
     <item>Midnight</item>
     <item>Minimal</item>
     <item>Organic</item>

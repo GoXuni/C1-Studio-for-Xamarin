@@ -68,7 +68,7 @@ namespace SQLiteDataBase
             "OVhfY1U9acqB4zPdoz/CmzyfWb4qfsJB2dUwNlYW8g1unnkSJ/a9BeTryg4Cq8oT" +
             "GYbYF2TGWD4zlzkwqpShu26qZMkk6+Z/KexDkW/464yg4zIx20kVsFP09oSVe5N4" +
             "Aju3vgsVHdR8FM9a9+PrFMWEARkwMR1hy8VlU6zfhczX85J6mCxf";
-            MainPage = new SQLiteDataBase.MainPage();
+            MainPage = new NavigationPage(new SQLiteDataBase.MainPage()) { BarBackgroundColor = Color.FromHex("#9E9E9E"), BarTextColor = Color.White };
         }
 
         protected override void OnStart()

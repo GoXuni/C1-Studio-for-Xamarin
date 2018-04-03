@@ -78,6 +78,7 @@ namespace FlexChart101
 				int imgId = imageResources[e.Index];
 				Bitmap bmp = BitmapFactory.DecodeResource(this.Resources, imgId);
 				e.Engine.DrawImage(bmp, e.Rect.X, e.Rect.Y, e.Rect.Width, e.Rect.Height);
+                e.LabelString = null;
 			};
 
 			mChart.AxisY.LabelLoading += (object sender, RenderLabelLoadingEventArgs e) =>

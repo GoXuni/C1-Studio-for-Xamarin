@@ -1,17 +1,10 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
+﻿using Android.App;
 using Android.Views;
-using Android.Widget;
 using Android.OS;
-using Android.Graphics;
 using C1.Android.Calendar;
 using C1.Android.Input;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
-using Android.Support.V4.Content;
 
 namespace C1Input101
 {

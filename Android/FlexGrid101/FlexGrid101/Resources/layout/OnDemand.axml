@@ -1,55 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
   <include
     android:id="@+id/toolbar"
     layout="@layout/toolbar" />
-  <LinearLayout
-         xmlns:flexgrid="http://schemas.android.com/apk/res-auto"
-         android:orientation="vertical"
-         android:layout_width="fill_parent"
-         android:layout_height="fill_parent"
-         android:id="@+id/main_content"
-         android:layout_below="@id/toolbar">
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Search"
-        android:hint="@string/SearchPlaceholderText" />
-    <RelativeLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/relativeLayout1"
-        android:layout_weight="1">
-      <c1.android.grid.FlexGrid
-          android:minWidth="25px"
-          android:minHeight="25px"
-          android:id="@+id/Grid"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          flexgrid:c1_headersVisibility="column"
-          flexgrid:c1_defaultRowHeight="50dip"
-          flexgrid:c1_columnHeaderBackgroundColor="?android:colorBackground"
-          flexgrid:c1_headerGridLinesColor="?android:colorBackground" />
-      <TextView
-          android:text="@string/EmptyListText"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/EmptyListLabel"
-          android:layout_centerHorizontal="true"
-          android:textAppearance="?android:attr/textAppearanceLarge" />
-      <ProgressBar
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/ProgressBar"
-          android:indeterminate="true"
-          android:layout_centerInParent="true" />
-    </RelativeLayout>
-  </LinearLayout>
-</RelativeLayout>
+  <EditText
+      android:id="@+id/Search"
+      android:hint="@string/SearchPlaceholderText" 
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+  <c1.android.grid.FlexGrid
+      android:id="@+id/Grid"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Search"
+      app:c1_headersVisibility="column"
+      app:c1_defaultRowHeight="50dip"
+      app:c1_columnHeaderBackgroundColor="?android:colorBackground"
+      app:c1_headerGridLinesColor="?android:colorBackground" />
+  <TextView
+      android:text="@string/EmptyListText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/EmptyListLabel"
+      android:layout_centerHorizontal="true"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      app:layout_constraintTop_toBottomOf="@+id/Search"/>
+  <ProgressBar
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/ProgressBar"
+      android:indeterminate="true"
+      android:layout_centerInParent="true"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

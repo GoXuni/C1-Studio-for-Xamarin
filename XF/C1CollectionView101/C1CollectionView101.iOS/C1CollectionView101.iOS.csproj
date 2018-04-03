@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -71,12 +71,21 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\C1CollectionView101.XF\C1CollectionView101.XF.csproj">
+      <Project>{5B114140-C913-4AAB-9A84-8B2553FC7AD1}</Project>
+      <Name>C1CollectionView101.Xamarin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="C1.CollectionView">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
-    <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
-    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
@@ -140,17 +149,7 @@
     <None Include="Entitlements.plist" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Main.cs" />
-    <Compile Include="AppDelegate.cs" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\C1CollectionView101.XF\C1CollectionView101.XF.csproj">
-      <Project>{5B114140-C913-4AAB-9A84-8B2553FC7AD1}</Project>
-      <Name>C1CollectionView101.Xamarin</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Icon-167.png" />
   </ItemGroup>

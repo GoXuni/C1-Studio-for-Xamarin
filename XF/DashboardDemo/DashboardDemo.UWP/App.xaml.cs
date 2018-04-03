@@ -1,10 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 namespace DashboardDemo.UWP
@@ -20,9 +29,6 @@ namespace DashboardDemo.UWP
         /// </summary>
         public App()
         {
-            Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(
-                Microsoft.ApplicationInsights.WindowsCollectors.Metadata |
-                Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
@@ -56,7 +62,11 @@ namespace DashboardDemo.UWP
                 var assembliesToInclude = new List<Assembly>();
                 assembliesToInclude.Add(typeof(C1.Xamarin.Forms.Core.Platform.UWP.C1CoreRenderer).GetTypeInfo().Assembly);
                 assembliesToInclude.Add(typeof(C1.Xamarin.Forms.Chart.Platform.UWP.FlexChartRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(C1.UWP.Chart.FlexChart).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(C1.Xamarin.Forms.Grid.Platform.UWP.FlexGridRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(C1.UWP.Grid.FlexGrid).GetTypeInfo().Assembly);
                 assembliesToInclude.Add(typeof(C1.Xamarin.Forms.Gauge.Platform.UWP.C1GaugeRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(C1.UWP.Gauge.C1Gauge).GetTypeInfo().Assembly);
                 Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)

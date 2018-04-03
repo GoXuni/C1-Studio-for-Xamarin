@@ -23,12 +23,12 @@ namespace DashboardDemo.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-
+            C1.Xamarin.Forms.Chart.Platform.iOS.FlexChartRenderer.Init();
+            C1.Xamarin.Forms.Grid.Platform.iOS.FlexGridRenderer.Init();
             C1.Xamarin.Forms.Gauge.Platform.iOS.C1GaugeRenderer.Init();
-			C1.Xamarin.Forms.Chart.Platform.iOS.FlexChartRenderer.Init();
-			C1.Xamarin.Forms.Chart.Platform.iOS.FlexPieRenderer.Init();
 
             LoadApplication(new App());
+
             return base.FinishedLaunching(app, options);
         }
     }

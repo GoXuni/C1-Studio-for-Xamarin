@@ -1,15 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2ED2EAC0-3C8D-4D4C-A853-F4D0637C1C12}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>DashboardDemo.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>DashboardDemoiOS</AssemblyName>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AssemblyName>DashboardDemo.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -25,8 +26,6 @@
     <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignEntitlements>
-    </CodesignEntitlements>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -37,7 +36,6 @@
     <MtouchLink>None</MtouchLink>
     <MtouchArch>i386, x86_64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -90,52 +88,69 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Main.cs" />
-    <Compile Include="AppDelegate.cs" />
-    <None Include="Entitlements.plist" />
-    <None Include="Info.plist" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="C1.CollectionView">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
     <PackageReference Include="C1.iOS.Chart">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Core">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Gauge">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Grid">
+      <Version>2.5.20181.267</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+    <PackageReference Include="C1.Xamarin.Forms.Grid">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Grid">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork@2x" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-76.png" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DashboardDemo.XF\DashboardDemo.XF.csproj">
-      <Project>{F7DFECA8-53F5-411D-BA61-6DADC46E5F26}</Project>
+      <Project>{F68E4E17-5711-4821-AFFE-5D101537B83C}</Project>
       <Name>DashboardDemo.XF</Name>
     </ProjectReference>
   </ItemGroup>
@@ -173,31 +188,33 @@
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-small@3x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Media.xcassets\LaunchImage.launchimage\Contents.json">
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Media.xcassets\LaunchImage.launchimage\Default-568h@2x.png">
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Default-568h@2x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Media.xcassets\LaunchImage.launchimage\Default-Landscape.png">
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Default-Landscape.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Media.xcassets\LaunchImage.launchimage\Default-Landscape@2x.png">
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Default-Landscape@2x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Media.xcassets\LaunchImage.launchimage\Default-Portrait.png">
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Default-Portrait.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Media.xcassets\LaunchImage.launchimage\Default-Portrait@2x.png">
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Default-Portrait@2x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Media.xcassets\LaunchImage.launchimage\Default@2x.png">
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Default@2x.png">
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <BundleResource Include="Resources\Icon-167.png" />
+    <BundleResource Include="Resources\chart_column%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pie%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

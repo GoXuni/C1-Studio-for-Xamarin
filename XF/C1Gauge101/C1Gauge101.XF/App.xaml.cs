@@ -1,11 +1,14 @@
-﻿namespace C1Gauge101
+﻿using Xamarin.Forms;
+
+namespace C1Gauge101
 {
     public partial class App : global::Xamarin.Forms.Application
     {
         public App()
         {
             InitializeComponent();
-            MainPage = new global::Xamarin.Forms.NavigationPage(new GaugeSamples());
+
+            MainPage = new Xamarin.Forms.NavigationPage(new GaugeSamples()) { BarBackgroundColor = Color.FromHex("#9E9E9E"), BarTextColor = Color.White };
         }
 
         protected override void OnStart()

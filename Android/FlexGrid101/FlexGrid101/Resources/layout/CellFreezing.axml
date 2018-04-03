@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-  <include
-    android:id="@+id/toolbar"
-    layout="@layout/toolbar" />
-  <LinearLayout
-      xmlns:calendar="http://schemas.android.com/apk/res-auto"
-         android:orientation="vertical"
-         android:layout_width="fill_parent"
-         android:layout_height="fill_parent"
-         android:id="@+id/main_content"
-         android:layout_below="@id/toolbar">
-    <c1.android.grid.FlexGrid xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:flexgrid="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <c1.android.grid.FlexGrid
         android:id="@+id/Grid"
-        flexgrid:c1_frozenRows="1"
-        flexgrid:c1_frozenColumns="1" />
-  </LinearLayout>
-</RelativeLayout>
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:c1_frozenRows="1"
+        app:c1_frozenColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+</android.support.constraint.ConstraintLayout>

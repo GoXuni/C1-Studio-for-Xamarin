@@ -15,7 +15,6 @@ namespace FlexChart101
             this.lblPos.Text = AppResources.LabelPosition;
             this.flexChart.ItemsSource = ChartSampleFactory.CreateEntityList2();
             this.flexChart.Palette = Palette.Organic;
-            this.flexChart.LegendPosition = ChartPositionType.None;
             this.flexChart.DataLabel.Content = "{x} {y}";
             this.flexChart.DataLabel.BorderStyle = new ChartStyle { Stroke = Color.Blue, StrokeThickness = 1 };
             this.flexChart.DataLabel.Style = new ChartStyle { Stroke = Color.Red, FontSize = 20 };

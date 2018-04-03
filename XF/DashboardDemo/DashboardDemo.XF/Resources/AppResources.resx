@@ -117,7 +117,97 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="SalesDashboardTitle" xml:space="preserve">
-    <value>Sales Dashboard</value>
+  <data name="AnalysisTitle" xml:space="preserve">
+    <value>Analysis</value>
+  </data>
+  <data name="ButtonAllTasksText" xml:space="preserve">
+    <value>All Tasks</value>
+  </data>
+  <data name="ButtonCancelText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ButtonCompletedText" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="ButtonDefferedText" xml:space="preserve">
+    <value>Deferred</value>
+  </data>
+  <data name="ButtonEditColumnLayoutText" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="ButtonInProgressText" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+  <data name="ButtonUrgentText" xml:space="preserve">
+    <value>Urgent</value>
+  </data>
+  <data name="CurrentOpportunitiesTitle" xml:space="preserve">
+    <value>Current Opportunities</value>
+  </data>
+  <data name="DashboardTitle" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Filter2YearsText" xml:space="preserve">
+    <value>2 Years</value>
+  </data>
+  <data name="Filter3MonthsText" xml:space="preserve">
+    <value>3 Months</value>
+  </data>
+  <data name="Filter6MonthsText" xml:space="preserve">
+    <value>6 Months</value>
+  </data>
+  <data name="FilterCancelText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="FilterMonthText" xml:space="preserve">
+    <value>1 Month</value>
+  </data>
+  <data name="FilterOptionsText" xml:space="preserve">
+    <value>Filter Options</value>
+  </data>
+  <data name="FilterYearText" xml:space="preserve">
+    <value>1 Year</value>
+  </data>
+  <data name="LabelCOLSText" xml:space="preserve">
+    <value>Current Opportunities/Lead Status</value>
+  </data>
+  <data name="LabelCSGDText" xml:space="preserve">
+    <value>Category Sales Vs Goal to Date</value>
+  </data>
+  <data name="LabelCYPPYPText" xml:space="preserve">
+    <value>Current Year Profit Vs Prior Year Profit</value>
+  </data>
+  <data name="LabelPWYSText" xml:space="preserve">
+    <value>Product Wise Quarterly/Yearly Sales</value>
+  </data>
+  <data name="LabelRSGDText" xml:space="preserve">
+    <value>Regions Sales Vs Goal to Date</value>
+  </data>
+  <data name="LabelSalesText" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="LabelSPText" xml:space="preserve">
+    <value>Sales Vs Profit</value>
+  </data>
+  <data name="LabelSTCText" xml:space="preserve">
+    <value>Sales-Top Customers</value>
+  </data>
+  <data name="LabelSTPText" xml:space="preserve">
+    <value>Sales-Top Products</value>
+  </data>
+  <data name="PickerTitle" xml:space="preserve">
+    <value>Select a column to group</value>
+  </data>
+  <data name="ProductSalesTitle" xml:space="preserve">
+    <value>Product Sales</value>
+  </data>
+  <data name="ProductsTitle" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="TasksTitle" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="ToolbarFilterText" xml:space="preserve">
+    <value>Filter</value>
   </data>
 </root>

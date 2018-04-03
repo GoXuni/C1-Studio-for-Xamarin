@@ -7,6 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using C1.CollectionView;
 using System.Linq;
+using System.Globalization;
 
 namespace FlexGrid101
 {
@@ -175,7 +176,62 @@ namespace FlexGrid101
         {
             get
             {
-                return $"{PublishedAt.Date:D}";
+                var today = DateTime.Today;
+                var publishedDate = PublishedAt.Date;
+                var firstDayOfThisWeek = today.AddDays(CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek - today.DayOfWeek);
+                var firstDayOfLastWeek = firstDayOfThisWeek - TimeSpan.FromDays(7);
+                var firstDayOfTwoWeeksAgo = firstDayOfThisWeek - TimeSpan.FromDays(14);
+                var firstDayOfThreeWeeksAgo = firstDayOfThisWeek - TimeSpan.FromDays(21);
+                var firstDayOfThisMonth = new DateTime(today.Year, today.Month, 1);
+                var firstDayOfLastMonth = today.Month == 1 ? new DateTime(today.Year - 1, 12, 1) : new DateTime(today.Year, today.Month - 1, 1);
+                if (publishedDate == today)
+                {
+                    return "Today";
+                }
+                else if (today.Subtract(publishedDate).TotalDays == 1)
+                {
+                    return "Yesterday";
+                }
+                else if (publishedDate >= firstDayOfThisWeek)
+                {
+                    return publishedDate.DayOfWeek.ToString();
+                }
+                else if (publishedDate >= firstDayOfLastWeek)
+                {
+                    return "Last Week";
+                }
+                else if (publishedDate >= firstDayOfTwoWeeksAgo)
+                {
+                    return "Two Weeks Ago";
+                }
+                else if (publishedDate >= firstDayOfThreeWeeksAgo)
+                {
+                    return "Three Weeks Ago";
+                }
+                else if (publishedDate >= firstDayOfThisMonth)
+                {
+                    return "This Month";
+                }
+                else if (publishedDate >= firstDayOfLastMonth)
+                {
+                    return "Last Month";
+                }
+                else if (publishedDate >= new DateTime(today.Year, 1, 1))
+                {
+                    return "This Year";
+                }
+                else if (publishedDate >= new DateTime(today.Year-1, 1, 1))
+                {
+                    return "Last Year";
+                }
+                else if (publishedDate >= new DateTime(today.Year - 1, 1, 1))
+                {
+                    return "Two Years Ago";
+                }
+                else
+                {
+                    return "Older";
+                }
             }
         }
     }

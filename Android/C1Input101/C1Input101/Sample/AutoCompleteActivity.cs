@@ -31,39 +31,20 @@ namespace C1Input101
             SupportActionBar.SetHomeButtonEnabled(true);
 
             var highLightAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_highlight);
-            highLightAutoComplete.ItemsSource = Countries.GetDemoDataList();
+            highLightAutoComplete.ItemsSource = Country.GetDemoDataList();
             highLightAutoComplete.DisplayMemberPath = "Name";
-            highLightAutoComplete.EditableHeaderBackgroundColor = Android.Graphics.Color.White;
-            highLightAutoComplete.DropDownBackgroundColor = new Android.Graphics.Color(ContextCompat.GetColor(this, Resource.Color.window_background));
-            highLightAutoComplete.DropDownBorderWidth = 1;
-            highLightAutoComplete.HeaderBorderWidth = 1;
-            highLightAutoComplete.HeaderBorderColor = Android.Graphics.Color.Black;
 
             var customAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_custom);
-            customAutoComplete.ItemsSource = Countries1.GetDemoDataList();
+            customAutoComplete.ItemsSource = CountryWithFlag.GetDemoDataList();
             customAutoComplete.DisplayMemberPath = "Name";
-            customAutoComplete.EditableHeaderBackgroundColor = Android.Graphics.Color.White;
-            customAutoComplete.DropDownBackgroundColor = new Android.Graphics.Color(ContextCompat.GetColor(this, Resource.Color.window_background));
-            customAutoComplete.DropDownBorderWidth = 1;
-            customAutoComplete.HeaderBorderWidth = 1;
-            customAutoComplete.HeaderBorderColor = Android.Graphics.Color.Black;
-
             customAutoComplete.ItemLoading += (object sender, ComboBoxItemLoadingEventArgs e) =>
             {
-                createItemView(e.Item as Countries1, e);
+                CreateItemView(e.Item as CountryWithFlag, e);
             };
 
 
             var filterAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_filter);
             filterAutoComplete.DisplayMemberPath = "Title";
-            filterAutoComplete.IsAnimated = true;
-            filterAutoComplete.Delay = TimeSpan.FromSeconds(1);
-            filterAutoComplete.EditableHeaderBackgroundColor = Android.Graphics.Color.White;
-            filterAutoComplete.DropDownBackgroundColor = new Android.Graphics.Color(ContextCompat.GetColor(this, Resource.Color.window_background));
-            filterAutoComplete.DropDownBorderWidth = 1;
-            filterAutoComplete.HeaderBorderWidth = 1;
-            filterAutoComplete.HeaderBorderColor = Android.Graphics.Color.Black;
-
             filterAutoComplete.Filtering += async (sender, e) =>
             {
                 var deferral = e.GetDeferral();
@@ -79,14 +60,13 @@ namespace C1Input101
                     deferral.Complete();
                 }
             };
-
             filterAutoComplete.ItemLoading += (object sender, ComboBoxItemLoadingEventArgs e) =>
             {
-                createYouTubeItemView(e.Item as YouTubeVideo, e);
+                CreateYouTubeItemView(e.Item as YouTubeVideo, e);
             };
         }
 
-        private void createItemView(Countries1 item, ComboBoxItemLoadingEventArgs e)
+        private void CreateItemView(CountryWithFlag item, ComboBoxItemLoadingEventArgs e)
         {
             View originalItemView = e.ItemView;
             var itemView = LayoutInflater.FromContext(originalItemView.Context).Inflate(Resource.Layout.custom_item, (ViewGroup)originalItemView.Parent, false);
@@ -99,7 +79,7 @@ namespace C1Input101
             e.ItemView = itemView;
         }
 
-        private void createYouTubeItemView(YouTubeVideo video, ComboBoxItemLoadingEventArgs e)
+        private void CreateYouTubeItemView(YouTubeVideo video, ComboBoxItemLoadingEventArgs e)
         {
             View originalItemView = e.ItemView;
             var itemView = LayoutInflater.FromContext(originalItemView.Context).Inflate(Resource.Layout.ListItem, (ViewGroup)originalItemView.Parent, false);

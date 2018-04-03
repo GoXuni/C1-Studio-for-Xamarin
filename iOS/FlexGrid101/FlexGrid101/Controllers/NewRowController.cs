@@ -21,6 +21,7 @@ namespace FlexGrid101
             Grid.ItemsSource = new CustomCollectionView<Customer>(data);
             Grid.NewRowPosition = C1.iOS.Grid.GridNewRowPosition.Top;
             Grid.NewRowPlaceholder = Foundation.NSBundle.MainBundle.LocalizedString("Click here to add a new row", "");
+            Grid.AllowDragging = C1.iOS.Grid.GridAllowDragging.Both;
         }
     }
 
@@ -48,6 +49,12 @@ namespace FlexGrid101
         {
             await Task.Delay(1000); //simulates a network operation
             await base.ReplaceAsync(index, item);
+        }
+
+        public override async Task MoveAsync(int fromIndex, int toIndex)
+        {
+            await Task.Delay(1000); //simulates a network operation
+            await base.MoveAsync(fromIndex, toIndex);
         }
     }
 }

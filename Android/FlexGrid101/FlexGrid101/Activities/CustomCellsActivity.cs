@@ -67,6 +67,7 @@ namespace FlexGrid101
             if (cellType == GridCellType.Cell)
             {
                 var gauge = new C1BulletGraph(Grid.Context);
+                gauge.IsAnimated = false;
                 gauge.Max = 10000;
                 gauge.Target = 7000;
                 gauge.Bad = 1000;

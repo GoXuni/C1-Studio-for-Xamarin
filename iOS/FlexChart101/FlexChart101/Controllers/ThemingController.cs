@@ -10,7 +10,7 @@ namespace FlexChart101
     {
         FlexChart chart;
 
-        string[] pickerData = new string[] { "Standard", "Cocoa", "Coral", "Dark", "HighContrast", "Light", "Midnight", "Modern", "Organic", "Slate", "Zen", "Cyborg", "Superhero", "Flatly", "Darkly", "Cerulean" };
+        string[] pickerData = new string[] { "Standard", "Cocoa", "Coral", "Dark", "HighContrast", "Light","Material", "Midnight","Minimal", "Modern", "Organic", "Slate", "Zen", "Cyborg", "Superhero", "Flatly", "Darkly", "Cerulean" };
 
         public class ThemeModel : UIPickerViewModel
         {
@@ -64,33 +64,39 @@ namespace FlexChart101
                         chart.Palette = Palette.Light;
                         break;
                     case 6:
-                        chart.Palette = Palette.Midnight;
+                        chart.Palette = Palette.Material;
                         break;
                     case 7:
-                        chart.Palette = Palette.Modern;
+                        chart.Palette = Palette.Midnight;
                         break;
                     case 8:
-                        chart.Palette = Palette.Organic;
+                        chart.Palette = Palette.Minimal;
                         break;
                     case 9:
-                        chart.Palette = Palette.Slate;
+                        chart.Palette = Palette.Modern;
                         break;
                     case 10:
-                        chart.Palette = Palette.Zen;
+                        chart.Palette = Palette.Organic;
                         break;
                     case 11:
-                        chart.Palette = Palette.Cyborg;
+                        chart.Palette = Palette.Slate;
                         break;
                     case 12:
-                        chart.Palette = Palette.Superhero;
+                        chart.Palette = Palette.Zen;
                         break;
                     case 13:
-                        chart.Palette = Palette.Flatly;
+                        chart.Palette = Palette.Cyborg;
                         break;
                     case 14:
-                        chart.Palette = Palette.Darkly;
+                        chart.Palette = Palette.Superhero;
                         break;
                     case 15:
+                        chart.Palette = Palette.Flatly;
+                        break;
+                    case 16:
+                        chart.Palette = Palette.Darkly;
+                        break;
+                    case 17:
                         chart.Palette = Palette.Cerulean;
                         break;
                     default:

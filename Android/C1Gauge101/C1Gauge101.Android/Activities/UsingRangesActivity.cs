@@ -76,7 +76,17 @@ namespace C1Gauge101
             Button plusButton = (Button)FindViewById(Resource.Id.buttonPlus);
             plusButton.Click += button_Click;
 
+            mLinearGauge.ValueChanged += OnValueChanged;
+            mRadialGauge.ValueChanged += OnValueChanged;
         }
+
+        private void OnValueChanged(object sender, GaugeValueEventArgs e)
+        {
+            mLinearGauge.Value = e.Value;
+            mRadialGauge.Value = e.Value;
+            mValueText.Text = ((double)e.Value).ToString(mLinearGauge.Format);
+        }
+
         void mSwitchRange_CheckedChange(object sender, CompoundButton.CheckedChangeEventArgs e)
         {
             // setting flag for range display

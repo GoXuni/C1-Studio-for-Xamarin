@@ -23,6 +23,10 @@ namespace Sunburst101.Periodic
         public string Type { get; set; }
 
         public double Value { get { return 1; } }
+        private static Label _symbol;
+        private static Label _name;
+        private static Label _attomicNumber;
+        private static Label _attomicWeight;
 
         public View GetUserView(float fontSizeRate)
         {
@@ -43,9 +47,21 @@ namespace Sunburst101.Periodic
                 Label attomicWeight = new Label() { FontSize = 12 * fontSizeRate, HorizontalOptions = LayoutOptions.Center };
                 attomicWeight.SetBinding(Label.TextProperty, "AtomicWeight", stringFormat: "AtomicWeight: {0}");
                 layout.Children.Add(attomicWeight);
+                _symbol = symbol;
+                _name = name;
+                _attomicNumber = attomicNumber;
+                _attomicWeight = attomicWeight;
             }
             layout.BindingContext = this;
             return layout;
+        }
+
+        public void SetFontSize(float fontSizeRate)
+        {
+            _symbol.FontSize = 20 * fontSizeRate;
+            _name.FontSize = 15 * fontSizeRate;
+            _attomicNumber.FontSize = 12 * fontSizeRate;
+            _attomicWeight.FontSize = 12 * fontSizeRate;
         }
     }
 

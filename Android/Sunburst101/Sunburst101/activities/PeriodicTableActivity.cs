@@ -11,6 +11,9 @@ using Android.Graphics;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
+using C1.Android.Chart.Interaction;
+using Android.Content.Res;
+using Android.Util;
 
 namespace Sunburst101
 {
@@ -18,7 +21,8 @@ namespace Sunburst101
     public class PeriodicTableActivity : AppCompatActivity
     {
         private C1Sunburst sunburst;
-        PopupWindow popup = new PopupWindow();
+        double _x, _y, _width, _height = 0;
+        View _view;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -44,36 +48,79 @@ namespace Sunburst101
             sunburst.DataLabel.Position = PieLabelPosition.Center;
             sunburst.DataLabel.Content = "{}{name}";
             sunburst.DataLabel.Style.FontSize = 6;
-            
             sunburst.Tapped += Sunburst_Tapped;
-            
+
+            TranslateBehavior t = new TranslateBehavior();
+            sunburst.Behaviors.Add(t);
+            ZoomBehavior z = new ZoomBehavior();
+            sunburst.Behaviors.Add(z);
+            Resources resources = BaseContext.Resources;
+            DisplayMetrics metrics = resources.DisplayMetrics;
+
+            sunburst.TranslateCustomViews += (object sender, EventArgs e) =>
+            {
+                if (_view != null)
+                {
+                    _view.Visibility = ViewStates.Invisible;
+                    _view.SetX((int)(_x + sunburst.TranslationX));
+                    _view.SetY((int)(_y + sunburst.TranslationY));
+
+                    if (sunburst.Scale != 1)
+                    {
+                        if (_view.Parent != null)
+                        {
+                            _view.ScaleX = (float)sunburst.Scale;
+                            _view.ScaleY = (float)sunburst.Scale;
+                        }
+                    }
+                    _view.Visibility = ViewStates.Visible;
+                }
+            };
+
         }
-        
+
 
         private void Sunburst_Tapped(object sender, C1.Android.Core.C1TappedEventArgs e)
         {
             C1Point p = e.GetPosition(sunburst);
             ChartHitTestInfo hitTestInfo = this.sunburst.HitTest(p);
+            if (_view != null)
+                _view.Visibility = ViewStates.Invisible;
             if (hitTestInfo == null || hitTestInfo.Item == null)
                 return;
-            
-            popup.Dismiss();
-            
+
             if (hitTestInfo.Item is IChartModel)
             {
                 View view = ((IChartModel)hitTestInfo.Item).GetUserView(this);
-               // view.SetBackgroundColor(ColorEx.FromARGB(255, 255, 0, 0));
-                popup.ContentView = view;
-                
+
+                _view = view;
+
                 Rect myViewRect = new Rect();
                 sunburst.GetGlobalVisibleRect(myViewRect);
                 double length = myViewRect.Width() < myViewRect.Height() ? myViewRect.Width() : myViewRect.Height();
                 length = length * sunburst.InnerRadius / 1.2; // 1.2 is proper size between 1 and 1.414(Math.Sqrt(2));
-                popup.Width = (int)length;
-                popup.Height = (int)length;
+
                 int x = (int)(myViewRect.CenterX() - length / 2);
-                int y = (int)(myViewRect.CenterY() - length / 2);
-                popup.ShowAtLocation(sunburst, GravityFlags.NoGravity, x, y);
+                int y = (int)(myViewRect.CenterY() - length);
+
+                if (view.Parent != null)
+                {
+                    ((ViewGroup)view.Parent).RemoveView(view);
+                }
+                if (view.Parent == null)
+                {
+                    ViewGroup.LayoutParams para = new ViewGroup.LayoutParams((int)length, (int)length);
+                    sunburst.AddView(view, para);
+                }
+                _view.SetX((int)(x + sunburst.TranslationX));
+                _view.SetY((int)(y + sunburst.TranslationY));
+                _view.ScaleX = (float)sunburst.Scale;
+                _view.ScaleY = (float)sunburst.Scale;
+
+                _view.Visibility = ViewStates.Visible;
+                _x = x;
+                _y = y;
+                _width = _height = length;
             }
         }
         public DataSource Data

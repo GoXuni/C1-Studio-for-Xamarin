@@ -25,7 +25,10 @@ namespace FlexGrid101
 
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             grid.ItemsSource = Customer.GetCustomerList(100);
+            grid.AllowDragging = GridAllowDragging.Both;
+            grid.AllowResizing = GridAllowResizing.Both;
         }
+
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             if (item.ItemId == global::Android.Resource.Id.Home)

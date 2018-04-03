@@ -30,6 +30,7 @@ namespace FlexGrid101
             var data = Customer.GetCustomerList(100);
             grid.ItemsSource = new CustomCollectionView<Customer>(data);
             grid.NewRowPlaceholder = ApplicationContext.GetString(Resource.String.NewRowPlaceholder);
+            grid.AllowDragging = GridAllowDragging.Both;
         }
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
@@ -69,6 +70,12 @@ namespace FlexGrid101
         {
             await Task.Delay(1000); //simulates a network operation
             await base.ReplaceAsync(index, item);
+        }
+
+        public override async Task MoveAsync(int fromIndex, int toIndex)
+        {
+            await Task.Delay(1000); //simulates a network operation
+            await base.MoveAsync(fromIndex, toIndex);
         }
     }
 }

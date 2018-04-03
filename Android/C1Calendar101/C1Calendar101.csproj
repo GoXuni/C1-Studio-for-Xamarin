@@ -14,7 +14,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -50,13 +50,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Android.Calendar">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Core">
-      <Version>2.5.20173.238</Version>
+      <Version>2.5.20181.267</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="26.1.0.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="26.1.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Constraint.Layout">
+      <Version>1.0.2.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="27.0.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\CustomAppearanceActivity.cs" />
@@ -81,9 +84,6 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CustomAppearance.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\CustomDayContent.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CustomHeader.axml">

@@ -1,52 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
   <include
     android:id="@+id/toolbar"
     layout="@layout/toolbar" />
-  <LinearLayout   
-         xmlns:flexgrid="http://schemas.android.com/apk/res-auto"
-         android:orientation="vertical"
-         android:layout_width="fill_parent"
-         android:layout_height="fill_parent"
-         android:id="@+id/main_content"
-         android:layout_below="@id/toolbar">
-    <c1.android.grid.FlexGrid
-        android:layout_width="match_parent"
-        android:layout_height="288dip"
-        android:id="@+id/Grid"
-        flexgrid:c1_gridSelectionMode="cellRange"
-        flexgrid:c1_isReadOnly="true"
-        flexgrid:c1_allowMerging="all" />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1">
-      <ImageView
-          android:src="@drawable/retro_tv_filled_50_dark"
-          android:layout_width="wrap_content"
-          android:layout_height="match_parent"
-          android:id="@+id/imageView1"
-          android:layout_marginLeft="8dip" />
-      <TextView
-          android:text="Walker"
-          android:id="@+id/ShowNameLabel"
-          android:layout_width="wrap_content"
-          android:layout_height="match_parent"
-          android:gravity="center_vertical"
-          android:textSize="24dip"
-          android:layout_marginLeft="8dip" />
-    </LinearLayout>
+  <c1.android.grid.FlexGrid
+      android:id="@+id/Grid"
+      app:c1_gridSelectionMode="cellRange"
+      app:c1_isReadOnly="true"
+      app:c1_allowMerging="all"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+  <LinearLayout
+      android:id="@+id/linearLayout1"
+      android:orientation="horizontal"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Grid">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:src="@drawable/retro_tv_filled_50_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dip" />
     <TextView
-        android:text="ShowTimeLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ShowTimeLabel"
-        android:layout_margin="8dip" />
+        android:id="@+id/ShowNameLabel"
+        android:text="Walker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="24dip"
+        android:layout_marginLeft="8dip" />
   </LinearLayout>
-</RelativeLayout>
+  <TextView
+      android:id="@+id/ShowTimeLabel"
+      android:text="ShowTimeLabel"
+      android:layout_margin="8dip"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+</android.support.constraint.ConstraintLayout>

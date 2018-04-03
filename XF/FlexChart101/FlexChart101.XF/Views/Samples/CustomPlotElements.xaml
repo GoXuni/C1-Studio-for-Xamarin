@@ -7,7 +7,7 @@
     <Grid  VerticalOptions="FillAndExpand">
     <c1:FlexChart x:Name="flexChart1" BindingX="Name" VerticalOptions="FillAndExpand">
       <c1:FlexChart.Series>
-                    <c1:ChartSeries Binding="DevicesSold" SeriesName ="Devices sold" SymbolRendered="OnPlotElementLoading">
+                    <c1:ChartSeries Binding="DevicesSold" SeriesName ="Devices sold" SymbolRendering="OnSymbolRendering">
                         <c1:ChartSeries.Style>
                             <c1:ChartStyle Fill="SteelBlue" Stroke="SteelBlue"/>
                         </c1:ChartSeries.Style>

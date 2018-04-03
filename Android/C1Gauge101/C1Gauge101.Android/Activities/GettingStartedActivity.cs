@@ -109,6 +109,7 @@ namespace C1Gauge101
             mLinearGauge.Value = e.Value;
             mRadialGauge.Value = e.Value;
             mBulletGraph.Value = e.Value;
+            mValueText.Text = ((double)e.Value).ToString(mLinearGauge.Format);
         }
         public override bool OnOptionsItemSelected(IMenuItem item)
         {

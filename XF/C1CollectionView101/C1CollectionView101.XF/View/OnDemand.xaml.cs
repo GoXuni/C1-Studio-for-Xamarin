@@ -20,6 +20,9 @@ namespace C1CollectionView101
             search.Placeholder = AppResources.SearchPlaceholderText;
             _collectionView = new YouTubeCollectionView();
             list.ItemsSource = _collectionView;
+
+            // start on demand loading
+            list.LoadItemsOnDemand(_collectionView);
         }
 
         private async void OnTextChanged(object sender, EventArgs e)

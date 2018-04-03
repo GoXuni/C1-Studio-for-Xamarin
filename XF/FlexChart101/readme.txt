@@ -3,7 +3,7 @@ FlexChart101 for Xamarin Forms
 Shows samples of the Chart control.
 
 Shows the following samples
-<code>
+
 	- GettingStarted with FlexChart
 	- BasicChartTypes
 	- MixedChartTypes
@@ -30,4 +30,3 @@ Shows the following samples
 	- Selection
 	- FlexPie DataLabels
 	- FlexPie Theming
-</code>

@@ -85,8 +85,17 @@ namespace C1Gauge101
             minusButton.Click += button_Click;
             Button plusButton = (Button)FindViewById(Resource.Id.buttonPlus);
             plusButton.Click += button_Click;
+
+            mLinearGauge.ValueChanged += OnValueChanged;
+            mRadialGauge.ValueChanged += OnValueChanged;
         }
 
+        private void OnValueChanged(object sender, GaugeValueEventArgs e)
+        {
+            mLinearGauge.Value = e.Value;
+            mRadialGauge.Value = e.Value;
+            mValueText.Text = ((double)e.Value).ToString(mLinearGauge.Format);
+        }
 
         void mShowTextSpinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {

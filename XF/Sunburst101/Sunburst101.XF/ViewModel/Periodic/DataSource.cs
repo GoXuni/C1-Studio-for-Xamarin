@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using Xamarin.Forms;
 
 namespace Sunburst101.Periodic
@@ -94,7 +95,11 @@ namespace Sunburst101.Periodic
         private List<SubGroup> _subGroups;
 
         public string GroupName{ get; set; }
-
+        private static Label _groupName;
+        private static Label _subGroup;
+        private static Label _subGroupName;
+        private static ListView _listView;
+        private static double _fontSizeRate;
         public List<SubGroup> SubGroups
         {
             get
@@ -103,7 +108,6 @@ namespace Sunburst101.Periodic
                     _subGroups = new List<SubGroup>();
                 return _subGroups;
             }
-
         }
 
         public Group(){}
@@ -118,7 +122,7 @@ namespace Sunburst101.Periodic
             if (layout == null)
             {
                 layout = new StackLayout();
-
+                _fontSizeRate = fontSizeRate;
                 Label groupName = new Label() { FontAttributes = FontAttributes.Bold, FontSize = 18 * fontSizeRate, HorizontalOptions = LayoutOptions.Center };
                 groupName.SetBinding(Label.TextProperty, "GroupName");
                 layout.Children.Add(groupName);
@@ -128,31 +132,86 @@ namespace Sunburst101.Periodic
                 layout.Children.Add(subGroup);
                 groupName.BackgroundColor = Color.Transparent;
                 subGroup.BackgroundColor = Color.Transparent;
+                _groupName = groupName;
+                _subGroup = subGroup;
 
                 ListView listView = new ListView();
-                listView.BackgroundColor = Color.Transparent;
-                listView.RowHeight = 15;
+                listView.RowHeight = 16;
                 Device.OnPlatform(iOS: () => { listView.RowHeight = 7; });
                 listView.SeparatorColor = Color.Transparent;
+                listView.BackgroundColor = Color.Transparent;
                 listView.ItemTemplate = new DataTemplate(() =>
                 {
                     StackLayout itemLayout = new StackLayout();
-                    Label subGroupName = new Label() { FontSize = 10 * fontSizeRate, HorizontalOptions = LayoutOptions.Center };
+                    Label subGroupName = new Label() { FontSize = 10 * fontSizeRate, HorizontalOptions = LayoutOptions.Center , VerticalOptions = LayoutOptions.CenterAndExpand };
                     subGroupName.BackgroundColor = Color.Transparent;
                     subGroupName.SetBinding(Label.TextProperty, "SubGroupNameAndElementsCount");
+                    subGroupName.SetBinding(Label.FontSizeProperty, "FontSize");
                     itemLayout.Children.Add(subGroupName);
+                    _subGroupName = subGroupName;
                     return new ViewCell { View = itemLayout};
                 });
+                _listView = listView;
 
                 listView.SetBinding(ListView.ItemsSourceProperty, "SubGroups");
                 layout.Children.Add(listView);
+
             }
 
             layout.BindingContext = this;
             return layout;
         }
+
+        public void SetFontSize(float fontSizeRate)
+        {
+            _groupName.FontSize = 18 * fontSizeRate;
+            _subGroup.FontSize = 12 * fontSizeRate;
+            _listView.RowHeight = (int)(16 * fontSizeRate / _fontSizeRate);
+            Device.OnPlatform(iOS: () => { _listView.RowHeight = (int)(7 * fontSizeRate / _fontSizeRate); ResetAndroidAndiOSFontSize(10 * fontSizeRate); });
+            Device.OnPlatform(Android: () => { ResetAndroidAndiOSFontSize(10 * fontSizeRate); });
+            Device.OnPlatform(WinPhone: () => { ResetUWPFontSize(10 * fontSizeRate); });
+            
+        }
+
+        private void ResetAndroidAndiOSFontSize(float fontSize)
+        {
+            IEnumerable<PropertyInfo> pInfos = (_listView as ItemsView<Cell>).GetType().GetRuntimeProperties();
+            var templatedItems = pInfos.FirstOrDefault(info => info.Name == "TemplatedItems");
+            if (templatedItems != null)
+            {
+                var cells = templatedItems.GetValue(_listView);
+                foreach (ViewCell cell in cells as Xamarin.Forms.ITemplatedItemsList<Xamarin.Forms.Cell>)
+                {
+                    if (cell.BindingContext != null && cell.BindingContext is SubGroup)
+                    {
+                        Label label = (cell.View as StackLayout).Children.OfType<Label>().FirstOrDefault();
+                        if (label != null)
+                        {
+                            label.FontSize = fontSize;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void ResetUWPFontSize(float fontSize)
+        {
+            List<SubGroup> newList = new List<SubGroup>();
+            foreach (var item in SubGroups)
+            {
+                item.FontSize = fontSize;
+                newList.Add(item);
+            }
+            _listView.ItemsSource = newList;
+        }
+
     }
 
+    public class CharacteristicsDataItem
+    {
+        public string Name { get; set; }
+        public float FontSize { get; set; }
+    }
     public class SubGroup : IChartModel
     {
         internal static StackLayout layout;
@@ -160,8 +219,15 @@ namespace Sunburst101.Periodic
         private List<Element> _elements;
 
         public string SubGroupName{ get; set; }
-
+        public double FontSize { get; set; }
         public string Characteristics { get; set; }
+        private static Label _subGroupName;
+        private static Label _elementCount;
+        private static Label _charecteristics;
+        private static ListView _listView;
+        private static double _fontSizeRate;
+        private List<CharacteristicsDataItem> _characteristicsList;
+        private string _SubGroupNameAndElementsCount;
 
         public List<Element> Elements
         {
@@ -189,14 +255,28 @@ namespace Sunburst101.Periodic
                 return SubGroupName + "(" + ElementsCount + ")";
             }
         }
-        public List<string> CharacteristicsList
+
+        public List<CharacteristicsDataItem> CharacteristicsList
         {
             get
             {
-                if (Characteristics != null)
-                    return Characteristics.Split(',').ToList<string>();
-                return new List<string>();
+                if (_characteristicsList != null)
+                {
+                    return _characteristicsList;
+                }
+                List<CharacteristicsDataItem> newDataItemList = new List<CharacteristicsDataItem>();
+                string[] itmes = Characteristics.Split(',');
+                foreach (var item in itmes)
+                {
+                    CharacteristicsDataItem dataItem = new CharacteristicsDataItem();
+                    dataItem.Name = item;
+                    dataItem.FontSize = 20;
+                    newDataItemList.Add(dataItem);
+                }
+                _characteristicsList = newDataItemList;
+                return newDataItemList;
             }
+            set { _characteristicsList = value; }
         }
 
         public SubGroup() { }
@@ -210,6 +290,7 @@ namespace Sunburst101.Periodic
         {
             if (layout == null)
             {
+                _fontSizeRate = fontSizeRate;
                 layout = new StackLayout();
                 Label subGroupName = new Label() { FontAttributes = FontAttributes.Bold, FontSize = 15 * fontSizeRate, HorizontalOptions = LayoutOptions.Center };
                 subGroupName.SetBinding(Label.TextProperty, "SubGroupName");
@@ -227,21 +308,26 @@ namespace Sunburst101.Periodic
                 layout.Children.Add(charecteristics);
                 charecteristics.BackgroundColor = Color.Transparent;
 
+                _subGroupName = subGroupName;
+                _elementCount = elementCount;
+                _charecteristics = charecteristics;
+
                 ListView listView = new ListView();
-                listView.RowHeight = 15;
+                listView.RowHeight = 16;
                 Device.OnPlatform(iOS: () => { listView.RowHeight = 7; });
                 listView.SeparatorColor = Color.Transparent;
                 listView.BackgroundColor = Color.Transparent;
                 listView.ItemTemplate = new DataTemplate(() =>
                 {
                     StackLayout itemLayout = new StackLayout();
-                    Label charecteristicsItem = new Label() { FontSize = 10 * fontSizeRate, HorizontalOptions = LayoutOptions.Center };
-                    charecteristicsItem.SetBinding(Label.TextProperty, ".");
+                    Label charecteristicsItem = new Label() { FontSize = 10 * fontSizeRate, HorizontalOptions = LayoutOptions.Center,VerticalOptions = LayoutOptions.CenterAndExpand };
+                    charecteristicsItem.SetBinding(Label.TextProperty, "Name");
+                    charecteristicsItem.SetBinding(Label.FontSizeProperty, "FontSize");
                     itemLayout.Children.Add(charecteristicsItem);
                     charecteristicsItem.BackgroundColor = Color.Transparent;
                     return new ViewCell { View = itemLayout};
                 });
-
+                _listView = listView;
                 listView.SetBinding(ListView.ItemsSourceProperty, "CharacteristicsList");
                 layout.Children.Add(listView);
             }
@@ -249,5 +335,49 @@ namespace Sunburst101.Periodic
             layout.BindingContext = this;
             return layout;
         }
+
+        public void SetFontSize(float fontSizeRate)
+        {
+            _subGroupName.FontSize = 15 * fontSizeRate;
+            _elementCount.FontSize = 12 * fontSizeRate;
+            _charecteristics.FontSize = 10 * fontSizeRate;
+            _listView.RowHeight = (int)(16 * fontSizeRate / _fontSizeRate);
+            Device.OnPlatform(iOS: () => { _listView.RowHeight = (int)(7 * fontSizeRate / _fontSizeRate); ResetAndroidAndiOSFontSize(10 * fontSizeRate); });
+            Device.OnPlatform(Android: () => { ResetAndroidAndiOSFontSize(10 * fontSizeRate); });
+            Device.OnPlatform(WinPhone: () => {ResetUWPFontSize(10 * fontSizeRate); });
+        }
+
+        private void ResetUWPFontSize(float fontSize)
+        {
+            List<CharacteristicsDataItem> newList = new List<CharacteristicsDataItem>();
+            foreach (var item in CharacteristicsList)
+            {
+                item.FontSize = fontSize;
+                newList.Add(item);
+            }
+            _listView.ItemsSource = newList;
+        }
+
+        private void ResetAndroidAndiOSFontSize(float fontSize)
+        {
+            IEnumerable<PropertyInfo> pInfos = (_listView as ItemsView<Cell>).GetType().GetRuntimeProperties();
+            var templatedItems = pInfos.FirstOrDefault(info => info.Name == "TemplatedItems");
+            if (templatedItems != null)
+            {
+                var cells = templatedItems.GetValue(_listView);
+                foreach (ViewCell cell in cells as Xamarin.Forms.ITemplatedItemsList<Xamarin.Forms.Cell>)
+                {
+                    if (cell.BindingContext != null)
+                    {
+                        Label label = (cell.View as StackLayout).Children.OfType<Label>().FirstOrDefault();
+                        if (label != null)
+                        {
+                            label.FontSize = fontSize;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }

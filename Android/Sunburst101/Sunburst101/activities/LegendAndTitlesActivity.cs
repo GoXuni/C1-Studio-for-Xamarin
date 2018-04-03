@@ -25,7 +25,7 @@ namespace Sunburst101
 
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
-            SupportActionBar.Title = GetString(Resource.String.basic_features);
+            SupportActionBar.Title = GetString(Resource.String.legend_and_titles);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             SupportActionBar.SetHomeButtonEnabled(true);
 

@@ -19,17 +19,17 @@
       android:id="@+id/flexchart"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:c1_axisX_titleStyleTypeface="ITALIC"
-        app:c1_axisY_format="@string/axisYFormat2"
-        app:c1_axisY_titleStyleTypeface="ITALIC"
+        app:FlexChart_axisX_titleStyleTypeface="ITALIC"
+        app:FlexChart_axisY_format="@string/axisYFormat2"
+        app:FlexChart_axisY_titleStyleTypeface="ITALIC"
         
-        app:c1_footer="@string/chartFooter"
-        app:c1_footerStyleStroke="#FF0000"
-        app:c1_footerFontGravity="CENTER_HORIZONTAL"
-        app:c1_footerStyleFontSize="10"
-        app:c1_header="@string/chartHeader"
-        app:c1_headerStyleStroke="#FF0000"
-        app:c1_headerFontGravity="CENTER_HORIZONTAL"
-        app:c1_headerStyleFontSize="20" />
+        app:FlexChart_footer="@string/chartFooter"
+        app:FlexChart_footerStyleStroke="#FF0000"
+        app:FlexChart_footerFontGravity="CENTER_HORIZONTAL"
+        app:FlexChart_footerStyleFontSize="10sp"
+        app:FlexChart_header="@string/chartHeader"
+        app:FlexChart_headerStyleStroke="#FF0000"
+        app:FlexChart_headerFontGravity="CENTER_HORIZONTAL"
+        app:FlexChart_headerStyleFontSize="20sp" />
   </LinearLayout>
   </RelativeLayout>

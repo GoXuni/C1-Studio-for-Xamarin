@@ -1,28 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6CF5EBC4-5C6A-4B73-A2AA-7C8183B0F113}</ProjectGuid>
+    <ProjectGuid>{984080A8-6ECC-4EEF-B795-7715C6156D0F}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DashboardDemo.Android</RootNamespace>
+    <RootNamespace>DashboardDemo.Droid</RootNamespace>
     <AssemblyName>DashboardDemo.Android</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
-    <AndroidStoreUncompressedFileExtensions />
-    <MandroidI18n />
-    <JavaMaximumHeapSize>
-    </JavaMaximumHeapSize>
-    <JavaOptions />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,13 +27,12 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <AndroidLinkSkip>
-    </AndroidLinkSkip>
-    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
-    <MonoDroidExtraArgs>
-    </MonoDroidExtraArgs>
-    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -49,90 +42,108 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkSkip />
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
-    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
-    <BundleAssemblies>False</BundleAssemblies>
-    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
-    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
-    <AndroidStoreUncompressedFileExtensions />
-    <MandroidI18n />
-    <Debugger>Xamarin</Debugger>
-    <AotAssemblies>False</AotAssemblies>
-    <EnableLLVM>False</EnableLLVM>
-    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
-    <EnableProguard>False</EnableProguard>
-    <DevInstrumentationEnabled>False</DevInstrumentationEnabled>
-    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ObjectModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Android.Chart">
-      <Version>2.5.20173.238</Version>
-    </PackageReference>
-    <PackageReference Include="C1.Android.Core">
-      <Version>2.5.20173.238</Version>
-    </PackageReference>
-    <PackageReference Include="C1.Android.Gauge">
-      <Version>2.5.20173.238</Version>
-    </PackageReference>
-    <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>2.5.20173.238</Version>
-    </PackageReference>
-    <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>2.5.20173.238</Version>
-    </PackageReference>
-    <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>2.5.20173.238</Version>
-    </PackageReference>
-    <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>2.5.20173.238</Version>
-    </PackageReference>
-    <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>2.5.20173.238</Version>
-    </PackageReference>
-    <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>2.5.20173.238</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\Main.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\Toolbar.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\AndroidManifest.xml" />
-    <AndroidResource Include="Resources\drawable\Logo.png" />
-    <AndroidResource Include="Resources\values\colors.xml" />
-    <AndroidResource Include="Resources\values\Strings.xml" />
-    <AndroidResource Include="Resources\values\Styles.xml" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DashboardDemo.XF\DashboardDemo.XF.csproj">
+      <Project>{F68E4E17-5711-4821-AFFE-5D101537B83C}</Project>
       <Name>DashboardDemo.XF</Name>
-      <Project>{F7DFECA8-53F5-411D-BA61-6DADC46E5F26}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Android.Chart">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Android.Core">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Android.Gauge">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Android.Grid">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.CollectionView">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Chart">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Chart">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Core">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Core">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Gauge">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Gauge">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Grid">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Grid">
+      <Version>2.5.20181.267</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms">
+      <Version>2.5.0.280555</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Compat" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Core.UI" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Fragment" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Media.Compat" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\chart_column.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pie.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

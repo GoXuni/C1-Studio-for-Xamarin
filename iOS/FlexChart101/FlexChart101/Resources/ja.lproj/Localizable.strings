@@ -37,7 +37,7 @@
 
 "Toggle Series" = "系列の表示/非表示";
 
-"Load Animation Mode" = "アニメーションモード";
+"Load Animation" = "ロードアニメーション";
 
 "Update Animation" = "更新アニメーション";
 
@@ -283,3 +283,7 @@
 "Selection" = "円形チャートのスライスの選択";
 "Shows inner radius, offset, and start angle" = "チャートの内部角度、オフセット、開始角度を表示";
 "Snapshot" = "画像として保存";
+
+"Pie Animation" = "円形チャートのアニメーション";
+
+"Shows pie animation modes when data is loaded" = "データロード時のアニメーションモードを設定";

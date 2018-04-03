@@ -100,9 +100,17 @@ namespace C1Weather
             }
             else
             {
-                throw new Exception(await response.Content.ReadAsStringAsync());
+                string content = await response.Content.ReadAsStringAsync();
+                WeatherError errorData = JsonConvert.DeserializeObject<WeatherError>(content);
+                //throw new Exception(await response.Content.ReadAsStringAsync());
+                throw new Exception(errorData.COD + " "  + errorData.Message);
             }
         }
+    }
+    public class WeatherError
+    {
+        public string COD { get; set; }
+        public string Message { get; set; }
     }
     public class WeatherResult
     {

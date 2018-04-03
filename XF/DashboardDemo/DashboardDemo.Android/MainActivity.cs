@@ -7,18 +7,15 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-using XAM = Xamarin.Forms;
-
-using Xamarin.Forms.Platform.Android;
-
-namespace DashboardDemo.Android
+namespace DashboardDemo.Droid
 {
-    [Activity(Label = "Sales Dashboard", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "DashboardDemo", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
-            FormsAppCompatActivity.ToolbarResource = Android.Resource.Layout.Toolbar;
+            TabLayoutResource = Resource.Layout.Tabbar;
+            ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
 

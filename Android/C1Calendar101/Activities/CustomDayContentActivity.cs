@@ -19,7 +19,7 @@ namespace C1Calendar101
         {
             base.OnCreate(bundle);
             
-            SetContentView(Resource.Layout.CustomDayContent);
+            SetContentView(Resource.Layout.GettingStarted);
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = GetString(Resource.String.custom_day_content);

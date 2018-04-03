@@ -19,6 +19,6 @@
       android:id="@+id/flexchart"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:c1_chartType="LINE" />
+        app:FlexChart_chartType="LINE" />
 </LinearLayout>
 </RelativeLayout>

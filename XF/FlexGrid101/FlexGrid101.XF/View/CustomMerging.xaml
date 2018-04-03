@@ -8,7 +8,7 @@
       <RowDefinition Height="Auto"/>
       <RowDefinition />
     </Grid.RowDefinitions>
-    <c1:FlexGrid x:Name="grid" IsReadOnly="True" SelectionMode="CellRange" ShowMarquee="True" AllowMerging="All" HeightRequest="288"/>
+    <c1:FlexGrid x:Name="grid" IsReadOnly="True" SelectionMode="CellRange" ShowMarquee="True" AllowMerging="All"/>
     <Grid Grid.Row="1" Padding="5">
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />

@@ -12,9 +12,7 @@ namespace FlexGrid101
     /// Simple data class generator.
     /// </summary>
     /// <remarks>
-    public class Customer :
-        INotifyPropertyChanged,
-        IEditableObject
+    public class Customer : INotifyPropertyChanged, IEditableObject
     {
         #region ** fields
 
@@ -39,7 +37,6 @@ namespace FlexGrid101
         #region ** initialization
 
         public Customer()
-            : this(_rnd.Next(10000))
         {
         }
 

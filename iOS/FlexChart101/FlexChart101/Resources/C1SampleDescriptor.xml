@@ -61,6 +61,18 @@
 		<StoryboardID>Line Marker</StoryboardID>
 	</Sample>
     <Sample>
+        <Title>Load Animation</Title>
+        <Description>Shows animation modes when data is loaded</Description>
+        <Image>Images/chart_animation.png</Image>
+        <StoryboardID>Load Animation</StoryboardID>
+    </Sample>
+    <Sample>
+        <Title>Update Animation</Title>
+        <Description>Shows animation when data is updated</Description>
+        <Image>Images/chart_animation.png</Image>
+        <StoryboardID>Update Animation</StoryboardID>
+    </Sample>
+    <Sample>
         <Title>Selection Modes</Title>
         <Description>Shows the different selection modes</Description>
         <Image>Images/chart_selection.png</Image>
@@ -169,4 +181,10 @@
 		<Image>Images/chart_scatter.png</Image>
 		<StoryboardID>Zooming and Scrolling</StoryboardID>
 	</Sample>
+    <Sample>
+        <Title>Pie Animation</Title>
+        <Description>Shows pie animation modes when data is loaded</Description>
+        <Image>Images/pie_load.png</Image>
+        <StoryboardID>Pie Animation</StoryboardID>
+    </Sample>
 </ArrayOfSample>

@@ -8,6 +8,7 @@ using C1.Android.Grid;
 using Android.Support.V7.App;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Views;
+using Android.Util;
 
 namespace FlexGrid101
 {
@@ -25,6 +26,8 @@ namespace FlexGrid101
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             SupportActionBar.SetHomeButtonEnabled(true);
 
+            var dips_50 = TypedValue.ApplyDimension(ComplexUnitType.Dip, 50, Resources.DisplayMetrics);
+
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             grid.HeadersVisibility = GridHeadersVisibility.Column;
             grid.BackgroundColor = Color.White;
@@ -39,6 +42,7 @@ namespace FlexGrid101
             grid.SelectionTextColor = Color.Black;
             grid.AutoGenerateColumns = false;
             grid.AllowResizing = GridAllowResizing.Columns;
+            grid.DefaultRowHeight = new GridLength(dips_50);
             grid.Columns.Add(new GridColumn { Binding = "FirstName", Width = GridLength.Star });
             grid.Columns.Add(new GridColumn { Binding = "LastName", Width = GridLength.Star });
             grid.Columns.Add(new GridColumn { Binding = "LastOrderDate", Width = GridLength.Star, Format = "d" });

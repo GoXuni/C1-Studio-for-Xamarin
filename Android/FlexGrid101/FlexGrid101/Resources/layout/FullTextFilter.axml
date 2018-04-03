@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
   <include
     android:id="@+id/toolbar"
     layout="@layout/toolbar" />
-  <LinearLayout
-      xmlns:calendar="http://schemas.android.com/apk/res-auto"
-         android:orientation="vertical"
-         android:layout_width="fill_parent"
-         android:layout_height="fill_parent"
-         android:id="@+id/main_content"
-         android:layout_below="@id/toolbar">
-    <EditText
-        android:layout_width="match_parent"
+  <EditText
+      android:id="@+id/Filter"
+      android:hint="@string/FilterPlaceholderText"
+      android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Filter"
-        android:hint="@string/FilterPlaceholderText" />
-    <c1.android.grid.FlexGrid
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+  <c1.android.grid.FlexGrid
         android:id="@+id/Grid"
-        android:layout_weight="1" />
-  </LinearLayout>
-</RelativeLayout>
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Filter"/>
+</android.support.constraint.ConstraintLayout>

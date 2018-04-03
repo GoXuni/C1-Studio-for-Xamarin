@@ -24,6 +24,23 @@ namespace C1Calendar101.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            //Workaround from https://bugzilla.xamarin.com/show_bug.cgi?id=59596
+            try
+            {
+                // Get the user's preferred language
+                var language = NSLocale.PreferredLanguages[0];
+                // Extract the language code
+                var languageDic = NSLocale.ComponentsFromLocaleIdentifier(language);
+                var languageCode = languageDic["kCFLocaleLanguageCodeKey"].ToString();
+                // Force .NET culture to that of the device
+                var culture = new System.Globalization.CultureInfo(languageCode);
+                System.Globalization.CultureInfo.CurrentCulture = culture;
+                System.Globalization.CultureInfo.CurrentUICulture = culture;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Failed to set culture from iOS device culture");
+            }
             global::Xamarin.Forms.Forms.Init();
             C1.Xamarin.Forms.Calendar.Platform.iOS.C1CalendarRenderer.Init();
 
