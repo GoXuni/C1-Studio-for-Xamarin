@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1Grid="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
+             x:Class="DashboardDemo.Views.AnalysisFilterPage">
+
+    <Grid Padding="10">
+        <Grid.Padding>
+            <OnPlatform x:TypeArguments="Thickness" iOS="10,30,10,10" />
+        </Grid.Padding>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <c1Grid:FlexGrid x:Name="gridProduct" 
+                         Grid.Row="0" 
+                         Grid.Column="0" 
+                         AutoGenerateColumns="False" 
+                         HeadersVisibility="Column" 
+                         GridLinesVisibility="All" 
+                         SelectionMode="None"
+                         ColumnHeaderBackgroundColor="#051839" 
+                         ColumnHeaderTextColor="White">
+            <c1Grid:FlexGrid.Columns>
+                <c1Grid:GridColumn Binding="IsSelected" Width="Auto" Header=""/>
+                <c1Grid:GridColumn Binding="ProductName" IsReadOnly="True" Width="*" Header="Product" HeaderHorizontalAlignment="Center"/>
+            </c1Grid:FlexGrid.Columns>
+        </c1Grid:FlexGrid>
+        <c1Grid:FlexGrid x:Name="gridRegion" 
+                         Grid.Row="0" 
+                         Grid.Column="1" 
+                         AutoGenerateColumns="False" 
+                         HeadersVisibility="Column" 
+                         GridLinesVisibility="All" 
+                         SelectionMode="None" 
+                         ColumnHeaderBackgroundColor="#051839" 
+                         ColumnHeaderTextColor="White">
+            <c1Grid:FlexGrid.Columns>
+                <c1Grid:GridColumn Binding="IsSelected" Width="Auto" Header=""/>
+                <c1Grid:GridColumn Binding="RegionName" IsReadOnly="True" Width="*" Header="Region" HeaderHorizontalAlignment="Center"/>
+            </c1Grid:FlexGrid.Columns>
+        </c1Grid:FlexGrid>
+        <Button x:Name="btnOK" Grid.Row="1" Grid.Column="0" Text="OK" Clicked="OnOKClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#051839" TextColor="White"/>
+        <Button x:Name="btnCancel" Grid.Row="1" Grid.Column="1" Text="Cancel" Clicked="OnCancelClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#051839" TextColor="White"/>
+    </Grid>
+</ContentPage>

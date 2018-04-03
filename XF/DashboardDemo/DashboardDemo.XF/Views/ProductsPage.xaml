@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DashboardDemo.Views.ProductsPage"
+             Padding="0,0,0,0">
+    <ContentPage.Content>
+        <ListView x:Name="listView" IsEnabled="True" GroupDisplayBinding="{Binding Title}" IsGroupingEnabled="True">
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="#6D82A5">
+                            <Label Text="{Binding Title}" FontSize="Large" TextColor="White" Margin="5,3,3,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding ImageSource}" HorizontalOptions="Start" VerticalOptions="Center" Margin="10,0,0,0"/>
+                            <Label Text="{Binding ProductName}" FontSize="Medium" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="5,0,0,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

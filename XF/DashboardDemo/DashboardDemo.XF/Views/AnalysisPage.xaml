@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:c1Chart="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+            xmlns:c1Grid="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
+            x:Class="DashboardDemo.Views.AnalysisPage"
+            BarBackgroundColor="#051839" 
+            BarTextColor="White">
+
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem x:Name="btnMonthData" Order="Secondary" Priority="0" Activated="OnMonthData"/>
+        <ToolbarItem x:Name="btn3MonthsData" Order="Secondary" Priority="0" Activated="On3MonthsData"/>
+        <ToolbarItem x:Name="btn6MonthsData" Order="Secondary" Priority="0" Activated="On6MonthsData"/>
+        <ToolbarItem x:Name="btnYearData" Order="Secondary" Priority="0" Activated="OnYearData"/>
+        <ToolbarItem x:Name="btn2YearsData" Order="Secondary" Priority="0" Activated="On2YearsData"/>
+    </TabbedPage.ToolbarItems>
+
+    <ContentPage x:Name="pagePS" Icon="pie.png">
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="#6D82A5" Grid.Row="0">
+                <Label x:Name="lblPWQYS" FontSize="Large" BackgroundColor="#6D82A5" TextColor="White"  Margin="5,3,0,3" />
+            </StackLayout>
+            <c1Chart:FlexPie x:Name="flexPie"
+                             AnimationMode="Point"
+                             Binding="Sales"
+                             Palette="Custom"    
+                             BindingName="RegionName" 
+                             SelectedItemOffset="0.2" 
+                             SelectionMode="Point" 
+                             LegendPosition="Bottom"
+                             Grid.Row="1">
+            </c1Chart:FlexPie>
+            <!--StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="btnFilter" Text="Filter" Clicked="OnFilterClicked" HorizontalOptions="Center" WidthRequest="100"
+                        BackgroundColor="#051839" TextColor="White" Margin="0,5,0,5"/>
+            </-->
+        </Grid>
+    </ContentPage>
+
+    <ContentPage x:Name="pageCO" Icon="chart_column.png">
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="#6D82A5" Grid.Row="0">
+                <Label x:Name="lblCOLS" BackgroundColor="#6D82A5" TextColor="White" FontSize="Large" Margin="0,3,0,3" />
+            </StackLayout>
+            <c1Chart:FlexChart x:Name="flexChart"
+                               AnimationMode="All"
+                               BindingX="Level"
+                               Palette="Custom"    
+                               LegendPosition="Bottom" 
+                               ShowTooltip="False" 
+                               VerticalOptions="FillAndExpand"
+                               Margin="10,0,10,0"
+                               Grid.Row="1">
+                <c1Chart:FlexChart.Series>
+                    <c1Chart:ChartSeries Binding="Sales" SeriesName="Sales" />
+                    <c1Chart:ChartSeries Binding="TotalSales" SeriesName="TotalSales" />
+                </c1Chart:FlexChart.Series>
+                <c1Chart:FlexChart.AxisY>
+                    <c1Chart:ChartAxis AxisLine="False" MajorTickMarks="None" MajorGrid="False" MinorGrid="False" Labels="false" />
+                </c1Chart:FlexChart.AxisY>
+                <c1Chart:FlexChart.DataLabel>
+                    <c1Chart:ChartDataLabel Content="{}${y}" Position="Bottom" Border="False">
+                        <c1Chart:ChartDataLabel.Style>
+                            <c1Chart:ChartStyle Fill="#aaffffff" FontSize="14"/>
+                        </c1Chart:ChartDataLabel.Style>
+                    </c1Chart:ChartDataLabel>
+                </c1Chart:FlexChart.DataLabel>
+            </c1Chart:FlexChart>
+        </Grid>
+    </ContentPage>
+
+</TabbedPage>

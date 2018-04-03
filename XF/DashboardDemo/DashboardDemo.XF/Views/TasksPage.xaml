@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1Chart="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:c1Grid="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
+             xmlns:c1Gauge="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge"
+             x:Class="DashboardDemo.Views.TasksPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnEditColumnLayout" Order="Primary" Priority="0" Activated="OnEditColumnLayout"/>
+        <ToolbarItem x:Name="btnMonthData" Order="Secondary" Priority="0" Activated="OnMonthData"/>
+        <ToolbarItem x:Name="btn3MonthsData" Order="Secondary" Priority="0" Activated="On3MonthsData"/>
+        <ToolbarItem x:Name="btn6MonthsData" Order="Secondary" Priority="0" Activated="On6MonthsData"/>
+        <ToolbarItem x:Name="btnYearData" Order="Secondary" Priority="0" Activated="OnYearData"/>
+        <ToolbarItem x:Name="btn2YearsData" Order="Secondary" Priority="0" Activated="On2YearsData"/>
+    </ContentPage.ToolbarItems>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" HorizontalOptions="FillAndExpand" BackgroundColor="#6D82A5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="AllTasks" FontSize="10" FontAttributes="Bold" TextColor="White" BackgroundColor="#790F19" Clicked="OnAllTasks" Margin="5,5,0,5"/>
+            <Button Grid.Column="1" x:Name="InProgress" FontSize="10" FontAttributes="Bold" TextColor="White" BackgroundColor="#051839" Clicked="OnInProgress" Margin="0,5,0,5"/>
+            <Button Grid.Column="2" x:Name="Completed" FontSize="10" FontAttributes="Bold" TextColor="White" BackgroundColor="#051839" Clicked="OnCompleted" Margin="0,5,0,5"/>
+            <Button Grid.Column="3" x:Name="Deffered" FontSize="10" FontAttributes="Bold" TextColor="White" BackgroundColor="#051839" Clicked="OnDeferred" Margin="0,5,0,5"/>
+            <Button Grid.Column="4" x:Name="Urgent" FontSize="10" FontAttributes="Bold" TextColor="White" BackgroundColor="#051839" Clicked="OnUrgent" Margin="0,5,5,5"/>
+        </Grid>
+        <c1Grid:FlexGrid x:Name="gridTasks" Grid.Row="1" 
+                         ItemsSource="{Binding Tasks}" 
+                         ShowOutlineBar="False" 
+                         IsReadOnly="True" 
+                         AllowDragging="None"
+                         AutoGenerateColumns="False">
+            <c1Grid:FlexGrid.Columns>
+                <c1Grid:GridColumn Binding="Subject" MinWidth="20" Width="Auto"/>
+                <c1Grid:GridColumn Binding="AssignTo" MinWidth="20" Width="Auto"/>
+                <c1Grid:GridColumn Binding="OwnedBy" MinWidth="20" Width="Auto"/>
+                <c1Grid:GridColumn Binding="DueDate" MinWidth="20" Format="d" Width="Auto"/>
+                <c1Grid:GridColumn x:Name="CompleteColumn" MinWidth="30" Binding="Complete" Width="Auto">
+                    <c1Grid:GridColumn.CellTemplate>
+                        <DataTemplate>
+                            <c1Gauge:C1BulletGraph IsAnimated="False" Thickness="0.8" IsReadOnly="True" ShowText="Value" Value="{Binding Complete}" ValueFontSize="10" Format = "P0" Min="0" Max="1"/>
+                        </DataTemplate>
+                    </c1Grid:GridColumn.CellTemplate>
+                </c1Grid:GridColumn>
+            </c1Grid:FlexGrid.Columns>
+        </c1Grid:FlexGrid>
+    </Grid>
+</ContentPage>

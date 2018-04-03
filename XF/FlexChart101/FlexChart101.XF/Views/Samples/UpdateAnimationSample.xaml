@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.UpdateAnimationSample"
+            Padding="10">
+    <StackLayout>
+        <Grid>
+            <Grid.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
+            </Grid.BackgroundColor>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblChartType" Text="Chart Type" Grid.Row="0" Grid.Column="0"/>
+            <Picker x:Name="pickerChartType" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" SelectedIndexChanged = "pickerChartType_SelectedIndexChanged" />
+
+            <Label x:Name="lblUpdatePosition" Text="Update Position" Grid.Row="0" Grid.Column="1" />
+            <Picker x:Name="pickerUpdatePosition" Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" />
+
+            <Button x:Name="btnAdd" Text="AddPoint" Grid.Row="0" Grid.Column="2" Clicked="OnAddPoint"/>
+            <Button x:Name="btnRemove" Text="RemovePoint" Grid.Row="1" Grid.Column="2" Clicked="OnRemovePoint"/>
+
+        </Grid>
+        <Grid  VerticalOptions="FillAndExpand">
+            <c1:FlexChart x:Name="flexChart" 
+                        BindingX="XValue"
+                        VerticalOptions="FillAndExpand">
+                <c1:FlexChart.Series>
+                    <c1:ChartSeries Binding="Value" SeriesName="Value" />
+                </c1:FlexChart.Series>
+            </c1:FlexChart>
+        </Grid>
+    </StackLayout>
+</ContentPage>

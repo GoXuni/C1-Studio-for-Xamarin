@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DashboardDemo.Views.ProductDetailPage">
+    <Grid Padding = "20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="image" Source="{Binding HiResImageSource}" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Label x:Name="detail" Text="{Binding Label}" Grid.Row="1" VerticalOptions= "Center" HorizontalOptions="Center" />
+    </Grid>
+</ContentPage>

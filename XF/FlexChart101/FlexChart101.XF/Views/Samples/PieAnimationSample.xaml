@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:local="clr-namespace:FlexChart101"
+             x:Class="FlexChart101.PieAnimationSample">
+    <StackLayout>
+        <Grid x:Name="root" BindingContext="{x:Reference flexPie}" Padding="5" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Orientation="Horizontal" Grid.ColumnSpan="2">
+                <Label x:Name="lblInnerRadius" VerticalOptions="Center" />
+                <Label BindingContext="{x:Reference stepperOffset}" VerticalOptions="Center" Text="{Binding Value}" />
+                <local:PreciseStepper x:Name="stepperOffset" Value="{Binding InnerRadius,Mode=TwoWay}" Maximum="0.5" Minimum="0" Increment="0.1" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+
+            <StackLayout x:Name="stackOptions" Orientation="Vertical" Grid.Row="1" Grid.ColumnSpan="2">
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="lblAnimationMode" Text="lblSelected Item Position" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                    <Picker x:Name="pickerAnimationMode" WidthRequest="150" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+
+            <c1:FlexPie SelectedItemOffset=".2"
+                    SelectionMode="Point"
+                    LegendPosition="Bottom"
+                    BindingName = "Label" 
+                    Binding = "Value"
+                    x:Name="flexPie"
+                    VerticalOptions="FillAndExpand"
+                    Grid.Row="2" Grid.ColumnSpan="2">
+                <c1:FlexPie.SelectionStyle>
+                    <c1:ChartStyle StrokeThickness="3" Stroke="#ff0000" />
+                </c1:FlexPie.SelectionStyle>
+            </c1:FlexPie>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="3"  Grid.ColumnSpan="2">
+                <Button x:Name="btnUpdate2015" Text="2015" Clicked="btnUpdate2015_Clicked"/>
+                <Button x:Name="btnUpdate2014" Text="2014" Clicked="btnUpdate2014_Clicked"/>
+                <Button x:Name="btnUpdate2013" Text="2013" Clicked="btnUpdate2013_Clicked"/>
+                <Button x:Name="btnUpdate2012" Text="2012" Clicked="btnUpdate2012_Clicked"/>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
