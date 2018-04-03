@@ -1,10 +1,3 @@
 DashboardDemo for Xamarin Forms
 ------------------------------------------
-A multiple screen dashboard app that display data.
-
-Shows the following samples
-
-	- Dashboard view uses the C1FlexGrid, C1FlexChart, C1LinerGague controls to show sales data.
-	- Analysis view uses the C1FlexChart, C1FlexPie controls to show data.
-	- Tasks view uses the C1FlexGrid control to show task data.
-	- Products view uses the ListBox control to show product and product detials.
+The Dashboard Demo sample displays sales and profit comparison, goals, top products, and customers. It features many of our controls, including FlexChart, FlexPie, FlexGrid, BulletGraph, and CollectionView. This sample also demonstrates using the controls within more complicated multi-page arrangements, including master detail, carousel, and tabbed pages
