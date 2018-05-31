@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge"
-             x:Class="C1Gauge101.UsingRanges" x:Name="page"
-             Padding="20">
-    <StackLayout>
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             x:Class="C1Gauge101.UsingRanges" x:Name="page">
+    <StackLayout Margin="10">
         <StackLayout Orientation="Horizontal">
             <Label x:Name="lblShowRanges" Text="Show ranges" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
             <Switch IsToggled="{Binding ShowRanges,Mode=TwoWay}" VerticalOptions="End"/>

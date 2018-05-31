@@ -26,7 +26,7 @@ namespace FlexChart101
             }
             this.flexChart.ItemsSource = list;
             this.flexChart.Palette = Palette.Coral;
-
+            this.flexChart.AxisX.MajorUnit = 20;
             this.cancellation = new CancellationTokenSource();
         }
 

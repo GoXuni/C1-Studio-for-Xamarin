@@ -2,11 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlexChart101.CustomPlotElements"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart" x:Name="page">
   <StackLayout>
     <Grid  VerticalOptions="FillAndExpand">
-    <c1:FlexChart x:Name="flexChart1" BindingX="Name" VerticalOptions="FillAndExpand">
-      <c1:FlexChart.Series>
+            <c1:FlexChart x:Name="flexChart1" Header="Mobile Devices Sold" LegendPosition="None" BindingX="Name" VerticalOptions="FillAndExpand">
+                <c1:FlexChart.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexChart.HeaderStyle>
+                <c1:FlexChart.Series>
                     <c1:ChartSeries Binding="DevicesSold" SeriesName ="Devices sold" SymbolRendering="OnSymbolRendering">
                         <c1:ChartSeries.Style>
                             <c1:ChartStyle Fill="SteelBlue" Stroke="SteelBlue"/>

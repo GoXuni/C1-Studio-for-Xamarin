@@ -1,6 +1,8 @@
-﻿using SQLite;
+﻿using C1.CollectionView.EntityFramework;
+using Microsoft.Data.Sqlite;
 using SQLiteDataBase.Resources;
 using System;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace SQLiteDataBase
@@ -22,27 +24,28 @@ namespace SQLiteDataBase
         {
             try
             {
-                var connection = DependencyService.Get<ISQLite>().GetConnection();
+                var db = new PeopleContext();
                 #region ** creates testing data
-                //await connection.DropTableAsync<Person>();
-                var result = await connection.CreateTableAsync<Person>();
-                var count = await connection.Table<Person>().CountAsync();
+                //await db.Database.EnsureDeletedAsync();
+                await db.Database.EnsureCreatedAsync();
+                var count = db.Person.Count();
                 if (count == 0)
                 {
                     var total = 1000;
                     for (int i = 0; i < total; i++)
                     {
-                        message.Text = $"Creating record {i + 1} of {total}";
                         var person = new Person() { FirstName = GetRandomString(_firstNames), LastName = GetRandomString(_lastNames) };
-                        await connection.InsertAsync(person);
+                        db.Person.Add(person);
                     }
+                    message.Text = $"Creating {total} records";
+                    await db.SaveChangesAsync();
                     message.Text = "";
                 }
                 message.IsVisible = false;
                 #endregion
-                grid.ItemsSource = new SQLiteCollectionView<Person>(connection);
+                grid.ItemsSource = new EntityFrameworkCollectionView<Person>(db);
             }
-            catch (SQLiteException ex) { throw; }
+            catch (SqliteException) { throw; }
 
             grid.NewRowPlaceholder = AppResources.AddNewRecord;
         }

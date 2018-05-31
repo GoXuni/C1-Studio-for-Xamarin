@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="C1Gauge101.Snapshot"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge">
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="Take" Clicked="OnSnapshotClicked" Order="Primary" Priority="0">
@@ -15,7 +17,7 @@
             </ToolbarItem.Icon>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
-    <Grid>
+    <Grid Margin="10">
         <c1:C1RadialGauge x:Name="gauge"  Value="{Binding Value}" IsReadOnly="True" ShowText="All"/>
         <StackLayout x:Name="snapshotFrameBorder" Padding="20" BackgroundColor="#FFFFFFFF" HorizontalOptions="Center" VerticalOptions="Center">
             <Grid x:Name="snapshotFrame" BackgroundColor="#FF000000">

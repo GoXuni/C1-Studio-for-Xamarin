@@ -1,12 +1,33 @@
-﻿using SQLite;
+﻿
+using System;
+using System.IO;
+using Microsoft.EntityFrameworkCore;
+using Xamarin.Forms;
 
 namespace SQLiteDataBase
 {
+    public class PeopleContext : DbContext
+    {
+        public DbSet<Person> Person { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            var dbPath = "SQLiteDataBase.db3";
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                case Device.Android:
+                    dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), dbPath);
+                    break;
+            }
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+        }
+    }
+
     public class Person
     {
         public Person() { }
 
-        [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
 
         public string FirstName { get; set; }

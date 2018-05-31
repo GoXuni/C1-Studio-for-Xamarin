@@ -2,15 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlexGrid101.RowDetails"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid" Padding="0,5,0,0">
   <Grid RowSpacing="0">
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"/>
       <RowDefinition Height="Auto"/>
       <RowDefinition />
     </Grid.RowDefinitions>
-    <StackLayout Orientation="Horizontal">
-      <Label x:Name="lblMode" Text="DetailsVisibilityMode" VerticalOptions="Center"/>
+    <StackLayout Orientation="Horizontal" Padding="5">
+      <Label x:Name="lblMode" VerticalOptions="Center"/>
       <Picker x:Name="showItemsPicker" SelectedIndex="{Binding ShowTextSelectedIndex,Mode=TwoWay}" HorizontalOptions="FillAndExpand"/>
     </StackLayout>
     <c1:FlexGrid x:Name="grid" Grid.Row="2" AutoGenerateColumns="False">
@@ -22,7 +24,7 @@
       <c1:FlexGrid.Behaviors>
         <c1:FlexGridDetailProvider x:Name="details" Height="170" RowHeaderLoading="OnRowHeaderLoading">
           <DataTemplate> 
-            <Grid Margin="4">
+            <Grid Margin="3" Padding="5">
               <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition />

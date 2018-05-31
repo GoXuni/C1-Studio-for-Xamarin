@@ -4,6 +4,8 @@
              x:Class="SimpleDashboard.PhoneDash" x:Name="page"
              xmlns:gauge="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge"
              xmlns:chart="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              Padding="10">
     <StackLayout>
         <Grid x:Name="gridLayout" VerticalOptions="FillAndExpand">
@@ -11,19 +13,19 @@
                 <chart:FlexChart.Series>
                   <chart:ChartSeries x:Name="Sales2014" SeriesName="Sales" Binding="Sales"  >
                     <chart:ChartSeries.Style>
-                      <chart:ChartStyle Fill="#88BDE6" Stroke="#88BDE6"></chart:ChartStyle>
+                            <chart:ChartStyle Fill="#f44336" Stroke="#f44336"></chart:ChartStyle>
                     </chart:ChartSeries.Style>
                   </chart:ChartSeries>
                   
                   <chart:ChartSeries x:Name="Downloads2014" SeriesName="Downloads" Binding="Downloads">
                     <chart:ChartSeries.Style>
-                      <chart:ChartStyle Fill="#FBB258" Stroke="#FBB258"></chart:ChartStyle>
+                            <chart:ChartStyle Fill="#9c27b0" Stroke="#9c27b0"></chart:ChartStyle>
                     </chart:ChartSeries.Style>
                   </chart:ChartSeries>
                   
                   <chart:ChartSeries x:Name="Expenses2014" SeriesName="Expenses" Binding="Expenses">
                     <chart:ChartSeries.Style>
-                      <chart:ChartStyle Fill="#90CD97" Stroke="#90CD97"></chart:ChartStyle>
+                            <chart:ChartStyle Fill="#3f51b5" Stroke="#3f51b5"></chart:ChartStyle>
                     </chart:ChartSeries.Style>
                   </chart:ChartSeries>
                 </chart:FlexChart.Series>
@@ -40,7 +42,7 @@
               </chart:FlexPie.LegendStyle>
             </chart:FlexPie>
             <Label x:Name="label1" Text="Target/Goal" HorizontalOptions="Center" Grid.Row="2"/>
-            <gauge:C1BulletGraph x:Name="graph3" ShowText="All" Value=".73" PointerColor="#FBB258" ValueFontColor="White" Format="P0" Min="0" Max="1" Thickness="0.75" Good="1" GoodRangeColor="#90CD97" Bad=".50" BadRangeColor="#88BDE6" Target=".70" TargetColor="White" ValueFontSize="12" MinFontSize="12" MaxFontSize="12" Grid.Row="3"/>
+            <gauge:C1BulletGraph x:Name="graph3" ShowText="All" Value=".73" PointerColor="#f44336" ValueFontColor="White" Format="P0" Min="0" Max="1" Thickness="0.75" Good="1" GoodRangeColor="#9c27b0" Bad=".50" BadRangeColor="#3f51b5" Target=".70" TargetColor="White" ValueFontSize="12" MinFontSize="12" MaxFontSize="12" Grid.Row="3"/>
         </Grid>
     </StackLayout>
 </ContentPage>

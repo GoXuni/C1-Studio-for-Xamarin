@@ -4,8 +4,10 @@
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
              xmlns:interaction="clr-namespace:C1.Xamarin.Forms.Chart.Interaction;assembly=C1.Xamarin.Forms.Chart"
              x:Class="FlexChart101.LineMarkerSample" x:Name="page"
-            Padding="10">
-   <StackLayout>
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             >
+   <StackLayout Margin="10" HorizontalOptions="FillAndExpand">
     <Grid>
       <Grid.BackgroundColor>
         <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
@@ -28,8 +30,11 @@
       
     </Grid>
     <Grid  VerticalOptions="FillAndExpand">
-    <c1:FlexChart x:Name="flexChart" ChartType="Line" BindingX="Date" VerticalOptions="FillAndExpand" ShowTooltip="False">
-      <c1:FlexChart.Series>
+            <c1:FlexChart x:Name="flexChart" Header="Input and Output" ChartType="Line" BindingX="Date" VerticalOptions="FillAndExpand" ShowTooltip="False">
+                <c1:FlexChart.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexChart.HeaderStyle>
+                <c1:FlexChart.Series>
         <c1:ChartSeries Binding="Input" SeriesName="Intput"/>
         <c1:ChartSeries Binding="Output" SeriesName="Output"/>
       </c1:FlexChart.Series>

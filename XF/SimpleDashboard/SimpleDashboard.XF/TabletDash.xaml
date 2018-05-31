@@ -20,17 +20,19 @@
                 <chart:FlexChart.Series>
                     <chart:ChartSeries x:Name="Sales2014" SeriesName="Sales" Binding="Sales"  >
                         <chart:ChartSeries.Style>
-                            <chart:ChartStyle Fill="#88BDE6" Stroke="#88BDE6"></chart:ChartStyle>
+                            <chart:ChartStyle Fill="#f44336" Stroke="#f44336"></chart:ChartStyle>
                         </chart:ChartSeries.Style>
                     </chart:ChartSeries>
-                    <chart:ChartSeries x:Name="Downloads2014" SeriesName="Downloads" Binding="Downloads" >
+
+                    <chart:ChartSeries x:Name="Downloads2014" SeriesName="Downloads" Binding="Downloads">
                         <chart:ChartSeries.Style>
-                            <chart:ChartStyle Fill="#FBB258" Stroke="#FBB258"></chart:ChartStyle>
+                            <chart:ChartStyle Fill="#9c27b0" Stroke="#9c27b0"></chart:ChartStyle>
                         </chart:ChartSeries.Style>
                     </chart:ChartSeries>
+
                     <chart:ChartSeries x:Name="Expenses2014" SeriesName="Expenses" Binding="Expenses">
                         <chart:ChartSeries.Style>
-                            <chart:ChartStyle Fill="#90CD97" Stroke="#90CD97"></chart:ChartStyle>
+                            <chart:ChartStyle Fill="#3f51b5" Stroke="#3f51b5"></chart:ChartStyle>
                         </chart:ChartSeries.Style>
                     </chart:ChartSeries>
                 </chart:FlexChart.Series>
@@ -54,11 +56,11 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Label x:Name="label" Text="Sales Goal" HorizontalOptions="Center" FontSize="16" Grid.Row="0" />
-                <gauge:C1BulletGraph x:Name="graph" HorizontalOptions="FillAndExpand" VerticalOptions="Center" ShowText="All" Value="65" PointerColor="#FBB258" ValueFontColor="White" Min="0" Max="100" HeightRequest="25" WidthRequest="50" Thickness="0.25" Good="100" GoodRangeColor="#90CD97" Bad="50" BadRangeColor="#88BDE6" Target="70" Grid.Row="1" TargetColor="White"/>
+                <gauge:C1BulletGraph x:Name="graph" HorizontalOptions="FillAndExpand" VerticalOptions="Center" ShowText="All" Value="65" PointerColor="#f44336" ValueFontColor="White" Format="P0" Min="0" Max="1" Thickness="0.75" Good="1" GoodRangeColor="#9c27b0" Bad=".50" BadRangeColor="#3f51b5" HeightRequest="25" WidthRequest="50" Grid.Row="1" TargetColor="White"/>
                 <Label x:Name="label2" Text="Downloads Goal" HorizontalOptions="Center" FontSize="16" Grid.Row="2" />
-                <gauge:C1BulletGraph x:Name="graph2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" ShowText="All" Value="86" PointerColor="#FBB258" ValueFontColor="White" Min="0" Max="100" HeightRequest="25" WidthRequest="50" Thickness="0.25" Good="100" GoodRangeColor="#90CD97" Bad="50" BadRangeColor="#88BDE6" Target="70" Grid.Row="3" TargetColor="White"/>
+                <gauge:C1BulletGraph x:Name="graph2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" ShowText="All" Value="86" PointerColor="#f44336" ValueFontColor="White" Format="P0" Min="0" Max="1" Thickness="0.75" Good="1" GoodRangeColor="#9c27b0" Bad=".50" BadRangeColor="#3f51b5" HeightRequest="25" WidthRequest="50"  Target="70" Grid.Row="3" TargetColor="White"/>
                 <Label x:Name="label3" Text="Expenses Goal" HorizontalOptions="Center" FontSize="16" Grid.Row="4" />
-                <gauge:C1BulletGraph x:Name="graph3" HorizontalOptions="FillAndExpand" VerticalOptions="Center" ShowText="All" Value="23" PointerColor="#FBB258" ValueFontColor="White" Min="0" Max="100" HeightRequest="25" WidthRequest="50" Thickness="0.25" Good="100" GoodRangeColor="#90CD97" Bad="50" BadRangeColor="#88BDE6" Target="70" Grid.Row="5" TargetColor="White"/>
+                <gauge:C1BulletGraph x:Name="graph3" HorizontalOptions="FillAndExpand" VerticalOptions="Center" ShowText="All" Value="23" PointerColor="#f44336" ValueFontColor="White" Format="P0" Min="0" Max="1" Thickness="0.75" Good="1" GoodRangeColor="#9c27b0" Bad=".50" BadRangeColor="#3f51b5" HeightRequest="25" WidthRequest="50"  Target="70" Grid.Row="5" TargetColor="White"/>
             </Grid>
         </Grid>
     </StackLayout>

@@ -4,6 +4,7 @@ using C1.Xamarin.Forms.Chart;
 using Sunburst101.Resources;
 using Sunburst101.Periodic;
 using C1.Xamarin.Forms.Chart.Interaction;
+using System.Collections.Generic;
 
 namespace Sunburst101
 {
@@ -22,6 +23,9 @@ namespace Sunburst101
             Title = AppResources.PeriodicTableTitle;
             
             this.sunburst.ItemsSource = Data.Groups;
+            List<Color> CustomPalette = new List<Color> { Color.FromHex("#f44336"), Color.FromHex("#9c27b0"), Color.FromHex("#3f51b5"), Color.FromHex("#03A9F4"), Color.FromHex("#009688"), Color.FromHex("#8BC34A") };
+            sunburst.Palette = Palette.Custom;
+            sunburst.CustomPalette = CustomPalette;
             this.sunburst.Tapped += Sunburst_Tapped;
             this.sunburst.Rendering += Sunburst_Rendering;
             TranslateBehavior t = new TranslateBehavior();

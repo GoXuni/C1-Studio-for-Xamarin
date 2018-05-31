@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
              x:Class="FlexChart101.LoadAnimationSample"
-            Padding="10">
-    <StackLayout>
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             >
+    <StackLayout Margin="10" HorizontalOptions="FillAndExpand">
         <Grid>
             <Grid.BackgroundColor>
                 <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
@@ -29,8 +31,10 @@
             <Switch x:Name="toggleRotated" Grid.Row="1" Grid.Column="3" BindingContext="{x:Reference flexChart}" IsToggled="{Binding Rotated,Mode=OneWayToSource}" />
         </Grid>
         <Grid  VerticalOptions="FillAndExpand">
-            <c1:FlexChart x:Name="flexChart" BindingX="Name" VerticalOptions="FillAndExpand">
-                
+            <c1:FlexChart x:Name="flexChart" Header="2017 Performance" BindingX="Name" VerticalOptions="FillAndExpand">
+                <c1:FlexChart.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexChart.HeaderStyle>
             </c1:FlexChart>
         </Grid>
     </StackLayout>

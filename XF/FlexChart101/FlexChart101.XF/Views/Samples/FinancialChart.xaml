@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              x:Class="FlexChart101.FinancialChart" Padding="10">
     <StackLayout>
         <Grid>
@@ -12,8 +14,11 @@
                 <Picker x:Name="pickerChartType" HorizontalOptions="FillAndExpand" SelectedIndexChanged = "pickerChartType_SelectedIndexChanged" />
             </StackLayout>
         </Grid>
-        <Grid VerticalOptions="FillAndExpand">           
-            <c1:FlexChart x:Name="flexChart" BindingX="Date">
+        <Grid VerticalOptions="FillAndExpand">
+            <c1:FlexChart x:Name="flexChart" Header="Stock Performance" BindingX="Date">
+                <c1:FlexChart.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexChart.HeaderStyle>
                 <c1:FlexChart.Series>
                     <!--<c1:ChartSeries Binding="Volume" Name="Volume" ChartType="Column" SymbolBorderWidth="2" />-->
                     <c1:ChartSeries Binding="High,Low,Open,Close"/>

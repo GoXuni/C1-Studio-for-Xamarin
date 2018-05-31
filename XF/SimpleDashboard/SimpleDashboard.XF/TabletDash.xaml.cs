@@ -45,6 +45,11 @@ namespace SimpleDashboard
             this.graph.IsReadOnly = true;
             this.graph2.IsReadOnly = true;
             this.graph3.IsReadOnly = true;
+            List<Color> CustomPalette = new List<Color> { Color.FromHex("#f44336"), Color.FromHex("#9c27b0"), Color.FromHex("#3f51b5"), Color.FromHex("#03a9fa"), Color.FromHex("#009688"), Color.FromHex("#8bc34a"), Color.FromHex("#ff3b3b") };
+            chart.Palette = Palette.Custom;
+            chart.CustomPalette = CustomPalette;
+            pie.Palette = Palette.Custom;
+            pie.CustomPalette = CustomPalette;
         }
 
         void chart_SelectionChanged(object sender, EventArgs e)

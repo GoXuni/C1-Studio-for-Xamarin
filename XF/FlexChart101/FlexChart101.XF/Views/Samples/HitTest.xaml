@@ -2,13 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              x:Class="FlexChart101.HitTest"
-             Padding="10">
-    <StackLayout>
+             >
+    <StackLayout HorizontalOptions="FillAndExpand" Margin="10">
         <Grid VerticalOptions="FillAndExpand">
             <c1:FlexChart x:Name="flexChart" Tapped="flexChart_Tapped"
                       Header="Trigonometric functions" Footer="Cartesian coordinates"
                       BindingX="X" ChartType="LineSymbols" LegendPosition="Bottom" >
+                <c1:FlexChart.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexChart.HeaderStyle>
                 <c1:FlexChart.Series>
                     <c1:ChartSeries x:Name="seriesCosX"  Binding="Y" SeriesName="cos(x)"  />
                     <c1:ChartSeries x:Name="seriesSinX"  Binding="Y" SeriesName="sin(x)"  />

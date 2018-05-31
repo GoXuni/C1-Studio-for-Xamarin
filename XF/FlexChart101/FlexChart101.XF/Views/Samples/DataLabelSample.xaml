@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              x:Class="FlexChart101.DataLabelSample">
-    <StackLayout>
+    <StackLayout HorizontalOptions="FillAndExpand">
         <Grid Padding="10">
             <Grid.BackgroundColor>
                 <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
@@ -19,7 +21,10 @@
         </Grid>
 
         <Grid VerticalOptions="FillAndExpand">
-            <c1:FlexChart x:Name="flexChart" BindingX="Name" ChartType="Bar" VerticalOptions = "LayoutOptions.FillAndExpand" >
+            <c1:FlexChart x:Name="flexChart" Header="Total Expenses by Country 2018" LegendPosition="None" BindingX="Name" ChartType="Bar" VerticalOptions = "LayoutOptions.FillAndExpand" >
+                <c1:FlexChart.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexChart.HeaderStyle>
                 <c1:FlexChart.Series>
                     <c1:ChartSeries Binding="Expenses" SeriesName="Total Expenses" />
                 </c1:FlexChart.Series>

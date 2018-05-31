@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:Chart="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
-              xmlns:Annotation="clr-namespace:C1.Xamarin.Forms.Chart.Annotation;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:Chart="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:Annotation="clr-namespace:C1.Xamarin.Forms.Chart.Annotation;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              x:Class="FlexChart101.AnnotationSample">
-  <Chart:FlexChart x:Name="flexChart" BindingX="Name">
-    <Chart:FlexChart.AxisY>
+    <Chart:FlexChart x:Name="flexChart" Header="Chart Annotations" BindingX="Name">
+        <Chart:FlexChart.HeaderStyle>
+            <Chart:ChartStyle FontSize="18"/>
+        </Chart:FlexChart.HeaderStyle>
+        <Chart:FlexChart.AxisY>
       <Chart:ChartAxis Min="0" Max="100" MajorUnit="10" AxisLine="False" MajorGrid="True" MajorTickMarks="None"/>
     </Chart:FlexChart.AxisY>
     <Chart:FlexChart.Series>

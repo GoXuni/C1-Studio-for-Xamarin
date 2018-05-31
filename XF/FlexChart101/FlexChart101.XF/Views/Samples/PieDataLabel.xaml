@@ -3,14 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
              x:Class="FlexChart101.PieDataLabel"
-            Padding="20">
-  <StackLayout>
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             >
+    <StackLayout Margin="10" HorizontalOptions="FillAndExpand">
     <StackLayout Orientation="Horizontal">
       <Label x:Name="lblPos" Text="Label Position" VerticalOptions="Center" />
       <Picker x:Name="pickPostion" HorizontalOptions="FillAndExpand" SelectedIndexChanged = "pickPostion_SelectedIndexChanged" />
     </StackLayout>
-    <c1:FlexPie x:Name="flexPie" BindingName="Name" Binding="Value" LegendPosition="Bottom" VerticalOptions="FillAndExpand">
-      <c1:FlexPie.DataLabel>
+        <c1:FlexPie x:Name="flexPie" Header="Fruit By Value" BindingName="Name" Binding="Value" LegendPosition="None" VerticalOptions="FillAndExpand">
+            <c1:FlexPie.HeaderStyle>
+                <c1:ChartStyle FontSize="18"/>
+            </c1:FlexPie.HeaderStyle>
+            <c1:FlexPie.DataLabel>
       </c1:FlexPie.DataLabel>
     </c1:FlexPie>
   </StackLayout>

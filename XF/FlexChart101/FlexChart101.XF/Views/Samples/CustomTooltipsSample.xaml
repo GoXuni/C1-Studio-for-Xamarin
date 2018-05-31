@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlexChart101.CustomTooltipsSample"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart" 
              xmlns:common="clr-namespace:FlexChart101;assembly=FlexChart101.XF" x:Name="page">
 <ContentPage.Resources>
@@ -11,8 +13,11 @@
   </ContentPage.Resources>
   <StackLayout>
     <Grid  VerticalOptions="FillAndExpand">
-    <c1:FlexChart x:Name="chart" ItemsSource="{Binding Data}" BindingX="Name" ChartType="Column" VerticalOptions="FillAndExpand">
-      <c1:FlexChart.Series>
+            <c1:FlexChart x:Name="chart" Header="2017 Performance" ItemsSource="{Binding Data}" BindingX="Name" ChartType="Column" VerticalOptions="FillAndExpand">
+                <c1:FlexChart.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexChart.HeaderStyle>
+                <c1:FlexChart.Series>
         <c1:ChartSeries Binding="Sales" SeriesName="Sales" />
         <c1:ChartSeries Binding="Expenses" SeriesName="Expenses" />
         <c1:ChartSeries Binding="Downloads" SeriesName="Downloads" />

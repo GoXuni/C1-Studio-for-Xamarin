@@ -21,7 +21,7 @@ namespace FlexChart101
 			Title = AppResources.CustomizingAxesTitle;
 
 			this.flexChart.ItemsSource = ChartSampleFactory.CreateEntityList();
-            this.flexChart.LegendPosition = ChartPositionType.None;
+            this.flexChart.LegendPosition = ChartPositionType.Top;
 
             this.flexChart.AxisX.LabelLoading +=  (object sender, RenderLabelLoadingEventArgs e) => 
             {

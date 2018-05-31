@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
              xmlns:local="clr-namespace:FlexChart101"
-             x:Class="FlexChart101.PieBasicFeaturesSample" Padding="20">
-    <StackLayout>
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             x:Class="FlexChart101.PieBasicFeaturesSample">
+    <StackLayout Margin="10">
         <Grid x:Name="root" VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50*" />
@@ -40,7 +42,11 @@
                 <Switch x:Name="toggleReversed" VerticalOptions="Center" IsToggled="{Binding Reversed,Mode=TwoWay}" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" />
             </Grid>
 
-            <c1:FlexPie x:Name="flexPie" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" InnerRadius="0.3" Binding="Value" BindingName="Name" LegendPosition="Bottom" VerticalOptions="FillAndExpand" />
+            <c1:FlexPie x:Name="flexPie" Header="Fruit By Value" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" InnerRadius="0.3" Binding="Value" BindingName="Name" LegendPosition="Bottom" VerticalOptions="FillAndExpand" >
+                <c1:FlexPie.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexPie.HeaderStyle>
+            </c1:FlexPie>
         </Grid>
     </StackLayout>
 </ContentPage>

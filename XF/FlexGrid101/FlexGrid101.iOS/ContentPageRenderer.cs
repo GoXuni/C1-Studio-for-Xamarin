@@ -14,7 +14,8 @@ namespace FlexGrid101.iOS
         public override void ViewWillAppear(bool animated)
         {
             base.ViewDidAppear(animated);
-            this.ViewController.NavigationController.InteractivePopGestureRecognizer.Enabled = false;
+            if (this.ViewController.NavigationController != null)
+                this.ViewController.NavigationController.InteractivePopGestureRecognizer.Enabled = false;
         }
     }
 }

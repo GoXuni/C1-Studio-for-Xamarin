@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
              x:Class="FlexChart101.PieGettingStartedSample"
-            Padding="20">
-    <Grid x:Name="root" VerticalOptions="FillAndExpand">
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             >
+    <Grid x:Name="root" VerticalOptions="FillAndExpand" Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />

@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlexGrid101.Unbound"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
   <c1:FlexGrid x:Name="grid" AllowMerging="All" SelectionMode="RowRange"/>
 </ContentPage>

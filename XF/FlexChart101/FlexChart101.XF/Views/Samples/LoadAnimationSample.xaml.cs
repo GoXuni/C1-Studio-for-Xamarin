@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using C1.CollectionView;
 using C1.Xamarin.Forms.Core;
 using Xamarin.Forms;
+using C1.Xamarin.Forms.Chart.Interaction;
 
 namespace FlexChart101
 {
@@ -31,7 +32,12 @@ namespace FlexChart101
             {
                 this.pickerAnimationMode.Items.Add(item);
             }
-            
+            ZoomBehavior z = new ZoomBehavior();
+            z.ZoomMode = GestureMode.X;
+            flexChart.Behaviors.Add(z);
+
+            TranslateBehavior t = new TranslateBehavior();
+            flexChart.Behaviors.Add(t);
             this.pickerChartType.SelectedIndex = 0;
             this.pickerStackType.SelectedIndex = 0;
             this.pickerAnimationMode.SelectedIndex = 3;

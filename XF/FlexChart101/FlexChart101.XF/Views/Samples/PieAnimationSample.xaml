@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
              xmlns:local="clr-namespace:FlexChart101"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              x:Class="FlexChart101.PieAnimationSample">
     <StackLayout>
         <Grid x:Name="root" BindingContext="{x:Reference flexPie}" Padding="5" VerticalOptions="FillAndExpand">
@@ -38,16 +40,19 @@
                     x:Name="flexPie"
                     VerticalOptions="FillAndExpand"
                     Grid.Row="2" Grid.ColumnSpan="2">
+                <c1:FlexPie.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexPie.HeaderStyle>
                 <c1:FlexPie.SelectionStyle>
                     <c1:ChartStyle StrokeThickness="3" Stroke="#ff0000" />
                 </c1:FlexPie.SelectionStyle>
             </c1:FlexPie>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="3"  Grid.ColumnSpan="2">
-                <Button x:Name="btnUpdate2015" Text="2015" Clicked="btnUpdate2015_Clicked"/>
-                <Button x:Name="btnUpdate2014" Text="2014" Clicked="btnUpdate2014_Clicked"/>
-                <Button x:Name="btnUpdate2013" Text="2013" Clicked="btnUpdate2013_Clicked"/>
-                <Button x:Name="btnUpdate2012" Text="2012" Clicked="btnUpdate2012_Clicked"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Grid.Row="3"  Grid.ColumnSpan="2" Spacing="5">
+                <Button x:Name="btnUpdate2015" Text="2015" TextColor="White" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand"  Clicked="btnUpdate2015_Clicked"/>
+                <Button x:Name="btnUpdate2014" Text="2014" TextColor="White" BackgroundColor="#64B5F6" HorizontalOptions="FillAndExpand" Clicked="btnUpdate2014_Clicked"/>
+                <Button x:Name="btnUpdate2013" Text="2013" TextColor="White" BackgroundColor="#64B5F6" HorizontalOptions="FillAndExpand" Clicked="btnUpdate2013_Clicked"/>
+                <Button x:Name="btnUpdate2012" Text="2012" TextColor="White" BackgroundColor="#64B5F6" HorizontalOptions="FillAndExpand"  Clicked="btnUpdate2012_Clicked"/>
             </StackLayout>
         </Grid>
     </StackLayout>

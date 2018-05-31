@@ -13,7 +13,7 @@ namespace C1CollectionView101
         public CollectionViewSamples()
         {
             InitializeComponent();
-            Title = "C1CollectionView 101";
+            Title = "C1CollectionView101";
             BindingContext = GetSamples();
         }
 

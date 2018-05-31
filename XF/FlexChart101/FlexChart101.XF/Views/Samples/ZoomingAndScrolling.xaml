@@ -2,9 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              x:Class="FlexChart101.ZoomingAndScrolling" x:Name="page">
 	 <StackLayout>
-    <Grid Padding="10">
+        <Grid HorizontalOptions="FillAndExpand" Padding="10">
       <Grid.BackgroundColor>
         <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
       </Grid.BackgroundColor>
@@ -20,10 +22,14 @@
     </Grid>
     <Grid  VerticalOptions="FillAndExpand">
     <c1:FlexChart x:Name="flexChart"
+                    Header="Population Distribution"
                     BindingX="X"
                     ChartType = "Scatter"
                     VerticalOptions="FillAndExpand">
-      <!--<c1:FlexChart.AxisX>
+                <c1:FlexChart.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexChart.HeaderStyle>
+                <!--<c1:FlexChart.AxisX>
         <c1:ChartAxis Scale="0.5" />
       </c1:FlexChart.AxisX>
 

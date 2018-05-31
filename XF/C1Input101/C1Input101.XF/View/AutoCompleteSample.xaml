@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Input;assembly=C1.Xamarin.Forms.Input"
              xmlns:sample="clr-namespace:C1Input101;assembly=C1Input101.XF"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              x:Class="C1Input101.AutoCompleteSample" x:Name="page"
-             Padding="20">
+             >
     <ContentPage.Resources>
         <ResourceDictionary>
             <sample:FlagConverter x:Key="flagConverter" />
@@ -17,7 +19,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <StackLayout BindingContext="{x:Reference page}" Orientation="Vertical">
+    <StackLayout BindingContext="{x:Reference page}" Orientation="Vertical" Margin="10">
         <Label Text="{Binding HighlightsText}" />
         <c1:C1AutoComplete ItemsSource="{Binding Countries}" HorizontalOptions="FillAndExpand" DisplayMemberPath="Name"/>
         <Label Text="{Binding CustomDropDownText}" />

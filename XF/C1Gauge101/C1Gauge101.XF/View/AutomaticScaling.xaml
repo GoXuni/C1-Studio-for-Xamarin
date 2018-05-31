@@ -2,9 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              x:Class="C1Gauge101.AutomaticScaling"
-             Padding="20">
-    <StackLayout >
+             >
+    <StackLayout Margin="10">
         <c1:C1RadialGauge x:Name="Gauge" AutoScale="True" Min="{Binding Min}" Max="{Binding Max}" Value="{Binding Value}" StartAngle="{Binding StartAngle}" SweepAngle="{Binding SweepAngle}" ShowText="{Binding ShowText}" VerticalOptions="FillAndExpand"/>
         <StackLayout Orientation="Horizontal">
             <Label x:Name="lblStartAngle" Text="Start Angle " VerticalOptions="Center"/>

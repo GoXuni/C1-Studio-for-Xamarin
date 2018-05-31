@@ -37,6 +37,15 @@ namespace FlexChart101
             btnAdd.Text = AppResources.AddPoint;
             btnRemove.Text = AppResources.RemovePoint;
 
+            if (Device.Idiom != TargetIdiom.Phone)
+            {
+                ButtonCol.Width = 250;
+            }
+            else
+            {
+                btnAdd.FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label));
+                btnRemove.FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label));
+            }
             // populate dummy data set using ObservableCollection
             // note: you should use ObservableCollection or anything else that implements INotifyPropertyChanged to see updates in the FlexChart
             objects = new ObservableCollection<MyDataObject>();
@@ -47,7 +56,10 @@ namespace FlexChart101
             this.flexChart.ItemsSource = objects;
 
             // misc chart properties
-            flexChart.Palette = Palette.Cocoa;
+            //flexChart.Palette = Palette.Cocoa;
+            List<Color> CustomPalette = new List<Color> { Color.FromHex("#f44336"), Color.FromHex("#9c27b0"), Color.FromHex("#3f51b5"), Color.FromHex("#03A9F4"), Color.FromHex("#009688"), Color.FromHex("#8BC34A") };
+            flexChart.CustomPalette = CustomPalette;
+            flexChart.Palette = Palette.Custom;
             flexChart.AxisY.AxisLine = false;
             flexChart.AxisY.MajorTickMarks = ChartTickMarkType.None;
             flexChart.LegendPosition = ChartPositionType.None;
@@ -59,10 +71,15 @@ namespace FlexChart101
 
             flexChart.AnimationMode = AnimationMode.All;
             C1Animation updateAnimation = new C1Animation();
-            updateAnimation.Duration = new TimeSpan(1500 * 10000);
+            updateAnimation.Duration = new TimeSpan(1000 * 10000);
             updateAnimation.Easing = C1Easing.Linear;
             flexChart.UpdateAnimation = updateAnimation;
-            
+
+            flexChart.AnimationMode = C1.Xamarin.Forms.Chart.AnimationMode.Point;
+            C1Animation loadAnimation = new C1Animation();
+            loadAnimation.Duration = new TimeSpan(1000 * 10000);
+            loadAnimation.Easing = Xamarin.Forms.Easing.CubicInOut;
+            flexChart.LoadAnimation = loadAnimation;
         }
 
         void OnAddPoint(object sender, EventArgs e)

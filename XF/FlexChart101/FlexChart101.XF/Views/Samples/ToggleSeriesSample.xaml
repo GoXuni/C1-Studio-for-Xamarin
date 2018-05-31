@@ -4,13 +4,15 @@
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
              xmlns:local="clr-namespace:FlexChart101"
              x:Class="FlexChart101.ToggleSeriesSample"
-             Padding="10">
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             >
   <ContentPage.Resources>
     <ResourceDictionary>
       <local:SeriesVisibilityBoolConverter x:Key="converter" />
     </ResourceDictionary>
   </ContentPage.Resources>
-  <StackLayout>
+    <StackLayout Margin="10" HorizontalOptions="FillAndExpand">
     <Grid>
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto"/>
@@ -30,11 +32,15 @@
     </Grid>
     <Grid  VerticalOptions="FillAndExpand">
       <c1:FlexChart x:Name="flexChart"
+                      Header="2017 Performance"
                       BindingX="Date"
                       ChartType="LineSymbols"
-            LegendPosition="Bottom"
+                      LegendPosition="Bottom"
                       VerticalOptions="FillAndExpand">
-        <c1:FlexChart.Series>
+                <c1:FlexChart.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexChart.HeaderStyle>
+                <c1:FlexChart.Series>
           <c1:ChartSeries x:Name="sales" Binding="Sales" SeriesName="Sales" />
           <c1:ChartSeries x:Name="expenses" Binding="Expenses"  SeriesName="Expenses" />
           <c1:ChartSeries x:Name="downloads" Binding="Downloads"  SeriesName="Downloads" />

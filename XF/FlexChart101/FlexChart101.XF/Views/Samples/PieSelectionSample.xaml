@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
              xmlns:local="clr-namespace:FlexChart101"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              x:Class="FlexChart101.PieSelectionSample">
-    <StackLayout>
+    <StackLayout Margin="10" HorizontalOptions="FillAndExpand">
         <Grid x:Name="root" BindingContext="{x:Reference flexPie}" Padding="5" VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -34,8 +36,12 @@
                     LegendPosition="Bottom"
                     BindingName = "Name" Binding = "Value"
                     x:Name="flexPie"
+                    Header="Fruit By Value"
                     VerticalOptions="FillAndExpand"
                     Grid.Row="2" Grid.ColumnSpan="2">
+                <c1:FlexPie.HeaderStyle>
+                    <c1:ChartStyle FontSize="18"/>
+                </c1:FlexPie.HeaderStyle>
                 <c1:FlexPie.SelectionStyle>
                     <c1:ChartStyle StrokeThickness="3" Stroke="#ff0000" />
                 </c1:FlexPie.SelectionStyle>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddPoint" xml:space="preserve">
-    <value>Add Point</value>
+    <value>Add</value>
   </data>
   <data name="BasicChartTypesDescription" xml:space="preserve">
     <value>Shows the basic chart types and stacking options.</value>
@@ -217,7 +217,7 @@
     <value>Multiple Axes</value>
   </data>
   <data name="RemovePoint" xml:space="preserve">
-    <value>Remove Point</value>
+    <value>Remove</value>
   </data>
   <data name="ScrollingDescription" xml:space="preserve">
     <value>Shows a chart with panning (or scrolling) along the axes.</value>

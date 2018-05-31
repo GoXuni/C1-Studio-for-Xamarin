@@ -123,34 +123,34 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.iOS.Chart">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Core">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Grid">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\C1Weather.XF\C1Weather.XF.csproj">

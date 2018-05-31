@@ -66,6 +66,20 @@ namespace FlexGrid101
             }
         }
 
+        public override CGSize SizeThatFits(CGSize size)
+        {
+            var widthOffset = _spacing * 2;
+            var heightOffset = _spacing * 5;
+            var availableSize = new CGSize((size.Width - widthOffset) / Subviews.Length, (size.Height - heightOffset) / Subviews.Length);
+            var countrySize = _countryLabel.SizeThatFits(availableSize);
+            var citySize = _cityLabel.SizeThatFits(availableSize);
+            var addressSize = _addressLabel.SizeThatFits(availableSize);
+            var postalCodeSize = _postalCodeLabel.SizeThatFits(availableSize);
+
+            return new CGSize(widthOffset + Math.Max(countrySize.Width, Math.Max(citySize.Width, Math.Max(addressSize.Width, postalCodeSize.Width))), 
+                              heightOffset + countrySize.Height + citySize.Height + addressSize.Height + postalCodeSize.Height);
+        }
+
         public override void LayoutSubviews()
         {
             base.LayoutSubviews();

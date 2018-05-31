@@ -4,11 +4,20 @@
              x:Class="Sunburst101.FlexChartSamples"
             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
     >
-    <ListView x:Name="listView" ItemsSource="{Binding}" ItemTapped="OnItemTapped">
+    <ListView x:Name="listView" HasUnevenRows="True" ItemsSource="{Binding}" ItemTapped="OnItemTapped">
         <ListView.Resources>
             <ResourceDictionary>
                 <DataTemplate x:Key="itemCommon">
-                    <ImageCell Text="{Binding Name}" TextColor="#9D2235" Detail="{Binding Description}" DetailColor="Gray" ImageSource="{Binding ThumbnailImageSource}"/>
+                    <!--ImageCell Text="{Binding Name}" TextColor="#9D2235" Detail="{Binding Description}" DetailColor="Gray" ImageSource="{Binding ThumbnailImageSource}"-->
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="3, 5" Spacing="10">
+                            <Image Source="{Binding ThumbnailImageSource}" WidthRequest="40" HeightRequest="40" VerticalOptions="Start"/>
+                            <StackLayout Spacing="0">
+                                <Label Text="{Binding Name}" TextColor="#9D2235" FontSize="16" VerticalOptions="FillAndExpand" VerticalTextAlignment="End"/>
+                                <Label Text="{Binding Description}" TextColor="Gray" FontSize="14" VerticalOptions="End" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
                 <DataTemplate x:Key="itemWinPhone">
                     <ViewCell>

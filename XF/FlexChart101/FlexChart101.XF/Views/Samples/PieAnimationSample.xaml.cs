@@ -12,7 +12,7 @@ namespace FlexChart101
     public partial class PieAnimationSample
     {
         C1CollectionView<MyData> data;
-        const string TITLE = "Mobile/Tablet Browser Market Share";
+        const string TITLE = "Mobile Browser Market Share";
 
         double[] safari = new double[] { 41.54, 48.35, 57.48, 61.67 };
         double[] chrome = new double[] { 28.51, 17.12, 4.79, 0.76 };
@@ -44,7 +44,10 @@ namespace FlexChart101
             // set flexPie properties
             this.flexPie.ItemsSource = data;
             this.flexPie.Header = TITLE + " 2015";
-            this.flexPie.Palette = Palette.Cyborg;
+            //this.flexPie.Palette = Palette.Cyborg;
+            List<Color> CustomPalette = new List<Color> { Color.FromHex("#f44336"), Color.FromHex("#9c27b0"), Color.FromHex("#3f51b5"), Color.FromHex("#03A9F4"), Color.FromHex("#009688"), Color.FromHex("#8BC34A") };
+            this.flexPie.Palette = Palette.Custom;
+            this.flexPie.CustomPalette = CustomPalette;
             this.flexPie.SliceBorderWidth = 1;
             
             C1Animation loadAnimation = new C1Animation();
@@ -53,7 +56,7 @@ namespace FlexChart101
             flexPie.LoadAnimation = loadAnimation;
 
             C1Animation updateAnimation = new C1Animation();
-            updateAnimation.Duration = new TimeSpan(1000 * 10000);
+            updateAnimation.Duration = new TimeSpan(1000 * 5000);
             updateAnimation.Easing = C1Easing.Linear;
             this.flexPie.UpdateAnimation = updateAnimation;
 
@@ -96,6 +99,10 @@ namespace FlexChart101
             await data.ReplaceAsync(3, new MyData { Label = "Opera", Value = opera_mini[0] });
             await data.ReplaceAsync(4, new MyData { Label = "IE", Value = internet_explorer[0] });
             await data.ReplaceAsync(5, new MyData { Label = "Other", Value = other[0] });
+            btnUpdate2015.BackgroundColor = Color.FromHex("#2196F3");
+            btnUpdate2014.BackgroundColor = Color.FromHex("#64B5F6");
+            btnUpdate2013.BackgroundColor = Color.FromHex("#64B5F6");
+            btnUpdate2012.BackgroundColor = Color.FromHex("#64B5F6");
             flexPie.EndUpdate();
 
         }
@@ -109,6 +116,10 @@ namespace FlexChart101
             await data.ReplaceAsync(3, new MyData { Label = "Opera", Value = opera_mini[1] });
             await data.ReplaceAsync(4, new MyData { Label = "IE", Value = internet_explorer[1] });
             await data.ReplaceAsync(5, new MyData { Label = "Other", Value = other[1] });
+            btnUpdate2015.BackgroundColor = Color.FromHex("#64B5F6");
+            btnUpdate2014.BackgroundColor = Color.FromHex("#2196F3");
+            btnUpdate2013.BackgroundColor = Color.FromHex("#64B5F6");
+            btnUpdate2012.BackgroundColor = Color.FromHex("#64B5F6");
             flexPie.EndUpdate();
         }
         async void btnUpdate2013_Clicked(object sender, EventArgs e)
@@ -121,6 +132,10 @@ namespace FlexChart101
             await data.ReplaceAsync(3, new MyData { Label = "Opera", Value = opera_mini[2] });
             await data.ReplaceAsync(4, new MyData { Label = "IE", Value = internet_explorer[2] });
             await data.ReplaceAsync(5, new MyData { Label = "Other", Value = other[2] });
+            btnUpdate2015.BackgroundColor = Color.FromHex("#64B5F6");
+            btnUpdate2014.BackgroundColor = Color.FromHex("#64B5F6");
+            btnUpdate2013.BackgroundColor = Color.FromHex("#2196F3");
+            btnUpdate2012.BackgroundColor = Color.FromHex("#64B5F6");
             flexPie.EndUpdate();
         }
         async void btnUpdate2012_Clicked(object sender, EventArgs e)
@@ -133,6 +148,10 @@ namespace FlexChart101
             await data.ReplaceAsync(3, new MyData { Label = "Opera", Value = opera_mini[3] });
             await data.ReplaceAsync(4, new MyData { Label = "IE", Value = internet_explorer[3] });
             await data.ReplaceAsync(5, new MyData { Label = "Other", Value = other[3] });
+            btnUpdate2015.BackgroundColor = Color.FromHex("#64B5F6");
+            btnUpdate2014.BackgroundColor = Color.FromHex("#64B5F6");
+            btnUpdate2013.BackgroundColor = Color.FromHex("#64B5F6");
+            btnUpdate2012.BackgroundColor = Color.FromHex("#2196F3");
             flexPie.EndUpdate();
 
         }

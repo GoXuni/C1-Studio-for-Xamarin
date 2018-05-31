@@ -62,7 +62,7 @@ namespace FlexChart101.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add Point.
+        ///   Looks up a localized string similar to Add.
         /// </summary>
         public static string AddPoint {
             get {
@@ -674,7 +674,7 @@ namespace FlexChart101.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remove Point.
+        ///   Looks up a localized string similar to Remove.
         /// </summary>
         public static string RemovePoint {
             get {

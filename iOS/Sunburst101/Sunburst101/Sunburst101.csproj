@@ -202,40 +202,40 @@
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-167.png">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-60@2x.png">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-60@3x.png">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-76.png">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-76@2x.png">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small-40.png">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small-40@2x.png">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small.png">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small@2x.png">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-small@3x.png">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
-      <InProject>false</InProject>
+      <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
@@ -247,13 +247,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.CollectionView">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Chart">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Core">
-      <Version>2.5.20181.267</Version>
+      <Version>3.0.20181.282</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

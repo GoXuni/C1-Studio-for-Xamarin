@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using C1.Xamarin.Forms.Chart;
+using C1.Xamarin.Forms.Core;
 using FlexChart101.Resources;
+using Xamarin.Forms;
 
 namespace FlexChart101
 {
@@ -14,6 +16,9 @@ namespace FlexChart101
 
             this.flexChart.ItemsSource = GetWeatherData();
             this.flexChart.LegendPosition = ChartPositionType.None;
+            List<Color> CustomPalette = new List<Color> { Color.FromHex("#2196F3"), Color.FromHex("#f44336") };
+            this.flexChart.Palette = Palette.Custom;
+            this.flexChart.CustomPalette = CustomPalette;
         }
 
         public IEnumerable<WeatherData> GetWeatherData()

@@ -2,12 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlexChart101.FlexChartSamples">
-    <ListView x:Name="listView" ItemsSource="{Binding}" ItemTapped="OnItemTapped">
+    <ListView x:Name="listView" ItemsSource="{Binding}" HasUnevenRows="True" ItemTapped="OnItemTapped">
         <ListView.Resources>
             <ResourceDictionary>
                 <DataTemplate x:Key="itemCommon">
-                    <ImageCell Text="{Binding Name}" TextColor="#9D2235" Detail="{Binding Description}" DetailColor="Gray" ImageSource="{Binding ThumbnailImageSource}"/>
-                </DataTemplate>
+                    <!--ImageCell Text="{Binding Name}" TextColor="#9D2235" Detail="{Binding Description}" DetailColor="Gray" ImageSource="{Binding ThumbnailImageSource}"-->
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="3, 5" Spacing="10">
+                            <Image Source="{Binding ThumbnailImageSource}" WidthRequest="40" HeightRequest="40" VerticalOptions="Start"/>
+                            <StackLayout Spacing="0">
+                                <Label Text="{Binding Name}" TextColor="#9D2235" FontSize="16" VerticalOptions="FillAndExpand" VerticalTextAlignment="End"/>
+                                <Label Text="{Binding Description}" TextColor="Gray" FontSize="14" VerticalOptions="End" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                    </DataTemplate>
                 <DataTemplate x:Key="itemWinPhone">
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Padding="10, 1" Spacing="10">

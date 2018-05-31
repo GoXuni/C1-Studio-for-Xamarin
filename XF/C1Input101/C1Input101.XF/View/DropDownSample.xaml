@@ -3,9 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Input;assembly=C1.Xamarin.Forms.Input"
              xmlns:calendar="clr-namespace:C1.Xamarin.Forms.Calendar;assembly=C1.Xamarin.Forms.Calendar"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
              x:Class="C1Input101.DropDownSample"
              Padding="20">
-    <StackLayout Orientation="Vertical">
+    <StackLayout Orientation="Vertical" Margin="10">
         <c1:C1DropDown IsEditable="True" x:Name="dropdown" DropDownMode="BelowOrAbove" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
             <c1:C1DropDown.Header>
                 <c1:C1MaskedEntry x:Name="mask" Mask="00/00/0000"/>
