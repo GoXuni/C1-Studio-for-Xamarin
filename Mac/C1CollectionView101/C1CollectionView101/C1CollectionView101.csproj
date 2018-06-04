@@ -145,10 +145,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.0.20181.282</Version>
+      <Version>3.0.20181.288</Version>
     </PackageReference>
     <PackageReference Include="C1.Mac.CollectionView">
-      <Version>3.0.20181.282</Version>
+      <Version>3.0.20181.288</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />

@@ -178,22 +178,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.0.20181.282</Version>
+      <Version>3.0.20181.288</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.0.20181.282</Version>
+      <Version>3.0.20181.288</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.0.20181.282</Version>
+      <Version>3.0.20181.288</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.0.20181.282</Version>
+      <Version>3.0.20181.288</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>3.0.20181.282</Version>
+      <Version>3.0.20181.288</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>3.0.20181.282</Version>
+      <Version>3.0.20181.288</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.4</Version>

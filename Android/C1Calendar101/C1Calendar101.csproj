@@ -50,10 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Android.Calendar">
-      <Version>3.0.20181.282</Version>
+      <Version>3.0.20181.288</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Core">
-      <Version>3.0.20181.282</Version>
+      <Version>3.0.20181.288</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Constraint.Layout">
       <Version>1.0.2.2</Version>
