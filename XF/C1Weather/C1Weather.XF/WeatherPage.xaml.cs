@@ -9,14 +9,17 @@ using C1Weather.Resources;
 using System.Collections.Generic;
 using C1.Xamarin.Forms.Chart;
 using C1.Xamarin.Forms.Chart.Interaction;
+using Plugin.Geolocator;
+using C1.Xamarin.Forms.Core;
+using Plugin.Permissions.Abstractions;
 
 namespace C1Weather
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WeatherPage : ContentPage
     {
-        WeatherData d;
-        ObservableCollection<WeatherModel> l;
+        WeatherData data;
+        ObservableCollection<WeatherModel> list;
         public WeatherPage()
         {
             InitializeComponent();
@@ -33,25 +36,21 @@ namespace C1Weather
             LowColumn.Header = AppResources.LowHeader;
             HumidityColumn.Header = AppResources.HumidityHeader;
             PressureColumn.Header = AppResources.PressureHeader;
+            data = new WeatherData();
+            list = new ObservableCollection<WeatherModel> { };
+            var task = GeoWeatherTask();
+            //
+            chart.AnimationMode = AnimationMode.Point;
+            C1Animation updateAnimation = new C1Animation();
+            updateAnimation.Duration = new TimeSpan(1000 * 10000);
+            updateAnimation.Easing = Xamarin.Forms.Easing.CubicInOut;
+            chart.UpdateAnimation = updateAnimation;
 
-            //ensures the grid fills the screen on Windows 10 Desktop or autosizes on Mobile
-            switch (Device.RuntimePlatform)
-            {
-                case Device.UWP:
-                    if(Device.Idiom == TargetIdiom.Desktop)
-                    {
-                        PressureColumn.Width = GridLength.Star;
-                    }
-                    else
-                    {
-                        PressureColumn.Width = GridLength.Auto;
-                    }
-                    break;
-            }
-
-            d = new WeatherData();
-            l = new ObservableCollection<WeatherModel> { };
-            var task = WeatherTask("15232,us");
+            chart.AnimationMode = C1.Xamarin.Forms.Chart.AnimationMode.Point;
+            C1Animation loadAnimation = new C1Animation();
+            loadAnimation.Duration = new TimeSpan(1000 * 10000);
+            loadAnimation.Easing = Xamarin.Forms.Easing.CubicInOut;
+            chart.LoadAnimation = loadAnimation;
 
             //line marker configuration and initialization
             lineMarker.DragLines = true;
@@ -59,16 +58,45 @@ namespace C1Weather
             lineMarker.Interaction = LineMarkerInteraction.Move;
             initMarker();
         }
-        //fetch Weather
+        //fetch Weather with geolocation 
+        private async Task GeoWeatherTask()
+        {
+            
+            string geoposition = "";
+            try
+            {
+                var hasPermission = await Util.CheckPermissions(Permission.Location);
+                if (!hasPermission)
+                    return;
+                var locator = CrossGeolocator.Current;
+                locator.DesiredAccuracy = 50;
+                var position = await locator.GetPositionAsync(new TimeSpan(100000000));
+                geoposition = "lat=" + position.Latitude + "&lon=" + position.Longitude;
+                Tuple<ObservableCollection<WeatherModel>, String> s = await data.GetResultGeo(geoposition);
+                list = s.Item1;
+                chart.Header = s.Item2;
+                chart.ItemsSource = list;
+                grid.ItemsSource = list;
+
+            }
+            catch (Exception e)
+            {
+
+                await DisplayAlert(AppResources.AlertTitle, AppResources.AlertMessage + "\n" + e.Message, AppResources.Cancel);
+            }
+        }
+
+
+        //fetch Weather with zip
         private async Task WeatherTask(string zip)
         {
             try
             {
-                Tuple<ObservableCollection<WeatherModel>, String> s = await d.GetResult(zip);
-                l = s.Item1;
+                Tuple<ObservableCollection<WeatherModel>, String> s = await data.GetResultZip(zip);
+                list = s.Item1;
                 chart.Header = s.Item2;
-                chart.ItemsSource = l;
-                grid.ItemsSource = l;
+                chart.ItemsSource = list;
+                grid.ItemsSource = list;
                 
             }
             catch(Exception e)
@@ -122,8 +150,8 @@ namespace C1Weather
         //new zip entered
         private void ZipEntry_Completed(object sender, EventArgs e)
         {
-            d = new WeatherData();
-            l = new ObservableCollection<WeatherModel> { };
+            data = new WeatherData();
+            list = new ObservableCollection<WeatherModel> { };
             var task = WeatherTask(((Entry)sender).Text);
         }
         //handles line marker for chart
@@ -134,23 +162,22 @@ namespace C1Weather
         {
             xLabel.VerticalOptions = LayoutOptions.FillAndExpand;
             xLabel.HorizontalOptions = LayoutOptions.FillAndExpand;
-
+            List<Color> CustomPalette = new List<Color> {  Color.FromHex("#2196F3"), Color.FromHex("#f44336") };
             layout.Children.Add(xLabel);
             layout.Padding = new Thickness(5, 5, 5, 5);
             for (int index = 0; index < chart.Series.Count; index++)
             {
                 var series = chart.Series[index];
-                var fill = (int)((IChart)chart).GetColor(index);
                 Label yLabel = new Label();
+                
                 yLabel.VerticalOptions = LayoutOptions.FillAndExpand;
                 yLabel.HorizontalOptions = LayoutOptions.FillAndExpand;
-                var bytes = BitConverter.GetBytes(fill);
-                yLabel.TextColor = Color.FromRgba(bytes[2], bytes[1], bytes[0], bytes[3]);
+                yLabel.TextColor = CustomPalette[index];
                 yLabels.Add(yLabel);
                 layout.Children.Add(yLabel);
             }
 
-            layout.BackgroundColor = Color.FromRgba(.88, .88, .88, .85);
+            layout.BackgroundColor = Color.FromRgba(.88, .88, .88, .80);
             lineMarker.Content = layout;
         }
 
@@ -168,15 +195,15 @@ namespace C1Weather
                 {
                     return;
                 }
-                xLabel.Text = string.Format("{0:M/dd h tt}", info.X);
+                xLabel.Text = string.Format("{0:dd MMM h tt}", info.X);
                 xLabel.FontSize = 11;
                 for (int index = 0; index < chart.Series.Count; index++)
                 {
                     var series = chart.Series[index];
                     var value = series.GetValues(0)[pointIndex];
 
-                    var fill = (int)((IChart)chart).GetColor(index);
-                    string content = string.Format("{0} = {1}", series.SeriesName, string.Format("{0:f0}", value));
+                    //var fill = (int)((IChart)chart).GetColor(index);
+                    string content = string.Format("{0} {1}", series.SeriesName, string.Format("{0:f0}", value));
                     Label yLabel = yLabels[index];
                     yLabel.Text = content;
                     yLabel.FontSize = 11;

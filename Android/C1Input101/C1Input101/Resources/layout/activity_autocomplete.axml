@@ -5,47 +5,82 @@
     android:layout_height="fill_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-  <include
-    android:id="@+id/toolbar"
-    layout="@layout/toolbar" />
-  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-         android:id="@+id/main_content"
-		     android:orientation="vertical"
-         android:padding="25px"
-         android:layout_width="fill_parent"
-         android:layout_height="fill_parent"
-         android:layout_below="@id/toolbar">
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="1"
-        android:rowCount="9">
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/highlight" />
-      <C1.Android.Input.C1AutoComplete
-          android:id="@+id/autocomplete_highlight"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content" />
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/custom" />
-      <C1.Android.Input.C1AutoComplete
-          android:id="@+id/autocomplete_custom"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content" />
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/filter" />
-      <C1.Android.Input.C1AutoComplete
-          android:id="@+id/autocomplete_filter"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content" />
-    </GridLayout>
-  </LinearLayout>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:orientation="vertical"
+        android:padding="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/acm_textview"
+                android:layout_width="0dp"
+                android:gravity="left"
+                android:layout_height="match_parent"
+                android:text="@string/AutoCompleteMode"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/clear_textview"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_height="match_parent"
+                android:text="@string/ShowClearButton"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/acm_Spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:layout_weight="1" />
+            <Switch
+                android:id="@+id/clear_switch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <GridLayout xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="9">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/highlight" />
+            <C1.Android.Input.C1AutoComplete
+                android:id="@+id/autocomplete_highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/custom" />
+            <C1.Android.Input.C1AutoComplete
+                android:id="@+id/autocomplete_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter" />
+            <C1.Android.Input.C1AutoComplete
+                android:id="@+id/autocomplete_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </GridLayout>
+    </LinearLayout>
 </RelativeLayout>

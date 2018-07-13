@@ -509,4 +509,16 @@
     <value>ズームモード</value>
     <comment>Zoom Moce</comment>
   </data>
+  <data name="BinWidth" xml:space="preserve">
+    <value>ビンの幅</value>
+    <comment>BinWidth</comment>
+  </data>
+  <data name="HistogramDescription" xml:space="preserve">
+    <value>ヒストグラムチャートを表示</value>
+    <comment>Shows Histogram Chart.</comment>
+  </data>
+  <data name="HistogramTitle" xml:space="preserve">
+    <value>ヒストグラムチャート</value>
+    <comment>Histogram Chart</comment>
+  </data>
 </root>

@@ -11,8 +11,8 @@
 namespace FlexChart101.Resources {
     using System;
     using System.Reflection;
-    
-    
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -121,6 +121,15 @@ namespace FlexChart101.Resources {
         public static string BasicChartTypesTitle {
             get {
                 return ResourceManager.GetString("BasicChartTypesTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BinWidth.
+        /// </summary>
+        public static string BinWidth {
+            get {
+                return ResourceManager.GetString("BinWidth", resourceCulture);
             }
         }
         
@@ -337,6 +346,24 @@ namespace FlexChart101.Resources {
         public static string Header {
             get {
                 return ResourceManager.GetString("Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shows Histogram Chart..
+        /// </summary>
+        public static string HistogramDescription {
+            get {
+                return ResourceManager.GetString("HistogramDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Histogram Chart.
+        /// </summary>
+        public static string HistogramTitle {
+            get {
+                return ResourceManager.GetString("HistogramTitle", resourceCulture);
             }
         }
         

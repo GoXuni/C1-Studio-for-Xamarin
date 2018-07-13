@@ -20,11 +20,25 @@
     </ContentPage.Resources>
 
     <StackLayout BindingContext="{x:Reference page}" Orientation="Vertical" Margin="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="ACMLabel" Grid.Column="0" Grid.Row="0"/>
+            <Picker x:Name="ACMPicker" SelectedIndexChanged="ACMPicker_SelectedIndexChanged" Grid.Column="0" Grid.Row="1"/>
+            <Label x:Name="ClearLabel" HorizontalOptions="End" Grid.Column="1" Grid.Row="0"/>
+            <Switch x:Name="ClearSwitch" HorizontalOptions="End" Toggled="ClearSwitch_Toggled" Grid.Column="1" Grid.Row="1"/>
+        </Grid>
         <Label Text="{Binding HighlightsText}" />
-        <c1:C1AutoComplete ItemsSource="{Binding Countries}" HorizontalOptions="FillAndExpand" DisplayMemberPath="Name"/>
+        <c1:C1AutoComplete x:Name="HighlightAC" ItemsSource="{Binding Countries}" DropDownBehavior="ButtonTap" HorizontalOptions="FillAndExpand" DisplayMemberPath="Name"/>
         <Label Text="{Binding CustomDropDownText}" />
-        <c1:C1AutoComplete ItemsSource="{Binding CountriesWithFlag}" ItemTemplate="{StaticResource flagTemplate}" HorizontalOptions="FillAndExpand" DisplayMemberPath="Name"/>
+        <c1:C1AutoComplete x:Name="CustomAC" ItemsSource="{Binding CountriesWithFlag}" ItemTemplate="{StaticResource flagTemplate}" HorizontalOptions="FillAndExpand" DisplayMemberPath="Name"/>
         <Label Text="{Binding DynamicText}" />
-        <c1:C1AutoComplete HorizontalOptions="FillAndExpand" DisplayMemberPath="Title" Delay="0:0:0.5" Filtering="OnDynamicFiltering"/>
+        <c1:C1AutoComplete x:Name="DynamicAC" HorizontalOptions="FillAndExpand" DisplayMemberPath="Title" Delay="0:0:0.5" Filtering="OnDynamicFiltering"/>
     </StackLayout>
 </ContentPage>

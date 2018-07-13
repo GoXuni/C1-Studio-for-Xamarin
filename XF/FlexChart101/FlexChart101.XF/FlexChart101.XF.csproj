@@ -14,13 +14,13 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
   </ItemGroup>
@@ -64,6 +64,7 @@
     <EmbeddedResource Include="Images\UK.png" />
     <EmbeddedResource Include="Images\US.png" />
     <EmbeddedResource Include="Images\xuni_butterfly.png" />
+    <EmbeddedResource Include="Images\histogram.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\AppResources.Designer.cs">
@@ -86,5 +87,8 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\histogram.png" />
   </ItemGroup>
 </Project>

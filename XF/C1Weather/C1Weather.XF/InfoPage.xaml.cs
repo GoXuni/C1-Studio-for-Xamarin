@@ -16,6 +16,11 @@ namespace C1Weather
         {
             InitializeComponent();
             Title = AppResources.About;
+            var tapGestureRecognizer = new TapGestureRecognizer();
+            tapGestureRecognizer.Tapped += (s, e) => {
+                Device.OpenUri(new Uri("https://www.openweathermap.org"));
+            };
+            weatherLabel.GestureRecognizers.Add(tapGestureRecognizer);
             aboutLabel.Text = AppResources.AboutLabelText;
             weatherLabel.Text = AppResources.WeatherLabelTest;
             switch (Device.RuntimePlatform)

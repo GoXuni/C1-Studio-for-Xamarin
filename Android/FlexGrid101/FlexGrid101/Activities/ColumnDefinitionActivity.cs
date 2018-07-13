@@ -6,6 +6,7 @@ using C1.Android.Grid;
 using Android.Support.V7.App;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Views;
+using Android.Util;
 
 namespace FlexGrid101
 {
@@ -25,7 +26,7 @@ namespace FlexGrid101
 
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             grid.AutoGenerateColumns = false;
-            grid.Columns.Add(new GridColumn { Binding = "Active", Width = new GridLength(70) });
+            grid.Columns.Add(new GridColumn { Binding = "Active", Width = new GridLength(TypedValue.ApplyDimension(ComplexUnitType.Dip, 35, Resources.DisplayMetrics)) });
             grid.Columns.Add(new GridColumn { Binding = "FirstName" });
             grid.Columns.Add(new GridColumn { Binding = "LastName" });
             grid.Columns.Add(new GridColumn { Binding = "OrderTotal", Format = "C", InputType = Android.Text.InputTypes.NumberFlagSigned });

@@ -52,5 +52,10 @@
 	<string>Resources/Media.xcassets/AppIcons.appiconset</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<key>CFBundleLocalizations</key>
+    <array>
+        <string>en</string>
+        <string>ja</string>
+    </array>
 </dict>
 </plist>

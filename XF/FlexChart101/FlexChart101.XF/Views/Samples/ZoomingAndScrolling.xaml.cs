@@ -20,7 +20,7 @@ namespace FlexChart101
 
 			Title = AppResources.ZoomingScrollingTitle;
 			this.lblZoomMode.Text = AppResources.ZoomMode;
-			this.pickerZoomMode.Title = AppResources.ZoomMode;
+
 			this.flexChart.ItemsSource = GenerateRandNormal(500);
             this.flexChart.Palette = C1.Xamarin.Forms.Chart.Palette.Superhero; 
             this.flexChart.Header = AppResources.ScrollZoomInstructions;

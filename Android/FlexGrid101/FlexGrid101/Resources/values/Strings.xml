@@ -25,7 +25,7 @@
   <string name="CustomCellsTitle">Custom Cells</string>
   <string name="CustomCellsDescription">Customizes a cell by displaying a numeric value in a gauge.</string>
   <string name="GroupingTitle">Grouping</string>
-  <string name="GroupingDescription">Groups and aggregates a collection of items.</string>
+  <string name="GroupingDescription">Groups and aggregates a collection of data.</string>
   <string name="GroupHeaderFormat">{name}: {value} ({count} items)</string>
   <string name="RowDetailsTitle">Row Details</string>
   <string name="RowDetailsDescription">Expand and collapse row details.</string>
@@ -69,12 +69,13 @@
   <string name="Weekday">Weekday</string>
   <string name="Weekend">Weekend</string>
 
-  <string-array name="SlectionModeTable">
+  <string-array name="SelectionModeTable">
     <item>None</item>
     <item>Cell</item>
     <item>CellRange</item>
     <item>Row</item>
     <item>RowRange</item>
   </string-array>
-
+  <string name="MatchCase">Match case</string>
+  <string name="MatchWholeWord">Match whole word</string>
 </resources>

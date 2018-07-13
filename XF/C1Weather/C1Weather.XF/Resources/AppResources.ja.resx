@@ -121,7 +121,7 @@
     <value>概要</value>
   </data>
   <data name="AboutLabelText" xml:space="preserve">
-    <value>このアプリはグレープシティのComponentOne Studio for Xamarin（コンポーネントワンスタジオ for ザマリン）を利用して作成しました。ComponentOne Studio for XamarinはiOS、Android、UWPアプリを開発するためのクロスプラットフォームモバイルコントロールのセットです。</value>
+    <value>このアプリはグレープシティのComponentOne for Xamarin（コンポーネントワンスタジオ for ザマリン）を利用して作成しました。ComponentOne for XamarinはiOS、Android、UWPアプリを開発するためのクロスプラットフォームモバイルコントロールのセットです。</value>
     <comment>C1Weather was made by GrapeCity using ComponentOne Xamarin Edition.  C1 Xamarin Edition is a collection of native, cross-platform mobile controls for developing apps on iOS, Android, and UWP.</comment>
   </data>
   <data name="AlertMessage" xml:space="preserve">

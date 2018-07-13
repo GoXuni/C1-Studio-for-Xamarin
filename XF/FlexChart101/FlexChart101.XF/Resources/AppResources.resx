@@ -192,6 +192,12 @@
   <data name="HitTestTitle" xml:space="preserve">
     <value>Hit Test</value>
   </data>
+  <data name="HistogramDescription" xml:space="preserve">
+    <value>Shows Histogram Chart.</value>
+  </data>
+  <data name="HistogramTitle" xml:space="preserve">
+    <value>Histogram Chart</value>
+  </data>
   <data name="LegendSampleDescription" xml:space="preserve">
     <value>Shows basic chart headers and axis titles.</value>
   </data>
@@ -425,5 +431,8 @@
   </data>
   <data name="LineType" xml:space="preserve">
     <value>Line Type</value>
+  </data>
+  <data name="BinWidth" xml:space="preserve">
+    <value>BinWidth</value>
   </data>
 </root>

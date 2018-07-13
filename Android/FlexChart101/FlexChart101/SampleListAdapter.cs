@@ -60,7 +60,9 @@ namespace FlexChart101
 			              Resource.String.zoomingAndScrollingDesc), Resource.Drawable.chart_scatter, typeof(ZoomingAndScrollingActivity));
 			SampleModel hitTest = new SampleModel(context.Resources.GetString(Resource.String.hitTest), context.Resources.GetString(Resource.String.hitTestDesc),
 						  Resource.Drawable.chart_line, typeof(HitTestActivity));
-			SampleModel multipleAxes = new SampleModel(context.Resources.GetString(Resource.String.multipleAxes), context.Resources.GetString(
+            SampleModel histogram = new SampleModel(context.Resources.GetString(Resource.String.histogram), context.Resources.GetString(Resource.String.histogramDesc),
+                          Resource.Drawable.histogram, typeof(HistogramActivity));
+            SampleModel multipleAxes = new SampleModel(context.Resources.GetString(Resource.String.multipleAxes), context.Resources.GetString(
 						  Resource.String.multipleAxesDesc), Resource.Drawable.chart_composite, typeof(MultipleAxesActivity));
 			SampleModel customPlotElements = new SampleModel(context.Resources.GetString(Resource.String.customPlotElements), context.Resources.GetString(
 						  Resource.String.customPlotElementsDesc), Resource.Drawable.custom, typeof(CustomPlotElementsActivity));
@@ -113,8 +115,9 @@ namespace FlexChart101
 			list.Add(toggleSeries);
             list.Add(dynamicCharts);
 			list.Add(hitTest);
-			//list.Add(scrolling);
-			list.Add(zoomingAndScrolling);
+            list.Add(histogram);
+            //list.Add(scrolling);
+            list.Add(zoomingAndScrolling);
 			list.Add(theming);
 			list.Add(stylingSeries);
 			////list.Add(logActivity);

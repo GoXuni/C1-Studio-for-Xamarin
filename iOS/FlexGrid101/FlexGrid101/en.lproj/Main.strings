@@ -114,7 +114,7 @@
 //custom cells
 "2228.text" = "Edit cells by input form rather than inline.";
 //grouping
-"2231.text" = "Groups and aggregates a collection of videos.";
+"2231.text" = "Groups and aggregates a collection of data.";
 //row details
 "2234.text" = "Expand and collapse row details.";
 //filter
@@ -147,4 +147,9 @@
 
 //Filter buttons on Filter page
 "8135.title" = "Filter";
+
+//Full text filter
+"13069.text" = "Match case";
+"13070.text" = "Match whole word";
+
 

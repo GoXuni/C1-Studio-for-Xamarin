@@ -77,7 +77,7 @@ namespace FlexChart101
                 series.Style = new ChartStyle { Fill = colors.GetItem<UIColor>((nuint)i) };
                 chart.Series.Add(series);
             }
-            chart.Series.Add(new ChartSeries { SeriesName = "raw score", Binding = "Score" });
+            chart.Series.Add(new ChartSeries { SeriesName = "raw score", Binding = "Score",BindingX= "Number" });
             for (var i = -2; i <= 2; i++)
             {
                 var y = mean + i * stdDev;

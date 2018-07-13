@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             x:Class="FlexChart101.HistogramSample">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackLayout x:Name="stackPanel" Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Label Margin="10" x:Name="binWidthLabel"  Text="BinWidth : " VerticalOptions="Center"/>
+                <Entry Margin="10" x:Name="tbBinWidth" WidthRequest="100" VerticalOptions="Center" HorizontalTextAlignment="End" Keyboard="Numeric" TextChanged="TextBox_TextChanged"/>
+            </StackLayout>
+        </StackLayout>
+        <c1:FlexChart x:Name="flexChart" ChartType="Histogram" Grid.Row="1" Binding="Y" BindingX="X" Rendered="flexChart_Rendered">
+            <c1:FlexChart.AxisX>
+                <c1:ChartAxis Format="0."/>
+            </c1:FlexChart.AxisX>
+
+            <c1:FlexChart.Series>
+                <c1:Histogram x:Name="histogramSeries" SeriesName="Frequency">
+                    <c1:Histogram.Style>
+                        <c1:ChartStyle StrokeThickness="1" Fill="#03A9F4" Stroke="#3F51B5"/>
+                    </c1:Histogram.Style>
+                </c1:Histogram>
+                <c1:ChartSeries ChartType="Scatter" SeriesName="Value">
+                    <c1:ChartSeries.Style>
+                        <c1:ChartStyle StrokeThickness="2" Stroke="#9C27B0"/>
+                    </c1:ChartSeries.Style>
+                </c1:ChartSeries>
+            </c1:FlexChart.Series>
+        </c1:FlexChart>
+    </Grid>
+</ContentPage>

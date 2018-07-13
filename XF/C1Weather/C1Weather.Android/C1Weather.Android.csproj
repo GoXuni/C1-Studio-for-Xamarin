@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -57,33 +57,39 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Android.Chart">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Core">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Grid">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Plugin.Permissions">
+      <Version>3.0.0.12</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Geolocator">
+      <Version>4.5.0.6</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2" />
     <PackageReference Include="Xamarin.Android.Support.Compat" Version="27.0.2" />
@@ -149,6 +155,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\C1logoHexwhite2048x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\white_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

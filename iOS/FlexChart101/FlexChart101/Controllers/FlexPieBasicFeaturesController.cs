@@ -8,8 +8,6 @@ namespace FlexChart101
 {
     public partial class FlexPieBasicFeaturesController : UIViewController
     {
-        FlexPie pieChart;
-
         public FlexPieBasicFeaturesController() : base("FlexPieBasicFeaturesController", null)
         {
         }
@@ -23,7 +21,6 @@ namespace FlexChart101
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
 
-            pieChart = new FlexPie();
             pieChart.Binding = "Value";
             pieChart.BindingName = "Name";
             pieChart.ItemsSource = PieChartData.DemoData();
@@ -33,7 +30,6 @@ namespace FlexChart101
         public override void ViewDidLayoutSubviews()
         {
             base.ViewDidLayoutSubviews();
-			pieChart.Frame = new CGRect(this.View.Frame.X, this.View.Frame.Height/2 - 40, this.View.Frame.Width, this.View.Frame.Height/2);
         }
 
         public override void DidReceiveMemoryWarning()

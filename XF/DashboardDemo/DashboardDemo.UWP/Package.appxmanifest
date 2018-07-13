@@ -4,7 +4,7 @@
   <mp:PhoneIdentity PhoneProductId="5a0ea463-6ced-4029-a0fc-8a6d495c925b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>DashboardDemo.UWP</DisplayName>
-    <PublisherDisplayName>BruceZong</PublisherDisplayName>
+    <PublisherDisplayName>Grapecity</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>

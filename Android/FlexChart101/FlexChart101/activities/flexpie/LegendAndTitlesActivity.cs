@@ -50,7 +50,7 @@ namespace FlexChart101.Pie
             // set the binding of FlexPie to variables of BindObject
             mFlexPie.BindingName = "Name";
             mFlexPie.Binding = "Value";
-            mFlexPie.LegendPosition = ChartPositionType.None;
+            mFlexPie.LegendPosition = ChartPositionType.Auto;
 
             // setting the source of data/items and default values in FlexPie
             mFlexPie.ItemsSource = flexpieFruits;
@@ -87,7 +87,7 @@ namespace FlexChart101.Pie
             switch (e.Position)
             {
                 case 0:
-                    mFlexPie.LegendPosition = ChartPositionType.None;
+                    mFlexPie.LegendPosition = ChartPositionType.Auto;
                     break;
                 case 1:
                     mFlexPie.LegendPosition = ChartPositionType.Left;
@@ -102,7 +102,7 @@ namespace FlexChart101.Pie
                     mFlexPie.LegendPosition = ChartPositionType.Bottom;
                     break;
                 case 5:
-                    mFlexPie.LegendPosition = ChartPositionType.Auto;
+                    mFlexPie.LegendPosition = ChartPositionType.None;
                     break;
             }
         }

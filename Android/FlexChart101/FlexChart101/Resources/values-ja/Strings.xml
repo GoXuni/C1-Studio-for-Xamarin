@@ -22,6 +22,7 @@
   <string name="customMarker">ラインマーカー</string>
   <string name="zoomingAndScrolling">ズームとスクロール</string>
   <string name="hitTest">ヒットテスト</string>
+  <string name="histogram">ヒストグラムチャート</string>
   <string name="multipleAxes">複数の軸</string>
   <string name="customPlotElements">プロット要素のカスタマイズ</string>
   <string name="snapshot">画像として保存</string>
@@ -47,6 +48,7 @@
   <string name="scrollingDesc">軸に沿ってパン（スクロール）するチャート</string>
   <string name="zoomingAndScrollingDesc">ストレッチ、ピンチによるジェスチャ操作</string>
   <string name="hitTestDesc">任意の点を取得する方法</string>
+  <string name="histogramDesc">ヒストグラムチャートを表示</string>
   <string name="multipleAxesDesc">複数の Y 軸を持つチャートを表示</string>
   <string name="customPlotElementsDesc">要素をカスタマイズする方法</string>
   <string name="conditionalFormattingDesc">プロット要素に条件付きの書式を設定</string>
@@ -204,6 +206,7 @@
   <string name="button2014">2014</string>
   <string name="button2013">2013</string>
   <string name="button2012">2012</string>
+  <string name="BinWidth">ビンの幅</string>
   <string name="permissionDenied">ユーザーによってアクセス許可が拒否されました。</string>
   <string name="positive_button">OK</string>
 

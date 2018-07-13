@@ -21,7 +21,7 @@ namespace FlexChart101
             {
                 this.pickerLegendPosition.Items.Add(item);
             }
-            this.pickerLegendPosition.SelectedIndex = 1;
+            this.pickerLegendPosition.SelectedIndex = 4;
             this.flexPie.LegendPosition = ChartPositionType.Auto;
             this.flexPie.ToolTip = null;
         }

@@ -32,7 +32,7 @@ namespace FlexGrid101
             SelectionTextView.Text = "";
 
             var items = new GridSelectionMode[] { GridSelectionMode.None, GridSelectionMode.Cell, GridSelectionMode.CellRange, GridSelectionMode.Row, GridSelectionMode.RowRange };
-            var adapteritems = Resources.GetStringArray(Resource.Array.SlectionModeTable);
+            var adapteritems = Resources.GetStringArray(Resource.Array.SelectionModeTable);
             modes.Adapter = new ArrayAdapter(BaseContext, global::Android.Resource.Layout.SimpleSpinnerItem, adapteritems);
             modes.SetSelection(2);
             modes.ItemSelected += (s, e) =>

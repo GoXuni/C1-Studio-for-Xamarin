@@ -1,5 +1,6 @@
 ﻿using C1.Xamarin.Forms.Input;
 using C1Input101.Resources;
+using System;
 using System.Collections;
 using System.Linq;
 
@@ -14,6 +15,13 @@ namespace C1Input101
             CountriesWithFlag = Country.GetCountries().Where(c => flagConverter.HasFlag(c.Name));
             InitializeComponent();
             Title = AppResources.AutoCompleteTitle;
+            ACMLabel.Text = nameof(AutoCompleteMode);
+            ClearLabel.Text = nameof(C1ComboBox.ShowClearButton);
+            foreach (var item in Enum.GetNames(typeof(AutoCompleteMode)))
+            {
+                this.ACMPicker.Items.Add(item);
+            }
+            this.ACMPicker.SelectedIndex = 1;
         }
 
         public string HighlightsText
@@ -59,6 +67,21 @@ namespace C1Input101
             {
                 deferal.Complete();
             }
+        }
+
+        private void ACMPicker_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            this.HighlightAC.AutoCompleteMode = (AutoCompleteMode)Enum.Parse(typeof(AutoCompleteMode), this.ACMPicker.Items[this.ACMPicker.SelectedIndex]);
+            this.CustomAC.AutoCompleteMode = (AutoCompleteMode)Enum.Parse(typeof(AutoCompleteMode), this.ACMPicker.Items[this.ACMPicker.SelectedIndex]);
+            this.DynamicAC.AutoCompleteMode = (AutoCompleteMode)Enum.Parse(typeof(AutoCompleteMode), this.ACMPicker.Items[this.ACMPicker.SelectedIndex]);
+            
+        }
+
+        private void ClearSwitch_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)
+        {
+            this.HighlightAC.ShowClearButton = e.Value;
+            this.CustomAC.ShowClearButton = e.Value;
+            this.DynamicAC.ShowClearButton = e.Value;
         }
     }
 }

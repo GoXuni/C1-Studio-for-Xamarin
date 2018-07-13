@@ -9,6 +9,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace C1Input101
 {
@@ -17,12 +18,33 @@ namespace C1Input101
     {
         public AutoCompleteController(IntPtr handle) : base(handle)
         {
+            
+        }
+
+        private const string acmTitleKey = "AutoCompleteMode";
+
+        private IList<string> acmItems = new List<string>() {
+            C1.iOS.Input.AutoCompleteMode.StartsWith.ToString(),
+            C1.iOS.Input.AutoCompleteMode.Contains.ToString(),
+            C1.iOS.Input.AutoCompleteMode.EndsWith.ToString(),
+            C1.iOS.Input.AutoCompleteMode.MatchCase.ToString(),
+            C1.iOS.Input.AutoCompleteMode.MatchWholeWord.ToString()
+        };
+
+        public IList<string> ACMItems
+        {
+            get
+            {
+                return acmItems;
+            }
         }
 
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
+            
+            clearSwitch.ValueChanged += ClearSwitch_ValueChanged;
+            clearSwitch.On = false;
             HighlightDropdown.DropDownHeight = 200;
             HighlightDropdown.DisplayMemberPath = "Name";
             HighlightDropdown.IsAnimated = true;
@@ -60,6 +82,20 @@ namespace C1Input101
                 e.ItemView = GetYoutubeCell(FilterDropdown, e.Item as YouTubeVideo, e);
             };
             FilterDropdown.IsAnimated = true;
+            acmField.ToPickerWithValues(ACMItems, 0, (selectedIndex) =>
+            {
+                HighlightDropdown.AutoCompleteMode = (C1.iOS.Input.AutoCompleteMode)Enum.Parse(typeof(C1.iOS.Input.AutoCompleteMode), ACMItems[selectedIndex]);
+                CustomDropdown.AutoCompleteMode = (C1.iOS.Input.AutoCompleteMode)Enum.Parse(typeof(C1.iOS.Input.AutoCompleteMode), ACMItems[selectedIndex]);
+                FilterDropdown.AutoCompleteMode = (C1.iOS.Input.AutoCompleteMode)Enum.Parse(typeof(C1.iOS.Input.AutoCompleteMode), ACMItems[selectedIndex]);
+            });
+        }
+
+        private void ClearSwitch_ValueChanged(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+            HighlightDropdown.ShowClearButton = clearSwitch.On;
+            CustomDropdown.ShowClearButton = clearSwitch.On;
+            FilterDropdown.ShowClearButton = clearSwitch.On;
         }
 
         #region ** custom cell
@@ -154,7 +190,76 @@ namespace C1Input101
             // Release any cached data, images, etc that aren't in use.
         }
     }
+    public static class UITextFieldEx
+    {
+        public static void ToPickerWithValues(this UITextField textField, IList<string> values, int index, Action<int> action)
+        {
+            var toolBar = new UIToolbar(new CGRect(0, 0, 320, 44));
+            var doneButton = new UIBarButtonItem(UIBarButtonSystemItem.Done);
+            var flexibleSpace = new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace);
+            toolBar.SetItems(new UIBarButtonItem[] { flexibleSpace, doneButton }, true);
 
+            var model = new UIPickerViewStringArrayModel();
+            var picker = new UIPickerView();
+            picker.Model = model;
+            foreach (var displayValue in values)
+            {
+                model.Items.Add(displayValue.ToString());
+            }
+            picker.Select(index, 0, true);
+            textField.InputView = picker;
+            textField.InputAccessoryView = toolBar;
+            textField.Text = values[index].ToString();
+
+            doneButton.Clicked += (s, e) =>
+            {
+                var selectedIndex = (int)picker.SelectedRowInComponent(0);
+                textField.Text = values[selectedIndex].ToString();
+                textField.EndEditing(true);
+                action?.Invoke(selectedIndex);
+            };
+        }
+    }
+    internal class UIPickerViewStringArrayModel : UIPickerViewModel
+    {
+        public UIPickerViewStringArrayModel()
+        {
+            Items = new List<string>();
+        }
+
+        public List<string> Items { get; private set; }
+        public event EventHandler<SelectedItemEventArgs> SelectedItem;
+        public override nint GetComponentCount(UIPickerView picker)
+        {
+            return 1;
+        }
+
+        public override nint GetRowsInComponent(UIPickerView picker, nint component)
+        {
+            return Items.Count;
+        }
+
+        public override string GetTitle(UIPickerView picker, nint row, nint component)
+        {
+            return Items[(int)row];
+        }
+
+        public override void Selected(UIPickerView pickerView, nint row, nint component)
+        {
+            if (SelectedItem != null)
+                SelectedItem(this, new SelectedItemEventArgs((int)row));
+        }
+
+        internal class SelectedItemEventArgs : EventArgs
+        {
+
+            public SelectedItemEventArgs(int row)
+            {
+                Index = row;
+            }
+            public int Index { get; private set; }
+        }
+    }
 }
 
 

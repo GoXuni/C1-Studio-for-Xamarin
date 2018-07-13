@@ -14,7 +14,8 @@ namespace C1Weather
         {
             InitializeComponent();
             LicenseManager.Key = License.Key;
-            MainPage = new NavigationPage( new C1Weather.WeatherPage());
+            
+            MainPage = new Xamarin.Forms.NavigationPage(new C1Weather.WeatherPage()) { BarBackgroundColor = Color.FromHex("#3F51B5"), BarTextColor = Color.White };
         }
 
         protected override void OnStart()

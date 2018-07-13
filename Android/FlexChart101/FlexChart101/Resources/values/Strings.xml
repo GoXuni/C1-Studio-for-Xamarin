@@ -25,6 +25,7 @@
   <string name="customMarker">Line Marker</string>
   <string name="zoomingAndScrolling">Zooming And Scrolling</string>
   <string name="hitTest">Hit test</string>
+  <string name="histogram">Histogram Chart</string>
   <string name="multipleAxes">Multiple Axes</string>
   <string name="customPlotElements">Custom Plot Elements</string>
   <string name="snapshot">Export Image</string>
@@ -52,6 +53,7 @@
   <string name="scrollingDesc">Shows a chart with panning (scrolling) along the X axis</string>
   <string name="zoomingAndScrollingDesc">Shows stretch zoom-out and pinch zoom-in gestures</string>
   <string name="hitTestDesc">Demonstrates use of the FlexChart\'s HitTest method</string>
+  <string name="histogramDesc">Shows Histogram Chart.</string>
   <string name="multipleAxesDesc">Shows chart with multiple Y axes</string>
   <string name="customPlotElementsDesc">Shows how to fully customize plot elements</string>
   <string name="conditionalFormattingDesc">Shows conditional formatting by customizing plot elements</string>
@@ -234,14 +236,16 @@
   <string name="button2012">2012</string>
   <string name="permissionDenied">The permission is denied by user.</string>
   <string name="positive_button">OK</string>
+  <string name="BinWidth">BinWidth</string>
+  <string name="textBox">textBox</string>
 
   <string-array name="legend_spinner_values">
-    <item>None</item>
+    <item>Auto</item>
     <item>Left</item>
     <item>Top</item>
     <item>Right</item>
     <item>Bottom</item>
-    <item>Auto</item>
+    <item>None</item>
   </string-array>
 
   <string-array name="selection_spinner_values">

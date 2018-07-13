@@ -115,6 +115,9 @@
 /* Class = "UILabel"; text = "Inner radius:"; ObjectID = "gum-eA-br3"; */
 "gum-eA-br3.text" = "内側円の半径：";
 
+/* Class = "UILabel"; text = "BinWidth:"; ObjectID = "SmR-LO-CZA"; */
+"SmR-LO-CZA.text" = "ビンの幅：";
+
 /* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[1] = "Left"; ObjectID = "zoS-At-X9B"; */
 "zoS-At-X9B.segmentTitles[0]" = "左側(Left)";
 
@@ -158,6 +161,8 @@
 /* Class = "UINavigationItem"; title = "Data Labels"; ObjectID = "XsC-BQ-XP5"; */
 "XsC-BQ-XP5.title" = "円形チャートのデータラベル";
 
+/* Class = "UINavigationItem"; title = "Histogram"; ObjectID = "Qp2-Gc-INX"; */
+"Qp2-Gc-INX.title" = "ヒストグラム";
 
 /* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[1] = "Left"; ObjectID = "jqy-C5-EMh"; */
 "jqy-C5-EMh.segmentTitles[0]" = "左側(Left)";

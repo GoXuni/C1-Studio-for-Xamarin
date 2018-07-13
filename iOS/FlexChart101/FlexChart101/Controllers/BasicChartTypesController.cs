@@ -10,7 +10,7 @@ namespace FlexChart101
     {
         FlexChart chart;
 
-        string[] chartTypes = { NSBundle.MainBundle.LocalizedString("Column", ""), NSBundle.MainBundle.LocalizedString("Bar", ""), NSBundle.MainBundle.LocalizedString("Scatter", ""), NSBundle.MainBundle.LocalizedString("Line", ""), NSBundle.MainBundle.LocalizedString("LineSymbol", ""), NSBundle.MainBundle.LocalizedString("Area", "")};
+        string[] chartTypes = { NSBundle.MainBundle.LocalizedString("Column", ""), NSBundle.MainBundle.LocalizedString("Bar", ""), NSBundle.MainBundle.LocalizedString("Scatter", ""), NSBundle.MainBundle.LocalizedString("Line", ""), NSBundle.MainBundle.LocalizedString("LineSymbol", ""), NSBundle.MainBundle.LocalizedString("Area", ""),NSBundle.MainBundle.LocalizedString("Spline", ""),NSBundle.MainBundle.LocalizedString("SplineSymbols", ""),NSBundle.MainBundle.LocalizedString("SplineArea", "")};
 
         string[] chartStacking = { NSBundle.MainBundle.LocalizedString("None","") , NSBundle.MainBundle.LocalizedString("Stacked", ""), NSBundle.MainBundle.LocalizedString("Stacked100pc", "")};
 
@@ -71,6 +71,18 @@ namespace FlexChart101
                     else if (row == 5)
                     {
                         tk.chart.ChartType = ChartType.Area;
+                    }
+                    else if (row == 6)
+                    {
+                        tk.chart.ChartType = ChartType.Spline;
+                    }
+                    else if (row == 7)
+                    {
+                        tk.chart.ChartType = ChartType.SplineSymbols;
+                    }
+                    else if (row == 8)
+                    {
+                        tk.chart.ChartType = ChartType.SplineArea;
                     }
                 }
                 else if (component == 1)

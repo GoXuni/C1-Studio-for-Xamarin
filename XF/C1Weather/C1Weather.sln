@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Weather.Android", "C1Weather.Android\C1Weather.Android.csproj", "{F5CFDBE7-3B58-4E6D-8520-5003EF759F59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Weather.XF", "C1Weather.XF\C1Weather.XF.csproj", "{6A0C1CD2-E848-4391-95D8-81C252C91B75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1Weather.XF", "C1Weather.XF\C1Weather.XF.csproj", "{6A0C1CD2-E848-4391-95D8-81C252C91B75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1Weather.UWP", "C1Weather.UWP\C1Weather.UWP.csproj", "{E5F5CEDA-211E-41F4-8A72-DEEABD9E2C66}"
 EndProject

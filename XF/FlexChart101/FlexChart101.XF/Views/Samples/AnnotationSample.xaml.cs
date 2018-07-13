@@ -16,7 +16,7 @@ namespace FlexChart101
         {
             InitializeComponent();
 
-            Title = AppResources.GettingStartedTitle;
+            Title = AppResources.AnnotationTitle;
             flexChart.ItemsSource = new AnnotationViewModel().Data;
             flexChart.ChartType = ChartType.Line;
 			flexChart.BindingX = "X";

@@ -14,26 +14,26 @@
             <objects>
                 <tableViewController id="IxZ-xY-MOE" userLabel="Input101" customClass="MainSampleMenuTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1m2-oG-ouA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Nqk-Xe-0Pl" detailTextLabel="Hgq-EB-1Xo" style="IBUITableViewCellStyleSubtitle" id="beR-6T-4MF">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="beR-6T-4MF" id="Iic-8q-033">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nqk-Xe-0Pl">
-                                            <rect key="frame" x="20" y="4" width="34" height="21"/>
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hgq-EB-1Xo">
-                                            <rect key="frame" x="20" y="25" width="44" height="15"/>
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -63,7 +63,7 @@
                         <viewControllerLayoutGuide type="bottom" id="s1O-VV-Pt9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rbt-Q0-ZUX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUG-Ti-AjZ">
@@ -138,45 +138,70 @@
                         <viewControllerLayoutGuide type="bottom" id="hw2-L4-KUD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mlZ-we-Lhb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjA-gp-5b9">
-                                <rect key="frame" x="20" y="100" width="250" height="21"/>
+                                <rect key="frame" x="21" y="163" width="250" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Custom Drop-down" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66x-VZ-emT">
-                                <rect key="frame" x="20" y="190" width="250" height="21"/>
+                                <rect key="frame" x="21" y="253" width="250" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dynamic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnA-bt-njF">
-                                <rect key="frame" x="20" y="280" width="250" height="21"/>
+                                <rect key="frame" x="21" y="343" width="250" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TnB-SU-CpV" userLabel="HighlightDropdown" customClass="C1AutoComplete">
-                                <rect key="frame" x="20" y="140" width="250" height="30"/>
+                                <rect key="frame" x="21" y="203" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ec2-mS-FLK" userLabel="CustomDropdown" customClass="C1AutoComplete">
-                                <rect key="frame" x="20" y="230" width="250" height="30"/>
+                                <rect key="frame" x="21" y="293" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZs-An-0Sq" userLabel="FilterDropdown" customClass="C1AutoComplete">
-                                <rect key="frame" x="20" y="320" width="250" height="30"/>
+                                <rect key="frame" x="21" y="383" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AutoCompleteMode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="262">
+                                <rect key="frame" x="21" y="72" width="164" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShowClearButton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="263">
+                                <rect key="frame" x="214" y="72" width="140" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="264" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="303" y="108" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="265" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="21" y="109" width="164" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -185,6 +210,10 @@
                         <outlet property="CustomDropdown" destination="ec2-mS-FLK" id="gHC-pa-ASO"/>
                         <outlet property="FilterDropdown" destination="wZs-An-0Sq" id="YlC-pR-GUg"/>
                         <outlet property="HighlightDropdown" destination="TnB-SU-CpV" id="PwJ-Tl-6oQ"/>
+                        <outlet property="AutoCompleteMode" destination="262" id="name-outlet-262"/>
+                        <outlet property="ShowClearButton" destination="263" id="name-outlet-263"/>
+                        <outlet property="acmField" destination="265" id="name-outlet-265"/>
+                        <outlet property="clearSwitch" destination="264" id="name-outlet-264"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrH-Cr-qFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,7 +229,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gbk-Yd-ZqN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qMj-VJ-Ih4">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Editable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU0-w2-Fw2">
@@ -249,7 +278,7 @@
                         <viewControllerLayoutGuide type="bottom" id="R0L-a3-7ZX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gfg-9H-d0o">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eh1-ip-C1H" customClass="C1DropDown">
@@ -274,7 +303,7 @@
             <objects>
                 <navigationController id="gS8-pm-kc3" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IaD-Hx-crj">
-                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -286,28 +315,4 @@
             <point key="canvasLocation" x="-961" y="70"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Images/australia.png" width="48" height="48"/>
-        <image name="Images/bangladesh.png" width="48" height="48"/>
-        <image name="Images/brazil.png" width="48" height="48"/>
-        <image name="Images/calendar.png" width="164" height="164"/>
-        <image name="Images/canada.png" width="48" height="48"/>
-        <image name="Images/china.png" width="48" height="48"/>
-        <image name="Images/france.png" width="48" height="48"/>
-        <image name="Images/germany.png" width="48" height="48"/>
-        <image name="Images/india.png" width="48" height="48"/>
-        <image name="Images/input_autocomplete.png" width="164" height="164"/>
-        <image name="Images/input_combobox.png" width="164" height="164"/>
-        <image name="Images/input_dropdown.png" width="164" height="164"/>
-        <image name="Images/input_mask.png" width="164" height="164"/>
-        <image name="Images/japan.png" width="48" height="48"/>
-        <image name="Images/nepal.png" width="48" height="48"/>
-        <image name="Images/pakistan.png" width="48" height="48"/>
-        <image name="Images/srilanka.png" width="48" height="48"/>
-        <image name="input_autocomplete.png" width="164" height="164"/>
-        <image name="input_combobox.png" width="164" height="164"/>
-        <image name="input_dropdown.png" width="164" height="164"/>
-        <image name="input_mask.png" width="164" height="164"/>
-        <image name="Images/default.png" width="120" height="90"/>
-    </resources>
 </document>

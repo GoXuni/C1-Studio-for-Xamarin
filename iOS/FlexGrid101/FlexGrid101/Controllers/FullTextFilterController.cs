@@ -6,7 +6,9 @@ namespace FlexGrid101
 {
     public partial class FullTextFilterController : UIViewController
     {
-        public FullTextFilterController (IntPtr handle) : base (handle)
+        private FullTextFilterBehavior fullTextFilter;
+
+        public FullTextFilterController(IntPtr handle) : base(handle)
         {
         }
 
@@ -15,10 +17,22 @@ namespace FlexGrid101
             base.ViewDidLoad();
             var data = Customer.GetCustomerList(100);
             Grid.ItemsSource = data;
-            var fullTextFilter = new FullTextFilterBehavior();
+            fullTextFilter = new FullTextFilterBehavior();
             fullTextFilter.HighlightColor = UIColor.Blue;
             fullTextFilter.Attach(Grid);
             fullTextFilter.FilterEntry = Filter;
+            MatchCaseCheckBox.Checked += OnMatchCaseCheckBoxChecked;
+            MatchWholeWordCheckBox.Checked += OnMatchWholeWordCheckBoxChecked;
+        }
+
+        void OnMatchCaseCheckBoxChecked(object sender, EventArgs e)
+        {
+            fullTextFilter.MatchCase = MatchCaseCheckBox.IsChecked;
+        }
+
+        void OnMatchWholeWordCheckBoxChecked(object sender, EventArgs e)
+        {
+            fullTextFilter.MatchWholeWord = MatchWholeWordCheckBox.IsChecked;
         }
     }
 }

@@ -20,6 +20,12 @@ namespace FlexGrid101
                 if (Mode == GridDateTimeColumnMode.Date)
                 {
                     var datePicker = new DatePicker();
+                    if (Device.RuntimePlatform == Device.Android)
+                    {
+                        datePicker.FontSize = 14;//This is performed to match XF.Android Label.
+                    }
+                    datePicker.BackgroundColor = Grid.EditorBackgroundColor;
+                    datePicker.TextColor = Grid.EditorTextColor;
                     datePicker.Date = original;
                     if (Device.RuntimePlatform == Device.iOS)
                     {
@@ -43,6 +49,12 @@ namespace FlexGrid101
                 else
                 {
                     var timePicker = new TimePicker();
+                    if (Device.RuntimePlatform == Device.Android)
+                    {
+                        timePicker.FontSize = 14;//This is performed to match XF.Android Label.
+                    }
+                    timePicker.BackgroundColor = Grid.EditorBackgroundColor;
+                    timePicker.TextColor = Grid.EditorTextColor;
                     timePicker.Time = original.TimeOfDay;
                     if (Device.RuntimePlatform == Device.iOS)
                     {

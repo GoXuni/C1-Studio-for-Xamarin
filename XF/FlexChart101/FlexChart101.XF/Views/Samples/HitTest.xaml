@@ -22,7 +22,7 @@
         </Grid>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="90"/>
             </Grid.RowDefinitions>
             <StackLayout x:Name="stackHitTest" VerticalOptions="Fill">
                 <StackLayout Orientation="Horizontal">

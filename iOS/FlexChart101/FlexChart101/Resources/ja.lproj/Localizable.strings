@@ -59,6 +59,7 @@
 
 "Zones" = "ゾーン（領域)";
 
+"Histogram Chart" = "ヒストグラムチャート";
 
 // Samples Description
 
@@ -87,6 +88,8 @@
 "Shows conditional formatting by customizing plot elements" = "プロット要素に条件付きの書式を設定";
 
 "Shows how to fully customize plot elements" = "要素をカスタマイズする方法";
+
+"Shows Histogram Chart." = "ヒストグラムチャートを表示";
 
 "Shows the different selection modes" = "データを選択する各種モードの説明";
 

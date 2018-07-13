@@ -20,55 +20,61 @@ namespace C1Weather
 
             if (System.Globalization.CultureInfo.CurrentCulture.ToString() == "en-US")
             {
-                url = string.Format("http://api.openweathermap.org/data/2.5/forecast?zip={0}&units=imperial&lang=en" + appId, location);
+                url = string.Format("http://api.openweathermap.org/data/2.5/forecast?{0}&units=imperial&lang=en" + appId, location);
             }
             else if (System.Globalization.CultureInfo.CurrentCulture.ToString() == "ja-JP")
             {
                 if (location.Contains(","))
                 {
-                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?zip={0}&units=metric&lang=ja" + appId, location);
+                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?{0}&units=metric&lang=ja" + appId, location);
                 }
                 else
                 {
-                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?zip={0},jp&units=metric&lang=ja" + appId, location);
+                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?{0},jp&units=metric&lang=ja" + appId, location);
                 }
             }
             else if (System.Globalization.CultureInfo.CurrentCulture.ToString() == "zh-CHS")
             {
                 if (location.Contains(","))
                 {
-                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?zip={0}&units=metric&lang=zh_cn" + appId, location);
+                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?{0}&units=metric&lang=zh_cn" + appId, location);
                 }
                 else
                 {
-                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?zip={0},zh&units=metric&lang=zh_cn" + appId, location);
+                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?{0},zh&units=metric&lang=zh_cn" + appId, location);
                 }
             }
             else if (System.Globalization.CultureInfo.CurrentCulture.ToString() == "ko-KR")
             {
                 if (location.Contains(","))
                 {
-                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?zip={0}&units=metric&lang=kr" + appId, location);
+                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?{0}&units=metric&lang=kr" + appId, location);
                 }
                 else
                 {
-                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?zip={0},ko&units=metric&lang=kr" + appId, location);
+                    url = string.Format("http://api.openweathermap.org/data/2.5/forecast?{0},ko&units=metric&lang=kr" + appId, location);
                 }
             }
             else
             {
-                url = string.Format("http://api.openweathermap.org/data/2.5/forecast?zip={0}&units=metric" + appId, location);
+                url = string.Format("http://api.openweathermap.org/data/2.5/forecast?{0}&units=metric" + appId, location);
             }
             return url;
         }
-        public async Task<Tuple<ObservableCollection<WeatherModel>, String>> GetResult(string zip)
+        public async Task<Tuple<ObservableCollection<WeatherModel>, String>> GetResultZip(string zip)
         {
-            zip = zip.Replace(" ", String.Empty);
-            if(zip == null)
-            {
-                zip = "15232";
-            }
+            //zip = zip.Replace(" ", String.Empty);
+            //if(zip == null)
+            //{
+            //    zip = "15232";
+            //}
+            zip = "zip=" + zip;
             String url = GetUrlStringForSupportedCountry(zip);
+            return await GetWeather(url);
+        }
+        public async Task<Tuple<ObservableCollection<WeatherModel>, String>> GetResultGeo(string geo)
+        {
+            String url = GetUrlStringForSupportedCountry(geo);
             return await GetWeather(url);
         }
         private static async Task<Tuple<ObservableCollection<WeatherModel>, String>> GetWeather(string url)

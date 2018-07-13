@@ -7,7 +7,7 @@
              ios:Page.UseSafeArea="true"
              >
     <StackLayout VerticalOptions="FillAndExpand" Margin="10">
-        <c1:FlexChart x:Name="flexChart" VerticalOptions="FillAndExpand" Header="Student Performance" ChartType="Scatter" BindingX="Number">
+        <c1:FlexChart x:Name="flexChart" VerticalOptions="FillAndExpand" Header="Student Performance" ChartType="Scatter">
             <c1:FlexChart.HeaderStyle>
                 <c1:ChartStyle FontSize="18"/>
             </c1:FlexChart.HeaderStyle>

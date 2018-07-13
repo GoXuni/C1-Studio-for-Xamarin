@@ -65,7 +65,7 @@ namespace FlexChart101
                 this.flexChart.Series.Add(series);
             }
 
-            this.flexChart.Series.Add(new ChartSeries() { Chart = this.flexChart, SeriesName = "raw score", Binding = "Score" });
+            this.flexChart.Series.Add(new ChartSeries() { Chart = this.flexChart, SeriesName = "raw score", Binding = "Score", BindingX="Number"});
 
             for (var i = -2; i <= 2; i++)
             {

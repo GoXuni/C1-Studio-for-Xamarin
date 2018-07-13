@@ -6,10 +6,11 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
+using Plugin.Permissions;
 using XAM = Xamarin.Forms;
 
 using Xamarin.Forms.Platform.Android;
+using Plugin.CurrentActivity;
 
 namespace C1Weather.Android
 {
@@ -19,11 +20,16 @@ namespace C1Weather.Android
         protected override void OnCreate(Bundle bundle)
         {
             FormsAppCompatActivity.ToolbarResource = Android.Resource.Layout.Toolbar;
-
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            CrossCurrentActivity.Current.Init(this, bundle);
             LoadApplication(new App());
+        }
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+        {
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

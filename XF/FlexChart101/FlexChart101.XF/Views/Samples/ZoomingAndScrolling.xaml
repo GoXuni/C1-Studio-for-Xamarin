@@ -18,7 +18,7 @@
         <ColumnDefinition Width="*"/>
       </Grid.ColumnDefinitions>
       <Label x:Name="lblZoomMode" Text="Zoom Mode" Grid.Row="0" Grid.Column="0" />
-      <Picker x:Name="pickerZoomMode" Grid.Row="1" Grid.Column="0" Title="Zoom Mode" HorizontalOptions="FillAndExpand" SelectedIndexChanged = "pickerZoomMode_SelectedIndexChanged"/>
+      <Picker x:Name="pickerZoomMode" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" SelectedIndexChanged = "pickerZoomMode_SelectedIndexChanged"/>
     </Grid>
     <Grid  VerticalOptions="FillAndExpand">
     <c1:FlexChart x:Name="flexChart"

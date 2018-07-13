@@ -69,7 +69,7 @@
   <string name="Weekday">平日</string>
   <string name="Weekend">週末</string>
 
-  <string-array name="SlectionModeTable">
+  <string-array name="SelectionModeTable">
     <item>None（なし）</item>
     <item>Cell（セル）</item>
     <item>CellRange（セル範囲）</item>

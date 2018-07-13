@@ -96,6 +96,12 @@
         <Image>Images/chart_selection.png</Image>
         <StoryboardID>Hit Test</StoryboardID>
     </Sample>
+     <Sample>
+        <Title>Histogram Chart</Title>
+        <Description>Shows Histogram Chart.</Description>
+        <Image>Images/histogram.png</Image>
+        <StoryboardID>Histogram</StoryboardID>
+    </Sample>
     <Sample>
         <Title>Theming</Title>
         <Description>Shows the built-in palettes.</Description>

@@ -104,7 +104,7 @@ namespace FlexChart101
 
             Polygon polygon = new Polygon() { Content = "polygonAnno", Attachment = AnnotationAttachment.Absolute };
             polygon.Points = CreatePoints();
-            polygon.AnnotationStyle = new ChartStyle() { Fill = UIColor.Red,StrokeThickness=3, Stroke = UIColor.FromRGBA(0.98f, 0.06f, 0.05f, 1.0f), FontFamily = UIFont.BoldSystemFontOfSize(10) };
+            polygon.AnnotationStyle = new ChartStyle() { Fill = UIColor.Red,StrokeThickness=3, Stroke = UIColor.FromRGBA(0.62f, 0.13f, 0.21f, 1.0f), FontFamily = UIFont.BoldSystemFontOfSize(10) };
 
             Line line = new Line() { Content = "Absolute",Start=new CGPoint(50,200),End=new CGPoint(300,350), Attachment = AnnotationAttachment.Absolute };
             line.AnnotationStyle = new ChartStyle() {StrokeThickness=4,FontSize=10,FontAttributes=CTFontSymbolicTraits.Bold, Stroke = UIColor.FromRGBA(0.20f, 0.81f, 0.82f, 1.0f), FontFamily = UIFont.BoldSystemFontOfSize(10) };

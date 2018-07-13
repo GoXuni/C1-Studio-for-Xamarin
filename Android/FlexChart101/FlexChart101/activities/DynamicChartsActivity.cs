@@ -42,6 +42,7 @@ namespace FlexChart101
             // initializing widget
             mChart = this.FindViewById<FlexChart>(Resource.Id.flexchart);
             mChart.LegendPosition = ChartPositionType.Bottom;
+            mChart.ToolTip = null;
             GetList();
             Chartinitialization.InitialDefaultChart(mChart, mList);
            

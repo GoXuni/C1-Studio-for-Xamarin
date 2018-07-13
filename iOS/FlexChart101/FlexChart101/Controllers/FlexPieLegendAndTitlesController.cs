@@ -23,13 +23,13 @@ namespace FlexChart101
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
 
-            legendModeSelector.SelectedSegment = 1;
+            legendModeSelector.SelectedSegment = 4;
 
             pieChart = new FlexPie();
             pieChart.Binding = "Value";
             pieChart.BindingName = "Name";
             pieChart.ItemsSource = PieChartData.DemoData();
-            pieChart.LegendPosition = ChartPositionType.Right;
+            pieChart.LegendPosition = ChartPositionType.Auto;
             pieChart.Header = headerField.Text;
             pieChart.HeaderStyle = new ChartStyle { Stroke = new UIColor(0.502f, 0.016f, 0.302f, 1), FontFamily = UIFont.SystemFontOfSize(24, UIFontWeight.Bold)};
             pieChart.Footer = footerField.Text;

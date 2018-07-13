@@ -19,10 +19,19 @@ namespace C1Input101
     [Activity(Label = "@string/autocomplete", Icon = "@drawable/icon")]
     public class AutoCompleteActivity : AppCompatActivity
     {
+        private Spinner acmSpinner;
+        private C1AutoComplete highLightAutoComplete;
+        private C1AutoComplete customAutoComplete;
+        private C1AutoComplete filterAutoComplete;
+        private Switch clearSwitch;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_autocomplete);
+
+            acmSpinner = (Spinner)FindViewById(Resource.Id.acm_Spinner);
+
+            clearSwitch = (Switch)FindViewById(Resource.Id.clear_switch);
 
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
@@ -30,11 +39,11 @@ namespace C1Input101
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             SupportActionBar.SetHomeButtonEnabled(true);
 
-            var highLightAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_highlight);
+            highLightAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_highlight);
             highLightAutoComplete.ItemsSource = Country.GetDemoDataList();
             highLightAutoComplete.DisplayMemberPath = "Name";
 
-            var customAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_custom);
+            customAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_custom);
             customAutoComplete.ItemsSource = CountryWithFlag.GetDemoDataList();
             customAutoComplete.DisplayMemberPath = "Name";
             customAutoComplete.ItemLoading += (object sender, ComboBoxItemLoadingEventArgs e) =>
@@ -43,7 +52,7 @@ namespace C1Input101
             };
 
 
-            var filterAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_filter);
+            filterAutoComplete = (C1AutoComplete)this.FindViewById(Resource.Id.autocomplete_filter);
             filterAutoComplete.DisplayMemberPath = "Title";
             filterAutoComplete.Filtering += async (sender, e) =>
             {
@@ -64,6 +73,31 @@ namespace C1Input101
             {
                 CreateYouTubeItemView(e.Item as YouTubeVideo, e);
             };
+
+            ArrayAdapter adapter1 = ArrayAdapter.CreateFromResource(this, Resource.Array.acmSpinnerValues, Android.Resource.Layout.SimpleSpinnerItem);
+            // Specify the layout to use when the list of choices appears
+            adapter1.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            // Apply the adapter to the spinner
+            acmSpinner.Adapter = adapter1;
+            acmSpinner.SetSelection(1);
+            acmSpinner.ItemSelected += AcmSpinner_ItemSelected;
+
+            clearSwitch.Checked = false;
+            clearSwitch.CheckedChange += ClearSwitch_CheckedChange;
+        }
+
+        private void ClearSwitch_CheckedChange(object sender, CompoundButton.CheckedChangeEventArgs e)
+        {
+            this.highLightAutoComplete.ShowClearButton = e.IsChecked;
+            this.customAutoComplete.ShowClearButton = e.IsChecked;
+            this.filterAutoComplete.ShowClearButton = e.IsChecked;
+        }
+
+        private void AcmSpinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            this.highLightAutoComplete.AutoCompleteMode = (AutoCompleteMode)Enum.Parse(typeof(AutoCompleteMode), this.acmSpinner.SelectedItem.ToString());
+            this.customAutoComplete.AutoCompleteMode = (AutoCompleteMode)Enum.Parse(typeof(AutoCompleteMode), this.acmSpinner.SelectedItem.ToString());
+            this.filterAutoComplete.AutoCompleteMode = (AutoCompleteMode)Enum.Parse(typeof(AutoCompleteMode), this.acmSpinner.SelectedItem.ToString());
         }
 
         private void CreateItemView(CountryWithFlag item, ComboBoxItemLoadingEventArgs e)

@@ -28,7 +28,7 @@
             <Picker x:Name="pickerChartType" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" SelectedIndexChanged = "pickerChartType_SelectedIndexChanged" />
             <Picker x:Name="pickerStackType" Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" SelectedIndexChanged="pickerStackType_SelectedIndexChanged" />
             <Picker x:Name="pickerAnimationMode" Grid.Row="1" Grid.Column="2" HorizontalOptions="FillAndExpand" SelectedIndexChanged="pickerAnimationMode_SelectedIndexChanged" />
-            <Switch x:Name="toggleRotated" Grid.Row="1" Grid.Column="3" BindingContext="{x:Reference flexChart}" IsToggled="{Binding Rotated,Mode=OneWayToSource}" />
+            <Switch x:Name="toggleRotated" Grid.Row="1" Grid.Column="3" BindingContext="{x:Reference flexChart}" IsToggled="{Binding Rotated,Mode=OneWayToSource}"  Toggled="Handle_Toggled"/>
         </Grid>
         <Grid  VerticalOptions="FillAndExpand">
             <c1:FlexChart x:Name="flexChart" Header="2017 Performance" BindingX="Name" VerticalOptions="FillAndExpand">

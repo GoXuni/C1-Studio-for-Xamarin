@@ -1,6 +1,6 @@
 ﻿// WARNING
 //
-// This file has been generated automatically by Xamarin Studio from the outlets and
+// This file has been generated automatically by Visual Studio from the outlets and
 // actions declared in your storyboard file.
 // Manual changes to this file will not be maintained.
 //
@@ -28,16 +28,42 @@ namespace C1Input101
         [Outlet]
         C1.iOS.Input.C1AutoComplete HighlightDropdown { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField acmField { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel AutoCompleteMode { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UISwitch clearSwitch { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ShowClearButton { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (acmField != null) {
+                acmField.Dispose ();
+                acmField = null;
+            }
+
+            if (AutoCompleteMode != null) {
+                AutoCompleteMode.Dispose ();
+                AutoCompleteMode = null;
+            }
+
+            if (clearSwitch != null) {
+                clearSwitch.Dispose ();
+                clearSwitch = null;
+            }
+
             if (CustomDropdown != null) {
                 CustomDropdown.Dispose ();
                 CustomDropdown = null;
-            }
-
-            if (DelayDropdown != null) {
-                DelayDropdown.Dispose ();
-                DelayDropdown = null;
             }
 
             if (FilterDropdown != null) {
@@ -48,6 +74,11 @@ namespace C1Input101
             if (HighlightDropdown != null) {
                 HighlightDropdown.Dispose ();
                 HighlightDropdown = null;
+            }
+
+            if (ShowClearButton != null) {
+                ShowClearButton.Dispose ();
+                ShowClearButton = null;
             }
         }
     }

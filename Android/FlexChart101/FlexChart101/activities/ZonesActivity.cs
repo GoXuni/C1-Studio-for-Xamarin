@@ -106,6 +106,7 @@ namespace FlexChart101
             scoreSeries.Chart = mChart;
             scoreSeries.SeriesName = "raw score";
             scoreSeries.Binding = "Score";
+            scoreSeries.BindingX = "Number";
             mChart.Series.Add(scoreSeries);
 
             for (var i = -2; i <= 2; i++)

@@ -403,7 +403,7 @@ namespace FlexGrid101.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Groups and aggregates a collection of videos..
+        ///   Looks up a localized string similar to Groups and aggregates a collection of data..
         /// </summary>
         public static string GroupingDescription {
             get {
@@ -417,6 +417,24 @@ namespace FlexGrid101.Resources {
         public static string GroupingTitle {
             get {
                 return ResourceManager.GetString("GroupingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Match Case.
+        /// </summary>
+        public static string MatchCaseLabel {
+            get {
+                return ResourceManager.GetString("MatchCaseLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Match Whole Word.
+        /// </summary>
+        public static string MatchWholeWordLabel {
+            get {
+                return ResourceManager.GetString("MatchWholeWordLabel", resourceCulture);
             }
         }
         

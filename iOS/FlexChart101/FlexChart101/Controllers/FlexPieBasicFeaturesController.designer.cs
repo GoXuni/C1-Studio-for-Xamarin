@@ -1,81 +1,83 @@
-﻿// WARNING
+// WARNING
 //
-// This file has been generated automatically by Xamarin Studio from the outlets and
-// actions declared in your storyboard file.
-// Manual changes to this file will not be maintained.
+// This file has been generated automatically by Visual Studio to store outlets and
+// actions made in the UI designer. If it is removed, they will be lost.
+// Manual changes to this file may not be handled correctly.
 //
 using Foundation;
-using System;
 using System.CodeDom.Compiler;
-using UIKit;
 
 namespace FlexChart101
 {
-    [Register ("FlexPieBasicFeaturesController")]
-    partial class FlexPieBasicFeaturesController
-    {
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel innerRadiusLabel { get; set; }
+	[Register ("FlexPieBasicFeaturesController")]
+	partial class FlexPieBasicFeaturesController
+	{
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIKit.UILabel innerRadiusLabel { get; set; }
 
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UISlider offsetSlider { get; set; }
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIKit.UISlider offsetSlider { get; set; }
 
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UISwitch reversedSwitch { get; set; }
+		[Outlet]
+		C1.iOS.Chart.FlexPie pieChart { get; set; }
 
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UISlider startAngleSlider { get; set; }
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIKit.UISwitch reversedSwitch { get; set; }
 
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIStepper stepper { get; set; }
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIKit.UISlider startAngleSlider { get; set; }
 
-        [Action ("offsetChanged:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void offsetChanged (UIKit.UISlider sender);
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIKit.UIStepper stepper { get; set; }
 
-        [Action ("startAngleChanged:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void startAngleChanged (UIKit.UISlider sender);
+		[Action ("offsetChanged:")]
+		partial void offsetChanged (UIKit.UISlider sender);
 
-        [Action ("switchValueChanged:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void switchValueChanged (UIKit.UISwitch sender);
+		[Action ("startAngleChanged:")]
+		partial void startAngleChanged (UIKit.UISlider sender);
 
-        [Action ("valueChanged:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void valueChanged (UIKit.UIStepper sender);
+		[Action ("switchValueChanged:")]
+		partial void switchValueChanged (UIKit.UISwitch sender);
 
-        void ReleaseDesignerOutlets ()
-        {
-            if (innerRadiusLabel != null) {
-                innerRadiusLabel.Dispose ();
-                innerRadiusLabel = null;
-            }
+		[Action ("valueChanged:")]
+		partial void valueChanged (UIKit.UIStepper sender);
+		
+		void ReleaseDesignerOutlets ()
+		{
+			if (pieChart != null) {
+				pieChart.Dispose ();
+				pieChart = null;
+			}
 
-            if (offsetSlider != null) {
-                offsetSlider.Dispose ();
-                offsetSlider = null;
-            }
+			if (innerRadiusLabel != null) {
+				innerRadiusLabel.Dispose ();
+				innerRadiusLabel = null;
+			}
 
-            if (reversedSwitch != null) {
-                reversedSwitch.Dispose ();
-                reversedSwitch = null;
-            }
+			if (offsetSlider != null) {
+				offsetSlider.Dispose ();
+				offsetSlider = null;
+			}
 
-            if (startAngleSlider != null) {
-                startAngleSlider.Dispose ();
-                startAngleSlider = null;
-            }
+			if (reversedSwitch != null) {
+				reversedSwitch.Dispose ();
+				reversedSwitch = null;
+			}
 
-            if (stepper != null) {
-                stepper.Dispose ();
-                stepper = null;
-            }
-        }
-    }
+			if (startAngleSlider != null) {
+				startAngleSlider.Dispose ();
+				startAngleSlider = null;
+			}
+
+			if (stepper != null) {
+				stepper.Dispose ();
+				stepper = null;
+			}
+		}
+	}
 }

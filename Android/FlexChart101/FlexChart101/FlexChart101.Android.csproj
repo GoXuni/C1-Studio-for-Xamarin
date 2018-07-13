@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -57,22 +57,23 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Android.Calendar">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Chart">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Core">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.0.20181.288</Version>
+      <Version>3.0.20182.298</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="27.0.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\flexpie\AnimationActivity.cs" />
+    <Compile Include="Activities\HistogramActivity.cs" />
     <Compile Include="Activities\UpdateAnimationActivity.cs" />
     <Compile Include="Activities\LoadAnimationActivity.cs" />
     <Compile Include="Activities\BasicChartTypesActivity.cs" />
@@ -153,7 +154,9 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\flexpie_activity_data_labels.axml" />
     <AndroidResource Include="Resources\layout\flexpie_activity_getting_started.axml" />
-    <AndroidResource Include="Resources\layout\flexpie_activity_legend_and_titles.axml" />
+    <AndroidResource Include="Resources\layout\flexpie_activity_legend_and_titles.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\flexpie_activity_selection.axml" />
     <AndroidResource Include="Resources\layout\flexpie_activity_theming.axml" />
     <AndroidResource Include="Resources\layout\activity_snapshot.axml" />
@@ -176,6 +179,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\activity_update_animation.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_histogram.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -344,6 +350,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\histogram.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -64,7 +64,6 @@ namespace FlexChart101
             {
                 PrepareBasicChart();
             }
-            
         }
 
         void pickerStackType_SelectedIndexChanged(object sender, EventArgs e)
@@ -78,8 +77,29 @@ namespace FlexChart101
             this.flexChart.AnimationMode = mode;
         }
 
+        void Handle_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)
+        {
+            if(flexChart.Rotated)
+            {
+                if(flexChart.ChartType == ChartType.Candlestick || flexChart.ChartType == ChartType.HighLowOpenClose)
+                {
+                    this.flexChart.AxisY.Format = "MM/dd/yyyy";
+                }
+                this.flexChart.AxisX.Format = "0";
+            }
+            else
+            {
+                if (flexChart.ChartType == ChartType.Candlestick || flexChart.ChartType == ChartType.HighLowOpenClose)
+                {
+                    this.flexChart.AxisY.Format = "0";
+                    this.flexChart.AxisX.Format = "MM/dd/yyyy";
+                }
+            }
+        }
+
         private void PrepareBasicChart()
         {
+            this.flexChart.BindingX = "Name";
             ChartSeries sales = new ChartSeries();
             sales.SeriesName = "Sales";
             sales.Binding = "Sales";
@@ -99,6 +119,7 @@ namespace FlexChart101
         }
         private void PrepareBubbleChart()
         {
+            this.flexChart.BindingX = "Name";
             ChartSeries sales = new ChartSeries();
             sales.SeriesName = "Sales";
             sales.Binding = "Sales,Downloads";

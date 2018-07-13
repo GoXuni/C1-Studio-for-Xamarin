@@ -25,4 +25,14 @@
   <string name="delay">Delay</string>
   <string name="custom">Custom Drop-down</string>
   <string name="filter">Dynamic</string>
+  <string name="AutoCompleteMode">AutoCompleteMode</string>
+  <string name="ShowClearButton">ShowClearButton</string>
+
+  <string-array name="acmSpinnerValues">
+    <item>StartsWith</item>
+    <item>Contains</item>
+    <item>EndsWith</item>
+    <item>MatchCase</item>
+    <item>MatchWholeWord</item>
+  </string-array>
 </resources>

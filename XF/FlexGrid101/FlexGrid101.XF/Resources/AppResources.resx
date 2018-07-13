@@ -181,7 +181,7 @@
     <value>Getting Started</value>
   </data>
   <data name="GroupingDescription" xml:space="preserve">
-    <value>Groups and aggregates a collection of videos.</value>
+    <value>Groups and aggregates a collection of data.</value>
   </data>
   <data name="GroupingTitle" xml:space="preserve">
     <value>Grouping</value>
@@ -327,5 +327,11 @@
   </data>
   <data name="NewRowPlaceholder" xml:space="preserve">
     <value>Click here to add a new row</value>
+  </data>
+  <data name="MatchCaseLabel" xml:space="preserve">
+    <value>Match Case</value>
+  </data>
+  <data name="MatchWholeWordLabel" xml:space="preserve">
+    <value>Match Whole Word</value>
   </data>
 </root>

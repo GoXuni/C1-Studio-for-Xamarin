@@ -164,13 +164,14 @@ namespace FlexChart101
 			UIView view = new UIView(new CGRect(0, 0, 110, 70));
 			xLabel = new UILabel(new CGRect(5, 5 , 110, 20));
 			view.Add(xLabel);
-            view.BackgroundColor = UIColor.LightGray;
+            view.BackgroundColor = UIColor.FromRGBA(0.53f, 0.53f, 0.53f, 1.00f);
 			for (int index = 0; index < chart.Series.Count; index++)
 			{
 				var series = chart.Series[index];
 				var fill = ((IChart)chart).GetColor(index);
 				UILabel yLabel = new UILabel(new CGRect(5, 25 + 20*index, 110, 20));
 				yLabels.Add(yLabel);
+                yLabel.TextColor = index == 0 ? UIColor.FromRGBA(0.53f, 0.67f, 0.78f, 1.00f) : UIColor.FromRGBA(0.89f, 0.66f, 0.38f, 1.00f);
 				view.Add(yLabel);
 			}
 			lineMarker.Content = view;
@@ -194,7 +195,6 @@ namespace FlexChart101
 					string content = string.Format("{0} = {1}", series.SeriesName, string.Format("{0:f0}", value));
 					UILabel yLabel = yLabels[index];
 					yLabel.Text = content;
-
 				}
 			}
 		}
