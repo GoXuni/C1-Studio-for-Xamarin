@@ -40,8 +40,17 @@ namespace C1Calendar101
         {
             await Calendar.ChangeViewModeAsync(CalendarViewMode.Month, DateTime.Today);
             Calendar.SelectedDate = DateTime.Today;
+        }     
+        public override void DidReceiveMemoryWarning()
+        {
+            Calendar.RemoveFromSuperview();
+            HeaderLabel.RemoveFromSuperview();
+            TodayButton.RemoveFromSuperview();
+            ViewModePicker.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+            base.DidReceiveMemoryWarning();
         }
-
+       
         private void OnViewModeChanged(object sender, EventArgs e)
         {
             switch (Calendar.ViewMode)
@@ -105,5 +114,6 @@ namespace C1Calendar101
                 _selected(row);
             }
         }
+
     }
 }

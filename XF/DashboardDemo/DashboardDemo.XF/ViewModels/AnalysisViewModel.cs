@@ -181,12 +181,12 @@ namespace DashboardDemo.ViewModels
                 {
                     if (region.IsSelected)
                     {
-                        filterExpressions.Add(new FilterUnaryExpression("Region", FilterOperation.EqualText, region.RegionName));
+                        filterExpressions.Add(new FilterOperationExpression("Region", FilterOperation.EqualText, region.RegionName));
                     }
                 }
                 if (filterExpressions.Count < 1)
                 {
-                    filterExpressions.Add(new FilterUnaryExpression("Region", FilterOperation.EqualText, ""));
+                    filterExpressions.Add(new FilterOperationExpression("Region", FilterOperation.EqualText, ""));
                 }
                 var feRegion = FilterExpression.Combine(FilterCombination.Or, filterExpressions.ToArray());
 
@@ -196,12 +196,12 @@ namespace DashboardDemo.ViewModels
                 {
                     if (product.IsSelected)
                     {
-                        filterExpressions.Add(new FilterUnaryExpression("Product", FilterOperation.EqualText, product.ProductName));
+                        filterExpressions.Add(new FilterOperationExpression("Product", FilterOperation.EqualText, product.ProductName));
                     }
                 }
                 if (filterExpressions.Count < 1)
                 {
-                    filterExpressions.Add(new FilterUnaryExpression("Product", FilterOperation.EqualText, ""));
+                    filterExpressions.Add(new FilterOperationExpression("Product", FilterOperation.EqualText, ""));
                 }
                 var feProduct = FilterExpression.Combine(FilterCombination.Or, filterExpressions.ToArray());
 

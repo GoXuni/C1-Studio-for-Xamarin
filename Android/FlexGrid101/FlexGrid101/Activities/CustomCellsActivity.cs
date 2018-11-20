@@ -1,11 +1,10 @@
-
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Views;
-using C1.Android.Grid;
-using C1.Android.Gauge;
 using Android.Support.V7.App;
+using Android.Views;
+using C1.Android.Gauge;
+using C1.Android.Grid;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101

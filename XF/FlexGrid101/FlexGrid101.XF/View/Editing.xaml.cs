@@ -14,7 +14,6 @@ namespace FlexGrid101
 
             var data = Customer.GetCustomerList(100);
             grid.ItemsSource = data;
-            grid.HeadersVisibility = GridHeadersVisibility.All;
             grid.SelectionChanged += grid_SelectionChanged;
             grid.CellDoubleTapped += OnCellDoubleTapped;
             grid.IsReadOnly = true;

@@ -435,4 +435,16 @@
   <data name="BinWidth" xml:space="preserve">
     <value>BinWidth</value>
   </data>
+  <data name="CustomPlotElementsScrollingDescription" xml:space="preserve">
+    <value>Shows a scrolling custom plot elements sample.</value>
+  </data>
+  <data name="CustomPlotElementsScrollingTitle" xml:space="preserve">
+    <value>Custom Plot Elements Scrolling</value>
+  </data>
+  <data name="TreeMapDescription" xml:space="preserve">
+    <value>Shows the mainly function of tree map control.</value>
+  </data>
+  <data name="TreeMapTitle" xml:space="preserve">
+    <value>Tree Map</value>
+  </data>
 </root>

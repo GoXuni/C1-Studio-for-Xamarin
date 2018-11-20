@@ -3,6 +3,7 @@ using System;
 using System.Linq;
 using Xamarin.Forms;
 using C1.Xamarin.Forms.Grid;
+using C1.Xamarin.Forms.Core;
 
 namespace FlexGrid101
 {
@@ -15,7 +16,8 @@ namespace FlexGrid101
             Title = AppResources.CustomMergingTitle;
             grid.SelectionChanged += Grid_SelectionChanged;
             grid.MinColumnWidth = 85;
-            if (C1.Xamarin.Forms.Core.ColorEx.IsDarkTheme)
+            
+            if (C1ThemeInfo.ApplicationTheme.IsDark)
                 imgTV.Source = ImageSource.FromResource("FlexGrid101.Images.retro_TV_filled-50_dark.png", typeof(App));
             else
                 imgTV.Source = ImageSource.FromResource("FlexGrid101.Images.retro_TV_filled-50_light.png", typeof(App));
@@ -23,11 +25,6 @@ namespace FlexGrid101
             PopulateGrid();
 
         }
-
-        //protected override void OnAppearing()
-        //{
-        //    grid.AutoSizeColumn(0, true);
-        //}
 
         private void PopulateGrid()
         {
@@ -118,6 +115,8 @@ namespace FlexGrid101
 
         private void Grid_SelectionChanged(object sender, GridCellRangeEventArgs e)
         {
+            if (e.CellRange == null)
+                return;
 
             string selectedText = grid[e.CellRange.Row, e.CellRange.Column].ToString();
             labelShowName.Text = selectedText;

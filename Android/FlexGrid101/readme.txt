@@ -23,3 +23,5 @@ Shows the following samples
 	- OnDemand
 	- CustomAppearance
 	- New Row
+	- CustomSortIcon
+	- CheckList

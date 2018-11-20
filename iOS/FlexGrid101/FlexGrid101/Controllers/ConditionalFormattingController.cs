@@ -14,22 +14,26 @@ namespace FlexGrid101
         {
             base.ViewDidLoad();
 
-            Grid.Columns.Add(new GridColumn { Binding = "Id", Width = new GridLength(100) });
-            Grid.Columns.Add(new GridColumn { Binding = "FirstName" });
-            Grid.Columns.Add(new GridColumn { Binding = "LastName" });
-            Grid.Columns.Add(new GridColumn { Binding = "OrderTotal", Format = "C2" });
-            Grid.Columns.Add(new GridColumn { Binding = "OrderCount", Format = "N1" });
-            Grid.Columns.Add(new GridColumn { Binding = "CountryId", Header = "Country" });
-            Grid.Columns.Add(new GridDateTimeColumn { Binding = "LastOrderDate", Format = "d", Mode = GridDateTimeColumnMode.Date });
-            Grid.Columns.Add(new GridDateTimeColumn { Binding = "LastOrderDate", Header = "Last Order Time", Format = "t", Mode = GridDateTimeColumnMode.Time });
+            Grid.Columns.Add(new GridColumn { Binding = "FirstName", MinWidth = 110, Width = GridLength.Star });
+            Grid.Columns.Add(new GridColumn { Binding = "LastName", MinWidth = 110, Width = GridLength.Star });
+            Grid.Columns.Add(new GridColumn { Binding = "OrderTotal", Format = "C2", MinWidth = 110, Width = GridLength.Star });
+            Grid.Columns.Add(new GridColumn { Binding = "OrderCount", Format = "N1", MinWidth = 110, Width = GridLength.Star });
+            Grid.Columns.Add(new GridColumn { Binding = "CountryId", Header = "Country", MinWidth = 110, Width = GridLength.Star });
+            Grid.Columns.Add(new GridDateTimeColumn { Binding = "LastOrderDate", Format = "d", Mode = GridDateTimeColumnMode.Date, MinWidth = 110, Width = GridLength.Star });
+            Grid.Columns.Add(new GridDateTimeColumn { Binding = "LastOrderDate", Header = "Last Order Time", Format = "t", Mode = GridDateTimeColumnMode.Time, MinWidth = 110, Width = GridLength.Star });
 
             var data = Customer.GetCustomerList(100);
             Grid.ItemsSource = data;
-            Grid.Columns[0].IsVisible = false;
-            Grid.Columns[5].DataMap = new GridDataMap() { ItemsSource = Customer.GetCountries(), DisplayMemberPath = "Value", SelectedValuePath = "Key" };
+            Grid.Columns["CountryId"].DataMap = new GridDataMap() { ItemsSource = Customer.GetCountries(), DisplayMemberPath = "Value", SelectedValuePath = "Key" };
 
             Grid.CellFactory = new MyCellFactory();
 
+        }
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
         }
     }
 
@@ -41,7 +45,8 @@ namespace FlexGrid101
         public override void PrepareCell(GridCellType cellType, GridCellRange range, GridCellView cell)
         {
             base.PrepareCell(cellType, range, cell);
-            if (cellType == GridCellType.Cell && range.Column == 4)
+            var orderCountColumn = Grid.Columns["OrderCount"];
+            if (cellType == GridCellType.Cell && range.Column == orderCountColumn.Index)
             {
                 var cellValue = Grid[range.Row, range.Column] as int?;
                 if (cellValue.HasValue)
@@ -60,7 +65,9 @@ namespace FlexGrid101
         public override void BindCellContent(GridCellType cellType, GridCellRange range, UIView cellContent)
         {
             base.BindCellContent(cellType, range, cellContent);
-            if (cellType == GridCellType.Cell && range.Column == 3)
+            var orderTotalColumn = Grid.Columns["OrderTotal"];
+            var orderCountColumn = Grid.Columns["OrderCount"];
+            if (cellType == GridCellType.Cell && range.Column == orderTotalColumn.Index)
             {
                 var label = cellContent as UILabel;
                 if (label != null)
@@ -72,7 +79,7 @@ namespace FlexGrid101
                     }
                 }
             }
-            if (cellType == GridCellType.Cell && range.Column == 4)
+            if (cellType == GridCellType.Cell && range.Column == orderCountColumn.Index)
             {
                 var label = cellContent as UILabel;
                 if (label != null)

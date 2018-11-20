@@ -1,17 +1,16 @@
 ﻿using Android.App;
+using Android.Content.PM;
 using Android.OS;
-using Android.Support.V7.Widget;
 using Android.Support.V7.App;
+using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using System;
-using Android.Content.PM;
-
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
-    [Activity(Label = "@string/ApplicationName", MainLauncher = true, Theme = "@style/MyTheme", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/ApplicationName", MainLauncher = true, Theme = "@style/MyTheme", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -87,6 +86,12 @@ namespace FlexGrid101
                     case 18:
                         StartActivity(typeof(NewRowActivity));
                         break;
+                    case 19:
+                        StartActivity(typeof(CheckListActivity));
+                        break;
+                    case 20:
+                        StartActivity(typeof(CustomSortIconActivity));
+                        break;
                 }
             };
             recyclerView.SetAdapter(adapter);
@@ -100,7 +105,7 @@ namespace FlexGrid101
         {
             get
             {
-                return 19;
+                return 21;
             }
         }
 
@@ -144,7 +149,7 @@ namespace FlexGrid101
                 case 3:
                     h.SetTitle(resources.GetString(Resource.String.EditConfirmationTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.EditConfirmationDescription));
-                    h.SetIcon(Resource.Drawable.flexgrid);
+                    h.SetIcon(Resource.Drawable.flexgrid_editConfirmation);
                     break;
                 case 4:
                     h.SetTitle(resources.GetString(Resource.String.EditingTitle));
@@ -154,7 +159,7 @@ namespace FlexGrid101
                 case 5:
                     h.SetTitle(resources.GetString(Resource.String.ConditionalFormattingTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.ConditionalFormattingDescription));
-                    h.SetIcon(Resource.Drawable.flexgrid);
+                    h.SetIcon(Resource.Drawable.flexgrid_conditionalFormatting);
                     break;
                 case 6:
                     h.SetTitle(resources.GetString(Resource.String.CustomCellsTitle));
@@ -189,7 +194,7 @@ namespace FlexGrid101
                 case 12:
                     h.SetTitle(resources.GetString(Resource.String.StarSizingTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.StarSizingDescription));
-                    h.SetIcon(Resource.Drawable.flexgrid);
+                    h.SetIcon(Resource.Drawable.flexgrid_starSizing);
                     break;
                 case 13:
                     h.SetTitle(resources.GetString(Resource.String.CellFreezingTitle));
@@ -214,12 +219,22 @@ namespace FlexGrid101
                 case 17:
                     h.SetTitle(resources.GetString(Resource.String.CustomAppearanceTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.CustomAppearanceDescription));
-                    h.SetIcon(Resource.Drawable.flexgrid);
+                    h.SetIcon(Resource.Drawable.flexgrid_customAppearance);
                     break;
                 case 18:
                     h.SetTitle(resources.GetString(Resource.String.NewRowTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.NewRowDescription));
-                    h.SetIcon(Resource.Drawable.flexgrid);
+                    h.SetIcon(Resource.Drawable.flexgrid_newRow);
+                    break;
+                case 19:
+                    h.SetTitle(resources.GetString(Resource.String.CheckListTitle));
+                    h.SetSubtitle(resources.GetString(Resource.String.CheckListDescription));
+                    h.SetIcon(Resource.Drawable.flexgrid_checkList);
+                    break;
+                case 20:
+                    h.SetTitle(resources.GetString(Resource.String.CustomSortIconTitle));
+                    h.SetSubtitle(resources.GetString(Resource.String.CustomSortIconDescription));
+                    h.SetIcon(Resource.Drawable.flexgrid_customSort);
                     break;
             }
         }

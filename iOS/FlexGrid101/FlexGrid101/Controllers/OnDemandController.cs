@@ -20,7 +20,8 @@ namespace FlexGrid101
 
             _collectionView = new YouTubeCollectionView() { PageSize = 25 };
             Grid.AutoGenerateColumns = false;
-            Grid.Columns.Add(new GridImageColumn { Binding = "Thumbnail", Header = " ", Width = new GridLength(70), ImagePadding = new UIEdgeInsets(4, 4, 4, 0), PlaceholderImage = new UIImage("Images/default.png") });
+            Grid.AllowMerging = GridAllowMerging.ColumnHeaders;
+            Grid.Columns.Add(new GridImageColumn { Binding = "Thumbnail", Header = "Title", Width = new GridLength(70), ImagePadding = new UIEdgeInsets(4, 4, 4, 0), PlaceholderImage = new UIImage("Images/default.png") });
             Grid.Columns.Add(new GridColumn { Binding = "Title", Header = "Title", MinWidth = 180, Width = GridLength.Star });
             Grid.Columns.Add(new GridColumn { Binding = "ChannelTitle", Header = "Channel" });
             Grid.GridLinesVisibility = GridLinesVisibility.None;
@@ -32,7 +33,12 @@ namespace FlexGrid101
             SearchField.EditingDidEnd += OnEditingDidEnd;
             var task = PerformSearch();
         }
-
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
         private bool OnShouldReturn(UITextField textField)
         {
             textField.ResignFirstResponder();

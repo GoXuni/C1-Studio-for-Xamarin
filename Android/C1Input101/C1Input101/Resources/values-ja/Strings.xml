@@ -25,4 +25,6 @@
   <string name="delay">入力後に遅延させて表示</string>
   <string name="custom">独自形式の表示リスト</string>
   <string name="filter">リストを動的に作成、抽出して表示</string>
+  <string name="AutoCompleteMode">オートコンプリートモード</string>
+  <string name="ShowClearButton">クリアボタンの表示</string>
 </resources>

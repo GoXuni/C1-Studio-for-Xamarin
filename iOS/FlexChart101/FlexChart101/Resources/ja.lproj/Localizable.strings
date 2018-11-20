@@ -33,6 +33,8 @@
 
 "Custom Plot Elements" = "プロット要素のカスタマイズ";
 
+"Custom Plot Elements Scrolling" = "カスタムプロット要素のスクロール";
+
 "Selection Modes" = "選択モード";
 
 "Toggle Series" = "系列の表示/非表示";
@@ -42,6 +44,8 @@
 "Update Animation" = "更新アニメーション";
 
 "Dynamic Charts" = "動的チャート";
+
+"Tree Map" = "ツリーマップ";
 
 "Hit Test" = "ヒットテスト";
 
@@ -114,6 +118,10 @@
 "Shows how to export an image of FlexChart." = "FlexChart を画像として保存する方法";
 
 "Shows how to display annotations on FlexChart" = "チャートに各種形状の注釈を表示する方法";
+
+"Shows customize plot elements Scrolling" = "カスタムプロット要素のスクロールサンプル";
+
+"Shows the mainly function of tree map control" = "ツリーマップコントロールの主な機能";
 
 "Shows a scatter chart of student grades, highlighting each grade range using zones." = "色分けされた領域（ゾーン）を表示して散布図で表示されたデータ点を識別しやすくする方法";
 

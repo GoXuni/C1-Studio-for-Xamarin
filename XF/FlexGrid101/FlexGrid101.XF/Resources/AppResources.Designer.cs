@@ -106,6 +106,24 @@ namespace FlexGrid101.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Show how to select flexgrid rows through checkboxes..
+        /// </summary>
+        public static string CheckListDescription {
+            get {
+                return ResourceManager.GetString("CheckListDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check-List.
+        /// </summary>
+        public static string CheckListTitle {
+            get {
+                return ResourceManager.GetString("CheckListTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Collapse.
         /// </summary>
         public static string Collapse {
@@ -219,6 +237,24 @@ namespace FlexGrid101.Resources {
         public static string CustomMergingTitle {
             get {
                 return ResourceManager.GetString("CustomMergingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show how to customize the sorting icon in header columns..
+        /// </summary>
+        public static string CustomSortIconDescription {
+            get {
+                return ResourceManager.GetString("CustomSortIconDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom Sort Icon.
+        /// </summary>
+        public static string CustomSortIconTitle {
+            get {
+                return ResourceManager.GetString("CustomSortIconTitle", resourceCulture);
             }
         }
         
@@ -597,6 +633,24 @@ namespace FlexGrid101.Resources {
         public static string Sort {
             get {
                 return ResourceManager.GetString("Sort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sort icon position.
+        /// </summary>
+        public static string SortIconPosition {
+            get {
+                return ResourceManager.GetString("SortIconPosition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sort icon template.
+        /// </summary>
+        public static string SortIconTemplate {
+            get {
+                return ResourceManager.GetString("SortIconTemplate", resourceCulture);
             }
         }
         

@@ -8,14 +8,13 @@
     <OutputType>Library</OutputType>
     <RootNamespace>C1Input101</RootNamespace>
     <AssemblyName>C1Input101</AssemblyName>
-    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -55,22 +54,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Android.Calendar">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.CollectionView">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Core">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Input">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="27.0.2.1" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="License.cs" />
@@ -88,7 +87,6 @@
     <Compile Include="Sample\YouTubeCollectionView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\ListItem.axml" />
@@ -104,11 +102,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
-    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
-    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
-    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
-    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
-    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable\australia.png" />
     <AndroidResource Include="Resources\drawable\bangladesh.png" />
     <AndroidResource Include="Resources\drawable\brazil.png" />
@@ -117,7 +110,7 @@
     <AndroidResource Include="Resources\drawable\china.png" />
     <AndroidResource Include="Resources\drawable\france.png" />
     <AndroidResource Include="Resources\drawable\germany.png" />
-    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\mipmap\Icon.png" />
     <AndroidResource Include="Resources\drawable\india.png" />
     <AndroidResource Include="Resources\drawable\input_autocomplete.png" />
     <AndroidResource Include="Resources\drawable\input_combobox.png" />
@@ -143,13 +136,19 @@
     <AndroidResource Include="Resources\values-ja\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\values\colors.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\Icon.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_foreground.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo_toolbar.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

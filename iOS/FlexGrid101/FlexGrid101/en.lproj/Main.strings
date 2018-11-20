@@ -24,7 +24,7 @@
 "5299.title" = "Star Sizing";
 
 /* Class = "UINavigationItem"; title = "Freezing&Merging"; ObjectID = "5300"; */
-"5300.title" = "Freezing & Merging";
+"5300.title" = "Cell Freezing & Merging";
 
 /* Class = "UINavigationItem"; title = "Custom Cells"; ObjectID = "5296"; */
 "5296.title" = "Custom Cells";
@@ -88,7 +88,7 @@
 //starsizing
 "2245.text" = "Star Sizing";
 //cell freezing
-"2248.text" = "Cell Freezing";
+"2248.text" = "Cell Freezing & Merging";
 //custom merging
 "2251.text" = "Custom Merging";
 //unbound

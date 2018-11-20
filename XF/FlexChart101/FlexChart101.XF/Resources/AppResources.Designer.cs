@@ -215,6 +215,24 @@ namespace FlexChart101.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Shows a scrolling custom plot elements sample..
+        /// </summary>
+        public static string CustomPlotElementsScrollingDescription {
+            get {
+                return ResourceManager.GetString("CustomPlotElementsScrollingDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom Plot Elements Scrolling.
+        /// </summary>
+        public static string CustomPlotElementsScrollingTitle {
+            get {
+                return ResourceManager.GetString("CustomPlotElementsScrollingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Custom Plot Elements.
         /// </summary>
         public static string CustomPlotElementsTitle {
@@ -922,6 +940,24 @@ namespace FlexChart101.Resources {
         public static string ToggleSeriesTitle {
             get {
                 return ResourceManager.GetString("ToggleSeriesTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shows the mainly function tree map control..
+        /// </summary>
+        public static string TreeMapDescription {
+            get {
+                return ResourceManager.GetString("TreeMapDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tree Map.
+        /// </summary>
+        public static string TreeMapTitle {
+            get {
+                return ResourceManager.GetString("TreeMapTitle", resourceCulture);
             }
         }
         

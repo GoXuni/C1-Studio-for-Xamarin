@@ -1,23 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using FlexChart101.DataModel;
 using C1.Android.Chart;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using FlexChart101.DataModel;
+using System;
+using System.Collections.Generic;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    [Activity(Label = "@string/financialChart", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/financialChart")]
     public class FinancialChartTypesActivity : AppCompatActivity
     {
 
@@ -67,7 +61,7 @@ namespace FlexChart101
             mChart.ItemsSource=dataSource;
             mChart.AxisY.MajorGridStyle.Fill = Android.Graphics.Color.Argb(20, 50, 50, 50);
             mChart.AxisX.LabelAngle = 90;
-			mChart.AxisX.Format = "MM/dd/yyyy";
+            mChart.AxisX.Format = "MM/dd/yyyy";
 
             // create custom adapter for spinner and initialize with string array
             ArrayAdapter adapter1 = ArrayAdapter.CreateFromResource(this, Resource.Array.financialTypeSpinnerValues, Android.Resource.Layout.SimpleSpinnerItem);

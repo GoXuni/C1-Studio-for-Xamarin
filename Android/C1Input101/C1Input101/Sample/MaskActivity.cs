@@ -1,22 +1,12 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+﻿using Android.App;
 using Android.OS;
-
-using C1.Android.Input;
-using C1.Android.Core;
-using Java.Lang;
-using Android.Graphics;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using Android.Views;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Input101
 {
-    [Activity(Label = "@string/basic_mask", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/basic_mask")]
     public class MaskActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

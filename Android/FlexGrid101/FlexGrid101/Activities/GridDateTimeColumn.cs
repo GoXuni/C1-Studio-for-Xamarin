@@ -1,9 +1,9 @@
 ﻿using Android.App;
 using Android.Text.Format;
 using Android.Widget;
+using C1.Android.Grid;
 using System;
 using System.Reflection;
-using C1.Android.Grid;
 
 namespace FlexGrid101
 {

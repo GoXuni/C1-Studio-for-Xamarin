@@ -10,7 +10,7 @@ namespace FlexChart101
     {
         FlexChart chart;
 
-        string[] chartTypes = { NSBundle.MainBundle.LocalizedString("Column", ""), NSBundle.MainBundle.LocalizedString("Bar", ""), NSBundle.MainBundle.LocalizedString("Scatter", ""), NSBundle.MainBundle.LocalizedString("Line", ""), NSBundle.MainBundle.LocalizedString("LineSymbol", ""), NSBundle.MainBundle.LocalizedString("Area", ""),NSBundle.MainBundle.LocalizedString("Spline", ""),NSBundle.MainBundle.LocalizedString("SplineSymbols", ""),NSBundle.MainBundle.LocalizedString("SplineArea", "")};
+        string[] chartTypes = { NSBundle.MainBundle.LocalizedString("Column", ""), NSBundle.MainBundle.LocalizedString("Bar", ""), NSBundle.MainBundle.LocalizedString("Scatter", ""), NSBundle.MainBundle.LocalizedString("Line", ""), NSBundle.MainBundle.LocalizedString("LineSymbol", ""), NSBundle.MainBundle.LocalizedString("Area", ""),NSBundle.MainBundle.LocalizedString("Spline", ""),NSBundle.MainBundle.LocalizedString("SplineSymbols", ""),NSBundle.MainBundle.LocalizedString("SplineArea", ""),NSBundle.MainBundle.LocalizedString("Step", ""),NSBundle.MainBundle.LocalizedString("StepSymbols", ""),NSBundle.MainBundle.LocalizedString("StepArea", "")};
 
         string[] chartStacking = { NSBundle.MainBundle.LocalizedString("None","") , NSBundle.MainBundle.LocalizedString("Stacked", ""), NSBundle.MainBundle.LocalizedString("Stacked100pc", "")};
 
@@ -84,6 +84,18 @@ namespace FlexChart101
                     {
                         tk.chart.ChartType = ChartType.SplineArea;
                     }
+                    else if (row == 9)
+                    {
+                        tk.chart.ChartType = ChartType.Step;
+                    }
+                    else if (row == 10)
+                    {
+                        tk.chart.ChartType = ChartType.StepSymbols;
+                    }
+                    else if (row == 11)
+                    {
+                        tk.chart.ChartType = ChartType.StepArea;
+                    }
                 }
                 else if (component == 1)
                 {
@@ -127,8 +139,6 @@ namespace FlexChart101
             chart.ItemsSource = SalesData.GetSalesDataList();
             this.Add(chart);
 
-            //chart.ChartType = ChartType.Area;
-            //chart.Stacking = Stacking.Stacked;
         }
 
         public override void ViewWillAppear(bool animated)

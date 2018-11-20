@@ -27,6 +27,13 @@ namespace FlexGrid101
             InitializeColumnLayout();
         }
 
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
+
         async void InitializeColumnLayout()
         {
             var data = await FileSystem.ReadFileFromDisk(FILENAME);

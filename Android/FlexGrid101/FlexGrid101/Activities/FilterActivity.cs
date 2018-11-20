@@ -1,10 +1,12 @@
-
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Views;
+using C1.Android.Grid;
+using C1.CollectionView;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,9 +14,6 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Json;
 using System.Text;
-using C1.Android.Grid;
-using C1.CollectionView;
-using Android.Support.V7.App;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
@@ -102,7 +101,7 @@ namespace FlexGrid101
                     {
                         if (!string.IsNullOrWhiteSpace(filter.Value))
                         {
-                            filters.Add(new FilterUnaryExpression(filter.Field, filter.Operation, filter.Value));
+                            filters.Add(new FilterOperationExpression(filter.Field, filter.Operation, filter.Value));
                         }
                     }
                     await Grid.CollectionView.FilterAsync(FilterExpression.Combine(FilterCombination.And, filters.ToArray()));

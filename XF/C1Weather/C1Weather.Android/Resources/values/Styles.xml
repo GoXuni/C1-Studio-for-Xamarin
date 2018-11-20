@@ -3,7 +3,7 @@
   <style name="MyTheme" parent="MyTheme.Base">
   </style>
   <style name="MyTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="logo">@drawable/white_icon</item>
+    <item name="logo">@drawable/logo_toolbar</item>
     <item name="colorPrimary">@color/primary</item>
     <item name="colorPrimaryDark">@color/primaryDark</item>
     <item name="colorAccent">@color/accent</item>

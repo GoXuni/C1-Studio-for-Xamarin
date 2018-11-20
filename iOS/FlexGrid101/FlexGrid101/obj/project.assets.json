@@ -1,0 +1,410 @@
+{
+  "version": 3,
+  "targets": {
+    "Xamarin.iOS,Version=v1.0": {
+      "C1.CollectionView/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Parallel": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/C1.CollectionView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/C1.CollectionView.dll": {}
+        }
+      },
+      "C1.iOS.Core/3.0.20182.298": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        }
+      },
+      "C1.iOS.Gauge/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "C1.iOS.Core": "[3.0.20182.298]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Gauge.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Gauge.dll": {}
+        }
+      },
+      "C1.iOS.Grid/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "C1.CollectionView": "[3.0.20182.298]",
+          "C1.iOS.Core": "[3.0.20182.298]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Grid.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Grid.dll": {}
+        }
+      },
+      "System.Linq.Parallel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win": {
+      "C1.CollectionView/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Parallel": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/C1.CollectionView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/C1.CollectionView.dll": {}
+        }
+      },
+      "C1.iOS.Core/3.0.20182.298": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        }
+      },
+      "C1.iOS.Gauge/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "C1.iOS.Core": "[3.0.20182.298]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Gauge.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Gauge.dll": {}
+        }
+      },
+      "C1.iOS.Grid/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "C1.CollectionView": "[3.0.20182.298]",
+          "C1.iOS.Core": "[3.0.20182.298]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Grid.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Grid.dll": {}
+        }
+      },
+      "System.Linq.Parallel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win-x64": {
+      "C1.CollectionView/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Parallel": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/C1.CollectionView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/C1.CollectionView.dll": {}
+        }
+      },
+      "C1.iOS.Core/3.0.20182.298": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        }
+      },
+      "C1.iOS.Gauge/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "C1.iOS.Core": "[3.0.20182.298]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Gauge.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Gauge.dll": {}
+        }
+      },
+      "C1.iOS.Grid/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "C1.CollectionView": "[3.0.20182.298]",
+          "C1.iOS.Core": "[3.0.20182.298]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Grid.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Grid.dll": {}
+        }
+      },
+      "System.Linq.Parallel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win-x86": {
+      "C1.CollectionView/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Parallel": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/C1.CollectionView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/C1.CollectionView.dll": {}
+        }
+      },
+      "C1.iOS.Core/3.0.20182.298": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        }
+      },
+      "C1.iOS.Gauge/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "C1.iOS.Core": "[3.0.20182.298]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Gauge.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Gauge.dll": {}
+        }
+      },
+      "C1.iOS.Grid/3.0.20182.298": {
+        "type": "package",
+        "dependencies": {
+          "C1.CollectionView": "[3.0.20182.298]",
+          "C1.iOS.Core": "[3.0.20182.298]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Grid.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Grid.dll": {}
+        }
+      },
+      "System.Linq.Parallel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "C1.CollectionView/3.0.20182.298": {
+      "sha512": "Cwr6I80a1R8Pgfys09H5aiPxV/sEP0IGDAuKuvDydM1pojpxxAmW3nPpzbU4+1XQ8HvgOeU6PqhU9xcEuBUdHg==",
+      "type": "package",
+      "path": "c1.collectionview/3.0.20182.298",
+      "files": [
+        "c1.collectionview.3.0.20182.298.nupkg.sha512",
+        "c1.collectionview.nuspec",
+        "lib/netstandard1.1/C1.CollectionView.dll",
+        "lib/netstandard1.1/C1.CollectionView.xml"
+      ]
+    },
+    "C1.iOS.Core/3.0.20182.298": {
+      "sha512": "lBZl3SUa1TjeEw64Hf/C0+XK1JiBpeElWwStc2Gw/MsNG3URMxZtE3XAX2vEoPoKv1VOdSKFWTFALwYiJWD0bg==",
+      "type": "package",
+      "path": "c1.ios.core/3.0.20182.298",
+      "files": [
+        "c1.ios.core.3.0.20182.298.nupkg.sha512",
+        "c1.ios.core.nuspec",
+        "lib/Xamarin.iOS10/C1.iOS.Core.dll",
+        "lib/Xamarin.iOS10/C1.iOS.Core.xml"
+      ]
+    },
+    "C1.iOS.Gauge/3.0.20182.298": {
+      "sha512": "AarGOj+unvmwUKezbkuDBpDgtkPxp7Y0rCAB1BT3Q/Wb1aF6Q8LEBeeEYbffFgyO8pgcwD7pcONjQrRJYvG8NQ==",
+      "type": "package",
+      "path": "c1.ios.gauge/3.0.20182.298",
+      "files": [
+        "c1.ios.gauge.3.0.20182.298.nupkg.sha512",
+        "c1.ios.gauge.nuspec",
+        "lib/Xamarin.iOS10/C1.iOS.Gauge.dll",
+        "lib/Xamarin.iOS10/C1.iOS.Gauge.xml"
+      ]
+    },
+    "C1.iOS.Grid/3.0.20182.298": {
+      "sha512": "MZXj9ojjmviqO1Y1mf1vGSm+n4US6nyzKbs9FJR6nLdaF/fxNttDxN1rkgkWnjOojBt2gam3fTcm/gg/Z7cslQ==",
+      "type": "package",
+      "path": "c1.ios.grid/3.0.20182.298",
+      "files": [
+        "c1.ios.grid.3.0.20182.298.nupkg.sha512",
+        "c1.ios.grid.nuspec",
+        "lib/Xamarin.iOS10/C1.iOS.Grid.dll",
+        "lib/Xamarin.iOS10/C1.iOS.Grid.xml"
+      ]
+    },
+    "System.Linq.Parallel/4.3.0": {
+      "sha512": "td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
+      "type": "package",
+      "path": "system.linq.parallel/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Linq.Parallel.dll",
+        "lib/netstandard1.3/System.Linq.Parallel.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Linq.Parallel.dll",
+        "ref/netcore50/System.Linq.Parallel.xml",
+        "ref/netcore50/de/System.Linq.Parallel.xml",
+        "ref/netcore50/es/System.Linq.Parallel.xml",
+        "ref/netcore50/fr/System.Linq.Parallel.xml",
+        "ref/netcore50/it/System.Linq.Parallel.xml",
+        "ref/netcore50/ja/System.Linq.Parallel.xml",
+        "ref/netcore50/ko/System.Linq.Parallel.xml",
+        "ref/netcore50/ru/System.Linq.Parallel.xml",
+        "ref/netcore50/zh-hans/System.Linq.Parallel.xml",
+        "ref/netcore50/zh-hant/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/System.Linq.Parallel.dll",
+        "ref/netstandard1.1/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/de/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/es/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/fr/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/it/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/ja/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/ko/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/ru/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/zh-hans/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/zh-hant/System.Linq.Parallel.xml",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.linq.parallel.4.3.0.nupkg.sha512",
+        "system.linq.parallel.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "Xamarin.iOS,Version=v1.0": [
+      "C1.CollectionView >= 3.0.20182.298",
+      "C1.iOS.Core >= 3.0.20182.298",
+      "C1.iOS.Gauge >= 3.0.20182.298",
+      "C1.iOS.Grid >= 3.0.20182.298"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kelley.ricker\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\CS\\iOS\\FlexGrid101\\FlexGrid101\\FlexGrid101.csproj",
+      "projectName": "FlexGrid101",
+      "projectPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\CS\\iOS\\FlexGrid101\\FlexGrid101\\FlexGrid101.csproj",
+      "packagesPath": "C:\\Users\\kelley.ricker\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kelley.ricker\\Documents\\ComponentOne Samples\\Xamarin\\CS\\iOS\\FlexGrid101\\FlexGrid101\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\kelley.ricker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "xamarinios10"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\kelley.ricker\\Desktop\\C1XamarinDevJa_3.0.20182.285\\NugetPackages": {},
+        "C:\\Users\\kelley.ricker\\Desktop\\C1XamarinDev_3.0.20182.278\\NugetPackages": {},
+        "http://nuget.grapecity.com/nuget": {},
+        "http://packagesource": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "xamarinios10": {
+        "dependencies": {
+          "C1.CollectionView": {
+            "target": "Package",
+            "version": "[3.0.20182.298, )"
+          },
+          "C1.iOS.Core": {
+            "target": "Package",
+            "version": "[3.0.20182.298, )"
+          },
+          "C1.iOS.Gauge": {
+            "target": "Package",
+            "version": "[3.0.20182.298, )"
+          },
+          "C1.iOS.Grid": {
+            "target": "Package",
+            "version": "[3.0.20182.298, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

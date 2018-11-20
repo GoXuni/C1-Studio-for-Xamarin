@@ -1,19 +1,13 @@
-﻿using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+﻿using Android.App;
+using Android.Content;
 using Android.OS;
-using C1.Android.Gauge;
-using Android.Graphics;
-using Java.Util;
-using Android.App;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using Android.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Gauge101
 {
-    [Activity(Label = "C1Gauge101", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "C1Gauge101", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
         int count = 1;

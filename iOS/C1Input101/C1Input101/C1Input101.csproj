@@ -215,19 +215,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Calendar">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.CollectionView">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Core">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Input">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

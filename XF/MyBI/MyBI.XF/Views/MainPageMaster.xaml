@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             x:Class="MyBI.MainPageMaster"
+             xmlns:input="clr-namespace:C1.Xamarin.Forms.Input;assembly=C1.Xamarin.Forms.Input"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             BackgroundColor="#7986CB"
+             Icon="options.png"
+             >
+    <StackLayout Orientation="Vertical" BackgroundColor="#7986CB">
+        <StackLayout Orientation="Horizontal" Margin="10,0,10,0" HorizontalOptions="Center">
+            <Image x:Name="C1Image" HeightRequest="50" WidthRequest="50"/>
+            <Label x:Name="MyBILabel" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Large" FontAttributes="Bold"/>
+        </StackLayout>
+        <Label x:Name="RegionLabel" TextColor="White" HorizontalTextAlignment="Start" Margin="10,0,0,0" VerticalTextAlignment="Center" FontSize="Medium" />
+        <input:C1ComboBox x:Name="RegionSelector" DropDownBehavior="HeaderTap" DropDownMode="BelowOrAbove" IsEditable="False" SelectedIndex="0" DisplayMemberPath="Name" SelectedValuePath="iD" Margin="10" SelectedIndexChanged="RegionSelector_SelectedIndexChanged"/>
+        <Label x:Name="ProductLabel" TextColor="White" HorizontalTextAlignment="Start" Margin="10,0,0,0" VerticalTextAlignment="Center" FontSize="Medium" />
+        <input:C1ComboBox x:Name="ProductSelector" DropDownBehavior="HeaderTap" DropDownMode="BelowOrAbove" IsEditable="False" SelectedIndex="0" DisplayMemberPath="Name" SelectedValuePath="iD" Margin="10" SelectedIndexChanged="ProductSelector_SelectedIndexChanged"/>
+    </StackLayout>
+</ContentPage>

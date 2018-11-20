@@ -1,12 +1,12 @@
 ﻿using Android.Graphics;
 using Android.Views;
 using Android.Widget;
+using C1.Android.Core;
+using C1.Android.Grid;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using C1.Android.Core;
-using C1.Android.Grid;
 
 namespace FlexGrid101
 {

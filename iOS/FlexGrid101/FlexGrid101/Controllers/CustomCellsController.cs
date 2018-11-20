@@ -17,14 +17,20 @@ namespace FlexGrid101
 
             Grid.Columns.Add(new GridColumn() { Binding = "FirstName", Width = GridLength.Star });
             Grid.Columns.Add(new GridColumn() { Binding = "LastName", Width = GridLength.Star });
-            Grid.Columns.Add(new GridRadialGaugeColumn() { Binding = "OrderTotal", Header = "Order Total", Width = GridLength.Star });
+            Grid.Columns.Add(new GridBulletGraphColumn() { Binding = "OrderTotal", Header = "Order Total", Width = GridLength.Star });
 
             var data = Customer.GetCustomerList(100);
             Grid.ItemsSource = data;
         }
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
     }
 
-    public class GridRadialGaugeColumn : GridColumn
+    public class GridBulletGraphColumn : GridColumn
     {
         protected override object GetCellContentType(GridCellType cellType, GridRow row)
         {
@@ -43,6 +49,7 @@ namespace FlexGrid101
             if (cellType == GridCellType.Cell)
             {
                 var gauge = new C1BulletGraph();
+                gauge.IsAnimated = false;
                 gauge.Max = 10000;
                 gauge.Target = 7000;
                 gauge.Bad = 1000;

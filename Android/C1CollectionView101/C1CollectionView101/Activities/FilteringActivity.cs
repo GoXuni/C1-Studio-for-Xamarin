@@ -1,19 +1,18 @@
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Threading.Tasks;
 using C1.CollectionView;
-using Android.Support.V7.App;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1CollectionView101
 {
-    [Activity(Label = "@string/FilteringTitle", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/FilteringTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class FilteringActivity : AppCompatActivity
     {
         private C1CollectionView<YouTubeVideo> _collectionView;

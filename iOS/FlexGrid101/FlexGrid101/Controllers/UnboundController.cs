@@ -16,6 +16,12 @@ namespace FlexGrid101
 
             PopulateUnboundGrid();
         }
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
 
         /// <summary>
         /// Fill unbound grid with data

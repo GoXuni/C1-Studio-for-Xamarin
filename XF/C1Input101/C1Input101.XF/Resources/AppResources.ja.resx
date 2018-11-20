@@ -181,4 +181,10 @@
   <data name="State" xml:space="preserve">
     <value>識別(英字2桁)</value>
   </data>
+  <data name="AutoCompleteMode" xml:space="preserve">
+    <value>オートコンプリートモード</value>
+  </data>
+  <data name="ShowClearButton" xml:space="preserve">
+    <value>クリアボタンの表示</value>
+  </data>
 </root>

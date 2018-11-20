@@ -37,25 +37,15 @@ namespace FlexChart101
 			MyTooltip t = new MyTooltip();
 			t.Frame = new CGRect(0, 0, 100, 50);
 			t.BackgroundColor = new UIColor(1.0f, 1.0f, 0.792f, 1.0f);
-			chart.ToolTip = t;
+
 			chart.ToolTipLoading += (object sender, ChartTooltipLoadingEventArgs args) =>
 			{
-
 				ChartHitTestInfo e = args.HitTestInfo;
 				if (e.Distance < 2 && e.PointIndex >= 0)
 				{
-					double left = e.Point.X, top = e.Point.Y - t.Frame.Height, width = t.Frame.Width, height = t.Frame.Height;
-					double screenWidth = UIScreen.MainScreen.Bounds.Size.Width;
-					double margin = 5;
-					if (left + width > screenWidth) left = screenWidth - width - margin;
-					t.Frame = new CGRect(left, top, width ,height);
 					t.UpdateContent(e);
-					t.IsOpen = true;
 				}
-				else
-				{
-					t.IsOpen = false;
-				}
+                args.view = t;
 			};
 		}
 

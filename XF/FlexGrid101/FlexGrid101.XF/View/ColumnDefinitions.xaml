@@ -6,16 +6,16 @@
              ios:Page.UseSafeArea="true"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
              xmlns:local="clr-namespace:FlexGrid101;assembly=FlexGrid101.XF">
-  <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False">
-    <c1:FlexGrid.Columns>
-      <c1:GridColumn Binding="Active" Width="70"/>
-      <c1:GridColumn Binding="Id" IsReadOnly="true" Width="100"/>
-      <c1:GridColumn Binding="FirstName"/>
-      <c1:GridColumn Binding="LastName"/>
-      <c1:GridColumn Binding="CountryId" Header="Country"/>
-      <local:GridDateTimeColumn Binding="LastOrderDate" Format="d" Mode="Date"/>
-      <local:GridDateTimeColumn Binding="LastOrderDate" SortMemberPath="LastOrderTime" Format="t" Mode="Time" Header="Last Order Time"/>
-      <c1:GridColumn Binding="OrderTotal" Format="C"/>
-    </c1:FlexGrid.Columns>
-  </c1:FlexGrid>
+    <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False">
+        <c1:FlexGrid.Columns>
+            <c1:GridColumn Binding="Active" MinWidth="70" Width="0.5*"/>
+            <c1:GridColumn Binding="Id" IsReadOnly="true" MinWidth="100" Width="*"/>
+            <c1:GridColumn Binding="FirstName" MinWidth="110" Width="*"/>
+            <c1:GridColumn Binding="LastName" MinWidth="110" Width="*"/>
+            <c1:GridColumn Binding="CountryId" Header="Country" MinWidth="110" Width="*"/>
+            <local:GridDateTimeColumn Binding="LastOrderDate" Format="d" Mode="Date" MinWidth="110" Width="*" HorizontalAlignment="End" HeaderHorizontalAlignment="End"/>
+            <local:GridDateTimeColumn Binding="LastOrderDate" SortMemberPath="LastOrderTime" Format="t" Mode="Time" Header="Last Order Time" MinWidth="110" Width="*" HorizontalAlignment="End" HeaderHorizontalAlignment="End"/>
+            <c1:GridColumn Binding="OrderTotal" Format="C" MinWidth="110" Width="*" HorizontalAlignment="End" HeaderHorizontalAlignment="End"/>
+        </c1:FlexGrid.Columns>
+    </c1:FlexGrid>
 </ContentPage>

@@ -15,8 +15,8 @@ namespace C1Input101
             CountriesWithFlag = Country.GetCountries().Where(c => flagConverter.HasFlag(c.Name));
             InitializeComponent();
             Title = AppResources.AutoCompleteTitle;
-            ACMLabel.Text = nameof(AutoCompleteMode);
-            ClearLabel.Text = nameof(C1ComboBox.ShowClearButton);
+            ACMLabel.Text = AppResources.AutoCompleteMode;
+            ClearLabel.Text = AppResources.ShowClearButton;
             foreach (var item in Enum.GetNames(typeof(AutoCompleteMode)))
             {
                 this.ACMPicker.Items.Add(item);

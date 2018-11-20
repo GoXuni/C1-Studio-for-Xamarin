@@ -1,15 +1,13 @@
-
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Views;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using Android.Views;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Calendar101
 {
-    [Activity(Label = "@string/getting_started", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/getting_started", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class GettingStartedActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)

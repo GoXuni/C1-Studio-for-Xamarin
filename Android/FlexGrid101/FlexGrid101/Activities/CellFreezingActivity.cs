@@ -1,15 +1,14 @@
-
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using C1.Android.Grid;
 using Android.Support.V7.App;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Views;
+using C1.Android.Grid;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
-    [Activity(Label = "@string/CellFreezingTitle", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/CellFreezingTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class CellFreezingActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -26,6 +25,7 @@ namespace FlexGrid101
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
 
             var data = Customer.GetCustomerList(100);
+            grid.AllowMerging = GridAllowMerging.Cells;
             grid.ItemsSource = data;
             grid.Columns["Country"].AllowMerging = true;
         }

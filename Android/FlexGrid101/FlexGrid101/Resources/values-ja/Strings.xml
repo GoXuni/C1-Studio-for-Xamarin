@@ -68,7 +68,14 @@
   <string name="Sunday">日曜日</string>
   <string name="Weekday">平日</string>
   <string name="Weekend">週末</string>
-
+  <string name="CheckListTitle">チェックリスト</string>
+  <string name="CheckListDescription">チェックボックスで FlexGrid の行を選択する方法</string>
+  <string name="CustomSortIcon">カスタムソートアイコン</string>
+  <string name="CustomSortIconTitle">カスタムソートアイコン</string>
+  <string name="CustomSortIconDescription">ヘッダー列にカスタムソートアイコンを表示</string>
+  <string name="SortIconPosition">ソートアイコンの位置</string>
+  <string name="SortIconTemplate">ソートアイコンのテンプレート</string>
+  
   <string-array name="SelectionModeTable">
     <item>None（なし）</item>
     <item>Cell（セル）</item>
@@ -76,5 +83,6 @@
     <item>Row（行）</item>
     <item>RowRange（行範囲）</item>
   </string-array>
-
+  <string name="MatchCase">大文字と小文字を区別</string>
+  <string name="MatchWholeWord">単語単位</string>
 </resources>

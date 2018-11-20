@@ -1,16 +1,15 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Support.V7.Widget;
 using Android.Support.V7.App;
+using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using System;
-
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1CollectionView101
 {
-    [Activity(Label = "C1CollectionView101", MainLauncher = true, Theme = "@style/MyTheme", Icon = "@drawable/icon")]
+    [Activity(Label = "C1CollectionView101", MainLauncher = true, Theme = "@style/MyTheme")]
     public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)

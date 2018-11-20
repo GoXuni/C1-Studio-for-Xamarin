@@ -1,15 +1,15 @@
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
-using Android.OS;
-using System;
-using C1.Android.Grid;
 using Android.Graphics;
-using C1.Android.Core;
+using Android.OS;
 using Android.Support.V7.App;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
-using Android.Views;
 using Android.Util;
+using Android.Views;
+using C1.Android.Core;
+using C1.Android.Grid;
+using System;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
@@ -31,16 +31,16 @@ namespace FlexGrid101
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             Grid.GridLinesVisibility = GridLinesVisibility.None;
-            Grid.HeadersGridLinesVisibility = GridLinesVisibility.None;
+            Grid.ColumnHeaderGridLinesVisibility = GridLinesVisibility.None;
             Grid.HeadersVisibility = GridHeadersVisibility.Column;
             Grid.BackgroundColor = Color.White;
-            Grid.RowBackgroundColor = ColorEx.FromARGB(0xFF, 0xE2, 0xEF, 0xDB);
+            Grid.RowBackgroundColor = Color.Argb(0xFF, 0xE2, 0xEF, 0xDB);
             Grid.RowTextColor = Color.Black;
             Grid.AlternatingRowBackgroundColor = Color.White;
-            Grid.ColumnHeaderBackgroundColor = ColorEx.FromARGB(0xFF, 0x70, 0xAD, 0x46);
+            Grid.ColumnHeaderBackgroundColor = Color.Argb(0xFF, 0x70, 0xAD, 0x46);
             Grid.ColumnHeaderTextColor = Color.White;
             Grid.ColumnHeaderTypeface = Typeface.Create("", TypefaceStyle.Bold);
-            Grid.SelectionBackgroundColor = ColorEx.FromARGB(0xFF, 0x5A, 0x82, 0x3F);
+            Grid.SelectionBackgroundColor = Color.Argb(0xFF, 0x5A, 0x82, 0x3F);
             Grid.SelectionTextColor = Color.White;
             Grid.DefaultRowHeight = new GridLength(dips_50);
             Grid.ItemsSource = Customer.GetCustomerList(100);

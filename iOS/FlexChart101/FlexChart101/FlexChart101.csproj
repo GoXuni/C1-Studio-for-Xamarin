@@ -239,6 +239,15 @@
     <Compile Include="Controllers\HistogramController.designer.cs">
       <DependentUpon>HistogramController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\TreeMapController.cs" />
+    <Compile Include="Controllers\TreeMapController.designer.cs">
+      <DependentUpon>TreeMapController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\Images\chart_treeMap.png" />
+    <Compile Include="Controllers\CustomPlotElementsScrollingController.cs" />
+    <Compile Include="Controllers\CustomPlotElementsScrollingController.designer.cs">
+      <DependentUpon>CustomPlotElementsScrollingController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Base.lproj\Main.storyboard" />
@@ -334,13 +343,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Chart">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Core">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

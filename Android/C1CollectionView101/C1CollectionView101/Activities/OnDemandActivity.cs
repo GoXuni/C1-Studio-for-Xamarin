@@ -2,16 +2,16 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Support.V4.Widget;
+using Android.Support.V7.App;
 using Android.Support.V7.Widget;
+using Android.Views;
 using Android.Widget;
 using C1.CollectionView;
-using Android.Support.V7.App;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
-using Android.Views;
 
 namespace C1CollectionView101
 {
-    [Activity(Label = "@string/OnDemandTitle", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/OnDemandTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class OnDemandActivity : AppCompatActivity
     {
         private YouTubeCollectionView _collectionView;

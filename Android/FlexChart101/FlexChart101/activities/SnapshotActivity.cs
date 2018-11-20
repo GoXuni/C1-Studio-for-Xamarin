@@ -11,14 +11,12 @@ using C1.Android.Core;
 using FlexChart101.DataModel;
 using System;
 using System.Threading.Tasks;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 
 namespace FlexChart101
 {
-    [Activity(Label = "@string/snapshot", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/snapshot")]
     public class SnapshotActivity : BaseActivity
     {
         private FlexChart mChart;

@@ -57,7 +57,7 @@ namespace FlexGrid101
                     {
                         if (!string.IsNullOrWhiteSpace(filter.Value))
                         {
-                            filters.Add(new FilterUnaryExpression(filter.Field, filter.Operation, filter.Value));
+                            filters.Add(new FilterOperationExpression(filter.Field, filter.Operation, filter.Value));
                         }
                     }
                     await filtering.FilterAsync(FilterExpression.Combine(FilterCombination.And, filters.ToArray()));
@@ -66,9 +66,9 @@ namespace FlexGrid101
             }
         }
 
-        private IEnumerable<FilterUnaryExpression> GetCurrentFilters(FilterExpression filterExpression)
+        private IEnumerable<FilterOperationExpression> GetCurrentFilters(FilterExpression filterExpression)
         {
-            var uf = filterExpression as FilterUnaryExpression;
+            var uf = filterExpression as FilterOperationExpression;
             if (uf != null)
                 yield return uf;
             var bf = filterExpression as FilterBinaryExpression;

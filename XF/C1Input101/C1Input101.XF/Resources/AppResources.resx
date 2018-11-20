@@ -171,4 +171,10 @@
   <data name="State" xml:space="preserve">
     <value>State</value>
   </data>
+  <data name="AutoCompleteMode" xml:space="preserve">
+    <value>Auto Complete Mode</value>
+  </data>
+  <data name="ShowClearButton" xml:space="preserve">
+    <value>Show Clear Button</value>
+  </data>
 </root>

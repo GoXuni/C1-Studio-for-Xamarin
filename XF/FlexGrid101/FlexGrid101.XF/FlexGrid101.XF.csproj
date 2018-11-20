@@ -16,16 +16,23 @@
     <None Remove="FlexGrid101.XF.csproj.vspscc" />
     <None Remove="Images\filter.png" />
     <None Remove="Images\flexgrid.png" />
+    <None Remove="Images\flexgrid_checkList.png" />
     <None Remove="Images\flexgrid_columns.png" />
+    <None Remove="Images\flexgrid_conditionalFormatting.png" />
     <None Remove="Images\flexgrid_custom.png" />
+    <None Remove="Images\flexgrid_customAppearance.png" />
+    <None Remove="Images\flexgrid_customSort.png" />
+    <None Remove="Images\flexgrid_editConfirmation.png" />
     <None Remove="Images\flexgrid_filter.png" />
     <None Remove="Images\flexgrid_freezing.png" />
     <None Remove="Images\flexgrid_grouping.png" />
     <None Remove="Images\flexgrid_headers.png" />
     <None Remove="Images\flexgrid_loading.png" />
     <None Remove="Images\flexgrid_merging.png" />
+    <None Remove="Images\flexgrid_newRow.png" />
     <None Remove="Images\flexgrid_rowdetails.png" />
     <None Remove="Images\flexgrid_selection.png" />
+    <None Remove="Images\flexgrid_starSizing.png" />
     <None Remove="Images\hide.png" />
     <None Remove="Images\input_form.png" />
     <None Remove="Images\retro_TV_filled-50_dark.png" />
@@ -35,16 +42,23 @@
   <ItemGroup>
     <EmbeddedResource Include="Images\filter.png" />
     <EmbeddedResource Include="Images\flexgrid.png" />
+    <EmbeddedResource Include="Images\flexgrid_checkList.png" />
     <EmbeddedResource Include="Images\flexgrid_columns.png" />
+    <EmbeddedResource Include="Images\flexgrid_conditionalFormatting.png" />
     <EmbeddedResource Include="Images\flexgrid_custom.png" />
+    <EmbeddedResource Include="Images\flexgrid_customAppearance.png" />
+    <EmbeddedResource Include="Images\flexgrid_customSort.png" />
+    <EmbeddedResource Include="Images\flexgrid_editConfirmation.png" />
     <EmbeddedResource Include="Images\flexgrid_filter.png" />
     <EmbeddedResource Include="Images\flexgrid_freezing.png" />
     <EmbeddedResource Include="Images\flexgrid_grouping.png" />
     <EmbeddedResource Include="Images\flexgrid_headers.png" />
     <EmbeddedResource Include="Images\flexgrid_loading.png" />
     <EmbeddedResource Include="Images\flexgrid_merging.png" />
+    <EmbeddedResource Include="Images\flexgrid_newRow.png" />
     <EmbeddedResource Include="Images\flexgrid_rowdetails.png" />
     <EmbeddedResource Include="Images\flexgrid_selection.png" />
+    <EmbeddedResource Include="Images\flexgrid_starSizing.png" />
     <EmbeddedResource Include="Images\hide.png" />
     <EmbeddedResource Include="Images\input_form.png" />
     <EmbeddedResource Include="Images\retro_TV_filled-50_dark.png" />
@@ -53,21 +67,21 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="System.ComponentModel" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\AppResources.Designer.cs">
@@ -80,6 +94,12 @@
     <EmbeddedResource Update="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\CheckList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\CustomSortIcon.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

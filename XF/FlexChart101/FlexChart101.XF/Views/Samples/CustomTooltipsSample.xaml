@@ -24,7 +24,7 @@
       </c1:FlexChart.Series>
 
       <c1:FlexChart.ToolTip>
-        <c1:ChartTooltip IsOpen="false" BackgroundColor="Blue" Padding="0">
+        <c1:ChartTooltip IsOpen="false" Padding="0">
           <StackLayout BackgroundColor="#FFFFCA" Padding="5">
             <StackLayout Orientation = "Horizontal">
               <Image x:Name="image" Source="{Binding ValueX, Mode=OneWay, Converter={StaticResource converter}"/>

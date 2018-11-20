@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="105">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -342,7 +342,7 @@
         <!--Getting Started-->
         <scene sceneID="439">
             <objects>
-                <viewController id="440" sceneMemberID="viewController">
+                <viewController id="440" sceneMemberID="viewController" customClass="GettingStartedController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="437"/>
                         <viewControllerLayoutGuide type="bottom" id="438"/>
@@ -367,6 +367,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Getting Started" id="534"/>
+                    <connections>
+                        <outlet property="Calendar" destination="535" id="name-outlet-535"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="442" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -426,13 +429,13 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1485">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                         <subviews>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1486">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="216"/>
                                             </pickerView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1487">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="80"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="216"/>
                                                 <state key="normal" title="Today">
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -442,8 +445,8 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="June 2016" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1515">
-                                        <rect key="frame" x="0.0" y="80" width="375" height="32"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="June 2016" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1515" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="216" width="375" height="251"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="aL4-aM-OG2"/>
@@ -453,7 +456,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1488" customClass="C1Calendar">
-                                        <rect key="frame" x="0.0" y="112" width="375" height="491"/>
+                                        <rect key="frame" x="0.0" y="467" width="375" height="136"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="ShowHeader" value="NO"/>
                                         </userDefinedRuntimeAttributes>
@@ -487,7 +490,7 @@
         <!--Vertical Orientation-->
         <scene sceneID="589">
             <objects>
-                <viewController id="590" sceneMemberID="viewController">
+                <viewController id="590" sceneMemberID="viewController" customClass="VerticalOrientationController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="587"/>
                         <viewControllerLayoutGuide type="bottom" id="588"/>
@@ -503,6 +506,7 @@
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0.0392156862745098" green="0.37647058823529411" blue="1" alpha="1"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -514,6 +518,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Vertical Orientation" id="762"/>
+                    <connections>
+                        <outlet property="Calendar" destination="1427" id="name-outlet-1427"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="592" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -531,7 +538,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1528">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1528">
                                 <rect key="frame" x="0.0" y="63" width="375" height="50.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1533">
@@ -584,8 +591,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1672">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 1: Select a date." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1691">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 1: Select a date." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1691" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="tQQ-vW-uuy"/>
@@ -594,8 +601,8 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 2: Select another date in a different week." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1693">
-                                        <rect key="frame" x="0.0" y="34" width="375" height="32"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 2: Select another date in a different week." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1693" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="422" width="375" height="20.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="H6g-w4-CiX"/>
@@ -604,8 +611,8 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Observe: The weekend days are not selected." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1692">
-                                        <rect key="frame" x="0.0" y="68" width="375" height="32"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Observe: The weekend days are not selected." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1692" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="444.5" width="375" height="20.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="mmB-tD-HO0"/>
@@ -615,7 +622,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="1678" customClass="C1Calendar">
-                                        <rect key="frame" x="0.0" y="102" width="375" height="501"/>
+                                        <rect key="frame" x="0.0" y="467" width="375" height="136"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="MaxSelectionCount">
                                                 <integer key="value" value="-1"/>

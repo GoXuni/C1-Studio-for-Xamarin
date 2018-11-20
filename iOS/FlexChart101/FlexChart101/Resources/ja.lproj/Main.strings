@@ -31,7 +31,7 @@
 
 /* Class = "UINavigationItem"; title = "Theming"; ObjectID = "RvR-WC-b0b"; */ "RvR-WC-b0b.title" = "テーマ";  /* Class = "UINavigationItem"; title = "Hit Test"; ObjectID = "ZVJ-qw-ffT"; */ "ZVJ-qw-ffT.title" = "ヒットテスト";  /* Class = "UILabel"; text = "Series"; ObjectID = "bWk-xE-ilQ"; */ "bWk-xE-ilQ.text" = "系列ごと(Series)";  /* Class = "UINavigationItem"; title = "Basic Chart Types"; ObjectID = "cZK-5H-bhk"; */ "cZK-5H-bhk.title" = "基本チャートタイプ";
 
-/* Class = "UINavigationItem"; title = "Legend and TItles"; ObjectID = "4RN-U3-d0H"; */ "4RN-U3-d0H.title" = "凡例とタイトル";  /* Class = "UIBarButtonItem"; title = "Snapshot"; ObjectID = "4yV-bl-GIN"; */ "4yV-bl-GIN.title" = "画像を保存";  /* Class = "UINavigationItem"; title = "Custom Plot Elements"; ObjectID = "dfb-7t-I7M"; */ "dfb-7t-I7M.title" = "プロット要素のカスタマイズ";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[0] = "None"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[0]" = "なし";
+/* Class = "UINavigationItem"; title = "Legend and TItles"; ObjectID = "4RN-U3-d0H"; */ "4RN-U3-d0H.title" = "凡例とタイトル";  /* Class = "UIBarButtonItem"; title = "Snapshot"; ObjectID = "4yV-bl-GIN"; */ "4yV-bl-GIN.title" = "画像を保存";  /* Class = "UINavigationItem"; title = "Custom Plot Elements"; ObjectID = "dfb-7t-I7M"; */ "dfb-7t-I7M.title" = "プロット要素のカスタマイズ";  /* Class = "UINavigationItem"; title = "Custom Plot Elements Scrolling"; ObjectID = "UoW-2c-WkE"; */ "UoW-2c-WkE.title" = "カスタムプロット要素のスクロール";  /* Class = "UINavigationItem"; title = "Tree Map"; ObjectID = "zbY-F7-0YH"; */ "zbY-F7-0YH.title" = "ツリーマップ";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[0] = "None"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[0]" = "なし";
 
 /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[1] = "Left"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[1]" = "左側(Left)";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[2] = "Top"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[2]" = "上部(Top)";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[3] = "Right"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[3]" = "右側(Right)";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[4] = "Bottom"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[4]" = "下部(Bottom)";  /* Class = "UISegmentedControl"; dxd-fl-s9x.segmentTitles[5] = "Center"; ObjectID = "9Un-mc-F9V"; */ "9Un-mc-F9V.segmentTitles[5]" = "中心(Center)";
 
@@ -193,3 +193,4 @@
 
 /* Class = "UISegmentedControl"; ugS-2A-Aaj.segmentTitles[4] = "Outside"; ObjectID = "Jua-JI-0D6"; */
 "Jua-JI-0D6.segmentTitles[3]" = "外側(Outside)";
+

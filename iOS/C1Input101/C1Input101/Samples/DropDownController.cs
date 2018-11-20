@@ -46,8 +46,14 @@ namespace C1Input101
         public override void DidReceiveMemoryWarning()
         {
             base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.
-        }
+            d = null;
+            calendar.Dispose();
+            calendar = null;
+            maskedField.Dispose();
+            maskedField = null;
+            DropDown.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }      
     }
 }
 

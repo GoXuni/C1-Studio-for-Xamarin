@@ -1,12 +1,10 @@
-
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Util;
-using C1.Android.Grid;
 using Android.Support.V7.App;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Views;
+using C1.Android.Grid;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
@@ -36,6 +34,8 @@ namespace FlexGrid101
             details.Attach(grid);
             details.DetailCellCreating += OnDetailCellCreating;
             details.Height = GridLength.Auto;
+            //details.DetailCollapsedIconTemplate = new C1IconTemplate(() => new C1BitmapIcon(BaseContext) { Source = BitmapFactory.DecodeResource(Resources, Resource.Drawable.arrow_up) });
+            grid.HeadersVisibility = GridHeadersVisibility.All;
             grid.ItemsSource = data;
 
         }

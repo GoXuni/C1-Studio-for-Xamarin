@@ -1,13 +1,12 @@
-
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Support.V7.App;
+using Android.Views;
 using Android.Widget;
 using C1.Android.Grid;
-using Android.Support.V7.App;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
-using Android.Views;
 using System;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
@@ -32,6 +31,7 @@ namespace FlexGrid101
             grid.ItemsSource = Customer.GetCustomerList(100);
 
             fullTextFilter = new FullTextFilterBehavior();
+            fullTextFilter.MatchNumbers=true;
             fullTextFilter.Attach(grid);
             fullTextFilter.HighlightColor = global::Android.Graphics.Color.ParseColor("#B00F50");
             fullTextFilter.FilterEntry = entry;

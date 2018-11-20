@@ -13,7 +13,7 @@
         </StackLayout>
         <Label x:Name="lblSelection" />
         <Grid VerticalOptions="FillAndExpand">
-            <c1:FlexGrid x:Name="grid" HeadersVisibility="All" ShowMarquee="True" AllowResizing="Both" SelectionChanging="OnSelectionChanging" SelectionChanged="OnSelectionChanged"/>
+            <c1:FlexGrid x:Name="grid" HeadersVisibility="All" ShowMarquee="True" AllowResizing="Both" Style="{x:Static c1:FlexGrid.ClassicStyle}" SelectionChanging="OnSelectionChanging" SelectionChanged="OnSelectionChanged"/>
         </Grid>
     </StackLayout>
 </ContentPage>

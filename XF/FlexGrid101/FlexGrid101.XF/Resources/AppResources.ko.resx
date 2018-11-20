@@ -285,4 +285,11 @@
     <value>사용자 정의 모양</value>
     <comment>Custom Appearance</comment>
   </data>
+  <data name="CustomSortIconTitle" xml:space="preserve">
+    <value>Custom Sort Icon</value>
+  </data>
+  <data name="CustomSortIconDescription" xml:space="preserve">
+    <value>Show how to custom sort icon in header column.</value>
+    <comment>Show how to custom sort icon in header column.</comment>
+  </data>
 </root>

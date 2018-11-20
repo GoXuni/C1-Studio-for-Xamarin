@@ -10,7 +10,6 @@
 
 namespace C1Input101.Resources {
     using System;
-    using System.Reflection;
     
     
     /// <summary>
@@ -40,7 +39,7 @@ namespace C1Input101.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("C1Input101.Resources.AppResources", typeof(AppResources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("C1Input101.Resources.AppResources", typeof(AppResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -67,6 +66,15 @@ namespace C1Input101.Resources {
         public static string AutoCompleteDescription {
             get {
                 return ResourceManager.GetString("AutoCompleteDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto Complete Mode.
+        /// </summary>
+        public static string AutoCompleteMode {
+            get {
+                return ResourceManager.GetString("AutoCompleteMode", resourceCulture);
             }
         }
         
@@ -211,6 +219,15 @@ namespace C1Input101.Resources {
         public static string Phone {
             get {
                 return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Clear Button.
+        /// </summary>
+        public static string ShowClearButton {
+            get {
+                return ResourceManager.GetString("ShowClearButton", resourceCulture);
             }
         }
         

@@ -1,19 +1,18 @@
-using System;
 using Android.App;
+using Android.OS;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using Android.OS;
-using System.Collections.Generic;
-using FlexChart101.DataModel;
 using C1.Android.Chart;
 using C1.Android.Core;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using FlexChart101.DataModel;
+using System;
+using System.Collections.Generic;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    [Activity(Label = "@string/hitTest", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/hitTest")]
     public class HitTestActivity : AppCompatActivity
     {
         private FlexChart mChart;

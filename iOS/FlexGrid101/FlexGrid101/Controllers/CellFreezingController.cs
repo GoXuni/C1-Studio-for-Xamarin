@@ -17,5 +17,11 @@ namespace FlexGrid101
             Grid.ItemsSource = data;
             Grid.Columns["Country"].AllowMerging = true;
         }
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
     }
 }

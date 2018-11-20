@@ -286,11 +286,17 @@
     <value>选中的单元格</value>
   </data>
   <data name="CustomAppearanceDescription" xml:space="preserve">
-    <value>Shows a grid with a custom style.</value>
+    <value>显示一个自定义显示风格的网格</value>
     <comment>Shows a grid with a custom style.</comment>
   </data>
   <data name="CustomAppearanceTitle" xml:space="preserve">
-    <value>Custom Appearance</value>
+    <value>自定义显示风格</value>
     <comment>Custom Appearance</comment>
+  </data>
+  <data name="CustomSortIconDescription" xml:space="preserve">
+    <value>如何在列头展示自定义排序图标</value>
+  </data>
+  <data name="CustomSortIconTitle" xml:space="preserve">
+    <value>自定义排序图标</value>
   </data>
 </root>

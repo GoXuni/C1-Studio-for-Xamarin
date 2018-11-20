@@ -18,5 +18,11 @@ namespace FlexGrid101
             //Use together with AllowResizing and AllowDragging to avoid gesture conflicts in the edge of the screen.
             NavigationController.InteractivePopGestureRecognizer.Enabled = false;
         }
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
     }
 }

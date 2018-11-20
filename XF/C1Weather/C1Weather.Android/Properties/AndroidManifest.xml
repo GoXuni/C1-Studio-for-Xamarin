@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="15" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionName="2018.7.10.01" android:versionCode="2" package="com.grapecity.xf.C1Weather">
+	<uses-sdk android:minSdkVersion="17" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-	<application android:label="C1Weather.Android" android:theme="@style/MyTheme" android:icon="@drawable/icon"></application>
+	<application android:label="C1Weather" android:icon="@mipmap/icon" android:theme="@style/MyTheme"></application>
 </manifest>

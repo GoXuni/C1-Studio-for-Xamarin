@@ -13,8 +13,14 @@ namespace C1Calendar101
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+        }      
+        public override void ViewDidUnload()
+        {
+            Message.RemoveFromSuperview();
+            PickButton.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+            base.ViewDidUnload();
         }
-
         [Action("UnwindFromPopupController:")]
         public void UnwindFromPopupController(UIStoryboardSegue segue)
         {

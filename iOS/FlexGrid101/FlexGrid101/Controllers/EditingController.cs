@@ -23,7 +23,12 @@ namespace FlexGrid101
             Grid.SelectionChanged += OnSelectionChanged;
             Grid.CellDoubleTapped += OnCellDoubleTapped;
         }
-
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
         private void OnCellDoubleTapped(object sender, GridCellRangeEventArgs e)
         {
             if (e.CellType == GridCellType.Cell)
@@ -46,7 +51,7 @@ namespace FlexGrid101
             }
             else
             {
-                var alert = new UIAlertView("", Foundation.NSBundle.MainBundle.LocalizedString("Please select a row first or double-tap the row directly.", ""), null, "OK");
+                var alert = new UIAlertView("", Foundation.NSBundle.MainBundle.GetLocalizedString("Please select a row first or double-tap the row directly.", ""), null, "OK");
                 alert.Show();
             }
         }

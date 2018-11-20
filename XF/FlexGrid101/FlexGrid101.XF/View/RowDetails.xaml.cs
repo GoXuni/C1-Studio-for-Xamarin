@@ -1,4 +1,5 @@
-﻿using C1.Xamarin.Forms.Grid;
+﻿using C1.Xamarin.Forms.Core;
+using C1.Xamarin.Forms.Grid;
 using FlexGrid101.Resources;
 using Xamarin.Forms;
 
@@ -41,12 +42,8 @@ namespace FlexGrid101
             var data = Customer.GetCustomerList(1000);
             grid.ItemsSource = data;
             grid.MinColumnWidth = 85;
-        }
 
-        private void OnRowHeaderLoading(object sender, GridRowHeaderLoadingEventArgs e)
-        {
-            e.ExpandButton.CheckedImageSource = _hide;
-            e.ExpandButton.UncheckedImageSource = _show;
+            //details.DetailCollapsedIconTemplate = new C1IconTemplate(() => new C1BitmapIcon() { Source = ImageSource.FromFile("arrow_up.png") });
         }
     }
 }

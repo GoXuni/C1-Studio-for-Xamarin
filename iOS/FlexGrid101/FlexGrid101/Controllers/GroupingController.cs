@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using UIKit;
 using C1.CollectionView;
 using C1.iOS.Grid;
+using Foundation;
 
 namespace FlexGrid101
 {
@@ -21,6 +22,12 @@ namespace FlexGrid101
 
             var task = UpdateVideos();
         }
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
 
         private async Task UpdateVideos()
         {
@@ -28,10 +35,10 @@ namespace FlexGrid101
             _collectionView = new C1CollectionView<Customer>(data);
             await _collectionView.GroupAsync(c => c.Country);
             Grid.AutoGenerateColumns = false;
-            Grid.Columns.Add(new GridColumn { Binding = "Active", Width = new GridLength(60) });
+            Grid.Columns.Add(new GridColumn { Binding = "Active", Width = new GridLength(75) });
             Grid.Columns.Add(new GridColumn { Binding = "Name", Width = GridLength.Star });
             Grid.Columns.Add(new GridColumn { Binding = "OrderTotal", Width = new GridLength(110), Format = "C", Aggregate = GridAggregate.Sum, HorizontalAlignment = UIControlContentHorizontalAlignment.Right, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Right });
-            Grid.GroupHeaderFormat = Foundation.NSBundle.MainBundle.LocalizedString("{name}: {value} ({count} items)", "");
+            Grid.GroupHeaderFormat = NSBundle.MainBundle.GetLocalizedString("{name}: {value} ({count} items)", "");
             Grid.ItemsSource = _collectionView;
             _collectionView.SortChanged += OnSortChanged;
             UpdateSortButton();
@@ -59,14 +66,6 @@ namespace FlexGrid101
         private void UpdateSortButton()
         {
             var direction = GetCurrentSortDirection();
-            //if (direction == SortDirection.Ascending)
-            //{
-            //    toolbarItemSort.Icon = Device.OnPlatform<FileImageSource>(null, new FileImageSource() { File = "ic_sort_descending.png" }, new FileImageSource() { File = "Assets/AppBar/appbar.sort.alphabetical.descending.png" });
-            //}
-            //else
-            //{
-            //    toolbarItemSort.Icon = Device.OnPlatform<FileImageSource>(null, new FileImageSource() { File = "ic_sort_ascending.png" }, new FileImageSource() { File = "Assets/AppBar/appbar.sort.alphabetical.ascending.png" });
-            //}
         }
 
         private SortDirection GetCurrentSortDirection()

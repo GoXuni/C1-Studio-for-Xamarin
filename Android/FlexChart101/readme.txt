@@ -47,3 +47,6 @@ Shows the following samples
 	- FlexPie Theming
 	
 	- Pie Load Animation
+	
+	- Tree Map
+	- Custom Plot Elements Scrolling

@@ -17,6 +17,7 @@
   <string name="legendAndTitles">Legend And Titles</string>
   <string name="selectionModes">Selection Modes</string>
   <string name="toggleSeries">Toggle Series</string>
+  <string name="treeMap">Tree Map</string>
   <string name="loadAnimation">Load Animation Mode</string>
   <string name="animationOptions">Load Animation Mode</string>
   <string name="updateanimation">Update Animation</string>
@@ -28,6 +29,7 @@
   <string name="histogram">Histogram Chart</string>
   <string name="multipleAxes">Multiple Axes</string>
   <string name="customPlotElements">Custom Plot Elements</string>
+  <string name="customPlotElementsScrolling">Custom Plot Elements Scrolling</string>
   <string name="snapshot">Export Image</string>
   <string name="conditionalFormatting">Conditional Formatting</string>
   <string name="updateAnimation">Update Animation</string>
@@ -46,6 +48,7 @@
   <string name="selectionModesDesc">Shows the different selection modes</string>
   <string name="customizingAxesLabelDesc">Shows customize axis and label format</string>
   <string name="toggleSeriesDesc">Shows the ability to toggle a series visibility</string>
+  <string name="treeMapDesc">Shows the mainly function of tree map control</string>
   <string name="loadAnimationDesc">Shows animation modes when data is loaded</string>
   <string name="animationOptionsDesc">Shows animation modes when data is loaded</string>
   <string name="updateAnimationDesc">Shows animation when data is updated</string>
@@ -56,6 +59,7 @@
   <string name="histogramDesc">Shows Histogram Chart.</string>
   <string name="multipleAxesDesc">Shows chart with multiple Y axes</string>
   <string name="customPlotElementsDesc">Shows how to fully customize plot elements</string>
+  <string name="customPlotElementsScrollingDesc">Shows customize plot elements scrolling</string>
   <string name="conditionalFormattingDesc">Shows conditional formatting by customizing plot elements</string>
   <string name="updateAnimationDesc">Shows animation when data is updated</string>
   <string name="snapshotDesc">Shows how to export an image of FlexChart</string>
@@ -115,6 +119,9 @@
     <item>Scatter</item>
     <item>Bar</item>
     <item>Column</item>
+    <item>Step</item>
+    <item>StepSymbols</item>
+    <item>StepArea</item>
   </string-array>
   <string-array name="stackingSpinnerValues">
     <item>None</item>
@@ -286,5 +293,7 @@
     <item>Center</item>
     <item>Inside</item>
     <item>Outside</item>
+    <item>Radial</item>
+    <item>Circular</item>
   </string-array>
 </resources>

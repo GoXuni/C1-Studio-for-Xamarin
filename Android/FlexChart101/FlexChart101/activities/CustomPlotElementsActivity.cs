@@ -1,22 +1,13 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
-using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-
-using FlexChart101.DataModel;
-
-using Android.Graphics;
 using C1.Android.Chart;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using System;
+using System.Collections.Generic;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
@@ -61,7 +52,7 @@ namespace FlexChart101
             // Set axis Y line invisible.
             mChart.AxisY.AxisLine = false;
 
-            seriesdevices.SymbolRendering += (object sender, RenderSymbolEventArgs e) =>
+            seriesdevices.SymbolLoading += (object sender, SymbolEventArgs e) =>
             {
                 int index = e.Index;
                 ImageView view = new ImageView(this.BaseContext);

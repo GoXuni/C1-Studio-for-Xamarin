@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
+             x:Class="FlexChart101.TreeMapSample"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true">
+
+    <c1:C1TreeMap x:Name="treeMap" Binding="sales" BindingName="type" MaxDepth="2" ChildItemsPath="items">
+        <c1:C1TreeMap.DataLabel>
+            <c1:ChartDataLabel Content="{}{type}" Position="Center">
+                <c1:ChartDataLabel.Style>
+                    <c1:ChartStyle FontSize="10" />
+                </c1:ChartDataLabel.Style>
+            </c1:ChartDataLabel>
+        </c1:C1TreeMap.DataLabel>
+    </c1:C1TreeMap>
+
+</ContentPage>

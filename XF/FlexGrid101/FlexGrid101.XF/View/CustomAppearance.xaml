@@ -5,30 +5,42 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
-  <c1:FlexGrid x:Name="grid"
-                 BackgroundColor="White"
-                 BorderColor="#FFA3AEB9"
-                 BorderWidth="1"
-                 GridLinesVisibility="All"
-                 ShowMarquee="True"
-                 SelectionMode="CellRange"
-                 RowBackgroundColor="White"
-                 CursorBackgroundColor="White"
-                 EditorBackgroundColor="White"
-                 EditorTextColor="Black"
-                 TopLeftCellBackgroundColor="#FFA9C4E9"
-                 RowHeaderBackgroundColor="#FFE4ECF7"
-                 RowHeaderSelectedBackgroundColor="#FFFFD58D"
-                 RowHeaderTextColor="Black"
-                 GridLinesColor="#FFD0D7E5"
-                 HeaderGridLinesColor="#FF9EB6CE"
-                 SelectionBackgroundColor="#FFEAECF5"
-                 TextColor="Black"
-                 SelectionTextColor="Black"
-                 CursorTextColor="Black"
-                 SelectionAdornerColor="White"
-                 SelectionAdornerBorderColor="Black"
-                 ColumnHeaderTextColor="Black"
-                 ColumnHeaderSelectedBackgroundColor="#FFF8D79B"
-                 ColumnHeaderBackgroundColor="#FFE4ECF7"/>
+    <ContentPage.Resources>
+        <Style x:Key="CustomStyle" TargetType="c1:FlexGrid">
+            <Setter Property="HeadersVisibility" Value="All"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="BorderColor" Value="#FFA3AEB9"/>
+            <Setter Property="BorderWidth" Value="1"/>
+            <Setter Property="GridLinesVisibility" Value="All"/>
+            <Setter Property="ColumnHeaderGridLinesVisibility" Value="All"/>
+            <Setter Property="RowHeaderGridLinesVisibility" Value="All"/>
+            <Setter Property="TopLeftHeaderGridLinesVisibility" Value="All"/>
+            <Setter Property="DefaultRowHeight" Value="38"/>
+            <Setter Property="DefaultColumnHeaderRowHeight" Value="38"/>
+            <Setter Property="DefaultRowHeaderColumnWidth" Value="38"/>
+            <Setter Property="CellPadding" Value="4"/>
+            <Setter Property="ShowMarquee" Value="True"/>
+            <Setter Property="SelectionMode" Value="CellRange"/>
+            <Setter Property="RowBackgroundColor" Value="White"/>
+            <Setter Property="CursorBackgroundColor" Value="White"/>
+            <Setter Property="EditorBackgroundColor" Value="White"/>
+            <Setter Property="EditorTextColor" Value="Black"/>
+            <Setter Property="TopLeftCellBackgroundColor" Value="#FFA9C4E9"/>
+            <Setter Property="RowHeaderBackgroundColor" Value="#FFE4ECF7"/>
+            <Setter Property="RowHeaderSelectedBackgroundColor" Value="#FFFFD58D"/>
+            <Setter Property="RowHeaderTextColor" Value="Black"/>
+            <Setter Property="GridLinesColor" Value="#FFD0D7E5"/>
+            <Setter Property="HeaderGridLinesColor" Value="#FF9EB6CE"/>
+            <Setter Property="SelectionBackgroundColor" Value="#FFEAECF5"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="SelectionTextColor" Value="Black"/>
+            <Setter Property="CursorTextColor" Value="Black"/>
+            <Setter Property="SelectionAdornerColor" Value="White"/>
+            <Setter Property="SelectionAdornerBorderColor" Value="Black"/>
+            <Setter Property="ColumnHeaderTextColor" Value="Black"/>
+            <Setter Property="ColumnHeaderSelectedBackgroundColor" Value="#FFF8D79B"/>
+            <Setter Property="ColumnHeaderBackgroundColor" Value="#FFE4ECF7"/>
+        </Style>
+    </ContentPage.Resources>
+    <c1:FlexGrid x:Name="grid" Style="{StaticResource CustomStyle}"/>
 </ContentPage>

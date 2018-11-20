@@ -6,22 +6,22 @@
              ios:Page.UseSafeArea="true"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
              xmlns:local="clr-namespace:FlexGrid101;assembly=FlexGrid101.XF">
-  <StackLayout>
-    <Entry x:Name="search" Completed="OnCompleted" Margin="5,5,5,5"/>
-    <Grid VerticalOptions="FillAndExpand">
-      <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False" HeadersVisibility="Column" IsReadOnly="True" CellDoubleTapped="OnCellDoubleTapped">
-        <c1:FlexGrid.Columns>
-          <local:GridImageColumn Binding="Thumbnail" Header=" " Width="50"/>
-          <c1:GridColumn Binding="Title" Header="Title" MinWidth="300" Width="*"/>
-          <c1:GridColumn Binding="ChannelTitle" Header="Channel"/>
-        </c1:FlexGrid.Columns>
-        <c1:FlexGrid.Behaviors>
-          <c1:EmptyGridBehavior EmptyView="{x:Reference Name=emptyListLabel}" />
-        </c1:FlexGrid.Behaviors>
-      </c1:FlexGrid>
-      <Label x:Name="emptyListLabel"
+    <StackLayout>
+        <Entry x:Name="search" Completed="OnCompleted" Margin="5,5,5,5"/>
+        <Grid VerticalOptions="FillAndExpand">
+            <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False" HeadersVisibility="Column" IsReadOnly="True" CellDoubleTapped="OnCellDoubleTapped" AllowMerging="ColumnHeaders" AllowDragging="None" AllowResizing="None">
+                <c1:FlexGrid.Columns>
+                    <local:GridImageColumn Binding="Thumbnail" Header="Title" Width="50"/>
+                    <c1:GridColumn Binding="Title" Header="Title" MinWidth="300" Width="*"/>
+                    <c1:GridColumn Binding="ChannelTitle" Header="Channel"/>
+                </c1:FlexGrid.Columns>
+                <c1:FlexGrid.Behaviors>
+                    <c1:EmptyGridBehavior EmptyView="{x:Reference Name=emptyListLabel}" />
+                </c1:FlexGrid.Behaviors>
+            </c1:FlexGrid>
+            <Label x:Name="emptyListLabel"
              HorizontalOptions="Center"/>
-      <ActivityIndicator x:Name="activityIndicator" VerticalOptions="Center"/>
-    </Grid>
-  </StackLayout>
+            <ActivityIndicator x:Name="activityIndicator" VerticalOptions="Center"/>
+        </Grid>
+    </StackLayout>
 </ContentPage>

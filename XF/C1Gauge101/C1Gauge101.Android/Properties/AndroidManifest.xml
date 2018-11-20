@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.grapecity.xf.C1Gauge101" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="17" />
-	<application android:label="C1Gauge101" android:icon="@drawable/Icon" android:theme="@style/MyTheme"></application>
+	<application android:label="C1Gauge101" android:icon="@mipmap/icon" android:theme="@style/MyTheme"></application>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

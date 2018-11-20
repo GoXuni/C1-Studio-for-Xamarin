@@ -1,19 +1,15 @@
-using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
+using Android.OS;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using Android.OS;
-using FlexChart101.DataModel;
 using C1.Android.Chart;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using FlexChart101.DataModel;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    [Activity(Label = "@string/selectionModes", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/selectionModes")]
     public class SelectionModesActivity : AppCompatActivity
     {
         private FlexChart mChart;

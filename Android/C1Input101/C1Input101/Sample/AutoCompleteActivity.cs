@@ -1,22 +1,16 @@
-﻿using System;
-using Android.App;
-
+﻿using Android.App;
+using Android.OS;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using Android.OS;
-
-using Android.Support.V4.Content;
 using C1.Android.Input;
-
+using System;
 using System.Threading;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
-
 
 namespace C1Input101
 {
-    [Activity(Label = "@string/autocomplete", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/autocomplete")]
     public class AutoCompleteActivity : AppCompatActivity
     {
         private Spinner acmSpinner;
@@ -24,14 +18,20 @@ namespace C1Input101
         private C1AutoComplete customAutoComplete;
         private C1AutoComplete filterAutoComplete;
         private Switch clearSwitch;
+        private TextView acmTextView, clearTextView;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_autocomplete);
 
             acmSpinner = (Spinner)FindViewById(Resource.Id.acm_Spinner);
-
             clearSwitch = (Switch)FindViewById(Resource.Id.clear_switch);
+
+            acmTextView = (TextView)FindViewById(Resource.Id.acm_textview);
+            clearTextView = (TextView)FindViewById(Resource.Id.clear_textview);
+
+            acmTextView.Text = GetString(Resource.String.AutoCompleteMode);
+            clearTextView.Text = GetString(Resource.String.ShowClearButton);
 
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);

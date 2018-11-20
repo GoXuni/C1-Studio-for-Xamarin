@@ -24,6 +24,7 @@
   <string name="hitTest">ヒットテスト</string>
   <string name="histogram">ヒストグラムチャート</string>
   <string name="multipleAxes">複数の軸</string>
+  <string name="customPlotElementsScrolling">カスタムプロット要素のスクロール</string>
   <string name="customPlotElements">プロット要素のカスタマイズ</string>
   <string name="snapshot">画像として保存</string>
   <string name="conditionalFormatting">条件付き書式</string>
@@ -51,11 +52,14 @@
   <string name="histogramDesc">ヒストグラムチャートを表示</string>
   <string name="multipleAxesDesc">複数の Y 軸を持つチャートを表示</string>
   <string name="customPlotElementsDesc">要素をカスタマイズする方法</string>
+  <string name="customPlotElementsScrollingDesc">カスタムプロット要素のスクロールサンプル</string>
   <string name="conditionalFormattingDesc">プロット要素に条件付きの書式を設定</string>
   <string name="updateAnimationDesc">データ更新時のアニメーション効果</string>
   <string name="snapshotDesc">表示したチャートを画像として保存する</string>
   <string name="zones">ゾーン（領域）</string>
   <string name="zonesDesc">プロットエリアに色分けした領域を表示</string>
+  <string name="treeMap">ツリーマップ</string>
+  <string name="treeMapDesc">ツリーマップコントロールの主な機能</string>
 
   <string name="chartType">チャートの種別</string>
   <string name="stacking">積層グラフ</string>

@@ -68,5 +68,11 @@ namespace C1Calendar101
                 e.DaySlot = slot;
             }
         }
+        public override void DidReceiveMemoryWarning()
+        {
+            Calendar.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+            base.DidReceiveMemoryWarning();
+        }
     }
 }

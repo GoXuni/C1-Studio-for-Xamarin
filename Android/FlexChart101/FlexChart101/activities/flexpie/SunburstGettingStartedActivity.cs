@@ -1,21 +1,14 @@
-using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
+using Android.OS;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using Android.OS;
-
-using FlexChart101.DataModel;
 using C1.Android.Chart;
-using Android.Graphics;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101.Pie
 {
-    [Activity(Label = "@string/gettingStarted", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/gettingStarted")]
     public class SunburstGettingStartedActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

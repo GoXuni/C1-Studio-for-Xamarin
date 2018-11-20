@@ -1,18 +1,17 @@
-using System;
 using Android.App;
-using Android.OS;
-using System.Collections.Generic;
-using FlexChart101.DataModel;
 using Android.Graphics;
-using C1.Android.Chart;
+using Android.OS;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Views;
+using C1.Android.Chart;
+using FlexChart101.DataModel;
+using System;
+using System.Collections.Generic;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    [Activity(Label = "@string/multipleAxes", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/multipleAxes")]
     public class MultipleAxesActivity : AppCompatActivity
 
     {

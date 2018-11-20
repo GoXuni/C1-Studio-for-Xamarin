@@ -44,7 +44,7 @@ namespace FlexChart101
             chart.AxisY.Title = "Devices Sold (billions)";
             chart.AxisY.Style = new ChartStyle() { FontAttributes = CoreText.CTFontSymbolicTraits.Italic, FontSize = 16 };
 
-            chart.Series[0].SymbolRendering += (object sender, RenderSymbolEventArgs e) =>
+            chart.Series[0].SymbolLoading += (object sender, SymbolEventArgs e) =>
             {
                 var company = e.Item as Company;
                 string s = "Images/" + company.Name.ToLower() + ".png";

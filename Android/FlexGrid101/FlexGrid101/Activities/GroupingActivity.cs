@@ -1,16 +1,15 @@
-
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Support.V7.App;
 using Android.Util;
+using Android.Views;
+using C1.Android.Grid;
+using C1.CollectionView;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using C1.Android.Grid;
-using C1.CollectionView;
-using Android.Support.V7.App;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
-using Android.Views;
 
 namespace FlexGrid101
 {
@@ -31,6 +30,7 @@ namespace FlexGrid101
             SupportActionBar.SetHomeButtonEnabled(true);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
+            Grid.GridLinesVisibility = GridLinesVisibility.Vertical;
             var task = UpdateVideos();
         }
 

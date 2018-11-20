@@ -4,49 +4,51 @@
              x:Class="FlexGrid101.RowDetails"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid" Padding="0,5,0,0">
-  <Grid RowSpacing="0">
-    <Grid.RowDefinitions>
-      <RowDefinition Height="Auto"/>
-      <RowDefinition Height="Auto"/>
-      <RowDefinition />
-    </Grid.RowDefinitions>
-    <StackLayout Orientation="Horizontal" Padding="5">
-      <Label x:Name="lblMode" VerticalOptions="Center"/>
-      <Picker x:Name="showItemsPicker" SelectedIndex="{Binding ShowTextSelectedIndex,Mode=TwoWay}" HorizontalOptions="FillAndExpand"/>
-    </StackLayout>
-    <c1:FlexGrid x:Name="grid" Grid.Row="2" AutoGenerateColumns="False">
-      <c1:FlexGrid.Columns>
-        <c1:GridColumn Binding="Id" Width="Auto"/>
-        <c1:GridColumn Binding="FirstName" Width="*"/>
-        <c1:GridColumn Binding="LastName" Width="*"/>
-      </c1:FlexGrid.Columns>
-      <c1:FlexGrid.Behaviors>
-        <c1:FlexGridDetailProvider x:Name="details" Height="170" RowHeaderLoading="OnRowHeaderLoading">
-          <DataTemplate> 
-            <Grid Margin="3" Padding="5">
-              <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-              </Grid.RowDefinitions>
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition />
-              </Grid.ColumnDefinitions>
-              <Label Text="Country:"/>
-              <Label Text="{Binding Country}" Grid.Column="1"/>
-              <Label Text="City:" Grid.Row="1"/>
-              <Label Text="{Binding City}" Grid.Row="1" Grid.Column="1"/>
-              <Label Text="Address:" Grid.Row="2"/>
-              <Label Text="{Binding Address}" Grid.Row="2" Grid.Column="1"/>
-              <Label Text="PostalCode:" Grid.Row="3"/>
-              <Label Text="{Binding PostalCode}" Grid.Row="3" Grid.Column="1"/>
-            </Grid>
-          </DataTemplate>
-        </c1:FlexGridDetailProvider>
-      </c1:FlexGrid.Behaviors>
-    </c1:FlexGrid>
-  </Grid>
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid" 
+             xmlns:core="clr-namespace:C1.Xamarin.Forms.Core;assembly=C1.Xamarin.Forms.Core"
+             Padding="0,5,0,0">
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackLayout Orientation="Horizontal" Padding="5">
+            <Label x:Name="lblMode" VerticalOptions="Center"/>
+            <Picker x:Name="showItemsPicker" SelectedIndex="{Binding ShowTextSelectedIndex,Mode=TwoWay}" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <c1:FlexGrid x:Name="grid" Grid.Row="2" AutoGenerateColumns="False" HeadersVisibility="All">
+            <c1:FlexGrid.Columns>
+                <c1:GridColumn Binding="Id" Width="Auto"/>
+                <c1:GridColumn Binding="FirstName" Width="*"/>
+                <c1:GridColumn Binding="LastName" Width="*"/>
+            </c1:FlexGrid.Columns>
+            <c1:FlexGrid.Behaviors>
+                <c1:FlexGridDetailProvider x:Name="details" Height="170">
+                    <DataTemplate>
+                        <Grid Margin="3" Padding="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Country:"/>
+                            <Label Text="{Binding Country}" Grid.Column="1"/>
+                            <Label Text="City:" Grid.Row="1"/>
+                            <Label Text="{Binding City}" Grid.Row="1" Grid.Column="1"/>
+                            <Label Text="Address:" Grid.Row="2"/>
+                            <Label Text="{Binding Address}" Grid.Row="2" Grid.Column="1"/>
+                            <Label Text="PostalCode:" Grid.Row="3"/>
+                            <Label Text="{Binding PostalCode}" Grid.Row="3" Grid.Column="1"/>
+                        </Grid>
+                    </DataTemplate>
+                </c1:FlexGridDetailProvider>
+            </c1:FlexGrid.Behaviors>
+        </c1:FlexGrid>
+    </Grid>
 </ContentPage>

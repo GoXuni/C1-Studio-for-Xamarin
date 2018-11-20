@@ -10,6 +10,7 @@
         layout="@layout/toolbar" />
     <c1.android.grid.FlexGrid
         android:id="@+id/Grid"
+		style="@style/FlexGridClassicStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:c1_frozenRows="1"

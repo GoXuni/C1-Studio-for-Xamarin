@@ -1,14 +1,14 @@
 using Android.App;
-using Android.OS;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Runtime.Serialization;
-using Android.Views;
-using System.Linq;
 using Android.Content.PM;
+using Android.OS;
+using Android.Support.V7.App;
+using Android.Views;
 using C1.Android.Grid;
 using C1.CollectionView;
-using Android.Support.V7.App;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Runtime.Serialization;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101

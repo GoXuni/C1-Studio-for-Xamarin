@@ -44,7 +44,7 @@
   <string name="ColumnLayoutEdit">Edit column layout</string>
   <string name="StarSizingTitle">Star Sizing</string>
   <string name="StarSizingDescription">Shows a responsive column layout that uses star sizing.</string>
-  <string name="CellFreezingTitle">Cell Freezing</string>
+  <string name="CellFreezingTitle">Cell Freezing &amp; Merging</string>
   <string name="CellFreezingDescription">Shows frozen columns, rows and cell merging.</string>
   <string name="CustomMergingTitle">Custom Merging</string>
   <string name="CustomMergingDescription">Shows a grid with custom cell merging.</string>
@@ -56,6 +56,8 @@
   <string name="NewRowTitle">New Row</string>
   <string name="NewRowDescription">Shows adding new rows.</string>
   <string name="NewRowPlaceholder">Click here to add a new row</string>
+  <string name="CheckListTitle">Check-List</string>
+  <string name="CheckListDescription">Show how to select flexgrid rows through checkboxes.</string>
   <string name="EmptyListText">There are no videos to show.</string>
   <string name="CellsSelectedText">cell(s) selected</string>
   <string name="RemoveFilter">Remove filter</string>
@@ -68,7 +70,12 @@
   <string name="Sunday">Sunday</string>
   <string name="Weekday">Weekday</string>
   <string name="Weekend">Weekend</string>
-
+  <string name="CustomSortIcon">Custom Sort Icon</string>
+  <string name="CustomSortIconTitle">Custom Sort Icon</string>
+  <string name="CustomSortIconDescription">Show how to custom sort icon in header column.</string>
+  <string name="SortIconPosition">Sort icon position</string>
+  <string name="SortIconTemplate">Sort icon template</string>
+  
   <string-array name="SelectionModeTable">
     <item>None</item>
     <item>Cell</item>

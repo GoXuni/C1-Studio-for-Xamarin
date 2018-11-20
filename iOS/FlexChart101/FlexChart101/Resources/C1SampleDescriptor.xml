@@ -84,6 +84,12 @@
         <Image>Images/chart_column.png</Image>
         <StoryboardID>Toggle Series</StoryboardID>
     </Sample>
+     <Sample>
+        <Title>Tree Map</Title>
+        <Description>Shows the mainly function of tree map control</Description>
+        <Image>Images/chart_treeMap.png</Image>
+        <StoryboardID>Tree Map</StoryboardID>
+    </Sample>
     <Sample>
         <Title>Dynamic Charts</Title>
         <Description>Shows a dynamic, “live” chart.</Description>
@@ -174,6 +180,12 @@
         <Description>Shows how to fully customize plot elements</Description>
         <Image>Images/custom.png</Image>
         <StoryboardID>Custom Plot Elements</StoryboardID>
+    </Sample>
+     <Sample>
+        <Title>Custom Plot Elements Scrolling</Title>
+        <Description>Shows customize plot elements Scrolling</Description>
+        <Image>Images/custom.png</Image>
+        <StoryboardID>Custom Plot Elements Scrolling</StoryboardID>
     </Sample>
     <Sample>
         <Title>Custom Tooltips</Title>

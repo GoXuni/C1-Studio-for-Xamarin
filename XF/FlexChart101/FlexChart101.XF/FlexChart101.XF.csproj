@@ -14,15 +14,15 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\apple.png" />
@@ -46,6 +46,7 @@
     <EmbeddedResource Include="Images\chart_selection.png" />
     <EmbeddedResource Include="Images\chart_title.png" />
     <EmbeddedResource Include="Images\chart_tooltip.png" />
+    <EmbeddedResource Include="Images\chart_treeMap.png" />
     <EmbeddedResource Include="Images\custom.png" />
     <EmbeddedResource Include="Images\export_image.png" />
     <EmbeddedResource Include="Images\Germany.png" />
@@ -72,6 +73,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Views\Samples\TreeMap.xaml.cs">
+      <DependentUpon>TreeMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Samples\CustomPlotElementsScrolling.xaml.cs">
+      <DependentUpon>CustomPlotElementsScrolling.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Samples\UpdateAnimationSample.xaml.cs">
       <DependentUpon>UpdateAnimationSample.xaml</DependentUpon>
     </Compile>
@@ -89,6 +96,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Images\chart_treeMap.png" />
     <None Remove="Images\histogram.png" />
   </ItemGroup>
 </Project>

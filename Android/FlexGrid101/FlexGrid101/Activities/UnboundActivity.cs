@@ -1,11 +1,11 @@
-
 using Android.App;
 using Android.Content.PM;
+using Android.Graphics;
 using Android.OS;
-using C1.Android.Grid;
 using Android.Support.V7.App;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Views;
+using C1.Android.Grid;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
@@ -24,6 +24,12 @@ namespace FlexGrid101
             SupportActionBar.SetHomeButtonEnabled(true);
 
             Grid = FindViewById<FlexGrid>(Resource.Id.Grid);
+            Grid.HeadersVisibility = GridHeadersVisibility.All;
+            Grid.GridLinesVisibility = GridLinesVisibility.None;
+            Grid.RowHeaderGridLinesVisibility = GridLinesVisibility.Vertical;
+            Grid.SelectionMode = GridSelectionMode.CellRange;
+            Grid.RowHeaderSelectedBackgroundColor = Color.Argb(255, 248, 248, 248);
+            Grid.ColumnHeaderSelectedBackgroundColor = Color.Argb(255, 248, 248, 248);
             PopulateUnboundGrid();
         }
         public override bool OnOptionsItemSelected(IMenuItem item)
@@ -51,7 +57,7 @@ namespace FlexGrid101
             // add rows/columns to the unbound grid
             for (int i = 0; i < 12; i++) // three years, four quarters per year
             {
-                Grid.Columns.Add(new GridColumn());
+                Grid.Columns.Add(new GridColumn() { HeaderHorizontalAlignment = GravityFlags.Center });
             }
             for (int i = 0; i < 500; i++)
             {

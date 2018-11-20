@@ -521,4 +521,16 @@
     <value>ヒストグラムチャート</value>
     <comment>Histogram Chart</comment>
   </data>
+  <data name="CustomPlotElementsScrollingDescription" xml:space="preserve">
+    <value>カスタムプロット要素のスクロールサンプル</value>
+  </data>
+  <data name="CustomPlotElementsScrollingTitle" xml:space="preserve">
+    <value>カスタムプロット要素のスクロール</value>
+  </data>
+  <data name="TreeMapDescription" xml:space="preserve">
+    <value>ツリーマップコントロールの主な機能</value>
+  </data>
+  <data name="TreeMapTitle" xml:space="preserve">
+    <value>ツリーマップ</value>
+  </data>
 </root>

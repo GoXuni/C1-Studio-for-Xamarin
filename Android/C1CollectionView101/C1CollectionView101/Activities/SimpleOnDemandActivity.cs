@@ -2,21 +2,21 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Support.V4.Widget;
+using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using C1.Android.CollectionView;
+using C1.CollectionView;
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using C1.CollectionView;
-using C1.Android.CollectionView;
 using System.Threading;
-using Android.Support.V7.App;
+using System.Threading.Tasks;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1CollectionView101
 {
-    [Activity(Label = "@string/SimpleOnDemandTitle", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/SimpleOnDemandTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class SimpleOnDemandActivity : AppCompatActivity
     {
         private SimpleOnDemandCollectionView _collectionView;

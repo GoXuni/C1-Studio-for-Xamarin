@@ -26,7 +26,7 @@ namespace FlexChart101
             flexChart1.LegendPosition = ChartPositionType.None;
         }
 
-        void OnSymbolRendering(object sender, RenderSymbolEventArgs e)
+        void OnSymbolLoading(object sender, SymbolEventArgs e)
         {
             var company = e.Item as Company;
             var img = new Image()

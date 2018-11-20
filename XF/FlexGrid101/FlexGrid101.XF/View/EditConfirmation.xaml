@@ -10,7 +10,7 @@
                  BeginningEdit="OnBeginningEdit" 
                  CellEditEnded="OnCellEditEnded"
                  GridLinesVisibility="None"
-                 HeadersGridLinesVisibility="None"
+                 ColumnHeaderGridLinesVisibility="None"
                  HeadersVisibility="Column"
                  BackgroundColor="White"
                  RowBackgroundColor="#FFE2EFDB"
@@ -22,13 +22,13 @@
                  SelectionBackgroundColor="#FF5A823F"
                  SelectionTextColor="White">
         <c1:FlexGrid.Columns>
-            <c1:GridColumn Binding="Id" IsReadOnly="true" Width="100"/>
-            <c1:GridColumn Binding="FirstName"/>
-            <c1:GridColumn Binding="LastName"/>
-            <c1:GridColumn Binding="Address"/>
-            <c1:GridColumn Binding="City"/>
-            <c1:GridColumn Binding="PostalCode"/>
-            <c1:GridColumn Binding="Active"/>
+            <c1:GridColumn Binding="Id" IsReadOnly="true" MinWidth="70" Width="*"/>
+            <c1:GridColumn Binding="FirstName" MinWidth="100" Width="*"/>
+            <c1:GridColumn Binding="LastName" MinWidth="100" Width="*"/>
+            <c1:GridColumn Binding="Address" MinWidth="150" Width="*"/>
+            <c1:GridColumn Binding="City" MinWidth="100" Width="*"/>
+            <c1:GridColumn Binding="PostalCode" MinWidth="100" Width="*"/>
+            <c1:GridColumn Binding="Active" MinWidth="70" Width="*"/>
         </c1:FlexGrid.Columns>
     </c1:FlexGrid>
 </ContentPage>

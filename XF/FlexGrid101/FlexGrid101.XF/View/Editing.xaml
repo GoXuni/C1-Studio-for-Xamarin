@@ -5,22 +5,22 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
-  <ContentPage.ToolbarItems>
-    <ToolbarItem x:Name="toolbarItemEdit" Clicked="OnEditButtonClicked" Order="Primary" Priority="0">
-      <ToolbarItem.Icon>
-        <OnPlatform x:TypeArguments="FileImageSource" WinPhone="Assets/AppBar/appbar.edit.png" Android="ic_edit.png" />
-      </ToolbarItem.Icon>
-    </ToolbarItem>
-  </ContentPage.ToolbarItems>
-  <c1:FlexGrid x:Name="grid"
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="toolbarItemEdit" Clicked="OnEditButtonClicked" Order="Primary" Priority="0">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource" WinPhone="Assets/AppBar/appbar.edit.png" Android="ic_edit.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <c1:FlexGrid x:Name="grid"
                AutoGenerateColumns="False"
                SelectionMode="Row">
-    <c1:FlexGrid.Columns>
-      <c1:GridColumn Binding="Id" />
-      <c1:GridColumn Binding="FirstName" />
-      <c1:GridColumn Binding="LastName" />
-      <c1:GridColumn Binding="LastOrderDate" Format="d" />
-      <c1:GridColumn Binding="OrderTotal" Format="n2" />
-    </c1:FlexGrid.Columns>
-  </c1:FlexGrid>
+        <c1:FlexGrid.Columns>
+            <c1:GridColumn Binding="Id" />
+            <c1:GridColumn Binding="FirstName" />
+            <c1:GridColumn Binding="LastName" />
+            <c1:GridColumn Binding="LastOrderDate" Format="d" />
+            <c1:GridColumn Binding="OrderTotal" Format="n2" />
+        </c1:FlexGrid.Columns>
+    </c1:FlexGrid>
 </ContentPage>

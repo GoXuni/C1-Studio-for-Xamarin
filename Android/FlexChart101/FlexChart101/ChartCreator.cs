@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
-
-using Android.Views;
 using C1.Android.Chart;
+using System.Collections.Generic;
 
 namespace FlexChart101
 {

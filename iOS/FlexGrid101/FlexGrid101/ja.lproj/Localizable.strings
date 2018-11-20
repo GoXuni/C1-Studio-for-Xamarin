@@ -45,3 +45,5 @@
 "{name}: {value} ({count} items)" = "{name}: {value} ({count} 項目)";
 " cell(s) selected" = " 個のセルを選択しました";
 "Click here to add a new row" = "新しい行を追加するにはこちらをクリックしてください";
+"Sort Icon Position" = "ソートアイコンの位置";
+"Sort Icon Template" = "ソートアイコンのテンプレート";

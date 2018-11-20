@@ -17,6 +17,7 @@ namespace FlexGrid101
 
             var data = Customer.GetCustomerList(1000);
 
+            Grid.HeadersVisibility = GridHeadersVisibility.All;
             Grid.AutoGenerateColumns = false;
             Grid.Columns.Add(new GridColumn() { Binding = "Id", Width = GridLength.Auto });
             Grid.Columns.Add(new GridColumn() { Binding = "FirstName", Width = GridLength.Star });
@@ -28,7 +29,12 @@ namespace FlexGrid101
             Grid.ItemsSource = data;
 
         }
-
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
         private void OnDetailCellCreating(object sender, GridDetailCellCreatingEventArgs e)
         {
             var customer = e.Row.DataItem as Customer;

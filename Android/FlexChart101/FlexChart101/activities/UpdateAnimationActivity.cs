@@ -1,24 +1,15 @@
+using Android.App;
+using Android.Graphics;
+using Android.OS;
+using Android.Views;
+using Android.Widget;
+using C1.Android.Chart;
+using C1.Android.Core;
+using FlexChart101.DataModel;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.Graphics;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using FlexChart101.DataModel;
-using Java.Lang;
-
-using C1.Android.Chart;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
-using C1.Android.Core;
 
 namespace FlexChart101
 {
@@ -60,9 +51,9 @@ namespace FlexChart101
             dataSource = new ObservableCollection<object>(list);
             mChart.ItemsSource = dataSource;
             mChart.BindingX = "Letter";
-		    // initialize series elements and set the binding to variables of
-		    // ChartPoint
-		    ChartSeries seriesSales = new ChartSeries();
+            // initialize series elements and set the binding to variables of
+            // ChartPoint
+            ChartSeries seriesSales = new ChartSeries();
             seriesSales.Chart = mChart;
             seriesSales.SeriesName = "Value";
             seriesSales.Binding = "Count";

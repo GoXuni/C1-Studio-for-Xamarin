@@ -1,17 +1,13 @@
-﻿using System;
-using Android.App;
+﻿using Android.App;
 using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using Android.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    [Activity(Label = "FlexChart101", MainLauncher = true, Icon = "@drawable/Icon")]
+    [Activity(Label = "FlexChart101", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
         ListView mSampleList;

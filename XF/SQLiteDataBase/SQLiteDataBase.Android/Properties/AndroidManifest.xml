@@ -2,5 +2,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.grapecity.xf.SQLiteDataBase" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="17" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	<application android:label="SQLiteDataBase.Android" android:icon="@drawable/icon" android:theme="@style/MyTheme"></application>
+	<application android:label="SQLiteDataBase.Android" android:icon="@mipmap/icon" android:theme="@style/MyTheme"></application>
 </manifest>

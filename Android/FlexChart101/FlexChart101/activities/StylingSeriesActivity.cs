@@ -1,20 +1,14 @@
-using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
-using System.Collections.Generic;
-using FlexChart101.DataModel;
-using C1.Android.Chart;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using Android.Views;
+using C1.Android.Chart;
+using FlexChart101.DataModel;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    [Activity(Label = "@string/stylingSeries", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/stylingSeries")]
     public class StylingSeriesActivity : AppCompatActivity
     {
         private FlexChart mChart;

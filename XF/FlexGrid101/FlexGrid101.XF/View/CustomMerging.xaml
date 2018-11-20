@@ -1,26 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlexGrid101.CustomMerging"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
              xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
-  <Grid RowSpacing="0">
-    <Grid.RowDefinitions>
-      <RowDefinition Height="Auto"/>
-      <RowDefinition />
-    </Grid.RowDefinitions>
-    <c1:FlexGrid x:Name="grid" IsReadOnly="True" SelectionMode="CellRange" ShowMarquee="True" AllowMerging="All"/>
-    <Grid Grid.Row="1" Padding="5">
-      <Grid.RowDefinitions>
-        <RowDefinition Height="Auto" />
-        <RowDefinition />
-      </Grid.RowDefinitions>
-      <StackLayout Orientation="Horizontal">
-        <Image x:Name="imgTV" WidthRequest="50" HeightRequest="50" />
-        <Label x:Name="labelShowName" FontSize="30" VerticalOptions="Center"/>
-      </StackLayout>
-      <Label x:Name="labelShowTimes" Grid.Row="1" />
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <c1:FlexGrid x:Name="grid" IsReadOnly="True" AllowMerging="All" HeadersVisibility="All" RowHeaderGridLinesVisibility="All" GridLinesVisibility="All" SelectionMode="CellRange" BorderWidth="1"/>
+        <Grid Grid.Row="1" Padding="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal">
+                <Image x:Name="imgTV" WidthRequest="50" HeightRequest="50" />
+                <Label x:Name="labelShowName" FontSize="30" VerticalOptions="Center"/>
+            </StackLayout>
+            <Label x:Name="labelShowTimes" Grid.Row="1" />
+        </Grid>
     </Grid>
-  </Grid>
 </ContentPage>

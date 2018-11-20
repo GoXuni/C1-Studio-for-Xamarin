@@ -1,14 +1,14 @@
 ﻿using Android.App;
-using Android.Views;
 using Android.OS;
+using Android.Support.V7.App;
+using Android.Views;
 using C1.Android.Calendar;
 using C1.Android.Input;
-using Android.Support.V7.App;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Input101
 {
-    [Activity(Label = "@string/dropdown", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/dropdown")]
     public class DropDownActivity : AppCompatActivity
     {
         C1DropDown dropdown;

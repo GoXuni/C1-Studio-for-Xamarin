@@ -1,14 +1,12 @@
-
 using Android.App;
 using Android.Content.PM;
 using Android.Graphics;
 using Android.OS;
-using C1.Android.Core;
-using C1.Android.Grid;
 using Android.Support.V7.App;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
-using Android.Views;
 using Android.Util;
+using Android.Views;
+using C1.Android.Grid;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
@@ -31,17 +29,17 @@ namespace FlexGrid101
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             grid.HeadersVisibility = GridHeadersVisibility.Column;
             grid.BackgroundColor = Color.White;
-            grid.RowBackgroundColor = ColorEx.FromARGB(0xFF, 0xE5, 0xE6, 0xFA);
+            grid.RowBackgroundColor = Color.Argb(0xFF, 0xE5, 0xE6, 0xFA);
             grid.RowTextColor = Color.Black;
             grid.AlternatingRowBackgroundColor = Color.White;
             grid.GridLinesVisibility = GridLinesVisibility.Vertical;
-            grid.ColumnHeaderBackgroundColor = ColorEx.FromARGB(0xFF, 0x77, 0x88, 0x98);
+            grid.ColumnHeaderBackgroundColor = Color.Argb(0xFF, 0x77, 0x88, 0x98);
             grid.ColumnHeaderTextColor = Color.White;
             grid.ColumnHeaderTypeface = Typeface.Create("", TypefaceStyle.Bold);
-            grid.SelectionBackgroundColor = ColorEx.FromARGB(0xFF, 0xFA, 0xD1, 0x27);
+            grid.SelectionBackgroundColor = Color.Argb(0xFF, 0xFA, 0xD1, 0x27);
             grid.SelectionTextColor = Color.Black;
             grid.AutoGenerateColumns = false;
-            grid.AllowResizing = GridAllowResizing.Columns;
+            grid.AllowResizing = GridAllowResizing.None;
             grid.DefaultRowHeight = new GridLength(dips_50);
             grid.Columns.Add(new GridColumn { Binding = "FirstName", Width = GridLength.Star });
             grid.Columns.Add(new GridColumn { Binding = "LastName", Width = GridLength.Star });

@@ -17,7 +17,12 @@ namespace FlexGrid101
 
             PopulateEditGrid();
         }
-
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
         private void PopulateEditGrid()
         {
             // create the data

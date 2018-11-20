@@ -1,4 +1,5 @@
 ﻿using C1.CollectionView;
+using C1.iOS.Grid;
 using Foundation;
 using System;
 using System.Collections;
@@ -19,9 +20,16 @@ namespace FlexGrid101
 
             var data = Customer.GetCustomerList(100);
             Grid.ItemsSource = new CustomCollectionView<Customer>(data);
-            Grid.NewRowPosition = C1.iOS.Grid.GridNewRowPosition.Top;
-            Grid.NewRowPlaceholder = Foundation.NSBundle.MainBundle.LocalizedString("Click here to add a new row", "");
-            Grid.AllowDragging = C1.iOS.Grid.GridAllowDragging.Both;
+            Grid.NewRowPosition = GridNewRowPosition.Top;
+            Grid.NewRowPlaceholder = NSBundle.MainBundle.GetLocalizedString("Click here to add a new row", "");
+            Grid.AllowDragging = GridAllowDragging.Both;
+            Grid.HeadersVisibility = GridHeadersVisibility.All;
+        }
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
         }
     }
 

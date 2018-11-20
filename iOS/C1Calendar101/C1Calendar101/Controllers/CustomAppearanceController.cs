@@ -21,5 +21,11 @@ namespace C1Calendar101
             Calendar.DayOfWeekFont = UIFont.FromName("Arial", 21);
             Calendar.HeaderFont = UIFont.FromName("Arial", 21);
         }
+        public override void DidReceiveMemoryWarning()
+        {
+            Calendar.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+            base.DidReceiveMemoryWarning();
+        }        
     }
 }

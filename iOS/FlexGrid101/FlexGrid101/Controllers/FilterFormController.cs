@@ -15,6 +15,12 @@ namespace FlexGrid101
         public FilterFormController(IntPtr handle) : base(handle)
         {
         }
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();

@@ -43,6 +43,9 @@ namespace C1Input101
         {
             base.ViewDidLoad();
             
+            AutoCompleteMode.Text = NSBundle.MainBundle.GetLocalizedString("AutoCompleteMode", "");
+            ShowClearButton.Text = NSBundle.MainBundle.GetLocalizedString("ShowClearButton", "");
+
             clearSwitch.ValueChanged += ClearSwitch_ValueChanged;
             clearSwitch.On = false;
             HighlightDropdown.DropDownHeight = 200;
@@ -185,9 +188,33 @@ namespace C1Input101
         #endregion
 
         public override void DidReceiveMemoryWarning()
-        {
+        {         
             base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.
+            if (acmField != null)
+            {
+                if (acmField.InputView != null)
+                {
+                    acmField.InputView.Dispose();
+                    acmField.InputView = null;
+                }
+                if (acmField.InputAccessoryView != null)
+                {
+                    acmField.InputAccessoryView.Dispose();
+                    acmField.InputAccessoryView = null;
+                }
+            }
+            foreach (var item in HighlightDropdown.ItemsSource)
+            {
+                ((NSObject)item).Dispose();
+            }
+            foreach (var item in CustomDropdown.ItemsSource)
+            {
+                ((NSObject)item).Dispose();
+            }
+            HighlightDropdown.RemoveFromSuperview();
+            CustomDropdown.RemoveFromSuperview();
+            FilterDropdown.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
         }
     }
     public static class UITextFieldEx

@@ -21,7 +21,12 @@ namespace FlexGrid101
             var data = Customer.GetCustomerList(100);
             Grid.ItemsSource = data;
         }
-
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+        }
         public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
         {
             base.PrepareForSegue(segue, sender);
@@ -63,16 +68,16 @@ namespace FlexGrid101
                 {
                     if (!string.IsNullOrWhiteSpace(filter.Value))
                     {
-                        filters.Add(new FilterUnaryExpression(filter.Field, filter.Operation, filter.Value));
+                        filters.Add(new FilterOperationExpression(filter.Field, filter.Operation, filter.Value));
                     }
                 }
                 await Grid.CollectionView.FilterAsync(FilterExpression.Combine(FilterCombination.And, filters.ToArray()));
             }
         }
 
-        private IEnumerable<FilterUnaryExpression> GetCurrentFilters(FilterExpression filterExpression)
+        private IEnumerable<FilterOperationExpression> GetCurrentFilters(FilterExpression filterExpression)
         {
-            var uf = filterExpression as FilterUnaryExpression;
+            var uf = filterExpression as FilterOperationExpression;
             if (uf != null)
                 yield return uf;
             var bf = filterExpression as FilterBinaryExpression;

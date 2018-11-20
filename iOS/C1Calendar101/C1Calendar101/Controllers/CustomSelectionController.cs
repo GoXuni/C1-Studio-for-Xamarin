@@ -21,6 +21,12 @@ namespace C1Calendar101
             base.ViewDidUnload();
             Calendar.SelectionChanging -= OnSelectionChanging;
         }
+        public override void DidReceiveMemoryWarning()
+        {
+            Calendar.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+            base.DidReceiveMemoryWarning();
+        }
 
         private void OnSelectionChanging(object sender, CalendarSelectionChangingEventArgs e)
         {

@@ -5,16 +5,17 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:focusableInTouchMode="true">
-  <include
-    android:id="@+id/toolbar"
-    layout="@layout/toolbar" />
-  <c1.android.grid.FlexGrid
-      android:id="@+id/Grid"
-      android:layout_width="0dp"
-      android:layout_height="0dp"
-      app:c1_newRowPosition="top"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <c1.android.grid.FlexGrid
+        android:id="@+id/Grid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:c1_newRowPosition="top"
+        app:c1_headersVisibility="all"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 </android.support.constraint.ConstraintLayout>

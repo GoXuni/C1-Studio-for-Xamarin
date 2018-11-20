@@ -1,6 +1,6 @@
+using C1.Android.Chart.Interaction;
 using System;
 using System.Collections.Generic;
-using C1.Android.Chart.Interaction;
 
 namespace FlexChart101
 {

@@ -27,6 +27,7 @@
     app:layout_constraintTop_toBottomOf="@+id/Spinner" />
   <c1.android.grid.FlexGrid
       android:id="@+id/Grid"
+		style="@style/FlexGridClassicStyle"
       app:c1_gridSelectionMode="cellRange"       
       android:layout_width="0dp"
       android:layout_height="0dp"

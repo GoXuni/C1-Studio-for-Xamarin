@@ -1,25 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using FlexChart101.DataModel;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
-
-
+using Android.Views;
 using C1.Android.Chart;
+using FlexChart101.DataModel;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    [Activity(Label = "@string/bubbleChart", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/bubbleChart")]
     public class BubbleChartActivity : AppCompatActivity
     {
         private FlexChart mChart;

@@ -1,22 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+using Android;
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using Android.Graphics;
-using System.IO;
-using Android;
-using Android.Content.PM;
-using C1.Android.Gauge;
 using C1.Android.Core;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using C1.Android.Gauge;
+using System;
+using System.IO;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Gauge101

@@ -84,6 +84,12 @@ namespace FlexChart101.Pie
                 case 3:
                     mFlexPie.DataLabel.Position = PieLabelPosition.Outside;
                     break;
+                case 4:
+                    mFlexPie.DataLabel.Position = PieLabelPosition.Radial;
+                    break;
+                case 5:
+                    mFlexPie.DataLabel.Position = PieLabelPosition.Circular;
+                    break;
             }
         }
         public override bool OnOptionsItemSelected(IMenuItem item)

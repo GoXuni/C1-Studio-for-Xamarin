@@ -1,15 +1,14 @@
 ﻿using Android.App;
+using Android.OS;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using Android.OS;
-
 using C1.Android.Input;
-using Android.Support.V7.App;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1Input101
 {
-    [Activity(Label = "@string/combobox", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/combobox")]
     public class ComboBoxActivity : AppCompatActivity
     {
 

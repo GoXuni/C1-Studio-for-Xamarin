@@ -1,19 +1,19 @@
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using C1.CollectionView;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
-using C1.CollectionView;
-using Android.Support.V7.App;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace C1CollectionView101
 {
-    [Activity(Label = "@string/SortingTitle", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/SortingTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class SortingActivity : AppCompatActivity
     {
         private C1CollectionView<YouTubeVideo> _collectionView;

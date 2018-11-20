@@ -405,6 +405,44 @@
             </objects>
             <point key="canvasLocation" x="304.80000000000001" y="1997.4512743628188"/>
         </scene>
+        <!--Tree Map-->
+        <scene sceneID="L9Y-i4-O7m">
+            <objects>
+                <viewController storyboardIdentifier="Tree Map" id="ezF-ee-tyI" userLabel="Tree Map" customClass="TreeMapController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lx6-4t-wTr"/>
+                        <viewControllerLayoutGuide type="bottom" id="GeF-49-IWp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rvM-qo-yeP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tree Map" id="zbY-F7-0YH" userLabel="Tree Map"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dzk-ay-SxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="1997"/>
+        </scene>
+        <!--Custom Plot Elements Scrolling-->
+        <scene sceneID="bfp-Hg-QdB">
+            <objects>
+                <viewController storyboardIdentifier="Custom Plot Elements Scrolling" id="e7t-gW-Ydv" userLabel="Custom Plot Elements Scrolling" customClass="CustomPlotElementsScrollingController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="123-2A-jkk"/>
+                        <viewControllerLayoutGuide type="bottom" id="cUB-M7-oAy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nHW-YC-ivy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom Plot Elements Scrolling" id="UoW-2c-WkE" userLabel="Custom Plot Elements Scrolling"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAb-54-D4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="1997"/>
+        </scene>
         <!--Custom Plot Elements-->
         <scene sceneID="aC8-DY-hKF">
             <objects>
@@ -1047,6 +1085,8 @@
                                     <segment title="Inside"/>
                                     <segment title="Center"/>
                                     <segment title="Outside"/>
+                                    <segment title="Radial"/>
+                                    <segment title="Circular"/>
                                 </segments>
                                 <connections>
                                     <action selector="modeChanged:" destination="tkJ-ch-Tvv" eventType="valueChanged" id="npk-gC-7oM"/>

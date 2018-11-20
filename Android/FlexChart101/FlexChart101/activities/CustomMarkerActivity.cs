@@ -1,17 +1,15 @@
-using System;
 using Android.App;
-using Android.Widget;
-using Android.OS;
-
-using C1.Android.Chart;
 using Android.Graphics;
-using C1.Android.Chart.Interaction;
-using System.Collections.Generic;
-using C1.Android.Core;
+using Android.OS;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Views;
+using Android.Widget;
+using C1.Android.Chart;
+using C1.Android.Chart.Interaction;
+using C1.Android.Core;
+using System;
+using System.Collections.Generic;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {

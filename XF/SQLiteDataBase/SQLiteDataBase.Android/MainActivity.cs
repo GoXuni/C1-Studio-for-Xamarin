@@ -1,26 +1,18 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
-
-using XAM = Xamarin.Forms;
-
 using Xamarin.Forms.Platform.Android;
 
 namespace SQLiteDataBase.Android
 {
-    [Activity(Label = "SQLiteDataBase", Icon = "@drawable/icon", MainLauncher = true, Theme = "@style/MyTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    [Activity(Label = "SQLiteDataBase", MainLauncher = true, Theme = "@style/MyTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class MainActivity : FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             SQLitePCL.raw.SetProvider(new SQLitePCL.SQLite3Provider_e_sqlite3());
 
-            FormsAppCompatActivity.ToolbarResource = Android.Resource.Layout.Toolbar;
+            ToolbarResource = Android.Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
 

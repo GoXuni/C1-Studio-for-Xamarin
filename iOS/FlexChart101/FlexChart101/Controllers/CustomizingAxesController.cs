@@ -31,7 +31,7 @@ namespace FlexChart101
 			chart.Series.Add(new ChartSeries() { SeriesName = "Downloads", Binding = "Downloads,Downloads" });
 			chart.ItemsSource = SalesData.GetSalesDataList();
 			this.Add(chart);
-			chart.AxisX.LabelLoading += (object sender, RenderLabelLoadingEventArgs e) =>
+			chart.AxisX.LabelLoading += (object sender, AxisLabelLoadingEventArgs e) =>
 			{
 				string path = "Images/" + e.LabelString;
 				UIImage image = null;
@@ -43,28 +43,31 @@ namespace FlexChart101
 				{
 					image = null;
 				}
-				if (image != null)
-				{
-					image.Draw(new CGRect(e.Rect.Left, e.Rect.Top, e.Rect.Width, e.Rect.Height));
-				}
-                e.LabelString = null;
+
+                UIImageView imageView = new UIImageView();
+                imageView.Frame = new CGRect(0, 0, 25, 20);
+                imageView.Image = image;
+                e.Label = imageView;
 			};
 
-			chart.AxisY.LabelLoading += (object sender, RenderLabelLoadingEventArgs e) =>
+			chart.AxisY.LabelLoading += (object sender, AxisLabelLoadingEventArgs e) =>
 			{
-				if (e.Value <= 8000)
+                UILabel label = new UILabel();
+                label.Text = "$" + (e.Value / 1000).ToString() + "K";
+                label.AdjustsFontSizeToFitWidth = true;
+                if (e.Value <= 8000)
 				{
-					e.Engine.SetFill(UIColor.Red);
+                    label.TextColor = UIColor.Red;
 				}
 				else if (e.Value <= 12000 && e.Value > 8000)
 				{
-					e.Engine.SetFill(UIColor.Green);
+                    label.TextColor = UIColor.Green;
 				}
 				else
 				{
-					e.Engine.SetFill(UIColor.Black);
+                    label.TextColor = UIColor.Black;
 				}
-				e.LabelString = "$" + (e.Value / 1000).ToString() + "K";
+                e.Label = label;
 			};
 		}
 

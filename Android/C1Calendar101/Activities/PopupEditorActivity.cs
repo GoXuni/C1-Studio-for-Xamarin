@@ -1,22 +1,21 @@
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
+using Android.Content.Res;
+using Android.Graphics;
 using Android.OS;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using C1.Android.Calendar;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using C1.Android.Calendar;
-using Android.Content.Res;
-using Android.Support.V7.App;
-
 using Toolbar = Android.Support.V7.Widget.Toolbar;
-using Android.Graphics;
 
 namespace C1Calendar101
 {
-    [Activity(Label = "@string/popup_editor", Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    [Activity(Label = "@string/popup_editor", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class PopupEditorActivity : AppCompatActivity
     {
 

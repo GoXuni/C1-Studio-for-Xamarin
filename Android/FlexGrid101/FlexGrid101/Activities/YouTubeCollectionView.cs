@@ -1,11 +1,11 @@
-﻿using System;
+﻿using C1.CollectionView;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Threading;
 using System.Threading.Tasks;
-using C1.CollectionView;
 
 namespace FlexGrid101
 {

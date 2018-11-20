@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.grapecity.xf.DashboardDemo" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="15" />
-	<application android:label="DashboardDemo.Android" android:icon="@drawable/icon" android:theme="@android:style/Theme.Holo.Light"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="2018.7.10.01" package="com.grapecity.xf.DashboardDemo" android:installLocation="auto" android:versionCode="2">
+	<uses-sdk android:minSdkVersion="17" />
+	<application android:label="DashboardDemo.Android" android:icon="@mipmap/icon" android:theme="@android:style/Theme.Holo.Light"></application>
 </manifest>

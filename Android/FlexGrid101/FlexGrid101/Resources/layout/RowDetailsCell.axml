@@ -1,36 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-  <LinearLayout
-      xmlns:calendar="http://schemas.android.com/apk/res-auto"
-         android:orientation="vertical"
-         android:layout_width="fill_parent"
-         android:layout_height="fill_parent"
-         android:id="@+id/main_content"
-         android:layout_below="@id/toolbar">
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/CountryLabel" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/CityLabel" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/AddressLabel" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/PostalCodeLabel" />
-  </LinearLayout>
+    android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="4dip">
+		<TextView
+			android:text="Country"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/CountryLabel" />
+		<TextView
+			android:text="City"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/CityLabel" />
+		<TextView
+			android:text="Address"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/AddressLabel" />
+		<TextView
+			android:text="Postal Code"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/PostalCodeLabel" />
+	</LinearLayout>
 </RelativeLayout>

@@ -42,8 +42,8 @@ namespace C1Gauge101
             var image = await gauge.GetImage();
             snapshot.Source = ImageSource.FromStream(() => new MemoryStream(image));
             await Task.Delay(100);
-            snapshotFrameBorder.BackgroundColor = ColorEx.ThemeForegroundColor;
-            snapshotFrame.BackgroundColor = ColorEx.ThemeBackgroundColor;
+            snapshotFrameBorder.BackgroundColor = C1ThemeInfo.ApplicationTheme.TextColor;
+            snapshotFrame.BackgroundColor = C1ThemeInfo.ApplicationTheme.BackgroundColor;
             snapshotFrameBorder.IsVisible = true;
             gauge.IsAnimated = true;
         }
@@ -52,7 +52,7 @@ namespace C1Gauge101
         {
             //uses the IPicture interface to use the appropriate saving mechanism from the picture class in each individual project
             var originalBackground = gauge.BackgroundColor;
-            gauge.BackgroundColor = ColorEx.ThemeBackgroundColor;
+            gauge.BackgroundColor = C1ThemeInfo.ApplicationTheme.BackgroundColor;
             gauge.IsAnimated = false;
             DependencyService.Get<IPicture>().SavePictureToDisk("Gauge", gauge.GetImage());
             
@@ -64,14 +64,14 @@ namespace C1Gauge101
             gauge.IsAnimated = true;
         }
 
-        protected override async void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
 
             // This solution is from https://forums.xamarin.com/discussion/49492/how-can-i-stop-device-starttimer
             CancellationTokenSource cts = this.cancellation; // safe copy
 
-            Device.StartTimer(TimeSpan.FromSeconds(Device.OnPlatform<Double>(5, 5, 5)), () =>
+            Device.StartTimer(TimeSpan.FromSeconds(5), () =>
             {
                 if (cts.IsCancellationRequested) return false;
 

@@ -1,26 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
-using Android.Content;
 using Android.Graphics;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using FlexChart101.DataModel;
-using Java.Lang;
-
 using C1.Android.Chart;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using FlexChart101.DataModel;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    [Activity(Label = "@string/basicChartTypes", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/basicChartTypes")]
     public class BasicChartTypesActivity : BaseActivity
     {
         private FlexChart mChart;
@@ -129,6 +119,21 @@ namespace FlexChart101
                     break;
                 case 8:
                     mChart.ChartType=ChartType.Column;
+                    axisX.MajorGridStyle.StrokeThickness = 0;
+                    axisX.MinorGridStyle.StrokeThickness = 1;
+                    break;
+                case 9:
+                    mChart.ChartType = ChartType.Step;
+                    axisX.MajorGridStyle.StrokeThickness = 0;
+                    axisX.MinorGridStyle.StrokeThickness = 1;
+                    break;
+                case 10:
+                    mChart.ChartType = ChartType.StepSymbols;
+                    axisX.MajorGridStyle.StrokeThickness = 0;
+                    axisX.MinorGridStyle.StrokeThickness = 1;
+                    break;
+                case 11:
+                    mChart.ChartType = ChartType.StepArea;
                     axisX.MajorGridStyle.StrokeThickness = 0;
                     axisX.MinorGridStyle.StrokeThickness = 1;
                     break;

@@ -35,6 +35,11 @@ namespace C1Calendar101
         {
             PerformSegue("ClosePopup", this);
         }
-
+        public override void DidReceiveMemoryWarning()
+        {
+            Calendar.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
+            base.DidReceiveMemoryWarning();
+        }
     }
 }

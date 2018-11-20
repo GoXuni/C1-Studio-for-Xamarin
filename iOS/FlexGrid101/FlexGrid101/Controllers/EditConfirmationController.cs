@@ -1,7 +1,6 @@
+using C1.iOS.Grid;
 using System;
 using UIKit;
-using C1.iOS.Grid;
-using C1.iOS.Core;
 
 namespace FlexGrid101
 {
@@ -26,17 +25,24 @@ namespace FlexGrid101
             Grid.CellEditEnded += OnCellEditEnded;
 
             Grid.GridLinesVisibility = GridLinesVisibility.None;
-            Grid.HeadersGridLinesVisibility = GridLinesVisibility.None;
+            Grid.ColumnHeaderGridLinesVisibility = GridLinesVisibility.None;
             Grid.HeadersVisibility = GridHeadersVisibility.Column;
             Grid.BackgroundColor = UIColor.White;
-            Grid.RowBackgroundColor = ColorEx.FromARGB(0xFF, 0xE2, 0xEF, 0xDB);
+            Grid.RowBackgroundColor = UIColor.FromRGB(0xE2, 0xEF, 0xDB);
             Grid.RowTextColor = UIColor.Black;
             Grid.AlternatingRowBackgroundColor = UIColor.White;
-            Grid.ColumnHeaderBackgroundColor = ColorEx.FromARGB(0xFF, 0x70, 0xAD, 0x46);
+            Grid.ColumnHeaderBackgroundColor = UIColor.FromRGB(0x70, 0xAD, 0x46);
             Grid.ColumnHeaderTextColor = UIColor.White;
             Grid.ColumnHeaderFont = UIFont.BoldSystemFontOfSize(UIFont.LabelFontSize);
-            Grid.SelectionBackgroundColor = ColorEx.FromARGB(0xFF, 0x5A, 0x82, 0x3F);
+            Grid.SelectionBackgroundColor = UIColor.FromRGB(0x5A, 0x82, 0x3F);
             Grid.SelectionTextColor = UIColor.White;
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
         }
 
         private object _originalValue;
@@ -53,10 +59,10 @@ namespace FlexGrid101
             if (!e.CancelEdits && (originalValue == null && currentValue != null || !originalValue.Equals(currentValue)))
             {
                 var alert = new UIAlertView();
-                alert.Title = Foundation.NSBundle.MainBundle.LocalizedString("Confirm Edit", "");
-                alert.Message = Foundation.NSBundle.MainBundle.LocalizedString("Do you want to commit the edit?", "");
-                alert.AddButton(Foundation.NSBundle.MainBundle.LocalizedString("Ok", ""));
-                alert.AddButton(Foundation.NSBundle.MainBundle.LocalizedString("Cancel", ""));
+                alert.Title = Foundation.NSBundle.MainBundle.GetLocalizedString("Confirm Edit", "");
+                alert.Message = Foundation.NSBundle.MainBundle.GetLocalizedString("Do you want to commit the edit?", "");
+                alert.AddButton(Foundation.NSBundle.MainBundle.GetLocalizedString("Ok", ""));
+                alert.AddButton(Foundation.NSBundle.MainBundle.GetLocalizedString("Cancel", ""));
                 alert.CancelButtonIndex = 1;
                 alert.Clicked += (s, e2) =>
                 {

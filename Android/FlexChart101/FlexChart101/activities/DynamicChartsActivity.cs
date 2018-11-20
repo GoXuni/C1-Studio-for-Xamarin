@@ -1,24 +1,19 @@
-using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
-using System.Collections.Generic;
-using FlexChart101.DataModel;
-using Android.Text.Format;
-using Java.Util;
-using C1.Android.Chart;
-
-using System.Collections.ObjectModel;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using Android.Text.Format;
+using Android.Views;
+using C1.Android.Chart;
+using FlexChart101.DataModel;
+using Java.Util;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    [Activity(Label = "@string/dynamicCharts", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/dynamicCharts")]
     public class DynamicChartsActivity : AppCompatActivity
     {
         static FlexChart mChart;

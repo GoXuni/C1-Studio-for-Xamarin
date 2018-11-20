@@ -28,7 +28,7 @@ namespace FlexChart101
             var originalBackground = flexChart.BackgroundColor;
             if (originalBackground == null || originalBackground.A == 0 || originalBackground.A == -1)
             {
-                flexChart.BackgroundColor = ColorEx.ThemeBackgroundColor;
+                flexChart.BackgroundColor = C1ThemeInfo.ApplicationTheme.BackgroundColor;
             }
             DependencyService.Get<IPicture>().SavePictureToDisk("ChartImage", flexChart.GetImage());
 

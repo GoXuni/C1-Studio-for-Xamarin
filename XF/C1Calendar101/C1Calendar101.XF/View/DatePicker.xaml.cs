@@ -26,7 +26,7 @@ namespace C1Calendar101
 
         private async void OnSelectionChanged(object sender, CalendarSelectionChangedEventArgs e)
         {
-            if (e.SelectedDates.Count > 0)
+            if (e.SelectedDates!=null && e.SelectedDates.Count > 0)
             {
                 await Task.Delay(100);
                 await Navigation.PopModalAsync(true);

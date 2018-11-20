@@ -1,11 +1,10 @@
-
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using C1.Android.Grid;
 using Android.Support.V7.App;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Views;
+using C1.Android.Grid;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexGrid101
 {
@@ -25,8 +24,7 @@ namespace FlexGrid101
 
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
             grid.ItemsSource = Customer.GetCustomerList(100);
-            grid.AllowDragging = GridAllowDragging.Both;
-            grid.AllowResizing = GridAllowResizing.Both;
+            grid.ZoomMode = GridZoomMode.Disabled;
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)

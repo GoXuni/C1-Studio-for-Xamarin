@@ -334,4 +334,22 @@
   <data name="MatchWholeWordLabel" xml:space="preserve">
     <value>Match Whole Word</value>
   </data>
+  <data name="CheckListDescription" xml:space="preserve">
+    <value>Show how to select flexgrid rows through checkboxes.</value>
+  </data>
+  <data name="CheckListTitle" xml:space="preserve">
+    <value>Check-List</value>
+  </data>
+  <data name="CustomSortIconTitle" xml:space="preserve">
+    <value>Custom Sort Icon</value>
+  </data>
+  <data name="CustomSortIconDescription" xml:space="preserve">
+    <value>Show how to customize the sorting icon in header columns.</value>
+  </data>
+  <data name="SortIconPosition" xml:space="preserve">
+    <value>Sort icon position</value>
+  </data>
+  <data name="SortIconTemplate" xml:space="preserve">
+    <value>Sort icon template</value>
+  </data>
 </root>

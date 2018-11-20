@@ -8,8 +8,8 @@ namespace FlexGrid101
 {
     public partial class SelectionModesController : UIViewController
     {
-        public string[] pickerOptionStrings = new string[] { Foundation.NSBundle.MainBundle.LocalizedString("None", ""), Foundation.NSBundle.MainBundle.LocalizedString("Cell", ""),
-            Foundation.NSBundle.MainBundle.LocalizedString("Cell Range", ""), Foundation.NSBundle.MainBundle.LocalizedString("Row", ""), Foundation.NSBundle.MainBundle.LocalizedString("Row Range", "") };
+        public string[] pickerOptionStrings = new string[] { NSBundle.MainBundle.GetLocalizedString("None", ""), NSBundle.MainBundle.GetLocalizedString("Cell", ""),
+            NSBundle.MainBundle.GetLocalizedString("Cell Range", ""), NSBundle.MainBundle.GetLocalizedString("Row", ""), NSBundle.MainBundle.GetLocalizedString("Row Range", "") };
 
         public SelectionModesController(IntPtr handle) : base(handle)
         {
@@ -43,8 +43,14 @@ namespace FlexGrid101
 
             var data = Customer.GetCustomerList(100);
             Grid.ItemsSource = data;
-			Grid.AllowResizing = GridAllowResizing.Both;
+            Grid.AllowResizing = GridAllowResizing.Both;
             Grid.SelectionChanged += OnSelectionChanged;
+        }
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            Grid.RemoveFromSuperview();
+            ReleaseDesignerOutlets();
         }
 
         private void OnSelectionChanged(object sender, GridCellRangeEventArgs e)
@@ -54,7 +60,7 @@ namespace FlexGrid101
                 int rowsSelected = Math.Abs(e.CellRange.Row2 - e.CellRange.Row) + 1;
                 int colsSelected = Math.Abs(e.CellRange.Column2 - e.CellRange.Column) + 1;
 
-                SelectionLabel.Text = (rowsSelected * colsSelected).ToString() + NSBundle.MainBundle.LocalizedString(" cell(s) selected","");
+                SelectionLabel.Text = (rowsSelected * colsSelected).ToString() + NSBundle.MainBundle.GetLocalizedString(" cell(s) selected", "");
             }
         }
 
@@ -80,15 +86,15 @@ namespace FlexGrid101
                 {
                     default:
                     case 0:
-                        return Foundation.NSBundle.MainBundle.LocalizedString("None", "");
+                        return NSBundle.MainBundle.GetLocalizedString("None", "");
                     case 1:
-                        return Foundation.NSBundle.MainBundle.LocalizedString("Cell", "");
+                        return NSBundle.MainBundle.GetLocalizedString("Cell", "");
                     case 2:
-                        return Foundation.NSBundle.MainBundle.LocalizedString("Cell Range", "");
+                        return NSBundle.MainBundle.GetLocalizedString("Cell Range", "");
                     case 3:
-                        return Foundation.NSBundle.MainBundle.LocalizedString("Row", "");
+                        return NSBundle.MainBundle.GetLocalizedString("Row", "");
                     case 4:
-                        return Foundation.NSBundle.MainBundle.LocalizedString("Row Range", "");
+                        return NSBundle.MainBundle.GetLocalizedString("Row Range", "");
                 }
             }
 

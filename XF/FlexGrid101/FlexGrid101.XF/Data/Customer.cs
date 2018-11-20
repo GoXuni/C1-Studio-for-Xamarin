@@ -283,6 +283,11 @@ namespace FlexGrid101
         public static string[] GetFirstNames() { return _firstNames; }
         public static string[] GetLastNames() { return _lastNames; }
 
+        public static IEnumerable<City> GetCities()
+        {
+            return _countries.SelectMany(country => country.Value, (pair, city) => new City() { Name = city, Country = pair.Key });
+        }
+
         #endregion
 
         #region ** INotifyPropertyChanged Members
@@ -333,5 +338,12 @@ namespace FlexGrid101
         }
 
         #endregion
+    }
+
+    public class City
+    {
+        public bool Selected { get; set; }
+        public string Name { get; set; }
+        public string Country { get; set; }
     }
 }

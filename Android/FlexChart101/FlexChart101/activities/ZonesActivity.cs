@@ -1,23 +1,18 @@
-using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-using System.Collections.Generic;
-using FlexChart101.DataModel;
 using Android.Graphics;
-using Java.Lang;
+using Android.OS;
+using Android.Support.V7.App;
+using Android.Views;
 using C1.Android.Chart;
 using C1.Android.Core;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
+using FlexChart101.DataModel;
+using Java.Lang;
+using System.Collections.Generic;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexChart101
 {
-    [Activity(Label = "@string/zones", Icon = "@drawable/icon")]
+    [Activity(Label = "@string/zones")]
     public class ZonesActivity : AppCompatActivity
     {
         private FlexChart mChart;

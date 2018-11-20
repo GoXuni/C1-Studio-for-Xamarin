@@ -331,4 +331,16 @@
   <data name="AnnotationLocalization" xml:space="preserve">
     <value>AnnotationLocalization</value>
   </data>
+  <data name="CustomPlotElementsScrollingDescription" xml:space="preserve">
+    <value>定制绘图元素的滑动。</value>
+  </data>
+  <data name="CustomPlotElementsScrollingTitle" xml:space="preserve">
+    <value>滑动定制绘图元素</value>
+  </data>
+  <data name="TreeMapDescription" xml:space="preserve">
+    <value>展示树形图的主要功能。</value>
+  </data>
+  <data name="TreeMapTitle" xml:space="preserve">
+    <value>树形图</value>
+  </data>
 </root>

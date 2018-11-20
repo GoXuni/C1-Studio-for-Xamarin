@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -87,6 +87,10 @@
     <CscToolExe>mcs.exe</CscToolExe>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CheckListController.cs" />
+    <Compile Include="Controllers\CheckListController.designer.cs">
+      <DependentUpon>CheckListController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\ColumnLayoutFormController.cs" />
     <Compile Include="Controllers\ColumnLayoutFormController.designer.cs">
       <DependentUpon>ColumnLayoutFormController.cs</DependentUpon>
@@ -106,6 +110,10 @@
     <Compile Include="Controllers\ColumnDefinitionsController.cs" />
     <Compile Include="Controllers\ColumnDefinitionsController.designer.cs">
       <DependentUpon>ColumnDefinitionsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomSortIconController.cs" />
+    <Compile Include="Controllers\CustomSortIconController.designer.cs">
+      <DependentUpon>CustomSortIconController.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\GettingStartedController.cs" />
     <Compile Include="Controllers\GettingStartedController.designer.cs">
@@ -219,8 +227,21 @@
     <BundleResource Include="Images\input_form.png" />
     <BundleResource Include="Images\retro_TV_filled-50_light.png" />
     <BundleResource Include="Images\default.png" />
+    <BundleResource Include="Images\flexgrid_checkList.png" />
+    <BundleResource Include="Images\flexgrid_conditionalFormatting.png" />
+    <BundleResource Include="Images\flexgrid_customAppearance.png" />
+    <BundleResource Include="Images\flexgrid_customSort.png" />
+    <BundleResource Include="Images\flexgrid_editConfirmation.png" />
+    <BundleResource Include="Images\flexgrid_newRow.png" />
+    <BundleResource Include="Images\flexgrid_starSizing.png" />
   </ItemGroup>
   <ItemGroup>
+    <ImageAsset Include="Images.xcassets\arrow_up.imageset\arrow_up.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Images.xcassets\arrow_up.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -278,16 +299,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Core">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Gauge">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Grid">
-      <Version>3.0.20182.298</Version>
+      <Version>3.2.20183.344</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

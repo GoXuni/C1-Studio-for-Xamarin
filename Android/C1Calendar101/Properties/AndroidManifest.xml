@@ -2,6 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.grapecity.android.C1Calendar101" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="17" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<application android:label="C1Calendar101" android:icon="@drawable/Icon" android:theme="@style/MyTheme" />
+	<application android:label="C1Calendar101" android:icon="@mipmap/icon" android:theme="@style/MyTheme" />
 	<!--android:theme="@android:style/Theme.Material.Light"-->
 </manifest>

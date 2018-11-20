@@ -93,11 +93,11 @@ namespace C1CollectionView101
             ImageView.ContentMode = UIViewContentMode.ScaleAspectFill;
             ImageView.Frame = new CGRect(new CGPoint(), frame.Size);
             ImageView.ClipsToBounds = true;
+            ContentView.AddSubview(ImageView);
             AddConstraint(NSLayoutConstraint.Create(ImageView, NSLayoutAttribute.Top, NSLayoutRelation.Equal, this, NSLayoutAttribute.Top, 1, 0));
             AddConstraint(NSLayoutConstraint.Create(ImageView, NSLayoutAttribute.Left, NSLayoutRelation.Equal, this, NSLayoutAttribute.Left, 1, 0));
             AddConstraint(NSLayoutConstraint.Create(ImageView, NSLayoutAttribute.Right, NSLayoutRelation.Equal, this, NSLayoutAttribute.Right, 1, 0));
             AddConstraint(NSLayoutConstraint.Create(ImageView, NSLayoutAttribute.Bottom, NSLayoutRelation.Equal, this, NSLayoutAttribute.Bottom, 1, 0));
-            ContentView.AddSubview(ImageView);
         }
 
         internal void UpdateImage(string url)

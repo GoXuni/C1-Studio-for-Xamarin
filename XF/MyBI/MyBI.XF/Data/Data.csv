@@ -1,0 +1,732 @@
+id,Month,RegionID,Region,ProductID,Product,Units,Revenue
+0,6/1/2018,4,Africa,10,Kirin Zan Grape Sake,45,2723.4
+1,6/1/2018,2,Europe,2,Sasquatch Ale,149,4172
+2,6/1/2018,4,Africa,10,Kirin Zan Grape Sake,51,2774.4
+3,6/1/2018,4,Africa,3,Steeleye Stout,50,747
+4,6/1/2018,4,Africa,5,Malaysian Coffee,46,1989.04
+5,6/1/2018,5,Oceania,1,Dharamsala Tea,68,957.44
+6,6/1/2018,5,Oceania,2,Sasquatch Ale,70,1886.5
+7,6/1/2018,4,Africa,3,Steeleye Stout,52,889.2
+8,6/1/2018,1,America,1,Dharamsala Tea,295,3540
+9,6/1/2018,4,Africa,2,Sasquatch Ale,50,1750
+10,6/1/2018,5,Oceania,2,Sasquatch Ale,83,2556.4
+11,6/1/2018,1,America,2,Sasquatch Ale,303,10074.75
+12,6/1/2018,3,Asia,9,Supercola Pomegranate,42,914.76
+13,6/1/2018,5,Oceania,9,Supercola Pomegranate,64,1154.56
+14,6/1/2018,2,Europe,4,Green Chartreuse,144,3720.96
+15,5/1/2018,1,America,7,Outback Lager,291,4365
+16,5/1/2018,2,Europe,2,Sasquatch Ale,155,5208
+17,5/1/2018,3,Asia,2,Sasquatch Ale,52,1492.4
+18,5/1/2018,4,Africa,4,Green Chartreuse,54,1523.88
+19,5/1/2018,4,Africa,1,Dharamsala Tea,42,530.88
+20,5/1/2018,2,Europe,1,Dharamsala Tea,143,1944.8
+21,5/1/2018,1,America,7,Outback Lager,306,4222.8
+22,5/1/2018,4,Africa,10,Kirin Zan Grape Sake,43,2309.96
+23,5/1/2018,5,Oceania,5,Malaysian Coffee,78,3516.24
+24,5/1/2018,5,Oceania,6,Laughing Lumberjack Lager,75,798
+25,5/1/2018,4,Africa,9,Supercola Pomegranate,40,668.8
+26,5/1/2018,1,America,4,Green Chartreuse,308,8587.04
+27,5/1/2018,1,America,9,Supercola Pomegranate,295,5192
+28,5/1/2018,3,Asia,7,Outback Lager,45,621
+29,5/1/2018,2,Europe,4,Green Chartreuse,159,4108.56
+30,5/1/2018,4,Africa,1,Dharamsala Tea,56,752.64
+31,4/1/2018,5,Oceania,5,Malaysian Coffee,62,2281.6
+32,4/1/2018,3,Asia,5,Malaysian Coffee,44,1558.48
+33,4/1/2018,2,Europe,5,Malaysian Coffee,142,6532
+34,4/1/2018,2,Europe,7,Outback Lager,142,2108.7
+35,4/1/2018,5,Oceania,2,Sasquatch Ale,79,2460.85
+36,4/1/2018,3,Asia,4,Green Chartreuse,45,1331.1
+37,4/1/2018,5,Oceania,5,Malaysian Coffee,81,3427.92
+38,4/1/2018,3,Asia,8,Cloudberry Liqueur,37,572.76
+39,4/1/2018,4,Africa,8,Cloudberry Liqueur,52,758.16
+40,4/1/2018,4,Africa,7,Outback Lager,46,676.2
+41,4/1/2018,5,Oceania,7,Outback Lager,73,1051.2
+42,4/1/2018,3,Asia,3,Steeleye Stout,40,547.2
+43,4/1/2018,4,Africa,6,Laughing Lumberjack Lager,46,598.92
+44,4/1/2018,1,America,3,Steeleye Stout,299,5112.9
+45,4/1/2018,5,Oceania,1,Dharamsala Tea,76,997.12
+46,3/1/2018,3,Asia,9,Supercola Pomegranate,45,801.9
+47,3/1/2018,1,America,8,Cloudberry Liqueur,291,4504.68
+48,3/1/2018,4,Africa,3,Steeleye Stout,48,665.28
+49,3/1/2018,4,Africa,8,Cloudberry Liqueur,57,943.92
+50,3/1/2018,5,Oceania,9,Supercola Pomegranate,75,1435.5
+51,3/1/2018,4,Africa,4,Green Chartreuse,50,1445
+52,3/1/2018,1,America,4,Green Chartreuse,287,8879.78
+53,3/1/2018,3,Asia,5,Malaysian Coffee,55,2428.8
+54,3/1/2018,4,Africa,1,Dharamsala Tea,54,768.96
+55,3/1/2018,5,Oceania,3,Steeleye Stout,72,1179.36
+56,3/1/2018,1,America,8,Cloudberry Liqueur,299,4413.24
+57,3/1/2018,3,Asia,5,Malaysian Coffee,42,1777.44
+58,3/1/2018,3,Asia,5,Malaysian Coffee,40,1784.8
+59,3/1/2018,2,Europe,5,Malaysian Coffee,153,6686.1
+60,3/1/2018,4,Africa,3,Steeleye Stout,40,655.2
+61,2/1/2018,2,Europe,1,Dharamsala Tea,158,2376.32
+62,2/1/2018,5,Oceania,6,Laughing Lumberjack Lager,64,869.12
+63,2/1/2018,2,Europe,3,Steeleye Stout,141,2436.48
+64,2/1/2018,3,Asia,10,Kirin Zan Grape Sake,51,3433.32
+65,2/1/2018,2,Europe,2,Sasquatch Ale,142,4920.3
+66,2/1/2018,3,Asia,2,Sasquatch Ale,38,1117.2
+67,2/1/2018,5,Oceania,5,Malaysian Coffee,59,2551.16
+68,2/1/2018,3,Asia,6,Laughing Lumberjack Lager,53,712.32
+69,2/1/2018,5,Oceania,6,Laughing Lumberjack Lager,61,845.46
+70,2/1/2018,5,Oceania,9,Supercola Pomegranate,63,1358.28
+71,2/1/2018,1,America,3,Steeleye Stout,291,4923.72
+72,2/1/2018,2,Europe,7,Outback Lager,153,1767.15
+73,2/1/2018,5,Oceania,2,Sasquatch Ale,69,2125.2
+74,2/1/2018,2,Europe,3,Steeleye Stout,141,2005.02
+75,1/1/2018,4,Africa,7,Outback Lager,51,604.35
+76,1/1/2018,5,Oceania,5,Malaysian Coffee,61,2300.92
+77,1/1/2018,4,Africa,5,Malaysian Coffee,54,2161.08
+78,1/1/2018,3,Asia,3,Steeleye Stout,35,541.8
+79,1/1/2018,5,Oceania,1,Dharamsala Tea,66,802.56
+80,1/1/2018,5,Oceania,4,Green Chartreuse,74,2214.08
+81,1/1/2018,3,Asia,7,Outback Lager,35,525
+82,1/1/2018,4,Africa,1,Dharamsala Tea,39,611.52
+83,1/1/2018,4,Africa,7,Outback Lager,46,517.5
+84,1/1/2018,1,America,6,Laughing Lumberjack Lager,303,3266.34
+85,1/1/2018,2,Europe,7,Outback Lager,146,2014.8
+86,1/1/2018,2,Europe,9,Supercola Pomegranate,143,2705.56
+87,1/1/2018,1,America,7,Outback Lager,291,3666.6
+88,1/1/2018,4,Africa,10,Kirin Zan Grape Sake,56,3808
+89,1/1/2018,3,Asia,7,Outback Lager,48,547.2
+90,1/1/2018,3,Asia,2,Sasquatch Ale,45,1370.25
+91,12/1/2017,4,Africa,8,Cloudberry Liqueur,51,734.4
+92,12/1/2017,2,Europe,2,Sasquatch Ale,153,4926.6
+93,12/1/2017,5,Oceania,10,Kirin Zan Grape Sake,69,4128.96
+94,12/1/2017,5,Oceania,4,Green Chartreuse,67,2050.2
+95,12/1/2017,4,Africa,7,Outback Lager,48,576
+96,12/1/2017,5,Oceania,9,Supercola Pomegranate,67,1459.26
+97,12/1/2017,4,Africa,10,Kirin Zan Grape Sake,47,2972.28
+98,12/1/2017,2,Europe,9,Supercola Pomegranate,138,2853.84
+99,12/1/2017,4,Africa,8,Cloudberry Liqueur,56,756
+100,12/1/2017,1,America,5,Malaysian Coffee,290,12272.8
+101,12/1/2017,5,Oceania,2,Sasquatch Ale,64,1859.2
+102,12/1/2017,3,Asia,4,Green Chartreuse,51,1525.92
+103,12/1/2017,2,Europe,3,Steeleye Stout,152,2380.32
+104,12/1/2017,4,Africa,2,Sasquatch Ale,48,1663.2
+105,12/1/2017,4,Africa,7,Outback Lager,50,705
+106,11/1/2017,1,America,7,Outback Lager,291,3448.35
+107,11/1/2017,3,Asia,10,Kirin Zan Grape Sake,49,2965.48
+108,11/1/2017,5,Oceania,9,Supercola Pomegranate,58,969.76
+109,11/1/2017,2,Europe,1,Dharamsala Tea,144,1889.28
+110,11/1/2017,5,Oceania,5,Malaysian Coffee,72,2748.96
+111,11/1/2017,2,Europe,10,Kirin Zan Grape Sake,155,9696.8
+112,11/1/2017,3,Asia,3,Steeleye Stout,33,445.5
+113,11/1/2017,4,Africa,4,Green Chartreuse,51,1612.62
+114,11/1/2017,5,Oceania,6,Laughing Lumberjack Lager,62,703.08
+115,11/1/2017,4,Africa,7,Outback Lager,45,533.25
+116,11/1/2017,1,America,5,Malaysian Coffee,289,12496.36
+117,11/1/2017,3,Asia,10,Kirin Zan Grape Sake,39,2413.32
+118,11/1/2017,2,Europe,4,Green Chartreuse,151,4466.58
+119,11/1/2017,5,Oceania,2,Sasquatch Ale,66,2171.4
+120,11/1/2017,5,Oceania,8,Cloudberry Liqueur,63,952.56
+121,10/1/2017,4,Africa,2,Sasquatch Ale,54,1852.2
+122,10/1/2017,4,Africa,9,Supercola Pomegranate,50,825
+123,10/1/2017,4,Africa,2,Sasquatch Ale,39,1051.05
+124,10/1/2017,2,Europe,10,Kirin Zan Grape Sake,154,7854
+125,10/1/2017,2,Europe,10,Kirin Zan Grape Sake,146,9233.04
+126,10/1/2017,1,America,8,Cloudberry Liqueur,286,4633.2
+127,10/1/2017,4,Africa,10,Kirin Zan Grape Sake,56,3541.44
+128,10/1/2017,5,Oceania,5,Malaysian Coffee,60,2152.8
+129,10/1/2017,5,Oceania,2,Sasquatch Ale,68,2237.2
+130,10/1/2017,4,Africa,4,Green Chartreuse,48,1370.88
+131,10/1/2017,3,Asia,5,Malaysian Coffee,34,1391.96
+132,10/1/2017,5,Oceania,5,Malaysian Coffee,62,2709.4
+133,10/1/2017,4,Africa,7,Outback Lager,44,528
+134,10/1/2017,3,Asia,8,Cloudberry Liqueur,48,699.84
+135,10/1/2017,4,Africa,1,Dharamsala Tea,42,618.24
+136,10/1/2017,5,Oceania,8,Cloudberry Liqueur,60,993.6
+137,9/1/2017,5,Oceania,8,Cloudberry Liqueur,61,999.18
+138,9/1/2017,5,Oceania,7,Outback Lager,57,846.45
+139,9/1/2017,1,America,3,Steeleye Stout,296,4422.24
+140,9/1/2017,2,Europe,2,Sasquatch Ale,149,4484.9
+141,9/1/2017,1,America,7,Outback Lager,288,3888
+142,9/1/2017,4,Africa,10,Kirin Zan Grape Sake,38,2532.32
+143,9/1/2017,5,Oceania,5,Malaysian Coffee,69,2697.9
+144,9/1/2017,1,America,5,Malaysian Coffee,285,12323.4
+145,9/1/2017,2,Europe,4,Green Chartreuse,143,3743.74
+146,9/1/2017,2,Europe,3,Steeleye Stout,151,2310.3
+147,9/1/2017,5,Oceania,2,Sasquatch Ale,59,1672.65
+148,9/1/2017,3,Asia,3,Steeleye Stout,38,588.24
+149,9/1/2017,5,Oceania,10,Kirin Zan Grape Sake,56,3008.32
+150,9/1/2017,4,Africa,10,Kirin Zan Grape Sake,47,2908.36
+151,9/1/2017,4,Africa,7,Outback Lager,46,634.8
+152,8/1/2017,4,Africa,7,Outback Lager,49,712.95
+153,8/1/2017,3,Asia,7,Outback Lager,35,509.25
+154,8/1/2017,2,Europe,6,Laughing Lumberjack Lager,143,1921.92
+155,8/1/2017,4,Africa,1,Dharamsala Tea,38,528.96
+156,8/1/2017,2,Europe,8,Cloudberry Liqueur,139,1926.54
+157,8/1/2017,2,Europe,4,Green Chartreuse,152,5012.96
+158,8/1/2017,4,Africa,3,Steeleye Stout,47,752.94
+159,8/1/2017,1,America,7,Outback Lager,286,3946.8
+160,8/1/2017,4,Africa,6,Laughing Lumberjack Lager,55,631.4
+161,8/1/2017,5,Oceania,10,Kirin Zan Grape Sake,58,3431.28
+162,8/1/2017,2,Europe,3,Steeleye Stout,152,2380.32
+163,8/1/2017,3,Asia,6,Laughing Lumberjack Lager,32,353.92
+164,8/1/2017,1,America,1,Dharamsala Tea,283,4256.32
+165,8/1/2017,1,America,6,Laughing Lumberjack Lager,294,3210.48
+166,8/1/2017,2,Europe,10,Kirin Zan Grape Sake,136,8230.72
+167,7/1/2017,1,America,5,Malaysian Coffee,295,11805.9
+168,7/1/2017,5,Oceania,6,Laughing Lumberjack Lager,71,904.54
+169,7/1/2017,5,Oceania,7,Outback Lager,57,666.9
+170,7/1/2017,1,America,5,Malaysian Coffee,280,12364.8
+171,7/1/2017,4,Africa,10,Kirin Zan Grape Sake,46,3002.88
+172,7/1/2017,3,Asia,4,Green Chartreuse,26,716.04
+173,7/1/2017,2,Europe,5,Malaysian Coffee,149,5483.2
+174,7/1/2017,2,Europe,9,Supercola Pomegranate,144,3136.32
+175,7/1/2017,1,America,7,Outback Lager,295,3540
+176,7/1/2017,3,Asia,9,Supercola Pomegranate,33,588.06
+177,7/1/2017,3,Asia,2,Sasquatch Ale,34,1142.4
+178,7/1/2017,4,Africa,5,Malaysian Coffee,38,1713.04
+179,7/1/2017,3,Asia,3,Steeleye Stout,35,611.1
+180,7/1/2017,1,America,8,Cloudberry Liqueur,281,4147.56
+181,7/1/2017,4,Africa,8,Cloudberry Liqueur,40,640.8
+182,7/1/2017,1,America,10,Kirin Zan Grape Sake,280,15422.4
+183,6/1/2017,4,Africa,4,Green Chartreuse,54,1487.16
+184,6/1/2017,1,America,5,Malaysian Coffee,290,10405.2
+185,6/1/2017,3,Asia,3,Steeleye Stout,30,475.2
+186,6/1/2017,3,Asia,4,Green Chartreuse,42,1228.08
+187,6/1/2017,2,Europe,2,Sasquatch Ale,140,3822
+188,6/1/2017,2,Europe,3,Steeleye Stout,156,2611.44
+189,6/1/2017,1,America,10,Kirin Zan Grape Sake,289,17490.28
+190,6/1/2017,2,Europe,10,Kirin Zan Grape Sake,144,9204.48
+191,6/1/2017,2,Europe,4,Green Chartreuse,152,4289.44
+192,6/1/2017,2,Europe,1,Dharamsala Tea,137,1665.92
+193,6/1/2017,2,Europe,4,Green Chartreuse,145,4437
+194,6/1/2017,2,Europe,2,Sasquatch Ale,153,5140.8
+195,6/1/2017,2,Europe,4,Green Chartreuse,141,4794
+196,6/1/2017,1,America,4,Green Chartreuse,293,9065.42
+197,6/1/2017,4,Africa,2,Sasquatch Ale,46,1384.6
+198,5/1/2017,2,Europe,7,Outback Lager,149,1743.3
+199,5/1/2017,4,Africa,9,Supercola Pomegranate,54,1045.44
+200,5/1/2017,3,Asia,10,Kirin Zan Grape Sake,38,2222.24
+201,5/1/2017,1,America,3,Steeleye Stout,286,4478.76
+202,5/1/2017,1,America,8,Cloudberry Liqueur,278,4753.8
+203,5/1/2017,3,Asia,3,Steeleye Stout,41,627.3
+204,5/1/2017,1,America,1,Dharamsala Tea,285,3784.8
+205,5/1/2017,4,Africa,8,Cloudberry Liqueur,51,844.56
+206,5/1/2017,3,Asia,7,Outback Lager,23,300.15
+207,5/1/2017,2,Europe,7,Outback Lager,153,1996.65
+208,5/1/2017,1,America,8,Cloudberry Liqueur,292,4099.68
+209,5/1/2017,5,Oceania,7,Outback Lager,51,749.7
+210,5/1/2017,5,Oceania,4,Green Chartreuse,66,1817.64
+211,5/1/2017,3,Asia,3,Steeleye Stout,39,582.66
+212,5/1/2017,2,Europe,9,Supercola Pomegranate,150,2673
+213,4/1/2017,3,Asia,4,Green Chartreuse,34,924.8
+214,4/1/2017,1,America,9,Supercola Pomegranate,291,5697.78
+215,4/1/2017,5,Oceania,10,Kirin Zan Grape Sake,66,3949.44
+216,4/1/2017,5,Oceania,10,Kirin Zan Grape Sake,60,3753.6
+217,4/1/2017,1,America,7,Outback Lager,278,3753
+218,4/1/2017,4,Africa,3,Steeleye Stout,55,831.6
+219,4/1/2017,2,Europe,2,Sasquatch Ale,140,3920
+220,4/1/2017,3,Asia,6,Laughing Lumberjack Lager,36,423.36
+221,4/1/2017,1,America,6,Laughing Lumberjack Lager,284,3936.24
+222,4/1/2017,4,Africa,6,Laughing Lumberjack Lager,40,442.4
+223,4/1/2017,4,Africa,3,Steeleye Stout,39,554.58
+224,4/1/2017,3,Asia,3,Steeleye Stout,39,582.66
+225,4/1/2017,4,Africa,4,Green Chartreuse,37,1107.04
+226,4/1/2017,1,America,5,Malaysian Coffee,285,10225.8
+227,4/1/2017,4,Africa,10,Kirin Zan Grape Sake,46,2658.8
+228,3/1/2017,4,Africa,2,Sasquatch Ale,52,1528.8
+229,3/1/2017,2,Europe,5,Malaysian Coffee,146,5037
+230,3/1/2017,2,Europe,2,Sasquatch Ale,154,5120.5
+231,3/1/2017,1,America,3,Steeleye Stout,291,4557.06
+232,3/1/2017,4,Africa,2,Sasquatch Ale,41,1406.3
+233,3/1/2017,1,America,2,Sasquatch Ale,281,8064.7
+234,3/1/2017,5,Oceania,8,Cloudberry Liqueur,47,795.24
+235,3/1/2017,2,Europe,1,Dharamsala Tea,144,2096.64
+236,3/1/2017,2,Europe,8,Cloudberry Liqueur,138,2285.28
+237,3/1/2017,5,Oceania,8,Cloudberry Liqueur,56,816.48
+238,3/1/2017,5,Oceania,1,Dharamsala Tea,64,952.32
+239,3/1/2017,1,America,8,Cloudberry Liqueur,280,3880.8
+240,3/1/2017,4,Africa,7,Outback Lager,48,554.4
+241,3/1/2017,3,Asia,3,Steeleye Stout,32,576
+242,3/1/2017,1,America,2,Sasquatch Ale,279,9472.05
+243,3/1/2017,1,America,6,Laughing Lumberjack Lager,286,3243.24
+244,2/1/2017,3,Asia,3,Steeleye Stout,37,652.68
+245,2/1/2017,4,Africa,8,Cloudberry Liqueur,53,868.14
+246,2/1/2017,1,America,9,Supercola Pomegranate,279,4849.02
+247,2/1/2017,2,Europe,2,Sasquatch Ale,149,3963.4
+248,2/1/2017,3,Asia,7,Outback Lager,21,274.05
+249,2/1/2017,1,America,3,Steeleye Stout,294,4604.04
+250,2/1/2017,4,Africa,7,Outback Lager,38,433.2
+251,2/1/2017,3,Asia,2,Sasquatch Ale,26,755.3
+252,2/1/2017,2,Europe,5,Malaysian Coffee,141,6161.7
+253,2/1/2017,1,America,4,Green Chartreuse,281,8311.98
+254,2/1/2017,5,Oceania,9,Supercola Pomegranate,60,1029.6
+255,2/1/2017,5,Oceania,10,Kirin Zan Grape Sake,53,3387.76
+256,2/1/2017,1,America,2,Sasquatch Ale,283,9211.65
+257,2/1/2017,1,America,3,Steeleye Stout,278,4103.28
+258,1/1/2017,5,Oceania,7,Outback Lager,58,861.3
+259,1/1/2017,3,Asia,5,Malaysian Coffee,39,1506.96
+260,1/1/2017,2,Europe,5,Malaysian Coffee,140,5087.6
+261,1/1/2017,4,Africa,7,Outback Lager,36,421.2
+262,1/1/2017,3,Asia,8,Cloudberry Liqueur,35,623.7
+263,1/1/2017,1,America,1,Dharamsala Tea,292,3597.44
+264,1/1/2017,5,Oceania,6,Laughing Lumberjack Lager,53,638.12
+265,1/1/2017,1,America,2,Sasquatch Ale,293,8716.75
+266,1/1/2017,5,Oceania,4,Green Chartreuse,46,1391.96
+267,1/1/2017,1,America,8,Cloudberry Liqueur,276,4918.32
+268,1/1/2017,1,America,3,Steeleye Stout,286,4684.68
+269,1/1/2017,3,Asia,10,Kirin Zan Grape Sake,18,942.48
+270,1/1/2017,1,America,1,Dharamsala Tea,291,4656
+271,1/1/2017,4,Africa,7,Outback Lager,47,627.45
+272,1/1/2017,1,America,8,Cloudberry Liqueur,288,3939.84
+273,12/1/2016,4,Africa,6,Laughing Lumberjack Lager,50,616
+274,12/1/2016,1,America,3,Steeleye Stout,291,4976.1
+275,12/1/2016,3,Asia,1,Dharamsala Tea,23,309.12
+276,12/1/2016,5,Oceania,5,Malaysian Coffee,43,1681.3
+277,12/1/2016,4,Africa,7,Outback Lager,40,504
+278,12/1/2016,2,Europe,2,Sasquatch Ale,149,4015.55
+279,12/1/2016,1,America,9,Supercola Pomegranate,284,5123.36
+280,12/1/2016,2,Europe,9,Supercola Pomegranate,149,2524.06
+281,12/1/2016,1,America,5,Malaysian Coffee,279,12705.66
+282,12/1/2016,1,America,7,Outback Lager,289,3554.7
+283,12/1/2016,4,Africa,1,Dharamsala Tea,52,765.44
+284,12/1/2016,4,Africa,7,Outback Lager,35,399
+285,12/1/2016,4,Africa,10,Kirin Zan Grape Sake,35,2118.2
+286,12/1/2016,1,America,4,Green Chartreuse,276,9196.32
+287,12/1/2016,1,America,3,Steeleye Stout,285,4104
+288,12/1/2016,5,Oceania,4,Green Chartreuse,44,1181.84
+289,11/1/2016,3,Asia,9,Supercola Pomegranate,29,574.2
+290,11/1/2016,2,Europe,2,Sasquatch Ale,136,4664.8
+291,11/1/2016,1,America,9,Supercola Pomegranate,275,6050
+292,11/1/2016,3,Asia,2,Sasquatch Ale,16,442.4
+293,11/1/2016,5,Oceania,7,Outback Lager,61,832.65
+294,11/1/2016,5,Oceania,10,Kirin Zan Grape Sake,47,3196
+295,11/1/2016,5,Oceania,5,Malaysian Coffee,50,1840
+296,11/1/2016,5,Oceania,4,Green Chartreuse,60,1897.2
+297,11/1/2016,5,Oceania,3,Steeleye Stout,41,634.68
+298,11/1/2016,2,Europe,4,Green Chartreuse,148,4528.8
+299,11/1/2016,1,America,3,Steeleye Stout,278,4153.32
+300,11/1/2016,5,Oceania,2,Sasquatch Ale,57,1695.75
+301,11/1/2016,3,Asia,8,Cloudberry Liqueur,18,324
+302,11/1/2016,2,Europe,6,Laughing Lumberjack Lager,144,1632.96
+303,11/1/2016,2,Europe,8,Cloudberry Liqueur,146,2338.92
+304,10/1/2016,5,Oceania,2,Sasquatch Ale,57,1755.6
+305,10/1/2016,2,Europe,7,Outback Lager,145,2001
+306,10/1/2016,2,Europe,9,Supercola Pomegranate,147,2651.88
+307,10/1/2016,3,Asia,2,Sasquatch Ale,15,488.25
+308,10/1/2016,2,Europe,10,Kirin Zan Grape Sake,147,7696.92
+309,10/1/2016,1,America,10,Kirin Zan Grape Sake,284,17187.68
+310,10/1/2016,4,Africa,10,Kirin Zan Grape Sake,51,3363.96
+311,10/1/2016,3,Asia,5,Malaysian Coffee,15,572.7
+312,10/1/2016,5,Oceania,4,Green Chartreuse,57,1782.96
+313,10/1/2016,2,Europe,10,Kirin Zan Grape Sake,138,7038
+314,10/1/2016,4,Africa,5,Malaysian Coffee,40,1692.8
+315,10/1/2016,5,Oceania,7,Outback Lager,45,567
+316,10/1/2016,3,Asia,4,Green Chartreuse,30,907.8
+317,10/1/2016,3,Asia,5,Malaysian Coffee,16,721.28
+318,10/1/2016,5,Oceania,9,Supercola Pomegranate,47,971.96
+319,9/1/2016,2,Europe,5,Malaysian Coffee,151,6320.86
+320,9/1/2016,4,Africa,2,Sasquatch Ale,42,1234.8
+321,9/1/2016,3,Asia,4,Green Chartreuse,16,413.44
+322,9/1/2016,3,Asia,3,Steeleye Stout,32,576
+323,9/1/2016,1,America,6,Laughing Lumberjack Lager,284,2982
+324,9/1/2016,5,Oceania,5,Malaysian Coffee,55,2150.5
+325,9/1/2016,3,Asia,5,Malaysian Coffee,25,1000.5
+326,9/1/2016,2,Europe,2,Sasquatch Ale,140,3822
+327,9/1/2016,3,Asia,10,Kirin Zan Grape Sake,28,1542.24
+328,9/1/2016,4,Africa,9,Supercola Pomegranate,50,913
+329,9/1/2016,4,Africa,6,Laughing Lumberjack Lager,42,482.16
+330,9/1/2016,2,Europe,3,Steeleye Stout,136,1884.96
+331,9/1/2016,4,Africa,6,Laughing Lumberjack Lager,39,480.48
+332,9/1/2016,3,Asia,5,Malaysian Coffee,33,1502.82
+333,9/1/2016,3,Asia,10,Kirin Zan Grape Sake,31,2065.84
+334,8/1/2016,5,Oceania,6,Laughing Lumberjack Lager,57,702.24
+335,8/1/2016,4,Africa,7,Outback Lager,45,594
+336,8/1/2016,1,America,6,Laughing Lumberjack Lager,275,3080
+337,8/1/2016,2,Europe,5,Malaysian Coffee,148,5242.16
+338,8/1/2016,3,Asia,8,Cloudberry Liqueur,22,392.04
+339,8/1/2016,5,Oceania,3,Steeleye Stout,43,758.52
+340,8/1/2016,1,America,8,Cloudberry Liqueur,275,4653
+341,8/1/2016,1,America,3,Steeleye Stout,286,4015.44
+342,8/1/2016,5,Oceania,9,Supercola Pomegranate,53,1131.02
+343,8/1/2016,2,Europe,8,Cloudberry Liqueur,150,2052
+344,8/1/2016,2,Europe,7,Outback Lager,153,2088.45
+345,8/1/2016,1,America,9,Supercola Pomegranate,278,5320.92
+346,8/1/2016,2,Europe,7,Outback Lager,143,1844.7
+347,8/1/2016,3,Asia,4,Green Chartreuse,20,557.6
+348,8/1/2016,4,Africa,6,Laughing Lumberjack Lager,39,458.64
+349,8/1/2016,3,Asia,9,Supercola Pomegranate,29,599.72
+350,7/1/2016,3,Asia,8,Cloudberry Liqueur,24,423.36
+351,7/1/2016,4,Africa,8,Cloudberry Liqueur,50,720
+352,7/1/2016,1,America,9,Supercola Pomegranate,276,5586.24
+353,7/1/2016,2,Europe,3,Steeleye Stout,148,2424.24
+354,7/1/2016,1,America,2,Sasquatch Ale,276,7534.8
+355,7/1/2016,4,Africa,4,Green Chartreuse,40,1074.4
+356,7/1/2016,2,Europe,8,Cloudberry Liqueur,149,2655.18
+357,7/1/2016,2,Europe,6,Laughing Lumberjack Lager,138,1661.52
+358,7/1/2016,3,Asia,6,Laughing Lumberjack Lager,27,325.08
+359,7/1/2016,5,Oceania,1,Dharamsala Tea,45,684
+360,7/1/2016,4,Africa,6,Laughing Lumberjack Lager,43,475.58
+361,7/1/2016,5,Oceania,10,Kirin Zan Grape Sake,47,2460.92
+362,7/1/2016,3,Asia,2,Sasquatch Ale,26,819
+363,7/1/2016,1,America,5,Malaysian Coffee,277,10193.6
+364,7/1/2016,2,Europe,6,Laughing Lumberjack Lager,134,1725.92
+365,6/1/2016,3,Asia,9,Supercola Pomegranate,11,183.92
+366,6/1/2016,4,Africa,6,Laughing Lumberjack Lager,39,513.24
+367,6/1/2016,2,Europe,4,Green Chartreuse,142,4683.16
+368,6/1/2016,3,Asia,4,Green Chartreuse,20,510
+369,6/1/2016,5,Oceania,1,Dharamsala Tea,42,530.88
+370,6/1/2016,2,Europe,5,Malaysian Coffee,140,6182.4
+371,6/1/2016,3,Asia,8,Cloudberry Liqueur,19,342
+372,6/1/2016,3,Asia,3,Steeleye Stout,25,409.5
+373,6/1/2016,4,Africa,8,Cloudberry Liqueur,36,498.96
+374,6/1/2016,2,Europe,6,Laughing Lumberjack Lager,151,1606.64
+375,6/1/2016,2,Europe,8,Cloudberry Liqueur,137,1997.46
+376,6/1/2016,3,Asia,4,Green Chartreuse,22,613.36
+377,6/1/2016,4,Africa,7,Outback Lager,49,558.6
+378,6/1/2016,4,Africa,5,Malaysian Coffee,46,1862.08
+379,6/1/2016,3,Asia,7,Outback Lager,24,349.2
+380,5/1/2016,5,Oceania,10,Kirin Zan Grape Sake,48,3231.36
+381,5/1/2016,1,America,6,Laughing Lumberjack Lager,287,3656.38
+382,5/1/2016,3,Asia,6,Laughing Lumberjack Lager,16,185.92
+383,5/1/2016,3,Asia,1,Dharamsala Tea,20,313.6
+384,5/1/2016,2,Europe,10,Kirin Zan Grape Sake,141,9300.36
+385,5/1/2016,1,America,7,Outback Lager,274,3822.3
+386,5/1/2016,3,Asia,1,Dharamsala Tea,26,328.64
+387,5/1/2016,2,Europe,6,Laughing Lumberjack Lager,142,1550.64
+388,5/1/2016,2,Europe,1,Dharamsala Tea,142,1931.2
+389,5/1/2016,5,Oceania,3,Steeleye Stout,48,648
+390,5/1/2016,1,America,4,Green Chartreuse,266,6783
+391,5/1/2016,3,Asia,3,Steeleye Stout,11,176.22
+392,5/1/2016,3,Asia,7,Outback Lager,26,339.3
+393,5/1/2016,2,Europe,1,Dharamsala Tea,138,1722.24
+394,5/1/2016,4,Africa,6,Laughing Lumberjack Lager,44,548.24
+395,5/1/2016,1,America,5,Malaysian Coffee,286,12235.08
+396,4/1/2016,3,Asia,2,Sasquatch Ale,13,455
+397,4/1/2016,4,Africa,8,Cloudberry Liqueur,46,678.96
+398,4/1/2016,4,Africa,1,Dharamsala Tea,50,800
+399,4/1/2016,2,Europe,5,Malaysian Coffee,137,6112.94
+400,4/1/2016,5,Oceania,6,Laughing Lumberjack Lager,49,562.52
+401,4/1/2016,1,America,4,Green Chartreuse,277,8005.3
+402,4/1/2016,1,America,1,Dharamsala Tea,282,4512
+403,4/1/2016,3,Asia,2,Sasquatch Ale,22,762.3
+404,4/1/2016,5,Oceania,10,Kirin Zan Grape Sake,39,2254.2
+405,4/1/2016,5,Oceania,10,Kirin Zan Grape Sake,47,2556.8
+406,4/1/2016,1,America,8,Cloudberry Liqueur,276,4818.96
+407,4/1/2016,5,Oceania,5,Malaysian Coffee,43,1641.74
+408,4/1/2016,3,Asia,9,Supercola Pomegranate,22,464.64
+409,4/1/2016,4,Africa,2,Sasquatch Ale,51,1445.85
+410,4/1/2016,4,Africa,4,Green Chartreuse,42,1413.72
+411,3/1/2016,3,Asia,5,Malaysian Coffee,13,514.28
+412,3/1/2016,4,Africa,6,Laughing Lumberjack Lager,40,420
+413,3/1/2016,3,Asia,3,Steeleye Stout,9,132.84
+414,3/1/2016,5,Oceania,8,Cloudberry Liqueur,38,554.04
+415,3/1/2016,4,Africa,6,Laughing Lumberjack Lager,44,505.12
+416,3/1/2016,1,America,4,Green Chartreuse,269,8688.7
+417,3/1/2016,2,Europe,10,Kirin Zan Grape Sake,144,9498.24
+418,3/1/2016,2,Europe,9,Supercola Pomegranate,139,2935.68
+419,3/1/2016,1,America,3,Steeleye Stout,271,3853.62
+420,3/1/2016,5,Oceania,3,Steeleye Stout,46,745.2
+421,3/1/2016,2,Europe,7,Outback Lager,131,1729.2
+422,3/1/2016,2,Europe,10,Kirin Zan Grape Sake,136,8138.24
+423,3/1/2016,4,Africa,4,Green Chartreuse,32,968.32
+424,3/1/2016,2,Europe,10,Kirin Zan Grape Sake,149,9422.76
+425,3/1/2016,5,Oceania,1,Dharamsala Tea,36,501.12
+426,2/1/2016,2,Europe,2,Sasquatch Ale,148,4247.6
+427,2/1/2016,5,Oceania,6,Laughing Lumberjack Lager,37,471.38
+428,2/1/2016,5,Oceania,9,Supercola Pomegranate,50,1012
+429,2/1/2016,5,Oceania,7,Outback Lager,48,612
+430,2/1/2016,1,America,5,Malaysian Coffee,271,11344.06
+431,2/1/2016,3,Asia,9,Supercola Pomegranate,8,147.84
+432,2/1/2016,2,Europe,1,Dharamsala Tea,136,1632
+433,2/1/2016,1,America,1,Dharamsala Tea,278,3424.96
+434,2/1/2016,2,Europe,5,Malaysian Coffee,141,5188.8
+435,2/1/2016,3,Asia,2,Sasquatch Ale,8,221.2
+436,2/1/2016,3,Asia,8,Cloudberry Liqueur,11,174.24
+437,2/1/2016,1,America,6,Laughing Lumberjack Lager,277,3567.76
+438,2/1/2016,5,Oceania,8,Cloudberry Liqueur,30,432
+439,2/1/2016,3,Asia,6,Laughing Lumberjack Lager,18,252
+440,2/1/2016,5,Oceania,10,Kirin Zan Grape Sake,41,2481.32
+441,1/1/2016,5,Oceania,6,Laughing Lumberjack Lager,30,361.2
+442,1/1/2016,3,Asia,1,Dharamsala Tea,9,112.32
+443,1/1/2016,2,Europe,2,Sasquatch Ale,142,4373.6
+444,1/1/2016,1,America,6,Laughing Lumberjack Lager,279,3476.34
+445,1/1/2016,5,Oceania,2,Sasquatch Ale,49,1543.5
+446,1/1/2016,2,Europe,5,Malaysian Coffee,132,4736.16
+447,1/1/2016,1,America,4,Green Chartreuse,266,8230.04
+448,1/1/2016,2,Europe,5,Malaysian Coffee,147,6018.18
+449,1/1/2016,4,Africa,10,Kirin Zan Grape Sake,41,2286.16
+450,1/1/2016,3,Asia,3,Steeleye Stout,14,199.08
+451,1/1/2016,1,America,2,Sasquatch Ale,277,9307.2
+452,1/1/2016,3,Asia,8,Cloudberry Liqueur,12,192.24
+453,1/1/2016,4,Africa,10,Kirin Zan Grape Sake,38,2428.96
+454,1/1/2016,4,Africa,8,Cloudberry Liqueur,36,498.96
+455,1/1/2016,2,Europe,2,Sasquatch Ale,142,4174.8
+456,12/1/2015,1,America,7,Outback Lager,277,3240.9
+457,12/1/2015,5,Oceania,3,Steeleye Stout,31,463.14
+458,12/1/2015,4,Africa,5,Malaysian Coffee,43,1562.62
+459,12/1/2015,3,Asia,3,Steeleye Stout,3,41.04
+460,12/1/2015,4,Africa,2,Sasquatch Ale,38,1223.6
+461,12/1/2015,3,Asia,1,Dharamsala Tea,14,170.24
+462,12/1/2015,3,Asia,5,Malaysian Coffee,23,804.08
+463,12/1/2015,1,America,3,Steeleye Stout,275,4257
+464,12/1/2015,3,Asia,7,Outback Lager,10,135
+465,12/1/2015,4,Africa,8,Cloudberry Liqueur,31,446.4
+466,12/1/2015,5,Oceania,3,Steeleye Stout,27,486
+467,12/1/2015,4,Africa,3,Steeleye Stout,35,573.3
+468,12/1/2015,2,Europe,6,Laughing Lumberjack Lager,142,1908.48
+469,12/1/2015,3,Asia,5,Malaysian Coffee,10,363.4
+470,12/1/2015,4,Africa,1,Dharamsala Tea,32,394.24
+471,12/1/2015,4,Africa,3,Steeleye Stout,44,625.68
+472,11/1/2015,5,Oceania,5,Malaysian Coffee,44,1720.4
+473,11/1/2015,2,Europe,10,Kirin Zan Grape Sake,139,9357.48
+474,11/1/2015,3,Asia,3,Steeleye Stout,7,126
+475,11/1/2015,1,America,5,Malaysian Coffee,272,11010.56
+476,11/1/2015,4,Africa,9,Supercola Pomegranate,31,593.34
+477,11/1/2015,5,Oceania,4,Green Chartreuse,45,1193.4
+478,11/1/2015,4,Africa,3,Steeleye Stout,34,599.76
+479,11/1/2015,1,America,8,Cloudberry Liqueur,269,3970.44
+480,11/1/2015,5,Oceania,7,Outback Lager,26,354.9
+481,11/1/2015,4,Africa,3,Steeleye Stout,36,537.84
+482,11/1/2015,2,Europe,6,Laughing Lumberjack Lager,131,1467.2
+483,11/1/2015,4,Africa,9,Supercola Pomegranate,41,883.96
+484,11/1/2015,1,America,8,Cloudberry Liqueur,277,4487.4
+485,11/1/2015,5,Oceania,4,Green Chartreuse,39,1180.14
+486,11/1/2015,4,Africa,4,Green Chartreuse,32,881.28
+487,10/1/2015,1,America,5,Malaysian Coffee,260,8970
+488,10/1/2015,2,Europe,9,Supercola Pomegranate,135,2346.3
+489,10/1/2015,3,Asia,7,Outback Lager,3,44.55
+490,10/1/2015,3,Asia,2,Sasquatch Ale,8,215.6
+491,10/1/2015,5,Oceania,8,Cloudberry Liqueur,26,444.6
+492,10/1/2015,4,Africa,6,Laughing Lumberjack Lager,39,414.96
+493,10/1/2015,3,Asia,2,Sasquatch Ale,4,128.8
+494,10/1/2015,4,Africa,1,Dharamsala Tea,46,618.24
+495,10/1/2015,4,Africa,9,Supercola Pomegranate,31,552.42
+496,10/1/2015,4,Africa,2,Sasquatch Ale,37,1243.2
+497,10/1/2015,5,Oceania,3,Steeleye Stout,38,622.44
+498,10/1/2015,2,Europe,8,Cloudberry Liqueur,135,2332.8
+499,10/1/2015,4,Africa,9,Supercola Pomegranate,36,720.72
+500,10/1/2015,5,Oceania,10,Kirin Zan Grape Sake,38,2118.88
+501,10/1/2015,1,America,8,Cloudberry Liqueur,268,4100.4
+502,9/1/2015,1,America,9,Supercola Pomegranate,265,4489.1
+503,9/1/2015,4,Africa,6,Laughing Lumberjack Lager,42,529.2
+504,9/1/2015,1,America,9,Supercola Pomegranate,278,5382.08
+505,9/1/2015,5,Oceania,2,Sasquatch Ale,31,987.35
+506,9/1/2015,4,Africa,4,Green Chartreuse,30,958.8
+507,9/1/2015,5,Oceania,9,Supercola Pomegranate,32,661.76
+508,9/1/2015,3,Asia,4,Green Chartreuse,13,433.16
+509,9/1/2015,5,Oceania,1,Dharamsala Tea,44,682.88
+510,9/1/2015,5,Oceania,9,Supercola Pomegranate,34,635.8
+511,9/1/2015,5,Oceania,8,Cloudberry Liqueur,42,589.68
+512,9/1/2015,3,Asia,9,Supercola Pomegranate,7,138.6
+513,9/1/2015,4,Africa,5,Malaysian Coffee,44,1639.44
+514,9/1/2015,4,Africa,5,Malaysian Coffee,42,1835.4
+515,9/1/2015,2,Europe,7,Outback Lager,134,1929.6
+516,9/1/2015,3,Asia,2,Sasquatch Ale,13,441.35
+517,8/1/2015,1,America,10,Kirin Zan Grape Sake,272,17571.2
+518,8/1/2015,4,Africa,7,Outback Lager,40,462
+519,8/1/2015,4,Africa,3,Steeleye Stout,37,606.06
+520,8/1/2015,2,Europe,8,Cloudberry Liqueur,148,2397.6
+521,8/1/2015,2,Europe,6,Laughing Lumberjack Lager,132,1829.52
+522,8/1/2015,4,Africa,9,Supercola Pomegranate,38,627
+523,8/1/2015,4,Africa,3,Steeleye Stout,35,630
+524,8/1/2015,5,Oceania,8,Cloudberry Liqueur,43,642.42
+525,8/1/2015,5,Oceania,5,Malaysian Coffee,43,1898.88
+526,8/1/2015,2,Europe,5,Malaysian Coffee,132,5343.36
+527,8/1/2015,4,Africa,1,Dharamsala Tea,37,520.96
+528,8/1/2015,5,Oceania,6,Laughing Lumberjack Lager,41,568.26
+529,8/1/2015,4,Africa,5,Malaysian Coffee,44,1801.36
+530,8/1/2015,4,Africa,4,Green Chartreuse,40,1251.2
+531,8/1/2015,3,Asia,7,Outback Lager,10,130.5
+532,8/1/2015,4,Africa,2,Sasquatch Ale,46,1239.7
+533,7/1/2015,4,Africa,9,Supercola Pomegranate,49,948.64
+534,7/1/2015,4,Africa,4,Green Chartreuse,40,1142.4
+535,7/1/2015,1,America,10,Kirin Zan Grape Sake,263,17884
+536,7/1/2015,4,Africa,1,Dharamsala Tea,45,612
+537,7/1/2015,4,Africa,7,Outback Lager,30,396
+538,7/1/2015,1,America,9,Supercola Pomegranate,273,5045.04
+539,7/1/2015,4,Africa,7,Outback Lager,49,661.5
+540,7/1/2015,1,America,5,Malaysian Coffee,258,9613.08
+541,7/1/2015,2,Europe,3,Steeleye Stout,132,2257.2
+542,7/1/2015,5,Oceania,9,Supercola Pomegranate,41,694.54
+543,7/1/2015,5,Oceania,4,Green Chartreuse,38,1175.72
+544,7/1/2015,3,Asia,9,Supercola Pomegranate,12,245.52
+545,7/1/2015,3,Asia,5,Malaysian Coffee,15,565.8
+546,7/1/2015,1,America,1,Dharamsala Tea,258,3756.48
+547,7/1/2015,4,Africa,5,Malaysian Coffee,35,1610
+548,6/1/2015,5,Oceania,8,Cloudberry Liqueur,38,677.16
+549,6/1/2015,5,Oceania,8,Cloudberry Liqueur,35,560.7
+550,6/1/2015,2,Europe,7,Outback Lager,131,1965
+551,6/1/2015,4,Africa,9,Supercola Pomegranate,42,877.8
+552,6/1/2015,3,Asia,9,Supercola Pomegranate,1,16.94
+553,6/1/2015,5,Oceania,10,Kirin Zan Grape Sake,29,1656.48
+554,6/1/2015,5,Oceania,3,Steeleye Stout,37,666
+555,6/1/2015,3,Asia,5,Malaysian Coffee,8,345.92
+556,6/1/2015,3,Asia,2,Sasquatch Ale,8,274.4
+557,6/1/2015,5,Oceania,9,Supercola Pomegranate,36,728.64
+558,6/1/2015,4,Africa,6,Laughing Lumberjack Lager,33,438.9
+559,6/1/2015,3,Asia,4,Green Chartreuse,0,0
+560,6/1/2015,5,Oceania,6,Laughing Lumberjack Lager,30,420
+561,6/1/2015,3,Asia,9,Supercola Pomegranate,15,257.4
+562,6/1/2015,2,Europe,8,Cloudberry Liqueur,137,2219.4
+563,5/1/2015,4,Africa,9,Supercola Pomegranate,37,797.72
+564,5/1/2015,1,America,3,Steeleye Stout,272,3672
+565,5/1/2015,4,Africa,10,Kirin Zan Grape Sake,30,2019.6
+566,5/1/2015,2,Europe,8,Cloudberry Liqueur,145,2375.1
+567,5/1/2015,2,Europe,5,Malaysian Coffee,128,4416
+568,5/1/2015,4,Africa,10,Kirin Zan Grape Sake,39,1989
+569,5/1/2015,4,Africa,5,Malaysian Coffee,46,2052.52
+570,5/1/2015,1,America,3,Steeleye Stout,257,3608.28
+571,5/1/2015,4,Africa,9,Supercola Pomegranate,46,981.64
+572,5/1/2015,4,Africa,8,Cloudberry Liqueur,44,665.28
+573,5/1/2015,3,Asia,9,Supercola Pomegranate,4,73.04
+574,5/1/2015,1,America,8,Cloudberry Liqueur,257,3608.28
+575,5/1/2015,4,Africa,6,Laughing Lumberjack Lager,41,539.56
+576,5/1/2015,3,Asia,2,Sasquatch Ale,7,188.65
+577,5/1/2015,5,Oceania,7,Outback Lager,25,281.25
+578,5/1/2015,2,Europe,1,Dharamsala Tea,128,1904.64
+579,4/1/2015,5,Oceania,5,Malaysian Coffee,38,1555.72
+580,4/1/2015,2,Europe,7,Outback Lager,134,1969.8
+581,4/1/2015,5,Oceania,2,Sasquatch Ale,21,668.85
+582,4/1/2015,3,Asia,3,Steeleye Stout,0,0
+583,4/1/2015,4,Africa,2,Sasquatch Ale,35,1176
+584,4/1/2015,1,America,5,Malaysian Coffee,258,9850.44
+585,4/1/2015,2,Europe,7,Outback Lager,140,1827
+586,4/1/2015,4,Africa,7,Outback Lager,35,446.25
+587,4/1/2015,4,Africa,9,Supercola Pomegranate,42,822.36
+588,4/1/2015,1,America,10,Kirin Zan Grape Sake,269,17743.24
+589,4/1/2015,5,Oceania,3,Steeleye Stout,36,589.68
+590,4/1/2015,2,Europe,7,Outback Lager,135,1599.75
+591,4/1/2015,4,Africa,8,Cloudberry Liqueur,42,687.96
+592,4/1/2015,1,America,6,Laughing Lumberjack Lager,262,3447.92
+593,4/1/2015,4,Africa,1,Dharamsala Tea,33,443.52
+594,3/1/2015,3,Asia,2,Sasquatch Ale,1,34.65
+595,3/1/2015,3,Asia,10,Kirin Zan Grape Sake,0,0
+596,3/1/2015,3,Asia,8,Cloudberry Liqueur,11,194.04
+597,3/1/2015,3,Asia,10,Kirin Zan Grape Sake,0,0
+598,3/1/2015,2,Europe,5,Malaysian Coffee,143,6249.1
+599,3/1/2015,3,Asia,5,Malaysian Coffee,4,154.56
+600,3/1/2015,4,Africa,9,Supercola Pomegranate,45,831.6
+601,3/1/2015,2,Europe,2,Sasquatch Ale,144,4284
+602,3/1/2015,2,Europe,10,Kirin Zan Grape Sake,137,7639.12
+603,3/1/2015,5,Oceania,7,Outback Lager,29,387.15
+604,3/1/2015,5,Oceania,1,Dharamsala Tea,21,322.56
+605,3/1/2015,4,Africa,10,Kirin Zan Grape Sake,28,1732.64
+606,3/1/2015,2,Europe,10,Kirin Zan Grape Sake,139,7750.64
+607,3/1/2015,2,Europe,6,Laughing Lumberjack Lager,128,1487.36
+608,3/1/2015,5,Oceania,5,Malaysian Coffee,27,1242
+609,2/1/2015,5,Oceania,3,Steeleye Stout,23,385.02
+610,2/1/2015,4,Africa,9,Supercola Pomegranate,32,704
+611,2/1/2015,2,Europe,1,Dharamsala Tea,131,1865.44
+612,2/1/2015,2,Europe,6,Laughing Lumberjack Lager,138,1642.2
+613,2/1/2015,4,Africa,9,Supercola Pomegranate,38,660.44
+614,2/1/2015,3,Asia,9,Supercola Pomegranate,8,142.56
+615,2/1/2015,2,Europe,10,Kirin Zan Grape Sake,141,8437.44
+616,2/1/2015,5,Oceania,6,Laughing Lumberjack Lager,30,394.8
+617,2/1/2015,5,Oceania,9,Supercola Pomegranate,25,484
+618,2/1/2015,2,Europe,9,Supercola Pomegranate,144,2566.08
+619,2/1/2015,5,Oceania,7,Outback Lager,26,312
+620,2/1/2015,5,Oceania,2,Sasquatch Ale,19,665
+621,2/1/2015,5,Oceania,4,Green Chartreuse,15,469.2
+622,2/1/2015,1,America,1,Dharamsala Tea,267,3417.6
+623,1/1/2015,1,America,9,Supercola Pomegranate,261,4536.18
+624,1/1/2015,5,Oceania,8,Cloudberry Liqueur,23,339.48
+625,1/1/2015,3,Asia,10,Kirin Zan Grape Sake,0,0
+626,1/1/2015,3,Asia,1,Dharamsala Tea,0,0
+627,1/1/2015,1,America,9,Supercola Pomegranate,252,4878.72
+628,1/1/2015,3,Asia,3,Steeleye Stout,8,128.16
+629,1/1/2015,1,America,1,Dharamsala Tea,260,3619.2
+630,1/1/2015,5,Oceania,2,Sasquatch Ale,25,735
+631,1/1/2015,1,America,4,Green Chartreuse,268,8838.64
+632,1/1/2015,1,America,7,Outback Lager,269,3066.6
+633,1/1/2015,5,Oceania,2,Sasquatch Ale,23,756.7
+634,1/1/2015,1,America,10,Kirin Zan Grape Sake,265,14596.2
+635,1/1/2015,5,Oceania,3,Steeleye Stout,16,273.6
+636,1/1/2015,5,Oceania,1,Dharamsala Tea,24,349.44
+637,1/1/2015,5,Oceania,5,Malaysian Coffee,26,920.92
+638,1/1/2015,5,Oceania,7,Outback Lager,15,211.5
+639,12/1/2014,4,Africa,10,Kirin Zan Grape Sake,44,2812.48
+640,12/1/2014,5,Oceania,5,Malaysian Coffee,29,1067.2
+641,12/1/2014,4,Africa,8,Cloudberry Liqueur,35,529.2
+642,12/1/2014,2,Europe,8,Cloudberry Liqueur,137,1874.16
+643,12/1/2014,3,Asia,9,Supercola Pomegranate,0,0
+644,12/1/2014,3,Asia,2,Sasquatch Ale,0,0
+645,12/1/2014,3,Asia,4,Green Chartreuse,4,123.76
+646,12/1/2014,5,Oceania,4,Green Chartreuse,22,643.28
+647,12/1/2014,3,Asia,3,Steeleye Stout,0,0
+648,12/1/2014,2,Europe,6,Laughing Lumberjack Lager,127,1404.62
+649,12/1/2014,2,Europe,2,Sasquatch Ale,146,5007.8
+650,12/1/2014,1,America,6,Laughing Lumberjack Lager,267,3625.86
+651,12/1/2014,3,Asia,4,Green Chartreuse,2,61.2
+652,12/1/2014,2,Europe,6,Laughing Lumberjack Lager,133,1806.14
+653,12/1/2014,5,Oceania,9,Supercola Pomegranate,26,463.32
+654,11/1/2014,4,Africa,7,Outback Lager,35,425.25
+655,11/1/2014,3,Asia,5,Malaysian Coffee,0,0
+656,11/1/2014,3,Asia,5,Malaysian Coffee,0,0
+657,11/1/2014,3,Asia,6,Laughing Lumberjack Lager,4,50.96
+658,11/1/2014,4,Africa,5,Malaysian Coffee,34,1423.24
+659,11/1/2014,2,Europe,1,Dharamsala Tea,145,2273.6
+660,11/1/2014,4,Africa,3,Steeleye Stout,32,552.96
+661,11/1/2014,1,America,1,Dharamsala Tea,258,3962.88
+662,11/1/2014,2,Europe,7,Outback Lager,138,1821.6
+663,11/1/2014,4,Africa,1,Dharamsala Tea,38,474.24
+664,11/1/2014,1,America,7,Outback Lager,256,3302.4
+665,11/1/2014,3,Asia,7,Outback Lager,0,0
+666,11/1/2014,1,America,2,Sasquatch Ale,253,8412.25
+667,11/1/2014,4,Africa,2,Sasquatch Ale,33,1131.9
+668,11/1/2014,3,Asia,1,Dharamsala Tea,0,0
+669,10/1/2014,2,Europe,3,Steeleye Stout,145,2244.6
+670,10/1/2014,2,Europe,4,Green Chartreuse,134,4054.84
+671,10/1/2014,4,Africa,3,Steeleye Stout,34,563.04
+672,10/1/2014,1,America,9,Supercola Pomegranate,253,4285.82
+673,10/1/2014,1,America,6,Laughing Lumberjack Lager,255,3141.6
+674,10/1/2014,1,America,1,Dharamsala Tea,260,3660.8
+675,10/1/2014,3,Asia,1,Dharamsala Tea,0,0
+676,10/1/2014,1,America,7,Outback Lager,262,3458.4
+677,10/1/2014,4,Africa,6,Laughing Lumberjack Lager,34,476
+678,10/1/2014,3,Asia,2,Sasquatch Ale,0,0
+679,10/1/2014,5,Oceania,2,Sasquatch Ale,11,346.5
+680,10/1/2014,1,America,9,Supercola Pomegranate,264,4762.56
+681,10/1/2014,3,Asia,5,Malaysian Coffee,4,161.92
+682,10/1/2014,5,Oceania,5,Malaysian Coffee,15,683.1
+683,10/1/2014,1,America,10,Kirin Zan Grape Sake,268,15672.64
+684,10/1/2014,4,Africa,1,Dharamsala Tea,28,412.16
+685,9/1/2014,5,Oceania,7,Outback Lager,14,159.6
+686,9/1/2014,4,Africa,9,Supercola Pomegranate,43,860.86
+687,9/1/2014,4,Africa,2,Sasquatch Ale,27,784.35
+688,9/1/2014,2,Europe,2,Sasquatch Ale,137,4747.05
+689,9/1/2014,4,Africa,6,Laughing Lumberjack Lager,34,471.24
+690,9/1/2014,5,Oceania,5,Malaysian Coffee,10,450.8
+691,9/1/2014,4,Africa,7,Outback Lager,39,450.45
+692,9/1/2014,3,Asia,9,Supercola Pomegranate,0,0
+693,9/1/2014,4,Africa,5,Malaysian Coffee,45,1759.5
+694,9/1/2014,3,Asia,8,Cloudberry Liqueur,0,0
+695,9/1/2014,1,America,10,Kirin Zan Grape Sake,253,14279.32
+696,9/1/2014,3,Asia,2,Sasquatch Ale,0,0
+697,9/1/2014,3,Asia,3,Steeleye Stout,0,0
+698,9/1/2014,2,Europe,3,Steeleye Stout,134,2267.28
+699,9/1/2014,4,Africa,10,Kirin Zan Grape Sake,31,1581
+700,8/1/2014,3,Asia,2,Sasquatch Ale,0,0
+701,8/1/2014,3,Asia,10,Kirin Zan Grape Sake,3,189.72
+702,8/1/2014,3,Asia,8,Cloudberry Liqueur,0,0
+703,8/1/2014,5,Oceania,4,Green Chartreuse,15,413.1
+704,8/1/2014,5,Oceania,4,Green Chartreuse,22,628.32
+705,8/1/2014,2,Europe,4,Green Chartreuse,141,4506.36
+706,8/1/2014,3,Asia,1,Dharamsala Tea,0,0
+707,8/1/2014,4,Africa,4,Green Chartreuse,44,1331.44
+708,8/1/2014,2,Europe,6,Laughing Lumberjack Lager,143,1921.92
+709,8/1/2014,4,Africa,1,Dharamsala Tea,39,511.68
+710,8/1/2014,3,Asia,5,Malaysian Coffee,0,0
+711,8/1/2014,1,America,9,Supercola Pomegranate,258,4370.52
+712,8/1/2014,2,Europe,2,Sasquatch Ale,130,4004
+713,8/1/2014,3,Asia,5,Malaysian Coffee,0,0
+714,8/1/2014,5,Oceania,9,Supercola Pomegranate,22,425.92
+715,7/1/2014,1,America,5,Malaysian Coffee,267,10439.7
+716,7/1/2014,2,Europe,8,Cloudberry Liqueur,128,2165.76
+717,7/1/2014,3,Asia,4,Green Chartreuse,0,0
+718,7/1/2014,4,Africa,5,Malaysian Coffee,37,1412.66
+719,7/1/2014,3,Asia,3,Steeleye Stout,0,0
+720,7/1/2014,4,Africa,4,Green Chartreuse,28,799.68
+721,7/1/2014,4,Africa,1,Dharamsala Tea,37,449.92
+722,7/1/2014,3,Asia,3,Steeleye Stout,0,0
+723,7/1/2014,4,Africa,2,Sasquatch Ale,28,862.4
+724,7/1/2014,5,Oceania,7,Outback Lager,18,232.2
+725,7/1/2014,4,Africa,3,Steeleye Stout,33,475.2
+726,7/1/2014,4,Africa,10,Kirin Zan Grape Sake,31,1749.64
+727,7/1/2014,2,Europe,9,Supercola Pomegranate,131,2276.78
+728,7/1/2014,1,America,2,Sasquatch Ale,255,8121.75
+729,7/1/2014,1,America,1,Dharamsala Tea,249,3545.76
+730,7/1/2014,4,Africa,1,Dharamsala Tea,42,611.52
