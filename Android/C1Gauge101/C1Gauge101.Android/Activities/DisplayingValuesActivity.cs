@@ -87,6 +87,7 @@ namespace C1Gauge101
 
         private void OnValueChanged(object sender, GaugeValueEventArgs e)
         {
+            mValue = e.Value;
             mLinearGauge.Value = e.Value;
             mRadialGauge.Value = e.Value;
             mValueText.Text = ((double)e.Value).ToString(mLinearGauge.Format);

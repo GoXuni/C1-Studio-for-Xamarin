@@ -1,9 +1,11 @@
 ﻿using C1Gauge101.Resources;
 using System;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace C1Gauge101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Direction : ContentPage
     {
         public Direction()

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using C1.CollectionView;
+using Xamarin.Forms.Xaml;
 
 namespace Sunburst101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Group
     {
         private static C1CollectionView<Item> cv;

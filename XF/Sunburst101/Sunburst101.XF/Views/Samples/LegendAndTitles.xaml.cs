@@ -2,8 +2,11 @@
 using C1.Xamarin.Forms.Chart;
 using Sunburst101.Resources;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
 namespace Sunburst101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LegendAndTitles
     {
         public LegendAndTitles()

@@ -1,12 +1,12 @@
-﻿using FlexGrid101.Resources;
-using System;
-using System.Linq;
-using Xamarin.Forms;
+﻿using C1.Xamarin.Forms.Core;
 using C1.Xamarin.Forms.Grid;
-using C1.Xamarin.Forms.Core;
+using FlexGrid101.Resources;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CustomMerging : ContentPage
     {
         public CustomMerging()

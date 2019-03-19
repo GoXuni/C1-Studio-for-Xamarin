@@ -1,4 +1,5 @@
 ﻿using C1.Xamarin.Forms.Chart;
+using C1.Xamarin.Forms.Core;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -19,6 +20,15 @@ namespace MyBI
             SetPageTexts();
             _upSymbol = new Color(153.0 / 255.0, 191.0 / 255.0, 128 / 255.0);
             _downSymbol = new Color(230.0 / 255.0, 128.0 / 255.0, 128.0 / 255.0);
+            detailsView.SortAscendingIconTemplate = C1.Xamarin.Forms.Core.C1IconTemplate.ArrowUp;
+            C1Animation loadAnimation = new C1Animation();
+            loadAnimation.Duration = new TimeSpan(1000 * 10000);
+            loadAnimation.Easing = Xamarin.Forms.Easing.CubicInOut;
+            RevenueChart.AnimationMode = AnimationMode.Point;
+            RevenueChart.LoadAnimation = loadAnimation;
+            UnitSalesChart.AnimationMode = AnimationMode.Point;
+            UnitSalesChart.LoadAnimation = loadAnimation;
+
             Appearing += OnAppearing;
             Model.Instance.DataUpdated += OnDataUpdated;
             if (Device.RuntimePlatform == Device.Android)

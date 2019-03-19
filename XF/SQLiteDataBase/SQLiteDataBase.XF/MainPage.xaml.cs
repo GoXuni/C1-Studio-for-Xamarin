@@ -1,12 +1,16 @@
-﻿using C1.CollectionView.EntityFramework;
+﻿using C1.CollectionView;
+using C1.CollectionView.EntityFramework;
+using C1.Xamarin.Forms.Grid;
 using Microsoft.Data.Sqlite;
 using SQLiteDataBase.Resources;
 using System;
 using System.Linq;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace SQLiteDataBase
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : ContentPage
     {
         static Random _rnd = new Random();
@@ -43,7 +47,9 @@ namespace SQLiteDataBase
                 }
                 message.IsVisible = false;
                 #endregion
-                grid.ItemsSource = new EntityFrameworkCollectionView<Person>(db);
+                var cv = new EntityFrameworkCollectionView<Person>(db);
+                await cv.SortAsync(p => p.ID, SortDirection.Descending);
+                grid.ItemsSource = cv;
             }
             catch (SqliteException) { throw; }
 
@@ -55,5 +61,10 @@ namespace SQLiteDataBase
             return arr[_rnd.Next(arr.Length)];
         }
 
+        private void OnAutoGeneratingColumn(object sender, GridAutoGeneratingColumnEventArgs e)
+        {
+            if (e.Property.Name == "FirstName" || e.Property.Name == "LastName")
+                e.Column.Width = GridLength.Star;
+        }
     }
 }

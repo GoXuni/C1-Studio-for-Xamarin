@@ -241,7 +241,7 @@
   <data name="EditConfirmationTitle" xml:space="preserve">
     <value>편집 확인</value>
   </data>
-  <data name="SaveColumnLayout" xml:space="preserve">
+  <data name="Save" xml:space="preserve">
     <value>열 레이아웃 저장</value>
   </data>
   <data name="StarSizingDescription" xml:space="preserve">
@@ -291,5 +291,26 @@
   <data name="CustomSortIconDescription" xml:space="preserve">
     <value>Show how to custom sort icon in header column.</value>
     <comment>Show how to custom sort icon in header column.</comment>
+  </data>
+  <data name="SortIconPosition" xml:space="preserve">
+    <value>Sort icon position</value>
+  </data>
+  <data name="SortIconTemplate" xml:space="preserve">
+    <value>Sort icon template</value>
+  </data>
+  <data name="LiveUpdatesDescription" xml:space="preserve">
+    <value>Shows how to animates changes in the grid.</value>
+  </data>
+  <data name="LiveUpdatesTitle" xml:space="preserve">
+    <value>Live updates</value>
+  </data>
+  <data name="ColorUpdates" xml:space="preserve">
+    <value>Color coded updates</value>
+  </data>
+  <data name="ExportDescription" xml:space="preserve">
+    <value>Shows how to export to CSV, text, and HTML.</value>
+  </data>
+  <data name="ExportTitle" xml:space="preserve">
+    <value>Export</value>
   </data>
 </root>

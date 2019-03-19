@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using C1.Xamarin.Forms.Chart;
 using System.Globalization;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CustomizingAxesSample : ContentPage
     {
         FlagConverter flagConverter = new FlagConverter();

@@ -4,7 +4,7 @@
              x:Class="FlexGrid101.OnDemand"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml"
              xmlns:local="clr-namespace:FlexGrid101;assembly=FlexGrid101.XF">
     <StackLayout>
         <Entry x:Name="search" Completed="OnCompleted" Margin="5,5,5,5"/>

@@ -39,7 +39,6 @@ namespace C1Weather
             data = new WeatherData();
             list = new ObservableCollection<WeatherModel> { };
             var task = GeoWeatherTask();
-            //
             chart.AnimationMode = AnimationMode.Point;
             C1Animation updateAnimation = new C1Animation();
             updateAnimation.Duration = new TimeSpan(1000 * 10000);
@@ -56,6 +55,13 @@ namespace C1Weather
             lineMarker.DragLines = true;
             lineMarker.DragContent = true;
             lineMarker.Interaction = LineMarkerInteraction.Move;
+            initMarker();
+            this.chart.SeriesVisibilityChanged += FlexChart_SeriesVisibilityChanged;
+        }
+
+
+        private void FlexChart_SeriesVisibilityChanged(object sender, SeriesEventArgs e)
+        {
             initMarker();
         }
         //fetch Weather with geolocation 

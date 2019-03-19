@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>FlexGrid101</RootNamespace>
@@ -14,6 +14,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="FlexGrid101.XF.csproj.vspscc" />
+    <None Remove="Images\export_grid.png" />
     <None Remove="Images\filter.png" />
     <None Remove="Images\flexgrid.png" />
     <None Remove="Images\flexgrid_checkList.png" />
@@ -35,11 +36,13 @@
     <None Remove="Images\flexgrid_starSizing.png" />
     <None Remove="Images\hide.png" />
     <None Remove="Images\input_form.png" />
+    <None Remove="Images\live_updates.png" />
     <None Remove="Images\retro_TV_filled-50_dark.png" />
     <None Remove="Images\retro_TV_filled-50_light.png" />
     <None Remove="Images\show.png" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Images\export_grid.png" />
     <EmbeddedResource Include="Images\filter.png" />
     <EmbeddedResource Include="Images\flexgrid.png" />
     <EmbeddedResource Include="Images\flexgrid_checkList.png" />
@@ -59,29 +62,28 @@
     <EmbeddedResource Include="Images\flexgrid_rowdetails.png" />
     <EmbeddedResource Include="Images\flexgrid_selection.png" />
     <EmbeddedResource Include="Images\flexgrid_starSizing.png" />
-    <EmbeddedResource Include="Images\hide.png" />
     <EmbeddedResource Include="Images\input_form.png" />
+    <EmbeddedResource Include="Images\live_updates.png" />
     <EmbeddedResource Include="Images\retro_TV_filled-50_dark.png" />
     <EmbeddedResource Include="Images\retro_TV_filled-50_light.png" />
-    <EmbeddedResource Include="Images\show.png" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="System.ComponentModel" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
-    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
+    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\AppResources.Designer.cs">
@@ -99,6 +101,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\CustomSortIcon.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Export.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\LiveUpdates.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

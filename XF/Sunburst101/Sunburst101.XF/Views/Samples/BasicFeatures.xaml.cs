@@ -1,12 +1,15 @@
 ﻿
 using Sunburst101.Resources;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace Sunburst101
 {
+
     /// <summary>
     /// Interaction logic for BasicFeatures.xaml
     /// </summary>
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BasicFeatures
     {
         public BasicFeatures()

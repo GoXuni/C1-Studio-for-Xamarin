@@ -1,8 +1,10 @@
 ﻿using C1Gauge101.Resources;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace C1Gauge101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DisplayingValues : ContentPage
     {
         public DisplayingValues()

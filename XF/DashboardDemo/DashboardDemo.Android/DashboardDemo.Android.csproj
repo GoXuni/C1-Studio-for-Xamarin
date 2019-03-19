@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -28,10 +28,11 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidSupportedAbis>x86</AndroidSupportedAbis>
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -77,55 +78,55 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Android.Chart">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Core">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Gauge">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Grid">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.CollectionView">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>3.2.0.839982</Version>
+      <Version>3.5.0.169047</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.Compat" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.Core.UI" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.Fragment" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.Media.Compat" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Compat" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Core.UI" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Fragment" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Media.Compat" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />

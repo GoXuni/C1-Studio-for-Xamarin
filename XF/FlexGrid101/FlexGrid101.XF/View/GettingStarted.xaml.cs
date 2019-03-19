@@ -1,11 +1,11 @@
-﻿using FlexGrid101.Resources;
-using System;
+﻿using C1.Xamarin.Forms.Grid;
+using FlexGrid101.Resources;
 using Xamarin.Forms;
-using C1.CollectionView;
-using C1.Xamarin.Forms.Grid;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GettingStarted : ContentPage
     {
         public GettingStarted()

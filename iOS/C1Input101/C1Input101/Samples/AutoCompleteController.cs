@@ -18,7 +18,7 @@ namespace C1Input101
     {
         public AutoCompleteController(IntPtr handle) : base(handle)
         {
-            
+
         }
 
         private const string acmTitleKey = "AutoCompleteMode";
@@ -42,7 +42,7 @@ namespace C1Input101
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            
+
             AutoCompleteMode.Text = NSBundle.MainBundle.GetLocalizedString("AutoCompleteMode", "");
             ShowClearButton.Text = NSBundle.MainBundle.GetLocalizedString("ShowClearButton", "");
 
@@ -123,15 +123,29 @@ namespace C1Input101
             {
                 view.RemoveFromSuperview();
             }
+            const int padding = 4;
+            UIImageView imageView = new UIImageView(new CGRect(padding, 0, 48, 48));
+            UILabel label = new UILabel(new CGRect(65, 10, rect.Size.Width - 40, rect.Size.Height / 2));
+         
+            imageView.TranslatesAutoresizingMaskIntoConstraints = false;
+            label.TranslatesAutoresizingMaskIntoConstraints = false;
 
-            UIImageView imageView = new UIImageView(new CGRect(4, 0, 48, 48));
-			NSString imagePath = new NSString("Images/" + (NSString)item.Name.ToLower() + ".png");
+            NSString imagePath = new NSString("Images/" + (NSString)item.Name.ToLower() + ".png");
             imageView.Image = new UIImage(imagePath);
             cell.ContentView.Add(imageView);
 
-            UILabel label = new UILabel(new CGRect(65, 10, rect.Size.Width - 40, rect.Size.Height / 2));
             label.Text = item.Name;
             cell.ContentView.Add(label);
+
+            // anchor image to parent cell
+            imageView.LeadingAnchor.ConstraintEqualTo(cell.LeadingAnchor, (nfloat)(padding)).Active = true;
+            imageView.TopAnchor.ConstraintEqualTo(cell.TopAnchor).Active = true;
+            imageView.BottomAnchor.ConstraintEqualTo(cell.BottomAnchor).Active = true;
+
+            // anchor label follow to image
+            label.LeadingAnchor.ConstraintEqualTo(imageView.LeadingAnchor, (nfloat)(padding + imageView.Frame.Width)).Active = true;
+            label.TopAnchor.ConstraintEqualTo(cell.TopAnchor).Active = true;
+            label.BottomAnchor.ConstraintEqualTo(cell.BottomAnchor).Active = true;
 
             return cell;
         }
@@ -188,7 +202,7 @@ namespace C1Input101
         #endregion
 
         public override void DidReceiveMemoryWarning()
-        {         
+        {
             base.DidReceiveMemoryWarning();
             if (acmField != null)
             {

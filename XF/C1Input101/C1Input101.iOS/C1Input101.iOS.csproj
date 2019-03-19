@@ -92,7 +92,9 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
-    <None Include="Info.plist" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -108,33 +110,33 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.iOS.Calendar">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Core">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Input">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Calendar">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Calendar">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Input">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Input">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
+    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\C1Input101.XF\C1Input101.XF.csproj">

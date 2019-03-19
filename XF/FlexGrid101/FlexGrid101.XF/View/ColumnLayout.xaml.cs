@@ -1,4 +1,5 @@
-﻿using FlexGrid101.Resources;
+﻿using C1.Xamarin.Forms.Grid;
+using FlexGrid101.Resources;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,10 +7,11 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using C1.Xamarin.Forms.Grid;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ColumnLayout : ContentPage
     {
         private string FILENAME = "ColumnLayout.json";
@@ -20,7 +22,7 @@ namespace FlexGrid101
 
             Title = AppResources.ColumnLayoutTitle;
             btnEditColumnLayout.Text = AppResources.EditColumnLayout;
-            btnSerializeColumnLayout.Text = AppResources.SaveColumnLayout;
+            btnSerializeColumnLayout.Text = AppResources.Save;
 
             InitializeColumnLayout();
         }

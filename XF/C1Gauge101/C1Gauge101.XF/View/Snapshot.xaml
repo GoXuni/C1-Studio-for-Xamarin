@@ -4,7 +4,7 @@
              x:Class="C1Gauge101.Snapshot"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge">
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml">
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="Take" Clicked="OnSnapshotClicked" Order="Primary" Priority="0">
             <ToolbarItem.Icon>

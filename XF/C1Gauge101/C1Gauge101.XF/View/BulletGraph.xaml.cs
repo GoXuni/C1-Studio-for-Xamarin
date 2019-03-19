@@ -1,9 +1,11 @@
 ﻿using C1Gauge101.Resources;
 using Xamarin.Forms;
 using C1.Xamarin.Forms.Gauge;
+using Xamarin.Forms.Xaml;
 
 namespace C1Gauge101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BulletGraph : ContentPage
     {
         public BulletGraph()

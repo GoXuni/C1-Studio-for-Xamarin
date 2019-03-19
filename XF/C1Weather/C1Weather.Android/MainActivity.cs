@@ -5,6 +5,8 @@ using Android.OS;
 using Plugin.Permissions;
 using Xamarin.Forms.Platform.Android;
 using Plugin.CurrentActivity;
+using C1.Xamarin.Forms.Grid.Platform.Android;
+using C1.Xamarin.Forms.Chart.Platform.Android;
 
 namespace C1Weather.Android
 {
@@ -13,6 +15,9 @@ namespace C1Weather.Android
     {
         protected override void OnCreate(Bundle bundle)
         {
+            FlexGridRenderer.Init();
+            FlexChartRenderer.Init();
+
             FormsAppCompatActivity.ToolbarResource = Android.Resource.Layout.Toolbar;
             base.OnCreate(bundle);
 

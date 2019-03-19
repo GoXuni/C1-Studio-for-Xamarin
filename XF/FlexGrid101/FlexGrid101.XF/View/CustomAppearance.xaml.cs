@@ -1,11 +1,12 @@
-﻿using FlexGrid101.Resources;
-using System;
+﻿using C1.Xamarin.Forms.Grid;
+using FlexGrid101.Resources;
 using System.Collections.Generic;
 using Xamarin.Forms;
-using C1.Xamarin.Forms.Grid;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CustomAppearance : ContentPage
     {
         public CustomAppearance()

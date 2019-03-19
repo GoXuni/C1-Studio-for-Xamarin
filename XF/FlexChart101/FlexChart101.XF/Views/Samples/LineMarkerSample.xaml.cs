@@ -6,9 +6,11 @@ using Xamarin.Forms;
 using C1.Xamarin.Forms.Chart.Interaction;
 using FlexChart101.Resources;
 using C1.Xamarin.Forms.Chart;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LineMarkerSample
     {
         double[] verticalPositions = { double.NaN, 0, 0.25, 0.5, 0.75, 1 };

@@ -6,9 +6,11 @@ using Xamarin.Forms;
 using C1.Xamarin.Forms.Core;
 using C1.Xamarin.Forms.Gauge;
 using System.Threading;
+using Xamarin.Forms.Xaml;
 
 namespace C1Gauge101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Snapshot : ContentPage
     {
         private Random _rand = new Random();

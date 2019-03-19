@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:gauge="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge"     
-             xmlns:chart="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart"
-             xmlns:flexgrid="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml"     
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
              x:Class="MyBI.BIPage" >
@@ -15,25 +13,25 @@
             <StackLayout x:Name="GaugeStack" Orientation="Vertical" Margin="5">
                 <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                     <Label x:Name="UnitSalesLabel" HorizontalOptions="Center" FontSize="Large"/>
-                    <gauge:C1RadialGauge x:Name="UnitSalesGauge" ShowRanges="True" VerticalOptions="FillAndExpand" ValueFontSize="24" IsReadOnly="True" Margin="5" Thickness="0.5" >
-                        <gauge:C1RadialGauge.Pointer>
-                            <gauge:GaugeRange Thickness="0.7" Color="#AA49A7D5"/>
-                        </gauge:C1RadialGauge.Pointer>
-                        <gauge:C1RadialGauge.Ranges>
-                            <gauge:GaugeRange x:Name="UnitSalesGoal" Color="Gold"/>
-                        </gauge:C1RadialGauge.Ranges>
-                    </gauge:C1RadialGauge>
+                    <c1:C1RadialGauge x:Name="UnitSalesGauge" ShowRanges="True" VerticalOptions="FillAndExpand" ValueFontSize="24" IsReadOnly="True" Margin="5" Thickness="0.5" >
+                        <c1:C1RadialGauge.Pointer>
+                            <c1:GaugeRange Thickness="0.7" Color="#AA49A7D5"/>
+                        </c1:C1RadialGauge.Pointer>
+                        <c1:C1RadialGauge.Ranges>
+                            <c1:GaugeRange x:Name="UnitSalesGoal" Color="Gold"/>
+                        </c1:C1RadialGauge.Ranges>
+                    </c1:C1RadialGauge>
                 </StackLayout>
                 <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                     <Label x:Name="RevenueLabel" HorizontalOptions="Center" FontSize="Large"/>
-                    <gauge:C1RadialGauge x:Name="RevenueGauge" ShowRanges="True" VerticalOptions="FillAndExpand" ValueFontSize="24" IsReadOnly="True" Format="C0" Margin="5" Thickness="0.5" >
-                        <gauge:C1RadialGauge.Pointer>
-                            <gauge:GaugeRange Thickness="0.7" Color="#AA73B049"/>
-                        </gauge:C1RadialGauge.Pointer>
-                        <gauge:C1RadialGauge.Ranges>
-                            <gauge:GaugeRange x:Name="RevenueGoal" Color="Gold"/>
-                        </gauge:C1RadialGauge.Ranges>
-                    </gauge:C1RadialGauge>
+                    <c1:C1RadialGauge x:Name="RevenueGauge" ShowRanges="True" VerticalOptions="FillAndExpand" ValueFontSize="24" IsReadOnly="True" Format="C0" Margin="5" Thickness="0.5" >
+                        <c1:C1RadialGauge.Pointer>
+                            <c1:GaugeRange Thickness="0.7" Color="#AA73B049"/>
+                        </c1:C1RadialGauge.Pointer>
+                        <c1:C1RadialGauge.Ranges>
+                            <c1:GaugeRange x:Name="RevenueGoal" Color="Gold"/>
+                        </c1:C1RadialGauge.Ranges>
+                    </c1:C1RadialGauge>
                 </StackLayout>
             </StackLayout>
         </ContentPage>
@@ -49,87 +47,87 @@
                     <Label x:Name="TrendUnitSalesLabel" FontSize="Large"/>
                     <Label x:Name="UnitTrendSymbol" VerticalOptions="Center" FontSize="Large"/>
                 </StackLayout>
-                <chart:FlexChart x:Name="UnitSalesChart" Palette="Custom" ChartType="Scatter" Margin="5" Grid.Row="1">
-                    <chart:FlexChart.AxisX>
-                        <chart:ChartAxis Format="MMMM, yyyy"/>
-                    </chart:FlexChart.AxisX>
-                    <chart:FlexChart.AxisY>
-                        <chart:ChartAxis x:Name="UnitSalesY" MajorTickMarks="None" AxisLine="False" MajorGrid="True">
-                            <chart:ChartAxis.MajorGridStyle>
-                                <chart:ChartStyle Stroke="LightGray"/>
-                            </chart:ChartAxis.MajorGridStyle>
-                        </chart:ChartAxis>
-                    </chart:FlexChart.AxisY>
-                    <chart:FlexChart.Series>
-                        <chart:ChartSeries Binding="SumUnits" BindingX="Month">
-                            <chart:ChartSeries.Style>
-                                <chart:ChartStyle Fill="#AA49A7D5" Stroke="#49A7D5"/>
-                            </chart:ChartSeries.Style>
-                        </chart:ChartSeries>
-                        <chart:ChartSeries Binding="TrendUnitValue" BindingX="Month" ChartType="Line">
-                            <chart:ChartSeries.Style>
-                                <chart:ChartStyle Fill="Blue" StrokeThickness="3" Stroke="Blue"/>
-                            </chart:ChartSeries.Style>
-                        </chart:ChartSeries>
-                    </chart:FlexChart.Series>
-                </chart:FlexChart>
+                <c1:FlexChart x:Name="UnitSalesChart" Palette="Custom" ChartType="Scatter" Margin="5" Grid.Row="1">
+                    <c1:FlexChart.AxisX>
+                        <c1:ChartAxis Format="MMMM, yyyy"/>
+                    </c1:FlexChart.AxisX>
+                    <c1:FlexChart.AxisY>
+                        <c1:ChartAxis x:Name="UnitSalesY" MajorTickMarks="None" AxisLine="False" MajorGrid="True">
+                            <c1:ChartAxis.MajorGridStyle>
+                                <c1:ChartStyle Stroke="LightGray"/>
+                            </c1:ChartAxis.MajorGridStyle>
+                        </c1:ChartAxis>
+                    </c1:FlexChart.AxisY>
+                    <c1:FlexChart.Series>
+                        <c1:ChartSeries Binding="SumUnits" BindingX="Month">
+                            <c1:ChartSeries.Style>
+                                <c1:ChartStyle Fill="#AA49A7D5" Stroke="#49A7D5"/>
+                            </c1:ChartSeries.Style>
+                        </c1:ChartSeries>
+                        <c1:ChartSeries Binding="TrendUnitValue" BindingX="Month" ChartType="Line">
+                            <c1:ChartSeries.Style>
+                                <c1:ChartStyle Fill="Blue" StrokeThickness="3" Stroke="Blue"/>
+                            </c1:ChartSeries.Style>
+                        </c1:ChartSeries>
+                    </c1:FlexChart.Series>
+                </c1:FlexChart>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="2">
                     <Label x:Name="TrendRevenueLabel" Grid.Row="2" FontSize="Large"/>
                     <Label x:Name="RevenueTrendSymbol" VerticalOptions="Center" FontSize="Large" />
                 </StackLayout>
-                <chart:FlexChart x:Name="RevenueChart" Palette="Custom" ChartType="Scatter" Margin="5" Grid.Row="3">
-                    <chart:FlexChart.AxisX>
-                        <chart:ChartAxis Format="MMMM, yyyy" />
-                    </chart:FlexChart.AxisX>
-                    <chart:FlexChart.AxisY>
-                        <chart:ChartAxis x:Name="RevenueY" MajorGrid="True" MajorTickMarks="None" AxisLine="False" LabelLoading="RevenueChartAxisYLabelLoading">
-                            <chart:ChartAxis.MajorGridStyle>
-                                <chart:ChartStyle Stroke="LightGray"/>
-                            </chart:ChartAxis.MajorGridStyle>
-                        </chart:ChartAxis>
-                    </chart:FlexChart.AxisY>
-                    <chart:FlexChart.Series>
-                        <chart:ChartSeries Binding="SumRevenue" BindingX="Month" >
-                            <chart:ChartSeries.Style>
-                                <chart:ChartStyle Fill="#AA73B049" Stroke="#73B049"/>
-                            </chart:ChartSeries.Style>
-                        </chart:ChartSeries>
-                        <chart:ChartSeries Binding="TrendRevenueValue" BindingX="Month" ChartType="Line">
-                            <chart:ChartSeries.Style>
-                                <chart:ChartStyle Fill="Green" StrokeThickness="3" Stroke="Green"/>
-                            </chart:ChartSeries.Style>
-                        </chart:ChartSeries>
-                    </chart:FlexChart.Series>
-                </chart:FlexChart>
+                <c1:FlexChart x:Name="RevenueChart" Palette="Custom" ChartType="Scatter" Margin="5" Grid.Row="3">
+                    <c1:FlexChart.AxisX>
+                        <c1:ChartAxis Format="MMMM, yyyy" />
+                    </c1:FlexChart.AxisX>
+                    <c1:FlexChart.AxisY>
+                        <c1:ChartAxis x:Name="RevenueY" MajorGrid="True" MajorTickMarks="None" AxisLine="False" LabelLoading="RevenueChartAxisYLabelLoading">
+                            <c1:ChartAxis.MajorGridStyle>
+                                <c1:ChartStyle Stroke="LightGray"/>
+                            </c1:ChartAxis.MajorGridStyle>
+                        </c1:ChartAxis>
+                    </c1:FlexChart.AxisY>
+                    <c1:FlexChart.Series>
+                        <c1:ChartSeries Binding="SumRevenue" BindingX="Month" >
+                            <c1:ChartSeries.Style>
+                                <c1:ChartStyle Fill="#AA73B049" Stroke="#73B049"/>
+                            </c1:ChartSeries.Style>
+                        </c1:ChartSeries>
+                        <c1:ChartSeries Binding="TrendRevenueValue" BindingX="Month" ChartType="Line">
+                            <c1:ChartSeries.Style>
+                                <c1:ChartStyle Fill="Green" StrokeThickness="3" Stroke="Green"/>
+                            </c1:ChartSeries.Style>
+                        </c1:ChartSeries>
+                    </c1:FlexChart.Series>
+                </c1:FlexChart>
             </Grid>
         </ContentPage>
         <ContentPage Icon="details.png" x:Name="DetailsPage">
             <Grid Margin="5">
-                <flexgrid:FlexGrid x:Name="detailsView" AllowDragging="None" AllowResizing="None" ColumnHeaderFontSize="12" IsReadOnly="True" Margin="5" DefaultRowHeight="50" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <flexgrid:FlexGrid.Columns>
-                        <flexgrid:GridColumn x:Name="periodColumn" Width="Auto" Binding="Month" Format="MMMM, yyyy"/>
-                        <flexgrid:GridColumn x:Name="unitColumn" Width="*" >
-                            <flexgrid:GridColumn.CellTemplate>
+                <c1:FlexGrid x:Name="detailsView" AllowDragging="None" AllowResizing="None" ColumnHeaderFontSize="12" IsReadOnly="True" Margin="5" DefaultRowHeight="50" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <c1:FlexGrid.Columns>
+                        <c1:GridColumn x:Name="periodColumn" Width="Auto" Binding="Month" Format="MMMM, yyyy"/>
+                        <c1:GridColumn x:Name="unitColumn" Width="*" >
+                            <c1:GridColumn.CellTemplate>
                                 <DataTemplate>
                                     <Grid CompressedLayout.IsHeadless="true">
-                                        <gauge:C1LinearGauge IsAnimated="False" Value="{Binding SumUnits}" Max="{Binding MaxUnits}" IsReadOnly="True" PointerColor="#AA49A7D5" />
+                                        <c1:C1LinearGauge IsAnimated="False" Value="{Binding SumUnits}" Max="{Binding MaxUnits}" IsReadOnly="True" PointerColor="#AA49A7D5" />
                                         <Label Text="{Binding SumUnits}" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
                                     </Grid>
                                 </DataTemplate>
-                            </flexgrid:GridColumn.CellTemplate>
-                        </flexgrid:GridColumn>
-                        <flexgrid:GridColumn x:Name="revenueColumn" Width="*" Format="n0">
-                            <flexgrid:GridColumn.CellTemplate>
+                            </c1:GridColumn.CellTemplate>
+                        </c1:GridColumn>
+                        <c1:GridColumn x:Name="revenueColumn" Width="*" Format="n0">
+                            <c1:GridColumn.CellTemplate>
                                 <DataTemplate>
                                     <Grid CompressedLayout.IsHeadless="true">
-                                        <gauge:C1LinearGauge IsAnimated="False" Value="{Binding SumRevenue}" Max="{Binding MaxRevenue}" IsReadOnly="True" PointerColor="#AA73B049" />
+                                        <c1:C1LinearGauge IsAnimated="False" Value="{Binding SumRevenue}" Max="{Binding MaxRevenue}" IsReadOnly="True" PointerColor="#AA73B049" />
                                         <Label Text="{Binding SumRevenue}" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
                                     </Grid>
                                 </DataTemplate>
-                            </flexgrid:GridColumn.CellTemplate>
-                        </flexgrid:GridColumn>
-                    </flexgrid:FlexGrid.Columns>
-                </flexgrid:FlexGrid>
+                            </c1:GridColumn.CellTemplate>
+                        </c1:GridColumn>
+                    </c1:FlexGrid.Columns>
+                </c1:FlexGrid>
             </Grid>
         </ContentPage>
     </TabbedPage.Children>

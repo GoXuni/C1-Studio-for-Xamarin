@@ -6,9 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using C1Input101.Resources;
+using Xamarin.Forms.Xaml;
 
 namespace C1Input101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MaskedEntrySample
     {
         public MaskedEntrySample()

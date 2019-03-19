@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
              x:Class="MyBI.MainPageMaster"
-             xmlns:input="clr-namespace:C1.Xamarin.Forms.Input;assembly=C1.Xamarin.Forms.Input"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
              BackgroundColor="#7986CB"
@@ -14,8 +14,8 @@
             <Label x:Name="MyBILabel" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Large" FontAttributes="Bold"/>
         </StackLayout>
         <Label x:Name="RegionLabel" TextColor="White" HorizontalTextAlignment="Start" Margin="10,0,0,0" VerticalTextAlignment="Center" FontSize="Medium" />
-        <input:C1ComboBox x:Name="RegionSelector" DropDownBehavior="HeaderTap" DropDownMode="BelowOrAbove" IsEditable="False" SelectedIndex="0" DisplayMemberPath="Name" SelectedValuePath="iD" Margin="10" SelectedIndexChanged="RegionSelector_SelectedIndexChanged"/>
+        <c1:C1ComboBox x:Name="RegionSelector" DropDownBehavior="HeaderTap" DropDownMode="BelowOrAbove" IsEditable="False" SelectedIndex="0" DisplayMemberPath="Name" SelectedValuePath="iD" Margin="10" SelectedIndexChanged="RegionSelector_SelectedIndexChanged"/>
         <Label x:Name="ProductLabel" TextColor="White" HorizontalTextAlignment="Start" Margin="10,0,0,0" VerticalTextAlignment="Center" FontSize="Medium" />
-        <input:C1ComboBox x:Name="ProductSelector" DropDownBehavior="HeaderTap" DropDownMode="BelowOrAbove" IsEditable="False" SelectedIndex="0" DisplayMemberPath="Name" SelectedValuePath="iD" Margin="10" SelectedIndexChanged="ProductSelector_SelectedIndexChanged"/>
+        <c1:C1ComboBox x:Name="ProductSelector" DropDownBehavior="HeaderTap" DropDownMode="BelowOrAbove" IsEditable="False" SelectedIndex="0" DisplayMemberPath="Name" SelectedValuePath="iD" Margin="10" SelectedIndexChanged="ProductSelector_SelectedIndexChanged"/>
     </StackLayout>
 </ContentPage>

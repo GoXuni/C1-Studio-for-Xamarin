@@ -1,9 +1,11 @@
 ﻿using FlexChart101.Resources;
 using System;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PieGettingStartedSample
     {
         public PieGettingStartedSample()

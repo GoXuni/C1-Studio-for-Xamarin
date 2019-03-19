@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml"
+             x:Class="FlexGrid101.LiveUpdates">
+    <ContentPage.Content>
+        <StackLayout>
+            <FlexLayout BackgroundColor="LightGray" Direction="Row" JustifyContent="SpaceBetween" Padding="5,2,5,2">
+                <Label x:Name="ColorLabel" FlexLayout.AlignSelf="Center" Margin="5,0,0,0" />
+                <Switch PropertyChanged="Switch_PropertyChanged" IsToggled="True"/>
+            </FlexLayout>
+            <c1:FlexGrid x:Name="grid" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

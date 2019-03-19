@@ -21,47 +21,47 @@
         android:layout_height="wrap_content"
         android:columnCount="2"
         android:paddingBottom="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:paddingTop="20dp"
         android:rowCount="4">
       <TextView
-          android:layout_width="wrap_content"
+          android:layout_width="120dp"
           android:layout_height="wrap_content"
           android:text="@string/id_mask" />
       <C1.Android.Input.C1MaskedTextView
           android:id="@+id/idMask"
-          android:layout_width="300dp"
+          android:layout_width="200dp"
           android:layout_height="wrap_content"
           app:c1_mask="999 99-0000"
           app:c1_promptChar="_" />
       <TextView
-          android:layout_width="wrap_content"
+          android:layout_width="120dp"
           android:layout_height="wrap_content"
           android:text="@string/date_mask" />
       <C1.Android.Input.C1MaskedTextView
           android:id="@+id/dateMask"
-          android:layout_width="300dp"
+         android:layout_width="200dp"
           android:layout_height="wrap_content"
           app:c1_mask="90/90/0000"
           app:c1_promptChar="_" />
       <TextView
-          android:layout_width="wrap_content"
+          android:layout_width="120dp"
           android:layout_height="wrap_content"
           android:text="@string/phone_mask" />
       <C1.Android.Input.C1MaskedTextView
           android:id="@+id/phoneMask"
-          android:layout_width="300dp"
+          android:layout_width="200dp"
           android:layout_height="wrap_content"
           app:c1_mask="(999)000-0000"
           app:c1_promptChar="_" />
       <TextView
-          android:layout_width="wrap_content"
+          android:layout_width="120dp"
           android:layout_height="wrap_content"
           android:text="@string/state_mask" />
       <C1.Android.Input.C1MaskedTextView
           android:id="@+id/stateMask"
-          android:layout_width="300dp"
+          android:layout_width="200dp"
           android:layout_height="wrap_content"
           app:c1_mask="LL"
           app:c1_promptChar="_" />

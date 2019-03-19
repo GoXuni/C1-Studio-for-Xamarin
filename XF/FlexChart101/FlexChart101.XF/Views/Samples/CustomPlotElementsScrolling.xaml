@@ -4,7 +4,7 @@
              x:Class="FlexChart101.CustomPlotElementsScrolling"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart" x:Name="page">
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml" x:Name="page">
   <StackLayout>
     <Grid  VerticalOptions="FillAndExpand">
             <c1:FlexChart x:Name="flexChart1" Header="Mobile Devices Sold" LegendPosition="None" BindingX="Name" VerticalOptions="FillAndExpand">

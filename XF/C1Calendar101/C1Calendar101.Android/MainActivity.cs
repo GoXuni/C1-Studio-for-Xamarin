@@ -10,6 +10,7 @@ using Android.OS;
 using XAM = Xamarin.Forms;
 
 using Xamarin.Forms.Platform.Android;
+using C1.Xamarin.Forms.Calendar.Platform.Android;
 
 namespace C1Calendar101.Android
 {
@@ -18,6 +19,8 @@ namespace C1Calendar101.Android
     {
         protected override void OnCreate(Bundle bundle)
         {
+            C1CalendarRenderer.Init();
+
             FormsAppCompatActivity.ToolbarResource = Android.Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);

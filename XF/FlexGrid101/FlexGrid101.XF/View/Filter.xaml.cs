@@ -1,12 +1,14 @@
-﻿using FlexGrid101.Resources;
+﻿using C1.CollectionView;
+using FlexGrid101.Resources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
-using C1.CollectionView;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Filter : ContentPage
     {
         public Filter()

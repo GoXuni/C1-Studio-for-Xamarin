@@ -2,19 +2,16 @@
 using C1.Xamarin.Forms.Grid;
 using FlexGrid101.Resources;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RowDetails : ContentPage
     {
-        private ImageSource _hide;
-        private ImageSource _show;
-
         public RowDetails()
         {
             InitializeComponent();
-            _hide = ImageSource.FromResource("FlexGrid101.Images.hide.png", typeof(App));
-            _show = ImageSource.FromResource("FlexGrid101.Images.show.png", typeof(App));
 
             Title = AppResources.RowDetailsTitle;
             lblMode.Text = AppResources.DetailsVisibiltyMode;
@@ -42,8 +39,6 @@ namespace FlexGrid101
             var data = Customer.GetCustomerList(1000);
             grid.ItemsSource = data;
             grid.MinColumnWidth = 85;
-
-            //details.DetailCollapsedIconTemplate = new C1IconTemplate(() => new C1BitmapIcon() { Source = ImageSource.FromFile("arrow_up.png") });
         }
     }
 }

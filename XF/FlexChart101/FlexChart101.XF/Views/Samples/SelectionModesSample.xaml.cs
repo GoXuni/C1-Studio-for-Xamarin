@@ -1,9 +1,11 @@
 ﻿using System;
 using C1.Xamarin.Forms.Chart;
 using FlexChart101.Resources;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SelectionModesSample
     {
         public SelectionModesSample()

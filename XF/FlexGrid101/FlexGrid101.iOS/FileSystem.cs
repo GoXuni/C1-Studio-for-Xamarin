@@ -43,5 +43,10 @@ namespace FlexGrid101.iOS
 
 			return null;
         }
+        public string GetFileSystemPath(string FileName, string type)
+        {
+            string PathAndName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), FileName) + "." + type;
+            return PathAndName;
+        }
     }
 }

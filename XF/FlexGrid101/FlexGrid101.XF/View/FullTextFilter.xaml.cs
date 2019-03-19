@@ -1,17 +1,20 @@
 ﻿using FlexGrid101.Resources;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FullTextFilter : ContentPage
     {
         public FullTextFilter()
         {
             InitializeComponent();
 
-            this.Title = AppResources.FullTextFilterTitle;
+            Title = AppResources.FullTextFilterTitle;
             filter.Placeholder = AppResources.FilterPlaceholderText;
             filter.Keyboard = Keyboard.Plain;
+            filter.Text = "Rich";
             matchCaseLabel.Text = AppResources.MatchCaseLabel;
             matchWholeWordLabel.Text = AppResources.MatchWholeWordLabel;
 

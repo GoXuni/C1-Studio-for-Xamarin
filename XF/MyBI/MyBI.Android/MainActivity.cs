@@ -1,6 +1,10 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using C1.Xamarin.Forms.Grid.Platform.Android;
+using C1.Xamarin.Forms.Input.Platform.Android;
+using C1.Xamarin.Forms.Gauge.Platform.Android;
+using C1.Xamarin.Forms.Chart.Platform.Android;
 
 namespace MyBI.Android
 {
@@ -9,6 +13,11 @@ namespace MyBI.Android
     {
         protected override void OnCreate(Bundle bundle)
         {
+            FlexGridRenderer.Init();
+            C1InputRenderer.Init();
+            C1GaugeRenderer.Init();
+            FlexChartRenderer.Init();
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

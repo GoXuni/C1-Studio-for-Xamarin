@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using C1.Xamarin.Forms.Chart;
 using C1.Xamarin.Forms.Gauge;
+using Xamarin.Forms.Xaml;
 
 namespace SimpleDashboard
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PhoneDash : ContentPage
     {
         private DataSource ds;

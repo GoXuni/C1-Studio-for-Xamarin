@@ -4,7 +4,7 @@
              x:Class="FlexGrid101.EditConfirmation"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml">
     <c1:FlexGrid x:Name="grid" Grid.Row="1" 
                  AutoGenerateColumns="False" 
                  BeginningEdit="OnBeginningEdit" 

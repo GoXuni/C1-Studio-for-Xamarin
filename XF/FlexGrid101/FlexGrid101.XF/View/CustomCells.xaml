@@ -4,7 +4,7 @@
              x:Class="FlexGrid101.CustomCells"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml"
              xmlns:gauge="clr-namespace:C1.Xamarin.Forms.Gauge;assembly=C1.Xamarin.Forms.Gauge">
     <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False" IsReadOnly="True">
         <c1:FlexGrid.Columns>

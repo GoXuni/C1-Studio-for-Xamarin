@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HitTest
     {
         public HitTest()

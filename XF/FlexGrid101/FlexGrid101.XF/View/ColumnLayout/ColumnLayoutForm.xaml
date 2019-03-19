@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlexGrid101.ColumnLayoutForm"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true">
     <Grid>
@@ -10,7 +10,7 @@
             <RowDefinition />
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <c1:FlexGrid x:Name="grid" ItemsSource="{Binding}" AutoGenerateColumns="False" HeadersVisibility="None" GridLinesVisibility="Horizontal" SelectionMode="None">
+        <c1:FlexGrid x:Name="grid" ItemsSource="{Binding}" AutoGenerateColumns="False" HeadersVisibility="None" GridLinesVisibility="Horizontal" SelectionMode="None" SelectionBackgroundColor="White">
             <c1:FlexGrid.Columns>
                 <c1:GridColumn Binding="Title" Width="*" IsReadOnly="True"/>
                 <c1:GridColumn IsReadOnly="True" Width="80">

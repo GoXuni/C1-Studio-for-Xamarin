@@ -253,7 +253,7 @@
   <data name="EditColumnLayout" xml:space="preserve">
     <value>Edit</value>
   </data>
-  <data name="SaveColumnLayout" xml:space="preserve">
+  <data name="Save" xml:space="preserve">
     <value>Save</value>
   </data>
   <data name="StarSizingInstructions" xml:space="preserve">
@@ -351,5 +351,20 @@
   </data>
   <data name="SortIconTemplate" xml:space="preserve">
     <value>Sort icon template</value>
+  </data>
+  <data name="LiveUpdatesDescription" xml:space="preserve">
+    <value>Shows how to animates changes in the grid.</value>
+  </data>
+  <data name="LiveUpdatesTitle" xml:space="preserve">
+    <value>Live updates</value>
+  </data>
+  <data name="ColorUpdates" xml:space="preserve">
+    <value>Color coded updates</value>
+  </data>
+  <data name="ExportDescription" xml:space="preserve">
+    <value>Shows how to export to CSV, text, and HTML.</value>
+  </data>
+  <data name="ExportTitle" xml:space="preserve">
+    <value>Export</value>
   </data>
 </root>

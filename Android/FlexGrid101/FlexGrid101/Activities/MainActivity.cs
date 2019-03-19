@@ -92,6 +92,9 @@ namespace FlexGrid101
                     case 20:
                         StartActivity(typeof(CustomSortIconActivity));
                         break;
+                    case 21:
+                        StartActivity(typeof(ExportActivity));
+                        break;
                 }
             };
             recyclerView.SetAdapter(adapter);
@@ -105,7 +108,7 @@ namespace FlexGrid101
         {
             get
             {
-                return 21;
+                return 22;
             }
         }
 
@@ -235,6 +238,11 @@ namespace FlexGrid101
                     h.SetTitle(resources.GetString(Resource.String.CustomSortIconTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.CustomSortIconDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_customSort);
+                    break;
+                case 21:
+                    h.SetTitle(resources.GetString(Resource.String.ExportTitle));
+                    h.SetSubtitle(resources.GetString(Resource.String.ExportDescription));
+                    h.SetIcon(Resource.Drawable.export_grid);
                     break;
             }
         }

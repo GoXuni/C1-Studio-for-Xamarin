@@ -6,9 +6,11 @@ using C1.Xamarin.Forms.Core;
 using C1.CollectionView;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PieAnimationSample
     {
         C1CollectionView<MyData> data;

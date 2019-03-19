@@ -1,15 +1,16 @@
-﻿using FlexGrid101.Resources;
+﻿using C1.CollectionView;
+using C1.Xamarin.Forms.Grid;
+using FlexGrid101.Resources;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Collections.Specialized;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using C1.CollectionView;
-using C1.Xamarin.Forms.Grid;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FilterForm : ContentPage
     {
         private TaskCompletionSource<bool> _completion;

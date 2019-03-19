@@ -4,9 +4,11 @@ using System;
 using C1.Xamarin.Forms.Chart;
 using Xamarin.Forms;
 using System.Collections.Generic;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public  partial class HistogramSample 
     {
         public HistogramSample()

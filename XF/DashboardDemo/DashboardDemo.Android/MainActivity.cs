@@ -1,6 +1,9 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using C1.Xamarin.Forms.Chart.Platform.Android;
+using C1.Xamarin.Forms.Grid.Platform.Android;
+using C1.Xamarin.Forms.Gauge.Platform.Android;
 
 namespace DashboardDemo.Droid
 {
@@ -9,6 +12,10 @@ namespace DashboardDemo.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+            FlexChartRenderer.Init();
+            FlexGridRenderer.Init();
+            C1GaugeRenderer.Init();
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

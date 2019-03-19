@@ -1,10 +1,12 @@
-﻿using FlexGrid101.Resources;
+﻿using C1.Xamarin.Forms.Grid;
+using FlexGrid101.Resources;
 using System;
 using Xamarin.Forms;
-using C1.Xamarin.Forms.Grid;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Editing : ContentPage
     {
         GridCellRange selectedRange;

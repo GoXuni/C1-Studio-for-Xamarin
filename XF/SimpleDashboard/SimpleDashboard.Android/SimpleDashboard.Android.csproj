@@ -28,10 +28,12 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -85,34 +87,34 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Android.Chart">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Core">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Gauge">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>3.2.20183.344</Version>
+      <Version>3.5.20191.378</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>3.2.0.839982</Version>
+      <Version>3.5.0.169047</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

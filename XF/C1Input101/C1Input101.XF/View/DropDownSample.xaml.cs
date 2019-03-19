@@ -9,9 +9,11 @@ using C1Input101.Resources;
 using C1.Xamarin.Forms.Calendar;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Xamarin.Forms.Xaml;
 
 namespace C1Input101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DropDownSample
     {
         public DropDownSample()

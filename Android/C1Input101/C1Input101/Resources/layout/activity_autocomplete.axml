@@ -22,14 +22,14 @@
             <TextView
                 android:id="@+id/acm_textview"
                 android:layout_width="0dp"
-                android:gravity="left"
+                android:gravity="start"
                 android:layout_height="match_parent"
                 android:text="@string/AutoCompleteMode"
                 android:layout_weight="1" />
             <TextView
                 android:id="@+id/clear_textview"
                 android:layout_width="0dp"
-                android:gravity="right"
+                android:gravity="end"
                 android:layout_height="match_parent"
                 android:text="@string/ShowClearButton"
                 android:layout_weight="1" />
@@ -42,13 +42,13 @@
                 android:id="@+id/acm_Spinner"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:gravity="left"
+                android:gravity="start"
                 android:layout_weight="1" />
             <Switch
                 android:id="@+id/clear_switch"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:gravity="right"
+                android:gravity="end"
                 android:layout_weight="1" />
         </LinearLayout>
         <GridLayout xmlns:tools="http://schemas.android.com/tools"

@@ -10,6 +10,8 @@ using Android.OS;
 using XAM = Xamarin.Forms;
 
 using Xamarin.Forms.Platform.Android;
+using C1.Xamarin.Forms.Grid.Platform.Android;
+using C1.Xamarin.Forms.Gauge.Platform.Android;
 
 namespace FlexGrid101.Android
 {
@@ -18,6 +20,9 @@ namespace FlexGrid101.Android
     {
         protected override void OnCreate(Bundle bundle)
         {
+            FlexGridRenderer.Init();
+            C1GaugeRenderer.Init();
+
             FormsAppCompatActivity.ToolbarResource = Android.Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);

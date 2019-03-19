@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using C1.Xamarin.Forms.Chart;
 using C1.Xamarin.Forms.Core;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CustomTooltipsSample : ContentPage
     {
         public CustomTooltipsSample()

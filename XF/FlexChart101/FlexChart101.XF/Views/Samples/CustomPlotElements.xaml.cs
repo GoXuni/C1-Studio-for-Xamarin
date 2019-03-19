@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using C1.Xamarin.Forms.Chart;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CustomPlotElements : ContentPage
     {
-
         public CustomPlotElements()
         {
             InitializeComponent();

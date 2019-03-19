@@ -10,6 +10,7 @@ using Android.OS;
 using XAM = Xamarin.Forms;
 
 using Xamarin.Forms.Platform.Android;
+using C1.Xamarin.Forms.Gauge.Platform.Android;
 
 namespace C1Gauge101.Android
 {
@@ -18,6 +19,8 @@ namespace C1Gauge101.Android
     {
         protected override void OnCreate(Bundle bundle)
         {
+            C1GaugeRenderer.Init();
+
             FormsAppCompatActivity.ToolbarResource = Android.Resource.Layout.Toolbar;
             base.OnCreate(bundle);
 

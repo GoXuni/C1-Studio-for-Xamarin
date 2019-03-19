@@ -1,9 +1,11 @@
 ﻿using FlexGrid101.Resources;
 using System.Collections.Generic;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FlexGridSamples : ContentPage
     {
         public FlexGridSamples()
@@ -38,6 +40,8 @@ namespace FlexGrid101
                 new Sample() { Name = AppResources.NewRowTitle, Description = AppResources.NewRowDescription, SampleViewType = 19 , Thumbnail="flexgrid_newRow.png"},
                 new Sample() { Name = AppResources.CheckListTitle, Description = AppResources.CheckListDescription, SampleViewType = 20 , Thumbnail="flexgrid_checkList.png"},
                 new Sample() { Name = AppResources.CustomSortIconTitle, Description = AppResources.CustomSortIconDescription, SampleViewType = 21 , Thumbnail="flexgrid_customSort.png"},
+                new Sample() { Name = AppResources.LiveUpdatesTitle, Description = AppResources.LiveUpdatesDescription, SampleViewType = 22 , Thumbnail="live_updates.png"},
+                new Sample() { Name = AppResources.ExportTitle, Description = AppResources.ExportDescription, SampleViewType = 23 , Thumbnail="export_grid.png"},
             };
         }
 
@@ -80,6 +84,8 @@ namespace FlexGrid101
                 case 19: return new NewRow();
                 case 20: return new CheckList();
                 case 21: return new CustomSortIcon();
+                case 22: return new LiveUpdates();
+                case 23: return new Export();
             }
             return null;
         }

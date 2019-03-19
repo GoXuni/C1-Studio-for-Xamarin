@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
+             FlowDirection="{x:Static Device.FlowDirection}"
              x:Class="C1Input101.InputSamples">
     <ListView x:Name="listView" ItemsSource="{Binding}" HasUnevenRows="True" ItemTapped="OnItemTapped" VerticalOptions="FillAndExpand">
         <ListView.Resources>

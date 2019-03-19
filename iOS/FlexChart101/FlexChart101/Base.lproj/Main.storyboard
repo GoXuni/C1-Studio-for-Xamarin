@@ -1261,6 +1261,8 @@
                         <outlet property="chart" destination="iBn-AR-ojX" id="Jsq-v6-pLh"/>
                         <outlet property="picker" destination="Uhg-bY-g6J" id="ByR-Ri-1SM"/>
                     </connections>
+                    <navigationItem key="navigationItem" title="Line Marker" id="ljq-B1-HL3"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzn-tv-p4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

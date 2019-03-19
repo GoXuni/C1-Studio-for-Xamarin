@@ -255,7 +255,7 @@
   <data name="RowDetailsTitle" xml:space="preserve">
     <value>詳細行</value>
   </data>
-  <data name="SaveColumnLayout" xml:space="preserve">
+  <data name="Save" xml:space="preserve">
     <value>保存</value>
   </data>
   <data name="SearchPlaceholderText" xml:space="preserve">
@@ -376,5 +376,20 @@
   </data>
   <data name="SortIconTemplate" xml:space="preserve">
     <value>ソートアイコンのテンプレート</value>
+  </data>
+  <data name="LiveUpdatesDescription" xml:space="preserve">
+    <value>グリッド内の変更をアニメーションで表す方法を示します。</value>
+  </data>
+  <data name="LiveUpdatesTitle" xml:space="preserve">
+    <value>ライブ更新</value>
+  </data>
+    <data name="ColorUpdates" xml:space="preserve">
+    <value>色分けされた更新</value>
+  </data>
+    <data name="ExportDescription" xml:space="preserve">
+    <value>CSV、テキスト、および HTML 形式でエクスポートする方法を示します。</value>
+  </data>
+    <data name="ExportTitle" xml:space="preserve">
+    <value>エクスポート</value>
   </data>
 </root>

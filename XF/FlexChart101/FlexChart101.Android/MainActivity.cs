@@ -10,6 +10,7 @@ using Android.OS;
 using XAM = Xamarin.Forms;
 
 using Xamarin.Forms.Platform.Android;
+using C1.Xamarin.Forms.Chart.Platform.Android;
 
 namespace FlexChart101.Android
 {
@@ -18,6 +19,8 @@ namespace FlexChart101.Android
     {
         protected override void OnCreate(Bundle bundle)
         {
+            FlexChartRenderer.Init();
+
             FormsAppCompatActivity.ToolbarResource = Android.Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);

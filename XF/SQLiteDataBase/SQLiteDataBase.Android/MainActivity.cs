@@ -2,6 +2,7 @@
 using Android.Content.PM;
 using Android.OS;
 using Xamarin.Forms.Platform.Android;
+using C1.Xamarin.Forms.Grid.Platform.Android;
 
 namespace SQLiteDataBase.Android
 {
@@ -10,6 +11,8 @@ namespace SQLiteDataBase.Android
     {
         protected override void OnCreate(Bundle bundle)
         {
+            FlexGridRenderer.Init();
+
             SQLitePCL.raw.SetProvider(new SQLitePCL.SQLite3Provider_e_sqlite3());
 
             ToolbarResource = Android.Resource.Layout.Toolbar;

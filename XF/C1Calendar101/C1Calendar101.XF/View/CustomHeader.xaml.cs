@@ -2,9 +2,11 @@
 using C1.Xamarin.Forms.Calendar;
 using C1Calendar101.Resources;
 using System.Globalization;
+using Xamarin.Forms.Xaml;
 
 namespace C1Calendar101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CustomHeader
     {
         public CustomHeader()

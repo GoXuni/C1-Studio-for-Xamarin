@@ -133,6 +133,15 @@ namespace FlexGrid101.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Color coded updates.
+        /// </summary>
+        public static string ColorUpdates {
+            get {
+                return ResourceManager.GetString("ColorUpdates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shows how to specify and format columns..
         /// </summary>
         public static string ColumnDefinitionDescription {
@@ -358,6 +367,24 @@ namespace FlexGrid101.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Shows how to export to CSV, text, and HTML.
+        /// </summary>
+        public static string ExportDescription {
+            get {
+                return ResourceManager.GetString("ExportDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export.
+        /// </summary>
+        public static string ExportTitle {
+            get {
+                return ResourceManager.GetString("ExportTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Filter.
         /// </summary>
         public static string Filter {
@@ -453,6 +480,24 @@ namespace FlexGrid101.Resources {
         public static string GroupingTitle {
             get {
                 return ResourceManager.GetString("GroupingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shows how to animates changes in the grid..
+        /// </summary>
+        public static string LiveUpdatesDescription {
+            get {
+                return ResourceManager.GetString("LiveUpdatesDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Live updates.
+        /// </summary>
+        public static string LiveUpdatesTitle {
+            get {
+                return ResourceManager.GetString("LiveUpdatesTitle", resourceCulture);
             }
         }
         
@@ -576,9 +621,9 @@ namespace FlexGrid101.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
-        public static string SaveColumnLayout {
+        public static string Save {
             get {
-                return ResourceManager.GetString("SaveColumnLayout", resourceCulture);
+                return ResourceManager.GetString("Save", resourceCulture);
             }
         }
         

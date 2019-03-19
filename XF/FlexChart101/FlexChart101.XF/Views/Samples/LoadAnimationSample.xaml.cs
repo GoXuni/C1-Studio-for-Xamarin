@@ -6,9 +6,11 @@ using C1.CollectionView;
 using C1.Xamarin.Forms.Core;
 using Xamarin.Forms;
 using C1.Xamarin.Forms.Chart.Interaction;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoadAnimationSample
     {
         public LoadAnimationSample()

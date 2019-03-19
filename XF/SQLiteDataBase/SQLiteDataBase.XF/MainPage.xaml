@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml"
              x:Class="SQLiteDataBase.MainPage"
              Title="SQLiteDataBase">
     <Grid RowSpacing="0">
@@ -10,7 +10,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Entry x:Name="filter" Placeholder="Enter text to filter FlexGrid"/>
-        <c1:FlexGrid x:Name="grid" NewRowPosition="Top" Grid.Row="1">
+        <c1:FlexGrid x:Name="grid" NewRowPosition="Top" HeadersVisibility="All" AutoGeneratingColumn="OnAutoGeneratingColumn" Grid.Row="1">
             <c1:FlexGrid.Behaviors>
                 <c1:FullTextFilterBehavior FilterEntry="{x:Reference Name=filter}" HighlightColor="#B00F50" Mode="WhileTyping" MatchNumbers="False" TreatSpacesAsAndOperator="True" />
             </c1:FlexGrid.Behaviors>

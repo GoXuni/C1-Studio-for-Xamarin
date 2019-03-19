@@ -1,11 +1,11 @@
-﻿using FlexGrid101.Resources;
-using System;
-using System.Linq;
+﻿using C1.Xamarin.Forms.Grid;
+using FlexGrid101.Resources;
 using Xamarin.Forms;
-using C1.Xamarin.Forms.Grid;
+using Xamarin.Forms.Xaml;
 
 namespace FlexGrid101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Unbound : ContentPage
     {
         public Unbound()
@@ -14,6 +14,7 @@ namespace FlexGrid101
 
             Title = AppResources.UnboundTitle;
             grid.MinColumnWidth = 85;
+            grid.AllowDragging = GridAllowDragging.Rows;
             PopulateUnboundGrid();
 
         }
@@ -61,6 +62,8 @@ namespace FlexGrid101
 
             // set unbound row headers
             var rh = grid.RowHeaders;
+            rh.Columns.Clear();
+            rh.Columns.Add(new GridColumn());
             rh.Columns.Add(new GridColumn());
             for (int c = 0; c < rh.Columns.Count; c++)
             {

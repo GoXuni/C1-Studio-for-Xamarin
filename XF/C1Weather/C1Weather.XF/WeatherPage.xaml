@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:c1c="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart" 
-             xmlns:c1g="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml" 
              xmlns:interaction="clr-namespace:C1.Xamarin.Forms.Chart.Interaction;assembly=C1.Xamarin.Forms.Chart"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
@@ -25,67 +24,67 @@
     <StackLayout>
         <Entry x:Name="ZipEntry" Completed="ZipEntry_Completed" Margin="10,10,10,0" BackgroundColor="#F5F5F5"/>
         <Grid VerticalOptions="FillAndExpand">
-            <c1c:FlexChart x:Name="chart" BindingX="date" ShowTooltip="False" Padding="2,0,2,0" Margin="5,0,5,0" LegendOrientation="Auto" LegendToggle="True" LegendPosition="Bottom" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0">
-                <c1c:FlexChart.HeaderStyle>
-                    <c1c:ChartStyle Stroke="Black" FontSize="24"/>
-                </c1c:FlexChart.HeaderStyle>
-                <c1c:FlexChart.Series>
-                    <c1c:ChartSeries x:Name="HumiditySeries" SeriesName = "Humidity" Binding="humidity"  ChartType="SplineArea" >
-                        <c1c:ChartSeries.Style>
-                            <c1c:ChartStyle Stroke="#7986CB" Fill="#E8EAF6" StrokeThickness="2"/>
-                        </c1c:ChartSeries.Style>
-                    <c1c:ChartSeries.AxisY>
-                        <c1c:ChartAxis x:Name="HumidityAxis" AxisLine="False" Position="Right" Min="0" Max="100" MajorUnit="10" Title="Humidity" MajorGrid="False" MajorTickMarks="None" MinorTickMarks="None">
-                                <c1c:ChartAxis.TitleStyle>
-                                    <c1c:ChartStyle Stroke="#7986CB" FontSize="14"/>
-                                </c1c:ChartAxis.TitleStyle>
-                            </c1c:ChartAxis>
-                    </c1c:ChartSeries.AxisY>
-                    </c1c:ChartSeries>
-                    <c1c:ChartSeries x:Name="TemperatureSeries" SeriesName ="Temperature" Binding="hightemp"  ChartType="Spline" >
-                        <c1c:ChartSeries.Style>
-                            <c1c:ChartStyle Stroke="#FF5722" StrokeThickness="2"/>
-                        </c1c:ChartSeries.Style>
-                    </c1c:ChartSeries>
-                </c1c:FlexChart.Series>
-                <c1c:FlexChart.AxisX>
-                    <c1c:ChartAxis Format="ddd"/>
-                </c1c:FlexChart.AxisX>
-                <c1c:FlexChart.AxisY>
-                    <c1c:ChartAxis x:Name="TempAxis" AxisLine="False" Position="Left" MajorGrid="False" MajorTickMarks="None" MinorTickMarks="None">
-                        <c1c:ChartAxis.TitleStyle>
-                            <c1c:ChartStyle Stroke="#FF5722" FontSize="14"/>
-                        </c1c:ChartAxis.TitleStyle>
-                    </c1c:ChartAxis>
-                </c1c:FlexChart.AxisY>
-                <c1c:FlexChart.Layers>
+            <c1:FlexChart x:Name="chart" BindingX="date" ShowTooltip="False" Padding="2,0,2,0" Margin="5,0,5,0" LegendOrientation="Auto" LegendToggle="True" LegendPosition="Bottom" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0">
+                <c1:FlexChart.HeaderStyle>
+                    <c1:ChartStyle Stroke="Black" FontSize="24"/>
+                </c1:FlexChart.HeaderStyle>
+                <c1:FlexChart.Series>
+                    <c1:ChartSeries x:Name="HumiditySeries" SeriesName = "Humidity" Binding="humidity"  ChartType="SplineArea" >
+                        <c1:ChartSeries.Style>
+                            <c1:ChartStyle Stroke="#7986CB" Fill="#E8EAF6" StrokeThickness="2"/>
+                        </c1:ChartSeries.Style>
+                    <c1:ChartSeries.AxisY>
+                        <c1:ChartAxis x:Name="HumidityAxis" AxisLine="False" Position="Right" Min="0" Max="100" MajorUnit="10" Title="Humidity" MajorGrid="False" MajorTickMarks="None" MinorTickMarks="None">
+                                <c1:ChartAxis.TitleStyle>
+                                    <c1:ChartStyle Stroke="#7986CB" FontSize="14"/>
+                                </c1:ChartAxis.TitleStyle>
+                            </c1:ChartAxis>
+                    </c1:ChartSeries.AxisY>
+                    </c1:ChartSeries>
+                    <c1:ChartSeries x:Name="TemperatureSeries" SeriesName ="Temperature" Binding="hightemp"  ChartType="Spline" >
+                        <c1:ChartSeries.Style>
+                            <c1:ChartStyle Stroke="#FF5722" StrokeThickness="2"/>
+                        </c1:ChartSeries.Style>
+                    </c1:ChartSeries>
+                </c1:FlexChart.Series>
+                <c1:FlexChart.AxisX>
+                    <c1:ChartAxis Format="ddd"/>
+                </c1:FlexChart.AxisX>
+                <c1:FlexChart.AxisY>
+                    <c1:ChartAxis x:Name="TempAxis" AxisLine="False" Position="Left" MajorGrid="False" MajorTickMarks="None" MinorTickMarks="None">
+                        <c1:ChartAxis.TitleStyle>
+                            <c1:ChartStyle Stroke="#FF5722" FontSize="14"/>
+                        </c1:ChartAxis.TitleStyle>
+                    </c1:ChartAxis>
+                </c1:FlexChart.AxisY>
+                <c1:FlexChart.Layers>
                     <interaction:C1LineMarker x:Name="lineMarker"  DragContent="True" PositionChanged="OnLineMarkerPositionChanged">
                         <interaction:C1LineMarker.VerticalLineStyle>
-                            <c1c:ChartStyle Stroke="Gray" />
+                            <c1:ChartStyle Stroke="Gray" />
                         </interaction:C1LineMarker.VerticalLineStyle>
                         <interaction:C1LineMarker.HorizontalLineStyle>
-                            <c1c:ChartStyle Stroke="Gray" />
+                            <c1:ChartStyle Stroke="Gray" />
                         </interaction:C1LineMarker.HorizontalLineStyle>
                     </interaction:C1LineMarker>
-                </c1c:FlexChart.Layers>
-            </c1c:FlexChart>
-            <c1g:FlexGrid x:Name="grid" AllowResizing="None" HeadersGridLinesVisibility="None" IsReadOnly="True" DefaultRowHeight="50" AllowSorting="False" AlternatingRowTextColor="Black" RowTextColor="Black" SelectionChanged="grid_SelectionChanged" AutoGenerateColumns="False" SelectionMode="RowRange" HeadersVisibility="Column" Grid.Row="1" AlternatingRowBackgroundColor="#E8EAF6" GridLinesVisibility="Horizontal" HeaderGridLinesColor="#EFEFF3" GridLinesColor="#EFEFF3" ColumnHeaderBackgroundColor="#3F51B5" ColumnHeaderTextColor="White">
-                <c1g:FlexGrid.Columns>
-                    <c1g:GridColumn x:Name="DateColumn" Binding="date" MinWidth="120" Width="*" Format="dd MMM h tt"/>
-                    <c1g:GridColumn x:Name="IconColumn" MinWidth="50" Width="*">
-                        <c1g:GridColumn.CellTemplate>
+                </c1:FlexChart.Layers>
+            </c1:FlexChart>
+            <c1:FlexGrid x:Name="grid" AllowResizing="None" HeadersGridLinesVisibility="None" IsReadOnly="True" DefaultRowHeight="50" AllowSorting="False" AlternatingRowTextColor="Black" RowTextColor="Black" SelectionChanged="grid_SelectionChanged" AutoGenerateColumns="False" SelectionMode="RowRange" HeadersVisibility="Column" Grid.Row="1" AlternatingRowBackgroundColor="#E8EAF6" GridLinesVisibility="Horizontal" HeaderGridLinesColor="#EFEFF3" GridLinesColor="#EFEFF3" ColumnHeaderBackgroundColor="#3F51B5" ColumnHeaderTextColor="White">
+                <c1:FlexGrid.Columns>
+                    <c1:GridColumn x:Name="DateColumn" Binding="date" MinWidth="120" Width="*" Format="dd MMM h tt"/>
+                    <c1:GridColumn x:Name="IconColumn" MinWidth="50" Width="*">
+                        <c1:GridColumn.CellTemplate>
                             <DataTemplate>
                                 <Image Source="{Binding IconImageSource}" Aspect="AspectFit" />
                             </DataTemplate>
-                        </c1g:GridColumn.CellTemplate>
-                    </c1g:GridColumn>
-                    <c1g:GridColumn x:Name="DescriptionColumn" Binding="description" MinWidth="150" Width="*"/>
-                    <c1g:GridColumn x:Name="HighColumn" Binding="hightemp" MinWidth="100" Width="*"/>
-                    <c1g:GridColumn x:Name="LowColumn"  Binding="lowtemp" MinWidth="100" Width="*"/>
-                    <c1g:GridColumn x:Name="HumidityColumn" Binding="humidity" MinWidth="100" Width="*"/>
-                    <c1g:GridColumn x:Name="PressureColumn" Binding="pressure" MinWidth="100" Width="*"/>
-                </c1g:FlexGrid.Columns>
-            </c1g:FlexGrid>
+                        </c1:GridColumn.CellTemplate>
+                    </c1:GridColumn>
+                    <c1:GridColumn x:Name="DescriptionColumn" Binding="description" MinWidth="150" Width="*"/>
+                    <c1:GridColumn x:Name="HighColumn" Binding="hightemp" MinWidth="100" Width="*"/>
+                    <c1:GridColumn x:Name="LowColumn"  Binding="lowtemp" MinWidth="100" Width="*"/>
+                    <c1:GridColumn x:Name="HumidityColumn" Binding="humidity" MinWidth="100" Width="*"/>
+                    <c1:GridColumn x:Name="PressureColumn" Binding="pressure" MinWidth="100" Width="*"/>
+                </c1:FlexGrid.Columns>
+            </c1:FlexGrid>
         </Grid>
     </StackLayout>
 </ContentPage>

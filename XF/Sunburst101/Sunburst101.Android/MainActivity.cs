@@ -2,6 +2,7 @@
 using Android.Content.PM;
 using Android.OS;
 using Xamarin.Forms.Platform.Android;
+using C1.Xamarin.Forms.Chart.Platform.Android;
 
 namespace Sunburst101.Android
 {
@@ -10,6 +11,8 @@ namespace Sunburst101.Android
     {
         protected override void OnCreate(Bundle bundle)
         {
+            FlexChartRenderer.Init();
+
             ToolbarResource = Android.Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);

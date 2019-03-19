@@ -2,17 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlexGrid101.FullTextFilter"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
-             xmlns:core="clr-namespace:C1.Xamarin.Forms.Core;assembly=C1.Xamarin.Forms.Core"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true">
     <StackLayout>
         <Entry x:Name="filter" />
         <StackLayout Orientation="Horizontal">
             <Label x:Name="matchCaseLabel" Text="Match Case" VerticalOptions="Center"/>
-            <core:C1CheckBox x:Name="matchCaseCheckbox" IsChecked="False" VerticalOptions="Center"/>
+            <c1:C1CheckBox x:Name="matchCaseCheckbox" IsChecked="False" VerticalOptions="Center"/>
             <Label x:Name="matchWholeWordLabel" Text="Match Whole Word" VerticalOptions="Center"/>
-            <core:C1CheckBox x:Name="matchWholeWordCheckbox" IsChecked="False" VerticalOptions="Center"/>
+            <c1:C1CheckBox x:Name="matchWholeWordCheckbox" IsChecked="False" VerticalOptions="Center"/>
         </StackLayout>
         <Grid VerticalOptions="FillAndExpand">
             <c1:FlexGrid x:Name="grid">

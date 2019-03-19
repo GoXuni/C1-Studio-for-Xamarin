@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlexGrid101.CustomAppearance"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid">
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml">
     <ContentPage.Resources>
         <Style x:Key="CustomStyle" TargetType="c1:FlexGrid">
             <Setter Property="HeadersVisibility" Value="All"/>
@@ -42,5 +42,5 @@
             <Setter Property="ColumnHeaderBackgroundColor" Value="#FFE4ECF7"/>
         </Style>
     </ContentPage.Resources>
-    <c1:FlexGrid x:Name="grid" Style="{StaticResource CustomStyle}"/>
+    <c1:FlexGrid x:Name="grid" AllowDragging="Both" Style="{StaticResource CustomStyle}"/>
 </ContentPage>

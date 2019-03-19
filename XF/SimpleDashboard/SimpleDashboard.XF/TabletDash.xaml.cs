@@ -6,11 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using C1.Xamarin.Forms.Chart;
+using Xamarin.Forms.Xaml;
 
 namespace SimpleDashboard
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabletDash : ContentPage
-    {
+    {     
         public TabletDash()
         {
             InitializeComponent();

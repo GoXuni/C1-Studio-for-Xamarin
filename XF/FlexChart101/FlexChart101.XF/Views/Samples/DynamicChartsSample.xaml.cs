@@ -4,9 +4,11 @@ using Xamarin.Forms;
 using C1.Xamarin.Forms.Chart;
 using System.Threading;
 using FlexChart101.Resources;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DynamicChartsSample
     {
         internal Random random = new Random();

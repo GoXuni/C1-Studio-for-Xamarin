@@ -4,9 +4,11 @@ using C1.Xamarin.Forms.Chart;
 using C1.Xamarin.Forms.Core;
 using FlexChart101.Resources;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace FlexChart101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MultipleAxesSamples
     {
         public MultipleAxesSamples()

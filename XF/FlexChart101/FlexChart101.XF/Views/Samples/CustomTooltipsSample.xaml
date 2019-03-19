@@ -4,7 +4,7 @@
              x:Class="FlexChart101.CustomTooltipsSample"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
-             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Chart;assembly=C1.Xamarin.Forms.Chart" 
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml" 
              xmlns:common="clr-namespace:FlexChart101;assembly=FlexChart101.XF" x:Name="page">
 <ContentPage.Resources>
     <ResourceDictionary>

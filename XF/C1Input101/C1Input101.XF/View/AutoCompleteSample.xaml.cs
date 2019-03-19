@@ -3,11 +3,13 @@ using C1Input101.Resources;
 using System;
 using System.Collections;
 using System.Linq;
+using Xamarin.Forms.Xaml;
 
 namespace C1Input101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AutoCompleteSample
-    {
+    {     
         public AutoCompleteSample()
         {
             Countries = Country.GetCountries();

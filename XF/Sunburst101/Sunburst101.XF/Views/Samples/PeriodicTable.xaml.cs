@@ -5,9 +5,11 @@ using Sunburst101.Resources;
 using Sunburst101.Periodic;
 using C1.Xamarin.Forms.Chart.Interaction;
 using System.Collections.Generic;
+using Xamarin.Forms.Xaml;
 
 namespace Sunburst101
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PeriodicTable
     {
         private static float fontSizeRate = 0.5f;

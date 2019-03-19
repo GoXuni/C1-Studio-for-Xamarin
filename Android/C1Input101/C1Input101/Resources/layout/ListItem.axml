@@ -7,9 +7,9 @@
         android:id="@+id/Icon"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
+
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/loading" />
     <LinearLayout
@@ -18,9 +18,9 @@
         android:layout_height="wrap_content"
         android:layout_alignWithParentIfMissing="true"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_toRightOf="@+id/Icon"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@+id/Icon"
         android:orientation="vertical"
         android:paddingBottom="8dp"
         android:paddingTop="8dp">
