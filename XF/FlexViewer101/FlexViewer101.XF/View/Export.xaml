@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexViewer101.Export"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnSave" Clicked="OnSave" Order="Primary" Priority="0">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="UWP" Value = "Assets/AppBar/save.png" />
+                    <On Platform="Android" Value = "ic_action_save.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <c1:FlexViewer x:Name="flexViewer" />
+</ContentPage>

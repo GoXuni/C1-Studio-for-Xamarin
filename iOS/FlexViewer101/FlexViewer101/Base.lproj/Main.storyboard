@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="19">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="18">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="19" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="22">
+                        <rect key="frame" x="0.0" y="20" width="414" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="66" kind="relationship" relationship="rootViewController" id="520"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1398" y="-1"/>
+        </scene>
+        <!--FlexViewer101-->
+        <scene sceneID="65">
+            <objects>
+                <tableViewController id="66" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="67">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="74">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="527" detailTextLabel="528" imageView="529" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="75">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="75" id="76">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Getting Started" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="527">
+                                                    <rect key="frame" x="79" y="4" width="124.5" height="21.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Display your document with FlexViewer." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="528">
+                                                    <rect key="frame" x="79" y="25.5" width="224.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/GettingStarted.png" id="529">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="533" kind="show" id="769"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="1030" detailTextLabel="1031" imageView="1032" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="1029">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1029" id="1035">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1030" text="Browse PDF Files">
+                                                    <rect key="frame" x="79" y="4" width="139.5" height="21.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Navigate through your pdf files." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1031">
+                                                    <rect key="frame" x="79" y="25.5" width="179" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/BrowsePDF.jpg" id="1032">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue id="2859" destination="2742" kind="show"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="1037" detailTextLabel="1038" imageView="1039" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="1036">
+                                        <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1036" id="1042">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Customize Appearance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1037">
+                                                    <rect key="frame" x="79" y="4" width="188" height="21.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Modify the appearance of FlexViewer." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1038">
+                                                    <rect key="frame" x="79" y="25.5" width="212.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Images/CustomizeApearance.jpg" id="1039">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue id="2704" destination="1317" kind="show"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="5099" detailTextLabel="5100" imageView="5101" rowHeight="44" style="IBUITableViewCellStyleSubtitle" id="5098">
+                                        <rect key="frame" x="0.0" y="132" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5098" id="5104">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5099" text="Export">
+                                                    <rect key="frame" x="79" y="4" width="53.5" height="21.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5100" text="Shows how to export to Pdf and Image">
+                                                    <rect key="frame" x="79" y="25.5" width="218" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="5101" image="Images/Export.png">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue id="5212" destination="5082" kind="show"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="66" id="68"/>
+                            <outlet property="delegate" destination="66" id="69"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="FlexViewer101" id="519"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672" y="-27"/>
+        </scene>
+        <!--Getting Started-->
+        <scene sceneID="532">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="533" customClass="GettingStartedController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="530"/>
+                        <viewControllerLayoutGuide type="bottom" id="531"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="534">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="772" customClass="FlexViewer">
+                                <rect key="frame" x="0.0" y="71" width="414" height="665"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="772" firstAttribute="top" secondItem="530" secondAttribute="bottom" constant="1" id="773"/>
+                            <constraint firstItem="772" firstAttribute="leading" secondItem="534" secondAttribute="leading" id="774"/>
+                            <constraint firstItem="772" firstAttribute="bottom" secondItem="531" secondAttribute="top" id="775"/>
+                            <constraint firstItem="772" firstAttribute="trailing" secondItem="534" secondAttribute="trailing" id="776"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Getting Started" id="771"/>
+                    <connections>
+                        <outlet property="Viewer" destination="772" id="name-outlet-772"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="535" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-89" y="-583"/>
+        </scene>
+        <scene sceneID="1316">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="1317" customClass="CustomizeAppearanceController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1323"/>
+                        <viewControllerLayoutGuide type="bottom" id="1326"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1321">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1319" customClass="FlexViewer">
+                                <rect key="frame" x="0.0" y="71" width="414" height="665"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1319" firstAttribute="top" secondItem="1323" secondAttribute="bottom" constant="1" id="1322"/>
+                            <constraint firstItem="1319" firstAttribute="leading" secondItem="1321" secondAttribute="leading" id="1324"/>
+                            <constraint firstItem="1319" firstAttribute="bottom" secondItem="1326" secondAttribute="top" id="1325"/>
+                            <constraint firstItem="1319" firstAttribute="trailing" secondItem="1321" secondAttribute="trailing" id="1327"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Customize Appearance" id="1320"/>
+                    <connections>
+                        <outlet property="Viewer" destination="1319" id="1318"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1328" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99" y="531"/>
+        </scene>
+        <scene sceneID="2741">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="2742" customClass="PdfBrowserController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2748"/>
+                        <viewControllerLayoutGuide type="bottom" id="2751"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2746">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2744" customClass="FlexViewer">
+                                <rect key="frame" x="0.0" y="71" width="414" height="665"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2744" firstAttribute="top" secondItem="2748" secondAttribute="bottom" constant="1" id="2747"/>
+                            <constraint firstItem="2744" firstAttribute="leading" secondItem="2746" secondAttribute="leading" id="2749"/>
+                            <constraint firstItem="2744" firstAttribute="bottom" secondItem="2751" secondAttribute="top" id="2750"/>
+                            <constraint firstItem="2744" firstAttribute="trailing" secondItem="2746" secondAttribute="trailing" id="2752"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pdf Browser" id="2745">
+                        <barButtonItem key="rightBarButtonItem" title="Open File" id="3137">
+                            <connections>
+                                <action selector="UIBarButtonItem3137_Activated" destination="2742" id="4798"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Viewer" destination="2744" id="2743"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2753" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="-615"/>
+        </scene>
+        <scene sceneID="5081">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="5082" customClass="ExportController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5090"/>
+                        <viewControllerLayoutGuide type="bottom" id="5093"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5088">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5084" customClass="FlexViewer">
+                                <rect key="frame" x="0.0" y="71" width="414" height="665"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5084" firstAttribute="top" secondItem="5090" secondAttribute="bottom" constant="1" id="5089"/>
+                            <constraint firstItem="5084" firstAttribute="leading" secondItem="5088" secondAttribute="leading" id="5091"/>
+                            <constraint firstItem="5084" firstAttribute="bottom" secondItem="5093" secondAttribute="top" id="5092"/>
+                            <constraint firstItem="5084" firstAttribute="trailing" secondItem="5088" secondAttribute="trailing" id="5094"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5085" title="Export Data">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="5086">
+                            <connections>
+                                <action selector="UIBarButtonItem3137_Activated" destination="5082" id="5087"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Viewer" destination="5084" id="5083"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5095" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="463"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Images/BrowsePDF.jpg" width="164" height="164"/>
+        <image name="Images/CustomizeApearance.jpg" width="164" height="164"/>
+        <image name="Images/GettingStarted.png" width="164" height="164"/>
+        <image name="Images/Export.png" width="164" height="164"/>
+    </resources>
+</document>

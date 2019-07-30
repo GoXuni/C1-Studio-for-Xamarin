@@ -1,0 +1,104 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>FlexViewer101</RootNamespace>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="FlexViewer101.XF.csproj.vspscc" />
+    <None Remove="Images\BrowsePDF.jpg" />
+    <None Remove="Images\CustomizeApearance.jpg" />
+    <None Remove="Images\Export.png" />
+    <None Remove="Images\GettingStarted.png" />
+    <None Remove="Images\open.png" />
+    <None Remove="Images\placeholder.png" />
+    <None Remove="Resources\AlternatingBackground.pdf" />
+    <None Remove="Resources\DefaultDocument.pdf" />
+    <None Remove="Resources\PdfViewer.pdf" />
+    <None Remove="Resources\Simple List.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\BrowsePDF.jpg" />
+    <EmbeddedResource Include="Images\CustomizeApearance.jpg" />
+    <EmbeddedResource Include="Images\Export.png" />
+    <EmbeddedResource Include="Images\GettingStarted.png" />
+    <EmbeddedResource Include="Images\open.png" />
+    <EmbeddedResource Include="Images\placeholder.png" />
+    <EmbeddedResource Include="Resources\AlternatingBackground.pdf" />
+    <EmbeddedResource Include="Resources\DefaultDocument.pdf" />
+    <EmbeddedResource Include="Resources\PdfViewer.pdf" />
+    <EmbeddedResource Include="Resources\Simple List.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Xamarin.Forms.Core">
+      <Version>4.0.20192.397-beta</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Xamarin.Forms.Viewer">
+      <Version>4.0.20192.397-beta</Version>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.482894" />
+    <PackageReference Include="Xamarin.Plugin.FilePicker" Version="2.0.135" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="View\CustomizeAppearance.xaml.cs">
+      <DependentUpon>CustomizeAppearance.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\Navigation\PdfBrowser2MenuItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PdfBrowser.xaml.cs">
+      <DependentUpon>PdfBrowser.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\CheckList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\CustomSortIcon.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Export.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\LiveUpdates.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Navigation\PdfBrowser2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Navigation\PdfBrowser2Detail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Navigation\PdfBrowser2Master.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\FlexViewerSamples.xaml.cs">
+      <DependentUpon>FlexViewerSamples.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+</Project>

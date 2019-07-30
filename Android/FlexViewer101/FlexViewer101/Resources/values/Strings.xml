@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">FlexViewer101</string>
+  <string name="GettingStartedTitle">Getting Started</string>
+  <string name="GettingStartedDescription">Display your document with FlexViewer.</string>
+  <string name="PdfBrowserTitle">Browse Pdf Files</string>
+  <string name="PdfBrowserDescription">Navigate through your pdf files.</string>
+  <string name="CustomizeAppearanceTitle">Customize Appearance</string>
+  <string name="CustomizeAppearanceDescription">Modify the appearance of FlexViewer.</string>
+  <string name="ExportTitle">Export</string>
+  <string name="ExportDescription">Shows how to export to Pdf and Image.</string>
+</resources>

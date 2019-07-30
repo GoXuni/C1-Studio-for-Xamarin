@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">FlexViewer101</string>
+  <string name="GettingStartedTitle">FlexViewer の基本機能</string>
+  <string name="GettingStartedDescription">FlexViewer にドキュメントを表示。</string>
+  <string name="PdfBrowserTitle">PDF ファイルのブラウズ</string>
+  <string name="PdfBrowserDescription">PDF ファイルをナビゲート。</string>
+  <string name="CustomizeAppearanceTitle">外観のカスタマイズ</string>
+  <string name="CustomizeAppearanceDescription">FlexViewer の外観を変更。</string>
+  <string name="ExportTitle">エクスポート</string>
+  <string name="ExportDescription">PdfとImageにエクスポートする方法を示します。</string>
+</resources>

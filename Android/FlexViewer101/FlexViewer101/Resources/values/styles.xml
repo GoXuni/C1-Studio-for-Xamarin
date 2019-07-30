@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="MyTheme" parent="MyTheme.Base">
+  </style>
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="logo">@drawable/logo_toolbar</item>
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <item name="colorAccent">#9D2235</item>
+    <item name="android:windowBackground">@color/window_background</item>
+    <item name="windowActionModeOverlay">true</item>
+    <item name="toolbarNavigationButtonStyle">@style/myToolbarNavigationButtonStyle</item>
+    <item name="toolbarStyle">@style/myToolbarStyle</item>
+  </style>
+  <style name="myToolbarNavigationButtonStyle" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+    <item name="android:minWidth">0dp</item>
+    <item name="android:paddingLeft">10dp</item>
+  </style>
+  <style name="myToolbarStyle" parent="Widget.AppCompat.Toolbar">
+    <item name="contentInsetStart">0dp</item>
+    <item name="contentInsetLeft">0dp</item>
+    <item name="contentInsetStartWithNavigation">0dp</item>
+  </style>
+</resources>

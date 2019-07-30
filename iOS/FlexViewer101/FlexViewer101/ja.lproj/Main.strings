@@ -1,0 +1,23 @@
+
+/* Class = "UINavigationItem"; title = "FlexViewer101"; ObjectID = "519"; */
+"519.title" = "FlexViewer101";
+
+/* Class = "UINavigationItem"; title = "Getting Started"; ObjectID = "771"; */
+"771.title" = "FlexViewer の基本機能";
+"1320.title" = "外観のカスタマイズ";
+"2745.title" = "PDF ファイルのブラウズ";
+"5085.title" = "エクスポート";
+
+//UITableView Titles
+//Getting Started
+"527.text" = "FlexViewer の基本機能";
+"1030.text" = "PDF ファイルのブラウズ";
+"1037.text" = "外観のカスタマイズ";
+"5099.text" = "エクスポート";
+
+//UITableView Titles
+//Getting Started
+"528.text" = "FlexViewer にドキュメントを表示。";
+"1031.text" = "PDF ファイルをナビゲート。";
+"1038.text" = "FlexViewer の外観を変更。";
+"5100.text" = "PdfとImageにエクスポートする方法を示します。";

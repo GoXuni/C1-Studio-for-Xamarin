@@ -47,8 +47,7 @@ namespace SQLiteDataBase
                 }
                 message.IsVisible = false;
                 #endregion
-                var cv = new EntityFrameworkCollectionView<Person>(db);
-                await cv.SortAsync(p => p.ID, SortDirection.Descending);
+                var cv = new EntityFrameworkVirtualCollectionView<Person>(db);
                 grid.ItemsSource = cv;
             }
             catch (SqliteException) { throw; }

@@ -1,0 +1,23 @@
+
+/* Class = "UINavigationItem"; title = "FlexViewer101"; ObjectID = "519"; */
+"519.title" = "FlexViewer101";
+
+/* Class = "UINavigationItem"; title = "Getting Started"; ObjectID = "771"; */
+"771.title" = "Getting Started";
+"1320.title" = "Customize Appearance";
+"2745.title" = "Browse Pdf Files";
+"5085.title" = "Export";
+
+//UITableView Titles
+//Getting Started
+"527.text" = "Getting Started";
+"1030.text" = "Browse Pdf Files";
+"1037.text" = "Customize Appearance";
+"5099.text" = "Export";
+
+//UITableView Titles
+//Getting Started
+"528.text" = "Display your document with FlexViewer.";
+"1031.text" = "Navigate through your pdf files.";
+"1038.text" = "Modify the appearance of FlexViewer.";
+"5100.text" = "Shows how to export to Pdf and Image.";
