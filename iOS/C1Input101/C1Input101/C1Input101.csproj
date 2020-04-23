@@ -21,16 +21,12 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchFastDev>true</MtouchFastDev>
-    <MtouchUseSGen>true</MtouchUseSGen>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <IOSDebuggerPort>47579</IOSDebuggerPort>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
-    <MtouchSdkVersion>
-    </MtouchSdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -39,8 +35,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchUseSGen>true</MtouchUseSGen>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
@@ -56,8 +50,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchUseSGen>true</MtouchUseSGen>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
@@ -76,8 +68,6 @@
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchFastDev>true</MtouchFastDev>
-    <MtouchUseSGen>true</MtouchUseSGen>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
@@ -89,9 +79,6 @@
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(OS)' == 'Unix' ">
-    <CscToolExe>mcs.exe</CscToolExe>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Net.Http" />
@@ -99,6 +86,20 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.DataCollection">
+      <Version>1.0.20201.14</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Calendar">
+      <Version>4.4.20201.445</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Core">
+      <Version>4.4.20201.445</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Input">
+      <Version>4.4.20201.445</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -162,16 +163,12 @@
     <Compile Include="License.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Samples\YouTubeCollectionView.cs" />
+    <Compile Include="Samples\YouTubeDataCollection.cs" />
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="DemoData.cs" />
-    <Compile Include="MainSampleMenuTableViewController.cs" />
-    <Compile Include="MainSampleMenuTableViewController.designer.cs">
-      <DependentUpon>MainSampleMenuTableViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Samples\MaskedInputController.cs" />
     <Compile Include="Samples\MaskedInputController.designer.cs">
       <DependentUpon>MaskedInputController.cs</DependentUpon>
@@ -212,23 +209,6 @@
     <BundleResource Include="Resources\Images\nepal.png" />
     <BundleResource Include="Resources\Images\pakistan.png" />
     <BundleResource Include="Resources\Images\srilanka.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="C1.CollectionView">
-      <Version>3.5.20191.378</Version>
-    </PackageReference>
-    <PackageReference Include="C1.iOS.Calendar">
-      <Version>3.5.20191.378</Version>
-    </PackageReference>
-    <PackageReference Include="C1.iOS.CollectionView">
-      <Version>3.5.20191.378</Version>
-    </PackageReference>
-    <PackageReference Include="C1.iOS.Core">
-      <Version>3.5.20191.378</Version>
-    </PackageReference>
-    <PackageReference Include="C1.iOS.Input">
-      <Version>3.5.20191.378</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

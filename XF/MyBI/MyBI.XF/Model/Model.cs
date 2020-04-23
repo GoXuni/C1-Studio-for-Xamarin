@@ -1,4 +1,4 @@
-﻿using C1.CollectionView;
+﻿using C1.DataCollection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +10,10 @@ namespace MyBI
 {
     public class Model
     {
-        public C1CollectionView<Product> ProductList { get; set; }
-        public C1CollectionView<Region> RegionList { get; set; }
-        public C1CollectionView<DetailDataItem> DetailItemList { get; set; }
-        public C1CollectionView<DataItem> ItemList { get; set; }
+        public C1DataCollection<Product> ProductList { get; set; }
+        public C1DataCollection<Region> RegionList { get; set; }
+        public C1DataCollection<DetailDataItem> DetailItemList { get; set; }
+        public C1DataCollection<DataItem> ItemList { get; set; }
 
         public event EventHandler<EventArgs> DataUpdated;
 
@@ -80,7 +80,7 @@ namespace MyBI
                 }
             }
             regionList.Insert(0, new Region() { iD = 0, Name = MyBI.Resources.AppResources.AllRegionsItem });
-            RegionList = new C1CollectionView<Region>(regionList);
+            RegionList = new C1DataCollection<Region>(regionList);
             return true;
         }
         private bool InstallProducts()
@@ -116,7 +116,7 @@ namespace MyBI
                 }
             }
             productList.Insert(0, new Product() { iD = 0, Name = MyBI.Resources.AppResources.AllProductsItem });
-            ProductList = new C1CollectionView<Product>(productList);
+            ProductList = new C1DataCollection<Product>(productList);
             return true;
         }
         private bool InstallItems()
@@ -158,7 +158,7 @@ namespace MyBI
                     }
                 }
             }
-            ItemList = new C1CollectionView<DataItem>(itemsList);
+            ItemList = new C1DataCollection<DataItem>(itemsList);
             UpdateData();
             return true;
         }
@@ -207,7 +207,7 @@ namespace MyBI
                                   SumRevenue = groupItems.Sum(i => i.Revenue),
                                   SumUnits = groupItems.Sum(i => i.Units),
                               };
-            DetailItemList = new C1CollectionView<DetailDataItem>(detailItems);
+            DetailItemList = new C1DataCollection<DetailDataItem>(detailItems);
             double unitStartValue = 0;
             double revenueStartValue = 0;            
             double maxUnitValue = MathHelper.Instance.GetMaxValue();

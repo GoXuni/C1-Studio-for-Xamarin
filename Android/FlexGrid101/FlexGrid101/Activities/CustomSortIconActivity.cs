@@ -7,7 +7,7 @@ using Android.Views;
 using Android.Widget;
 using C1.Android.Core;
 using C1.Android.Grid;
-using C1.CollectionView;
+using C1.DataCollection;
 using System;
 using System.Collections.Generic;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
@@ -61,7 +61,7 @@ namespace FlexGrid101
         }
         private async void LoadData()
         {
-            var cv = new C1CollectionView<Customer>(Customer.GetCustomerList(100));
+            var cv = new C1DataCollection<Customer>(Customer.GetCustomerList(100));
             await cv.SortAsync(new SortDescription("FirstName", SortDirection.Ascending), new SortDescription("LastName", SortDirection.Descending));
             grid.ItemsSource = cv;
             grid.SortAscendingIconTemplate = new C1IconTemplate(() => new C1BitmapIcon(this.ApplicationContext) { Source = BitmapFactory.DecodeResource(this.Resources, Resource.Drawable.arrow_up)

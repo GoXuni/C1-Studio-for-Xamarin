@@ -8,7 +8,7 @@
     <StackLayout>
         <Picker x:Name="selectionMode" Title="SelectionMode" SelectedIndexChanged="SelectionModeChanged"/>
         <StackLayout Orientation="Horizontal" Spacing="4">
-            <Label Text="ShowMarquee" VerticalOptions="Center" />
+            <Label x:Name ="lblMarquee"  VerticalOptions="Center" />
             <Switch x:Name="switchMarquee" BindingContext="{x:Reference grid}" IsToggled="{Binding ShowMarquee, Mode=TwoWay}" />
         </StackLayout>
         <Label x:Name="lblSelection" />

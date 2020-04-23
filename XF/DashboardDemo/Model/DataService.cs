@@ -9,11 +9,11 @@ using C1.Xaml;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Windows.Foundation;
-using ListCollectionView = C1.Xaml.C1CollectionView;
+using ListCollectionView = C1.Xaml.C1DataCollection;
 #elif XF
 using System.Reflection;
 using System.Threading.Tasks;
-using C1.CollectionView;
+using C1.DataCollection;
 using Xamarin.Forms;
 #else
 #if ASP
@@ -56,16 +56,16 @@ namespace DashboardModel
         ListCollectionView customerSaleCollection;
         ListCollectionView productSaleCollection;
 #else
-        C1CollectionView<BudgetItem> budgetCollection;
-        C1CollectionView<Sale> saleCollection;
-        C1CollectionView<Product> productCollection;
-        C1CollectionView<OpportunityItem> opportunityCollection;
-        C1CollectionView<RegionWiseSale> regionWiseSaleCollection;
-        C1CollectionView<RegionSalesGoal> regionSaleGoalCollection;
-        C1CollectionView<CampainTaskItem> campainTaskCollection;
-        C1CollectionView<ProductsWiseSaleItem> productWiseSaleCollection;
-        C1CollectionView<SaleItem> customerSaleCollection;
-        C1CollectionView<SaleItem> productSaleCollection;
+        C1DataCollection<BudgetItem> budgetCollection;
+        C1DataCollection<Sale> saleCollection;
+        C1DataCollection<Product> productCollection;
+        C1DataCollection<OpportunityItem> opportunityCollection;
+        C1DataCollection<RegionWiseSale> regionWiseSaleCollection;
+        C1DataCollection<RegionSalesGoal> regionSaleGoalCollection;
+        C1DataCollection<CampainTaskItem> campainTaskCollection;
+        C1DataCollection<ProductsWiseSaleItem> productWiseSaleCollection;
+        C1DataCollection<SaleItem> customerSaleCollection;
+        C1DataCollection<SaleItem> productSaleCollection;
 #endif
         public DataService()
         {
@@ -126,12 +126,12 @@ namespace DashboardModel
             Assembly assembly = Assembly.Load(new AssemblyName("DashboardDemo.XF"));
             var stream = assembly.GetManifestResourceStream("DashboardDemo.InitialData.xml");
             model = Model.GetPopulated(stream);
-            budgetCollection = new C1CollectionView<BudgetItem>(model.Budget.ToList());
-            productCollection = new C1CollectionView<Product>(model.Products.ToList());
-            saleCollection = new C1CollectionView<Sale>(model.Sales.ToList());
-            opportunityCollection = new C1CollectionView<OpportunityItem>(model.Opportunities.ToList());
-            regionWiseSaleCollection = new C1CollectionView<RegionWiseSale>(model.RegionWiseSales.ToList());
-            regionSaleGoalCollection = new C1CollectionView<RegionSalesGoal>(model.RegionSales.ToList());
+            budgetCollection = new C1DataCollection<BudgetItem>(model.Budget.ToList());
+            productCollection = new C1DataCollection<Product>(model.Products.ToList());
+            saleCollection = new C1DataCollection<Sale>(model.Sales.ToList());
+            opportunityCollection = new C1DataCollection<OpportunityItem>(model.Opportunities.ToList());
+            regionWiseSaleCollection = new C1DataCollection<RegionWiseSale>(model.RegionWiseSales.ToList());
+            regionSaleGoalCollection = new C1DataCollection<RegionSalesGoal>(model.RegionSales.ToList());
             await regionWiseSaleCollection.SortAsync("Date");
             await saleCollection.SortAsync("Date");
 #endif
@@ -163,7 +163,7 @@ namespace DashboardModel
 #if !XF
             productWiseSaleCollection = new ListCollectionView(productsWiseSaleItems);
 #else
-            productWiseSaleCollection = new C1CollectionView<ProductsWiseSaleItem>(productsWiseSaleItems);
+            productWiseSaleCollection = new C1DataCollection<ProductsWiseSaleItem>(productsWiseSaleItems);
 #endif 
             var budgetSaleProfitMap = new Dictionary<int, CurrentPriorBudgetItem>();
 
@@ -276,8 +276,8 @@ namespace DashboardModel
         public ListCollectionView CampainTaskCollction { get { return campainTaskCollection; } }
         public ListCollectionView ProductWiseSaleCollection { get { return productWiseSaleCollection; } }
 #else
-        public C1CollectionView<CampainTaskItem> CampaignTaskCollction { get { return campainTaskCollection; } }
-        public C1CollectionView<ProductsWiseSaleItem> ProductWiseSaleCollection { get { return productWiseSaleCollection; } }
+        public C1DataCollection<CampainTaskItem> CampaignTaskCollction { get { return campainTaskCollection; } }
+        public C1DataCollection<ProductsWiseSaleItem> ProductWiseSaleCollection { get { return productWiseSaleCollection; } }
         public List<Region> RegionList { get { return model.Regions.ToList(); } }
         public List<Product> ProductList { get { return model.Products.ToList(); } }
 #endif
@@ -426,7 +426,7 @@ namespace DashboardModel
             }
 
 #if XF
-            productWiseSaleCollection = new C1CollectionView<ProductsWiseSaleItem>(productsWiseSaleItems);
+            productWiseSaleCollection = new C1DataCollection<ProductsWiseSaleItem>(productsWiseSaleItems);
             var budgetSaleProfitMap = new Dictionary<int, CurrentPriorBudgetItem>();
 #endif 
 
@@ -506,11 +506,11 @@ namespace DashboardModel
             customerSaleCollection = new ListCollectionView(customerSaleMap.Values.ToList());
             customerSaleCollection.SortDescriptions.Add(new SortDescription("Sales", ListSortDirection.Descending));
 #else
-            campainTaskCollection = new C1CollectionView<CampainTaskItem>(campainTaskItems);
+            campainTaskCollection = new C1DataCollection<CampainTaskItem>(campainTaskItems);
             await campainTaskCollection.FilterAsync(FilterByCampainTaskType);
-            productSaleCollection = new C1CollectionView<SaleItem>(productSaleMap.Values.ToList());
+            productSaleCollection = new C1DataCollection<SaleItem>(productSaleMap.Values.ToList());
             await productSaleCollection.SortAsync("Sales", SortDirection.Descending);
-            customerSaleCollection = new C1CollectionView<SaleItem>(customerSaleMap.Values.ToList());
+            customerSaleCollection = new C1DataCollection<SaleItem>(customerSaleMap.Values.ToList());
             await customerSaleCollection.SortAsync("Sales", SortDirection.Descending);
 #endif
             regionSalesVsGoal = regionSaleMap.Values.ToList();

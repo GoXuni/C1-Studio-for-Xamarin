@@ -7,3 +7,10 @@
 "Sunday" = "Sunday";
 "Weekend" = "Weekend";
 "Weekday" = "Weekday";
+
+"ChangeBackground" = "Change Background";
+"FileSavedTo" = "File has been saved to ";
+"Save" = "Save";
+"SaveAs" = "Save As";
+"Saved" = "Saved";
+"ExportToBitmap" = "Export to bitmap";

@@ -19,7 +19,7 @@ namespace FlexViewer101.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class AppResources {
@@ -61,6 +61,15 @@ namespace FlexViewer101.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Change Background.
+        /// </summary>
+        public static string ChangeBackGround {
+            get {
+                return ResourceManager.GetString("ChangeBackGround", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Modify the appearance of FlexViewer.
         /// </summary>
         public static string CustomizeAppearanceDescription {
@@ -79,6 +88,51 @@ namespace FlexViewer101.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Show how to customize hamburger menu.
+        /// </summary>
+        public static string CustomizeHamburgerDescription {
+            get {
+                return ResourceManager.GetString("CustomizeHamburgerDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customize Hamburger Menu.
+        /// </summary>
+        public static string CustomizeHamburgerTitle {
+            get {
+                return ResourceManager.GetString("CustomizeHamburgerTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shows how to customize toolbar.
+        /// </summary>
+        public static string CustomizeToolbarDescription {
+            get {
+                return ResourceManager.GetString("CustomizeToolbarDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customize Toolbar.
+        /// </summary>
+        public static string CustomizeToolbarTitle {
+            get {
+                return ResourceManager.GetString("CustomizeToolbarTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export to bitmap.
+        /// </summary>
+        public static string ExportBmp {
+            get {
+                return ResourceManager.GetString("ExportBmp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shows how to export to Pdf and Image.
         /// </summary>
         public static string ExportDescription {
@@ -93,6 +147,15 @@ namespace FlexViewer101.Resources {
         public static string ExportTitle {
             get {
                 return ResourceManager.GetString("ExportTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File has been saved to .
+        /// </summary>
+        public static string FileSaved {
+            get {
+                return ResourceManager.GetString("FileSaved", resourceCulture);
             }
         }
         
@@ -138,6 +201,33 @@ namespace FlexViewer101.Resources {
         public static string PdfBrowserTitle {
             get {
                 return ResourceManager.GetString("PdfBrowserTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 保存.
+        /// </summary>
+        public static string Save {
+            get {
+                return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save As.
+        /// </summary>
+        public static string Save_As {
+            get {
+                return ResourceManager.GetString("Save As", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saved.
+        /// </summary>
+        public static string Saved {
+            get {
+                return ResourceManager.GetString("Saved", resourceCulture);
             }
         }
     }

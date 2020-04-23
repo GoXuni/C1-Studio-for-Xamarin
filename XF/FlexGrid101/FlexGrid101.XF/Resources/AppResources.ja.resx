@@ -383,13 +383,31 @@
   <data name="LiveUpdatesTitle" xml:space="preserve">
     <value>ライブ更新</value>
   </data>
-    <data name="ColorUpdates" xml:space="preserve">
+  <data name="ColorUpdates" xml:space="preserve">
     <value>色分けされた更新</value>
   </data>
-    <data name="ExportDescription" xml:space="preserve">
+  <data name="ExportDescription" xml:space="preserve">
     <value>CSV、テキスト、および HTML 形式でエクスポートする方法を示します。</value>
   </data>
-    <data name="ExportTitle" xml:space="preserve">
+  <data name="ExportTitle" xml:space="preserve">
     <value>エクスポート</value>
+  </data>
+  <data name="RowDetailsAddress" xml:space="preserve">
+    <value>住所</value>
+  </data>
+  <data name="RowDetailsCity" xml:space="preserve">
+    <value>都市</value>
+  </data>
+  <data name="RowDetailsCountry" xml:space="preserve">
+    <value>国</value>
+  </data>
+  <data name="RowDetailsPostalCode" xml:space="preserve">
+    <value>郵便コード</value>
+  </data>
+  <data name="FilterRowDescription" xml:space="preserve">
+    <value>GridFilterRow を介して列でデータをフィルタリングします。</value>
+  </data>
+  <data name="FilterRowTitle" xml:space="preserve">
+    <value>行のフィルタリング</value>
   </data>
 </root>

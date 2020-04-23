@@ -6,7 +6,7 @@
   <string name="getting_started">Sunburstチャートの基本機能</string>
   <string name="getting_started_desc">ツールチップを備えたSunburstチャートを表示</string>
   <string name="group_collection">グループコレクション</string>
-  <string name="group_collection_desc">グループ化されたCollectionViewを持つSunburstチャートを表示</string>
+  <string name="group_collection_desc">グループ化されたDataCollectionを持つSunburstチャートを表示</string>
   <string name="basic_features">Sunburstチャートの調整</string>
   <string name="basic_features_desc">内側半径、オフセット、開始角度</string>  
   <string name="legend_and_titles">Sunburstチャートの凡例とタイトル</string>

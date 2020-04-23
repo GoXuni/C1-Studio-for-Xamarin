@@ -35,6 +35,8 @@
   <string name="RowDetailsPostalCode">Postal Code : {0}</string>
   <string name="FilterTitle">Filter</string>
   <string name="FilterDescription">Filters the data by columns through a generated form.</string>
+  <string name="FilterRowTitle">Filter Row</string>
+  <string name="FilterRowDescription">Filters the data by columns through GridFilterRow.</string>
   <string name="FilterPlaceholderText">Enter text to filter</string>
   <string name="FullTextFilterTitle">Full Text Filter</string>
   <string name="FullTextFilterDescription">Filters and highlights the data across all columns.</string>

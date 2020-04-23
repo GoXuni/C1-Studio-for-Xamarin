@@ -2,6 +2,7 @@ using CoreGraphics;
 using System;
 using UIKit;
 using C1.iOS.Grid;
+using Foundation;
 
 namespace FlexGrid101
 {
@@ -52,10 +53,10 @@ namespace FlexGrid101
 
         public DetailView(Customer customer)
         {
-            _countryLabel = new UILabel { Text = string.Format("Country: {0}", customer.Country) };
-            _cityLabel = new UILabel { Text = string.Format("City: {0}", customer.City) };
-            _addressLabel = new UILabel { Text = string.Format("Address: {0}", customer.Address) };
-            _postalCodeLabel = new UILabel { Text = string.Format("Postal Code: {0}", customer.PostalCode) };
+            _countryLabel = new UILabel { Text = string.Format("{0}: {1}", NSBundle.MainBundle.GetLocalizedString("Country", ""), customer.Country) };
+            _cityLabel = new UILabel { Text = string.Format("{0}: {1}", NSBundle.MainBundle.GetLocalizedString("City", ""), customer.City) };
+            _addressLabel = new UILabel { Text = string.Format("{0}: {1}", NSBundle.MainBundle.GetLocalizedString("Address", ""), customer.Address) };
+            _postalCodeLabel = new UILabel { Text = string.Format("{0}: {1}", NSBundle.MainBundle.GetLocalizedString("PostalCode", ""), customer.PostalCode) };
             AddSubviews(_countryLabel, _cityLabel, _addressLabel, _postalCodeLabel);
         }
 

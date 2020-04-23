@@ -3,7 +3,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
 using C1.Android.Chart;
-using C1.CollectionView;
+using C1.DataCollection;
 using Android.Support.V7.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Views;
@@ -13,7 +13,7 @@ namespace Sunburst101
     [Activity(Label = "@string/group_collection", Icon = "@drawable/GroupCollection")]
     public class GroupCollectionActivity : AppCompatActivity
     {
-        private C1CollectionView<Item> cv;
+        private C1DataCollection<Item> cv;
         private C1Sunburst sunburst;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -42,7 +42,7 @@ namespace Sunburst101
             cv.GroupChanged += View_GroupChanged;
             cv.SortChanged += Cv_SortChanged;
 
-            //Sort cannot work synchronize with group in current CollectionView
+            //Sort cannot work synchronize with group in current DataCollection
             SortDescription yearSortDescription = new SortDescription("Year", SortDirection.Ascending);
             SortDescription quarterSortDescription = new SortDescription("Quarter", SortDirection.Ascending);
             SortDescription monthSortDescription = new SortDescription("MonthValue", SortDirection.Ascending);

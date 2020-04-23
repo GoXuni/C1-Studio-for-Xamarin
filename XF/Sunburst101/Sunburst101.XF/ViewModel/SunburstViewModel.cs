@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using C1.CollectionView;
+using C1.DataCollection;
 
 namespace Sunburst101
 {
@@ -27,11 +27,11 @@ namespace Sunburst101
             }
         }
 
-        public C1CollectionView<Item> View
+        public C1DataCollection<Item> View
         {
             get
             {
-                return DataService.CreateGroupCVData();
+                return DataService.CreateGroupDataCollection();
             }
         }
 

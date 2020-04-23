@@ -8,3 +8,5 @@ Shows the following samples
     - PdfBrowser
     - CustomizeAppearance
 	- Export
+	- CustomizeHamburgerMenu
+	- CustomizeToolbar

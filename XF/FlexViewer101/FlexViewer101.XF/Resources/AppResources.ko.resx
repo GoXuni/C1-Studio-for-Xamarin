@@ -144,4 +144,16 @@
   <data name="ExportTitle" xml:space="preserve">
     <value>Export</value>
   </data>
+  <data name="CustomizeHamburgerDescription" xml:space="preserve">
+    <value>Show how to customize hamburger menu</value>
+  </data>
+  <data name="CustomizeHamburgerTitle" xml:space="preserve">
+    <value>Customize Hamburger Menu</value>
+  </data>
+  <data name="CustomizeToolbarDescription" xml:space="preserve">
+    <value>Shows how to customize toolbar</value>
+  </data>
+  <data name="CustomizeToolbarTitle" xml:space="preserve">
+    <value>Customize Toolbar</value>
+  </data>
 </root>

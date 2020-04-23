@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -84,9 +84,6 @@
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(OS)' == 'Unix' ">
-    <CscToolExe>mcs.exe</CscToolExe>
-  </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
   </PropertyGroup>
@@ -106,6 +103,14 @@
     <Compile Include="Controllers\ExportController.cs" />
     <Compile Include="Controllers\ExportController.designer.cs">
       <DependentUpon>ExportController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomizeHamburgerMenuController.cs" />
+    <Compile Include="Controllers\CustomizeHamburgerMenuController.designer.cs">
+      <DependentUpon>CustomizeHamburgerMenuController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomizeToolbarController.cs" />
+    <Compile Include="Controllers\CustomizeToolbarController.designer.cs">
+      <DependentUpon>CustomizeToolbarController.cs</DependentUpon>
     </Compile>
     <Compile Include="License.cs" />
     <Compile Include="Main.cs" />
@@ -128,22 +133,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.iOS.Core">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Viewer">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="GrapeCity.Documents.Pdf">
-      <Version>2.2.0.310</Version>
+      <Version>3.0.0.420</Version>
     </PackageReference>
     <PackageReference Include="GrapeCity.Documents.Pdf.Resources">
-      <Version>2.2.0.310</Version>
+      <Version>3.0.0.420</Version>
     </PackageReference>
     <PackageReference Include="System.Memory">
       <Version>4.5.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Plugin.FilePicker">
-      <Version>2.0.135</Version>
+      <Version>2.1.34</Version>
     </PackageReference>
     <Reference Include="System" />
     <Reference Include="System.Net.Http" />
@@ -159,6 +164,8 @@
     <BundleResource Include="Images\CustomizeApearance.jpg" />
     <BundleResource Include="Images\GettingStarted.png" />
     <BundleResource Include="Images\Export.png" />
+    <BundleResource Include="Images\toolbar.png" />
+    <BundleResource Include="Images\hamburger.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Images.xcassets\arrow_up.imageset\arrow_up.png">

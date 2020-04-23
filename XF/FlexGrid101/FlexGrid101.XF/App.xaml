@@ -1,33 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:core="clr-namespace:C1.Xamarin.Forms.Core;assembly=C1.Xamarin.Forms.Core"
              xmlns:grid="clr-namespace:C1.Xamarin.Forms.Grid;assembly=C1.Xamarin.Forms.Grid"
              x:Class="FlexGrid101.App">
     <Application.Resources>
         <ResourceDictionary>
-            <!--<Style TargetType="grid:FlexGrid">
-                <Setter Property="ColumnHeaderFontAttributes" Value="Bold" />
-                <Setter Property="GridLinesVisibility" Value="Vertical" />
-                <Setter Property="ColumnHeaderBackgroundColor" Value="#FF6F6F6F" />
-                <Setter Property="ColumnHeaderTextColor" Value="#FFE2E2E2" />
-                <Setter Property="RowHeaderBackgroundColor" Value="#FF6F6F6F" />
-                <Setter Property="RowHeaderTextColor" Value="#FFE2E2E2" />
-                <Setter Property="HeaderGridLinesColor" Value="#FF222222" />
-                <Setter Property="GridLinesColor" Value="#FF2B2B2B" />
-                <Setter Property="BackgroundColor" Value="#FF777777" />
-                <Setter Property="TextColor" Value="#FFE2E2E2" />
-                <Setter Property="RowBackgroundColor" Value="#FF333333" />
-                <Setter Property="AlternatingRowBackgroundColor" Value="#FF333333" />
-                <Setter Property="BorderColor" Value="#FF222222" />
-                <Setter Property="BorderWidth" Value="1" />
-                <Setter Property="SelectionBackgroundColor" Value="#FF8B8B8B" />
-                <Setter Property="CursorBackgroundColor" Value="#FF505050" />
-                <Setter Property="GroupRowBackgroundColor" Value="#FF6F6F6F" />
-                <Setter Property="TopLeftCellBackgroundColor" Value="#FF6F6F6F" />
-            </Style>-->
-                <!--<Setter Property="FrozenLinesBrush" Value="{StaticResource BorderBrush}" />
-            <Setter Property="MarqueeColor" Value="{StaticResource DataGridForeground}"/>-->
-                <!--<Setter Property="BottomRightCellBackground" Value="{StaticResource DataGridBottomRightCornerBrush}" />-->
+            <Style ApplyToDerivedTypes="True" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{Binding Path=BackgroundColor, Source={x:Static core:C1ThemeInfo.ApplicationTheme}}" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{Binding Path=TextColor, Source={x:Static core:C1ThemeInfo.ApplicationTheme}}" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

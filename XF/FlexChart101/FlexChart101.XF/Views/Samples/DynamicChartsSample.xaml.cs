@@ -32,10 +32,13 @@ namespace FlexChart101
             this.cancellation = new CancellationTokenSource();
         }
 
-        protected override void OnAppearing()
+        public void CancelTimer()
         {
-            base.OnAppearing();
+            Interlocked.Exchange(ref this.cancellation, new CancellationTokenSource()).Cancel();
+        }
 
+        public void StartTimer()
+        {
             // This solution is from https://forums.xamarin.com/discussion/49492/how-can-i-stop-device-starttimer
             CancellationTokenSource cts = this.cancellation; // safe copy
             Device.StartTimer(TimeSpan.FromSeconds(Device.OnPlatform(0.1, .1, 0.1)), () =>
@@ -49,16 +52,21 @@ namespace FlexChart101
             });
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            StartTimer();
+        }
+
         protected override bool OnBackButtonPressed()
         {
-            Interlocked.Exchange(ref this.cancellation, new CancellationTokenSource()).Cancel();
-
+            CancelTimer();
             return base.OnBackButtonPressed();
         }
 
         protected override void OnDisappearing()
         {
-            Interlocked.Exchange(ref this.cancellation, new CancellationTokenSource()).Cancel();
+            CancelTimer();
             base.OnDisappearing();
         }
 

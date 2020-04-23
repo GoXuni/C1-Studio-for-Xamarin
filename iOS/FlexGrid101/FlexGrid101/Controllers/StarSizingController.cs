@@ -15,6 +15,7 @@ namespace FlexGrid101
             base.ViewDidLoad();
 
             Grid.HeadersVisibility = GridHeadersVisibility.Column;
+            Grid.BackgroundColor = UIColor.White;
             Grid.RowBackgroundColor = UIColor.FromRGB(0xE5, 0xE6, 0xFA);
             Grid.RowTextColor = UIColor.Black;
             Grid.AlternatingRowBackgroundColor = UIColor.White;

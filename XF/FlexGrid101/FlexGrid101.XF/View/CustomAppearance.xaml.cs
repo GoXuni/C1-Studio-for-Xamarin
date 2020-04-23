@@ -24,23 +24,8 @@ namespace FlexGrid101
             grid.ItemsSource = data;
             grid.MinColumnWidth = 85;
 
-            // hide read-only "Country" column 
-            var col = grid.Columns["Country"];
-            col.IsVisible = false;
-
-            // map countryID column so it shows country names instead of their IDs
-            Dictionary<int, string> dct = new Dictionary<int, string>();
-            foreach (var country in Customer.GetCountries())
-            {
-                dct[country.Key] = country.Value;
-            }
-            col = grid.Columns["CountryID"];
-            col.DataMap = new GridDataMap() { ItemsSource = dct, DisplayMemberPath = "Value", SelectedValuePath = "Key" };
-            col.HorizontalAlignment =  LayoutAlignment.Start;
-            col.Width = new GridLength(120);
-
             // provide auto-complete lists for first and last name columns
-            col = grid.Columns["FirstName"];
+            var col = grid.Columns["FirstName"];
             col.DataMap = new GridDataMap() { ItemsSource = Customer.GetFirstNames() };
             col = grid.Columns["LastName"];
             col.DataMap = new GridDataMap() { ItemsSource = Customer.GetLastNames() };
@@ -59,7 +44,7 @@ namespace FlexGrid101
                 }
             }
 
-            grid.Columns.Move(grid.Columns["Name"].Index, 1);
+            grid.Columns.Move(grid.Columns["FirstName"].Index, 1);
         }
     }
 }

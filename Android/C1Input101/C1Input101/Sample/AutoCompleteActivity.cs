@@ -59,9 +59,9 @@ namespace C1Input101
                 var deferral = e.GetDeferral();
                 try
                 {
-                    var collectionView = new YouTubeCollectionView();
-                    await collectionView.SearchAsync(e.FilterString);
-                    filterAutoComplete.ItemsSource = collectionView;
+                    var dataCollection = new YouTubeDataCollection();
+                    await dataCollection.SearchAsync(e.FilterString);
+                    filterAutoComplete.ItemsSource = dataCollection;
                     e.Cancel = true;
                 }
                 finally

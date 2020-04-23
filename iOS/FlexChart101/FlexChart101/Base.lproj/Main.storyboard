@@ -84,7 +84,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Getting Started" id="Mhx-8e-MGI"/>
                 </viewController>
@@ -111,7 +111,7 @@
                                 </constraints>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="WKr-dp-laX" firstAttribute="leading" secondItem="YPg-eU-8a8" secondAttribute="leading" id="0Fo-Rj-fKo"/>
                             <constraint firstItem="WKr-dp-laX" firstAttribute="top" secondItem="Y92-tN-a2b" secondAttribute="bottom" id="G5m-0m-ERg"/>
@@ -149,7 +149,7 @@
                     <view key="view" contentMode="scaleToFill" id="xAY-5f-9s7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Mixed Chart Types" id="gbh-Sh-48a"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -169,7 +169,7 @@
                     <view key="view" contentMode="scaleToFill" id="YPL-1L-PkL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                       <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Bubble Chart" id="uev-GM-eLb"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -205,7 +205,7 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="9Un-mc-F9V" secondAttribute="trailing" constant="7" id="deF-2g-0u0"/>
                             <constraint firstItem="9Un-mc-F9V" firstAttribute="leading" secondItem="VrO-Ik-2L2" secondAttribute="leading" constant="7" id="s46-X4-F4d"/>
@@ -233,7 +233,7 @@
                     <view key="view" contentMode="scaleToFill" id="cxT-qd-ZKV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Legend and Titles" id="4RN-U3-d0H"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -261,7 +261,7 @@
                                 </constraints>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="FDf-O2-udW" firstAttribute="top" secondItem="ffJ-SR-WRz" secondAttribute="bottom" id="0bU-Bn-zPP"/>
                             <constraint firstItem="FDf-O2-udW" firstAttribute="leading" secondItem="LsM-qm-ZMC" secondAttribute="leadingMargin" constant="-20" id="Gh5-rU-JH1"/>
@@ -297,7 +297,7 @@
                                 </constraints>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="bVa-a9-7ci" firstAttribute="leading" secondItem="tjz-dG-7Dq" secondAttribute="leading" id="0OM-II-xh9"/>
                             <constraint firstItem="bVa-a9-7ci" firstAttribute="top" secondItem="c36-H4-Ljk" secondAttribute="bottom" id="aLc-u3-MnN"/>
@@ -325,7 +325,7 @@
                     <view key="view" contentMode="scaleToFill" id="wXO-bf-IAG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Getting Started" id="JAD-ZU-lG7"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -345,7 +345,7 @@
                     <view key="view" contentMode="scaleToFill" id="ah8-9J-Spr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Customizing Axes" id="sFg-Kp-Vev" userLabel="CustomizingAxes"/>
                 </viewController>
@@ -387,7 +387,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                       <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="c42-sb-vZB" firstAttribute="top" secondItem="1wO-pU-t7O" secondAttribute="bottom" constant="34" id="AJD-6S-jTQ"/>
                             <constraint firstItem="SmR-LO-CZA" firstAttribute="centerY" secondItem="c42-sb-vZB" secondAttribute="centerY" id="W9n-gV-ob0"/>
@@ -416,7 +416,7 @@
                     <view key="view" contentMode="scaleToFill" id="rvM-qo-yeP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tree Map" id="zbY-F7-0YH" userLabel="Tree Map"/>
                 </viewController>
@@ -435,7 +435,7 @@
                     <view key="view" contentMode="scaleToFill" id="nHW-YC-ivy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Custom Plot Elements Scrolling" id="UoW-2c-WkE" userLabel="Custom Plot Elements Scrolling"/>
                 </viewController>
@@ -454,7 +454,7 @@
                     <view key="view" contentMode="scaleToFill" id="Blr-IF-qt1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Custom Plot Elements" id="AAn-YN-ecS" userLabel="Custom Plot Elements"/>
                 </viewController>
@@ -473,7 +473,7 @@
                     <view key="view" contentMode="scaleToFill" id="nGO-VF-4br">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Custom Tooltips" id="zLN-KR-XRd" userLabel="Custom Tooltips"/>
                 </viewController>
@@ -495,7 +495,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iju-ok-z3c" customClass="FlexChart">
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qoO-Hh-IvK">
                                 <rect key="frame" x="117" y="72" width="187" height="29"/>
@@ -519,7 +519,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="qoO-Hh-IvK" firstAttribute="leading" secondItem="0A9-Ta-mNs" secondAttribute="trailing" constant="8" symbolic="YES" id="7V7-C5-Qny"/>
                             <constraint firstItem="0A9-Ta-mNs" firstAttribute="baseline" secondItem="qoO-Hh-IvK" secondAttribute="firstBaseline" id="G8J-9T-eY7"/>
@@ -557,7 +557,7 @@
                     <view key="view" contentMode="scaleToFill" id="soz-59-fG7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBp-ob-vda" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -583,7 +583,7 @@
                                 </constraints>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                       <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="jWy-xm-jzx" firstAttribute="leading" secondItem="dgS-Ia-gQs" secondAttribute="leading" id="6v0-KM-vG7"/>
                             <constraint firstItem="jWy-xm-jzx" firstAttribute="top" secondItem="5ti-XN-IQV" secondAttribute="bottom" id="RDQ-Bg-Du0"/>
@@ -672,7 +672,7 @@
                                 <rect key="frame" x="168" y="90" width="191" height="129"/>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="9AK-fs-tnq" firstAttribute="top" secondItem="J9Z-Qn-LUu" secondAttribute="bottom" constant="8" symbolic="YES" id="0Qc-II-ubj"/>
                             <constraint firstItem="6eP-3a-S4p" firstAttribute="top" secondItem="8vj-mw-0gU" secondAttribute="bottom" constant="54" id="2a0-Pi-PsQ"/>
@@ -758,7 +758,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xLo-Rr-sHS" firstAttribute="baseline" secondItem="Qk1-Jd-VLh" secondAttribute="baseline" constant="3" id="00g-bI-b0N"/>
                             <constraint firstItem="SZZ-S3-YCa" firstAttribute="width" secondItem="ib5-8V-qKB" secondAttribute="height" multiplier="124:15" constant="-77.800000000000011" id="0bn-Od-A4H"/>
@@ -869,7 +869,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="SVl-gS-ARb" firstAttribute="top" secondItem="pby-n2-Zve" secondAttribute="bottom" constant="5" id="0Cv-FO-6JS"/>
                             <constraint firstItem="g85-EV-rnX" firstAttribute="top" secondItem="U9n-kN-4xY" secondAttribute="bottom" constant="7" id="2aO-OL-UQJ"/>
@@ -961,7 +961,7 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="RbA-y5-Pbj" firstAttribute="trailing" secondItem="yAx-UZ-ZHl" secondAttribute="trailing" id="MI6-pt-0kq"/>
                             <constraint firstItem="RbA-y5-Pbj" firstAttribute="trailing" secondItem="0uO-ut-XuO" secondAttribute="trailingMargin" id="P1l-tc-5Ad"/>
@@ -1035,7 +1035,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Ktx-jp-GKD" firstAttribute="centerY" secondItem="agz-Kh-nbi" secondAttribute="centerY" id="0ss-Ll-Xj7"/>
                             <constraint firstItem="YeC-Hg-P4q" firstAttribute="baseline" secondItem="Ktx-jp-GKD" secondAttribute="baseline" id="61j-uR-9ZZ"/>
@@ -1093,7 +1093,7 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Jua-JI-0D6" firstAttribute="top" secondItem="Tp1-ap-qgh" secondAttribute="bottom" constant="8" id="Ap3-oi-Ruw"/>
                             <constraint firstAttribute="trailing" secondItem="Jua-JI-0D6" secondAttribute="trailing" constant="7" id="vcU-h8-sHN"/>
@@ -1129,7 +1129,7 @@
                                 </constraints>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Rut-WQ-UVo" secondAttribute="trailing" id="2sg-Nf-uOq"/>
                             <constraint firstItem="Rut-WQ-UVo" firstAttribute="top" secondItem="4AB-xb-wLa" secondAttribute="bottom" id="ZAc-8X-CHY"/>
@@ -1167,7 +1167,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="8gy-6P-5iI" firstAttribute="leading" secondItem="qx2-3v-ptE" secondAttribute="leading" id="Ats-Rx-bZn"/>
                             <constraint firstAttribute="trailing" secondItem="8gy-6P-5iI" secondAttribute="trailing" id="Ui0-ZB-6hT"/>
@@ -1236,7 +1236,7 @@
                                 </constraints>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Uhg-bY-g6J" firstAttribute="top" secondItem="3Bg-3L-r6p" secondAttribute="bottom" constant="5" id="3BV-dw-1sr"/>
                             <constraint firstItem="3Bg-3L-r6p" firstAttribute="baseline" secondItem="xPm-2l-YoM" secondAttribute="baseline" id="9Bl-0s-xIT"/>
@@ -1279,7 +1279,7 @@
                     <view key="view" contentMode="scaleToFill" id="fha-Um-Zmd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Financial Chart" id="5it-mO-ywM">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="UDM-OW-Ftx">
@@ -1316,7 +1316,7 @@
                     <view key="view" contentMode="scaleToFill" id="otF-NB-mUw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Multiple Axes" id="bO4-sT-63I"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -1343,7 +1343,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sg-ld-3j0">
                                         <rect key="frame" x="8" y="8" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+										<color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQX-VD-AmY">
@@ -1353,7 +1353,7 @@
                                         </connections>
                                     </switch>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="QQX-VD-AmY" secondAttribute="bottom" constant="13" id="5MZ-qo-Rhs"/>
                                     <constraint firstItem="QQX-VD-AmY" firstAttribute="leading" secondItem="DLL-WH-kB3" secondAttribute="leading" constant="5" id="Lp6-W4-YlL"/>
@@ -1368,7 +1368,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzs-YH-jqH">
                                         <rect key="frame" x="8" y="8" width="73" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="buL-AE-UDj">
@@ -1378,7 +1378,7 @@
                                         </connections>
                                     </switch>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                               <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="buL-AE-UDj" firstAttribute="leading" secondItem="bHM-cL-MPy" secondAttribute="leading" constant="5" id="4Bw-c0-GaL"/>
                                     <constraint firstItem="buL-AE-UDj" firstAttribute="top" secondItem="Nzs-YH-jqH" secondAttribute="bottom" constant="8" id="Ek8-ev-aPy"/>
@@ -1393,7 +1393,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloads" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPL-0Y-sNQ">
                                         <rect key="frame" x="8" y="8" width="85" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                      <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qN4-wb-sUq">
@@ -1403,7 +1403,7 @@
                                         </connections>
                                     </switch>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="qN4-wb-sUq" firstAttribute="leading" secondItem="Ka9-gV-bMj" secondAttribute="leading" constant="5" id="CvL-7y-cus"/>
                                     <constraint firstItem="qN4-wb-sUq" firstAttribute="top" secondItem="YPL-0Y-sNQ" secondAttribute="bottom" constant="8" id="FNd-kZ-rKs"/>
@@ -1413,7 +1413,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="bHM-cL-MPy" firstAttribute="leading" secondItem="DLL-WH-kB3" secondAttribute="trailing" id="5K1-rd-Fk7"/>
                             <constraint firstItem="DLL-WH-kB3" firstAttribute="top" secondItem="tNo-Bo-rf0" secondAttribute="bottom" id="Gab-ji-44F"/>
@@ -1444,7 +1444,7 @@
                     <view key="view" contentMode="scaleToFill" id="pDL-rY-9wI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Dynamic Charts" id="qZz-YQ-gzI"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -1468,29 +1468,29 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X Y Values" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAL-Lw-lus">
                                 <rect key="frame" x="16" y="639" width="82" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                  <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point Index" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIa-Gf-amB">
                                 <rect key="frame" x="16" y="610" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4Q-YS-3IX">
                                 <rect key="frame" x="16" y="582" width="48" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chart Element" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-73-INJ">
                                 <rect key="frame" x="16" y="553" width="110" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                  <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="AIa-Gf-amB" firstAttribute="leading" secondItem="5EQ-yG-Dt8" secondAttribute="leadingMargin" id="05W-3L-hlu"/>
                             <constraint firstItem="U4Q-YS-3IX" firstAttribute="leading" secondItem="5EQ-yG-Dt8" secondAttribute="leadingMargin" id="47D-FY-mEZ"/>
@@ -1526,7 +1526,7 @@
                     <view key="view" contentMode="scaleToFill" id="YYa-Mb-a2r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                       <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Styling" id="hP6-hs-Qvr"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -1546,7 +1546,7 @@
                     <view key="view" contentMode="scaleToFill" id="toR-8S-KPL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Zones" id="urP-IR-Ouj"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

@@ -1,4 +1,4 @@
-﻿using C1.CollectionView;
+﻿using C1.DataCollection;
 using FlexGrid101.Resources;
 using System;
 using System.Collections.Generic;
@@ -26,7 +26,7 @@ namespace FlexGrid101
 
         private async void OnFilterClicked(object sender, EventArgs e)
         {
-            var filtering = grid.CollectionView as ISupportFiltering;
+            var filtering = grid.DataCollection as ISupportFiltering;
             if (filtering != null)
             {
                 var filterForm = new FilterForm();
@@ -90,7 +90,7 @@ namespace FlexGrid101
 
         private async void OnRemoveFilterClicked(object sender, EventArgs e)
         {
-            await grid.CollectionView.RemoveFilterAsync();
+            await grid.DataCollection.RemoveFilterAsync();
         }
     }
 }

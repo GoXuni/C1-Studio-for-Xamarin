@@ -94,46 +94,43 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.CollectionView">
-      <Version>3.5.20191.378</Version>
-    </PackageReference>
     <PackageReference Include="C1.iOS.Chart">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Core">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Gauge">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Grid">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Chart">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Gauge">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />

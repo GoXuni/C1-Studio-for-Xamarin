@@ -50,21 +50,18 @@
     <EmbeddedResource Include="Images\srilanka.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.CollectionView">
-      <Version>3.5.20191.378</Version>
-    </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Calendar">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Input">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
-    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\AppResources.Designer.cs">

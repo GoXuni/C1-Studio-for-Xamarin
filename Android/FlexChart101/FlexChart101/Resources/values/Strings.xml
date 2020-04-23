@@ -61,7 +61,6 @@
   <string name="customPlotElementsDesc">Shows how to fully customize plot elements</string>
   <string name="customPlotElementsScrollingDesc">Shows customize plot elements scrolling</string>
   <string name="conditionalFormattingDesc">Shows conditional formatting by customizing plot elements</string>
-  <string name="updateAnimationDesc">Shows animation when data is updated</string>
   <string name="snapshotDesc">Shows how to export an image of FlexChart</string>
   <string name="scaling">Chart Scaling</string>
   <string name="scalingDesc">Shows how to use logarithmic axes to spread clustered data</string>
@@ -207,7 +206,6 @@
   <string name="legend_and_titles">Legend And Titles</string>
   <string name="selection">Selection</string>
   <string name="theming">Theming</string>
-  <string name="snapshot">Export Image</string>
   <string name="update_animation">Update Animation</string>
   <string name="data_labels">Data Labels</string>
   <string name="custom_tooltip">Custom Tooltips</string>
@@ -235,14 +233,11 @@
   <string name="position">Position</string>
   <string name="animated">IsAnimated?</string>
   <string name="animation_mode">Load Animation Mode</string>
-  <string name="actionSnapshot">Take Snapshot</string>
-  <string name="snapshotStored">Snapshot stored to device</string>
   <string name="button2015">2015</string>
   <string name="button2014">2014</string>
   <string name="button2013">2013</string>
   <string name="button2012">2012</string>
   <string name="permissionDenied">The permission is denied by user.</string>
-  <string name="positive_button">OK</string>
   <string name="BinWidth">BinWidth</string>
   <string name="textBox">textBox</string>
 

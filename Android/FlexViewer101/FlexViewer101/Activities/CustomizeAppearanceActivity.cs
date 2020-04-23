@@ -33,6 +33,7 @@ namespace FlexViewer101
             flexViewer.PageBorderColor = new Android.Graphics.Color(ContextCompat.GetColor(this, Resource.Color.colorBlack));
             flexViewer.Padding = new C1Thickness(20, 20, 20, 20);
             flexViewer.PageSpacing = 5;
+            flexViewer.ShowMenu = false;
 
             using (var stream = Assets.Open("PdfViewer.pdf", Android.Content.Res.Access.Streaming))
             {

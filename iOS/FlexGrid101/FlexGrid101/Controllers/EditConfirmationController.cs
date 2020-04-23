@@ -15,11 +15,7 @@ namespace FlexGrid101
             base.ViewDidLoad();
 
             var data = Customer.GetCustomerList(100);
-            Grid.AutoGeneratingColumn += (s, e) =>
-              {
-                  if (e.Property.Name == "Id")
-                      e.Cancel = true;
-              };
+            Grid.AutoGeneratingColumn += (s, e) => { e.Column.MinWidth = 110; e.Column.Width = GridLength.Star; };
             Grid.ItemsSource = data;
             Grid.BeginningEdit += OnBeginningEdit;
             Grid.CellEditEnded += OnCellEditEnded;

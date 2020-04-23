@@ -11,14 +11,14 @@
     <AssemblyName>C1Input101.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.17134.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.18362.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>C1Input101.UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>6FAA616512FE4F2E6B75E368214DEAF16ADC320D</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>C183EE32AE0B0626633A205500DCB92DAA43FD05</PackageCertificateThumbprint>
     <RuntimeIdentifiers>win10-arm;win10-arm-aot;win10-x86;win10-x86-aot;win10-x64;win10-x64-aot</RuntimeIdentifiers>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
@@ -184,26 +184,26 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.CollectionView">
-      <Version>3.5.20191.378</Version>
+    <PackageReference Include="C1.UWP.DataCollection">
+      <Version>1.0.20201.14</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Calendar">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Calendar">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Input">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Input">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.ApplicationInsights">
       <Version>2.4.0</Version>
@@ -215,10 +215,10 @@
       <Version>1.1.1</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.1.9</Version>
+      <Version>6.2.9</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>3.5.0.169047</Version>
+      <Version>4.4.0.991640</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

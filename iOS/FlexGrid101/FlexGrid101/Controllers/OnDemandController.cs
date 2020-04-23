@@ -8,7 +8,7 @@ namespace FlexGrid101
 {
     public partial class OnDemandController : UIViewController
     {
-        YouTubeCollectionView _collectionView;
+        YouTubeDataCollection _dataCollection;
 
         public OnDemandController(IntPtr handle) : base(handle)
         {
@@ -18,7 +18,7 @@ namespace FlexGrid101
         {
             base.ViewDidLoad();
 
-            _collectionView = new YouTubeCollectionView() { PageSize = 25 };
+            _dataCollection = new YouTubeDataCollection() { PageSize = 25 };
             Grid.AutoGenerateColumns = false;
             Grid.AllowMerging = GridAllowMerging.ColumnHeaders;
             Grid.Columns.Add(new GridImageColumn { Binding = "Thumbnail", Header = "Title", Width = new GridLength(70), ImagePadding = new UIEdgeInsets(4, 4, 4, 0), PlaceholderImage = new UIImage("Images/default.png") });
@@ -26,12 +26,12 @@ namespace FlexGrid101
             Grid.Columns.Add(new GridColumn { Binding = "ChannelTitle", Header = "Channel" });
             Grid.GridLinesVisibility = GridLinesVisibility.None;
             Grid.SelectionMode = GridSelectionMode.None;
-            Grid.ItemsSource = _collectionView;
+            Grid.ItemsSource = _dataCollection;
             Grid.CellTapped += OnCellTapped;
             SearchField.Text = "Xamarin iOS";
             SearchField.ShouldReturn = new UITextFieldCondition(OnShouldReturn);
             SearchField.EditingDidEnd += OnEditingDidEnd;
-            var task = PerformSearch();
+            _ = PerformSearch();
         }
         public override void DidReceiveMemoryWarning()
         {
@@ -66,7 +66,7 @@ namespace FlexGrid101
             {
                 ActivityIndicator.StartAnimating();
                 Grid.BecomeFirstResponder();
-                await _collectionView.SearchAsync(SearchField.Text);
+                await _dataCollection.SearchAsync(SearchField.Text);
             }
             finally
             {

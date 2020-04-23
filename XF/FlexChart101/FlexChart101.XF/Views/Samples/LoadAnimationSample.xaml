@@ -8,9 +8,6 @@
              >
     <StackLayout Margin="10" HorizontalOptions="FillAndExpand">
         <Grid>
-            <Grid.BackgroundColor>
-                <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
-            </Grid.BackgroundColor>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>

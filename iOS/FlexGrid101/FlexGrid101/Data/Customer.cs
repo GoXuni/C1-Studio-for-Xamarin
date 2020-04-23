@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -63,6 +64,7 @@ namespace FlexGrid101
 
         #region ** object model
 
+        [Display(AutoGenerateField = false)]
         public int Id
         {
             get { return _id; }
@@ -130,6 +132,7 @@ namespace FlexGrid101
             }
         }
 
+        [Display(AutoGenerateField = false)]
         public int CountryId
         {
             get { return _countryId; }
@@ -159,6 +162,7 @@ namespace FlexGrid101
             }
         }
 
+        [Display(Name = "e-mail")]
         public string Email
         {
             get { return _email; }
@@ -172,6 +176,7 @@ namespace FlexGrid101
             }
         }
 
+        [Display(AutoGenerateField = false)]
         public DateTime LastOrderDate
         {
             get { return _lastOrderDate; }
@@ -185,6 +190,7 @@ namespace FlexGrid101
             }
         }
 
+        [Display(AutoGenerateField = false)]
         public TimeSpan LastOrderTime
         {
             get
@@ -193,6 +199,7 @@ namespace FlexGrid101
             }
         }
 
+        [Display(AutoGenerateField = false)]
         public int OrderCount
         {
             get { return _orderCount; }
@@ -206,6 +213,7 @@ namespace FlexGrid101
             }
         }
 
+        [Display(AutoGenerateField = false)]
         public double OrderTotal
         {
             get { return _orderTotal; }
@@ -219,6 +227,7 @@ namespace FlexGrid101
             }
         }
 
+        [Display(AutoGenerateField = false)]
         public bool Active
         {
             get { return _active; }
@@ -232,16 +241,19 @@ namespace FlexGrid101
             }
         }
 
+        [Display(AutoGenerateField = false)]
         public string Name
         {
             get { return string.Format("{0} {1}", FirstName, LastName); }
         }
 
+        [Display(AutoGenerateField = false)]
         public string Country
         {
             get { return _countries[_countryId].Key; }
         }
 
+        [Display(AutoGenerateField = false)]
         public double OrderAverage
         {
             get { return OrderTotal / (double)OrderCount; }

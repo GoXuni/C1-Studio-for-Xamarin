@@ -41,6 +41,12 @@ namespace FlexViewer101
                     case 3:
                         StartActivity(typeof(ExportActivity));
                         break;
+                    case 4:
+                        StartActivity(typeof(CustomizeHamburgerMenuActivity));
+                        break;
+                    case 5:
+                        StartActivity(typeof(CustomizeToolbarActivity));
+                        break;
                 }
             };
             recyclerView.SetAdapter(adapter);
@@ -54,7 +60,7 @@ namespace FlexViewer101
         {
             get
             {
-                return 4;
+                return 6;
             }
         }
 
@@ -99,6 +105,16 @@ namespace FlexViewer101
                     h.SetTitle(resources.GetString(Resource.String.ExportTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.ExportDescription));
                     h.SetIcon(Resource.Drawable.Export);
+                    break;
+                case 4:
+                    h.SetTitle(resources.GetString(Resource.String.CustomizeHamburgerMenuTitle));
+                    h.SetSubtitle(resources.GetString(Resource.String.CustomizeHamburgerMenuDescription));
+                    h.SetIcon(Resource.Drawable.hamburger);
+                    break;
+                case 5:
+                    h.SetTitle(resources.GetString(Resource.String.CustomizeToolbarTitle));
+                    h.SetSubtitle(resources.GetString(Resource.String.CustomizeToolbarDescription));
+                    h.SetIcon(Resource.Drawable.toolbar);
                     break;
             }
         }

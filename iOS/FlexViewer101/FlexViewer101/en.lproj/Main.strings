@@ -7,6 +7,8 @@
 "1320.title" = "Customize Appearance";
 "2745.title" = "Browse Pdf Files";
 "5085.title" = "Export";
+"5521.title" = "Customize Hamburger Menu";
+"6617.title" = "Customize Toolbar";
 
 //UITableView Titles
 //Getting Started
@@ -14,6 +16,8 @@
 "1030.text" = "Browse Pdf Files";
 "1037.text" = "Customize Appearance";
 "5099.text" = "Export";
+"5533.text" = "Customize Hamburger Menu";
+"6631.text" = "Customize Toolbar";
 
 //UITableView Titles
 //Getting Started
@@ -21,3 +25,5 @@
 "1031.text" = "Navigate through your pdf files.";
 "1038.text" = "Modify the appearance of FlexViewer.";
 "5100.text" = "Shows how to export to Pdf and Image.";
+"5534.text" = "Shows how to customize hamburger menu.";
+"6632.text" = "Shows how to customize toolbar.";

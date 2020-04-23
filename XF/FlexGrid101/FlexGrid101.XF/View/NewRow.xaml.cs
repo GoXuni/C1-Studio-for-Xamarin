@@ -1,4 +1,4 @@
-﻿using C1.CollectionView;
+﻿using C1.DataCollection;
 using C1.Xamarin.Forms.Grid;
 using FlexGrid101.Resources;
 using System.Collections;
@@ -18,7 +18,7 @@ namespace FlexGrid101
             Title = AppResources.NewRowTitle;
 
             var data = Customer.GetCustomerList(100);
-            grid.ItemsSource = new CustomCollectionView<Customer>(data);
+            grid.ItemsSource = new CustomDataCollection<Customer>(data);
             grid.NewRowPlaceholder = AppResources.NewRowPlaceholder;
             grid.MinColumnWidth = 85;
         }
@@ -58,10 +58,10 @@ namespace FlexGrid101
         }
     }
 
-    public class CustomCollectionView<T> : C1CollectionView<T>
+    public class CustomDataCollection<T> : C1DataCollection<T>
         where T : class
     {
-        public CustomCollectionView(IEnumerable source)
+        public CustomDataCollection(IEnumerable source)
             : base(source)
         {
         }

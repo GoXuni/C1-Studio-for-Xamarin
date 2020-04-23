@@ -76,7 +76,9 @@
   <string name="SortIconPosition">ソートアイコンの位置</string>
   <string name="SortIconTemplate">ソートアイコンのテンプレート</string>
   <string name="ExportTitle">エクスポート</string>
-  <string name="ExportDescription">CSV、テキスト、および HTML 形式でエクスポートする方法を示します</string>
+  <string name="ExportDescription">CSV、テキスト、および HTML 形式でエクスポートする方法を示します。</string>
+  <string name="FilterRowTitle">行のフィルタリング</string>
+  <string name="FilterRowDescription">GridFilterRow を介して列でデータをフィルタリングします</string>
   
   <string-array name="SelectionModeTable">
     <item>None（なし）</item>

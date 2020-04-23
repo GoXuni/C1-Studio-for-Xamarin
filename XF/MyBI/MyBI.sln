@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBI.Android", "MyBI.Android\MyBI.Android.csproj", "{55CE4916-91FF-4F7F-B850-3B83306315D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBI.iOS", "MyBI.iOS\MyBI.iOS.csproj", "{B0CBB70C-6626-45C1-BA2B-1975E4AB103F}"

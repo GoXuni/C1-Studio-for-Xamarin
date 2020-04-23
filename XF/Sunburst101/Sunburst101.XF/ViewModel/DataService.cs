@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading.Tasks;
-using C1.CollectionView;
+using C1.DataCollection;
 
 namespace Sunburst101
 {
@@ -169,7 +169,7 @@ namespace Sunburst101
             return items;
         }
 
-        public static C1CollectionView<Item> CreateGroupCVData()
+        public static C1DataCollection<Item> CreateGroupDataCollection()
         {
             var data = new List<Item>();
             var quarters = new string[] { "Q1", "Q2", "Q3", "Q4" };
@@ -214,9 +214,9 @@ namespace Sunburst101
                     Value = Math.Round(Instance.rnd.NextDouble() * 100)
                 });
             }
-            var cv = new C1CollectionView<Item>(data);
+            var cv = new C1DataCollection<Item>(data);
 
-            //Sort cannot work synchronize with group in current CollectionView
+            //Sort cannot work synchronize with group in current DataCollection
             SortDescription yearSortDescription = new SortDescription("Year", SortDirection.Ascending);
             SortDescription quarterSortDescription = new SortDescription("Quarter", SortDirection.Ascending);
             SortDescription monthSortDescription = new SortDescription("MonthValue", SortDirection.Ascending);

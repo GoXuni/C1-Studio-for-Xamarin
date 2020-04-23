@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -13,6 +13,8 @@ using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 using C1.Android.Viewer;
+using Plugin.FilePicker;
+using Plugin.FilePicker.Abstractions;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace FlexViewer101
@@ -35,6 +37,8 @@ namespace FlexViewer101
             // Create your application here
 
             flexViewer = FindViewById<FlexViewer>(Resource.Id.FlexViewer);
+            flexViewer.DocumentOpening += FlexViewer_DocumentOpening;
+            flexViewer.DocumentSaving += FlexViewer_DocumentSaving;
             using (var stream = Assets.Open("Simple List.pdf", Android.Content.Res.Access.Streaming))
             {
                 using (var sr = new StreamReader(stream))
@@ -45,6 +49,21 @@ namespace FlexViewer101
                 }
             }
         }
+
+        private void FlexViewer_DocumentSaving(object sender, SaveDocumentStreamEventArgs e)
+        {
+            var deferral = e.GetDeferral();
+            try
+            {
+                e.FilePath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments), "export.png");
+                e.PageRange = new GrapeCity.Documents.Common.OutputRange(1, 2);
+            }
+            finally
+            {
+                deferral.Complete();
+            }
+        }
+
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             var editMenuItem = menu.Add(0, 0, 0, Resource.String.PdfBrowserTitle);
@@ -79,7 +98,7 @@ namespace FlexViewer101
             {
                 if (data != null)
                 {
-                    Android.Net.Uri uri = data.Data;                   
+                    Android.Net.Uri uri = data.Data;
                     using (var stream = ContentResolver.OpenInputStream(uri))
                     {
                         using (var sr = new StreamReader(stream))
@@ -90,6 +109,39 @@ namespace FlexViewer101
                         }
                     }
                 }
+            }
+        }
+
+        private async void FlexViewer_DocumentOpening(object sender, DocumentStreamEventArgs e)
+        {
+            var deferral = e.GetDeferral();
+            try
+            {
+                e.Stream = await PickFile(e.AllowedTypes);
+            }
+            finally
+            {
+                deferral.Complete();
+            }
+        }
+
+        private async Task<Stream> PickFile(string[] allowedTypes)
+        {
+            Stream stream = null;
+            try
+            {
+                FileData fileData = await CrossFilePicker.Current.PickFile(allowedTypes);
+                if (fileData == null)
+                    return null; // user canceled file picking
+
+                stream = fileData.GetStream();
+
+                return stream;
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine("Exception choosing file: " + ex.ToString());
+                return null;
             }
         }
     }

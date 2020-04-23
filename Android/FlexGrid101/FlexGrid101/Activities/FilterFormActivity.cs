@@ -4,7 +4,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Views;
 using C1.Android.Grid;
-using C1.CollectionView;
+using C1.DataCollection;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;

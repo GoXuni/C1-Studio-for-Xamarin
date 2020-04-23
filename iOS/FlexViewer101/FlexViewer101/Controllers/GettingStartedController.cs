@@ -13,6 +13,7 @@ namespace FlexViewer101
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            Viewer.ShowMenu = false;
 
             string path = "Data/DefaultDocument.pdf";
             MemoryStream ms = new MemoryStream();

@@ -9,4 +9,15 @@
   <string name="CustomizeAppearanceDescription">FlexViewer の外観を変更。</string>
   <string name="ExportTitle">エクスポート</string>
   <string name="ExportDescription">PdfとImageにエクスポートする方法を示します。</string>
+  <string name="CustomizeHamburgerMenuTitle">ハンバーガーメニューのカスタマイズ</string>
+  <string name="CustomizeHamburgerMenuDescription">ハンバーガーメニューをカスタマイズする方法を示します。</string>
+  <string name="CustomizeToolbarTitle">ツールバーのカスタマイズ。</string>
+  <string name="CustomizeToolbarDescription">ツールバーをカスタマイズする方法を示します。</string>
+  <string name="SearchPlaceholderText">検索するテキストを入力してください</string>
+  <string name="ChangeBackground">背景色の変更</string>
+  <string name="FileSavedTo">ファイルが保存されました</string>
+  <string name="Save">保存</string>
+  <string name="SaveAs">形式を指定して保存</string>
+  <string name="Saved">保存されました</string>
+  <string name="ExportToBitmap">エクスポートbitmap</string>
 </resources>

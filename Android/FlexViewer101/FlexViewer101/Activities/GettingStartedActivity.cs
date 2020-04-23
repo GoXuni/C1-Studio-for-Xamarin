@@ -26,7 +26,7 @@ namespace FlexViewer101
             SupportActionBar.SetHomeButtonEnabled(true);
 
             var flexViewer = FindViewById<FlexViewer>(Resource.Id.FlexViewer);
-
+            flexViewer.ShowMenu = false;
             using (var stream = Assets.Open("DefaultDocument.pdf", Android.Content.Res.Access.Streaming))
             {
                 using (var sr = new StreamReader(stream))

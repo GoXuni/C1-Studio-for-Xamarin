@@ -2,14 +2,9 @@
 using UIKit;
 using Foundation;
 using CoreGraphics;
-using C1.iOS.Core;
 using C1.iOS.Input;
-using C1.CollectionView;
-using System.Collections;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-using System.Linq;
 
 namespace C1Input101
 {
@@ -56,7 +51,7 @@ namespace C1Input101
             CustomDropdown.DropDownHeight = 200;
             CustomDropdown.DisplayMemberPath = @"Name";
             CustomDropdown.IsAnimated = true;
-            CustomDropdown.HighlightedColor = UIColor.Red;
+            CustomDropdown.HighlightColor = UIColor.Red;
             CustomDropdown.ItemsSource = Countries.GetDemoImageDataList();
             CustomDropdown.ItemLoading += (s, e) =>
             {
@@ -70,9 +65,9 @@ namespace C1Input101
                 var deferral = e.GetDeferral();
                 try
                 {
-                    var collectionView = new YouTubeCollectionView();
-                    await collectionView.SearchAsync(e.FilterString);
-                    FilterDropdown.ItemsSource = collectionView;
+                    var dataCollection = new YouTubeDataCollection();
+                    await dataCollection.SearchAsync(e.FilterString);
+                    FilterDropdown.ItemsSource = dataCollection;
                     e.Cancel = true;
                 }
                 finally

@@ -1,1 +1,57 @@
 ﻿
+"Highlight" = "Highlight";
+
+"Non-editable" = "Non-editable";
+
+"Masked Input" = "Masked Input";
+
+"Delay" = "Delay";
+
+"Phone:" = "Phone:";
+
+"Masked Input" = "Masked Input";
+
+"ID:" = "ID:";
+
+"Drop Down" = "Drop Down";
+
+">" = ">";
+
+"State:" = "State:";
+
+"Combo Box" = "Combo Box";
+
+"Input101" = "Input101";
+
+"Editable" = "Editable";
+
+"Capture properly formatted text using a mask." = "Capture properly formatted text using a mask.";
+
+"Display an editable list of options." = "Display an editable list of options.";
+
+"DOB:" = "DOB:";
+
+"Show suggestions automatically while the user is typing." = "Show suggestions automatically while the user is typing.";
+
+">" = ">";
+
+
+"Custom Drop-down" = "Custom Drop-down";
+
+">" = ">";
+
+"Dynamic" = "Dynamic";
+
+"Create a customizable drop-down control." = "Create a customizable drop-down control.";
+
+"Auto Complete" = "Auto Complete";
+
+"Please Enter..." = "Please Enter...";
+
+"00/00/0000" = "0000/00/00";
+
+"MM-dd-yyyy" = "yyyy/MM/dd";
+
+"AutoCompleteMode" = "AutoCompleteMode";
+
+"ShowClearButton" = "ShowClearButton";

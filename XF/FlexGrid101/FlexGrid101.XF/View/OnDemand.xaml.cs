@@ -1,4 +1,4 @@
-﻿using C1.CollectionView;
+﻿using C1.DataCollection;
 using C1.Xamarin.Forms.Grid;
 using FlexGrid101.Resources;
 using System;
@@ -11,7 +11,7 @@ namespace FlexGrid101
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class OnDemand : ContentPage
     {
-        YouTubeCollectionView _collectionView;
+        YouTubeDataCollection _dataCollection;
 
         public OnDemand()
         {
@@ -26,8 +26,8 @@ namespace FlexGrid101
 
         private async void Load()
         {
-            _collectionView = new YouTubeCollectionView() { PageSize = 25 };
-            var grouping = new C1GroupCollectionView<YouTubeVideo>(_collectionView, false);
+            _dataCollection = new YouTubeDataCollection() { PageSize = 25 };
+            var grouping = new C1GroupDataCollection<YouTubeVideo>(_dataCollection, false);
             await grouping.GroupAsync("PublishedDay");
             grid.ItemsSource = grouping;
             grid.MinColumnWidth = 85;
@@ -47,7 +47,7 @@ namespace FlexGrid101
             {
                 activityIndicator.IsRunning = true;
                 grid.Focus();
-                await _collectionView.SearchAsync(search.Text);
+                await _dataCollection.SearchAsync(search.Text);
             }
             finally
             {

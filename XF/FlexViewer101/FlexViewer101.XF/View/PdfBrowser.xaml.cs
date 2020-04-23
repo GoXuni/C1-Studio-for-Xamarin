@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,6 +18,7 @@ namespace FlexViewer101
         Assembly assembly;
         bool _pickingFile = false;
         string[] _fileTypes;
+        private bool onAppearingFirstTime = true;
 
         public PdfBrowser()
         {
@@ -37,39 +39,83 @@ namespace FlexViewer101
                     _fileTypes = new string[] { ".pdf" };
                     break;
             }
+
+            flexViewer.DocumentOpening += FlexViewer_DocumentOpening;
+            flexViewer.DocumentSaving += FlexViewer_DocumentSaving;
         }
+
+        private void FlexViewer_DocumentSaving(object sender, SaveDocumentStreamEventArgs e)
+        {
+            var deferral = e.GetDeferral();
+            try
+            {
+                e.FilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "export.png");
+                e.PageRange = new GrapeCity.Documents.Common.OutputRange(1, 2);
+            }
+            finally
+            {
+                deferral.Complete();
+            }
+        }
+
+        private async void FlexViewer_DocumentOpening(object sender, DocumentStreamEventArgs e)
+        {
+            var deferral = e.GetDeferral();
+            try
+            {
+                e.Stream = await PickFile(e.AllowedTypes);
+            }
+            finally
+            {
+                deferral.Complete();
+            }
+        }
+
         protected override void OnAppearing()
         {
-            base.OnAppearing();
-
-            if (_pickingFile)
+            if (onAppearingFirstTime)
             {
-                _pickingFile = false;
-                return;
-            }
+                base.OnAppearing();
 
-            assembly = IntrospectionExtensions.GetTypeInfo(typeof(GettingStarted)).Assembly;
-            Stream stream = assembly.GetManifestResourceStream("FlexViewer101.Resources.Simple List.pdf");
-            flexViewer.LoadDocument(stream);
+                if (_pickingFile)
+                {
+                    _pickingFile = false;
+                    return;
+                }
+
+                assembly = IntrospectionExtensions.GetTypeInfo(typeof(GettingStarted)).Assembly;
+                Stream stream = assembly.GetManifestResourceStream("FlexViewer101.Resources.Simple List.pdf");
+                flexViewer.LoadDocument(stream);
+                onAppearingFirstTime = false;
+            }
         }
         async void OnOpen(object sender, EventArgs e)
+        {
+            var stream = await PickFile(_fileTypes);
+            if (stream != null)
+            {
+                flexViewer.LoadDocument(stream);
+            }
+        }
+
+        private async Task<Stream> PickFile(string[] allowedTypes)
         {
             Stream stream = null;
             try
             {
-                FileData fileData = await CrossFilePicker.Current.PickFile(_fileTypes);
+                FileData fileData = await CrossFilePicker.Current.PickFile(allowedTypes);
                 if (fileData == null)
-                    return; // user canceled file picking
+                    return null; // user canceled file picking
 
                 stream = fileData.GetStream();
 
-                flexViewer.LoadDocument(stream);
                 _pickingFile = true;
+                return stream;
             }
             catch (Exception ex)
             {
                 System.Console.WriteLine("Exception choosing file: " + ex.ToString());
-                return;
+                return null;
             }
         }
     }

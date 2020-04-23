@@ -152,4 +152,6 @@
 "13069.text" = "Match case";
 "13070.text" = "Match whole word";
 
-
+//filter row
+"35325.text" = "Filter Row";
+"35326.text" = "Filters the data by columns through GridFilterRow.";

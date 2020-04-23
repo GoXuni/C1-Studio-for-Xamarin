@@ -1,19 +1,19 @@
 ﻿using System;
 using Android.Support.V7.Widget;
 using Android.Views;
-using C1.CollectionView;
+using C1.DataCollection;
 using Android.Widget;
 using System.Threading.Tasks;
 using Android.Graphics;
 using System.Threading;
-using C1.Android.CollectionView;
+using C1.Android.DataCollection;
 
 namespace C1Input101
 {
     internal class YouTubeAdapter : C1RecyclerViewAdapter<object>
     {
-        public YouTubeAdapter(ICollectionView<object> collectionView)
-            : base(collectionView)
+        public YouTubeAdapter(IDataCollection<object> dataCollection)
+            : base(dataCollection)
         {
         }
 
@@ -26,7 +26,7 @@ namespace C1Input101
         protected override void OnBindItemViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             var h = holder as YoutubeViewHolder;
-            var video = CollectionView[position] as YouTubeVideo;
+            var video = DataCollection[position] as YouTubeVideo;
             h.SetTitle(video.Title);
             h.SetSubtitle(video.Description);
             h.SetVideoThumbnail(video.Thumbnail, CancellationToken.None);

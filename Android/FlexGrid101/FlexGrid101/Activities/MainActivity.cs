@@ -60,39 +60,42 @@ namespace FlexGrid101
                         StartActivity(typeof(FilterActivity));
                         break;
                     case 10:
-                        StartActivity(typeof(FullTextFilterActivity));
+                        StartActivity(typeof(FilterRowActivity));
                         break;
                     case 11:
-                        StartActivity(typeof(ColumnLayoutActivity));
+                        StartActivity(typeof(FullTextFilterActivity));
                         break;
                     case 12:
-                        StartActivity(typeof(StarSizingActivity));
+                        StartActivity(typeof(ColumnLayoutActivity));
                         break;
                     case 13:
-                        StartActivity(typeof(CellFreezingActivity));
+                        StartActivity(typeof(StarSizingActivity));
                         break;
                     case 14:
-                        StartActivity(typeof(CustomMergingActivity));
+                        StartActivity(typeof(CellFreezingActivity));
                         break;
                     case 15:
-                        StartActivity(typeof(UnboundActivity));
+                        StartActivity(typeof(CustomMergingActivity));
                         break;
                     case 16:
-                        StartActivity(typeof(OnDemandActivity));
+                        StartActivity(typeof(UnboundActivity));
                         break;
                     case 17:
-                        StartActivity(typeof(CustomAppearanceActivity));
+                        StartActivity(typeof(OnDemandActivity));
                         break;
                     case 18:
-                        StartActivity(typeof(NewRowActivity));
+                        StartActivity(typeof(CustomAppearanceActivity));
                         break;
                     case 19:
-                        StartActivity(typeof(CheckListActivity));
+                        StartActivity(typeof(NewRowActivity));
                         break;
                     case 20:
-                        StartActivity(typeof(CustomSortIconActivity));
+                        StartActivity(typeof(CheckListActivity));
                         break;
                     case 21:
+                        StartActivity(typeof(CustomSortIconActivity));
+                        break;
+                    case 22:
                         StartActivity(typeof(ExportActivity));
                         break;
                 }
@@ -185,61 +188,66 @@ namespace FlexGrid101
                     h.SetIcon(Resource.Drawable.flexgrid_filter);
                     break;
                 case 10:
+                    h.SetTitle(resources.GetString(Resource.String.FilterRowTitle));
+                    h.SetSubtitle(resources.GetString(Resource.String.FilterRowDescription));
+                    h.SetIcon(Resource.Drawable.flexgrid_filter);
+                    break;
+                case 11:
                     h.SetTitle(resources.GetString(Resource.String.FullTextFilterTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.FullTextFilterDescription));
                     h.SetIcon(Resource.Drawable.filter);
                     break;
-                case 11:
+                case 12:
                     h.SetTitle(resources.GetString(Resource.String.ColumnLayoutTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.ColumnLayoutDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_columns);
                     break;
-                case 12:
+                case 13:
                     h.SetTitle(resources.GetString(Resource.String.StarSizingTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.StarSizingDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_starSizing);
                     break;
-                case 13:
+                case 14:
                     h.SetTitle(resources.GetString(Resource.String.CellFreezingTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.CellFreezingDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_freezing);
                     break;
-                case 14:
+                case 15:
                     h.SetTitle(resources.GetString(Resource.String.CustomMergingTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.CustomMergingDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_merging);
                     break;
-                case 15:
+                case 16:
                     h.SetTitle(resources.GetString(Resource.String.UnboundTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.UnboundDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_headers);
                     break;
-                case 16:
+                case 17:
                     h.SetTitle(resources.GetString(Resource.String.OnDemandTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.OnDemandDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_loading);
                     break;
-                case 17:
+                case 18:
                     h.SetTitle(resources.GetString(Resource.String.CustomAppearanceTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.CustomAppearanceDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_customAppearance);
                     break;
-                case 18:
+                case 19:
                     h.SetTitle(resources.GetString(Resource.String.NewRowTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.NewRowDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_newRow);
                     break;
-                case 19:
+                case 20:
                     h.SetTitle(resources.GetString(Resource.String.CheckListTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.CheckListDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_checkList);
                     break;
-                case 20:
+                case 21:
                     h.SetTitle(resources.GetString(Resource.String.CustomSortIconTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.CustomSortIconDescription));
                     h.SetIcon(Resource.Drawable.flexgrid_customSort);
                     break;
-                case 21:
+                case 22:
                     h.SetTitle(resources.GetString(Resource.String.ExportTitle));
                     h.SetSubtitle(resources.GetString(Resource.String.ExportDescription));
                     h.SetIcon(Resource.Drawable.export_grid);

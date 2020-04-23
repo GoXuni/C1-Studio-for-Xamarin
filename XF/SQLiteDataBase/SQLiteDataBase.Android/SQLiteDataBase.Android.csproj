@@ -16,7 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
     <JavaMaximumHeapSize />
@@ -57,35 +57,32 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Android.Core">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Grid">
-      <Version>4.0.20192.397-beta</Version>
-    </PackageReference>
-    <PackageReference Include="C1.CollectionView">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.482894" />
-    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.1" />
-    <PackageReference Include="Xamarin.Android.Support.Compat" Version="28.0.0.1" />
-    <PackageReference Include="Xamarin.Android.Support.Core.UI" Version="28.0.0.1" />
-    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
-    <PackageReference Include="Xamarin.Android.Support.Fragment" Version="28.0.0.1" />
-    <PackageReference Include="Xamarin.Android.Support.Media.Compat" Version="28.0.0.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.Compat" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.Core.UI" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.Fragment" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.Media.Compat" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
     <PackageReference Include="System.Buffers" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>

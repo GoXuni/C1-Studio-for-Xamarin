@@ -6,12 +6,13 @@ namespace FlexGrid101
 {
     public partial class GettingStartedController : UIViewController
     {
-        public GettingStartedController (IntPtr handle) : base (handle)
+        public GettingStartedController(IntPtr handle) : base(handle)
         {
         }
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            Grid.AutoGeneratingColumn += (s, e) => { e.Column.MinWidth = 110; e.Column.Width = GridLength.Star; };
             Grid.ItemsSource = Customer.GetCustomerList(100);
             Grid.AllowDragging = GridAllowDragging.Both;
             Grid.AllowResizing = GridAllowResizing.Both;

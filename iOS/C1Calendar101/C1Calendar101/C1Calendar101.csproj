@@ -15,27 +15,13 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
-    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
-    <MtouchUseRefCounting>True</MtouchUseRefCounting>
-    <MtouchUseSGen>True</MtouchUseSGen>
     <MtouchDebug>True</MtouchDebug>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchFastDev>True</MtouchFastDev>
-    <MtouchSdkVersion>10.2</MtouchSdkVersion>
-    <MtouchProfiling>True</MtouchProfiling>
-    <MtouchNoSymbolStrip>False</MtouchNoSymbolStrip>
-    <MtouchUseLlvm>False</MtouchUseLlvm>
-    <MtouchUseThumb>False</MtouchUseThumb>
-    <MtouchEnableBitcode>False</MtouchEnableBitcode>
-    <OptimizePNGs>True</OptimizePNGs>
-    <MtouchTlsProvider>Default</MtouchTlsProvider>
-    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
-    <MtouchFloat32>False</MtouchFloat32>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -83,9 +69,6 @@
     <MtouchUseSGen>true</MtouchUseSGen>
     <IOSDebugOverWiFi>False</IOSDebugOverWiFi>
     <IOSDebuggerPort>10000</IOSDebuggerPort>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(OS)' == 'Unix' ">
-    <CscToolExe>mcs.exe</CscToolExe>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -208,10 +191,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.iOS.Calendar">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Core">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

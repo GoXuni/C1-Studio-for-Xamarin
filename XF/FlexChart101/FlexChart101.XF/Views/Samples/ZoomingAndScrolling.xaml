@@ -7,10 +7,7 @@
              x:Class="FlexChart101.ZoomingAndScrolling" x:Name="page">
 	 <StackLayout>
         <Grid HorizontalOptions="FillAndExpand" Padding="10">
-      <Grid.BackgroundColor>
-        <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
-      </Grid.BackgroundColor>
-      <Grid.RowDefinitions>
+            <Grid.RowDefinitions>
         <RowDefinition Height="Auto"/>
         <RowDefinition Height="Auto"/>
       </Grid.RowDefinitions>

@@ -5,7 +5,7 @@
   <string name="getting_started">Getting Started</string>
   <string name="getting_started_desc">Shows a simple sunburst chart with tooltips.</string>
   <string name="group_collection">Group Collection</string>
-  <string name="group_collection_desc">Shows Sunburst chart with Grouped CollectionView.</string>
+  <string name="group_collection_desc">Shows Sunburst chart with Grouped DataCollection.</string>
   <string name="basic_features">Basic Features</string>
   <string name="basic_features_desc">Shows inner radius, offset, and start angle.</string>
   <string name="legend_and_titles">Legend And Titles</string>

@@ -5,5 +5,15 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
              xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml">
-    <c1:FlexGrid x:Name="grid" FrozenColumns="1" FrozenRows="1" AllowMerging="Cells"/>
+    <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False" FrozenColumns="1" FrozenRows="1" AllowMerging="Cells">
+        <c1:FlexGrid.Columns>
+            <c1:GridColumn Binding="Name" />
+            <c1:GridColumn Binding="Address" />
+            <c1:GridColumn Binding="City" />
+            <c1:GridColumn Binding="Country" AllowMerging="true" />
+            <c1:GridColumn Binding="PostalCode" />
+            <c1:GridColumn Binding="Email" />
+            <c1:GridColumn Binding="LastOrderDate" />
+        </c1:FlexGrid.Columns>
+    </c1:FlexGrid>
 </ContentPage>

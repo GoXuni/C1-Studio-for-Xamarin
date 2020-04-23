@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexChart101", "FlexChart101\FlexChart101.csproj", "{ABAE97D3-9F86-45A7-8E86-CB74F9C3C582}"
 EndProject
 Global

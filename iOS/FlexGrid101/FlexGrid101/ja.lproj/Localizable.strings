@@ -47,3 +47,8 @@
 "Click here to add a new row" = "新しい行を追加するにはこちらをクリックしてください";
 "Sort Icon Position" = "ソートアイコンの位置";
 "Sort Icon Template" = "ソートアイコンのテンプレート";
+
+"Country" = "国";
+"City" =	"都市";
+"Address" = "住所";
+"PostalCode" = "郵便コード";

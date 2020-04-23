@@ -8,9 +8,6 @@
              Padding="10">
     <StackLayout HorizontalOptions="FillAndExpand">
         <Grid ColumnSpacing="5" Margin="3">
-            <!--Grid.BackgroundColor>
-                <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
-            </-->
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>

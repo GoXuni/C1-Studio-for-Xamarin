@@ -21,7 +21,7 @@
             </c1:FlexGrid>
             <Label x:Name="emptyListLabel"
              HorizontalOptions="Center"/>
-            <ActivityIndicator x:Name="activityIndicator" VerticalOptions="Center"/>
+            <c1:C1ActivityIndicator x:Name="activityIndicator" VerticalOptions="Center"/>
         </Grid>
     </StackLayout>
 </ContentPage>

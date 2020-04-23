@@ -1,17 +1,16 @@
-﻿using System;
+﻿using C1.Xamarin.Forms.Chart;
+using C1.Xamarin.Forms.Chart.Interaction;
+using C1.Xamarin.Forms.Core;
+using C1.Xamarin.Forms.Grid;
+using C1Weather.Resources;
+using Plugin.Geolocator;
+using Plugin.Permissions.Abstractions;
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using C1.CollectionView;
-using C1.Xamarin.Forms.Grid;
 using Xamarin.Forms.Xaml;
-using C1Weather.Resources;
-using System.Collections.Generic;
-using C1.Xamarin.Forms.Chart;
-using C1.Xamarin.Forms.Chart.Interaction;
-using Plugin.Geolocator;
-using C1.Xamarin.Forms.Core;
-using Plugin.Permissions.Abstractions;
 
 namespace C1Weather
 {
@@ -116,12 +115,17 @@ namespace C1Weather
         {
             WeatherModel selectedData;
             ObservableCollection<WeatherModel> selectedDataCollection = new ObservableCollection<WeatherModel>();
-            int upperRow = e.CellRange.Row;
-            int lowerRow = e.CellRange.Row2;
-            if (e.CellRange.Row2 < e.CellRange.Row)
+            var range = e.CellRange;
+            if (range == null)
             {
-                upperRow = e.CellRange.Row2;
-                lowerRow = e.CellRange.Row;
+                range = new GridCellRange(0, 0, grid.Rows.Count - 1, grid.Columns.Count - 1);
+            }
+            int upperRow = range.Row;
+            int lowerRow = range.Row2;
+            if (range.Row2 < range.Row)
+            {
+                upperRow = range.Row2;
+                lowerRow = range.Row;
             }
 
             for (int i = upperRow; i <= lowerRow; i++)

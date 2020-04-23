@@ -367,4 +367,22 @@
   <data name="ExportTitle" xml:space="preserve">
     <value>Export</value>
   </data>
+  <data name="FilterRowDescription" xml:space="preserve">
+    <value>Filters the data by columns through GridFilterRow.</value>
+  </data>
+  <data name="FilterRowTitle" xml:space="preserve">
+    <value>Filter Row</value>
+  </data>
+  <data name="RowDetailsAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="RowDetailsCity" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="RowDetailsCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="RowDetailsPostalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
 </root>

@@ -4,13 +4,12 @@ using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
-using C1.CollectionView;
 
 namespace C1Weather
 {
     class WeatherData
     {
-        //changes langauge and units based on device settings
+        //changes language and units based on device settings
         private static String GetUrlStringForSupportedCountry(string location)
         {
             String url;

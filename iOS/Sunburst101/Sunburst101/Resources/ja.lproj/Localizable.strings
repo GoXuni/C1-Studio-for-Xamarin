@@ -24,7 +24,7 @@
 
 "Shows a simple sunburst chart with tooltips." = "ツールチップを備えたSunburstチャートを表示";
 
-"Shows Sunburst chart with grouped CollectionView." = "グループ化されたCollectionViewを持つSunburstチャートを表示";
+"Shows Sunburst chart with grouped DataCollection." = "グループ化されたCollectionViewを持つSunburstチャートを表示";
 
 "Shows inner radius, offset, and start angle." = "内側半径、オフセット、開始角度";
 

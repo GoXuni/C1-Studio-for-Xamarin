@@ -1,17 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Reflection;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using DashboardModel;
 using DashboardDemo.ViewModels;
-using C1.CollectionView;
-using C1.Xamarin.Forms.Grid;
-using C1.Xamarin.Forms.Gauge;
 using DashboardDemo.Resources;
 
 namespace DashboardDemo.Views

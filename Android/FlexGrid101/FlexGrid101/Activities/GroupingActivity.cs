@@ -5,7 +5,7 @@ using Android.Support.V7.App;
 using Android.Util;
 using Android.Views;
 using C1.Android.Grid;
-using C1.CollectionView;
+using C1.DataCollection;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +16,7 @@ namespace FlexGrid101
     [Activity(Label = "@string/GroupingTitle", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class GroupingActivity : AppCompatActivity
     {
-        private C1CollectionView<Customer> _collectionView;
+        private C1DataCollection<Customer> _dataCollection;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,8 +39,8 @@ namespace FlexGrid101
         private async Task UpdateVideos()
         {
             var data = Customer.GetCustomerList(100);
-            _collectionView = new C1CollectionView<Customer>(data);
-            await _collectionView.GroupAsync(c => c.Country);
+            _dataCollection = new C1DataCollection<Customer>(data);
+            await _dataCollection.GroupAsync(c => c.Country);
             Grid.AutoGenerateColumns = false;
             Grid.ShowOutlineBar = true;
             Grid.IsReadOnly = true;
@@ -48,17 +48,17 @@ namespace FlexGrid101
             Grid.Columns.Add(new GridColumn { Binding = "Name", Width = GridLength.Star });
             Grid.Columns.Add(new GridColumn { Binding = "OrderTotal", Width = new GridLength(TypedValue.ApplyDimension(ComplexUnitType.Dip, 110, Resources.DisplayMetrics)), Format = "C", Aggregate = GridAggregate.Sum, HorizontalAlignment = Android.Views.GravityFlags.Right, HeaderHorizontalAlignment = Android.Views.GravityFlags.Right });
             Grid.GroupHeaderFormat = Resources.GetString(Resource.String.GroupHeaderFormat);
-            Grid.ItemsSource = _collectionView;
-            _collectionView.SortChanged += OnSortChanged;
+            Grid.ItemsSource = _dataCollection;
+            _dataCollection.SortChanged += OnSortChanged;
             UpdateSortButton();
         }
 
         private async void OnSortClicked(object sender, EventArgs e)
         {
-            if (_collectionView != null)
+            if (_dataCollection != null)
             {
                 var direction = GetCurrentSortDirection();
-                await _collectionView.SortAsync(x => x.Name, direction == SortDirection.Ascending ? SortDirection.Descending : SortDirection.Ascending);
+                await _dataCollection.SortAsync(x => x.Name, direction == SortDirection.Ascending ? SortDirection.Descending : SortDirection.Ascending);
             }
         }
 
@@ -87,7 +87,7 @@ namespace FlexGrid101
 
         private SortDirection GetCurrentSortDirection()
         {
-            var sort = _collectionView.SortDescriptions.FirstOrDefault(sd => sd.SortPath == "Name");
+            var sort = _dataCollection.SortDescriptions.FirstOrDefault(sd => sd.SortPath == "Name");
             return sort != null ? sort.Direction : SortDirection.Descending;
         }
 

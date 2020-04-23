@@ -1,17 +1,14 @@
 using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
 using C1.Android.Chart;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 using C1.Android.Core;
-using C1.CollectionView;
+using C1.DataCollection;
 
 namespace FlexChart101.Pie
 {
@@ -25,7 +22,7 @@ namespace FlexChart101.Pie
         private float mOffsetValue = 0.0f;
         private Spinner mSelectionSpinner;
 
-        C1CollectionView<BindObject> data;
+        C1DataCollection<BindObject> data;
         const string TITLE = "Mobile/Tablet Browser Market Share";
 
         double[] safari = new double[] { 41.54, 48.35, 57.48, 61.67 };
@@ -62,7 +59,7 @@ namespace FlexChart101.Pie
             list.Add(new BindObject("Opera", opera_mini[0] ));
             list.Add(new BindObject("IE", internet_explorer[0] ));
             list.Add(new BindObject("Other", other[0] ));
-            data = new C1CollectionView<BindObject>(list);
+            data = new C1DataCollection<BindObject>(list);
             
             // set the binding of FlexPie to variables of BindObject
             mFlexPie.BindingName = "Name";

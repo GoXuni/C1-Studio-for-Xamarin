@@ -1,4 +1,4 @@
-﻿using C1.CollectionView;
+﻿using C1.DataCollection;
 using C1.iOS.Grid;
 using Foundation;
 using System;
@@ -19,7 +19,8 @@ namespace FlexGrid101
             base.ViewDidLoad();
 
             var data = Customer.GetCustomerList(100);
-            Grid.ItemsSource = new CustomCollectionView<Customer>(data);
+            Grid.AutoGeneratingColumn += (s, e) => { e.Column.MinWidth = 110; e.Column.Width = GridLength.Star; };
+            Grid.ItemsSource = new CustomDataCollection<Customer>(data);
             Grid.NewRowPosition = GridNewRowPosition.Top;
             Grid.NewRowPlaceholder = NSBundle.MainBundle.GetLocalizedString("Click here to add a new row", "");
             Grid.AllowDragging = GridAllowDragging.Both;
@@ -33,10 +34,10 @@ namespace FlexGrid101
         }
     }
 
-    public class CustomCollectionView<T> : C1CollectionView<T>
+    public class CustomDataCollection<T> : C1DataCollection<T>
         where T : class
     {
-        public CustomCollectionView(IEnumerable source)
+        public CustomDataCollection(IEnumerable source)
             : base(source)
         {
         }

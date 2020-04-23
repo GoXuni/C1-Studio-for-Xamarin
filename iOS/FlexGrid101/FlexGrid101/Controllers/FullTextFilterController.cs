@@ -17,9 +17,10 @@ namespace FlexGrid101
             base.ViewDidLoad();
             var data = Customer.GetCustomerList(100);
             Filter.Text = "Rich";
+            Grid.AutoGeneratingColumn += (s, e) => { e.Column.MinWidth = 110; e.Column.Width = GridLength.Star; };
             Grid.ItemsSource = data;
             fullTextFilter = new FullTextFilterBehavior();
-            fullTextFilter.HighlightColor = UIColor.Blue;
+            fullTextFilter.HighlightColor = UIDevice.CurrentDevice.CheckSystemVersion(13, 0) ? UIColor.SystemBlueColor : UIColor.Blue;
             fullTextFilter.Attach(Grid);
             fullTextFilter.FilterEntry = Filter;
             fullTextFilter.MatchNumbers = true;
@@ -38,7 +39,7 @@ namespace FlexGrid101
             MatchCaseCheckBox.RemoveFromSuperview();
             MatchWholeWordCheckBox.RemoveFromSuperview();
             ReleaseDesignerOutlets();
-        }       
+        }
 
         void OnMatchCaseCheckBoxChecked(object sender, EventArgs e)
         {

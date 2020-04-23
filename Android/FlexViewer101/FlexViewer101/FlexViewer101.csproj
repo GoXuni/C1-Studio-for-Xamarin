@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +13,7 @@
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -57,16 +57,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Android.Core">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Android.Viewer">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="GrapeCity.Documents.Pdf">
-      <Version>2.2.0.310</Version>
+      <Version>3.0.0.420</Version>
     </PackageReference>
     <PackageReference Include="GrapeCity.Documents.Pdf.Resources">
-      <Version>2.2.0.310</Version>
+      <Version>3.0.0.420</Version>
     </PackageReference>
     <PackageReference Include="System.Memory">
       <Version>4.5.3</Version>
@@ -74,11 +74,16 @@
     <PackageReference Include="Xamarin.Android.Support.Constraint.Layout">
       <Version>1.1.2</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Plugin.FilePicker">
+      <Version>2.1.34</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\CustomizeAppearanceActivity.cs" />
+    <Compile Include="Activities\CustomizeHamburgerMenuActivity.cs" />
+    <Compile Include="Activities\CustomizeToolbarActivity.cs" />
     <Compile Include="Activities\ExportActivity.cs" />
     <Compile Include="Activities\GettingStartedActivity.cs" />
     <Compile Include="Activities\MainActivity.cs" />
@@ -235,6 +240,25 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CustomizeHamburgerMenu.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CustomizeToolbar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\toolbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\hamburger.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

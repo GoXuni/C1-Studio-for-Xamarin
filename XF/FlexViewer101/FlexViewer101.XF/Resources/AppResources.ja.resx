@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="GettingStartedDescription" xml:space="preserve">
-    <value>FlexViewer にドキュメントを表示</value>
+    <value>FlexViewer にドキュメントを表示します。</value>
   </data>
   <data name="GettingStartedTitle" xml:space="preserve">
     <value>FlexViewer の基本機能</value>
   </data>
   <data name="PdfBrowserDescription" xml:space="preserve">
-    <value>PDF ファイルをナビゲート</value>
+    <value>PDF ファイルをナビゲートします。</value>
   </data>
   <data name="PdfBrowserTitle" xml:space="preserve">
     <value>PDF ファイルのブラウズ</value>
   </data>
   <data name="CustomizeAppearanceDescription" xml:space="preserve">
-    <value>FlexViewer の外観を変更</value>
+    <value>FlexViewer の外観を変更します。</value>
   </data>
   <data name="CustomizeAppearanceTitle" xml:space="preserve">
     <value>外観のカスタマイズ</value>
@@ -139,9 +139,39 @@
     <value>ブラウズ</value>
   </data>
   <data name="ExportDescription" xml:space="preserve">
-    <value>PdfとImageにエクスポートする方法を示します。</value>
+    <value>Pdf や画像としてエクスポートする方法を示します。</value>
   </data>
   <data name="ExportTitle" xml:space="preserve">
     <value>エクスポート</value>
+  </data>
+  <data name="CustomizeHamburgerDescription" xml:space="preserve">
+    <value>ハンバーガーメニューをカスタマイズする方法を示します。</value>
+  </data>
+  <data name="CustomizeHamburgerTitle" xml:space="preserve">
+    <value>ハンバーガーメニューのカスタマイズ</value>
+  </data>
+  <data name="CustomizeToolbarDescription" xml:space="preserve">
+    <value>ツールバーをカスタマイズする方法を示します。</value>
+  </data>
+  <data name="CustomizeToolbarTitle" xml:space="preserve">
+    <value>ツールバーのカスタマイズ</value>
+  </data>
+  <data name="ChangeBackGround" xml:space="preserve">
+    <value>背景色の変更</value>
+  </data>
+  <data name="FileSaved" xml:space="preserve">
+    <value>ファイルが保存されました</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Save As" xml:space="preserve">
+    <value>形式を指定して保存</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>保存されました</value>
+  </data>
+  <data name="ExportBmp" xml:space="preserve">
+    <value>エクスポートbitmap</value>
   </data>
 </root>

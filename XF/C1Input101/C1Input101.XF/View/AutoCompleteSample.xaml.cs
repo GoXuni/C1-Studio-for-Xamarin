@@ -9,7 +9,7 @@ namespace C1Input101
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AutoCompleteSample
-    {     
+    {
         public AutoCompleteSample()
         {
             Countries = Country.GetCountries();
@@ -60,10 +60,15 @@ namespace C1Input101
             var deferal = e.GetDeferral();
             try
             {
-                var collectionView = new YouTubeCollectionView();
+                var collectionView = new YouTubeDataCollection();
                 await collectionView.SearchAsync(e.FilterString);
+                autoComplete.SelectedIndex = -1;
                 autoComplete.ItemsSource = collectionView;
                 e.Cancel = true;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
             finally
             {
@@ -76,7 +81,7 @@ namespace C1Input101
             this.HighlightAC.AutoCompleteMode = (AutoCompleteMode)Enum.Parse(typeof(AutoCompleteMode), this.ACMPicker.Items[this.ACMPicker.SelectedIndex]);
             this.CustomAC.AutoCompleteMode = (AutoCompleteMode)Enum.Parse(typeof(AutoCompleteMode), this.ACMPicker.Items[this.ACMPicker.SelectedIndex]);
             this.DynamicAC.AutoCompleteMode = (AutoCompleteMode)Enum.Parse(typeof(AutoCompleteMode), this.ACMPicker.Items[this.ACMPicker.SelectedIndex]);
-            
+
         }
 
         private void ClearSwitch_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)

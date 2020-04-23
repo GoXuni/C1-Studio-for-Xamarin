@@ -236,7 +236,7 @@ SelectedItemPosition: Specifies the position of the selected sunburst slice. The
     <value>Shows a simple sunburst chart with tooltips.</value>
   </data>
   <data name="GroupDescriptionShort" xml:space="preserve">
-    <value>Shows Sunburst chart with grouped CollectionView.</value>
+    <value>Shows Sunburst chart with grouped DataCollection.</value>
   </data>
   <data name="LegendTitleDescriptionShort" xml:space="preserve">
     <value>Shows basic header, footer, and legend positioning.</value>

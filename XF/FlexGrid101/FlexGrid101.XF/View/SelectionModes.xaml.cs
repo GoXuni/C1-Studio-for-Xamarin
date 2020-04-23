@@ -15,6 +15,7 @@ namespace FlexGrid101
 
             this.Title = AppResources.SelectionModesTitle;
             selectionMode.Title = AppResources.SelectionModesTitle;
+            lblMarquee.Text = AppResources.ShowMarquee;
 
             foreach (var value in Enum.GetValues(typeof(GridSelectionMode)))
             {

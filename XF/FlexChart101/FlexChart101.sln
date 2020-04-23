@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexChart101.Android", "FlexChart101.Android\FlexChart101.Android.csproj", "{7DA3936F-C51F-4ED9-81BB-ADA3637B1C23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexChart101.iOS", "FlexChart101.iOS\FlexChart101.iOS.csproj", "{0511235C-A9AD-4389-9D66-66FA1C745DD4}"

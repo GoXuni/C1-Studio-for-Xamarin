@@ -1,4 +1,4 @@
-﻿using C1.CollectionView;
+﻿using C1.DataCollection;
 using C1.Xamarin.Forms.Core;
 using C1.Xamarin.Forms.Grid;
 using FlexGrid101.Resources;
@@ -24,7 +24,7 @@ namespace FlexGrid101
             //sortIconPosition.SelectedIndex = sortIconPosition.Items.IndexOf(grid.SortIconPosition.ToString());
 
             sortIconTemplate.Title = AppResources.SortIconTemplate;
-            foreach (var value in new string[] { nameof(C1IconTemplate.TriangleNorth), nameof(C1IconTemplate.ChevronUp), nameof(C1IconTemplate.ArrowUp) })
+            foreach (var value in new string[] { nameof(C1IconTemplate.TriangleNorth), nameof(C1IconTemplate.ChevronUp), nameof(C1IconTemplate.ArrowUp), nameof(C1IconTemplate.TriangleUp) })
             {
                 sortIconTemplate.Items.Add(value);
             }
@@ -35,7 +35,7 @@ namespace FlexGrid101
 
         private async void LoadData()
         {
-            var cv = new C1CollectionView<Customer>(Customer.GetCustomerList(100));
+            var cv = new C1DataCollection<Customer>(Customer.GetCustomerList(100));
             await cv.SortAsync(new SortDescription("FirstName", SortDirection.Ascending), new SortDescription("LastName", SortDirection.Descending));
             grid.ItemsSource = cv;
         }
@@ -57,6 +57,9 @@ namespace FlexGrid101
                     break;
                 case 2:
                     grid.SortAscendingIconTemplate = C1IconTemplate.ArrowUp;
+                    break;
+                case 3:
+                    grid.SortAscendingIconTemplate = C1IconTemplate.TriangleUp;
                     break;
             }
         }

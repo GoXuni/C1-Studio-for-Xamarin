@@ -39,6 +39,7 @@ namespace FlexGrid101
             var data = await FileSystem.ReadFileFromDisk(FILENAME);
 
             var items = Customer.GetCustomerList(100);
+            Grid.AutoGeneratingColumn += (s, e) => { e.Column.MinWidth = 110; e.Column.Width = GridLength.Star; };
             Grid.ItemsSource = items;
 
             if (!string.IsNullOrWhiteSpace(data))

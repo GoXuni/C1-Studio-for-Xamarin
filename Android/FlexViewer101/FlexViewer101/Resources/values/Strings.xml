@@ -9,4 +9,15 @@
   <string name="CustomizeAppearanceDescription">Modify the appearance of FlexViewer.</string>
   <string name="ExportTitle">Export</string>
   <string name="ExportDescription">Shows how to export to Pdf and Image.</string>
+  <string name="CustomizeHamburgerMenuTitle">Customize HamburgerMenu</string>
+  <string name="CustomizeHamburgerMenuDescription">Shows how to customize HamburgerMenu.</string>
+  <string name="CustomizeToolbarTitle">Customize Toolbar</string>
+  <string name="CustomizeToolbarDescription">Shows how to customize toolbar.</string>
+  <string name="SearchPlaceholderText">Enter text to search</string>
+  <string name="ChangeBackground">Change Background</string>
+  <string name="FileSavedTo">File has been saved to </string>
+  <string name="Save">Save</string>
+  <string name="SaveAs">Save As</string>
+  <string name="Saved">Saved</string>
+  <string name="ExportToBitmap">Export bitmap</string>
 </resources>

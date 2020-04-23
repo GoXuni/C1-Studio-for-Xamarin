@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using UIKit;
-using C1.CollectionView;
+using C1.DataCollection;
+using C1.iOS.Grid;
 
 namespace FlexGrid101
 {
@@ -19,6 +20,7 @@ namespace FlexGrid101
             base.ViewDidLoad();
 
             var data = Customer.GetCustomerList(100);
+            Grid.AutoGeneratingColumn += (s, e) => { e.Column.MinWidth = 110; e.Column.Width = GridLength.Star; };
             Grid.ItemsSource = data;
         }
         public override void DidReceiveMemoryWarning()
@@ -32,7 +34,7 @@ namespace FlexGrid101
             base.PrepareForSegue(segue, sender);
 
             var popupController = (segue.DestinationViewController as UINavigationController).ChildViewControllers.First() as FilterFormController;
-            var currentFilters = GetCurrentFilters(Grid.CollectionView.GetFilterExpression());
+            var currentFilters = GetCurrentFilters(Grid.DataCollection.GetFilterExpression());
             var filters = new ObservableCollection<StringFilter>();
             foreach (var column in Grid.Columns)
             {
@@ -71,7 +73,7 @@ namespace FlexGrid101
                         filters.Add(new FilterOperationExpression(filter.Field, filter.Operation, filter.Value));
                     }
                 }
-                await Grid.CollectionView.FilterAsync(FilterExpression.Combine(FilterCombination.And, filters.ToArray()));
+                await Grid.DataCollection.FilterAsync(FilterExpression.Combine(FilterCombination.And, filters.ToArray()));
             }
         }
 
@@ -97,7 +99,7 @@ namespace FlexGrid101
 
         async partial void UndoFilterButton_Activated(UIBarButtonItem sender)
         {
-            await Grid.CollectionView.RemoveFilterAsync();
+            await Grid.DataCollection.RemoveFilterAsync();
         }
     }
 }

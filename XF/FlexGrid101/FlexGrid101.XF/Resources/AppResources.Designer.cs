@@ -19,7 +19,7 @@ namespace FlexGrid101.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class AppResources {
@@ -367,7 +367,7 @@ namespace FlexGrid101.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shows how to export to CSV, text, and HTML.
+        ///   Looks up a localized string similar to Shows how to export to CSV, text, and HTML..
         /// </summary>
         public static string ExportDescription {
             get {
@@ -408,6 +408,24 @@ namespace FlexGrid101.Resources {
         public static string FilterPlaceholderText {
             get {
                 return ResourceManager.GetString("FilterPlaceholderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filters the data by columns through GridFilterRow..
+        /// </summary>
+        public static string FilterRowDescription {
+            get {
+                return ResourceManager.GetString("FilterRowDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filter Row.
+        /// </summary>
+        public static string FilterRowTitle {
+            get {
+                return ResourceManager.GetString("FilterRowTitle", resourceCulture);
             }
         }
         
@@ -592,11 +610,47 @@ namespace FlexGrid101.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Address.
+        /// </summary>
+        public static string RowDetailsAddress {
+            get {
+                return ResourceManager.GetString("RowDetailsAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City.
+        /// </summary>
+        public static string RowDetailsCity {
+            get {
+                return ResourceManager.GetString("RowDetailsCity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country.
+        /// </summary>
+        public static string RowDetailsCountry {
+            get {
+                return ResourceManager.GetString("RowDetailsCountry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Expand and collapse row details..
         /// </summary>
         public static string RowDetailsDescription {
             get {
                 return ResourceManager.GetString("RowDetailsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Postal Code.
+        /// </summary>
+        public static string RowDetailsPostalCode {
+            get {
+                return ResourceManager.GetString("RowDetailsPostalCode", resourceCulture);
             }
         }
         

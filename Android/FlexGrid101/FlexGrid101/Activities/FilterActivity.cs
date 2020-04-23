@@ -6,7 +6,7 @@ using Android.Runtime;
 using Android.Support.V7.App;
 using Android.Views;
 using C1.Android.Grid;
-using C1.CollectionView;
+using C1.DataCollection;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -80,7 +80,7 @@ namespace FlexGrid101
                 {
                     filter.Value = "";
                 }
-                var task = Grid.CollectionView.RemoveFilterAsync();
+                var task = Grid.DataCollection.RemoveFilterAsync();
             }
             else if (item.ItemId == global::Android.Resource.Id.Home)
             {
@@ -104,31 +104,11 @@ namespace FlexGrid101
                             filters.Add(new FilterOperationExpression(filter.Field, filter.Operation, filter.Value));
                         }
                     }
-                    await Grid.CollectionView.FilterAsync(FilterExpression.Combine(FilterCombination.And, filters.ToArray()));
+                    await Grid.DataCollection.FilterAsync(FilterExpression.Combine(FilterCombination.And, filters.ToArray()));
                 }
             }
             base.OnActivityResult(requestCode, resultCode, data);
         }
-
-        //private IEnumerable<FilterUnaryExpression> GetCurrentFilters(FilterExpression filterExpression)
-        //{
-        //    var uf = filterExpression as FilterUnaryExpression;
-        //    if (uf != null)
-        //        yield return uf;
-        //    var bf = filterExpression as FilterBinaryExpression;
-        //    if (bf != null)
-        //    {
-        //        foreach (var lf in GetCurrentFilters(bf.LeftExpression))
-        //        {
-        //            yield return lf;
-        //        }
-        //        foreach (var rf in GetCurrentFilters(bf.RightExpression))
-        //        {
-        //            yield return rf;
-        //        }
-        //    }
-        //    yield break;
-        //}
 
         public static string GetFilterText(StringFilter[] filters)
         {

@@ -29,6 +29,7 @@ namespace FlexGrid101
                 new Sample() { Name = AppResources.GroupingTitle, Description = AppResources.GroupingDescription, SampleViewType = 8 , Thumbnail="flexgrid_grouping.png"},
                 new Sample() { Name = AppResources.RowDetailsTitle, Description = AppResources.RowDetailsDescription, SampleViewType = 9 , Thumbnail="flexgrid_rowdetails.png"},
                 new Sample() { Name = AppResources.FilterTitle, Description = AppResources.FilterDescription, SampleViewType = 10 , Thumbnail="flexgrid_filter.png"},
+                new Sample() { Name = AppResources.FilterRowTitle, Description = AppResources.FilterRowDescription, SampleViewType = 24 , Thumbnail="flexgrid_filter.png"},
                 new Sample() { Name = AppResources.FullTextFilterTitle, Description = AppResources.FullTextFilterDescription, SampleViewType = 11 , Thumbnail="filter.png"},
                 new Sample() { Name = AppResources.ColumnLayoutTitle, Description = AppResources.ColumnLayoutDescription, SampleViewType = 12 , Thumbnail="flexgrid_columns.png"},
                 new Sample() { Name = AppResources.StarSizingTitle, Description = AppResources.StarSizingDescription, SampleViewType = 13 , Thumbnail="flexgrid_starSizing.png"},
@@ -86,6 +87,7 @@ namespace FlexGrid101
                 case 21: return new CustomSortIcon();
                 case 22: return new LiveUpdates();
                 case 23: return new Export();
+                case 24: return new FilterRow();
             }
             return null;
         }

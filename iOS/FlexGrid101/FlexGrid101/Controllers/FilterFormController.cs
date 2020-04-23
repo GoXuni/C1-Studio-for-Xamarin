@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using UIKit;
-using C1.CollectionView;
+using C1.DataCollection;
 using C1.iOS.Grid;
 
 namespace FlexGrid101

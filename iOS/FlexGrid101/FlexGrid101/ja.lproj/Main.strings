@@ -69,6 +69,10 @@
 /* Class = "UINavigationItem"; title = "New Row"; ObjectID = "FzD-yd-ezJ"; */
 "FzD-yd-ezJ.title" = "チェックリスト";
 
+/* Class = "UINavigationItem"; title = "Export"; ObjectID = "34634"; */
+"34634.title" = "エクスポート";
+
+
 //UITableView Titles
 //Getting Started
 "527.text" = "FlexGridの基本機能";
@@ -112,6 +116,8 @@
 "13724.text" = "チェックリスト";
 // custom sort icon
 "24176.text" = "カスタムソートアイコン";
+// export
+"25295.text" = "カスタムソートアイコン";
 
 
 //UITableView Descriptions
@@ -158,6 +164,9 @@
 //custom sort icon
 "24177.text" = "ヘッダー列にカスタムソートアイコンを表示";
 
+// export
+"25296.text" = "CSV、テキスト、および HTML 形式でエクスポートする方法を示します。";
+
 //UILabels for Edit FOrm
 "7271.text" = "名(First Name)";
 "7272.text" = "姓(Last Name)";
@@ -176,3 +185,7 @@
 "13069.text" = "大文字と小文字を区別";
 //Match whole word
 "13070.text" = "単語単位";
+
+//filter row
+"35325.text" = "行のフィルタリング";
+"35326.text" = "GridFilterRow を介して列でデータをフィルタリングします";

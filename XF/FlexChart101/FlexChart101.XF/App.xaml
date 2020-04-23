@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:core="clr-namespace:C1.Xamarin.Forms.Core;assembly=C1.Xamarin.Forms.Core"
              x:Class="FlexChart101.App">
     <Application.Resources>
          <ResourceDictionary>
-      <OnPlatform x:Key="TitleVisible" x:TypeArguments="x:Boolean" iOS="false" Android="false" WinPhone="true" />
+            <Style ApplyToDerivedTypes="True" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{Binding Path=BackgroundColor, Source={x:Static core:C1ThemeInfo.ApplicationTheme}}" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{Binding Path=TextColor, Source={x:Static core:C1ThemeInfo.ApplicationTheme}}" />
+            </Style>
+            <OnPlatform x:Key="TitleVisible" x:TypeArguments="x:Boolean" iOS="false" Android="false" WinPhone="true" />
     </ResourceDictionary>
     </Application.Resources>
 </Application>

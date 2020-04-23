@@ -1,4 +1,4 @@
-﻿using C1.CollectionView;
+﻿using C1.DataCollection;
 using C1.Xamarin.Forms.Grid;
 using FlexGrid101.Resources;
 using System;

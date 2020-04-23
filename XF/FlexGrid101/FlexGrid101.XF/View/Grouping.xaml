@@ -4,8 +4,7 @@
              x:Class="FlexGrid101.Grouping"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
-             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml"
-             xmlns:local="clr-namespace:FlexGrid101;assembly=FlexGrid101.Xamarin">
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml">
     <Grid>
         <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False" ShowOutlineBar="True" GridLinesVisibility="Vertical" IsReadOnly="True">
             <c1:FlexGrid.Columns>

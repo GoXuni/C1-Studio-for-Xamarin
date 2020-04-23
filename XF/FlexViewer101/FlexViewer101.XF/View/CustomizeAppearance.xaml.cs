@@ -12,25 +12,32 @@ namespace FlexViewer101
     public partial class CustomizeAppearance : ContentPage
     {
         Assembly assembly;
+        private bool onAppearingFirstTime = true;
         public CustomizeAppearance()
         {
             InitializeComponent();
             this.Title = AppResources.CustomizeAppearanceTitle;
-
+            flexViewer.ShowMenu = false;
             flexViewer.PageBackgroundColor = Color.White;
             flexViewer.BackgroundColor = Color.LightSlateGray;
             flexViewer.PageBorderColor = Color.Black;
             flexViewer.Padding = new Thickness(20, 20, 20, 20);
             flexViewer.PageSpacing = 5;
+            flexViewer.ZoomMode = FlexViewerZoomMode.PageWidth;
+            flexViewer.PageDisplayMode = PageDisplayMode.OnePage;            
         }
 
         protected override void OnAppearing()
         {
-            base.OnAppearing();
+            if (onAppearingFirstTime)
+            {
+                base.OnAppearing();
 
-            assembly = IntrospectionExtensions.GetTypeInfo(typeof(GettingStarted)).Assembly;
-            Stream stream = assembly.GetManifestResourceStream("FlexViewer101.Resources.PdfViewer.pdf");
-            flexViewer.LoadDocument(stream);
+                assembly = IntrospectionExtensions.GetTypeInfo(typeof(GettingStarted)).Assembly;
+                Stream stream = assembly.GetManifestResourceStream("FlexViewer101.Resources.PdfViewer.pdf");
+                flexViewer.LoadDocument(stream);
+                onAppearingFirstTime = false;
+            }
         }
     }
 }

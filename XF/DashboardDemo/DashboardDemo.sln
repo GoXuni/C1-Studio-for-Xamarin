@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardDemo.Android", "DashboardDemo.Android\DashboardDemo.Android.csproj", "{984080A8-6ECC-4EEF-B795-7715C6156D0F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashboardDemo.XF", "DashboardDemo.XF\DashboardDemo.XF.csproj", "{F68E4E17-5711-4821-AFFE-5D101537B83C}"

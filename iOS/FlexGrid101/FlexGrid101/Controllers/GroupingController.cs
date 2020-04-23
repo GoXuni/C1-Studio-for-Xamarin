@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using UIKit;
-using C1.CollectionView;
+using C1.DataCollection;
 using C1.iOS.Grid;
 using Foundation;
 
@@ -10,7 +10,7 @@ namespace FlexGrid101
 {
     public partial class GroupingController : UIViewController
     {
-        C1CollectionView<Customer> _collectionView;
+        C1DataCollection<Customer> _dataCollection;
 
         public GroupingController(IntPtr handle) : base(handle)
         {
@@ -20,7 +20,7 @@ namespace FlexGrid101
         {
             base.ViewDidLoad();
 
-            var task = UpdateVideos();
+            _ = UpdateVideos();
         }
         public override void DidReceiveMemoryWarning()
         {
@@ -32,24 +32,26 @@ namespace FlexGrid101
         private async Task UpdateVideos()
         {
             var data = Customer.GetCustomerList(100);
-            _collectionView = new C1CollectionView<Customer>(data);
-            await _collectionView.GroupAsync(c => c.Country);
-            Grid.AutoGenerateColumns = false;
-            Grid.Columns.Add(new GridColumn { Binding = "Active", Width = new GridLength(75) });
-            Grid.Columns.Add(new GridColumn { Binding = "Name", Width = GridLength.Star });
-            Grid.Columns.Add(new GridColumn { Binding = "OrderTotal", Width = new GridLength(110), Format = "C", Aggregate = GridAggregate.Sum, HorizontalAlignment = UIControlContentHorizontalAlignment.Right, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Right });
+            _dataCollection = new C1DataCollection<Customer>(data);
+            await _dataCollection.GroupAsync(c => c.Country);
+            using (Grid.Columns.DisableAnimations())
+            {
+                Grid.AutoGenerateColumns = false;
+                Grid.Columns.Add(new GridColumn { Binding = "Active", Width = new GridLength(75) });
+                Grid.Columns.Add(new GridColumn { Binding = "Name", Width = GridLength.Star });
+                Grid.Columns.Add(new GridColumn { Binding = "OrderTotal", Width = new GridLength(110), Format = "C", Aggregate = GridAggregate.Sum, HorizontalAlignment = UIControlContentHorizontalAlignment.Right, HeaderHorizontalAlignment = UIControlContentHorizontalAlignment.Right });
+            }
             Grid.GroupHeaderFormat = NSBundle.MainBundle.GetLocalizedString("{name}: {value} ({count} items)", "");
-            Grid.ItemsSource = _collectionView;
-            _collectionView.SortChanged += OnSortChanged;
-            UpdateSortButton();
+            Grid.ItemsSource = _dataCollection;
+            _dataCollection.SortChanged += OnSortChanged;
         }
 
         private async void OnSortClicked(object sender, EventArgs e)
         {
-            if (_collectionView != null)
+            if (_dataCollection != null)
             {
                 var direction = GetCurrentSortDirection();
-                await _collectionView.SortAsync(x => x.Name, direction == SortDirection.Ascending ? SortDirection.Descending : SortDirection.Ascending);
+                await _dataCollection.SortAsync(x => x.Name, direction == SortDirection.Ascending ? SortDirection.Descending : SortDirection.Ascending);
             }
         }
 
@@ -60,17 +62,11 @@ namespace FlexGrid101
 
         void OnSortChanged(object sender, EventArgs e)
         {
-            UpdateSortButton();
-        }
-
-        private void UpdateSortButton()
-        {
-            var direction = GetCurrentSortDirection();
         }
 
         private SortDirection GetCurrentSortDirection()
         {
-            var sort = _collectionView.SortDescriptions.FirstOrDefault(sd => sd.SortPath == "Name");
+            var sort = _dataCollection.SortDescriptions.FirstOrDefault(sd => sd.SortPath == "Name");
             return sort != null ? sort.Direction : SortDirection.Descending;
         }
 

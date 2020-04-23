@@ -89,22 +89,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.iOS.Core">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Viewer">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Viewer">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Viewer">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="System.ComponentModel" Version="4.3.0" />
     <PackageReference Include="System.Memory">
@@ -112,7 +112,7 @@
     </PackageReference>
     <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.482894" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />

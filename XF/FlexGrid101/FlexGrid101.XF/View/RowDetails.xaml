@@ -4,6 +4,7 @@
              x:Class="FlexGrid101.RowDetails"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true"
+             xmlns:resx="clr-namespace:FlexGrid101.Resources"
              xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml" 
              Padding="0,5,0,0">
     <Grid RowSpacing="0">
@@ -36,13 +37,13 @@
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <Label Text="Country:"/>
+                            <Label Text="{x:Static resx:AppResources.RowDetailsCountry}"/>
                             <Label Text="{Binding Country}" Grid.Column="1"/>
-                            <Label Text="City:" Grid.Row="1"/>
+                            <Label Text="{x:Static resx:AppResources.RowDetailsCity}" Grid.Row="1"/>
                             <Label Text="{Binding City}" Grid.Row="1" Grid.Column="1"/>
-                            <Label Text="Address:" Grid.Row="2"/>
+                            <Label Text="{x:Static resx:AppResources.RowDetailsAddress}" Grid.Row="2"/>
                             <Label Text="{Binding Address}" Grid.Row="2" Grid.Column="1"/>
-                            <Label Text="PostalCode:" Grid.Row="3"/>
+                            <Label Text="{x:Static resx:AppResources.RowDetailsPostalCode}" Grid.Row="3"/>
                             <Label Text="{Binding PostalCode}" Grid.Row="3" Grid.Column="1"/>
                         </Grid>
                     </DataTemplate>

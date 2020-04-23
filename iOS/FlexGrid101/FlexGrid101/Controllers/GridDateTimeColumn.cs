@@ -82,10 +82,8 @@ namespace FlexGrid101
 
         public static NSDate DateTimeToNSDate(DateTime date)
         {
-            DateTime reference = TimeZone.CurrentTimeZone.ToLocalTime(
-                new DateTime(2001, 1, 1, 0, 0, 0));
-            return NSDate.FromTimeIntervalSinceReferenceDate(
-                (date - reference).TotalSeconds);
+            DateTime reference = TimeZoneInfo.ConvertTime(new DateTime(2001, 1, 1, 0, 0, 0), TimeZoneInfo.Local);
+            return NSDate.FromTimeIntervalSinceReferenceDate((date - reference).TotalSeconds);
         }
 
         public static DateTime NSDateToDateTime(NSDate date)

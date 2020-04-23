@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
-
 using DashboardModel;
-using C1.CollectionView;
+using C1.DataCollection;
 
 namespace DashboardDemo.ViewModels
 {
@@ -21,7 +18,7 @@ namespace DashboardDemo.ViewModels
             _taskType = FilterTaskType.All;
         }
 
-        public C1CollectionView<CampainTaskItem> Tasks
+        public C1DataCollection<CampainTaskItem> Tasks
         {
             get
             {

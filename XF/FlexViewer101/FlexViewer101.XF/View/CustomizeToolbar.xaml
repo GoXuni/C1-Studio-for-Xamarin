@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexViewer101.CustomizeToolbar"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             xmlns:c1="http://schemas.grapecity.com/xf/2019/xaml">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+                <SearchBar HeightRequest="40" x:Name="searchBar"></SearchBar>
+                <c1:C1ToggleButton  WidthRequest="40"  x:Name="btnPrevious"></c1:C1ToggleButton>
+                <c1:C1ToggleButton  WidthRequest="40"  x:Name="btnNext"></c1:C1ToggleButton>
+            </StackLayout>
+            <c1:FlexViewer VerticalOptions="FillAndExpand" x:Name="flexViewer"/>
+        </StackLayout>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnOpen" Clicked="OnOpen" Order="Primary" Priority="0">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="UWP" Value = "Assets/AppBar/open.png" />
+                    <On Platform="Android" Value = "ic_action_open.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+        <ToolbarItem x:Name="btnSearch" Clicked="OnSearch" Order="Primary" Priority="1">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="UWP" Value = "Assets/AppBar/search.png" />
+                    <On Platform="Android" Value = "ic_action_search.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+</ContentPage>

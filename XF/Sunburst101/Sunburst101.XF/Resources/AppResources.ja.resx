@@ -178,7 +178,7 @@ The example allows you to see what hanppens when you change these properties. Al
     <comment>The sample shows how to use the Sunburst chart with grouped CollectionView.</comment>
   </data>
   <data name="GroupDescriptionShort" xml:space="preserve">
-    <value>グループ化されたCollectionViewを持つSunburstチャートを表示します。</value>
+    <value>グループ化されたDataCollectionを持つSunburstチャートを表示します。</value>
     <comment>Shows Sunburst chart with grouped CollectionView.</comment>
   </data>
   <data name="GroupName" xml:space="preserve">

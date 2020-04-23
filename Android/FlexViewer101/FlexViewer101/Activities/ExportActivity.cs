@@ -34,6 +34,7 @@ namespace FlexViewer101
             // Create your application here
 
             flexViewer = FindViewById<FlexViewer>(Resource.Id.FlexViewer);
+            flexViewer.ShowMenu = false;
             using (var stream = Assets.Open("Simple List.pdf", Android.Content.Res.Access.Streaming))
             {
                 using (var sr = new StreamReader(stream))
@@ -89,8 +90,8 @@ namespace FlexViewer101
                 if (type != "Cancel")
                 {
                     Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(this);
-                    alert.SetTitle("Saved");
-                    alert.SetMessage("File has been saved to: " + PathAndName);
+                    alert.SetTitle(GetString(Resource.String.Saved));
+                    alert.SetMessage(GetString(Resource.String.FileSavedTo) + PathAndName);
                     alert.SetPositiveButton("OK", (senderAlert, args) => { });
                     Dialog dialog = alert.Create();
                     dialog.Show();

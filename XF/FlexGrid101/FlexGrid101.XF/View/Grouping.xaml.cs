@@ -1,4 +1,4 @@
-﻿using C1.CollectionView;
+﻿using C1.DataCollection;
 using FlexGrid101.Resources;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -9,7 +9,7 @@ namespace FlexGrid101
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Grouping : ContentPage
     {
-        C1CollectionView<Customer> _collectionView;
+        C1DataCollection<Customer> _dataCollection;
         public Grouping()
         {
             InitializeComponent();
@@ -22,9 +22,9 @@ namespace FlexGrid101
         private async Task UpdateVideos()
         {
             var data = Customer.GetCustomerList(100);
-            _collectionView = new C1CollectionView<Customer>(data);
-            await _collectionView.GroupAsync(c => c.Country);          
-            grid.ItemsSource = _collectionView;
+            _dataCollection = new C1DataCollection<Customer>(data);
+            await _dataCollection.GroupAsync(c => c.Country);          
+            grid.ItemsSource = _dataCollection;
             grid.MinColumnWidth = 85;
         }
     } 

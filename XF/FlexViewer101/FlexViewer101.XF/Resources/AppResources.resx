@@ -144,4 +144,34 @@
   <data name="ExportTitle" xml:space="preserve">
     <value>Export</value>
   </data>
+  <data name="CustomizeHamburgerDescription" xml:space="preserve">
+    <value>Show how to customize hamburger menu</value>
+  </data>
+  <data name="CustomizeHamburgerTitle" xml:space="preserve">
+    <value>Customize Hamburger Menu</value>
+  </data>
+  <data name="CustomizeToolbarDescription" xml:space="preserve">
+    <value>Shows how to customize toolbar</value>
+  </data>
+  <data name="CustomizeToolbarTitle" xml:space="preserve">
+    <value>Customize Toolbar</value>
+  </data>
+  <data name="ChangeBackGround" xml:space="preserve">
+    <value>Change Background</value>
+  </data>
+  <data name="FileSaved" xml:space="preserve">
+    <value>File has been saved to </value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Save As" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="ExportBmp" xml:space="preserve">
+    <value>Export to bitmap</value>
+  </data>
 </root>

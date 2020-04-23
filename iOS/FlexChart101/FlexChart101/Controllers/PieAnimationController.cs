@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using UIKit;
-using CoreGraphics;
 using C1.iOS.Chart;
-using System.Collections.Generic;
 using C1.iOS.Core;
-using C1.CollectionView;
+using C1.DataCollection;
 using Foundation;
 
 namespace FlexChart101.Controllers
@@ -62,7 +59,7 @@ namespace FlexChart101.Controllers
         }
 
 
-        C1CollectionView<MyData> data;
+        C1DataCollection<MyData> data;
         const string TITLE = "Mobile/Tablet Browser Market Share";
 
         double[] safari = new double[] { 41.54, 48.35, 57.48, 61.67 };
@@ -96,7 +93,7 @@ namespace FlexChart101.Controllers
             list.Add(new MyData { Label = "IE", Value = internet_explorer[0] });
             list.Add(new MyData { Label = "Other", Value = other[0] });
 
-            data = new C1CollectionView<MyData>(list);
+            data = new C1DataCollection<MyData>(list);
 
             // set flexPie properties
             this.flexPie.ItemsSource = data;

@@ -7,9 +7,6 @@
              x:Class="FlexChart101.DataLabelSample">
     <StackLayout HorizontalOptions="FillAndExpand">
         <Grid Padding="10">
-            <Grid.BackgroundColor>
-                <OnPlatform x:TypeArguments="Color" iOS="#F1F1F1" />
-            </Grid.BackgroundColor>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>

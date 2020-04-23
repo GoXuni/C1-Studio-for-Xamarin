@@ -12,18 +12,26 @@ namespace FlexViewer101
     public partial class GettingStarted : ContentPage
     {
         Assembly assembly;
+        private bool onAppearingFirstTime = true;
         public GettingStarted()
         {
             InitializeComponent();
-            this.Title = AppResources.GettingStartedTitle;   
+            this.Title = AppResources.GettingStartedTitle;
+            flexViewer.ZoomMode = FlexViewerZoomMode.PageWidth;
+            flexViewer.PageDisplayMode = PageDisplayMode.OnePage;
+            flexViewer.ShowMenu = false;
         }
 
         protected override void OnAppearing()
         {
-            base.OnAppearing();
-            assembly = IntrospectionExtensions.GetTypeInfo(typeof(GettingStarted)).Assembly;
-            Stream stream = assembly.GetManifestResourceStream("FlexViewer101.Resources.DefaultDocument.pdf");
-            flexViewer.LoadDocument(stream);
+            if (onAppearingFirstTime == true)
+            {
+                base.OnAppearing();
+                assembly = IntrospectionExtensions.GetTypeInfo(typeof(GettingStarted)).Assembly;
+                Stream stream = assembly.GetManifestResourceStream("FlexViewer101.Resources.DefaultDocument.pdf");
+                flexViewer.LoadDocument(stream);
+                onAppearingFirstTime = false;
+            }
         }
     }
 }

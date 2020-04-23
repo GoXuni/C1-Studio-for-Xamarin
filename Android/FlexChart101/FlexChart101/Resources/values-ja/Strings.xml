@@ -176,7 +176,6 @@
   <string name="legend_and_titles">円形チャートの凡例とタイトル</string>
   <string name="selection">円形チャートの選択</string>
   <string name="pietheming">円形チャートのテーマ</string>
-  <string name="snapshot">画像として保存</string>
   <string name="update_animation">アニメーション</string>
   <string name="data_labels">円形チャートのデータラベル</string>
   <string name="custom_tooltip">カスタムツールチップ</string>
@@ -186,7 +185,6 @@
   <string name="selection_desc">選択アニメーション、オフセットなど</string>
   <string name="theming_desc_desc">使用可能なパレットを表示</string>
   <string name="snapshot_desc">円形チャートを画像として保存する方法</string>
-  <string name="snapshotStored">画像をデバイスに保存しました</string>
   <string name="update_animation_desc">ロードおよび更新アニメーションモード</string>
   <string name="data_labels_desc">静的なデータラベルを表示</string>
   <string name="custom_tooltip_desc">カスタマイズされたツールチップを表示</string>
@@ -205,14 +203,12 @@
   <string name="position">位置</string>
   <string name="animated">アニメーション効果を適用</string>
   <string name="animation_mode">ロード時のアニメーションモード</string>
-  <string name="actionSnapshot">画像を取得</string>
   <string name="button2015">2015</string>
   <string name="button2014">2014</string>
   <string name="button2013">2013</string>
   <string name="button2012">2012</string>
   <string name="BinWidth">ビンの幅</string>
   <string name="permissionDenied">ユーザーによってアクセス許可が拒否されました。</string>
-  <string name="positive_button">OK</string>
 
   <string-array name="legend_spinner_values">
     <item>表示しない(None)</item>

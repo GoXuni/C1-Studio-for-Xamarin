@@ -1,4 +1,4 @@
-using C1.CollectionView;
+using C1.DataCollection;
 using C1.iOS.Core;
 using C1.iOS.Grid;
 using CoreGraphics;
@@ -60,6 +60,7 @@ namespace FlexGrid101
             Grid.AllowResizing = GridAllowResizing.Both;
             //Use together with AllowResizing and AllowDragging to avoid gesture conflicts in the edge of the screen.
             NavigationController.InteractivePopGestureRecognizer.Enabled = false;
+            Grid.AutoGeneratingColumn += (s, e) => { e.Column.MinWidth = 110; e.Column.Width = GridLength.Star; };
             LoadData();
         }
         public override void DidReceiveMemoryWarning()
@@ -70,9 +71,9 @@ namespace FlexGrid101
         }
         private async void LoadData()
         {
-            var cv = new C1CollectionView<Customer>(Customer.GetCustomerList(100));
-            await cv.SortAsync(new SortDescription("FirstName", SortDirection.Ascending), new SortDescription("LastName", SortDirection.Descending));
-            Grid.ItemsSource = cv;
+            var dataCollection = new C1DataCollection<Customer>(Customer.GetCustomerList(100));
+            await dataCollection.SortAsync(new SortDescription("FirstName", SortDirection.Ascending), new SortDescription("LastName", SortDirection.Descending));
+            Grid.ItemsSource = dataCollection;
             Grid.SortAscendingIconTemplate = new C1IconTemplate(() => new C1BitmapIcon()
             {
                 Source = UIImage.FromBundle("arrow_up")

@@ -42,6 +42,7 @@ namespace FlexGrid101
             };
 
             var data = Customer.GetCustomerList(100);
+            Grid.AutoGeneratingColumn += (s, e) => { e.Column.MinWidth = 110; e.Column.Width = GridLength.Star; };
             Grid.ItemsSource = data;
             Grid.AllowResizing = GridAllowResizing.Both;
             Grid.SelectionChanged += OnSelectionChanged;

@@ -15,7 +15,7 @@ namespace FlexViewer101.Controllers
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
+            Viewer.ShowMenu = false;
             // Customize Appearance
             Viewer.PageBackgroundColor = UIColor.White;
             Viewer.BackgroundColor = UIColor.LightGray;

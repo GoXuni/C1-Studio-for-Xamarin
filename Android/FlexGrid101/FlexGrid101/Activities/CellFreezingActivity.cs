@@ -26,8 +26,15 @@ namespace FlexGrid101
 
             var data = Customer.GetCustomerList(100);
             grid.AllowMerging = GridAllowMerging.Cells;
+            grid.AutoGenerateColumns = false;
+            grid.Columns.Add(new GridColumn { Binding = "Name" });
+            grid.Columns.Add(new GridColumn { Binding = "Address" });
+            grid.Columns.Add(new GridColumn { Binding = "City" });
+            grid.Columns.Add(new GridColumn { Binding = "Country", AllowMerging = true });
+            grid.Columns.Add(new GridColumn { Binding = "PostalCode" });
+            grid.Columns.Add(new GridColumn { Binding = "Email" });
+            grid.Columns.Add(new GridColumn { Binding = "LastOrderDate" });
             grid.ItemsSource = data;
-            grid.Columns["Country"].AllowMerging = true;
         }
         public override bool OnOptionsItemSelected(IMenuItem item)
         {

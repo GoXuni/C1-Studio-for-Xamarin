@@ -19,6 +19,7 @@ namespace FlexGrid101
             base.ViewDidLoad();
 
             var data = Customer.GetCustomerList(100);
+            Grid.AutoGeneratingColumn += (s, e) => { e.Column.MinWidth = 110; e.Column.Width = GridLength.Star; };
             Grid.ItemsSource = data;
             Grid.SelectionChanged += OnSelectionChanged;
             Grid.CellDoubleTapped += OnCellDoubleTapped;
@@ -51,8 +52,9 @@ namespace FlexGrid101
             }
             else
             {
-                var alert = new UIAlertView("", Foundation.NSBundle.MainBundle.GetLocalizedString("Please select a row first or double-tap the row directly.", ""), null, "OK");
-                alert.Show();
+                var alert = UIAlertController.Create("", Foundation.NSBundle.MainBundle.GetLocalizedString("Please select a row first or double-tap the row directly.", ""), UIAlertControllerStyle.Alert);
+                alert.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, a => { }));
+                PresentViewController(alert, true, () => { });
             }
         }
 
@@ -67,7 +69,6 @@ namespace FlexGrid101
         [Action("CloseEditingForm:")]
         public void CloseEditingForm(UIStoryboardSegue segue)
         {
-            var popupController = segue.SourceViewController as EditingFormController;
         }
     }
 }

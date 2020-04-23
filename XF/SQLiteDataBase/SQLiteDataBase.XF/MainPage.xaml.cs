@@ -1,5 +1,5 @@
-﻿using C1.CollectionView;
-using C1.CollectionView.EntityFramework;
+﻿using C1.DataCollection;
+using C1.DataCollection.EntityFrameworkCore;
 using C1.Xamarin.Forms.Grid;
 using Microsoft.Data.Sqlite;
 using SQLiteDataBase.Resources;
@@ -47,7 +47,7 @@ namespace SQLiteDataBase
                 }
                 message.IsVisible = false;
                 #endregion
-                var cv = new EntityFrameworkVirtualCollectionView<Person>(db);
+                var cv = new C1EntityFrameworkCoreVirtualDataCollection<Person>(db);
                 grid.ItemsSource = cv;
             }
             catch (SqliteException) { throw; }

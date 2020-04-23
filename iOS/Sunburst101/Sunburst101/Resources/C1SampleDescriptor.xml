@@ -8,7 +8,7 @@
     </Sample>
   <Sample>
     <Title>Group Collection</Title>
-    <Description>Shows Sunburst chart with grouped CollectionView.</Description>
+    <Description>Shows Sunburst chart with grouped DataCollection.</Description>
     <Image>Images/GroupCollection.png</Image>
     <StoryboardID>FlexPie Group</StoryboardID>
   </Sample>

@@ -93,6 +93,17 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="C1.DataCollection">
+      <Version>1.0.20201.14</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Chart">
+      <Version>4.4.20201.445</Version>
+    </PackageReference>
+    <PackageReference Include="C1.iOS.Core">
+      <Version>4.4.20201.445</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="License.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -340,17 +351,6 @@
     <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="C1.CollectionView">
-      <Version>3.5.20191.378</Version>
-    </PackageReference>
-    <PackageReference Include="C1.iOS.Chart">
-      <Version>3.5.20191.378</Version>
-    </PackageReference>
-    <PackageReference Include="C1.iOS.Core">
-      <Version>3.5.20191.378</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

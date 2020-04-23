@@ -4,7 +4,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Views;
 using C1.Android.Grid;
-using C1.CollectionView;
+using C1.DataCollection;
 using System.Collections;
 using System.Threading.Tasks;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
@@ -28,7 +28,7 @@ namespace FlexGrid101
             var grid = FindViewById<FlexGrid>(Resource.Id.Grid);
 
             var data = Customer.GetCustomerList(100);
-            grid.ItemsSource = new CustomCollectionView<Customer>(data);
+            grid.ItemsSource = new CustomDataCollection<Customer>(data);
             grid.NewRowPlaceholder = ApplicationContext.GetString(Resource.String.NewRowPlaceholder);
             grid.AllowDragging = GridAllowDragging.Both;
         }
@@ -46,10 +46,10 @@ namespace FlexGrid101
         }
     }
 
-    public class CustomCollectionView<T> : C1CollectionView<T>
+    public class CustomDataCollection<T> : C1DataCollection<T>
         where T : class
     {
-        public CustomCollectionView(IEnumerable source)
+        public CustomDataCollection(IEnumerable source)
             : base(source)
         {
         }

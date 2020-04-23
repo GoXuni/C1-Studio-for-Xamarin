@@ -88,9 +88,6 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(OS)' == 'Unix' ">
-    <CscToolExe>mcs.exe</CscToolExe>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
@@ -203,10 +200,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.iOS.Core">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.iOS.Gauge">
-      <Version>3.5.20191.378</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

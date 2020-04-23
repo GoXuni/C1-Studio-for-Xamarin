@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using C1.CollectionView;
 
 namespace FlexChart101
 {
@@ -27,55 +24,6 @@ namespace FlexChart101
             }
         }
 
-        //public ICollectionView View
-        //{
-        //    get
-        //    {
-        //        return DataService.CreateGroupCVData();
-        //    }
-        //}
-
-        //public List<string> Positions
-        //{
-        //    get
-        //    {
-        //        return Enum.GetNames(typeof(Position)).ToList();
-        //    }
-        //}
-
-        //public List<string> Palettes
-        //{
-        //    get
-        //    {
-        //        return Enum.GetNames(typeof(Palette)).ToList();
-        //    }
-        //}
-
-        //public string LegendPosition
-        //{
-        //    get { return _legendPosition; }
-        //    set
-        //    {
-        //        if (_legendPosition != value)
-        //        {
-        //            _legendPosition = value;
-        //            OnPropertyChanged("LegendPosition");
-        //        }
-        //    }
-        //}
-
-        //public string SelectedItemPosition
-        //{
-        //    get { return _selectedItemPosition; }
-        //    set
-        //    {
-        //        if (_selectedItemPosition != value)
-        //        {
-        //            _selectedItemPosition = value;
-        //            OnPropertyChanged("SelectedItemPosition");
-        //        }
-        //    }
-        //}
 
         private void OnPropertyChanged(string propertyName)
         {

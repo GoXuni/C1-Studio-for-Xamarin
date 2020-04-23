@@ -14,6 +14,7 @@ namespace FlexViewer101
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            Viewer.ShowMenu = false;
 
             string path = "Data/AlternatingBackground.pdf";
             MemoryStream ms = new MemoryStream();
@@ -36,7 +37,7 @@ namespace FlexViewer101
         }
         async partial void UIBarButtonItem3137_Activated()
         {
-            UIActionSheet actionSheet = new UIActionSheet("Save As");
+            UIActionSheet actionSheet = new UIActionSheet(NSBundle.MainBundle.GetLocalizedString("SaveAs", ""));
             actionSheet.AddButton("PDF");
             actionSheet.AddButton("PNG");
             actionSheet.CancelButtonIndex = 3;
@@ -59,7 +60,7 @@ namespace FlexViewer101
                 }
                 if (type != null)
                 {
-                    var alertController = UIAlertController.Create("Saved", "File has been saved to: " + fullPath, UIAlertControllerStyle.Alert);
+                    var alertController = UIAlertController.Create(NSBundle.MainBundle.GetLocalizedString("Saved", ""), NSBundle.MainBundle.GetLocalizedString("FileSavedTo", "") + fullPath, UIAlertControllerStyle.Alert);
                     alertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
 
                     if (this.PresentedViewController == null)

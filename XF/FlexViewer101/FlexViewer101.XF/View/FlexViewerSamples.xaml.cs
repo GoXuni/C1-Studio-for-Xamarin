@@ -23,6 +23,8 @@ namespace FlexViewer101
                 new Sample() { Name = AppResources.PdfBrowserTitle, Description = AppResources.PdfBrowserDescription, SampleViewType = 2 , Thumbnail="BrowsePDF.jpg"},
                 new Sample() { Name = AppResources.CustomizeAppearanceTitle, Description = AppResources.CustomizeAppearanceDescription, SampleViewType = 3 , Thumbnail="CustomizeApearance.jpg"},
                 new Sample() { Name = AppResources.ExportTitle, Description = AppResources.ExportDescription, SampleViewType = 4 , Thumbnail="Export.png"},
+                new Sample() { Name = AppResources.CustomizeHamburgerTitle, Description = AppResources.CustomizeHamburgerDescription, SampleViewType = 5 , Thumbnail="hamburger.png"},
+                new Sample() { Name = AppResources.CustomizeToolbarTitle, Description = AppResources.CustomizeToolbarDescription, SampleViewType = 6 , Thumbnail="toolbar.png"},
             };
         }
 
@@ -48,6 +50,8 @@ namespace FlexViewer101
                 case 2: return new PdfBrowser();
                 case 3: return new CustomizeAppearance();
                 case 4: return new Export();
+                case 5: return new CustomizeHamburgerMenu();
+                case 6: return new CustomizeToolbar();
             }
             return null;
         }

@@ -1,11 +1,11 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
+# Visual Studio Version 16
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sunburst101.Android", "Sunburst101.Android\Sunburst101.Android.csproj", "{7DA3936F-C51F-4ED9-81BB-ADA3637B1C23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sunburst101.iOS", "Sunburst101.iOS\Sunburst101.iOS.csproj", "{0511235C-A9AD-4389-9D66-66FA1C745DD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sunburst101.XF", "Sunburst101.XF\Sunburst101.XF.csproj", "{05C9D0DA-B73B-4733-9F79-58563173F9B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunburst101.XF", "Sunburst101.XF\Sunburst101.XF.csproj", "{05C9D0DA-B73B-4733-9F79-58563173F9B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sunburst101.UWP", "Sunburst101.UWP\Sunburst101.UWP.csproj", "{AB673493-FAC6-4B65-964C-AB64CC55799B}"
 EndProject
@@ -137,5 +137,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6657979-0D81-465F-88C5-001E6CDBB846}
 	EndGlobalSection
 EndGlobal

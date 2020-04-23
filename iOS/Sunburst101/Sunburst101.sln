@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
+# Visual Studio Version 16
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sunburst101", "Sunburst101\Sunburst101.csproj", "{C373BB99-487B-4294-A61A-A89DF68FE3CE}"
 EndProject
 Global
@@ -51,5 +51,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C907E3D-14EC-427D-8E3E-0E8C633F7013}
 	EndGlobalSection
 EndGlobal

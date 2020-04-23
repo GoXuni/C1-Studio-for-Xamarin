@@ -62,7 +62,7 @@ namespace C1Calendar101
                 }
                 image = image.ImageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate);
                 iv.UserInteractionEnabled = true;
-                iv.TintColor = UIColor.Black;
+                iv.TintColor = UIColor.LabelColor;
                 iv.ContentMode = UIViewContentMode.ScaleAspectFit;
                 iv.Image = image;
                 e.DaySlot = slot;

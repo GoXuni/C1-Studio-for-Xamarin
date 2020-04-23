@@ -8,20 +8,15 @@
     <None Remove="SQLiteDataBase.XF.csproj.vspscc" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.CollectionView">
-      <Version>4.0.20192.397-beta</Version>
-    </PackageReference>
-    <PackageReference Include="C1.CollectionView.EntityFramework">
-      <Version>4.0.20192.397-beta</Version>
-    </PackageReference>
+    <PackageReference Include="C1.DataCollection.EntityFrameworkCore" Version="1.0.20201.14" />
     <PackageReference Include="C1.Xamarin.Forms.Core">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="C1.Xamarin.Forms.Grid">
-      <Version>4.0.20192.397-beta</Version>
+      <Version>4.4.20201.445</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.2" />
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.482894" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\AppResources.Designer.cs">
