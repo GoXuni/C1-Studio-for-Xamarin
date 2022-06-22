@@ -151,7 +151,7 @@
     <PackageReference Include="C1.Xamarin.Forms.Grid">
       <Version>4.4.20201.445</Version>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Plugin.Permissions">
       <Version>3.0.0.12</Version>
     </PackageReference>
